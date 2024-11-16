@@ -1,0 +1,1 @@
+require('fundamen')('cron', {cron: process.argv[2]});

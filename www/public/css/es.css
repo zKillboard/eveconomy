@@ -1,0 +1,32 @@
+/* invert filter based dark mode */
+body.dark{
+    background-color: black;
+    font-size: 10px;
+}
+
+.inverse {
+    filter: invert(1);
+}
+
+img {
+    filter: invert(1);
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.ordertable {
+    max-height: 500px;
+    overflow-y: scroll;
+    padding-right: 0.5em;
+}
+
+.ordertable tbody tr td {
+    width: 20%;
+}
+
+.ordertable tbody tr td:nth-child(1) {
+    width: 40%;
+}
+
