@@ -6,10 +6,13 @@ module.exports = {
 }
 
 const locations_added = {};
+var regions = undefined;
 
 async function f(app) {
-	let regionF = await app.phin('https://esi.evetech.net/latest/universe/regions/?datasource=tranquility');
-	let regions = JSON.parse(regionF.body);
+	if (regions == undefined) {
+		let regionF = await app.phin('https://esi.evetech.net/latest/universe/regions/?datasource=tranquility');
+		regions = JSON.parse(regionF.body);
+	}
 	let epoch = await app.now();
 	for (const regionID of regions) {
 		let page = 1;
