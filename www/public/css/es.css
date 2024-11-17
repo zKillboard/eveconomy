@@ -16,10 +16,29 @@ img {
     text-transform: capitalize;
 }
 
+#titlerow {
+    border-bottom: solid 1px #ddd;
+}
+
+#itemparents {
+    min-height: 90vh;
+    max-height: 90vh;
+    overflow-y: scroll;
+}
+
+#orders {
+    max-height: 93vh;
+}
+
+#buy, #sell {
+    min-height: 42vh;    
+    max-height: 42vh;    
+}
+
 .ordertable {
-    max-height: 500px;
     overflow-y: scroll;
     padding-right: 0.5em;
+    max-height: 42vh;
 }
 
 .ordertable tbody tr td {
@@ -30,3 +49,49 @@ img {
     width: 40%;
 }
 
+.mlist a {
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+}
+
+.mlist .mlist {
+    margin-left: 1em;
+}
+
+.mlist a[aria-expanded='false']:before {
+    color: black;
+    content: "\2795 ";
+    padding-right: .5em;
+}
+
+.mlist a[aria-expanded='true']:before {
+    content: "\2796 ";
+    padding-right: .5em;
+}
+
+.mlist ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0.25px;
+}
+
+.mlist ul li {
+    cursor: pointer;
+    width: 100%;
+    padding: 0.25em;
+}
+
+.mlist ul li a {
+    text-decoration: none;
+    border-bottom: #111;
+    width: 100%;
+}
+
+.mlist ul li:hover, .mlist a:hover {
+    background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
+}
+
+#searchbox {
+    width: 100%;
+}

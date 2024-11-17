@@ -1,5 +1,8 @@
-document.addEventListener('DOMContentLoaded', exec);
 window.addEventListener("popstate", exec);
+document.addEventListener('DOMContentLoaded', exec);
+document.getElementById('searchbox').addEventListener('input', doSearch);
+
+const searcharray = {};
 
 let groupsLoaded = false;
 function loadGroups() {
@@ -21,32 +24,70 @@ function addGroups(parent, data, depth) {
 	let keys = Object.keys(data).sort();
 	for (let key of keys) {
 		let group = data[key];
-		let div = createElement('div', key, {'aria-expanded': 'false'});
-		div.setAttribute('market_id', group.id);
-		div.classList.add('depth' + depth);
-		if (depth > 0) {
-			div.classList.add('d-none');
-			div.classList.add('parent_market_id', parent.getAttribute('market_id'));
-		}
 
+		let div = createElement('div', undefined, {classes: 'mlist'})
+		let anchor = createElement('a', key, {classes: 'btn btn-sm btn-default groupname', 'data-bs-toggle': 'collapse', href: '#subgroup' + group.id, role: 'button', 'aria-expanded': false});
+		let subgroup = createElement('div', undefined, {id: 'subgroup' + group.id, classes: 'collapse'});
+
+		div.appendChild(anchor);
+		div.appendChild(subgroup);
 		parent.appendChild(div);
-		div.onclick = toggleChildren;
 
-		setTimeout(function() { addGroups(div, group.subgroups, depth + 1) }, 1);
+		setTimeout(function() { addGroups(subgroup, group.subgroups, depth + 1) }, 1);
+		
 		if (Object.keys(group.items).length > 0) {
 			let ul = createElement('ul');
-			ul.classList.add('d-none');
 			for (let itemName of Object.keys(group.items).sort()) {
 				let item = group.items[itemName];
-				let li = createElement('li');
+				let li = createElement('li', undefined, {item_id: item.item_id, classes: 'itemname'});
+				li.onclick = litem;
 				let anchor = createElement('a', item.name, {item_id: item.item_id, href: '/item/' + item.item_id});
 				anchor.onclick = litem;
 				li.appendChild(anchor);
 				ul.appendChild(li);
+
+				itemName = itemName.toLowerCase();
+				for (let i = 1; i <= itemName.length; i++) addToSearch(itemName.substr(0, i), itemName, li);
 			}
-			div.appendChild(ul);
+			subgroup.appendChild(ul);
 		}
 	}
+}
+
+function addToSearch(substr, name, element) {
+	if (typeof searcharray[substr] === 'undefined') searcharray[substr] = {};
+	searcharray[substr][name] = element;
+}
+
+function doSearch(e) {
+	const text = e.target.value;
+
+	let mlists = document.getElementsByClassName('mlist');
+	let lis = document.getElementsByClassName('itemname');
+
+	if (text.length == 0) {
+		[...mlists].map((elem) => elem.classList.remove('d-none'));
+		[...lis].map((elem) => elem.classList.remove('d-none'));
+		return;
+	}
+
+	[...mlists].map((elem) => elem.classList.add('d-none'));
+	[...lis].map((elem) => elem.classList.add('d-none'));
+
+	let matches = searcharray[text];
+	if (typeof matches == 'undefined') return;
+	console.log(matches);
+	[...Object.values(matches)].map((li) => itemMatch(li));
+}
+
+function itemMatch(li) {
+	li.classList.remove('d-none');
+	let parent = li;
+	do {
+		parent = parent.parentNode;
+		parent.classList.remove('d-none');
+		parent.classList.remove('collapse');
+	} while (parent.getAttribute('id') != 'items');
 }
 
 function litem(e) {

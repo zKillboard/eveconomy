@@ -12,7 +12,7 @@ html
         div.inverse
             div#top_container.wrapper.container-fluid
                 div#content
-                    div.row
+                    div#titlerow.row
                         div#title.col-xs-12.col-md-3
                             h4 EVEconomy
                         div.xol-xs-12.col-md-9
@@ -21,13 +21,13 @@ html
                                 | &nbsp;
                                 button.btn.btn-sm.btn-secondary.m-0.p-0.d-none
                                     small DESC
-                    hr.m-0.p-0
                     div.row
                         div#itemmenu.col-xs-12.col-md-3
-                            h6 Items
-                            div#items
+                            input#searchbox(type='text' placeholder='Items')
+                            div#itemparents
+                                div#items
                         div#marketlisting.xol-xs-12.col-md-9
-                            div
+                            div#orders
                                 div#sell
                                     h6 Sell Orders 
                                     div#sellorders.ordertable
