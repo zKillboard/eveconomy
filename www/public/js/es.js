@@ -1,4 +1,74 @@
 document.addEventListener('DOMContentLoaded', exec);
+window.addEventListener("popstate", exec);
+
+let groupsLoaded = false;
+function loadGroups() {
+	if (groupsLoaded == false) {
+		doGetJSON(`/api/groups`, parseGroups);
+		groupsLoaded = true;
+	}
+}
+
+function parseGroups(data) {
+	let itemdiv = document.getElementById('items');
+	addGroups(itemdiv, data, 0);
+	if (localStorage) {
+		localStorage.setItem("groups", itemdiv.innerHTML);
+	}
+}
+
+function addGroups(parent, data, depth) {
+	let keys = Object.keys(data).sort();
+	for (let key of keys) {
+		let group = data[key];
+		let div = createElement('div', key, {'aria-expanded': 'false'});
+		div.setAttribute('market_id', group.id);
+		div.classList.add('depth' + depth);
+		if (depth > 0) {
+			div.classList.add('d-none');
+			div.classList.add('parent_market_id', parent.getAttribute('market_id'));
+		}
+
+		parent.appendChild(div);
+		div.onclick = toggleChildren;
+
+		setTimeout(function() { addGroups(div, group.subgroups, depth + 1) }, 1);
+		if (Object.keys(group.items).length > 0) {
+			let ul = createElement('ul');
+			ul.classList.add('d-none');
+			for (let itemName of Object.keys(group.items).sort()) {
+				let item = group.items[itemName];
+				let li = createElement('li');
+				let anchor = createElement('a', item.name, {item_id: item.item_id, href: '/item/' + item.item_id});
+				anchor.onclick = litem;
+				li.appendChild(anchor);
+				ul.appendChild(li);
+			}
+			div.appendChild(ul);
+		}
+	}
+}
+
+function litem(e) {
+	e.stopPropagation();
+	let url = '/item/' + this.getAttribute('item_id');
+	window.history.pushState({path: url},'', url);
+	setTimeout(exec, 1);
+	return false;
+}
+
+function toggleChildren(e) {
+	e.stopPropagation();
+	let market_id = this.getAttribute('market_id');
+	console.log(market_id)
+	let show = (this.getAttribute('aria-expanded') == "true" ? false : true);
+	for (let child of this.children) {
+		if (show) child.classList.remove('d-none');
+		else child.classList.add('d-none');
+	}
+	this.setAttribute('aria-expanded', show);
+	return false;
+}
 
 function exec() {
 	const path = window.location.pathname;
@@ -6,7 +76,8 @@ function exec() {
 	
 	switch(split[1]) {
 	case 'item':
-		return loadItem(split[2]);
+		loadItem(split[2]);
+		break;
 	default:
 		console.log('unknown path execution');
 	}
@@ -20,11 +91,10 @@ function showItem(data) {
 	document.getElementById('itemname').innerHTML = data.name;
 	assembleColumns('buyorders', data.buy);
 	assembleColumns('sellorders', data.sell);
-	doFormats();
+	setTimeout(doFormats, 1);
 
 	let now = Date.now();
 	let then = now - (now % 900) + 900;
-	console.log(then - now);
 	setTimeout(exec, (then - now) * 1000);
 }
 
@@ -91,4 +161,5 @@ function doFormats() {
 		}
 	}
 	if (!completed) setTimeout(doFormats, 1);
+	else setTimeout(loadGroups, 1);
 }

@@ -9,19 +9,19 @@ module.exports = {
 
 async function get(req, res, app) {
 	try {
-		 const id = parseInt(req.params.id);
-	    if (id <= 0 || isNaN(id)) return {status_code: 404};
+		const id = parseInt(req.params.id);
+		if (id <= 0 || isNaN(id)) return {status_code: 404};
 
-	    let buyorders = toArray(app.db.orders.find({type_id: id, is_buy_order: true}, {_id: -1}).sort({price: -1, issued: 1}).limit(100));
-	    let sellorders = toArray(app.db.orders.find({type_id: id, is_buy_order: false}, {_id: -1}).sort({price: 1, issued: 1}).limit(100));
+		let buyorders = toArray(app.db.orders.find({type_id: id, is_buy_order: true}, {_id: -1}).sort({price: -1, issued: 1}).limit(100));
+		let sellorders = toArray(app.db.orders.find({type_id: id, is_buy_order: false}, {_id: -1}).sort({price: 1, issued: 1}).limit(100));
 
-	    let item = await app.db.information.findOne({type: 'item_id', id: id});
-	    if (!item) item = {name: `Item {$id}`, desc: ''};
+		let item = await app.db.information.findOne({type: 'item_id', id: id});
+		if (!item) item = {name: `Item {$id}`, desc: ''};
 
 		buyorders = addLocations(app, buyorders);
 		sellorders = addLocations(app, sellorders);
 	    
-	    return {json: {name: item.name, desc: item.description, buy: await buyorders, sell: await sellorders}}
+	   return {json: {name: item.name, desc: item.description, buy: await buyorders, sell: await sellorders}}
 	} catch (e) {
 		console.log(e);
 	}
