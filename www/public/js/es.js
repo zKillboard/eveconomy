@@ -4,7 +4,17 @@ document.getElementById('itemparent').addEventListener('click', stopCollapseTogg
 
 window.addEventListener("popstate", exec);
 
-const searcharray = {};
+const searchArray = [];
+const searchArrayMap = {};
+let searchCharsMinimum = 4;
+
+function searchOverride() {
+	searchCharsMinimum--;
+	document.getElementById('searchCharsMinimum').innerHTML = `${searchCharsMinimum} `;
+	doSearch();
+}
+document.getElementById('searchOverride').addEventListener('click', searchOverride);
+searchOverride();
 
 let groupsLoaded = false;
 function loadGroups() {
@@ -41,49 +51,61 @@ function addGroups(parent, data, depth) {
 			let ul = createElement('ul');
 			for (let itemName of Object.keys(group.items).sort()) {
 				let item = group.items[itemName];
-				let li = createElement('li', undefined, {item_id: item.item_id, classes: 'itemname'});
+				itemNameL = itemName.toLowerCase();
+
+				let li = createElement('li', undefined, {item_id: item.item_id, itemname: itemNameL, classes: 'itemname'});
 				li.onclick = litem;
 				let anchor = createElement('a', item.name, {item_id: item.item_id, href: '/item/' + item.item_id});
 				anchor.onclick = litem;
 				li.appendChild(anchor);
 				ul.appendChild(li);
-
-				itemName = itemName.toLowerCase();
-				for (let i = 1; i <= itemName.length; i++) addToSearch(itemName.substr(0, i), itemName, li);
+				
+				searchArray.push(itemNameL);
+				searchArrayMap[itemNameL] = li;
 			}
 			subgroup.appendChild(ul);
 		}
 	}
 }
 
-function addToSearch(substr, name, element) {
-	if (typeof searcharray[substr] === 'undefined') searcharray[substr] = {};
-	searcharray[substr][name] = element;
-}
-
-function doSearch(e) {
-	const text = e.target.value;
+function doSearch() {
+	const text = document.getElementById('searchbox').value;
 	let shown = document.querySelectorAll('.groupname[aria-expanded="true"]');
 	let matches = Object.values(document.getElementsByClassName('match'));
 	let noncollapsing = document.querySelectorAll('.groupname[data-bs-toggle="non-collapsing"]');
 
 	[...matches].map((li) => li.classList.remove('match'));
 	[...noncollapsing].map((nc) => nc.setAttribute('data-bs-toggle', 'collapse'));
+	displayElements('#searchMin', false)
+	displayElements('#search0Reults', false)
 
 	if (text.length == 0) {
 		document.getElementById('itemparent').classList.remove('searching');
-
 	} else {
 		document.getElementById('itemparent').classList.add('searching');
 
-		let matches = searcharray[text];
-		if (typeof matches == 'undefined') return;
-		matches = Object.values(matches);
-		[...Object.values(matches)].map((li) => itemMatch(li));
+		if (text.length < searchCharsMinimum) {
+			displayElements('#searchMin', true);
+		} else {
+			let matches = searchArray.filter(element => element.includes(text));
+			if (matches.length == 0) return displayElements('#search0Reults', true);
 
-		noncollapsing = document.querySelectorAll('.searching .match > .groupname');
-		[...noncollapsing].map((nc) => nc.setAttribute('data-bs-toggle', 'non-collapsing'));
+			[...matches].map((t) => itemMatch(searchArrayMap[t]));
+
+			noncollapsing = document.querySelectorAll('.searching .match > .groupname');
+			[...noncollapsing].map((nc) => nc.setAttribute('data-bs-toggle', 'non-collapsing'));
+		}
 	}
+}
+
+function displayElements(selector, display) {
+	let f = display ? 'remove' : 'add';
+	let elements = document.querySelectorAll(selector);
+	[...elements].map((elem) => elem.classList[f]('d-none'));
+}
+
+function doSearchT(t, text) {
+	if (t.indexOf(text) > -1) console.log(t);
 }
 
 function itemMatch(elem) {

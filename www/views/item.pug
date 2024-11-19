@@ -26,6 +26,11 @@ html
                             input#searchbox(type='search' placeholder='Items')
                             div#itemparent
                                 div#items
+                                p#searchMin.d-none.alert.alert-primary.m-1.text-center
+                                    span#searchCharsMinimum
+                                    | character(s) minimum for searches
+                                    btn#searchOverride.btn.btn-sm.btn-primary Click to Override
+                                p#search0Reults.d-none.alert.alert-primary.m-1 no results
                         div#marketlisting.xol-xs-12.col-md-9
                             div#orders
                                 div#sell
