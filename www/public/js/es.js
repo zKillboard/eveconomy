@@ -71,7 +71,7 @@ function addGroups(parent, data, depth) {
 }
 
 function doSearch() {
-	const text = document.getElementById('searchbox').value;
+	const text = document.getElementById('searchbox').value.toLowerCase();
 	let shown = document.querySelectorAll('.groupname[aria-expanded="true"]');
 	let matches = Object.values(document.getElementsByClassName('match'));
 	let noncollapsing = document.querySelectorAll('.groupname[data-bs-toggle="non-collapsing"]');
