@@ -27,6 +27,7 @@ async function f(app) {
 				for (const order of json) {
 					order.epoch = epoch;
 					order.regionID = regionID;
+					if (order.range == 'solarsystem') order.range = 'system';
 					inserts.push(order);
 					if (locations_added[order.location_id] === undefined) {
 						await app.util.entity.add(app, 'solar_system_id', order.system_id, true);
