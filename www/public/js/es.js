@@ -95,6 +95,7 @@ function doSearch() {
 
 			let matches = searchArray.filter(element => element.includes(text));
 			if (matches.length == 0) return displayElements('#search0Reults', true);
+			console.log('matches', exact.length, matches.length);
 
 			[...matches].map((t) => itemMatch(searchArrayMap[t]));
 
@@ -102,7 +103,8 @@ function doSearch() {
 			[...noncollapsing].map((nc) => nc.setAttribute('data-bs-toggle', 'non-collapsing'));
 
 			if (exact.length == 1) {
-				itemparent.scrollTo(0, searchArrayMap['plex'].offsetTop - 100);
+				console.log('scrolling');
+				setTimeout(() => {itemparent.scrollTo(0, searchArrayMap[text].offsetTop - 100);}, 50);
 			}
 		}
 	}
