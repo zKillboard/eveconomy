@@ -20,9 +20,10 @@ img {
     border-bottom: solid 1px #ddd;
 }
 
-#itemparents {
+#itemparent {
     min-height: 90vh;
     max-height: 90vh;
+    overflow-x: hidden;
     overflow-y: scroll;
 }
 
@@ -94,4 +95,12 @@ img {
 
 #searchbox {
     width: 100%;
+}
+
+.searching .groupname, .searching .itemname {
+    display: none;
+}
+
+.searching .match > .groupname, .searching .match  {
+    display: block;
 }

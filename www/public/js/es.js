@@ -27,7 +27,7 @@ function addGroups(parent, data, depth) {
 
 		let div = createElement('div', undefined, {classes: 'mlist'})
 		let anchor = createElement('a', key, {classes: 'btn btn-sm btn-default groupname', 'data-bs-toggle': 'collapse', href: '#subgroup' + group.id, role: 'button', 'aria-expanded': false});
-		let subgroup = createElement('div', undefined, {id: 'subgroup' + group.id, classes: 'collapse'});
+		let subgroup = createElement('div', undefined, {id: 'subgroup' + group.id, classes: 'collapse subgroup'});
 
 		div.appendChild(anchor);
 		div.appendChild(subgroup);
@@ -61,33 +61,32 @@ function addToSearch(substr, name, element) {
 
 function doSearch(e) {
 	const text = e.target.value;
+	let shown = document.querySelectorAll('.groupname[aria-expanded="true"]');
+	let matches = document.getElementsByClassName('match');
 
-	let mlists = document.getElementsByClassName('mlist');
-	let lis = document.getElementsByClassName('itemname');
+	[...Object.values(matches)].map((li) => li.classList.remove('match'));
 
 	if (text.length == 0) {
-		[...mlists].map((elem) => elem.classList.remove('d-none'));
-		[...lis].map((elem) => elem.classList.remove('d-none'));
-		return;
+		document.getElementById('itemparent').classList.remove('searching');
+	} else {
+		document.getElementById('itemparent').classList.add('searching');
+
+		let matches = searcharray[text];
+		if (typeof matches == 'undefined') return;
+		matches = Object.values(matches);
+		[...Object.values(matches)].map((li) => itemMatch(li));
 	}
-
-	[...mlists].map((elem) => elem.classList.add('d-none'));
-	[...lis].map((elem) => elem.classList.add('d-none'));
-
-	let matches = searcharray[text];
-	if (typeof matches == 'undefined') return;
-	console.log(matches);
-	[...Object.values(matches)].map((li) => itemMatch(li));
 }
 
-function itemMatch(li) {
-	li.classList.remove('d-none');
-	let parent = li;
-	do {
-		parent = parent.parentNode;
-		parent.classList.remove('d-none');
-		parent.classList.remove('collapse');
-	} while (parent.getAttribute('id') != 'items');
+function itemMatch(elem) {
+	do {		
+		elem.classList.add('match');
+		elem = elem.parentNode;
+	} while (elem.getAttribute('id') != 'items');
+}
+
+function stopCollapseToggleWhenSearching(event) {
+	if (ddocument.getElementById('itemparent').classList.contains('searching')) event.stopPropagation();
 }
 
 function litem(e) {
@@ -130,9 +129,9 @@ function loadItem(item_id) {
 
 function showItem(data) {
 	document.getElementById('itemname').innerHTML = data.name;
+	document.title = data.name + ' - EVEconomy';
 	assembleColumns('buyorders', data.buy);
 	assembleColumns('sellorders', data.sell);
-	setTimeout(doFormats, 1);
 
 	let now = Date.now();
 	let then = now - (now % 900) + 900;
@@ -150,8 +149,8 @@ const THEAD = `
 </thead>`;
 const columns = {
 	'location_name': {location: true},
-	'price': {classes: 'format_dec text-end'},
-	'volume_remain': {classes: 'format_int text-end'},
+	'price': {format: 'dec', classes: 'text-end'},
+	'volume_remain': {format: 'int', classes: 'text-end'},
 	'range': {classes: 'text-end capitalize'},
 };
 function assembleColumns(id, orders) {
@@ -162,13 +161,18 @@ function assembleColumns(id, orders) {
 
 	for (let order of orders) {
 		let tr = createElement('tr');
-		for (let column of Object.keys(columns)) tr.appendChild(createElement('td', order[column], columns[column]));
+		for (let column of Object.keys(columns)) {
+			let val = order[column];
+			if (columns[column]['format']) val = getValueFormatted(val, columns[column]['format']);
+			tr.appendChild(createElement('td', val, columns[column]));
+		}
 		tablebody.append(tr);
 	}
 
 	let div = document.getElementById(id);
 	div.innerHTML = '';
 	div.appendChild(table);
+	setTimeout(loadGroups, 1);
 }
 
 function createElement(element, content = '', attributes = {}) {
@@ -186,21 +190,11 @@ function doGetJSON(path, f) {
 }
 
 const formats = {
-	'format_int': {dec: 0}, 
-	'format_dec': {dec: 2}
+	int: 0,
+	dec: 2
 }
-function doFormats() {
-	let completed = true;
-	for (let format of Object.keys(formats)) {
-		let elements = document.getElementsByClassName(format);
-		for (let element of elements) {
-			let t = element.innerHTML;
-			let n = t.length > 10 ? BigInt(t) : Number(t);			
-			element.innerHTML = n.toLocaleString(undefined, {minimumFractionDigits: formats[format].dec, maximumFractionDigits: formats[format].dec});
-			element.classList.remove(format);
-			completed = false;
-		}
-	}
-	if (!completed) setTimeout(doFormats, 1);
-	else setTimeout(loadGroups, 1);
+function getValueFormatted(value, format) {
+	let n = value.length > 10 ? BigInt(value) : Number(value);
+	let dec = formats[format];
+	return n.toLocaleString(undefined, {minimumFractionDigits: dec, maximumFractionDigits: dec});
 }
