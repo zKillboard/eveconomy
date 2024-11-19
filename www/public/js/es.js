@@ -1,6 +1,8 @@
-window.addEventListener("popstate", exec);
 document.addEventListener('DOMContentLoaded', exec);
 document.getElementById('searchbox').addEventListener('input', doSearch);
+document.getElementById('itemparent').addEventListener('click', stopCollapseToggleWhenSearching);
+
+window.addEventListener("popstate", exec);
 
 const searcharray = {};
 
@@ -62,12 +64,15 @@ function addToSearch(substr, name, element) {
 function doSearch(e) {
 	const text = e.target.value;
 	let shown = document.querySelectorAll('.groupname[aria-expanded="true"]');
-	let matches = document.getElementsByClassName('match');
+	let matches = Object.values(document.getElementsByClassName('match'));
+	let noncollapsing = document.querySelectorAll('.groupname[data-bs-toggle="non-collapsing"]');
 
-	[...Object.values(matches)].map((li) => li.classList.remove('match'));
+	[...matches].map((li) => li.classList.remove('match'));
+	[...noncollapsing].map((nc) => nc.setAttribute('data-bs-toggle', 'collapse'));
 
 	if (text.length == 0) {
 		document.getElementById('itemparent').classList.remove('searching');
+
 	} else {
 		document.getElementById('itemparent').classList.add('searching');
 
@@ -75,6 +80,9 @@ function doSearch(e) {
 		if (typeof matches == 'undefined') return;
 		matches = Object.values(matches);
 		[...Object.values(matches)].map((li) => itemMatch(li));
+
+		noncollapsing = document.querySelectorAll('.searching .match > .groupname');
+		[...noncollapsing].map((nc) => nc.setAttribute('data-bs-toggle', 'non-collapsing'));
 	}
 }
 
@@ -86,7 +94,13 @@ function itemMatch(elem) {
 }
 
 function stopCollapseToggleWhenSearching(event) {
-	if (ddocument.getElementById('itemparent').classList.contains('searching')) event.stopPropagation();
+	let isSearching = document.getElementById('itemparent').classList.contains('searching');
+	if (isSearching) {
+		event.preventDefault();
+		event.stopPropagation();
+		return false;
+	}
+	return true;
 }
 
 function litem(e) {
@@ -148,10 +162,10 @@ const THEAD = `
 	</tr>
 </thead>`;
 const columns = {
-	'location_name': {location: true},
-	'price': {format: 'dec', classes: 'text-end'},
-	'volume_remain': {format: 'int', classes: 'text-end'},
-	'range': {classes: 'text-end capitalize'},
+	'location_name': {field: 'location_name', location: true},
+	'price': {field: 'price', format: 'dec', classes: 'text-end'},
+	'volume_remain': {field: 'volume_remain', format: 'int', classes: 'text-end'},
+	'range': {field: 'range', classes: 'text-end capitalize'},
 };
 function assembleColumns(id, orders) {
 	let table = createElement('table', undefined, {classes: 'table table-sm table-striped'});

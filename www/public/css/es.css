@@ -104,3 +104,7 @@ img {
 .searching .match > .groupname, .searching .match  {
     display: block;
 }
+
+.searching .groupname:before {
+    content: "\2796 " !important;
+}
