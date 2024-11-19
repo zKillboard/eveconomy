@@ -43,11 +43,11 @@ img {
 }
 
 .ordertable tbody tr td {
-    width: 20%;
+    width: 10%;
 }
 
-.ordertable tbody tr td:nth-child(1) {
-    width: 40%;
+.ordertable tbody tr td[field='location_name'] {
+    width: 100%;
 }
 
 .mlist a {

@@ -87,6 +87,9 @@ function doSearch() {
 		if (text.length < searchCharsMinimum) {
 			displayElements('#searchMin', true);
 		} else {
+			let exact = searchArray.filter(element => element == text);
+			if (exact.length == 1) pushLiItem(searchArrayMap[text]);
+
 			let matches = searchArray.filter(element => element.includes(text));
 			if (matches.length == 0) return displayElements('#search0Reults', true);
 
@@ -94,6 +97,10 @@ function doSearch() {
 
 			noncollapsing = document.querySelectorAll('.searching .match > .groupname');
 			[...noncollapsing].map((nc) => nc.setAttribute('data-bs-toggle', 'non-collapsing'));
+
+			if (exact.length == 1) {
+				document.getElementById('itemparent').scrollTo(0, searchArrayMap['plex'].offsetTop - 100);
+			}
 		}
 	}
 }
@@ -127,7 +134,13 @@ function stopCollapseToggleWhenSearching(event) {
 
 function litem(e) {
 	e.stopPropagation();
-	let url = '/item/' + this.getAttribute('item_id');
+	e.preventDefault();
+
+	return pushLiItem(this);
+}
+
+function pushLiItem(li) {
+	let url = '/item/' + li.getAttribute('item_id');
 	window.history.pushState({path: url},'', url);
 	setTimeout(exec, 1);
 	return false;
@@ -177,16 +190,16 @@ function showItem(data) {
 const THEAD = `
 <thead>
 	<tr>
-		<th>Location</th>
-		<th class='text-end'>Price</th>
 		<th class='text-end'>Remaining</th>
+		<th class='text-end'>Price</th>
+		<th>Location</th>
 		<th class='text-end'>Range</th>
 	</tr>
 </thead>`;
 const columns = {
-	'location_name': {field: 'location_name', location: true},
-	'price': {field: 'price', format: 'dec', classes: 'text-end'},
 	'volume_remain': {field: 'volume_remain', format: 'int', classes: 'text-end'},
+	'price': {field: 'price', format: 'dec', classes: 'text-end'},
+	'location_name': {field: 'location_name', location: true},
 	'range': {field: 'range', classes: 'text-end capitalize'},
 };
 function assembleColumns(id, orders) {
