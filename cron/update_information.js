@@ -135,8 +135,10 @@ async function fetch(app, row) {
         }
 
         let url;
-        if (row.type == 'location_id' && row.id > 69999999) url = process.env.esi_url + '/latest/universe/structures/:id/'.replace(':id', row.id);
-        else url = process.env.esi_url + urls[row.type].replace(':id', row.id);
+        if (row.type == 'location_id' && row.id > 69999999) {
+            await app.sleep(30000); // long pause here
+            url = process.env.esi_url + '/latest/universe/structures/:id/'.replace(':id', row.id);
+        } else url = process.env.esi_url + urls[row.type].replace(':id', row.id);
         let res = await app.phin({url: url, timeout: 15000});
 
         switch (res.statusCode) {
