@@ -19,7 +19,9 @@ searchOverride();
 let groupsLoaded = false;
 function loadGroups() {
 	if (groupsLoaded == false) {
-		doGetJSON(`/api/groups`, parseGroups);
+		let epoch = Math.floor(Date.now() / 1000);
+		epoch = epoch - (epoch % 900);
+		doGetJSON(`/api/groups?epoch=${epoch}`, parseGroups);
 		groupsLoaded = true;
 	}
 }
@@ -73,6 +75,7 @@ function doSearch() {
 	let shown = document.querySelectorAll('.groupname[aria-expanded="true"]');
 	let matches = Object.values(document.getElementsByClassName('match'));
 	let noncollapsing = document.querySelectorAll('.groupname[data-bs-toggle="non-collapsing"]');
+	let itemparent = document.getElementById('itemparent');
 
 	[...matches].map((li) => li.classList.remove('match'));
 	[...noncollapsing].map((nc) => nc.setAttribute('data-bs-toggle', 'collapse'));
@@ -80,9 +83,9 @@ function doSearch() {
 	displayElements('#search0Reults', false)
 
 	if (text.length == 0) {
-		document.getElementById('itemparent').classList.remove('searching');
+		itemparent.classList.remove('searching');
 	} else {
-		document.getElementById('itemparent').classList.add('searching');
+		itemparent.classList.add('searching');
 
 		if (text.length < searchCharsMinimum) {
 			displayElements('#searchMin', true);
@@ -99,7 +102,7 @@ function doSearch() {
 			[...noncollapsing].map((nc) => nc.setAttribute('data-bs-toggle', 'non-collapsing'));
 
 			if (exact.length == 1) {
-				document.getElementById('itemparent').scrollTo(0, searchArrayMap['plex'].offsetTop - 100);
+				itemparent.scrollTo(0, searchArrayMap['plex'].offsetTop - 100);
 			}
 		}
 	}
@@ -173,7 +176,9 @@ function exec() {
 }
 
 function loadItem(item_id) {
-	doGetJSON(`/api/orders/${item_id}`, showItem);
+	let epoch = Math.floor(Date.now() / 1000);
+	epoch = epoch - (epoch % 900);
+	doGetJSON(`/api/orders/${item_id}?epoch=${epoch}`, showItem);
 }
 
 function showItem(data) {
