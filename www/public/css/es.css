@@ -1,7 +1,8 @@
 /* invert filter based dark mode */
 body.dark{
     background-color: black;
-    font-size: 10px;
+    font-size: 14px;
+    overflow: hidden;
 }
 
 .inverse {
@@ -37,19 +38,19 @@ img {
     max-height: 93vh;
 }
 
-#buy, #sell {
-    min-height: 42vh;    
-    max-height: 42vh;    
-}
-
 .ordertable {
     overflow-y: scroll;
     padding-right: 0.5em;
     max-height: 42vh;
 }
 
+#buy h6 {
+    border-top: solid 1px #ccc;
+    margin-top: 2px;
+}
+
 .ordertable tbody tr td {
-    width: 10%;
+    width: 15%;
 }
 
 .ordertable tbody tr td[field='location_name'] {
@@ -59,7 +60,6 @@ img {
 .mlist a {
     width: 100%;
     text-align: left;
-    font-size: 12px;
 }
 
 .mlist .mlist {
@@ -114,3 +114,4 @@ img {
 .searching .groupname:before {
     content: "\1f784 " !important;
 }
+
