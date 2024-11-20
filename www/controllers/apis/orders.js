@@ -21,7 +21,7 @@ async function get(req, res, app) {
 		buyorders = addLocations(app, buyorders);
 		sellorders = addLocations(app, sellorders);
 	    
-	   return {json: {name: item.name, desc: item.description, buy: await buyorders, sell: await sellorders}}
+	   return {json: {id: id, name: item.name, desc: item.description, buy: await buyorders, sell: await sellorders}}
 	} catch (e) {
 		console.log(e);
 	}

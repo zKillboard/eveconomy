@@ -11,13 +11,13 @@ body.dark{
 
 img {
     filter: invert(1);
+    background-color: #111;
 }
 
-#sitelogo {
+#sitelogo, #itemimg {
     height: 25px;
     margin: 0.25em;
 }
-
 
 .capitalize {
     text-transform: capitalize;
@@ -41,6 +41,7 @@ img {
 .ordertable {
     overflow-y: scroll;
     padding-right: 0.5em;
+    min-height: 42vh;
     max-height: 42vh;
 }
 

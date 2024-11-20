@@ -185,6 +185,7 @@ function loadItem(item_id) {
 
 function showItem(data) {
 	document.getElementById('itemname').innerHTML = data.name;
+	document.getElementById('itemimg').setAttribute('src', `https://images.evetech.net/types/${data.id}/icon?size=128`);
 	document.title = data.name + ' - EVEconomy';
 	assembleColumns('buyorders', data.buy);
 	assembleColumns('sellorders', data.sell);
