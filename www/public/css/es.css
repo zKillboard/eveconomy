@@ -12,6 +12,12 @@ img {
     filter: invert(1);
 }
 
+#sitelogo {
+    height: 25px;
+    margin: 0.25em;
+}
+
+
 .capitalize {
     text-transform: capitalize;
 }
