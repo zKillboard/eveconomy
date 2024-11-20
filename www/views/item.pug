@@ -1,71 +1,20 @@
-doctype html
-html
-    head
-        meta(charset='UTF-8')
-        meta(name='viewport' content='width=device-width, initial-scale=1')
-        title= title + ' - EVEconomy'
-        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous")
+extends base
 
-        link(rel='stylesheet' href='/css/es.css?v=' + server_started)
-
-    body#body.dark
-        div.inverse
-            div#top_container.wrapper.container-fluid
-                div#content
-                    div#titlerow.row
-                        div#title.col-xs-12.col-md-3
-                            img#sitelogo.float-start(src='/img/eveconomy.png' title='EVEconomy')
-                            h4 EVEconomy
-                        div.xol-xs-12.col-md-9
-                            h4
-                                span#itemname 
-                                | &nbsp;
-                                button.btn.btn-sm.btn-secondary.m-0.p-0.d-none
-                                    small DESC
-                    div.row
-                        div#itemmenu.col-xs-12.col-md-3
-                            input#searchbox(type='search' placeholder='Items')
-                            div#itemparent
-                                div#items
-                                p#searchMin.d-none.alert.alert-primary.m-1.text-center
-                                    span#searchCharsMinimum
-                                    | character(s) minimum for searches
-                                    btn#searchOverride.btn.btn-sm.btn-primary Click to Override
-                                p#search0Reults.d-none.alert.alert-primary.m-1 no results
-                        div#marketlisting.xol-xs-12.col-md-9
-                            div#orders
-                                div#sell
-                                    h6 Sell Orders 
-                                    div#sellorders.ordertable
-                                div#buy
-                                    h6 Buy Orders
-                                    div#buyorders.ordertable
-            div.clearfix.push
-            div#footer.d-none
-                footer.footer
-                    small
-                        center
-                            | Brought to you by 
-                            a.override(href='https://zkillboard.com/character/1633218082' target='_blank') Squizz Caphinator
-                            span.d-block.d-sm-none xs
-                            span.d-none.d-sm-block.d-md-none sm
-                            span.d-none.d-md-block.d-lg-none md
-                            span.d-none.d-lg-block.d-xl-none lg
-                            span.d-none.d-xl-block xl
-                        center(data-toggle='tooltip' style='cursor: pointer; text-decoration: underline' title='EVE Online and the EVE logo are the registered trademarks of CCP hf. All rights are reserved worldwide. All other trademarks are the property of their respective owners. EVE Online, the EVE logo, EVE and all associated logos and designs are the intellectual property of CCP hf. All artwork, screenshots, characters, vehicles, storylines, world facts or other recognizable features of the intellectual property relating to these trademarks are likewise the intellectual property of CCP hf. CCP hf. has granted permission to evewho.com to use EVE Online and all associated logos and designs for promotional and information purposes on its website but does not endorse, and is not in any way affiliated with, evewho.com. CCP is in no way responsible for the content on or functioning of this website, nor can it be liable for any damage arising from the use of this website.')  All Eve Related Materials are Property of CCP Games
-            div.collapse
-                div#spinner
-                    div.lds-ring
-                        div
-                        div
-                        div
-                        div
-            div#loading-zone
-
-script(defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous")
-
-
-script(defer data-server_start=server_started src='/js/es.js?v=' + server_started)
-script
-    = 'const server_started= ' + server_started + ';'
-    = "const websocket_url= '" + env.websocket_url + "';"
+block content
+    div#itemmenu.col-xs-12.col-md-3
+        input#searchbox(type='search' placeholder='Items')
+        div#itemparent
+            div#items
+            p#searchMin.d-none.alert.alert-primary.m-1.text-center
+                span#searchCharsMinimum
+                | character(s) minimum for searches
+                btn#searchOverride.btn.btn-sm.btn-primary Click to Override
+            p#search0Reults.d-none.alert.alert-primary.m-1 no results
+    div#marketlisting.xol-xs-12.col-md-9
+        div#orders
+            div#sell
+                h6 Sell Orders 
+                div#sellorders.ordertable
+            div#buy
+                h6 Buy Orders
+                div#buyorders.ordertable
