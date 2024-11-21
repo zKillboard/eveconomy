@@ -23,7 +23,7 @@ async function f(app) {
 	await Promise.allSettled(promises);
 
 	if (inserts.length > 0) await app.db.orders.insertMany(inserts);
-	await app.db.orders.removeMany({regionID: regionID, epoch : {'$ne' : epoch}});
+	await app.db.orders.removeMany({epoch : {'$ne' : epoch}});
 
 	let done = app.now();
 	console.log('Fetching orders completed: ', (done - epoch), 'seconds');

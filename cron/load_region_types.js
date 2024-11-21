@@ -22,7 +22,7 @@ async function f(app) {
 		do {
 			if (app.bailout == true) return;
 			const url = `https://esi.evetech.net/latest/markets/${regionID}/types/?datasource=tranquility&page=${page}`;
-			res = await app.util.assist.doGet(app, url)
+			res = await app.util.assist.doGet(app, url);
 			if (res.statusCode == 200) {
 				let json = JSON.parse(res.body);		
 				for (const id of json) {
