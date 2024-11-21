@@ -72,15 +72,14 @@ function addGroups(parent, data, depth) {
 
 function doSearch() {
 	const text = document.getElementById('searchbox').value.toLowerCase();
-	let shown = document.querySelectorAll('.groupname[aria-expanded="true"]');
 	let matches = Object.values(document.getElementsByClassName('match'));
 	let noncollapsing = document.querySelectorAll('.groupname[data-bs-toggle="non-collapsing"]');
 	let itemparent = document.getElementById('itemparent');
 
 	[...matches].map((li) => li.classList.remove('match'));
 	[...noncollapsing].map((nc) => nc.setAttribute('data-bs-toggle', 'collapse'));
-	displayElements('#searchMin', false)
-	displayElements('#search0Reults', false)
+	elementsDisplay('#searchMin', false);
+	elementsDisplay('#search0Reults', false);
 
 	if (text.length == 0) {
 		itemparent.classList.remove('searching');
@@ -88,14 +87,13 @@ function doSearch() {
 		itemparent.classList.add('searching');
 
 		if (text.length < searchCharsMinimum) {
-			displayElements('#searchMin', true);
+			elementsDisplay('#searchMin', true);
 		} else {
 			let exact = searchArray.filter(element => element == text);
 			if (exact.length == 1) pushLiItem(searchArrayMap[text]);
 
 			let matches = searchArray.filter(element => element.includes(text));
-			if (matches.length == 0) return displayElements('#search0Reults', true);
-			console.log('matches', exact.length, matches.length);
+			if (matches.length == 0) return elementsDisplay('#search0Reults', true);
 
 			[...matches].map((t) => itemMatch(searchArrayMap[t]));
 
@@ -103,21 +101,14 @@ function doSearch() {
 			[...noncollapsing].map((nc) => nc.setAttribute('data-bs-toggle', 'non-collapsing'));
 
 			if (exact.length == 1) {
-				console.log('scrolling');
-				setTimeout(() => {itemparent.scrollTo(0, searchArrayMap[text].offsetTop - 100);}, 50);
+				itemparent.scrollTo(0, searchArrayMap[text].offsetTop - 100);
 			}
 		}
 	}
 }
 
-function displayElements(selector, display) {
-	let f = display ? 'remove' : 'add';
-	let elements = document.querySelectorAll(selector);
-	[...elements].map((elem) => elem.classList[f]('d-none'));
-}
-
-function doSearchT(t, text) {
-	if (t.indexOf(text) > -1) console.log(t);
+function elementsDisplay(selector, display) {
+	[...document.querySelectorAll(selector)].map((e) => e.classList[display ? 'remove' : 'add']('d-none'));
 }
 
 function itemMatch(elem) {
