@@ -13,20 +13,24 @@ async function f(app) {
 		let regionF = await app.phin('https://esi.evetech.net/latest/universe/regions/?datasource=tranquility');
 		regions = JSON.parse(regionF.body);
 	}
+
+	let inserts = [];
 	let epoch = await app.now();
 	let promises = [];
 	for (const regionID of regions) {
-		promises.push(loadRegion(app, regionID, epoch));
+		promises.push(loadRegion(app, regionID, epoch, inserts));
 	}
 	await Promise.allSettled(promises);
+
+	if (inserts.length > 0) await app.db.orders.insertMany(inserts);
+	await app.db.orders.removeMany({regionID: regionID, epoch : {'$ne' : epoch}});
 
 	let done = app.now();
 	console.log('Fetching orders completed: ', (done - epoch), 'seconds');
 }
 
-async function loadRegion(app, regionID, epoch) {
+async function loadRegion(app, regionID, epoch, inserts) {
 	try {
-		let inserts = [];
 		let res = await loadRegionPage(app, regionID, 1, epoch, inserts);
 
 		let pages = res.headers['x-pages'] | 1;
@@ -34,8 +38,6 @@ async function loadRegion(app, regionID, epoch) {
 		for (let i = 2; i <= pages; i++) promises.push(loadRegionPage(app, regionID, i, epoch, inserts));
 		await Promise.allSettled(promises);
 
-		if (inserts.length > 0) await app.db.orders.insertMany(inserts);
-		await app.db.orders.removeMany({regionID: regionID, epoch : {'$ne' : epoch}});
 		console.log(`Region ${regionID}: loaded ${pages} pages`);
 	} catch (e) {
 		console.error(e);
