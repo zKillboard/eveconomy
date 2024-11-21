@@ -23,7 +23,7 @@ async function f(app) {
 	}
 	await Promise.allSettled(promises);
 
-	while (orderGroups.length > 0) await app.sleep(1000);
+	while (orderGroups.length > 0) await app.sleep(100);
 	await app.redis.set("evec:orders_epoch", epoch);
 	await app.db.orders.removeMany({epoch : {'$ne' : epoch}});
 
@@ -67,7 +67,7 @@ async function loadRegionPage(app, regionID, page, epoch) {
 				let json = JSON.parse(res.body);
 				for (const order of json) {
 					order.epoch = epoch;
-					order.regionID = regionID;
+					order.region_id = regionID;
 					if (order.range == 'solarsystem') order.range = 'system';
 					orderGroup.push(order);	
 
