@@ -35,6 +35,7 @@ function parseGroups(data) {
 }
 
 function addGroups(parent, data, depth) {
+	if (typeof data == 'undefined') return;
 	let keys = Object.keys(data).sort();
 	for (let key of keys) {
 		let group = data[key];
