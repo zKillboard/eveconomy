@@ -12,10 +12,9 @@ async function get(req, res, app) {
 		const id = parseInt(req.params.id);
 		if (id <= 0 || isNaN(id)) return {status_code: 404};
 		let epoch = Number(await app.redis.get('evec:orders_epoch'));
-		console.log(epoch);
 
-		let buyorders = toArray(app.db.orders.find({type_id: id, epoch: epoch, is_buy_order: true}, {_id: -1}).sort({price: -1, issued: 1}).limit(100));
-		let sellorders = toArray(app.db.orders.find({type_id: id, epoch: epoch, is_buy_order: false}, {_id: -1}).sort({price: 1, issued: 1}).limit(100));
+		let buyorders = toArray(app.db.orders.find({type_id: id, is_buy_order: true}, {_id: -1}).sort({price: -1, issued: 1}).limit(100));
+		let sellorders = toArray(app.db.orders.find({type_id: id, is_buy_order: false}, {_id: -1}).sort({price: 1, issued: 1}).limit(100));
 
 		let item = await app.db.information.findOne({type: 'item_id', id: id});
 		if (!item) item = {name: `Item {$id}`, desc: ''};
