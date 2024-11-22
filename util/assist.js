@@ -45,7 +45,7 @@ async function init(app) {
 let lastESICallEpoch = 0;
 
 const assist = {
-	doGet: async function (app, url) {
+	doGet: async function (app, url, attempts = 3) {
 		await init(app);
 		
 		while (rate_limit <= 0) await app.sleep(100);
@@ -54,7 +54,12 @@ const assist = {
 		while ((Date.now() - minWaitTime) <= lastESICallEpoch) await app.sleep(10);
 		lastESICallEpoch = Date.now();
 
-		return await app.phin(url);
+		let res = await app.phin(url);
+		if (res.statusCode >= 500 && attempts > 0) {
+			await app.sleep(2000);
+			return await this.doGet(app, url, attempts - 1);
+		}
+		return res;
 	}
 }
 
