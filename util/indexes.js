@@ -1,47 +1,17 @@
 'use strict';
 
-module.exports = {
-    exec: f,
-    span: 1
-}
-
-let first = true;
-
-async function f(app) {
-    if (first) {
-        let success = false;
-        do {
-            try {
-                await applyIndexes(app);
-                success = true;
-            } catch (e) {
-                console.log(e);
-                await app.sleep(1000);
-                success = false;
-            }
-        } while (success == false);
-
-        await applyIndexes(app);
-        first = false;
-
-        /*let collections = await app.db.listCollections().toArray();
-        for (let i = 0; i < collections.length; i++) {
-            app.db[collections[i].name] = await app.db.collection(collections[i].name);
-        }*/
-
-        app.zindexes_added = true;
-    }
-}
 
 async function applyIndexes(app) {
     let hasNew = false;
 
     let o = ['orders', 'orders_new'];
-    await createCollection(app, 'orders');
-    await createIndex(app, app.db.orders, { epoch: 1, type_id: 1, is_buy_order: 1 });
-    await createIndex(app, app.db.orders, { type_id: 1, is_buy_oder: 1, price: 1 });
-    await createIndex(app, app.db.orders, { region_id: 1, epoch: 1 });
-    await createIndex(app, app.db.orders, { type_id: 1, epoch: 1, is_buy_order: 1 });
+    for (let c of o) {
+	    await createCollection(app, c);
+	    await createIndex(app, app.db[c], { epoch: 1, type_id: 1, is_buy_order: 1 });
+	    await createIndex(app, app.db[c], { type_id: 1, is_buy_oder: 1, price: 1 });
+	    await createIndex(app, app.db[c], { region_id: 1, epoch: 1 });
+	    await createIndex(app, app.db[c], { type_id: 1, epoch: 1, is_buy_order: 1 });
+    }
 
     await createCollection(app, 'information');
     await createIndex(app, app.db.information, { type: 1, id: 1 }, { unique: true })
@@ -83,3 +53,5 @@ async function createIndex(app, collection, index, options = {}) {
         informed = true;
     }
 }
+
+module.exports = applyIndexes;
