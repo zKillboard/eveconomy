@@ -22,6 +22,7 @@ async function f(app) {
 		regions = JSON.parse(regionF.body);
 
 		for (const regionID of shuffle(regions)) {
+			if (regionID >= 12000000) continue;
 			if (app.bailout) return;
 			loadRegion(app, regionID);
 			await app.sleep(5000);

@@ -29,9 +29,6 @@ function loadGroups() {
 function parseGroups(data) {
 	let itemdiv = document.getElementById('items');
 	addGroups(itemdiv, data, 0);
-	if (localStorage) {
-		localStorage.setItem("groups", itemdiv.innerHTML);
-	}
 }
 
 function addGroups(parent, data, depth) {
@@ -169,22 +166,32 @@ function exec() {
 	}
 }
 
+let current_item_id = null;
 function loadItem(item_id) {
 	let epoch = Math.floor(Date.now() / 1000);
 	epoch = epoch - (epoch % 900);
-	doGetJSON(`/api/orders/${item_id}?epoch=${epoch}`, showItem);
+	doGetJSON(`/api/orders?epoch=${epoch}&item=${item_id}`, populateOrders);
+	if (current_item_id != item_id) {
+		doGetJSON(`/api/info?id=${item_id}&type=item_id`, populateInfo);
+		current_item_id = item_id;
+	}
 }
 
-function showItem(data) {
-	document.getElementById('itemname').innerHTML = data.name;
+function populateOrders(data) {
+	setTimeout(loadGroups, 1);
+	
 	document.getElementById('itemimg').setAttribute('src', `https://images.evetech.net/types/${data.id}/icon?size=128`);
-	document.title = data.name + ' - EVEconomy';
-	assembleColumns('buyorders', data.buy);
-	assembleColumns('sellorders', data.sell);
+	assembleColumns('buyorders', data.buy, "buy");
+	assembleColumns('sellorders', data.sell, "sell");
 
 	let now = Date.now();
 	let then = now - (now % 900) + 900;
 	setTimeout(exec, (then - now) * 1000);
+}
+
+function populateInfo(data) {
+	document.getElementById('itemname').innerHTML = data.name;
+	document.title = data.name + ' - EVEconomy';
 }
 
 const THEAD = `
@@ -202,14 +209,14 @@ const columns = {
 	'location_name': {field: 'location_name', location: true},
 	'range': {field: 'range', classes: 'text-end capitalize'},
 };
-function assembleColumns(id, orders) {
+function assembleColumns(id, orders, order_type) {
 	let table = createElement('table', undefined, {classes: 'table table-sm table-striped'});
 	table.appendChild(createElement('thead', THEAD, undefined, undefined));
 	let tablebody = createElement('tbody');
 	table.appendChild(tablebody);
 
 	for (let order of orders) {
-		let tr = createElement('tr');
+		let tr = createElement('tr', undefined, {classes: 'order', id: order.order_id, order_type: order_type});
 		for (let column of Object.keys(columns)) {
 			let val = order[column];
 			if (columns[column]['format']) val = getValueFormatted(val, columns[column]['format']);
@@ -220,8 +227,7 @@ function assembleColumns(id, orders) {
 
 	let div = document.getElementById(id);
 	div.innerHTML = '';
-	div.appendChild(table);
-	setTimeout(loadGroups, 1);
+	div.appendChild(table);	
 }
 
 function createElement(element, content = '', attributes = {}) {

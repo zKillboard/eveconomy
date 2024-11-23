@@ -2,8 +2,7 @@
 
 module.exports = {
    paths: ['/api/groups'],
-   get: get,
-   priority: 1,
+   get: get
 }
 
 async function get(req, res, app) {
@@ -14,8 +13,9 @@ async function get(req, res, app) {
 			raw = await app.redis.get('evec:groups');
 		}
 		let json = JSON.parse(raw);
+		if (json == null) return; // something went wrong
 	    
-	   return {json: json};
+	   return {json: json, ttl: 3600};
 	} catch (e) {
 		console.log(e);
 	}

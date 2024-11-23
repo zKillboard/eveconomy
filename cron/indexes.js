@@ -31,11 +31,13 @@ async function applyIndexes(app) {
 
     let o = ['orders', 'orders_new'];
     await createCollection(app, 'orders');
-    await createIndex(app, app.db.orders, { epoch: 1, type_id: 1, is_buy_order: 1 });
+    await createIndex(app, app.db.orders, { order_id: 1 }, { unique: true });
+    await createIndex(app, app.db.orders, { type_id: 1 });
+    await createIndex(app, app.db.orders, { type_id: 1, is_buy_order: 1 });
     await createIndex(app, app.db.orders, { type_id: 1, is_buy_oder: 1, price: 1 });
-    await createIndex(app, app.db.orders, { region_id: 1, epoch: 1 });
-    await createIndex(app, app.db.orders, { type_id: 1, epoch: 1, is_buy_order: 1 });
-    await createIndex(app, app.db.orders, {order_id: 1}, {unique: true});
+    await createIndex(app, app.db.orders, { type_id: 1, region_id: 1 });
+    await createIndex(app, app.db.orders, { type_id: 1, region_id: 1, is_buy_order: 1 });
+    await createIndex(app, app.db.orders, { type_id: 1, region_id: 1, is_buy_order: 1, price: 1 });
 
     await createCollection(app, 'information');
     await createIndex(app, app.db.information, { type: 1, id: 1 }, { unique: true })
