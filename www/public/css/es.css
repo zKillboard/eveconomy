@@ -122,21 +122,31 @@ img {
 
 .orders {
     width: 100%;
+    display: flex;
+    flex-flow: column;
 }
 
-.order {
+.orders[of='buy'] {
+    flex-flow: column-reverse;
+}
+
+.ordersheader {
+    font-weight: bold;
+    border-bottom: solid 1px #eee;
+}
+
+.ordersheader, .order {
     width: 100%;
-    display: table-row;
+    display: flex;
 }
 
-.order span {
-    display: table-cell;
-    width: 15%;
+.ordersheader span, .order span {
+    width: 10vh;
     padding-left: 1em;
-    box-shadow: 0px 0.01em 0px #ccc;
 }
 
-.order span[field='location_name'] {
+span[field='location_name'] {
+    width: 100%;
     width: 100%;
 }
 

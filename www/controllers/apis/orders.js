@@ -26,7 +26,7 @@ async function get(req, res, app) {
 		let buyorders = search(app, id, true, -1, region_id);
 		let sellorders = search(app, id, false, 1, region_id);
 
-	   return {json: {id: id, buy: await buyorders, sell: await sellorders}, ttl: 3600}
+	   return {json: {id: id, buy: await buyorders, sell: await sellorders}}
 	} catch (e) {
 		console.log(e);
 	}
@@ -36,7 +36,7 @@ async function search(app, type_id, is_buy_order, sort, region_id = null) {
 	let filter = {type_id: type_id, is_buy_order: is_buy_order};
 	if (region_id != null) filter.region_id = region_id;
 
-	let res = await addLocations(app, toArray(await app.db.orders.find(filter).project({_id: 0}).sort({price: sort, issued: 1}).limit(100)));
+	let res = await addLocations(app, toArray(await app.db.orders.find(filter).project({_id: 0}).sort({price: sort, issued: -1}).limit(100)));
 	return res;
 }
 

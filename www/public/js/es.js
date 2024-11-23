@@ -207,12 +207,18 @@ const THEAD = `
 	</tr>
 </thead>`;
 const ORDERSHEAD = `
-	<div class="order header">
+	<div class="orderheader">
 		<span class='text-end'>Remaining</span>
 		<span class='text-end'>Price</span>
 		<span>Location</span>
 		<span class='text-end'>Range</span>
 	</div>`;
+	const OH = `
+	<span class='text-end'>Remaining</span>
+		<span class='text-end'>Price</span>
+		<span field='location_name'>Location</span>
+		<span class='text-end'>Range</span>
+	`
 const columns = {
 	'volume_remain': {field: 'volume_remain', format: 'int', classes: 'text-end'},
 	'price': {field: 'price', format: 'dec', classes: 'text-end'},
@@ -220,7 +226,7 @@ const columns = {
 	'range': {field: 'range', classes: 'text-end capitalize'},
 };
 function assembleColumns(id, orders, order_type) {
-	let table = createElement('table', undefined, {classes: 'table table-sm table-striped'});
+	/*let table = createElement('table', undefined, {classes: 'table table-sm table-striped'});
 	table.appendChild(createElement('thead', THEAD, undefined, undefined));
 	let tablebody = createElement('tbody');
 	table.appendChild(tablebody);
@@ -233,11 +239,18 @@ function assembleColumns(id, orders, order_type) {
 			tr.appendChild(createElement('td', val, columns[column]));
 		}
 		tablebody.append(tr);
-	}
+	}*/
 
-	let mdiv = createElement('div', ORDERSHEAD, {classes: 'orders', orders_type: order_type});
+	let header = createElement('div', OH, {classes: 'ordersheader'});
+
+	let oc = createElement('div', undefined, {classes: 'orderscontainer', of: order_type});
+	let mdiv = createElement('div', undefined, {classes: 'orders', of: order_type});
+
+	oc.appendChild(header);
+	oc.appendChild(mdiv);
+
 	for (let order of orders) {
-		let pdiv = createElement('div', undefined, {classes: 'order', id: order.order_id});
+		let pdiv = createElement('div', undefined, {classes: 'order', id: order.order_id, style: 'order: ' +  Math.floor(order.price * 100)});
 		for (let column of Object.keys(columns)) {
 			let val = order[column];
 			if (columns[column]['format']) val = getValueFormatted(val, columns[column]['format']);
@@ -248,7 +261,7 @@ function assembleColumns(id, orders, order_type) {
 
 	let div = document.getElementById(id);
 	div.innerHTML = '';
-	div.appendChild(mdiv);	
+	div.appendChild(oc);	
 }
 
 function createElement(element, content = '', attributes = {}) {
