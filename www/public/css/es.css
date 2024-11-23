@@ -128,3 +128,37 @@ img {
     content: "\1f784 " !important;
 }
 
+.orders {
+    width: 100%;
+}
+
+.order {
+    width: 100%;
+    display: table-row;
+}
+
+.order span {
+    display: table-cell;
+    width: 15%;
+    padding-left: 1em;
+    box-shadow: 0px 0.01em 0px #ccc;
+}
+
+.order span[field='location_name'] {
+    width: 100%;
+}
+
+.order.header {
+    font-weight: bold;
+    box-shadow: 0px 0px 5px #ccc;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+.order.header span {
+    margin-bottom: 1em;
+    border-bottom: 5px solid white;;
+}

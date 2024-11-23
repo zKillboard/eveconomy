@@ -203,6 +203,13 @@ const THEAD = `
 		<th class='text-end'>Range</th>
 	</tr>
 </thead>`;
+const ORDERSHEAD = `
+	<div class="order header">
+		<span class='text-end'>Remaining</span>
+		<span class='text-end'>Price</span>
+		<span>Location</span>
+		<span class='text-end'>Range</span>
+	</div>`;
 const columns = {
 	'volume_remain': {field: 'volume_remain', format: 'int', classes: 'text-end'},
 	'price': {field: 'price', format: 'dec', classes: 'text-end'},
@@ -225,9 +232,20 @@ function assembleColumns(id, orders, order_type) {
 		tablebody.append(tr);
 	}
 
+	let mdiv = createElement('div', ORDERSHEAD, {classes: 'orders', orders_type: order_type});
+	for (let order of orders) {
+		let pdiv = createElement('div', undefined, {classes: 'order', id: order.order_id});
+		for (let column of Object.keys(columns)) {
+			let val = order[column];
+			if (columns[column]['format']) val = getValueFormatted(val, columns[column]['format']);
+			pdiv.appendChild(createElement('span', val, columns[column]));
+		}
+		mdiv.append(pdiv);
+	}
+
 	let div = document.getElementById(id);
 	div.innerHTML = '';
-	div.appendChild(table);	
+	div.appendChild(mdiv);	
 }
 
 function createElement(element, content = '', attributes = {}) {
