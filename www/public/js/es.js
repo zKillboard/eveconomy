@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', exec);
 document.getElementById('searchbox').addEventListener('input', doSearch);
 document.getElementById('itemparent').addEventListener('click', stopCollapseToggleWhenSearching);
+document.getElementById('btnorders').addEventListener('click', showOrders);
+document.getElementById('btnsearch').addEventListener('click', showSearch);
 
 window.addEventListener("popstate", exec);
 
@@ -137,6 +139,7 @@ function pushLiItem(li) {
 	let url = '/item/' + li.getAttribute('item_id');
 	window.history.pushState({path: url},'', url);
 	setTimeout(exec, 1);
+	setTimeout(showOrders, 1);
 	return false;
 }
 
@@ -270,4 +273,14 @@ function getValueFormatted(value, format) {
 	let n = value.length > 10 ? BigInt(value) : Number(value);
 	let dec = formats[format];
 	return n.toLocaleString(undefined, {minimumFractionDigits: dec, maximumFractionDigits: dec});
+}
+
+function showOrders() {
+	document.getElementById('panelsearch').classList.add('xs-hideit');
+	document.getElementById('panelorders').classList.remove('xs-hideit');
+}
+
+function showSearch() {
+	document.getElementById('panelsearch').classList.remove('xs-hideit');
+	document.getElementById('panelorders').classList.add('xs-hideit');
 }
