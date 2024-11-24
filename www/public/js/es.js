@@ -156,10 +156,12 @@ function toggleChildren(e) {
 	return false;
 }
 
-let ws;
+let ws = null;
 function exec() {
-	ws = new ReconnectingWebSocket(websocket_url);
-	ws.onopen = wsOpen;
+	if (ws == null) {
+		ws = new ReconnectingWebSocket(websocket_url);
+		ws.onopen = wsOpen;
+	}
 
 	const path = window.location.pathname;
 	const split = path.split('/');
@@ -263,7 +265,7 @@ let current_item_id = null;
 function loadItem(item_id) {
 	let epoch = Math.floor(Date.now() / 1000);
 	epoch = epoch - (epoch % 900);
-	doGetJSON(`/api/orders?epoch=${epoch}&item=${item_id}`, populateOrders);
+	doGetJSON(`/api/orders?item=${item_id}`, populateOrders);
 	if (current_item_id != item_id) {
 		doGetJSON(`/api/info?id=${item_id}&type=item_id`, populateInfo);
 		if (current_item_id != null) wsUnsub(`item:${current_item_id}`);

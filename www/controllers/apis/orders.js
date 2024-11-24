@@ -8,8 +8,10 @@ module.exports = {
 
 async function get(req, res, app) {
 	try {
-		let epoch = app.now();
-		epoch = epoch - (epoch % 900);
+		const id = parseInt(req.query.item);
+
+		let item = await app.db.information.findOne({type: 'item_id', id: id});
+		let epoch = item ? item.last_price_update : 0;
 
 		let valid = {
        	required: ['item', 'epoch'],
@@ -20,7 +22,6 @@ async function get(req, res, app) {
     	valid = valid = req.verify_query_params(req, valid);
     	if (valid !== true) return {redirect: valid};
 		
-		const id = parseInt(req.query.item);
 		const region_id = req.query.region ? parseInt(req.query.region) : null;
 
 		let buyorders = search(app, id, true, -1, region_id);

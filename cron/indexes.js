@@ -40,11 +40,11 @@ async function applyIndexes(app) {
     await createIndex(app, app.db.orders, { type_id: 1, region_id: 1, is_buy_order: 1, price: 1 });
 
     await createCollection(app, 'information');
-    await createIndex(app, app.db.information, { type: 1, id: 1 }, { unique: true })
-    await createIndex(app, app.db.information, {type: 1})
-    await createIndex(app, app.db.information, {id: 1})
-    await createIndex(app, app.db.information, {type: 1, last_updated: 1})
-    await createIndex(app, app.db.information, {type: 1, waiting: 1})
+    await createIndex(app, app.db.information, { type: 1, id: 1 }, { unique: true });
+    await createIndex(app, app.db.information, {type: 1});
+    await createIndex(app, app.db.information, {id: 1});
+    await createIndex(app, app.db.information, {type: 1, waiting: 1});
+    await createIndex(app, app.db.information, {type: 1, last_updated: 1});
     await createIndex(app, app.db.information, {type: 1, last_price_update: 1}, {sparse: true});
 }
 

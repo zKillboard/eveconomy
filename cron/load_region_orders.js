@@ -62,12 +62,21 @@ async function loadRegion(app, regionID) {
 				if (app.bailout) return;
 				// get the orders first so we can publish their change
 				let removing = await app.db.orders.find({region_id: regionID, order_id: {$in: remaining}});
+				let types_touched = new Set();
 				while (await removing.hasNext()) {
 					let order = await removing.next();
-					await app.redis.publish(`item:${order.order_id}`, JSON.stringify({action: `remove`, order_id: order.order_id}));
+					types_touched.add(order.type_id);
+					let msg = JSON.stringify({action: `remove`, order_id: order.order_id});
+					await app.redis.publish(`item:${order.order_id}`, msg);
+					await app.redis.publish(`item:all`, msg);
 				}
 				await app.db.orders.deleteMany({region_id: regionID, order_id: {$in: remaining}});
 				updates.removed = remaining.length;
+
+				let now = await app.now();
+				for (let type_id of types_touched) {
+					await app.db.information.updateOne({type: 'item_id', 'id': type_id, last_price_update: {$lt: now}}, {$set: {last_price_update: now}});
+				}
 			}
 			console.log('Region', regionID, ' Inserts', updates.inserts, ', Modified:', updates.updates, ', Removed:', updates.removed, ', Same:', updates.untouched);
 		}
@@ -91,6 +100,7 @@ async function loadRegionPage(app, regionID, page, order_ids, updates) {
 
 		let bulk = [];
 		let publish = [];
+		let types_touched = new Set();
 
 		if (res.statusCode == 200) {
 			let orders = JSON.parse(res.body);		
@@ -117,11 +127,17 @@ async function loadRegionPage(app, regionID, page, order_ids, updates) {
 					let location = await app.db.information.findOne({type: 'location_id', id: order.location_id});
 					order.location_name = location.name;
 
-					publish.push({channel: 'item:' + order.type_id, message: JSON.stringify({action: 'insert', order: order})});
+					let msg = JSON.stringify({action: 'insert', order: order});
+					publish.push({channel: 'item:' + order.type_id, message: msg});
+					publish.push({channel: 'item:all', message: msg});
+					types_touched.add(order.type_id);
 				} else {
 					delete order_ids[order.order_id];
 					if (cur_order.price != order.price || cur_order.volume_remain != order.volume_remain) {
-						publish.push({channel: 'item:' + order.type_id, message: JSON.stringify({action: 'modify', order: order})});
+						let msg = JSON.stringify({action: 'insert', order: order});
+						publish.push({channel: 'item:' + order.type_id, message: msg});
+						publish.push({channel: 'item:all', message: msg});
+						types_touched.add(order.type_id);
 
 						let set = {};
 
@@ -151,6 +167,10 @@ async function loadRegionPage(app, regionID, page, order_ids, updates) {
 					}
 				} finally {
 					await app.redis.del('evec:lock:orderinsert');
+				}
+				let now = await app.now();
+				for (let type_id of types_touched) {
+					await app.db.information.updateOne({type: 'item_id', 'id': type_id, last_price_update: {$lt: now}}, {$set: {last_price_update: now}});
 				}
 			}
 		} else if (res.statusCode >= 500 && res.statusCode <= 599) {
