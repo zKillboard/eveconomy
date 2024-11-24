@@ -60,6 +60,12 @@ async function loadRegion(app, regionID) {
 			let remaining = Object.values(order_ids);
 			if (remaining.length > 0) {
 				if (app.bailout) return;
+				// get the orders first so we can publish their change
+				let removing = await app.db.orders.find({region_id: regionID, order_id: {$in: remaining}});
+				while (await removing.hasNext()) {
+					let order = await removing.next();
+					await app.redis.publish(`item:${order.order_id}`, JSON.stringify({action: `remove`, order_id: order.order_id}));
+				}
 				await app.db.orders.deleteMany({region_id: regionID, order_id: {$in: remaining}});
 				updates.removed = remaining.length;
 			}
@@ -84,6 +90,7 @@ async function loadRegionPage(app, regionID, page, order_ids, updates) {
 		let res = await app.util.assist.doGet(app, url);
 
 		let bulk = [];
+		let publish = [];
 
 		if (res.statusCode == 200) {
 			let orders = JSON.parse(res.body);		
@@ -105,11 +112,17 @@ async function loadRegionPage(app, regionID, page, order_ids, updates) {
 							await app.util.entity.add(app, 'solar_system_id', order.system_id, true);
 							await app.util.entity.add(app, 'location_id', order.location_id);
 							await app.db.information.updateMany({type: 'location_id', id: order.location_id}, {$set: {solar_system_id: order.system_id}});
-							locations_added[order.location_id] = true; 
+							locations_added[order.location_id] = true;
 					}
+					let location = await app.db.information.findOne({type: 'location_id', id: order.location_id});
+					order.location_name = location.name;
+
+					publish.push({channel: 'item:' + order.type_id, message: JSON.stringify({action: 'insert', order: order})});
 				} else {
 					delete order_ids[order.order_id];
 					if (cur_order.price != order.price || cur_order.volume_remain != order.volume_remain) {
+						publish.push({channel: 'item:' + order.type_id, message: JSON.stringify({action: 'modify', order: order})});
+
 						let set = {};
 
 						if (cur_order.price != order.price) set.price = order.price;
@@ -124,6 +137,7 @@ async function loadRegionPage(app, regionID, page, order_ids, updates) {
 							}
 						});
 						updates.updates++;
+						
 					} else updates.untouched++;
 				}
 			}
@@ -131,6 +145,10 @@ async function loadRegionPage(app, regionID, page, order_ids, updates) {
 				try {
 					while (await app.redis.set('evec:lock:orderinsert', 'true', 'NX', 'EX', 60) === false) { console.log('awaiting'); await app.sleep(10); }
 					if (bulk.length > 0) await app.db.orders.bulkWrite(bulk);
+					while (publish.length) {
+						let p = publish.pop();
+						await app.redis.publish(p.channel, p.message);
+					}
 				} finally {
 					await app.redis.del('evec:lock:orderinsert');
 				}

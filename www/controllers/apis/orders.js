@@ -3,7 +3,7 @@
 module.exports = {
    paths: ['/api/orders'],
    get: get,
-   priority: 1
+   priority: 1 
 }
 
 async function get(req, res, app) {
@@ -36,7 +36,7 @@ async function search(app, type_id, is_buy_order, sort, region_id = null) {
 	let filter = {type_id: type_id, is_buy_order: is_buy_order};
 	if (region_id != null) filter.region_id = region_id;
 
-	let res = await addLocations(app, toArray(await app.db.orders.find(filter).project({_id: 0}).sort({price: sort, issued: -1}).limit(100)));
+	let res = await addLocations(app, toArray(await app.db.orders.find(filter).project({_id: 0}).sort({price: sort, issued: -1}).limit(250)));
 	return res;
 }
 

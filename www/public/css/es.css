@@ -141,12 +141,11 @@ img {
 }
 
 .ordersheader span, .order span {
-    width: 10vh;
+    min-width: 10em;
     padding-left: 1em;
 }
 
 span[field='location_name'] {
-    width: 100%;
     width: 100%;
 }
 
@@ -171,3 +170,99 @@ span[field='location_name'] {
         transition: display 1s linear;
     }
 }
+
+.order.insert {
+    color: orange;
+    transition: color 1s linear;
+}
+
+.order.modify {
+    color: purple;
+    transition: color 1s linear;
+}
+
+.order.remove {
+    color: white;
+    transition: color 1s linear;
+}
+
+.flash {
+    color: white;
+}
+
+span[region_id]:after {
+    display: none;
+    font-size: 75%; 
+    margin-left: 1em; 
+    color: #777;
+}
+
+.showRegions span[region_id]:after {
+    display: inline;   
+}
+
+span[region_id="10000001"]:after { content: 'Derelik'; }
+span[region_id="10000002"]:after { content: 'The Forge'; }
+span[region_id="10000003"]:after { content: 'Vale of the Silent'; }
+span[region_id="10000005"]:after { content: 'Detorid'; }
+span[region_id="10000006"]:after { content: 'Wicked Creek'; }
+span[region_id="10000007"]:after { content: 'Cache'; }
+span[region_id="10000008"]:after { content: 'Scalding Pass'; }
+span[region_id="10000009"]:after { content: 'Insmother'; }
+span[region_id="10000010"]:after { content: 'Tribute'; }
+span[region_id="10000011"]:after { content: 'Great Wildlands'; }
+span[region_id="10000012"]:after { content: 'Curse'; }
+span[region_id="10000013"]:after { content: 'Malpais'; }
+span[region_id="10000014"]:after { content: 'Catch'; }
+span[region_id="10000015"]:after { content: 'Venal'; }
+span[region_id="10000016"]:after { content: 'Lonetrek'; }
+span[region_id="10000017"]:after { content: 'J7HZ-F'; }
+span[region_id="10000018"]:after { content: 'The Spire'; }
+span[region_id="10000020"]:after { content: 'Tash-Murkon'; }
+span[region_id="10000022"]:after { content: 'Stain'; }
+span[region_id="10000023"]:after { content: 'Pure Blind'; }
+span[region_id="10000025"]:after { content: 'Immensea'; }
+span[region_id="10000027"]:after { content: 'Etherium Reach'; }
+span[region_id="10000028"]:after { content: 'Molden Heath'; }
+span[region_id="10000029"]:after { content: 'Geminate'; }
+span[region_id="10000030"]:after { content: 'Heimatar'; }
+span[region_id="10000031"]:after { content: 'Impass'; }
+span[region_id="10000032"]:after { content: 'Sinq Laison'; }
+span[region_id="10000033"]:after { content: 'The Citadel'; }
+span[region_id="10000034"]:after { content: 'The Kalevala Expanse'; }
+span[region_id="10000035"]:after { content: 'Deklein'; }
+span[region_id="10000036"]:after { content: 'Devoid'; }
+span[region_id="10000037"]:after { content: 'Everyshore'; }
+span[region_id="10000038"]:after { content: 'The Bleak Lands'; }
+span[region_id="10000039"]:after { content: 'Esoteria'; }
+span[region_id="10000040"]:after { content: 'Oasa'; }
+span[region_id="10000041"]:after { content: 'Syndicate'; }
+span[region_id="10000042"]:after { content: 'Metropolis'; }
+span[region_id="10000043"]:after { content: 'Domain'; }
+span[region_id="10000044"]:after { content: 'Solitude'; }
+span[region_id="10000045"]:after { content: 'Tenal'; }
+span[region_id="10000047"]:after { content: 'Providence'; }
+span[region_id="10000048"]:after { content: 'Placid'; }
+span[region_id="10000049"]:after { content: 'Khanid'; }
+span[region_id="10000050"]:after { content: 'Querious'; }
+span[region_id="10000051"]:after { content: 'Cloud Ring'; }
+span[region_id="10000052"]:after { content: 'Kador'; }
+span[region_id="10000053"]:after { content: 'Cobalt Edge'; }
+span[region_id="10000054"]:after { content: 'Aridia'; }
+span[region_id="10000055"]:after { content: 'Branch'; }
+span[region_id="10000057"]:after { content: 'Outer Ring'; }
+span[region_id="10000058"]:after { content: 'Fountain'; }
+span[region_id="10000059"]:after { content: 'Paragon Soul'; }
+span[region_id="10000060"]:after { content: 'Delve'; }
+span[region_id="10000061"]:after { content: 'Tenerifis'; }
+span[region_id="10000062"]:after { content: 'Omist'; }
+span[region_id="10000063"]:after { content: 'Period Basis'; }
+span[region_id="10000064"]:after { content: 'Essence'; }
+span[region_id="10000065"]:after { content: 'Kor-Azor'; }
+span[region_id="10000066"]:after { content: 'Perrigen Falls'; }
+span[region_id="10000067"]:after { content: 'Genesis'; }
+span[region_id="10000068"]:after { content: 'Verge Vendor'; }
+span[region_id="10000069"]:after { content: 'Black Rise'; }
+span[region_id="10000070"]:after { content: 'Pochven'; }
+span[region_id="10001000"]:after { content: 'Yasna Zakh'; }
+span[region_id="11000031"]:after { content: 'G-R00031'; }

@@ -156,7 +156,11 @@ function toggleChildren(e) {
 	return false;
 }
 
+let ws;
 function exec() {
+	ws = new ReconnectingWebSocket(websocket_url);
+	ws.onopen = wsOpen;
+
 	const path = window.location.pathname;
 	const split = path.split('/');
 	
@@ -169,6 +173,92 @@ function exec() {
 	}
 }
 
+function wsOpen() {
+	console.log('websocket connected');
+	ws.onmessage = wsMessage;
+}
+
+function wsMessage(event) {
+	try {
+		let data = JSON.parse(event.data);
+
+		if (data.action == 'insert') {
+			let order_parent;
+			if (data.order.is_buy_order) {
+				order_parent = document.querySelector('.orders[of="buy"]');
+			} else {
+				order_parent = document.querySelector('.orders[of="sell"]');
+			}
+
+			let odiv = createOrder(data.order);
+			odiv.classList.add('insert')
+			order_parent.appendChild(odiv);
+			scheduleClass(odiv, 'insert');
+			console.log('inserted', data.order.order_id);
+		} else if (data.action == 'modify') {
+			let order_id = data.order.order_id;
+			let order = document.querySelector(`.order[id="${order_id}"]`);
+			if (order) {
+				let volume_remain = getValueFormatted(data.order.volume_remain, 'int');
+				let span_vr = document.querySelector(`.order[id="${order_id}"] span[field="volume_remain"]`);
+				if (volume_remain != span_vr.innerHTML) {
+					scheduleClass(span_vr, 200);
+					span_vr.innerHTML = volume_remain;
+				}
+				let span_price = document.querySelector(`.order[id="${order_id}"] span[field="price"]`);
+				let price = getValueFormatted(data.order.price, 'dec');
+				if (price != span_price.innerHTML) {
+					scheduleClass(span_price, 200);
+					span_price.innerHTML = price;
+					order.setAttribute('style', "order: " + Math.floor(data.order.price * 100));
+				}
+				
+				console.log('modified', data.order.order_id);
+				scheduleClass(order, 'modify');
+			}
+		} else if (data.action == 'remove') {
+			let order_id = data.order.order_id;
+			let order = document.querySelector(`.order[id="${order_id}"]`);
+			if (order) {
+				scheduleClass(order, 'remove', 2000);
+				scheduleRemoval(order);
+				console.log('removed', order_id);
+			}
+		} else if (data.action == 'refresh') window.location = window.location;
+		else {console.error('unknown action', data)};
+	} catch (e) {
+		console.log(e);
+	}
+}
+
+function scheduleClass(element, className, timeout = 4000) {
+	element.classList.add(className);
+	setTimeout(() => { element.classList.remove(className); }, timeout + 1);
+	return element;
+}
+
+function scheduleRemoval(element, timeout = 1000) {
+	setTimeout(() => { element.remove(); }, timeout);
+}
+
+function wsSub(channel) {
+    try {
+        ws.send(JSON.stringify({'action':'sub', 'channel': channel}));
+        console.log("subscribing to " + channel);
+    } catch (e) {
+        setTimeout("wsSub('" + channel + "');", 10);
+    }
+}
+
+function wsUnsub(channel) {
+    try {
+        ws.send(JSON.stringify({'action':'unsub', 'channel': channel}));
+        console.log("unsubscribing from " + channel);
+    } catch (e) {
+        setTimeout("wsUnsub('" + channel + "');", 10);
+    }
+}
+
 let current_item_id = null;
 function loadItem(item_id) {
 	let epoch = Math.floor(Date.now() / 1000);
@@ -176,7 +266,8 @@ function loadItem(item_id) {
 	doGetJSON(`/api/orders?epoch=${epoch}&item=${item_id}`, populateOrders);
 	if (current_item_id != item_id) {
 		doGetJSON(`/api/info?id=${item_id}&type=item_id`, populateInfo);
-		current_item_id = item_id;
+		if (current_item_id != null) wsUnsub(`item:${current_item_id}`);
+		current_item_id = item_id;	
 	}
 }
 
@@ -187,9 +278,7 @@ function populateOrders(data) {
 	assembleColumns('buyorders', data.buy, "buy");
 	assembleColumns('sellorders', data.sell, "sell");
 
-	let now = Date.now();
-	let then = now - (now % 900) + 900;
-	setTimeout(exec, (then - now) * 1000);
+	wsSub(`item:${current_item_id}`)
 }
 
 function populateInfo(data) {
@@ -197,28 +286,11 @@ function populateInfo(data) {
 	document.title = data.name + ' - EVEconomy';
 }
 
-const THEAD = `
-<thead>
-	<tr>
-		<th class='text-end'>Remaining</th>
-		<th class='text-end'>Price</th>
-		<th>Location</th>
-		<th class='text-end'>Range</th>
-	</tr>
-</thead>`;
 const ORDERSHEAD = `
-	<div class="orderheader">
-		<span class='text-end'>Remaining</span>
-		<span class='text-end'>Price</span>
-		<span>Location</span>
-		<span class='text-end'>Range</span>
-	</div>`;
-	const OH = `
 	<span class='text-end'>Remaining</span>
 		<span class='text-end'>Price</span>
 		<span field='location_name'>Location</span>
-		<span class='text-end'>Range</span>
-	`
+		<span class='text-end'>Range</span>`;
 const columns = {
 	'volume_remain': {field: 'volume_remain', format: 'int', classes: 'text-end'},
 	'price': {field: 'price', format: 'dec', classes: 'text-end'},
@@ -226,22 +298,7 @@ const columns = {
 	'range': {field: 'range', classes: 'text-end capitalize'},
 };
 function assembleColumns(id, orders, order_type) {
-	/*let table = createElement('table', undefined, {classes: 'table table-sm table-striped'});
-	table.appendChild(createElement('thead', THEAD, undefined, undefined));
-	let tablebody = createElement('tbody');
-	table.appendChild(tablebody);
-
-	for (let order of orders) {
-		let tr = createElement('tr', undefined, {classes: 'order', id: order.order_id, order_type: order_type});
-		for (let column of Object.keys(columns)) {
-			let val = order[column];
-			if (columns[column]['format']) val = getValueFormatted(val, columns[column]['format']);
-			tr.appendChild(createElement('td', val, columns[column]));
-		}
-		tablebody.append(tr);
-	}*/
-
-	let header = createElement('div', OH, {classes: 'ordersheader'});
+	let header = createElement('div', ORDERSHEAD, {classes: 'ordersheader'});
 
 	let oc = createElement('div', undefined, {classes: 'orderscontainer', of: order_type});
 	let mdiv = createElement('div', undefined, {classes: 'orders', of: order_type});
@@ -249,19 +306,26 @@ function assembleColumns(id, orders, order_type) {
 	oc.appendChild(header);
 	oc.appendChild(mdiv);
 
-	for (let order of orders) {
-		let pdiv = createElement('div', undefined, {classes: 'order', id: order.order_id, style: 'order: ' +  Math.floor(order.price * 100)});
-		for (let column of Object.keys(columns)) {
-			let val = order[column];
-			if (columns[column]['format']) val = getValueFormatted(val, columns[column]['format']);
-			pdiv.appendChild(createElement('span', val, columns[column]));
-		}
-		mdiv.append(pdiv);
+	for (let order of orders) {		
+		mdiv.append(createOrder(order));
 	}
 
 	let div = document.getElementById(id);
 	div.innerHTML = '';
 	div.appendChild(oc);	
+}
+
+function createOrder(order) {
+	let pdiv = createElement('div', undefined, {classes: 'order', id: order.order_id, style: 'order: ' +  Math.floor(order.price * 100)});
+	for (let column of Object.keys(columns)) {
+		let val = order[column];
+		if (columns[column]['format']) val = getValueFormatted(val, columns[column]['format']);		
+		
+		let span = createElement('span', val, columns[column]);
+		if (column == 'location_name') span.setAttribute('region_id', order.region_id);
+		pdiv.appendChild(span);
+	}
+	return pdiv;
 }
 
 function createElement(element, content = '', attributes = {}) {
@@ -283,7 +347,7 @@ const formats = {
 	dec: 2
 }
 function getValueFormatted(value, format) {
-	let n = value.length > 10 ? BigInt(value) : Number(value);
+	let n = ('' + value).length > 10 ? BigInt(value) : Number(value);
 	let dec = formats[format];
 	return n.toLocaleString(undefined, {minimumFractionDigits: dec, maximumFractionDigits: dec});
 }
