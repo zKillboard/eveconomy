@@ -22,7 +22,7 @@ async function get(req, res, app) {
     	valid = valid = req.verify_query_params(req, valid);
     	if (valid !== true) return {redirect: valid};
 		
-		const region_id = req.query.region ? parseInt(req.query.region) : null;
+		let region_id = req.query.region ? parseInt(req.query.region) : null;
 
 		let buyorders = search(app, id, true, -1, region_id);
 		let sellorders = search(app, id, false, 1, region_id);
@@ -37,7 +37,7 @@ async function search(app, type_id, is_buy_order, sort, region_id = null) {
 	let filter = {type_id: type_id, is_buy_order: is_buy_order};
 	if (region_id != null) filter.region_id = region_id;
 
-	let res = await addLocations(app, toArray(await app.db.orders.find(filter).project({_id: 0}).sort({price: sort, issued: -1}).limit(250)));
+	let res = await addLocations(app, toArray(await app.db.orders.find(filter).project({_id: 0})));
 	return res;
 }
 

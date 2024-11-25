@@ -67,8 +67,10 @@ async function loadRegion(app, regionID) {
 					let order = await removing.next();
 					types_touched.add(order.type_id);
 					let msg = JSON.stringify({action: `remove`, order_id: order.order_id});
-					await app.redis.publish(`item:${order.order_id}`, msg);
-					await app.redis.publish(`item:all`, msg);
+					await app.redis.publish(`market:item:${order.order_id}`, msg);
+					await app.redis.publish(`market:region:${order.region_id}`, msg);
+					await app.redis.publish(`market:item:${order.order_id}:region:${order.region_id}`, msg);
+					await app.redis.publish(`market:all`, msg);
 				}
 				await app.db.orders.deleteMany({region_id: regionID, order_id: {$in: remaining}});
 				updates.removed = remaining.length;
@@ -120,23 +122,27 @@ async function loadRegionPage(app, regionID, page, order_ids, updates) {
 
 					if (locations_added[order.location_id] != true) {
 							await app.util.entity.add(app, 'solar_system_id', order.system_id, true);
-							await app.util.entity.add(app, 'location_id', order.location_id);
+							await app.util.entity.add(app, 'location_id', order.location_id, true);
 							await app.db.information.updateMany({type: 'location_id', id: order.location_id}, {$set: {solar_system_id: order.system_id}});
 							locations_added[order.location_id] = true;
 					}
 					let location = await app.db.information.findOne({type: 'location_id', id: order.location_id});
-					order.location_name = location.name;
+					order.location_name = location && location.name ? location.name : '???';
 
 					let msg = JSON.stringify({action: 'insert', order: order});
-					publish.push({channel: 'item:' + order.type_id, message: msg});
-					publish.push({channel: 'item:all', message: msg});
+					publish.push({channel: 'market:item:' + order.type_id, message: msg});
+					publish.push({channel: 'market:region:' + order.region_id, message: msg});
+					publish.push({channel: 'market:item:' + order.type_id + ':region:' + order.region_id, message: msg});
+					publish.push({channel: 'market:all', message: msg});
 					types_touched.add(order.type_id);
 				} else {
-					delete order_ids[order.order_id];
+					if (order.volume_remain > 0) delete order_ids[order.order_id];
 					if (cur_order.price != order.price || cur_order.volume_remain != order.volume_remain) {
-						let msg = JSON.stringify({action: 'insert', order: order});
-						publish.push({channel: 'item:' + order.type_id, message: msg});
-						publish.push({channel: 'item:all', message: msg});
+						let msg = JSON.stringify({action: 'modify', order: order});
+						publish.push({channel: 'market:item:' + order.type_id, message: msg});
+						publish.push({channel: 'market:region:' + order.region_id, message: msg});
+						publish.push({channel: 'market:' + order.type_id + ':region:' + order.region_id, message: msg});
+
 						types_touched.add(order.type_id);
 
 						let set = {};

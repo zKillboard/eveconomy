@@ -149,7 +149,7 @@ span[field='location_name'] {
     width: 100%;
 }
 
-.order.header {
+.ordersheader {
     font-weight: bold;
     box-shadow: 0px 0px 5px #ccc;
     position: sticky;
@@ -182,7 +182,7 @@ span[field='location_name'] {
 }
 
 .order.remove {
-    color: white;
+    color: cyan;
     transition: color 1s linear;
 }
 
