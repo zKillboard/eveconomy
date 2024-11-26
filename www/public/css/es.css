@@ -171,19 +171,24 @@ span[field='location_name'] {
     }
 }
 
-.order.insert {
-    color: orange;
+.insert {
+    color: #a66000;
     transition: color 1s linear;
 }
 
-.order.modify {
+.modify {
     color: purple;
     transition: color 1s linear;
 }
 
-.order.remove {
+.remove {
     color: cyan;
     transition: color 1s linear;
+}
+
+.order.usersorder {
+    color: black;
+    background-color: #edff08;
 }
 
 .flash {
@@ -191,7 +196,6 @@ span[field='location_name'] {
 }
 
 span[region_id]:after {
-    display: none;
     font-size: 75%; 
     margin-left: 1em; 
     color: #777;

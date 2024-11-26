@@ -1,7 +1,9 @@
+let server_started = null;
+
 const default_item_id = 44992;
 const default_region_id = null;
-const modification_indication_delay_insert = 60;
-const modification_indication_delay_modify = 60;
+const modification_indication_delay_insert = 300;
+const modification_indication_delay_modify = 300;
 const modification_indication_delay_remove= 1;
 
 document.addEventListener('DOMContentLoaded', exec);
@@ -164,10 +166,7 @@ function toggleChildren(e) {
 
 let ws = null;
 function exec() {
-	if (ws == null) {
-		ws = new ReconnectingWebSocket(websocket_url);
-		ws.onopen = wsOpen;
-	}
+	wsConnect();
 
 	const path = window.location.pathname;
 	const split = path.split('/');
@@ -181,14 +180,10 @@ function exec() {
 	}
 }
 
-function wsOpen() {
-	console.log('websocket connected');
-	ws.onmessage = wsMessage;
-}
-
 function wsMessage(event) {
 	try {
 		let data = JSON.parse(event.data);
+		let do_sort = false;
 
 		if (data.action == 'insert') {
 			let order_parent;
@@ -199,43 +194,53 @@ function wsMessage(event) {
 			}
 
 			let odiv = createOrder(data.order);
-			odiv.classList.add('insert')
+			odiv.classList.add('insert');
 			order_parent.appendChild(odiv);
 			scheduleClass(odiv, 'insert', modification_indication_delay_insert);
 			console.log('inserted', data.order.order_id);
+			do_sort = true;
 		} else if (data.action == 'modify') {
 			let order_id = data.order.order_id;
-			let order = document.querySelector(`.order[id="${order_id}"]`);
+			let order = document.querySelector(`.order[oid="${order_id}"]`);
 			if (order) {
 				let volume_remain = getValueFormatted(data.order.volume_remain, 'int');
-				let span_vr = document.querySelector(`.order[id="${order_id}"] span[field="volume_remain"]`);
+				let span_vr = document.querySelector(`.order[oid="${order_id}"] span[field="volume_remain"]`);
 				if (volume_remain != span_vr.innerHTML) {
-					scheduleClass(span_vr, 200);
+					scheduleClass(span_vr, 'flash', .5);
 					span_vr.innerHTML = volume_remain;
 				}
-				let span_price = document.querySelector(`.order[id="${order_id}"] span[field="price"]`);
+				let span_price = document.querySelector(`.order[oid="${order_id}"] span[field="price"]`);
 				let price = getValueFormatted(data.order.price, 'dec');
 				if (price != span_price.innerHTML) {
-					scheduleClass(span_price, 200);
-					span_price.innerHTML = price;
+					scheduleClass(span_price, 'flash', .5);
+					scheduleClass(span_price, 'modify', modification_indication_delay_modify);
 					order.setAttribute('price', Math.floor(data.order.price * 100));
+					span_price.innerHTML = price;
+					do_sort = true;
 				}
-				scheduleClass(order, 'modify', modification_indication_delay_modify);
 				console.log('modified', data.order.order_id);
 			}
 		} else if (data.action == 'remove') {
-			let order_id = data.order.order_id;
-			let order = document.querySelector(`.order[id="${order_id}"]`);
+			console.log(data);
+			let order_id = data.order_id;
+			let order = document.querySelector(`.order[oid="${order_id}"]`);
 			if (order) {
 				scheduleClass(order, 'remove', modification_indication_delay_remove);
 				scheduleRemoval(order, modification_indication_delay_remove);
 				console.log('removed', order_id);
 			}
 		} else if (data.action == 'refresh') window.location = window.location;
+		else if (data.action == 'started') {
+			// See if the server has restarted recently
+			if (server_started == null) server_started = data.started;
+			else if (server_started != data.server_started) window.location = window.location;
+		}
 		else {console.error('unknown action', data)};
 
-		sort(document.querySelector('.orders[of="sell"]'));
-		sort(document.querySelector('.orders[of="buy"]'));
+		if (do_sort) {
+			sort(document.querySelector('.orders[of="sell"]'));
+			sort(document.querySelector('.orders[of="buy"]'));
+		}
 	} catch (e) {
 		console.log(e);
 	}
@@ -251,8 +256,21 @@ function scheduleRemoval(element, timeout_seconds = 1) {
 	setTimeout(() => { element.remove(); }, (timeout_seconds * 1000) + 1);
 }
 
+
+async function wsConnect() {
+	if (ws == null) {
+		ws = new ReconnectingWebSocket(websocket_url);
+		ws.onopen = wsOpen;
+	}	
+}
+
+async function wsOpen() {
+	console.log('websocket connected');
+	ws.onmessage = wsMessage;
+}
+
 let channel_subs = new Set();
-function wsSub(channel, attempts = 1) {
+async function wsSub(channel, attempts = 1) {
     try {
     	if (attempts > 100) return;
 
@@ -266,7 +284,7 @@ function wsSub(channel, attempts = 1) {
     }
 }
 
-function wsUnsub(channel, attempts = 1) {
+async function wsUnsub(channel, attempts = 1) {
     try {
     	if (attempts > 100) return;
 
@@ -283,7 +301,7 @@ function wsUnsub(channel, attempts = 1) {
 
 let current_item_id = null;
 let current_region_id = null;
-function loadItem(item_id, region_id = null) {
+async function loadItem(item_id, region_id = null) {
 	item_id = parseInt(item_id);
 	region_id = region_id ? parseInt(region_id) : null;
 
@@ -350,7 +368,7 @@ function assembleColumns(id, orders, order_type) {
 }
 
 function createOrder(order) {
-	let pdiv = createElement('div', undefined, {classes: 'order', id: order.order_id, price: Math.floor(order.price * 100)});
+	let pdiv = createElement('div', undefined, {classes: 'order', oid: order.order_id, price: Math.floor(order.price * 100)});
 	for (let column of Object.keys(columns)) {
 		let val = order[column];
 		if (columns[column]['format']) val = getValueFormatted(val, columns[column]['format']);		

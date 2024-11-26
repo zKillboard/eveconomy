@@ -30,6 +30,7 @@ function initialize() {
 	redis.psubscribe("*");
 
 	app.websocket.on('connect', (connection) => {
+		connection.send(JSON.stringify({action: 'started', started: app.server_started}));
 		connection.on('message', function(message) {
 			if (message.type === 'utf8') {
 				try {

@@ -25,7 +25,7 @@ async function f(app) {
 			if (regionID >= 12000000) continue;
 			if (app.bailout) return;
 			loadRegion(app, regionID);
-			await app.sleep(5000);
+			await app.sleep(1000);
 		}
 	}
 }
@@ -33,8 +33,15 @@ async function f(app) {
 let region_calls = 0;
 async function loadRegion(app, regionID) {
 	while (region_calls > 5) await app.sleep(10);
+	const redisKey = `evec:region_expires:${regionID}`;
+	let expires = 901;
+	let start = app.now();
+
 	try {
 		region_calls++;
+
+		if (await app.redis.get(redisKey) != null) return;
+
 		let order_ids = {};
 		let cursor = await app.db.orders.find({region_id: regionID}).project({_id: 0, order_id: 1});
 		while (await cursor.hasNext()) {
@@ -49,6 +56,8 @@ async function loadRegion(app, regionID) {
 			console.log(regionID, "ERROR", res.statusCode); 
 		} else if (res != null) {
 			let pages = res.headers['x-pages'] | 1;
+
+			if (res?.headers?.expires) expires = expiresToUnixtime(res.headers.expires) - app.now() + 1;
 			
 			let promises = [];
 			for (let i = 2; i <= pages; i++) {
@@ -60,33 +69,39 @@ async function loadRegion(app, regionID) {
 			let remaining = Object.values(order_ids);
 			if (remaining.length > 0) {
 				if (app.bailout) return;
+
 				// get the orders first so we can publish their change
 				let removing = await app.db.orders.find({region_id: regionID, order_id: {$in: remaining}});
 				let types_touched = new Set();
+				
 				while (await removing.hasNext()) {
 					let order = await removing.next();
 					types_touched.add(order.type_id);
 					let msg = JSON.stringify({action: `remove`, order_id: order.order_id});
-					await app.redis.publish(`market:item:${order.order_id}`, msg);
+
+					await app.redis.publish(`market:item:${order.type_id}`, msg);
 					await app.redis.publish(`market:region:${order.region_id}`, msg);
-					await app.redis.publish(`market:item:${order.order_id}:region:${order.region_id}`, msg);
+					await app.redis.publish(`market:item:${order.type_id}:region:${order.region_id}`, msg);
 					await app.redis.publish(`market:all`, msg);
 				}
 				await app.db.orders.deleteMany({region_id: regionID, order_id: {$in: remaining}});
 				updates.removed = remaining.length;
 
-				let now = await app.now();
+				let now = app.now();
 				for (let type_id of types_touched) {
 					await app.db.information.updateOne({type: 'item_id', 'id': type_id, last_price_update: {$lt: now}}, {$set: {last_price_update: now}});
 				}
 			}
-			console.log('Region', regionID, ' Inserts', updates.inserts, ', Modified:', updates.updates, ', Removed:', updates.removed, ', Same:', updates.untouched);
+			let done = app.now();
+			console.log('Region', regionID, ' Inserts', updates.inserts, ', Modified:', updates.updates, ', Removed:', updates.removed, ', Same:', updates.untouched, 'expires', expires, 'done', (done - start));
 		}
 	} catch (e) {
 		console.error(e);
 	} finally {
 		region_calls--;
-		setTimeout(() => loadRegion(app, regionID), 900000);
+
+		await app.redis.set(redisKey,  expires, 'NX', 'EX', Math.max(15, expires));
+		setTimeout(() => loadRegion(app, regionID), 15000);
 	}
 }
 
@@ -168,13 +183,13 @@ async function loadRegionPage(app, regionID, page, order_ids, updates) {
 					while (await app.redis.set('evec:lock:orderinsert', 'true', 'NX', 'EX', 60) === false) { console.log('awaiting'); await app.sleep(10); }
 					if (bulk.length > 0) await app.db.orders.bulkWrite(bulk);
 					while (publish.length) {
-						let p = publish.pop();
+						let p = publish.pop();						
 						await app.redis.publish(p.channel, p.message);
 					}
 				} finally {
 					await app.redis.del('evec:lock:orderinsert');
 				}
-				let now = await app.now();
+				let now = app.now();
 				for (let type_id of types_touched) {
 					await app.db.information.updateOne({type: 'item_id', 'id': type_id, last_price_update: {$lt: now}}, {$set: {last_price_update: now}});
 				}
@@ -190,4 +205,9 @@ async function loadRegionPage(app, regionID, page, order_ids, updates) {
 	} finally {
 		region_page_calls--;
 	}
+}
+
+function expiresToUnixtime(expires) {
+  const date = new Date(expires);
+  return Math.floor(date.getTime() / 1000);
 }
