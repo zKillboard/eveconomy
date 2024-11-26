@@ -57,7 +57,7 @@ async function loadRegion(app, regionID) {
 		} else if (res != null) {
 			let pages = res.headers['x-pages'] | 1;
 
-			if (res?.headers?.expires) expires = expiresToUnixtime(res.headers.expires) - app.now() + 1;
+			if (res && res.headers && res.headers.expires) expires = expiresToUnixtime(res.headers.expires) - app.now() + 1;
 			
 			let promises = [];
 			for (let i = 2; i <= pages; i++) {
@@ -210,4 +210,16 @@ async function loadRegionPage(app, regionID, page, order_ids, updates) {
 function expiresToUnixtime(expires) {
   const date = new Date(expires);
   return Math.floor(date.getTime() / 1000);
+}
+
+async function redisPublish(app, action, order) {
+	let msg = {action: 'action'};
+	if (action == 'remove') msg.order_id = order.order_id;
+	else msg.order = order;
+	msg = JSON.stringify(msg);
+
+	await app.redis.publish(`market:item:${order.type_id}`, msg);
+	await app.redis.publish(`market:region:${order.region_id}`, msg);
+	await app.redis.publish(`market:item:${order.type_id}:region:${order.region_id}`, msg);
+	await app.redis.publish(`market:all`, msg);
 }
