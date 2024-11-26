@@ -94,7 +94,7 @@ async function loadRegion(app, regionID) {
 				}
 			}
 			let done = app.now();
-			if (line_count++ % 20 == 0) logit('Region', 'Inserts', 'Updates', 'Removed', 'Same', 'Duration', 'Expires');
+			if (line_count++ % (process.stdout.rows - 1) == 0) logit('Region', 'Inserts', 'Updates', 'Removed', 'Same', 'Duration', 'Expires');
 			logit(regionID, updates.inserts, updates.updates, updates.removed, updates.untouched, (done - start), expires);
 			// console.log('Region', regionID, ' Inserts', updates.inserts, ', Modified:', updates.updates, ', Removed:', updates.removed, ', Same:', updates.untouched, 'expires', expires, 'done', (done - start));
 		}
