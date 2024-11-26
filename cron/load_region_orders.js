@@ -7,6 +7,7 @@ module.exports = {
 
 const locations_added = {};
 var regions = undefined;
+let line_count = 0;
 
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -93,7 +94,9 @@ async function loadRegion(app, regionID) {
 				}
 			}
 			let done = app.now();
-			console.log('Region', regionID, ' Inserts', updates.inserts, ', Modified:', updates.updates, ', Removed:', updates.removed, ', Same:', updates.untouched, 'expires', expires, 'done', (done - start));
+			if (line_count++ % 20 == 0) logit('Region', 'Inserts', 'Updates', 'Removed', 'Same', 'Duration', 'Expires');
+			logit(regionID, updates.inserts, updates.updates, updates.removed, updates.untouched, (done - start), expires);
+			// console.log('Region', regionID, ' Inserts', updates.inserts, ', Modified:', updates.updates, ', Removed:', updates.removed, ', Same:', updates.untouched, 'expires', expires, 'done', (done - start));
 		}
 	} catch (e) {
 		console.error(e);
@@ -222,4 +225,10 @@ async function redisPublish(app, action, order) {
 	await app.redis.publish(`market:region:${order.region_id}`, msg);
 	await app.redis.publish(`market:item:${order.type_id}:region:${order.region_id}`, msg);
 	await app.redis.publish(`market:all`, msg);
+}
+
+async function logit(regionID, inserts, updates, modifies, removes, same, time, expires) {
+	let line = '';
+	[...arguments].map((a) => line += a.toString().padStart(10));
+	console.log(line);
 }

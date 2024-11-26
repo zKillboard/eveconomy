@@ -221,7 +221,6 @@ function wsMessage(event) {
 				console.log('modified', data.order.order_id);
 			}
 		} else if (data.action == 'remove') {
-			console.log(data);
 			let order_id = data.order_id;
 			let order = document.querySelector(`.order[oid="${order_id}"]`);
 			if (order) {
