@@ -60,6 +60,10 @@ const assist = {
 			return await this.doGet(app, url, attempts - 1);
 		}
 		return res;
+	},
+
+	getRateLimit: function() {
+		return rate_limit;
 	}
 }
 
