@@ -10,6 +10,10 @@ let first = true;
 async function f(app) {
     if (first) {
         let success = false;
+
+        app.indexes_complete = true;
+        app.regions = null;
+
         do {
             try {
                 await applyIndexes(app);
@@ -23,6 +27,7 @@ async function f(app) {
 
         await applyIndexes(app);
         first = false;
+        app.indexes_complete = true;
     }
 }
 
