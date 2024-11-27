@@ -18,6 +18,8 @@ function shuffle(array) {
 }
 
 async function f(app) {
+	while (app.indexes_complete != true) await app.sleep(1000);
+
 	if (regions == undefined) {
 		let regionF = await app.phin('https://esi.evetech.net/latest/universe/regions/?datasource=tranquility');
 		regions = JSON.parse(regionF.body);
@@ -62,49 +64,40 @@ async function loadRegion(app, regionID) {
 			
 			let promises = [];
 			for (let i = 2; i <= pages; i++) {
+				await app.sleep((1 / (Math.max(2, await app.util.assist.getRateLimit()))) - 1);
 				promises.push(loadRegionPage(app, regionID, i, order_ids, updates));
-				await app.sleep(100);
 			}
 			await Promise.allSettled(promises);
 
 			let remaining = Object.values(order_ids);
 			if (remaining.length > 0) {
-				if (app.bailout) return;
-
 				// get the orders first so we can publish their change
-				let removing = await app.db.orders.find({region_id: regionID, order_id: {$in: remaining}});
-				let types_touched = new Set();
-				
-				while (await removing.hasNext()) {
-					let order = await removing.next();
-					types_touched.add(order.type_id);
-					let msg = JSON.stringify({action: `remove`, order_id: order.order_id});
+				let removing = await app.db.orders.find({region_id: regionID, order_id: {$in: remaining}}).toArray();				
 
-					await app.redis.publish(`market:item:${order.type_id}`, msg);
-					await app.redis.publish(`market:region:${order.region_id}`, msg);
-					await app.redis.publish(`market:item:${order.type_id}:region:${order.region_id}`, msg);
-					await app.redis.publish(`market:all`, msg);
+				let types_touched = new Set();	
+				let publish = [];
+				for (let order of removing) {
+					redisPublishPush(publish, 'remove', order);
+					types_touched.add(order.type_id);
 				}
 				await app.db.orders.deleteMany({region_id: regionID, order_id: {$in: remaining}});
-				updates.removed = remaining.length;
+				await redisPublish(app, publish);
+				await app.db.information.updateMany({type: 'item_id', 'id': {'$in': Array.from(types_touched)}}, {$set: {last_price_update: app.now()}});
 
-				let now = app.now();
-				for (let type_id of types_touched) {
-					await app.db.information.updateOne({type: 'item_id', 'id': type_id, last_price_update: {$lt: now}}, {$set: {last_price_update: now}});
-				}
+				updates.removed = remaining.length;
 			}
 			let done = app.now();
 			if (line_count++ % (process.stdout.rows - 1) == 0) logit('Region', 'Inserts', 'Updates', 'Removed', 'Same', 'Duration', 'Expires');
 			logit(regionID, updates.inserts, updates.updates, updates.removed, updates.untouched, (done - start), expires);
-			// console.log('Region', regionID, ' Inserts', updates.inserts, ', Modified:', updates.updates, ', Removed:', updates.removed, ', Same:', updates.untouched, 'expires', expires, 'done', (done - start));
 		}
 	} catch (e) {
 		console.error(e);
 	} finally {
 		region_calls--;
 
-		await app.redis.set(redisKey,  expires, 'NX', 'EX', Math.max(15, expires));
-		setTimeout(() => loadRegion(app, regionID), 15000);
+		expires = Math.max(expires, 15);
+		await app.redis.setex(redisKey,  expires, expires);
+		setTimeout(() => loadRegion(app, regionID), expires * 1000);
 	}
 }
 
@@ -147,20 +140,12 @@ async function loadRegionPage(app, regionID, page, order_ids, updates) {
 					let location = await app.db.information.findOne({type: 'location_id', id: order.location_id});
 					order.location_name = location && location.name ? location.name : '???';
 
-					let msg = JSON.stringify({action: 'insert', order: order});
-					publish.push({channel: 'market:item:' + order.type_id, message: msg});
-					publish.push({channel: 'market:region:' + order.region_id, message: msg});
-					publish.push({channel: 'market:item:' + order.type_id + ':region:' + order.region_id, message: msg});
-					publish.push({channel: 'market:all', message: msg});
+					redisPublishPush(publish, 'insert', order);
 					types_touched.add(order.type_id);
 				} else {
 					if (order.volume_remain > 0) delete order_ids[order.order_id];
 					if (cur_order.price != order.price || cur_order.volume_remain != order.volume_remain) {
-						let msg = JSON.stringify({action: 'modify', order: order});
-						publish.push({channel: 'market:item:' + order.type_id, message: msg});
-						publish.push({channel: 'market:region:' + order.region_id, message: msg});
-						publish.push({channel: 'market:' + order.type_id + ':region:' + order.region_id, message: msg});
-
+						redisPublishPush(publish, 'modify', order) ;
 						types_touched.add(order.type_id);
 
 						let set = {};
@@ -183,19 +168,14 @@ async function loadRegionPage(app, regionID, page, order_ids, updates) {
 			}
 			if (bulk.length > 0) {					
 				try {
-					while (await app.redis.set('evec:lock:orderinsert', 'true', 'NX', 'EX', 60) === false) { console.log('awaiting'); await app.sleep(10); }
+					while (await app.redis.set('evec:lock:orderinsert', 'true', 'NX', 'EX', 60) === false) await app.sleep(10);
 					if (bulk.length > 0) await app.db.orders.bulkWrite(bulk);
-					while (publish.length) {
-						let p = publish.pop();						
-						await app.redis.publish(p.channel, p.message);
-					}
 				} finally {
 					await app.redis.del('evec:lock:orderinsert');
-				}
-				let now = app.now();
-				for (let type_id of types_touched) {
-					await app.db.information.updateOne({type: 'item_id', 'id': type_id, last_price_update: {$lt: now}}, {$set: {last_price_update: now}});
-				}
+				} 
+				redisPublish(app, publish);
+
+				await app.db.information.updateMany({type: 'item_id', 'id': {'$in': Array.from(types_touched)}}, {$set: {last_price_update: app.now()}});
 			}
 		} else if (res.statusCode >= 500 && res.statusCode <= 599) {
 			console.log('error', res.statusCode, url);			
@@ -215,16 +195,21 @@ function expiresToUnixtime(expires) {
   return Math.floor(date.getTime() / 1000);
 }
 
-async function redisPublish(app, action, order) {
-	let msg = {action: 'action'};
+async function redisPublishPush(publish, action, order) {
+	let msg = {action: action};
 	if (action == 'remove') msg.order_id = order.order_id;
 	else msg.order = order;
+
 	msg = JSON.stringify(msg);
 
-	await app.redis.publish(`market:item:${order.type_id}`, msg);
-	await app.redis.publish(`market:region:${order.region_id}`, msg);
-	await app.redis.publish(`market:item:${order.type_id}:region:${order.region_id}`, msg);
-	await app.redis.publish(`market:all`, msg);
+	publish.push({channel: `market:item:${order.type_id}`, message: msg});
+	publish.push({channel: `market:region:${order.region_id}`, message: msg});
+	publish.push({channel: `market:item:${order.type_id}:region:${order.region_id}`, message: msg});
+	publish.push({channel: 'market:all', message: msg});
+}
+
+async function redisPublish(app, publish) {
+	for (let p of publish) await app.redis.publish(p.channel, p.message);
 }
 
 async function logit(regionID, inserts, updates, modifies, removes, same, time, expires) {

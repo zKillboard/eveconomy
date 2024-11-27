@@ -77,6 +77,8 @@ let firstRun = true;
 
 async function f(app) {
     if (firstRun) {
+        while (app.indexes_complete !== true) { await app.sleep(1000); }
+        
         firstRun = false;
         for (const typeValue of types) populateSet(app, typeValue);
     }
@@ -222,7 +224,7 @@ async function fetch(app, row) {
         case undefined:
             if (row.type == 'location_id') {
                 let system = await app.db.information.findOne({type: 'solar_system_id', id: row.solar_system_id});
-                let name = system.name + ' Structure';                
+                let name = (system && system.name ? system.name : row.solar_system_id) + ' Structure';                
                 await app.db.information.updateOne(row, {$set: {name: name, last_updated: app.now()}}); // Try again later                
             } else {
                 await app.db.information.updateOne(row, {$set: {last_updated: (app.now() - 86100)}}); // Try again later
