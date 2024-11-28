@@ -217,21 +217,20 @@ function wsMessage(event) {
 				let volume_remain = getValueFormatted(data.order.volume_remain, 'int');
 				let span_vr = document.querySelector(`.order[oid="${order_id}"] span[field="volume_remain"]`);
 				if (volume_remain != span_vr.innerHTML) {
-					scheduleClass(span_vr, 'flash', .5);
+					scheduleClass(span_vr, 'flash', .75);
 					span_vr.innerHTML = volume_remain;
-					scheduleClass(span_vr, 'modify', modification_indication_delay_modify);
 					console.log('modified', data.order.order_id, 'remain', volume_remain);
 				}
 				let span_price = document.querySelector(`.order[oid="${order_id}"] span[field="price"]`);
 				let price = getValueFormatted(data.order.price, 'dec');
 				if (price != span_price.innerHTML) {
-					scheduleClass(span_price, 'flash', .5);
-					scheduleClass(span_price, 'modify', modification_indication_delay_modify);
+					scheduleClass(span_price, 'flash', .75);
 					order.setAttribute('price', Math.floor(data.order.price * 100));
 					span_price.innerHTML = price;
 					sort(order_parent);
 					console.log('modified', data.order.order_id, 'price', price);
 				}
+				scheduleClass(order, 'modify', modification_indication_delay_modify); 
 				return;
 			} 
 		}

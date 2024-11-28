@@ -172,36 +172,39 @@ span[field='location_name'] {
 }
 
 .insert {
-    color: #a66000;
+    color: #ff31ff;
     transition: color 1s linear;
 }
 
 .insert > span:first-child:before {    
-    content: '→';
+    content: '(new)';
     float: left;
     color: grey;
+    font-size: 75%;
 }
 
 .modify {
-    color: purple;
+    color: #00baff;
     transition: color 1s linear;
 }
 
 .modify > span:first-child:before {
-    content: '↑';
+    content: '(upd)';
     float: left;
     color: #999;
+    font-size: 75%;
 }
 
 .remove {
-    color: cyan;
+    color: #33dfc5;
     transition: color 1s linear;
 }
 
 .remove > span:first-child:before {
-    content: '↓';
+    content: '(rem)';
     float: left;
     color: #999;
+    font-size: 75%;
 }
 
 .order.usersorder {
