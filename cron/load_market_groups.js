@@ -8,6 +8,8 @@ module.exports = {
 const market_groups = '/latest/markets/groups/';
 
 async function f(app) {
+	while (app.indexes_complete !== true) { await app.sleep(1000); }
+	
 	if (app.bailout == true) return;
 	const url = 'https://esi.evetech.net/latest/markets/groups/';
 	let res = await app.util.assist.doGet(app, url)

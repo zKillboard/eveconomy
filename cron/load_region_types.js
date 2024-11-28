@@ -14,6 +14,9 @@ const regions = [
 	];
 
 async function f(app) {
+	return;
+	while (app.indexes_complete !== true) { await app.sleep(1000); }
+
 	let epoch = app.now();
 	for (const regionID of regions) {
 		let page = 1;

@@ -176,14 +176,32 @@ span[field='location_name'] {
     transition: color 1s linear;
 }
 
+.insert > span:first-child:before {    
+    content: '→';
+    float: left;
+    color: grey;
+}
+
 .modify {
     color: purple;
     transition: color 1s linear;
 }
 
+.modify > span:first-child:before {
+    content: '↑';
+    float: left;
+    color: #999;
+}
+
 .remove {
     color: cyan;
     transition: color 1s linear;
+}
+
+.remove > span:first-child:before {
+    content: '↓';
+    float: left;
+    color: #999;
 }
 
 .order.usersorder {

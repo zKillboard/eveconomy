@@ -4,7 +4,7 @@ const default_item_id = 44992;
 const default_region_id = null;
 const modification_indication_delay_insert = 300;
 const modification_indication_delay_modify = 300;
-const modification_indication_delay_remove= 1;
+const modification_indication_delay_remove= 60;
 
 document.addEventListener('DOMContentLoaded', exec);
 document.getElementById('searchbox').addEventListener('input', doSearch);
@@ -183,31 +183,44 @@ function exec() {
 function wsMessage(event) {
 	try {
 		let data = JSON.parse(event.data);
-		let do_sort = false;
 
-		if (data.action == 'insert') {
-			let order_parent;
-			if (data.order.is_buy_order) {
-				order_parent = document.querySelector('.orders[of="buy"]');
-			} else {
-				order_parent = document.querySelector('.orders[of="sell"]');
-			}
+		 if (data.action == 'started') {
+			// See if the server has restarted recently
+			if (server_started == null) server_started = data.started;
+			else if (server_started != data.server_started) window.location = window.location;
+			return console.log('server started at ', server_started);
+		}
 
-			let odiv = createOrder(data.order);
-			odiv.classList.add('insert');
-			order_parent.appendChild(odiv);
-			scheduleClass(odiv, 'insert', modification_indication_delay_insert);
-			console.log('inserted', data.order.order_id);
-			do_sort = true;
-		} else if (data.action == 'modify') {
-			let order_id = data.order.order_id;
-			let order = document.querySelector(`.order[oid="${order_id}"]`);
-			if (order) {
+		const order_id = (data && data.order_id ? data.order_id : (data && data.order ? data.order.order_id : null));
+		const order = document.querySelector(`.order[oid="${order_id}"]`);
+
+		if (data.action == 'remove' && order != null) {
+			if (order == null) return console.log('removed', order_id, '(did not exist)');
+
+			scheduleClass(order, 'remove', modification_indication_delay_remove);
+			scheduleRemoval(order, modification_indication_delay_remove);
+			return console.log('removed', order_id);
+		}
+
+		if (data.action == 'insert' || data.action == 'modify') {
+			const order_type = data.order.is_buy_order ? 'buy' : 'sell';
+			const order_parent = document.querySelector(`.orders[of="${order_type}"]`);
+
+			if (data.action == 'insert' && order == null) {
+				let odiv = createOrder(data.order);
+				odiv.classList.add('insert');
+				order_parent.appendChild(odiv);
+				scheduleClass(odiv, 'insert', modification_indication_delay_insert);
+				sort(order_parent);
+				return console.log('inserted', order_id);
+			} else if (order != null) {
 				let volume_remain = getValueFormatted(data.order.volume_remain, 'int');
 				let span_vr = document.querySelector(`.order[oid="${order_id}"] span[field="volume_remain"]`);
 				if (volume_remain != span_vr.innerHTML) {
 					scheduleClass(span_vr, 'flash', .5);
 					span_vr.innerHTML = volume_remain;
+					scheduleClass(span_vr, 'modify', modification_indication_delay_modify);
+					console.log('modified', data.order.order_id, 'remain', volume_remain);
 				}
 				let span_price = document.querySelector(`.order[oid="${order_id}"] span[field="price"]`);
 				let price = getValueFormatted(data.order.price, 'dec');
@@ -216,30 +229,13 @@ function wsMessage(event) {
 					scheduleClass(span_price, 'modify', modification_indication_delay_modify);
 					order.setAttribute('price', Math.floor(data.order.price * 100));
 					span_price.innerHTML = price;
-					do_sort = true;
+					sort(order_parent);
+					console.log('modified', data.order.order_id, 'price', price);
 				}
-				console.log('modified', data.order.order_id);
-			}
-		} else if (data.action == 'remove') {
-			let order_id = data.order_id;
-			let order = document.querySelector(`.order[oid="${order_id}"]`);
-			if (order) {
-				scheduleClass(order, 'remove', modification_indication_delay_remove);
-				scheduleRemoval(order, modification_indication_delay_remove);
-				console.log('removed', order_id);
-			}
-		} else if (data.action == 'refresh') window.location = window.location;
-		else if (data.action == 'started') {
-			// See if the server has restarted recently
-			if (server_started == null) server_started = data.started;
-			else if (server_started != data.server_started) window.location = window.location;
+				return;
+			} 
 		}
-		else {console.error('unknown action', data)};
-
-		if (do_sort) {
-			sort(document.querySelector('.orders[of="sell"]'));
-			sort(document.querySelector('.orders[of="buy"]'));
-		}
+		console.log('unknown scenario', data);
 	} catch (e) {
 		console.log(e);
 	}

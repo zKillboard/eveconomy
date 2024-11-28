@@ -37,7 +37,7 @@ let region_calls = 0;
 async function loadRegion(app, regionID) {
 	while (region_calls > 5) await app.sleep(10);
 	const redisKey = `evec:region_expires:${regionID}`;
-	let expires = 901;
+	let expires = 301;
 	let start = app.now();
 
 	try {
@@ -45,15 +45,15 @@ async function loadRegion(app, regionID) {
 
 		if (await app.redis.get(redisKey) != null) return;
 
-		let order_ids = {};
-		let cursor = await app.db.orders.find({region_id: regionID}).project({_id: 0, order_id: 1});
+		let existing_orders = new Map();
+		let cursor = await app.db.orders.find({region_id: regionID}).project({_id: 0});
 		while (await cursor.hasNext()) {
 			let order = await cursor.next();
-			order_ids[order.order_id] = order.order_id;
+			existing_orders.set(order.order_id, order);
 		}
 		let updates = {inserts: 0, updates: 0, removed: 0, untouched: 0};
 
-		let res = await loadRegionPage(app, regionID, 1, order_ids, updates);
+		let res = await loadRegionPage(app, regionID, 1, existing_orders, updates);
 
 		if (res != null && res.statusCode != 200) {
 			console.log(regionID, "ERROR", res.statusCode); 
@@ -64,12 +64,12 @@ async function loadRegion(app, regionID) {
 			
 			let promises = [];
 			for (let i = 2; i <= pages; i++) {
-				await app.sleep((1 / (Math.max(2, await app.util.assist.getRateLimit()))) - 1);
-				promises.push(loadRegionPage(app, regionID, i, order_ids, updates));
+				await app.sleep((1 / (Math.max(2, await app.util.assist.getRateLimit()))) - 2); 
+				promises.push(loadRegionPage(app, regionID, i, existing_orders, updates));
 			}
 			await Promise.allSettled(promises);
 
-			let remaining = Object.values(order_ids);
+			let remaining = Array.from(existing_orders.keys());
 			if (remaining.length > 0) {
 				// get the orders first so we can publish their change
 				let removing = await app.db.orders.find({region_id: regionID, order_id: {$in: remaining}}).toArray();				
@@ -102,7 +102,7 @@ async function loadRegion(app, regionID) {
 }
 
 let region_page_calls = 0;
-async function loadRegionPage(app, regionID, page, order_ids, updates) {
+async function loadRegionPage(app, regionID, page, existing_orders, updates) {
 	while (region_page_calls > (process.env.max_regions_page_calls || 5)) await app.sleep(10);
 	try {
 		region_page_calls++;
@@ -119,15 +119,25 @@ async function loadRegionPage(app, regionID, page, order_ids, updates) {
 			let orders = JSON.parse(res.body);		
 			while (orders.length > 0) {
 				let order = orders.pop();
-				
-				let cur_order = await app.db.orders.findOne({order_id: order.order_id});
+				let cur_order = existing_orders.get(order.order_id);
 
-				if (cur_order == null) {
+				if (typeof cur_order === 'undefined') {
 					order.region_id = regionID;
 					if (order.range == 'solarsystem') order.range = 'system';
+					const new_order = Object.assign({}, order);
+					delete new_order.order_id;
+					delete new_order.price;
+					delete new_order.volume_remain;
 
 					bulk.push({
-						insertOne: order
+						updateOne: {
+							filter: {order_id: order.order_id},
+							update: {
+								$set: {price: order.price, volume_remain: order.volume_remain},
+								$setOnInsert: new_order	
+							},
+							upsert: true
+						}
 					});
 					updates.inserts++;
 
@@ -143,7 +153,7 @@ async function loadRegionPage(app, regionID, page, order_ids, updates) {
 					redisPublishPush(publish, 'insert', order);
 					types_touched.add(order.type_id);
 				} else {
-					if (order.volume_remain > 0) delete order_ids[order.order_id];
+					if (order.volume_remain > 0) existing_orders.delete(order.order_id);
 					if (cur_order.price != order.price || cur_order.volume_remain != order.volume_remain) {
 						redisPublishPush(publish, 'modify', order) ;
 						types_touched.add(order.type_id);
