@@ -4,7 +4,7 @@ const default_item_id = 44992;
 const default_region_id = null;
 const modification_indication_delay_insert = 300;
 const modification_indication_delay_modify = 300;
-const modification_indication_delay_remove= 60;
+const modification_indication_delay_remove= 15;
 
 document.addEventListener('DOMContentLoaded', exec);
 document.getElementById('searchbox').addEventListener('input', doSearch);
@@ -194,45 +194,55 @@ function wsMessage(event) {
 		const order_id = (data && data.order_id ? data.order_id : (data && data.order ? data.order.order_id : null));
 		const order = document.querySelector(`.order[oid="${order_id}"]`);
 
-		if (data.action == 'remove' && order != null) {
+		if (data.action == 'remove') {
 			if (order == null) return console.log('removed', order_id, '(did not exist)');
+			order.classList.remove('inserted');
+			order.classList.remove('modified');
+
+			let span_vr = document.querySelector(`.order[oid="${order_id}"] span[field="volume_remain"]`);
+			scheduleClass(span_vr, 'flash', .75);
+			span_vr.innerHTML = 0;			
 
 			scheduleClass(order, 'remove', modification_indication_delay_remove);
 			scheduleRemoval(order, modification_indication_delay_remove);
 			return console.log('removed', order_id);
 		}
 
-		if (data.action == 'insert' || data.action == 'modify') {
+		if (data.action == 'upsert') {
 			const order_type = data.order.is_buy_order ? 'buy' : 'sell';
 			const order_parent = document.querySelector(`.orders[of="${order_type}"]`);
 
-			if (data.action == 'insert' && order == null) {
+			if (order == null) {
 				let odiv = createOrder(data.order);
 				odiv.classList.add('insert');
 				order_parent.appendChild(odiv);
-				scheduleClass(odiv, 'insert', modification_indication_delay_insert);
+				scheduleClass(odiv, 'inserted', modification_indication_delay_insert);
 				sort(order_parent);
 				return console.log('inserted', order_id);
-			} else if (order != null) {
-				let volume_remain = getValueFormatted(data.order.volume_remain, 'int');
-				let span_vr = document.querySelector(`.order[oid="${order_id}"] span[field="volume_remain"]`);
-				if (volume_remain != span_vr.innerHTML) {
-					scheduleClass(span_vr, 'flash', .75);
-					span_vr.innerHTML = volume_remain;
-					console.log('modified', data.order.order_id, 'remain', volume_remain);
-				}
-				let span_price = document.querySelector(`.order[oid="${order_id}"] span[field="price"]`);
-				let price = getValueFormatted(data.order.price, 'dec');
-				if (price != span_price.innerHTML) {
-					scheduleClass(span_price, 'flash', .75);
-					order.setAttribute('price', Math.floor(data.order.price * 100));
-					span_price.innerHTML = price;
-					sort(order_parent);
-					console.log('modified', data.order.order_id, 'price', price);
-				}
-				scheduleClass(order, 'modify', modification_indication_delay_modify); 
-				return;
 			} 
+
+			order.classList.remove('inserted');
+
+			let volume_remain = getValueFormatted(data.order.volume_remain, 'int');
+			let span_vr = document.querySelector(`.order[oid="${order_id}"] span[field="volume_remain"]`);
+			if (volume_remain != span_vr.innerHTML) {
+				scheduleClass(span_vr, 'flash', .75);
+				span_vr.innerHTML = volume_remain;
+				scheduleClass(span_vr, 'modified', modification_indication_delay_modify); 
+				console.log('modified', data.order.order_id, 'remain', volume_remain);
+			}
+
+			let span_price = document.querySelector(`.order[oid="${order_id}"] span[field="price"]`);
+			let price = getValueFormatted(data.order.price, 'dec');
+			if (price != span_price.innerHTML) {
+				scheduleClass(span_price, 'flash', .75);
+				order.setAttribute('price', Math.floor(data.order.price * 100));
+				span_price.innerHTML = price;
+				scheduleClass(span_price, 'modified', modification_indication_delay_modify); 
+				sort(order_parent);
+				console.log('modified', data.order.order_id, 'price', price);
+			}
+			return;
 		}
 		console.log('unknown scenario', data);
 	} catch (e) {
@@ -241,9 +251,19 @@ function wsMessage(event) {
 }
 
 function scheduleClass(element, className, timeout_seconds = 4) {
+	let attr = `timeout-${className}`;
+	let timeout = element.getAttribute(attr);
+	clearTimeout(parseInt(timeout));
+
 	element.classList.add(className);
-	setTimeout(() => { element.classList.remove(className); }, (timeout_seconds * 1000));
+	timeout = setTimeout(() => { removeClass(element, className); }, (timeout_seconds * 1000));
+	element.setAttribute(attr, timeout);
 	return element;
+}
+
+function removeClass(element, className) {
+	element.classList.remove(className);
+	element.removeAttribute(`timeout-${className}`);
 }
 
 function scheduleRemoval(element, timeout_seconds = 1) {
@@ -298,6 +318,9 @@ let current_region_id = null;
 async function loadItem(item_id, region_id = null) {
 	item_id = parseInt(item_id);
 	region_id = region_id ? parseInt(region_id) : null;
+
+	assembleColumns('buyorders', [], "buy");
+	assembleColumns('sellorders', [], "sell");
 
 	if (current_item_id !== item_id) {
 		wsUnsub(`market:item:${current_item_id}:region:${current_region_id}`);

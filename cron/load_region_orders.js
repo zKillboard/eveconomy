@@ -5,7 +5,9 @@ module.exports = {
     span: 15
 }
 
-const locations_added = {};
+const url_etags = new Map();
+const url_orderIds = new Map();
+const locations_added = new Set();
 var regions = undefined;
 let line_count = 0;
 
@@ -69,6 +71,8 @@ async function loadRegion(app, regionID) {
 			}
 			await Promise.allSettled(promises);
 
+			for (let i = pages + 1; i <= 999; i++) url_orderIds.delete(`${regionID}:${i}`);
+
 			let remaining = Array.from(existing_orders.keys());
 			if (remaining.length > 0) {
 				// get the orders first so we can publish their change
@@ -109,16 +113,29 @@ async function loadRegionPage(app, regionID, page, existing_orders, updates) {
 		if (app.bailout) return null;
 
 		let url = `https://esi.evetech.net/latest/markets/${regionID}/orders/?datasource=tranquility&page=${page}`;
-		let res = await app.util.assist.doGet(app, url);
-
+		const url_etag_key = `evec:etag:${url}`;
+		let headers = {'If-None-Match': (url_etags.get(url_etag_key) | 'none')}; 
+		let res = await app.util.assist.doGet(app, url, headers);
+ 
 		let bulk = [];
 		let publish = [];
 		let types_touched = new Set();
 
-		if (res.statusCode == 200) {
+		const url_orderIds_key = `${regionID}:${page}`
+
+		if (res.statusCode == 404) {
+			url_orderIds.delete(url_orderIds_key);
+		} else if (res.statusCode == 304) {
+			const url_orderIds_set = url_orderIds.get(url_orderIds_key);
+			if (url_orderIds_set) for (let order_id of url_orderIds_set) existing_orders.delete(order_id);
+		} else if (res.statusCode == 200) { 
+			if (res.headers.etag) url_etags.set(url, url_etag_key);
+			const url_orderIds_set = new Set();
+
 			let orders = JSON.parse(res.body);		
 			while (orders.length > 0) {
 				let order = orders.pop();
+				url_orderIds_set.add(order.order_id);
 				let cur_order = existing_orders.get(order.order_id);
 
 				if (typeof cur_order === 'undefined') {
@@ -141,21 +158,21 @@ async function loadRegionPage(app, regionID, page, existing_orders, updates) {
 					});
 					updates.inserts++;
 
-					if (locations_added[order.location_id] != true) {
+					if (!locations_added.has(order.location_id)) {
 							await app.util.entity.add(app, 'solar_system_id', order.system_id, true);
 							await app.util.entity.add(app, 'location_id', order.location_id, true);
 							await app.db.information.updateMany({type: 'location_id', id: order.location_id}, {$set: {solar_system_id: order.system_id}});
-							locations_added[order.location_id] = true;
+							locations_added.add(order.location_id);
 					}
 					let location = await app.db.information.findOne({type: 'location_id', id: order.location_id});
 					order.location_name = location && location.name ? location.name : '???';
 
-					redisPublishPush(publish, 'insert', order);
+					redisPublishPush(publish, 'upsert', order);
 					types_touched.add(order.type_id);
 				} else {
 					if (order.volume_remain > 0) existing_orders.delete(order.order_id);
 					if (cur_order.price != order.price || cur_order.volume_remain != order.volume_remain) {
-						redisPublishPush(publish, 'modify', order) ;
+						redisPublishPush(publish, 'upsert', order) ;
 						types_touched.add(order.type_id);
 
 						let set = {};
@@ -187,6 +204,7 @@ async function loadRegionPage(app, regionID, page, existing_orders, updates) {
 
 				await app.db.information.updateMany({type: 'item_id', 'id': {'$in': Array.from(types_touched)}}, {$set: {last_price_update: app.now()}});
 			}
+			url_orderIds.set(url_orderIds_key, url_orderIds_set);
 		} else if (res.statusCode >= 500 && res.statusCode <= 599) {
 			console.log('error', res.statusCode, url);			
 			await app.sleep(1000);
