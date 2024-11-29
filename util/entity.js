@@ -9,7 +9,7 @@ setInterval(function () {
 }, 60000);
 
 const entity = {
-    async add(app, type, id, wait = false) {
+    async add(app, type, id, wait = false, name = null) {
         // check that type is string
         // check that id is numeric
         if (typeof type != 'string') throw 'type is not a string: ' + type + ' ' + id;
@@ -33,7 +33,7 @@ const entity = {
                     $set: {
                         type: type,
                         id: id,
-                        name: type + ' ' + id,
+                        name: (name == null ? type + ' ' + id : name),
                         last_updated: 0
                     }
                 }, {

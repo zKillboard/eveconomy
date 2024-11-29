@@ -20,7 +20,8 @@ function shuffle(array) {
 }
 
 async function f(app) {
-	while (app.indexes_complete != true) await app.sleep(1000);
+	while (app.indexes_complete != true) await app.sleep(100);
+	while (app.universe_loaded != true) await app.sleep(100);
 
 	if (regions == undefined) {
 		let regionF = await app.phin('https://esi.evetech.net/latest/universe/regions/?datasource=tranquility');
@@ -160,8 +161,12 @@ async function loadRegionPage(app, regionID, page, existing_orders, updates) {
 
 					if (!locations_added.has(order.location_id)) {
 							await app.util.entity.add(app, 'solar_system_id', order.system_id, true);
-							await app.util.entity.add(app, 'location_id', order.location_id, true);
+							let system = await app.db.information.findOne({type: 'solar_system_id', id: order.system_id,});
+							let system_name = system.name;
 							await app.db.information.updateMany({type: 'location_id', id: order.location_id}, {$set: {solar_system_id: order.system_id}});
+
+							// If it is a structure we will wait for the name
+							await app.util.entity.add(app, 'location_id', order.location_id, true, ( order.location_id > 69999999 ? system_name + ' Structure' : null));
 							locations_added.add(order.location_id);
 					}
 					let location = await app.db.information.findOne({type: 'location_id', id: order.location_id});

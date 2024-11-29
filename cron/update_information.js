@@ -22,8 +22,6 @@ const adds = [
     'groups', 
     'systems', 
     'constellations', 
-    'star_id',
-    'stargates'
 ];
 
 const maps = {
@@ -35,7 +33,6 @@ const maps = {
     'groups': 'group_id',
     'systems': 'solar_system_id',
     'constellations': 'constellation_id',
-    'stargates': 'stargate_id'
 };
 
 
@@ -51,8 +48,6 @@ const urls = {
     'solar_system_id': '/v4/universe/systems/:id/',
     'constellation_id': '/v1/universe/constellations/:id/',
     'region_id': '/v1/universe/regions/:id/',
-    // 'star_id': '/v1/universe/stars/:id/',
-    // 'stargate_id': '/v2/universe/stargates/:id/'
 };
 const types = Object.keys(urls);
 
@@ -132,14 +127,15 @@ async function fetch(app, row) {
         let now = Math.floor(Date.now() / 1000);
 
         if (row.no_fetch === true) {
-            await app.db.information.updateOne(row, {$set: {last_updated: now}});
+            await app.db.information.updateOne(row, {$set: {last_updated: now, waiting: false}});
             return;
         }
 
         let url;
-        if (row.type == 'location_id' && row.id > 69999999) {
-            await app.sleep(30000); // long pause here
-            url = process.env.esi_url + '/latest/universe/structures/:id/'.replace(':id', row.id);
+        if (row.type == 'location_id' && row.id > 69999999) { 
+            await app.db.information.updateOne({type: row.type, id: row.id}, {$set: {last_updated: now, waiting: false}});
+
+            return;
         } else url = process.env.esi_url + urls[row.type].replace(':id', row.id);
         let res = await app.phin({url: url, timeout: 15000});
 

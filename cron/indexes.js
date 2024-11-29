@@ -5,11 +5,12 @@ module.exports = {
     span: 1
 }
 
-let first = true;
+let initialized = true;
 
 async function f(app) {
-    if (first) {
+    if (initialized) {
         let success = false;
+        console.log('Ensuring all indexes exist.')
 
         app.indexes_complete = true;
         app.regions = null;
@@ -26,15 +27,12 @@ async function f(app) {
         } while (success == false);
 
         await applyIndexes(app);
-        first = false;
+        initialized = false;
         app.indexes_complete = true;
     }
 }
 
 async function applyIndexes(app) {
-    let hasNew = false;
-
-    let o = ['orders', 'orders_new'];
     await createCollection(app, 'orders');
     await createIndex(app, app.db.orders, { order_id: 1 }, { unique: true });
     await createIndex(app, app.db.orders, { type_id: 1 });
@@ -51,6 +49,10 @@ async function applyIndexes(app) {
     await createIndex(app, app.db.information, {type: 1, waiting: 1});
     await createIndex(app, app.db.information, {type: 1, last_updated: 1});
     await createIndex(app, app.db.information, {type: 1, last_price_update: 1}, {sparse: true});
+
+    await createCollection(app, 'scopes');
+    await createIndex(app, app.db.scopes, { character_id: 1 }, { unique: true });
+    await createIndex(app, app.db.scopes, { scopes: 1 });
 }
 
 async function createCollection(app, name) {
@@ -65,22 +67,17 @@ async function createCollection(app, name) {
     }
 }
 
-let informed = false;
 async function createIndex(app, collection, index, options = {}) {
     let previous_index_count = Object.keys(await collection.indexInformation()).length;
     let creation = app.wrap_promise(collection.createIndex(index, options));
-    let timeout = app.sleep(10);
+    let timeout = app.sleep(1000);
     await Promise.race([creation, timeout]);
     if (!creation.isFinished()) {
-        if (!informed) {
-            console.log('Ensuring all indexes exist.')
-            informed = true;
-        }
+        console.log('Index creating', index, options);
     }
     await creation;
     let new_index_count = Object.keys(await collection.indexInformation()).length
     if (new_index_count != previous_index_count) {
         console.log('Created index:', index, 'with options', options);
-        informed = true;
     }
 }
