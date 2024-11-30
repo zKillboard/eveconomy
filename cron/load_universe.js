@@ -1,15 +1,13 @@
 'use strict';
 
 module.exports = {
-    exec: f,
-    span: 15
+    init: f
 }
 
 async function f(app) {
-	if (app.universe_loaded) return;
 	while (app.indexes_complete != true) await app.sleep(100);
 
-	console.log('Universe loading');
+	console.log('Universe loading...');
 
 	await Promise.allSettled([
 		addStations(app),
@@ -17,7 +15,7 @@ async function f(app) {
 		addRegions(app)
 	]);
 
-	console.log('Universe loaded');
+	console.log('Universe loaded...');
 	app.universe_loaded = true;
 }
 

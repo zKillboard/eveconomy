@@ -1,35 +1,32 @@
 'use strict';
 
 module.exports = {
-    exec: f,
-    span: 1
+    init: f
 }
 
 let initialized = true;
 
 async function f(app) {
-    if (initialized) {
-        let success = false;
-        console.log('Ensuring all indexes exist.')
+    let success = false;
+    console.log('Ensuring all indexes exist.')
 
-        app.indexes_complete = true;
-        app.regions = null;
+    app.indexes_complete = true;
+    app.regions = null;
 
-        do {
-            try {
-                await applyIndexes(app);
-                success = true;
-            } catch (e) {
-                console.log(e);
-                await app.sleep(1000);
-                success = false;
-            }
-        } while (success == false);
+    do {
+        try {
+            await applyIndexes(app);
+            success = true;
+        } catch (e) {
+            console.log(e);
+            await app.sleep(1000);
+            success = false;
+        }
+    } while (success == false);
 
-        await applyIndexes(app);
-        initialized = false;
-        app.indexes_complete = true;
-    }
+    await applyIndexes(app);
+    initialized = false;
+    app.indexes_complete = true;
 }
 
 async function applyIndexes(app) {

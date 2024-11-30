@@ -22,7 +22,7 @@ module.exports = {
 	},
 
 	doHandleCallback: async function(app, code, state, expectedState) {
-		if (state != expectedState) throw new Exception('Invalid state');
+		if (state != expectedState) throw new Error('Invalid state');
 
 		let opts = {
 			url: process.env.EVE_Token_URL,
@@ -54,11 +54,10 @@ module.exports = {
 		throw 'Received http code ' + res.statusCode;
 	},
 
-	getAccessToken: async function(app, refresh_token, redis) {
-		if (redis) {
-			let access_token = await app.redis.get(`evesso:access_token:${refresh_token}`);
-			if (access_token) return access_token;
-		}
+	getAccessToken: async function(app, refresh_token) {
+		let access_token = await app.redis.get(`evesso:access_token:${refresh_token}`);
+		if (access_token) return access_token;
+
 		let opts = {
 			url: process.env.EVE_Token_URL,
 			followRedirects: true,
@@ -76,9 +75,7 @@ module.exports = {
 			let json = JSON.parse(res.body);
 			let access_token = json.access_token;
 
-			if (redis) {
-				await app.redis.setex(`evesso:access_token:${refresh_token}`, json.expires_in - 1, access_token);
-			}
+			await app.redis.setex(`evesso:access_token:${refresh_token}`, json.expires_in - 1, access_token);
 
 			return access_token;
 		}
