@@ -1,8 +1,7 @@
 'use strict';
 
 module.exports = {
-    exec: f,
-    span: 15
+    init: f
 }
 
 const url_etags = new Map();
@@ -74,6 +73,8 @@ async function loadRegion(app, regionID) {
 
 			for (let i = pages + 1; i <= 999; i++) url_orderIds.delete(`${regionID}:${i}`);
 
+			if (app.bailout) return;
+
 			let remaining = Array.from(existing_orders.keys());
 			if (remaining.length > 0) {
 				// get the orders first so we can publish their change
@@ -138,6 +139,9 @@ async function loadRegionPage(app, regionID, page, existing_orders, updates) {
 				let order = orders.pop();
 				url_orderIds_set.add(order.order_id);
 				let cur_order = existing_orders.get(order.order_id);
+
+				// Completely ignore orders that are already fulfilled. 
+				if (order.volume_remain == 0) continue;
 
 				if (typeof cur_order === 'undefined') {
 					order.region_id = regionID;
