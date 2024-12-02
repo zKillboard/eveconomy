@@ -2,8 +2,7 @@
 
 module.exports = {
    paths: ['/api/orders'],
-   get: get,
-   priority: 1 
+   get: get
 }
 
 async function get(req, res, app) {
@@ -27,7 +26,7 @@ async function get(req, res, app) {
 		let buyorders = search(app, id, true, -1, region_id);
 		let sellorders = search(app, id, false, 1, region_id);
 
-	   return {json: {id: id, buy: await buyorders, sell: await sellorders}}
+	   return {json: {id: id, now: app.now(), buy: await buyorders, sell: await sellorders}}
 	} catch (e) {
 		console.log(e);
 	}

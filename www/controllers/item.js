@@ -2,9 +2,7 @@
 
 module.exports = {
    paths: ['/item/:id'],
-   get: get,
-   priority: 1,
-   ttl: 3600
+   get: get
 }
 
 async function get(req, res, app) {
@@ -15,7 +13,6 @@ async function get(req, res, app) {
 
     return {
         package: {title: item.name},
-        ttl: 3600,
         view: 'item.pug'
     };
 

@@ -3,8 +3,7 @@
 module.exports = {
    paths: '/',
    get: get,
-   priority: 1,
-   ttl: 3600
+   priority: 1
 }
 
 async function get(req, res, app) {

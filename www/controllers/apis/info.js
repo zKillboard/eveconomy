@@ -2,8 +2,7 @@
 
 module.exports = {
    paths: ['/api/info'],
-   get: get,
-   ttl: 3600
+   get: get
 }
 
 async function get(req, res, app) {
@@ -23,7 +22,7 @@ async function get(req, res, app) {
     	let item = await app.db.information.findOne({type: type, id: id});
 		if (!item) return {redirect: '/api/info?id=44992&type=item_id'};
 
-		return {json: {name: item.name, dscr: item.description}, ttl: 3600};
+		return {json: {name: item.name, type: item.type, id: item.id, dscr: item.description}};
     } catch (e) {
     	console.error(e);
     }

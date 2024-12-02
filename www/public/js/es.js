@@ -213,7 +213,7 @@ function wsMessage(event) {
 			const order_parent = document.querySelector(`.orders[of="${order_type}"]`);
 
 			if (order == null) {
-				let odiv = createOrder(data.order);
+				let odiv = createOrder(data.order.epoch, data.order);
 				odiv.classList.add('insert');
 				order_parent.appendChild(odiv);
 				scheduleClass(odiv, 'inserted', modification_indication_delay_insert);
@@ -319,8 +319,8 @@ async function loadItem(item_id, region_id = null) {
 	item_id = parseInt(item_id);
 	region_id = region_id ? parseInt(region_id) : null;
 
-	assembleColumns('buyorders', [], "buy");
-	assembleColumns('sellorders', [], "sell");
+	assembleColumns(0, 'buyorders', [], "buy");
+	assembleColumns(0, 'sellorders', [], "sell");
 
 	if (current_item_id !== item_id) {
 		wsUnsub(`market:item:${current_item_id}:region:${current_region_id}`);
@@ -337,9 +337,9 @@ async function loadItem(item_id, region_id = null) {
 }
 
 function populateOrders(data) {
-	document.getElementById('itemimg').setAttribute('src', `https://images.evetech.net/types/${data.id}/icon?size=128`);
-	assembleColumns('buyorders', data.buy, "buy");
-	assembleColumns('sellorders', data.sell, "sell");
+	let now = Math.floor(Date.parse(new Date().toISOString()) / 1000);
+	assembleColumns(data.now, 'buyorders', data.buy, "buy");
+	assembleColumns(data.now, 'sellorders', data.sell, "sell");
 
 	if (current_region_id != null) wsSub(`market:item:${current_item_id}:region:${current_region_id}`);
 	else wsSub(`market:item:${current_item_id}`);
@@ -351,6 +351,8 @@ function populateOrders(data) {
 }
 
 function populateInfo(data) {
+	console.log(data);
+	document.getElementById('itemimg').setAttribute('src', `https://images.evetech.net/types/${data.id}/icon?size=128`);
 	document.getElementById('itemname').innerHTML = data.name;
 	document.title = data.name + ' - EVEconomy';
 }
@@ -366,7 +368,7 @@ const columns = {
 	'location_name': {field: 'location_name', location: true},
 	'range': {field: 'range', classes: 'text-end capitalize'},
 };
-function assembleColumns(id, orders, order_type) {
+function assembleColumns(now, id, orders, order_type) {
 	let header = createElement('div', ORDERSHEAD, {classes: 'ordersheader'});
 
 	let oc = createElement('div', undefined, {classes: 'orderscontainer', of: order_type});
@@ -376,7 +378,7 @@ function assembleColumns(id, orders, order_type) {
 	oc.appendChild(mdiv);
 
 	for (let order of orders) {		
-		mdiv.append(createOrder(order));
+		mdiv.append(createOrder(now, order));
 	}
 
 	let div = document.getElementById(id);
@@ -384,18 +386,31 @@ function assembleColumns(id, orders, order_type) {
 	div.appendChild(oc);	
 }
 
-function createOrder(order) {
-	let pdiv = createElement('div', undefined, {classes: 'order', oid: order.order_id, price: Math.floor(order.price * 100)});
-	for (let column of Object.keys(columns)) {
-		let val = order[column];
-		if (columns[column]['format']) val = getValueFormatted(val, columns[column]['format']);		
-		
-		let span = createElement('span', val, columns[column]);
-		if (column == 'location_name') span.setAttribute('region_id', order.region_id);
-		pdiv.appendChild(span);
+function createOrder(now, order) {
+	try {
+		let pdiv = createElement('div', undefined, {classes: 'order', oid: order.order_id, price: Math.floor(order.price * 100)});
+		for (let column of Object.keys(columns)) {
+			let val = order[column];
+			if (columns[column]['format']) val = getValueFormatted(val, columns[column]['format']);		
+			
+			let span = createElement('span', val, columns[column]);
+			let diff = now - (order[column + '_epoch'] || 0);
+			if (diff < 300 && diff > 0) {
+				scheduleClass(span, 'modified', diff);
+			}
+			if (column == 'location_name') span.setAttribute('region_id', order.region_id);
+			pdiv.appendChild(span);
+		}
+
+		let diff = now - (order.epoch || 0);
+		if (diff < 300 && diff > 0) {
+			scheduleClass(pdiv, 'inserted', diff);
+		}
+
+		return pdiv;
+	} catch (e) {
+		console.error(order, e);
 	}
-	//pdiv.style = 'order: ' + Math.floor(order.price * 100) + ';'
-	return pdiv;
 }
 
 function createElement(element, content = '', attributes = {}) {
@@ -438,8 +453,10 @@ function sort(parent) {
   children = Array.from(children);
   children = children.sort((a, b) => {
   	let price_compare = parseInt(a.getAttribute('price')) - parseInt(b.getAttribute('price'));
+    
     if (price_compare != 0) return price_compare;
-    return parseInt(a.getAttribute('id')) - parseInt(b.getAttribute('id'));
+
+    return parseInt(b.getAttribute('oid')) - parseInt(a.getAttribute('oid'));
   });
   children.forEach((child, index) => child.style.order = index);
 }

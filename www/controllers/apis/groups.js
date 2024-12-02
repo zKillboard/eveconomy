@@ -15,7 +15,7 @@ async function get(req, res, app) {
 		let json = JSON.parse(raw);
 		if (json == null) return; // something went wrong
 	    
-	   return {json: json, ttl: 3600};
+	   return {json: json};
 	} catch (e) {
 		console.log(e);
 	}

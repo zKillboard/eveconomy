@@ -86,11 +86,11 @@ async function loadRegion(app, regionID) {
 					redisPublishPush(publish, 'remove', order);
 					types_touched.add(order.type_id);
 				}
-				await app.db.orders.deleteMany({region_id: regionID, order_id: {$in: remaining}});
+				let crud = await app.db.orders.deleteMany({region_id: regionID, order_id: {$in: remaining}});
+				updates.removed = crud.result.nRemoved;
+
 				await redisPublish(app, publish);
 				await app.db.information.updateMany({type: 'item_id', 'id': {'$in': Array.from(types_touched)}}, {$set: {last_price_update: app.now()}});
-
-				updates.removed = remaining.length;
 			}
 			let done = app.now();
 			if (line_count++ % (process.stdout.rows - 1) == 0) logit('Region', 'Inserts', 'Updates', 'Removed', 'Same', 'Duration', 'Expires');
@@ -100,10 +100,11 @@ async function loadRegion(app, regionID) {
 		console.error(e);
 	} finally {
 		region_calls--;
+		if (app.bailout) return;
 
 		expires = Math.max(expires, 15);
 		await app.redis.setex(redisKey,  expires, expires);
-		setTimeout(() => loadRegion(app, regionID), expires * 1000);
+		setTimeout(() => loadRegion(app, regionID), (1 + expires) * 1000);
 	}
 }
 
@@ -134,34 +135,35 @@ async function loadRegionPage(app, regionID, page, existing_orders, updates) {
 			if (res.headers.etag) url_etags.set(url, url_etag_key);
 			const url_orderIds_set = new Set();
 
-			let orders = JSON.parse(res.body);		
+			let orders = JSON.parse(res.body);
+			let total_orders = orders.length;
 			while (orders.length > 0) {
 				let order = orders.pop();
-				url_orderIds_set.add(order.order_id);
-				let cur_order = existing_orders.get(order.order_id);
 
 				// Completely ignore orders that are already fulfilled. 
 				if (order.volume_remain == 0) continue;
+
+				url_orderIds_set.add(order.order_id);
+				let cur_order = existing_orders.get(order.order_id);
+				existing_orders.delete(order.order_id);
+				let now = app.now();
 
 				if (typeof cur_order === 'undefined') {
 					order.region_id = regionID;
 					if (order.range == 'solarsystem') order.range = 'system';
 					const new_order = Object.assign({}, order);
 					delete new_order.order_id;
-					delete new_order.price;
-					delete new_order.volume_remain;
+					new_order.epoch = now;
 
 					bulk.push({
 						updateOne: {
 							filter: {order_id: order.order_id},
 							update: {
-								$set: {price: order.price, volume_remain: order.volume_remain},
 								$setOnInsert: new_order	
 							},
 							upsert: true
 						}
 					});
-					updates.inserts++;
 
 					if (!locations_added.has(order.location_id)) {
 							await app.util.entity.add(app, 'solar_system_id', order.system_id, true);
@@ -179,17 +181,18 @@ async function loadRegionPage(app, regionID, page, existing_orders, updates) {
 					redisPublishPush(publish, 'upsert', order);
 					types_touched.add(order.type_id);
 				} else {
-					if (order.volume_remain > 0) existing_orders.delete(order.order_id);
 					if (cur_order.price != order.price || cur_order.volume_remain != order.volume_remain) {
-						redisPublishPush(publish, 'upsert', order) ;
-						types_touched.add(order.type_id);
 
 						let set = {};
 
-						if (cur_order.price != order.price) set.price = order.price;
-						if (cur_order.volume_remain != order.volume_remain) set.volume_remain = order.volume_remain;
-						delete order.price;
-						delete order.volume_remain;
+						if (cur_order.price != order.price) {
+							set.price = order.price;
+							set.price_epoch = now;
+						}
+						if (cur_order.volume_remain != order.volume_remain) {
+							set.volume_remain = order.volume_remain;
+							set.volume_remain_epoch = now;
+						}
 
 						bulk.push({
 							updateOne: {
@@ -197,15 +200,19 @@ async function loadRegionPage(app, regionID, page, existing_orders, updates) {
 								update: {$set: set}
 							}
 						});
-						updates.updates++;
-						
-					} else updates.untouched++;
+
+						redisPublishPush(publish, 'upsert', order) ;
+						types_touched.add(order.type_id);						
+					}
 				}
 			}
 			if (bulk.length > 0) {					
 				try {
 					while (await app.redis.set('evec:lock:orderinsert', 'true', 'NX', 'EX', 60) === false) await app.sleep(10);
-					if (bulk.length > 0) await app.db.orders.bulkWrite(bulk);
+					let crud = await app.db.orders.bulkWrite(bulk);
+					updates.inserts += crud.result.nInserted + crud.result.nUpserted;
+					updates.updates += crud.result.nModified;
+					updates.untouched += total_orders - (crud.result.nInserted + crud.result.nUpserted + crud.result.nModified);
 				} finally {
 					await app.redis.del('evec:lock:orderinsert');
 				} 
@@ -251,6 +258,6 @@ async function redisPublish(app, publish) {
 
 async function logit(regionID, inserts, updates, modifies, removes, same, time, expires) {
 	let line = '';
-	[...arguments].map((a) => line += a.toString().padStart(10));
+	[...arguments].map((a) => line += (a || '0').toString().padStart(10));
 	console.log(line);
 }
