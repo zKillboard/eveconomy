@@ -88,6 +88,7 @@ async function loadRegion(app, regionID) {
 				}
 				let crud = await app.db.orders.deleteMany({region_id: regionID, order_id: {$in: remaining}});
 				updates.removed = crud.result.nRemoved;
+				updates.untouched -= crud.result.nRemoved;
 
 				await redisPublish(app, publish);
 				await app.db.information.updateMany({type: 'item_id', 'id': {'$in': Array.from(types_touched)}}, {$set: {last_price_update: app.now()}});
@@ -136,7 +137,7 @@ async function loadRegionPage(app, regionID, page, existing_orders, updates) {
 			const url_orderIds_set = new Set();
 
 			let orders = JSON.parse(res.body);
-			let total_orders = orders.length;
+			updates.untouched += orders.length;
 			while (orders.length > 0) {
 				let order = orders.pop();
 
@@ -212,7 +213,7 @@ async function loadRegionPage(app, regionID, page, existing_orders, updates) {
 					let crud = await app.db.orders.bulkWrite(bulk);
 					updates.inserts += crud.result.nInserted + crud.result.nUpserted;
 					updates.updates += crud.result.nModified;
-					updates.untouched += total_orders - (crud.result.nInserted + crud.result.nUpserted + crud.result.nModified);
+					updates.untouched -= (crud.result.nInserted + crud.result.nUpserted + crud.result.nModified);
 				} finally {
 					await app.redis.del('evec:lock:orderinsert');
 				} 
