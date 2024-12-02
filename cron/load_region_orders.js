@@ -37,10 +37,12 @@ async function f(app) {
 
 let region_calls = 0;
 async function loadRegion(app, regionID) {
-	while (region_calls > 5) await app.sleep(10);
+	// while (region_calls > 5) await app.sleep(10);
 	const redisKey = `evec:region_expires:${regionID}`;
 	let expires = 301;
 	let start = app.now();
+	let f = false;
+	let took = 0;
 
 	try {
 		region_calls++;
@@ -53,48 +55,58 @@ async function loadRegion(app, regionID) {
 			let order = await cursor.next();
 			existing_orders.set(order.order_id, order);
 		}
-		let updates = {inserts: 0, updates: 0, removed: 0, total: 0};
-
-		let res = await loadRegionPage(app, regionID, 1, existing_orders, updates);
-
-		if (res != null && res.statusCode != 200) {
-			console.log(regionID, "ERROR", res.statusCode); 
-		} else if (res != null) {
-			let pages = res.headers['x-pages'] | 1;
-
-			if (res && res.headers && res.headers.expires) expires = expiresToUnixtime(res.headers.expires) - app.now() + 1;
-			
-			let promises = [];
-			for (let i = 2; i <= pages; i++) {
-				await app.sleep((1 / (Math.max(2, await app.util.assist.getRateLimit()))) - 2); 
-				promises.push(loadRegionPage(app, regionID, i, existing_orders, updates));
+		let largeOrderCountRegion = (existing_orders.size >= 10000);
+		try {
+			while (largeOrderCountRegion && await app.redis.set('evec:largeOrderCountRegion', 'true', 'NX', 'EX', 300) == null) {
+				await app.sleep(50);
 			}
-			await Promise.allSettled(promises);
+			start = app.now();
 
-			for (let i = pages + 1; i <= 999; i++) url_orderIds.delete(`${regionID}:${i}`);
+			let updates = {inserts: 0, updates: 0, removed: 0, total: 0};
 
-			if (app.bailout) return;
+			let res = await loadRegionPage(app, regionID, 1, existing_orders, updates);
 
-			let remaining = Array.from(existing_orders.keys());
-			if (remaining.length > 0) {
-				// get the orders first so we can publish their change
-				let removing = await app.db.orders.find({region_id: regionID, order_id: {$in: remaining}}).toArray();				
+			if (res != null && res.statusCode != 200) {
+				console.log(regionID, "ERROR", res.statusCode); 
+			} else if (res != null) {
+				let pages = res.headers['x-pages'] || 1;
 
-				let types_touched = new Set();	
-				let publish = [];
-				for (let order of removing) {
-					redisPublishPush(publish, 'remove', order);
-					types_touched.add(order.type_id);
+				if (res && res.headers && res.headers.expires) expires = expiresToUnixtime(res.headers.expires) - app.now() + 1;
+				
+				let promises = [];
+				for (let i = pages; i > 1; i--) {
+					promises.push(loadRegionPage(app, regionID, i, existing_orders, updates));
 				}
-				let crud = await app.db.orders.deleteMany({region_id: regionID, order_id: {$in: remaining}});
-				updates.removed = crud.result.nRemoved;
+				await Promise.allSettled(promises);
 
-				await redisPublish(app, publish);
-				await app.db.information.updateMany({type: 'item_id', 'id': {'$in': Array.from(types_touched)}}, {$set: {last_price_update: app.now()}});
+				for (let i = pages + 1; i <= 999; i++) url_orderIds.delete(`${regionID}:${i}`);
+
+				if (app.bailout) return;
+
+				let remaining = Array.from(existing_orders.keys());
+				if (remaining.length > 0) {
+					// get the orders first so we can publish their change
+					let removing = await app.db.orders.find({region_id: regionID, order_id: {$in: remaining}}).toArray();				
+
+					let types_touched = new Set();	
+					let publish = [];
+					for (let order of removing) {
+						redisPublishPush(publish, 'remove', order);
+						types_touched.add(order.type_id);
+					}
+					let crud = await app.db.orders.deleteMany({region_id: regionID, order_id: {$in: remaining}});
+					updates.removed = crud.result.nRemoved;
+
+					await redisPublish(app, publish);
+					await app.db.information.updateMany({type: 'item_id', 'id': {'$in': Array.from(types_touched)}}, {$set: {last_price_update: app.now()}});
+				}
+				let done = app.now();
+				took = done - start;
+				if (line_count++ % (process.stdout.rows - 1) == 0) logit('Region', 'Inserts', 'Updates', 'Removed', 'Total', 'Duration', 'Expires');
+				logit(regionID, updates.inserts, updates.updates, updates.removed, updates.total, took, expires);
 			}
-			let done = app.now();
-			if (line_count++ % (process.stdout.rows - 1) == 0) logit('Region', 'Inserts', 'Updates', 'Removed', 'Total', 'Duration', 'Expires');
-			logit(regionID, updates.inserts, updates.updates, updates.removed, updates.total, (done - start), expires);
+		} finally {
+			if (largeOrderCountRegion == true) await app.redis.del('evec:largeOrderCountRegion');
 		}
 	} catch (e) {
 		console.error(e);
@@ -102,7 +114,7 @@ async function loadRegion(app, regionID) {
 		region_calls--;
 		if (app.bailout) return;
 
-		expires = Math.max(expires, 15);
+		expires = Math.max(expires - took + 1, 15);
 		await app.redis.setex(redisKey,  expires, expires);
 		setTimeout(() => loadRegion(app, regionID), (1 + expires) * 1000);
 	}
