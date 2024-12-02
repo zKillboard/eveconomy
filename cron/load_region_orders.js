@@ -53,7 +53,7 @@ async function loadRegion(app, regionID) {
 			let order = await cursor.next();
 			existing_orders.set(order.order_id, order);
 		}
-		let updates = {inserts: 0, updates: 0, removed: 0, untouched: 0};
+		let updates = {inserts: 0, updates: 0, removed: 0, total: 0};
 
 		let res = await loadRegionPage(app, regionID, 1, existing_orders, updates);
 
@@ -88,14 +88,13 @@ async function loadRegion(app, regionID) {
 				}
 				let crud = await app.db.orders.deleteMany({region_id: regionID, order_id: {$in: remaining}});
 				updates.removed = crud.result.nRemoved;
-				updates.untouched -= crud.result.nRemoved;
 
 				await redisPublish(app, publish);
 				await app.db.information.updateMany({type: 'item_id', 'id': {'$in': Array.from(types_touched)}}, {$set: {last_price_update: app.now()}});
 			}
 			let done = app.now();
-			if (line_count++ % (process.stdout.rows - 1) == 0) logit('Region', 'Inserts', 'Updates', 'Removed', 'Same', 'Duration', 'Expires');
-			logit(regionID, updates.inserts, updates.updates, updates.removed, updates.untouched, (done - start), expires);
+			if (line_count++ % (process.stdout.rows - 1) == 0) logit('Region', 'Inserts', 'Updates', 'Removed', 'Total', 'Duration', 'Expires');
+			logit(regionID, updates.inserts, updates.updates, updates.removed, updates.total, (done - start), expires);
 		}
 	} catch (e) {
 		console.error(e);
@@ -137,7 +136,7 @@ async function loadRegionPage(app, regionID, page, existing_orders, updates) {
 			const url_orderIds_set = new Set();
 
 			let orders = JSON.parse(res.body);
-			updates.untouched += orders.length;
+			updates.total += orders.length;
 			while (orders.length > 0) {
 				let order = orders.pop();
 
@@ -213,7 +212,6 @@ async function loadRegionPage(app, regionID, page, existing_orders, updates) {
 					let crud = await app.db.orders.bulkWrite(bulk);
 					updates.inserts += crud.result.nInserted + crud.result.nUpserted;
 					updates.updates += crud.result.nModified;
-					updates.untouched -= (crud.result.nInserted + crud.result.nUpserted + crud.result.nModified);
 				} finally {
 					await app.redis.del('evec:lock:orderinsert');
 				} 
