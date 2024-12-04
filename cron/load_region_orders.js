@@ -26,16 +26,15 @@ async function f(app) {
 	while (app.indexes_complete != true) await app.sleep(100);
 	while (app.universe_loaded != true) await app.sleep(100);
 
-	if (regions == undefined) {
-		let regionF = await app.phin('https://esi.evetech.net/latest/universe/regions/?datasource=tranquility');
-		regions = JSON.parse(regionF.body);
+	console.log('Initiating market region polls...');
+	let regionF = await app.phin('https://esi.evetech.net/latest/universe/regions/?datasource=tranquility');
+	regions = JSON.parse(regionF.body);
 
-		for (const regionID of shuffle(regions)) {
-			if (regionID >= 12000000) continue;
-			if (app.bailout) return;
-			loadRegion(app, regionID);
-			await app.sleep(100);
-		}
+	for (const regionID of shuffle(regions)) {
+		if (regionID >= 12000000) continue;
+		if (app.bailout) return;
+		loadRegion(app, regionID);
+		await app.sleep(100);
 	}
 }
 
@@ -43,6 +42,7 @@ async function loadRegion(app, regionID) {
 	const redisKey = `evec:region_expires:${regionID}`;
 	let expires = 301;
 	let start = app.now(), took = 0;
+	let num_pages = 1;
 
 	let release;
 	try {
@@ -64,6 +64,7 @@ async function loadRegion(app, regionID) {
 				console.log(regionID, "ERROR", res.statusCode); 
 			} else if (res != null) {
 				let pages = res.headers['x-pages'] || 1;
+				let num_pages = pages;
 
 				if (res?.headers?.expires) expires = expiresToUnixtime(res.headers.expires) - app.now() + 1;
 
@@ -101,8 +102,10 @@ async function loadRegion(app, regionID) {
 				}
 
 				took = app.now() - start;
-				if (line_count++ % (process.stdout.rows - 1) == 0) logit('Region', 'Inserts', 'Updates', 'Removed', 'Total', 'Duration', 'Expires');
-				logit(regionID, updates.inserts, updates.updates, updates.removed, updates.total, took, expires);
+				if (updates.inserts + updates.updates + updates.removed + updates.total > 0) {
+					if (line_count++ % (process.stdout.rows - 1) == 0) logit('Region', 'Pages', 'Inserts', 'Updates', 'Removed', 'Total', 'Duration', 'Expires');
+					logit(regionID, num_pages, updates.inserts, updates.updates, updates.removed, updates.total, took, expires);
+				}
 			}
 		} catch (e) {
 		console.error(e);
@@ -135,13 +138,14 @@ async function loadRegionPage(app, regionID, page, existing_orders, updates) {
 			url_orderIds.delete(url_orderIds_key);
 		} else if (res.statusCode == 304) {
 			const url_orderIds_set = url_orderIds.get(url_orderIds_key);
+			updates.total += url_orderIds_set.size;
 			if (url_orderIds_set) for (let order_id of url_orderIds_set) existing_orders.delete(order_id);
 		} else if (res.statusCode == 200) { 
 			if (res?.headers?.etag) url_etags.set(url, res.headers.etag);
 			
 			const url_orderIds_set = new Set();
 
-			let orders = JSON.parse(res.body);
+			let orders = JSON.parse(await res.body);
 			updates.total += orders.length;
 			while (orders.length > 0) {
 				let order = orders.pop();
@@ -259,8 +263,8 @@ async function redisPublish(app, publish) {
 	for (let p of publish) await app.redis.publish(p.channel, p.message);
 }
 
-async function logit(regionID, inserts, updates, modifies, removes, same, time, expires) {
+async function logit(regionID, inserts, updates, removes, same, time, expires) {
 	let line = '';
 	[...arguments].map((a) => line += (a || '0').toString().padStart(10));
-	console.log(new Date(), line);
+	console.log(line);
 }

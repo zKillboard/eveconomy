@@ -57,17 +57,15 @@ async function toArray(promise) {
 let locations = new Map();
 setInterval(() => locations.clear, 3600);
 async function addLocations(app, arr) {
-	let ret = [];
-	for (let ar of await arr) {
-		let location = locations.get(ar.location_id);
+	arr = await arr;
+	for (let i = 0; i < arr.length; i++) {
+		let location = locations.get(arr[i].location_id);
 		if (location == null) {
-			location = await app.db.information.findOne({type: 'location_id', id: ar.location_id});
-			if (location != null) locations.set(ar.location_id, location);
+			location = await app.db.information.findOne({type: 'location_id', id: arr[i].location_id});
+			if (location != null) locations.set(arr[i].location_id, location);
 		} 
-		if (location?.name?.length > 0) ar.location_name = location.name;
-		else ar.location_name = `Location ${ar.location_id}`;
-		
-		ret.push(ar);
+		if (location?.name?.length > 0) arr[i].location_name = location.name;
+		else arr[i].location_name = `Location ${ar.location_id}`;		
 	}
-	return ret;
+	return arr;
 }
