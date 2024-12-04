@@ -222,6 +222,14 @@ span[region_id]:after {
     display: inline;   
 }
 
+.onlyFirst4Region .order {
+    display: none;
+}
+
+.onlyFirst4Region .order.first4Region {
+    display: inherit;
+}
+
 span[region_id="10000001"]:after { content: 'Derelik'; }
 span[region_id="10000002"]:after { content: 'The Forge'; }
 span[region_id="10000003"]:after { content: 'Vale of the Silent'; }

@@ -1,5 +1,9 @@
 'use strict';
 
+var Mutex = require('async-mutex').Mutex;
+const crud_mutex = new Mutex();
+const region_mutex = new Mutex();
+
 module.exports = {
     init: f
 }
@@ -30,23 +34,18 @@ async function f(app) {
 			if (regionID >= 12000000) continue;
 			if (app.bailout) return;
 			loadRegion(app, regionID);
-			await app.sleep(1000);
+			await app.sleep(100);
 		}
 	}
 }
 
-let region_calls = 0;
 async function loadRegion(app, regionID) {
-	// while (region_calls > 5) await app.sleep(10);
 	const redisKey = `evec:region_expires:${regionID}`;
 	let expires = 301;
-	let start = app.now();
-	let f = false;
-	let took = 0;
+	let start = app.now(), took = 0;
 
+	let release;
 	try {
-		region_calls++;
-
 		if (await app.redis.get(redisKey) != null) return;
 
 		let existing_orders = new Map();
@@ -55,23 +54,23 @@ async function loadRegion(app, regionID) {
 			let order = await cursor.next();
 			existing_orders.set(order.order_id, order);
 		}
-		let largeOrderCountRegion = (existing_orders.size >= 10000);
-		try {
-			while (largeOrderCountRegion && await app.redis.set('evec:largeOrderCountRegion', 'true', 'NX', 'EX', 300) == null) {
-				await app.sleep(50);
-			}
-			start = app.now();
+		start = app.now();
 
-			let updates = {inserts: 0, updates: 0, removed: 0, total: 0};
+		let updates = {inserts: 0, updates: 0, removed: 0, total: 0};
 
-			let res = await loadRegionPage(app, regionID, 1, existing_orders, updates);
+		let res = await loadRegionPage(app, regionID, 1, existing_orders, updates);
 
-			if (res != null && res.statusCode != 200) {
+			if (res != null && res.statusCode != 200 && res.statusCode != 304) {
 				console.log(regionID, "ERROR", res.statusCode); 
 			} else if (res != null) {
 				let pages = res.headers['x-pages'] || 1;
 
-				if (res && res.headers && res.headers.expires) expires = expiresToUnixtime(res.headers.expires) - app.now() + 1;
+				if (res?.headers?.expires) expires = expiresToUnixtime(res.headers.expires) - app.now() + 1;
+
+				if (pages > 1) {
+					release = await region_mutex.acquire();
+					start = app.now();
+				}
 				
 				let promises = [];
 				for (let i = pages; i > 1; i--) {
@@ -100,36 +99,30 @@ async function loadRegion(app, regionID) {
 					await redisPublish(app, publish);
 					await app.db.information.updateMany({type: 'item_id', 'id': {'$in': Array.from(types_touched)}}, {$set: {last_price_update: app.now()}});
 				}
-				let done = app.now();
-				took = done - start;
+
+				took = app.now() - start;
 				if (line_count++ % (process.stdout.rows - 1) == 0) logit('Region', 'Inserts', 'Updates', 'Removed', 'Total', 'Duration', 'Expires');
 				logit(regionID, updates.inserts, updates.updates, updates.removed, updates.total, took, expires);
 			}
-		} finally {
-			if (largeOrderCountRegion == true) await app.redis.del('evec:largeOrderCountRegion');
-		}
-	} catch (e) {
+		} catch (e) {
 		console.error(e);
-	} finally {
-		region_calls--;
-		if (app.bailout) return;
+		} finally {
+			if (release) release();
+			if (app.bailout) return;
 
-		expires = Math.max(expires - took + 1, 15);
-		await app.redis.setex(redisKey,  expires, expires);
-		setTimeout(() => loadRegion(app, regionID), (1 + expires) * 1000);
-	}
+			expires = Math.max(expires - took + 1, 15);
+			await app.redis.setex(redisKey,  expires, expires);
+			setTimeout(loadRegion.bind(null, app, regionID), (1 + expires) * 1000);
+		}
 }
 
-let region_page_calls = 0;
 async function loadRegionPage(app, regionID, page, existing_orders, updates) {
-	while (region_page_calls > (process.env.max_regions_page_calls || 5)) await app.sleep(10);
 	try {
-		region_page_calls++;
 		if (app.bailout) return null;
 
 		let url = `https://esi.evetech.net/latest/markets/${regionID}/orders/?datasource=tranquility&page=${page}`;
-		const url_etag_key = `evec:etag:${url}`;
-		let headers = {'If-None-Match': (url_etags.get(url_etag_key) | 'none')}; 
+		let prev_etag = url_etags.get(url) || 'TBD';
+		let headers = {'If-None-Match': prev_etag}; 
 		let res = await app.util.assist.doGet(app, url, headers);
  
 		let bulk = [];
@@ -144,7 +137,8 @@ async function loadRegionPage(app, regionID, page, existing_orders, updates) {
 			const url_orderIds_set = url_orderIds.get(url_orderIds_key);
 			if (url_orderIds_set) for (let order_id of url_orderIds_set) existing_orders.delete(order_id);
 		} else if (res.statusCode == 200) { 
-			if (res.headers.etag) url_etags.set(url, url_etag_key);
+			if (res?.headers?.etag) url_etags.set(url, res.headers.etag);
+			
 			const url_orderIds_set = new Set();
 
 			let orders = JSON.parse(res.body);
@@ -218,15 +212,15 @@ async function loadRegionPage(app, regionID, page, existing_orders, updates) {
 					}
 				}
 			}
-			if (bulk.length > 0) {					
+			if (bulk.length > 0) {
+				let release = await crud_mutex.acquire();
 				try {
-					while (await app.redis.set('evec:lock:orderinsert', 'true', 'NX', 'EX', 60) === false) await app.sleep(10);
 					let crud = await app.db.orders.bulkWrite(bulk);
 					updates.inserts += crud.result.nInserted + crud.result.nUpserted;
 					updates.updates += crud.result.nModified;
 				} finally {
-					await app.redis.del('evec:lock:orderinsert');
-				} 
+					release();
+				}
 				redisPublish(app, publish);
 
 				await app.db.information.updateMany({type: 'item_id', 'id': {'$in': Array.from(types_touched)}}, {$set: {last_price_update: app.now()}});
@@ -240,9 +234,7 @@ async function loadRegionPage(app, regionID, page, existing_orders, updates) {
 		return res;
 	} catch (e) {
 		console.error(e);
-	} finally {
-		region_page_calls--;
-	}
+	} 
 }
 
 function expiresToUnixtime(expires) {
@@ -270,5 +262,5 @@ async function redisPublish(app, publish) {
 async function logit(regionID, inserts, updates, modifies, removes, same, time, expires) {
 	let line = '';
 	[...arguments].map((a) => line += (a || '0').toString().padStart(10));
-	console.log(line);
+	console.log(new Date(), line);
 }
