@@ -85,9 +85,8 @@ async function populateSet(app, typeValue) {
         if (app.no_api == true) return;
         const dayAgo = app.now() - 86400;
 
-        fetched += await iterate(app, await app.db.information.find({type: typeValue, waiting: true}).limit(10));
-        if (fetched > 0) await app.sleep(1000); // allow things to wait to maybe add more for us to wait on... 
-        else fetched += await iterate(app, await app.db.information.find({type: typeValue, last_updated: {$lt: dayAgo}}).sort({last_updated: 1}).limit(10));
+        await app.db.information.updateMany({type: typeValue, last_updated: {$exists: false}}, {$set: {last_updated: 0}});
+        fetched += await iterate(app, await app.db.information.find({type: typeValue, last_updated: {$lt: dayAgo}}).sort({waiting: -1}).limit(10));
     } catch (e) {
         console.log(e, 'dropped on ' + typeValue);
     } finally {

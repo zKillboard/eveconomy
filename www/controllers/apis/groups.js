@@ -34,6 +34,7 @@ async function addGroups(app, result) {
 		let row = await result.next();
 		let subgroups = await addGroups(app, await app.db.information.find({type: 'market_id', parent_group_id: row.id}));
 		let items = {};
+        if (row.types == null) continue;
 		for (let item_id of row.types) {
 			let item = await app.db.information.findOne({type: 'item_id', id: item_id});
 			if (item && item.name) {

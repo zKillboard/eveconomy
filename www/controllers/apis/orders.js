@@ -9,8 +9,11 @@ async function get(req, res, app) {
 	try {
 		const id = parseInt(req.query.item);
 
+        let modEpoch = app.now();
+        modEpoch = modEpoch - (modEpoch % 900);
+
 		let item = await app.db.information.findOne({type: 'item_id', id: id});
-		let epoch = item ? item.last_price_update : 0;
+		let epoch = item ? item.last_price_update : modEpoch;
 
 		let valid = {
        	required: ['item', 'epoch'],
@@ -65,7 +68,7 @@ async function addLocations(app, arr) {
 			if (location != null) locations.set(arr[i].location_id, location);
 		} 
 		if (location?.name?.length > 0) arr[i].location_name = location.name;
-		else arr[i].location_name = `Location ${ar.location_id}`;		
+		else arr[i].location_name = `Location ${arr.location_id}`;		
 	}
 	return arr;
 }

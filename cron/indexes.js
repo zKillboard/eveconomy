@@ -10,7 +10,7 @@ async function f(app) {
     let success = false;
     console.log('Ensuring all indexes exist.')
 
-    app.indexes_complete = true;
+    app.indexes_complete = false;
     app.regions = null;
 
     do {

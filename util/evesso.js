@@ -22,6 +22,7 @@ module.exports = {
 	},
 
 	doHandleCallback: async function(app, code, state, expectedState) {
+        console.log(state, expectedState);
 		if (state != expectedState) throw new Error('Invalid state');
 
 		let opts = {
