@@ -8,7 +8,11 @@ module.exports = {
 async function get(req, res, app) {
   req.session.user = {}
   req.session.state = app.util.evesso.createState();
-  req.session.save();
 
-  return {redirect: app.util.evesso.getLoginURL(req.session.state, ['esi-universe.read_structures.v1', 'esi-markets.read_character_orders.v1', 'esi-markets.read_corporation_orders.v1'])};
+  console.log('eve-login', req.session);
+
+  let url = app.util.evesso.getLoginURL(req.session.state, ['esi-universe.read_structures.v1', 'esi-markets.read_character_orders.v1', 'esi-markets.read_corporation_orders.v1']);
+  return {
+        redirect: url
+  };
 }

@@ -322,18 +322,16 @@ async function loadItem(item_id, region_id = null) {
 	assembleColumns(0, 'buyorders', [], "buy");
 	assembleColumns(0, 'sellorders', [], "sell");
 
-	if (current_item_id !== item_id) {
-		wsUnsub(`market:item:${current_item_id}:region:${current_region_id}`);
-		wsUnsub(`market:item:${current_item_id}`);
-		wsUnsub(`market:region:${current_region_id}`);
+	wsUnsub(`market:item:${current_item_id}:region:${current_region_id}`);
+	wsUnsub(`market:item:${current_item_id}`);
+	wsUnsub(`market:region:${current_region_id}`);
 
-		current_item_id = item_id;
-		current_region_id = region_id;
+	current_item_id = item_id;
+	current_region_id = region_id;
 
-		doGetJSON(`/api/info?id=${item_id}&type=item_id`, populateInfo);	
-		if (region_id != null) doGetJSON(`/api/orders?item=${item_id}&region_id=${region_id}`, populateOrders);
-		else doGetJSON(`/api/orders?item=${item_id}`, populateOrders);
-	}
+	doGetJSON(`/api/info?id=${item_id}&type=item_id`, populateInfo);	
+	if (region_id != null) doGetJSON(`/api/orders?item=${item_id}&region_id=${region_id}`, populateOrders);
+	else doGetJSON(`/api/orders?item=${item_id}`, populateOrders);
 }
 
 function populateOrders(data) {

@@ -6,6 +6,7 @@ module.exports = {
 }
 
 async function f(app) {
+
     while (app.indexes_complete != true) await app.sleep(100);
     while (app.universe_loaded != true) await app.sleep(100);
 
@@ -14,7 +15,7 @@ async function f(app) {
     let characters = [];
     let scopes = [];
     let cursor = await app.db.scopes.find();
-    while (await cursor.hasNext()) scopes.push(await cursor.next()); 
+    while (await cursor.hasNext()) scopes.push(await cursor.next());
 
     for (let scope of scopes) {
         characters.push(scope.character_id);
@@ -27,8 +28,17 @@ async function f(app) {
         });
         if (!structure) continue;
 
-        let access_token = await app.util.evesso.getAccessToken(app, scope.refresh_token, app.redis);
-        
+        let access_token;
+
+        try {
+            access_token = await app.util.evesso.getAccessToken(app, scope.refresh_token, app.redis);
+        } catch (e) {
+            console.error('Error with access token on scope', e);
+            // Something wrong with this access token...
+            await app.db.scopes.removeOne({_id: scope._id});
+            continue;
+        }
+
         if (structure.structure_named == true) continue;
         let failed_char_ids = structure.failed_character_ids || [];
         if (failed_char_ids.indexOf(scope.character_id) >= 0) continue;

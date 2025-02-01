@@ -12,10 +12,10 @@ setInterval(clean_limit_object, 5000);
 // Per CCP Explorer, respect these rate limits
 const esi_rate_intervals = {
 	0    : 20, 	// 00:00am UTC
-	800  : 10, 	// 08:00am UTC
+	//800  : 10, 	// 08:00am UTC
 	1059 : 0, 	// 10:59am UTC
-	1110 : 10, 	// 11:10am UTC
-	1800 : 5 	// 06:00pm UTC
+	1110 : 20, 	// 11:10am UTC
+	//1800 : 5 	// 06:00pm UTC
 }
 let rate_limit = -1;
 let rate_limit_override = parseInt(process.env.rate_limit_override);

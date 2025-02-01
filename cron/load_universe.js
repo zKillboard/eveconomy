@@ -5,18 +5,21 @@ module.exports = {
 }
 
 async function f(app) {
-	while (app.indexes_complete !== true) await app.sleep(100);
+	if (await app.redis.get('ec:universe_loaded') !== "true") {
+		while (app.indexes_complete !== true) await app.sleep(100);
 
-	console.log('Universe loading...');
+		console.log('Universe loading...');
 
-    await Promise.allSettled([
-        addStations(app),
-	    addSystems(app),
-	    addRegions(app),
-        addTypes(app),
-    ]);
+	    await Promise.allSettled([
+	        addStations(app),
+		    addSystems(app),
+		    addRegions(app),
+	        addTypes(app),
+	    ]);
 
-	console.log('Universe loaded...');
+		console.log('Universe loaded...');
+		await app.redis.setex('ec:universe_loaded', 3600, "true");
+	}
 	app.universe_loaded = true;
 }
 
