@@ -46,7 +46,8 @@ async function loadRegion(app, regionID) {
 
 	let release;
 	try {
-		if (await app.redis.get(redisKey) != null) return;
+		let ttl = await app.redis.ttl(redisKey);
+		while (ttl >= 0) { await app.sleep(1000); ttl--; }
 
 		let existing_orders = new Map();
 		let cursor = await app.db.orders.find({region_id: regionID}).project({_id: 0});
