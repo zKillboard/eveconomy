@@ -273,7 +273,7 @@ function scheduleRemoval(element, timeout_seconds = 1) {
 
 async function wsConnect() {
 	if (ws == null) {
-		ws = new ReconnectingWebSocket(websocket_url);
+		ws = new ReconnectingWebSocket('/websocket/');
 		ws.onopen = wsOpen;
 	}	
 }

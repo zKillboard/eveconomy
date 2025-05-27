@@ -62,4 +62,4 @@ script(defer src="https://cdnjs.cloudflare.com/ajax/libs/reconnecting-websocket/
 
 script(defer data-server_start=server_started src='/js/es.js?v=' + server_started)
 script
-    = "const websocket_url= '" + process.env.websocket_url + "';"
+    = "const websocket_url= '" + process.env.WEBSOCKET_URL + "';"
