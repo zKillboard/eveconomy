@@ -1,6 +1,6 @@
 {
   "dependencies": {
     "async-mutex": "^0.5.0",
-    "fundamen": "^0.2.6"
+    "fundamen": "^0.2.9"
   }
 }
