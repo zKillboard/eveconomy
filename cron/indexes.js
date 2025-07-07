@@ -50,6 +50,10 @@ async function applyIndexes(app) {
     await createCollection(app, 'scopes');
     await createIndex(app, app.db.scopes, { character_id: 1 }, { unique: true });
     await createIndex(app, app.db.scopes, { scopes: 1 });
+
+    await createCollection(app, 'keyvalues');
+    await createIndex(app, app.db.keyvalues, { key: 1 });
+    await createIndex(app, app.db.keyvalues, { expires: 1 }, { expireAfterSeconds: 0 });
 }
 
 async function createCollection(app, name) {

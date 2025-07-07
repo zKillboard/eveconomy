@@ -9,6 +9,7 @@ const market_groups = '/latest/markets/groups/';
 
 async function f(app) {
 	while (app.indexes_complete !== true) { await app.sleep(1000); }
+	console.log('Bulding market groups');
 	
 	if (app.bailout == true) return;
 	const url = 'https://esi.evetech.net/latest/markets/groups/';
@@ -30,7 +31,8 @@ async function f(app) {
 
 	// build the market group menu
 	let groups = await addGroups(app, await app.db.information.find({type: 'market_id', parent_group_id: {$exists: false}}))	
-	await app.redis.set("evec:groups", JSON.stringify(groups));
+	const expiresAt = new Date(Date.now() + 8 * 60 * 60 * 1000);
+	await app.db.keyvalues.updateOne({key: 'groups'}, {$set: {key: 'groups', value: groups, epxires: expiresAt}}, {upsert: true});
 	console.log('Market groups updated');
 }
 

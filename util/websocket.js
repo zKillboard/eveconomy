@@ -7,13 +7,11 @@ module.exports = function (_app) {
 }
 
 function initialize() {
-	return;
 	if (process.env.WEBSOCKET_LOAD != 'true') return;
 
 	if (typeof app.express == 'undefined' || typeof app.websocket == 'undefined') return setTimeout(initialize, 1000);
 
 	const redis = app.createRedisClient();
-	const redis2 = app.createRedisClient();
 
 	redis.on("pmessage", (pattern, channel, message) => {
 		let count = 0;
