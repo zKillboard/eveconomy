@@ -161,7 +161,8 @@ async function loadRegionPage(app, regionID, page, existing_orders, updates) {
 
 				if (typeof cur_order === 'undefined') {
 					order.region_id = regionID;
-					if (order.range == 'solarsystem') order.range = 'system';
+					if (regionID == 19000001) order.range = 'universe';
+					else if (order.range == 'solarsystem') order.range = 'system';
 					const new_order = Object.assign({}, order);
 					delete new_order.order_id;
 					new_order.epoch = now;
