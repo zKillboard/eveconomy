@@ -30,7 +30,7 @@ let groupsLoaded = false;
 function loadMarketGroups() {
 	if (groupsLoaded == false) {
 		groupsLoaded = true;
-		doGetJSON(`/api/groups.json`, parseGroups);
+		doGetJSON(`./api/groups.json`, parseGroups);
 		console.log('Loading groups');
 	}
 }
