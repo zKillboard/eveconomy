@@ -58,6 +58,10 @@ img {
     margin-top: 2px;
 }
 
+.hideit {
+    display: none;
+}
+
 .ordertable tbody tr td {
     width: 15%;
 }

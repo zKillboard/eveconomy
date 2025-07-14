@@ -46,9 +46,11 @@ function addGroups(parent, data, depth) {
 	for (let key of keys) {
 		let group = data[key];
 
+		let forid = 'subgroup' + group.id;
 		let div = createElement('div', undefined, {classes: 'mlist'})
-		let anchor = createElement('a', key, {classes: 'btn btn-sm btn-default groupname', 'data-bs-toggle': 'collapse', href: '#subgroup' + group.id, role: 'button', 'aria-expanded': false});
-		let subgroup = createElement('div', undefined, {id: 'subgroup' + group.id, classes: 'collapse subgroup'});
+		let anchor = createElement('a', key, {classes: 'btn btn-sm btn-default groupname', for: forid, href: '#subgroup' + group.id, role: 'button', 'aria-expanded': false});
+		anchor.onclick = anchorClick;
+		let subgroup = createElement('div', undefined, {id: forid, classes: 'hideit subgroup'});
 
 		div.appendChild(anchor);
 		div.appendChild(subgroup);
@@ -60,7 +62,7 @@ function addGroups(parent, data, depth) {
 			let ul = createElement('ul');
 			for (let itemName of Object.keys(group.items).sort()) {
 				let item = group.items[itemName];
-				itemNameL = itemName.toLowerCase();
+				let itemNameL = itemName.toLowerCase();
 
 				let li = createElement('li', undefined, {item_id: item.item_id, itemname: itemNameL, classes: 'itemname'});
 				li.onclick = litem;
@@ -75,6 +77,22 @@ function addGroups(parent, data, depth) {
 			subgroup.appendChild(ul);
 		}
 	}
+}
+
+function anchorClick() {
+	let forid = this.getAttribute('for');
+	let child = document.getElementById(forid);
+
+	if (child.classList.contains('hideit')) {
+		child.classList.remove('hideit');
+		this.setAttribute('aria-expanded', 'true');
+	}
+	else {
+		child.classList.add('hideit');
+		this.setAttribute('aria-expanded', 'false');
+	}
+	
+	return false;
 }
 
 function doSearch() {
@@ -105,7 +123,7 @@ function doSearch() {
 			[...matches].map((t) => itemMatch(searchArrayMap[t]));
 
 			noncollapsing = document.querySelectorAll('.searching .match > .groupname');
-			[...noncollapsing].map((nc) => nc.setAttribute('data-bs-toggle', 'non-collapsing'));
+			// [...noncollapsing].map((nc) => nc.setAttribute('data-bs-toggle', 'non-collapsing'));
 
 			if (exact.length == 1) {
 				itemparent.scrollTo(0, searchArrayMap[text].offsetTop - 100);
@@ -147,19 +165,6 @@ function pushLiItem(li) {
 	window.history.pushState({path: url},'', url);
 	setTimeout(exec, 1);
 	setTimeout(showOrders, 1);
-	return false;
-}
-
-function toggleChildren(e) {
-	e.stopPropagation();
-	let market_id = this.getAttribute('market_id');
-	console.log(market_id)
-	let show = (this.getAttribute('aria-expanded') == "true" ? false : true);
-	for (let child of this.children) {
-		if (show) child.classList.remove('d-none');
-		else child.classList.add('d-none');
-	}
-	this.setAttribute('aria-expanded', show);
 	return false;
 }
 
