@@ -4,7 +4,7 @@ const default_item_id = 44992;
 const default_region_id = null;
 const modification_indication_delay_insert = 300;
 const modification_indication_delay_modify = 300;
-const modification_indication_delay_remove= 15;
+const modification_indication_delay_remove= 5;
 
 document.addEventListener('DOMContentLoaded', exec);
 document.getElementById('searchbox').addEventListener('input', doSearch);
@@ -174,25 +174,9 @@ function exec() {
 		loadItem(split[2]);
 		break;
 	default:
+		console.log('unknown or invalid path, defaulting to 44992');
 		loadItem(44992);
-		console.log('unknown path execution');
 	}
-}
-
-function scheduleClass(element, className, timeout_seconds = 4) {
-	let attr = `timeout-${className}`;
-	let timeout = element.getAttribute(attr);
-	clearTimeout(parseInt(timeout));
-
-	element.classList.add(className);
-	timeout = setTimeout(() => { removeClass(element, className); }, (timeout_seconds * 1000));
-	element.setAttribute(attr, timeout);
-	return element;
-}
-
-function removeClass(element, className) {
-	element.classList.remove(className);
-	element.removeAttribute(`timeout-${className}`);
 }
 
 function scheduleRemoval(element, timeout_seconds = 1) {
@@ -230,15 +214,17 @@ function loadItem(item_id, region_id = null, refresh = false) {
 	current_region_id = region_id;
 
 	if (refresh == false) {
-		orders = {};
 		const selldiv = document.querySelector('.orders[of="sell"]');
 		const buydiv = document.querySelector('.orders[of="buy"]');
 		selldiv.innerHTML = '';
 		buydiv.innerHTML = '';
+	} else {
+		document.querySelectorAll('.modified').forEach(el => { el.classList.remove('modified')});
+		document.querySelectorAll('.inserted').forEach(el => { el.classList.remove('inserted')});
 	}
 	
 	let now = Math.floor(Date.parse(new Date().toISOString()) / 1000);
-	check_regions.forEach((region_id) => doGetJSON(`https://esi.evetech.net/markets/${region_id}/orders/?datasource=tranquility&order_type=all&page=1&&type_id=${item_id}`, populateOrders, {page: 1, now: now}))
+	check_regions.forEach((region_id) => doGetJSON(`https://esi.evetech.net/markets/${region_id}/orders/?datasource=tranquility&order_type=all&page=1&&type_id=${item_id}`, populateOrders, {page: 1, now: now, refresh: refresh}))
 	setTimeout(loadMarketGroups, 250);
 	if (refresh) setTimeout(removeOrders.bind(null, now), 250);
 	fetchLocations();
@@ -252,7 +238,7 @@ function populateOrders(data, path, params) {
 	let buy = document.createElement('div');
 	data.forEach((o) => {
 		if (modifyOrder(now, o) == false && o.min_volume == 1) { // min_volume = 1 just because anything else is probably some sort of scam
-			let ohtml = createOrder(now, o);
+			let ohtml = createOrder(now, o, params.refresh);
 			if (o.is_buy_order) buy.append(ohtml);
 			else sell.append(ohtml);
 		}
@@ -326,8 +312,7 @@ const columns = {
 	'range': {field: 'range', classes: 'text-end capitalize'},
 };
 
-let orders = {};
-function createOrder(now, order) {
+function createOrder(now, order, refresh = false) {
 	if (order.volume_remain == 0) return;
 	try {
 		let pdiv = createElement('div', undefined, {classes: 'order', oid: order.order_id, price: Math.floor(order.price * 100)});
@@ -337,10 +322,6 @@ function createOrder(now, order) {
 			if (columns[column]['format']) val = getValueFormatted(val, columns[column]['format']);
 			
 			let span = createElement('span', val, columns[column]);
-			let diff = now - (order[column + '_epoch'] || 0);
-			if (diff < 300 && diff > 0) {
-				scheduleClass(span, 'modified', diff);
-			}
 			if (column == 'location_name') {
 				span.setAttribute('location_id', order.location_id);
 				span.setAttribute('system_id', order.system_id);
@@ -352,12 +333,8 @@ function createOrder(now, order) {
 			pdiv.appendChild(span);
 		}
 
-		let diff = now - (order.epoch || 0);
-		if (diff < 300 && diff > 0) {
-			scheduleClass(pdiv, 'inserted', diff);
-		}
+		if (refresh == true) pdiv.classList.add('inserted');
 
-		orders[`${order.order_id}`] = pdiv;
 		return pdiv;
 	} catch (e) {
 		console.error(order, e);
@@ -375,26 +352,23 @@ function modifyOrder(now, order) {
 	let volume_remain = getValueFormatted(order.volume_remain, 'int');
 	let span_vr = children[0];
 	if (volume_remain != span_vr.innerHTML) {
-		//scheduleClass(span_vr, 'flash', .75);
 		span_vr.innerHTML = volume_remain;
-		scheduleClass(span_vr, 'modified', modification_indication_delay_modify); 
+		span_vr.classList.add('modified');
 		console.log('modified', order_id, 'remain', volume_remain);
 	}
 
 	let span_price = children[1];
 	let price = getValueFormatted(order.price, 'dec');
 	if (price != span_price.innerHTML) {
-		//scheduleClass(span_price, 'flash', .75);
 		el.setAttribute('price', Math.floor(order.price * 100));
 		span_price.innerHTML = price;
-		scheduleClass(span_price, 'modified', modification_indication_delay_modify); 
+		span_price.classList.add('modified');
 		console.log('modified', order_id, 'price', price);
 	}
 }
 
 function removeOrders(now) {
 	if (inflight > 0) return setTimeout(removeOrders.bind(null, now), 250);
-	//return console.log('removing', now);
 	let goodbye = document.querySelectorAll(`.order:not([last_modified="${now}"])`);
 
 	goodbye.forEach(order => {
@@ -404,13 +378,9 @@ function removeOrders(now) {
 		order.classList.remove('modified');
 
 		let span_vr = document.querySelector(`.order[oid="${order_id}"] span[field="volume_remain"]`);
-		scheduleClass(span_vr, 'flash', .75);
 		span_vr.innerHTML = 0;			
 
-		scheduleClass(order, 'remove', modification_indication_delay_remove);
-		scheduleRemoval(order, modification_indication_delay_remove);
-		delete(orders[`${order_id}`]);
-		//return console.log('removed', order_id);
+		setTimeout(() => { element.remove(); }, modification_indication_delay_remove * 1000);
 	});
 }
 
