@@ -385,7 +385,7 @@ function removeOrders(now) {
 		let span_vr = document.querySelector(`.order[oid="${order_id}"] span[field="volume_remain"]`);
 		span_vr.innerHTML = 0;			
 
-		setTimeout(() => { element.remove(); }, modification_indication_delay_remove * 1000);
+		setTimeout(() => { order.remove(); }, modification_indication_delay_remove * 1000);
 	});
 }
 
