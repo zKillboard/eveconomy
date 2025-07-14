@@ -381,6 +381,7 @@ function removeOrders(now) {
 		
 		order.classList.remove('inserted');
 		order.classList.remove('modified');
+		order.classList.add('remove');
 
 		let span_vr = document.querySelector(`.order[oid="${order_id}"] span[field="volume_remain"]`);
 		span_vr.innerHTML = 0;			
