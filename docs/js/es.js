@@ -163,7 +163,6 @@ function toggleChildren(e) {
 	return false;
 }
 
-let ws = null;
 function exec() {
 	loadRegions();
 
@@ -202,32 +201,24 @@ function scheduleRemoval(element, timeout_seconds = 1) {
 
 let regions = null;
 function loadRegions() {
-	doGetJSON(`https://esi.evetech.net/universe/regions`, saveRegions);
+	if (regions == null) doGetJSON(`https://esi.evetech.net/universe/regions`, saveRegions);
 }
 
 function saveRegions(data) {
 	regions = data;
 	console.log('Regions loaded');
-	loadSystems();
 }
 
-let systems = null;
-function loadSystems() {
-	doGetJSON(`https://esi.evetech.net/universe/regions`, saveSystems);
-}
-
-function saveSystems(data) {
-	systems = data;
-}
-
+let current_item_timeout = -1;
 let current_item_id = null;
 let current_region_id = null;
 let current_load_item = null;
 function loadItem(item_id, region_id = null, refresh = false) {
 	if (regions === null) return setTimeout(loadItem.bind(null, item_id, region_id), 1);
+	clearTimeout(current_item_timeout);
 	if (current_item_id != item_id) doGetJSON(`https://esi.evetech.net/universe/types/${item_id}/?datasource=tranquility&language=en`, populateInfo);	
 
-	console.log('Loading item', item_id, region_id);
+	console.log('Loading item', item_id, region_id, refresh);
 	item_id = parseInt(item_id);
 	let check_regions = regions;
 	if (item_id == 44992) check_regions = [19000001];
@@ -251,6 +242,7 @@ function loadItem(item_id, region_id = null, refresh = false) {
 	setTimeout(loadMarketGroups, 250);
 	if (refresh) setTimeout(removeOrders.bind(null, now), 250);
 	fetchLocations();
+	current_item_timeout = setTimeout(loadItem.bind(null, item_id, region_id, true), 301000);
 }
 
 function populateOrders(data, path, params) {
