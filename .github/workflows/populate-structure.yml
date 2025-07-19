@@ -1,0 +1,31 @@
+name: Populate Player Structures
+
+on:
+  workflow_dispatch:      # Allows manual trigger
+  schedule:
+    - cron: "0 5 * * *"   # Run daily at 05:00 UTC
+
+jobs:
+  populate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Make script executable
+        run: chmod +x ./populate_player_structures.sh
+
+      - name: Run population script
+        run: ./populate_player_structures.sh
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add www/structures.json
+          git commit -m "Daily update of structures.json" || echo "No changes to commit"
+          git push
+
