@@ -6,7 +6,7 @@
 
 export CSV_URL="https://static.adam4eve.eu/IDs/playerStructure_IDs.csv"
 export CSV_FILE="$RUNNER_TEMP/structures.csv"
-export JSON_FILE="www/structurs.json"
+export JSON_FILE="docs/structures.json"
 
 echo $CSV_FILE 
 echo $JSON_FILE

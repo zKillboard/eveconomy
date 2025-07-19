@@ -170,6 +170,7 @@ function pushLiItem(li) {
 
 function exec() {
 	loadRegions();
+	loadStructures();
 
 	const path = window.location.pathname;
 	const split = path.split('/');
@@ -196,6 +197,19 @@ function loadRegions() {
 function saveRegions(data) {
 	regions = data;
 	console.log('Regions loaded');
+}
+
+let structures = null;
+function loadStructures() {
+	if (structures == null) doGetJSON(`/structures.json`, saveStructures);
+}
+
+function saveStructures(data) {
+	structures = data;
+	console.log('Structures Loaded');
+	for (const [id, name] of Object.entries(data)) {
+		localStorage.setItem(`${id}`, name)
+	}
 }
 
 let current_item_timeout = -1;
@@ -284,6 +298,11 @@ function fetchLocation(el) {
 		const path = `https://esi.evetech.net/universe/stations/${location_id}/?datasource=tranquility`;
 		updateNameById(path, el, location_id, false);
 	} else {
+		if (structures[location_id] != null) {
+			el.textContent = structures[location_id];
+			el.removeAttribute('fetch_location');	
+			return;
+		}
 		const system_id = parseInt(el.getAttribute('system_id'));
 		const path = `https://esi.evetech.net/universe/systems/${system_id}/?datasource=tranquility&language=en`;
 		updateNameById(path, el, location_id, true);
