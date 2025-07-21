@@ -169,6 +169,7 @@ function pushLiItem(li) {
 }
 
 function exec() {
+	keyCleanup();
 	loadRegions();
 	loadStructures();
 
@@ -182,6 +183,14 @@ function exec() {
 	default:
 		console.log('unknown or invalid path, defaulting to 44992');
 		loadItem(44992);
+	}
+}
+
+function keyCleanup() {
+	// cleanup keys if necesary
+	for (let i = 0; i < localStorage.length; i++) {
+		const key = localStorage.key(i);
+		if (localStorage.getItem(key) == "false") localStorage.removeItem(key);
 	}
 }
 
@@ -416,10 +425,18 @@ function createElement(element, content = '', attributes = {}) {
 	return e;
 }
 
+let keyCleanupID = -1;
 let inflight = 0;
 function doGetJSON(path, f, params = {}) {
 	const xhr = new XMLHttpRequest();
-	xhr.onreadystatechange = function() {if (xhr.readyState === 4) f(JSON.parse(xhr.responseText), path, params);};
+	xhr.onreadystatechange = function() {
+		if (xhr.readyState === 4 && xhr.status < 400) f(JSON.parse(xhr.responseText), path, params);
+		else if (xhr.readyState == 4) {
+			console.log(xhr.status, path);
+			clearTimeout(keyCleanupID);
+			keyCleanupID = setTimeout(keyCleanup, 1000); // remove "false" from localStorage
+		}
+	};
 	xhr.onloadend  = function() { inflight--; };
 	xhr.open('GET', path);
 	xhr.send();
