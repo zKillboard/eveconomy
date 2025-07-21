@@ -198,7 +198,6 @@ function updateTime() {
 
 function updateTqStatus() {
 	doGetJSON('https://esi.evetech.net/status/', setTqStatus);
-	setTimeout(updateTqStatus, 15000);
 }
 
 let tqstatusid = -1;
@@ -219,7 +218,7 @@ function setTqStatus(data) {
 		const nowUTC = new Date();
 		let seconds = nowUTC.getUTCSeconds();
 		clearTimeout(tqstatusid);
-		tqstatus = setTimeout(setTqStatus, 1000 * (60 - seconds));
+		tqstatus = setTimeout(updateTqStatus, 1000 * (60 - seconds));
 	}
 }
 
@@ -465,6 +464,7 @@ function createElement(element, content = '', attributes = {}) {
 let keyCleanupID = -1;
 let inflight = 0;
 function doGetJSON(path, f, params = {}) {
+	console.log(new Date(), 'fetching', path);
 	const xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function() {
 		if (xhr.readyState === 4 && xhr.status < 400) f(JSON.parse(xhr.responseText), path, params);
