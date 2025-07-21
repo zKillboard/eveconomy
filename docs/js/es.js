@@ -169,7 +169,9 @@ function pushLiItem(li) {
 }
 
 function exec() {
-	keyCleanup();
+	setTimeout(keyCleanup, 0);
+	setTimeout(updateTime, 0);
+	setTimeout(updateTqStatus, 0);
 	loadRegions();
 	loadStructures();
 
@@ -183,6 +185,41 @@ function exec() {
 	default:
 		console.log('unknown or invalid path, defaulting to 44992');
 		loadItem(44992);
+	}
+}
+
+function updateTime() {
+	const nowUTC = new Date();
+	const timeUTC = nowUTC.getUTCHours().toString().padStart(2, '0') + ':' + nowUTC.getUTCMinutes().toString().padStart(2, '0') + ' UTC';
+	document.getElementById('utcClock').innerHTML = timeUTC;
+	let seconds = nowUTC.getUTCSeconds();
+	setTimeout(updateTime, 1000 * (60 - seconds));
+}
+
+function updateTqStatus() {
+	doGetJSON('https://esi.evetech.net/status/', setTqStatus);
+	setTimeout(updateTqStatus, 15000);
+}
+
+let tqstatusid = -1;
+function setTqStatus(data) {
+	try {
+		if (data == null || data.players == null) return;
+		const tqStatus = document.getElementById('tqStatus');
+		if (data.players >= 500) {
+			tqStatus.innerHTML = ' TQ ONLINE';
+			tqStatus.classList.add('online');
+			tqStatus.classList.remove('offline');
+		} else {
+			tqStatus.innerHTML = ' TQ OFFLINE';
+			tqStatus.classList.remove('online');
+			tqStatus.classList.add('offline');
+		}
+	} finally {
+		const nowUTC = new Date();
+		let seconds = nowUTC.getUTCSeconds();
+		clearTimeout(tqstatusid);
+		tqstatus = setTimeout(setTqStatus, 1000 * (60 - seconds));
 	}
 }
 
@@ -437,10 +474,14 @@ function doGetJSON(path, f, params = {}) {
 			keyCleanupID = setTimeout(keyCleanup, 1000); // remove "false" from localStorage
 		}
 	};
-	xhr.onloadend  = function() { inflight--; };
+	xhr.onloadend  = function() { 
+		inflight--;
+		if (inflight == 0) document.getElementById('inflight_spinner').classList.add('d-none');
+	};
 	xhr.open('GET', path);
 	xhr.send();
 	inflight++;
+	document.getElementById('inflight_spinner').classList.remove('d-none');
 }
 
 const formats = {

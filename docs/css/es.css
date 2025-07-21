@@ -234,6 +234,16 @@ span[region_id]:after {
     display: inherit;
 }
 
+#tqStatus.offline, #tqStatus.offline::before {
+    color: cyan; /* red */
+    content: "X ";
+}
+
+#tqStatus.online, #tqStatus.online::before {
+    color: magenta; /* green */
+    content: "\2713 ";
+}
+
 span[region_id="10000001"]:after { content: 'Derelik'; }
 span[region_id="10000002"]:after { content: 'The Forge'; }
 span[region_id="10000003"]:after { content: 'Vale of the Silent'; }
