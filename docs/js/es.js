@@ -188,11 +188,14 @@ function exec() {
 	}
 }
 
-function updateTime() {
+function getTime() {
 	const nowUTC = new Date();
-	const timeUTC = nowUTC.getUTCHours().toString().padStart(2, '0') + ':' + nowUTC.getUTCMinutes().toString().padStart(2, '0') + ' UTC';
-	document.getElementById('utcClock').innerHTML = timeUTC;
-	let seconds = nowUTC.getUTCSeconds();
+	return nowUTC.getUTCHours().toString().padStart(2, '0') + ':' + nowUTC.getUTCMinutes().toString().padStart(2, '0') + ' UTC';
+}
+
+function updateTime() {
+	document.getElementById('utcClock').innerHTML = getTime();
+	let seconds = new Date().getUTCSeconds();
 	setTimeout(updateTime, 1000 * (60 - seconds));
 }
 
@@ -464,7 +467,7 @@ function createElement(element, content = '', attributes = {}) {
 let keyCleanupID = -1;
 let inflight = 0;
 function doGetJSON(path, f, params = {}) {
-	console.log(new Date(), 'fetching', path);
+	console.log(getTime(), 'fetching', path);
 	const xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function() {
 		if (xhr.readyState === 4 && xhr.status < 400) f(JSON.parse(xhr.responseText), path, params);
