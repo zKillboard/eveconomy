@@ -1,311 +1,556 @@
 /* invert filter based dark mode */
-body.dark{
-    background-color: black;
-    font-size: 14px;
-    overflow: hidden;
+body.dark {
+	background-color: black;
+	font-size: 14px;
+	overflow: hidden;
 }
 
 .inverse {
-    filter: invert(1);
+	filter: invert(1);
 }
 
 img {
-    filter: invert(1);
-    background-color: #111;
+	filter: invert(1);
+	background-color: #111;
 }
 
-#sitelogo, #itemimg {
-    height: 25px;
-    width: 25px;
-    margin: 0.25em;
+#sitelogo,
+#itemimg {
+	height: 25px;
+	width: 25px;
+	margin: 0.25em;
 }
 
 .capitalize {
-    text-transform: capitalize;
+	text-transform: capitalize;
 }
 
 #content {
-    min-height: calc(100vh - 2.71em);
-    max-height: calc(100vh - 2.71em);
+	min-height: calc(100vh - 2.71em);
+	max-height: calc(100vh - 2.71em);
 }
 
 #searchbox {
-    width: 100%;
-    height: 2em;
+	width: 100%;
+	height: 2em;
 }
 
 #itemparent {
-    min-height: calc(100vh - 4.72em);
-    max-height: calc(100vh - 4.72em);
-    overflow-x: hidden;
-    overflow-y: scroll;
+	min-height: calc(100vh - 4.72em);
+	max-height: calc(100vh - 4.72em);
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 #orders {
-    min-height: calc(100vh - 2.72em);
-    max-height: calc(100vh - 2.72em);
+	min-height: calc(100vh - 2.72em);
+	max-height: calc(100vh - 2.72em);
 }
 
 .ordertable {
-    overflow-y: scroll;
-    padding-right: 0.5em;
-    min-height: calc((100vh - 7em) / 2);
-    max-height: calc((100vh - 7em) / 2);
+	overflow-y: scroll;
+	padding-right: 0.5em;
+	min-height: calc((100vh - 7em) / 2);
+	max-height: calc((100vh - 7em) / 2);
 }
 
 #orders h6 {
-    border-top: solid 1px #ccc;
-    margin-top: 2px;
+	border-top: solid 1px #ccc;
+	margin-top: 2px;
 }
 
 .hideit {
-    display: none;
+	display: none;
 }
 
 .ordertable tbody tr td {
-    width: 15%;
+	width: 15%;
 }
 
 .ordertable tbody tr td[field='location_name'] {
-    width: 100%;
+	width: 100%;
 }
 
 .mlist a {
-    width: 100%;
-    text-align: left;
+	width: 100%;
+	text-align: left;
 }
 
 .mlist .mlist {
-    margin-left: 1em;
+	margin-left: 1em;
 }
 
 .mlist a[aria-expanded='false']:before {
-    color: black;
-    content: "\2795 ";
-    padding-right: .5em;
+	color: black;
+	content: "\2795 ";
+	padding-right: .5em;
 }
 
 .mlist a[aria-expanded='true']:before {
-    content: "\2796 ";
-    padding-right: .5em;
+	content: "\2796 ";
+	padding-right: .5em;
 }
 
 .mlist ul {
-    list-style-type: none;
-    width: 100%;
-    margin: 0.25px;
+	list-style-type: none;
+	width: 100%;
+	margin: 0.25px;
 }
 
 .mlist ul li {
-    cursor: pointer;
-    width: 100%;
-    padding: 0.25em;
+	cursor: pointer;
+	width: 100%;
+	padding: 0.25em;
 }
 
 .mlist ul li a {
-    text-decoration: none;
-    border-bottom: #111;
-    width: 100%;
+	text-decoration: none;
+	border-bottom: #111;
+	width: 100%;
 }
 
-.mlist ul li:hover, .mlist a:hover {
-    background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
+.mlist ul li:hover,
+.mlist a:hover {
+	background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
 }
 
-.searching .groupname, .searching .itemname {
-    display: none;
+.searching .groupname,
+.searching .itemname {
+	display: none;
 }
 
-.searching .match > .groupname, .searching .match  {
-    display: block;
+.searching .match>.groupname,
+.searching .match {
+	display: block;
 }
 
 .searching .groupname:before {
-    content: "\1f784 " !important;
+	content: "\1f784 " !important;
 }
 
 .orders {
-    width: 100%;
-    display: flex;
-    flex-flow: column;
+	width: 100%;
+	display: flex;
+	flex-flow: column;
 }
 
 .orders[of='buy'] {
-    flex-flow: column-reverse;
+	flex-flow: column-reverse;
 }
 
 .ordersheader {
-    font-weight: bold;
-    border-bottom: solid 1px #eee;
+	font-weight: bold;
+	border-bottom: solid 1px #eee;
 }
 
-.ordersheader, .order {
-    width: 100%;
-    display: flex;
+.ordersheader,
+.order {
+	width: 100%;
+	display: flex;
 }
 
-.ordersheader span, .order span {
-    min-width: 10em;
-    padding-left: 1em;
+.ordersheader span,
+.order span {
+	min-width: 10em;
+	padding-left: 1em;
 }
 
 span[field='location_name'] {
-    width: 100%;
+	width: 100%;
 }
 
 .ordersheader {
-    font-weight: bold;
-    box-shadow: 0px 0px 5px #ccc;
-    position: sticky;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    background-color: white;
+	font-weight: bold;
+	box-shadow: 0px 0px 5px #ccc;
+	position: sticky;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	background-color: white;
 }
 
 .order.header span {
-    margin-bottom: 1em;
-    border-bottom: 5px solid white;;
+	margin-bottom: 1em;
+	border-bottom: 5px solid white;
+	;
 }
 
 @media (max-width: 575px) {
-    .xs-hideit {
-        display: none;
-        transition: display 1s linear;
-    }
+	.xs-hideit {
+		display: none;
+		transition: display 1s linear;
+	}
 }
 
 .inserted {
-    color: #ff31ff;
+	color: #ff31ff;
 }
 
-.inserted > span:first-child:before {
-    content: '↻';
-    float: left;
-    color: grey;
-    font-size: 75%;
+.inserted>span:first-child:before {
+	content: '↻';
+	float: left;
+	color: grey;
+	font-size: 75%;
 }
 
 .modified {
-    color: #ff31ff;
+	color: #ff31ff;
 }
 
 .modified:before {
-    content: '↻';
-    color: grey;
-    font-size: 70%;
+	content: '↻';
+	color: grey;
+	font-size: 70%;
 }
 
 .remove {
-    color: #33dfc5;
+	color: #33dfc5;
 }
 
-.remove > span:first-child:before {
-    content: 'X';
-    float: left;
-    color: #999;
-    font-size: 75%;
+.remove>span:first-child:before {
+	content: 'X';
+	float: left;
+	color: #999;
+	font-size: 75%;
 }
 
 .order.usersorder {
-    color: black;
-    background-color: #edff08;
+	color: black;
+	background-color: #edff08;
 }
 
 .flash {
-    color: white;
+	color: white;
 }
 
 span[region_id]:after {
-    font-size: 75%; 
-    margin-left: 1em; 
-    color: #777;
+	font-size: 75%;
+	margin-left: 1em;
+	color: #777;
 }
 
 .showRegions span[region_id]:after {
-    display: inline;   
+	display: inline;
 }
 
 .onlyFirst4Region .order {
-    display: none;
+	display: none;
 }
 
 .onlyFirst4Region .order.first4Region {
-    display: inherit;
+	display: inherit;
 }
 
-#tqStatus.offline, #tqStatus.offline::before {
-    color: cyan; /* red */
-    content: "X ";
+#tqStatus.offline,
+#tqStatus.offline::before {
+	color: cyan;
+	/* red */
+	content: "X ";
 }
 
-#tqStatus.online, #tqStatus.online::before {
-    color: magenta; /* green */
-    content: "\2713 ";
+#tqStatus.online,
+#tqStatus.online::before {
+	color: magenta;
+	/* green */
+	content: "\2713 ";
 }
 
-span[region_id="10000001"]:after { content: 'Derelik'; }
-span[region_id="10000002"]:after { content: 'The Forge'; }
-span[region_id="10000003"]:after { content: 'Vale of the Silent'; }
-span[region_id="10000005"]:after { content: 'Detorid'; }
-span[region_id="10000006"]:after { content: 'Wicked Creek'; }
-span[region_id="10000007"]:after { content: 'Cache'; }
-span[region_id="10000008"]:after { content: 'Scalding Pass'; }
-span[region_id="10000009"]:after { content: 'Insmother'; }
-span[region_id="10000010"]:after { content: 'Tribute'; }
-span[region_id="10000011"]:after { content: 'Great Wildlands'; }
-span[region_id="10000012"]:after { content: 'Curse'; }
-span[region_id="10000013"]:after { content: 'Malpais'; }
-span[region_id="10000014"]:after { content: 'Catch'; }
-span[region_id="10000015"]:after { content: 'Venal'; }
-span[region_id="10000016"]:after { content: 'Lonetrek'; }
-span[region_id="10000017"]:after { content: 'J7HZ-F'; }
-span[region_id="10000018"]:after { content: 'The Spire'; }
-span[region_id="10000020"]:after { content: 'Tash-Murkon'; }
-span[region_id="10000022"]:after { content: 'Stain'; }
-span[region_id="10000023"]:after { content: 'Pure Blind'; }
-span[region_id="10000025"]:after { content: 'Immensea'; }
-span[region_id="10000027"]:after { content: 'Etherium Reach'; }
-span[region_id="10000028"]:after { content: 'Molden Heath'; }
-span[region_id="10000029"]:after { content: 'Geminate'; }
-span[region_id="10000030"]:after { content: 'Heimatar'; }
-span[region_id="10000031"]:after { content: 'Impass'; }
-span[region_id="10000032"]:after { content: 'Sinq Laison'; }
-span[region_id="10000033"]:after { content: 'The Citadel'; }
-span[region_id="10000034"]:after { content: 'The Kalevala Expanse'; }
-span[region_id="10000035"]:after { content: 'Deklein'; }
-span[region_id="10000036"]:after { content: 'Devoid'; }
-span[region_id="10000037"]:after { content: 'Everyshore'; }
-span[region_id="10000038"]:after { content: 'The Bleak Lands'; }
-span[region_id="10000039"]:after { content: 'Esoteria'; }
-span[region_id="10000040"]:after { content: 'Oasa'; }
-span[region_id="10000041"]:after { content: 'Syndicate'; }
-span[region_id="10000042"]:after { content: 'Metropolis'; }
-span[region_id="10000043"]:after { content: 'Domain'; }
-span[region_id="10000044"]:after { content: 'Solitude'; }
-span[region_id="10000045"]:after { content: 'Tenal'; }
-span[region_id="10000047"]:after { content: 'Providence'; }
-span[region_id="10000048"]:after { content: 'Placid'; }
-span[region_id="10000049"]:after { content: 'Khanid'; }
-span[region_id="10000050"]:after { content: 'Querious'; }
-span[region_id="10000051"]:after { content: 'Cloud Ring'; }
-span[region_id="10000052"]:after { content: 'Kador'; }
-span[region_id="10000053"]:after { content: 'Cobalt Edge'; }
-span[region_id="10000054"]:after { content: 'Aridia'; }
-span[region_id="10000055"]:after { content: 'Branch'; }
-span[region_id="10000057"]:after { content: 'Outer Ring'; }
-span[region_id="10000058"]:after { content: 'Fountain'; }
-span[region_id="10000059"]:after { content: 'Paragon Soul'; }
-span[region_id="10000060"]:after { content: 'Delve'; }
-span[region_id="10000061"]:after { content: 'Tenerifis'; }
-span[region_id="10000062"]:after { content: 'Omist'; }
-span[region_id="10000063"]:after { content: 'Period Basis'; }
-span[region_id="10000064"]:after { content: 'Essence'; }
-span[region_id="10000065"]:after { content: 'Kor-Azor'; }
-span[region_id="10000066"]:after { content: 'Perrigen Falls'; }
-span[region_id="10000067"]:after { content: 'Genesis'; }
-span[region_id="10000068"]:after { content: 'Verge Vendor'; }
-span[region_id="10000069"]:after { content: 'Black Rise'; }
-span[region_id="10000070"]:after { content: 'Pochven'; }
-span[region_id="10001000"]:after { content: 'Yasna Zakh'; }
-span[region_id="11000031"]:after { content: 'G-R00031'; }
+span[region_id="10000001"]:after {
+	content: 'Derelik';
+}
+
+span[region_id="10000002"]:after {
+	content: 'The Forge';
+}
+
+span[region_id="10000003"]:after {
+	content: 'Vale of the Silent';
+}
+
+span[region_id="10000005"]:after {
+	content: 'Detorid';
+}
+
+span[region_id="10000006"]:after {
+	content: 'Wicked Creek';
+}
+
+span[region_id="10000007"]:after {
+	content: 'Cache';
+}
+
+span[region_id="10000008"]:after {
+	content: 'Scalding Pass';
+}
+
+span[region_id="10000009"]:after {
+	content: 'Insmother';
+}
+
+span[region_id="10000010"]:after {
+	content: 'Tribute';
+}
+
+span[region_id="10000011"]:after {
+	content: 'Great Wildlands';
+}
+
+span[region_id="10000012"]:after {
+	content: 'Curse';
+}
+
+span[region_id="10000013"]:after {
+	content: 'Malpais';
+}
+
+span[region_id="10000014"]:after {
+	content: 'Catch';
+}
+
+span[region_id="10000015"]:after {
+	content: 'Venal';
+}
+
+span[region_id="10000016"]:after {
+	content: 'Lonetrek';
+}
+
+span[region_id="10000017"]:after {
+	content: 'J7HZ-F';
+}
+
+span[region_id="10000018"]:after {
+	content: 'The Spire';
+}
+
+span[region_id="10000020"]:after {
+	content: 'Tash-Murkon';
+}
+
+span[region_id="10000022"]:after {
+	content: 'Stain';
+}
+
+span[region_id="10000023"]:after {
+	content: 'Pure Blind';
+}
+
+span[region_id="10000025"]:after {
+	content: 'Immensea';
+}
+
+span[region_id="10000027"]:after {
+	content: 'Etherium Reach';
+}
+
+span[region_id="10000028"]:after {
+	content: 'Molden Heath';
+}
+
+span[region_id="10000029"]:after {
+	content: 'Geminate';
+}
+
+span[region_id="10000030"]:after {
+	content: 'Heimatar';
+}
+
+span[region_id="10000031"]:after {
+	content: 'Impass';
+}
+
+span[region_id="10000032"]:after {
+	content: 'Sinq Laison';
+}
+
+span[region_id="10000033"]:after {
+	content: 'The Citadel';
+}
+
+span[region_id="10000034"]:after {
+	content: 'The Kalevala Expanse';
+}
+
+span[region_id="10000035"]:after {
+	content: 'Deklein';
+}
+
+span[region_id="10000036"]:after {
+	content: 'Devoid';
+}
+
+span[region_id="10000037"]:after {
+	content: 'Everyshore';
+}
+
+span[region_id="10000038"]:after {
+	content: 'The Bleak Lands';
+}
+
+span[region_id="10000039"]:after {
+	content: 'Esoteria';
+}
+
+span[region_id="10000040"]:after {
+	content: 'Oasa';
+}
+
+span[region_id="10000041"]:after {
+	content: 'Syndicate';
+}
+
+span[region_id="10000042"]:after {
+	content: 'Metropolis';
+}
+
+span[region_id="10000043"]:after {
+	content: 'Domain';
+}
+
+span[region_id="10000044"]:after {
+	content: 'Solitude';
+}
+
+span[region_id="10000045"]:after {
+	content: 'Tenal';
+}
+
+span[region_id="10000047"]:after {
+	content: 'Providence';
+}
+
+span[region_id="10000048"]:after {
+	content: 'Placid';
+}
+
+span[region_id="10000049"]:after {
+	content: 'Khanid';
+}
+
+span[region_id="10000050"]:after {
+	content: 'Querious';
+}
+
+span[region_id="10000051"]:after {
+	content: 'Cloud Ring';
+}
+
+span[region_id="10000052"]:after {
+	content: 'Kador';
+}
+
+span[region_id="10000053"]:after {
+	content: 'Cobalt Edge';
+}
+
+span[region_id="10000054"]:after {
+	content: 'Aridia';
+}
+
+span[region_id="10000055"]:after {
+	content: 'Branch';
+}
+
+span[region_id="10000057"]:after {
+	content: 'Outer Ring';
+}
+
+span[region_id="10000058"]:after {
+	content: 'Fountain';
+}
+
+span[region_id="10000059"]:after {
+	content: 'Paragon Soul';
+}
+
+span[region_id="10000060"]:after {
+	content: 'Delve';
+}
+
+span[region_id="10000061"]:after {
+	content: 'Tenerifis';
+}
+
+span[region_id="10000062"]:after {
+	content: 'Omist';
+}
+
+span[region_id="10000063"]:after {
+	content: 'Period Basis';
+}
+
+span[region_id="10000064"]:after {
+	content: 'Essence';
+}
+
+span[region_id="10000065"]:after {
+	content: 'Kor-Azor';
+}
+
+span[region_id="10000066"]:after {
+	content: 'Perrigen Falls';
+}
+
+span[region_id="10000067"]:after {
+	content: 'Genesis';
+}
+
+span[region_id="10000068"]:after {
+	content: 'Verge Vendor';
+}
+
+span[region_id="10000069"]:after {
+	content: 'Black Rise';
+}
+
+span[region_id="10000070"]:after {
+	content: 'Pochven';
+}
+
+span[region_id="10001000"]:after {
+	content: 'Yasna Zakh';
+}
+
+span[region_id="11000031"]:after {
+	content: 'G-R00031';
+}
+
+span[location_id]:before,
+.ordersheader span[field="location_name"]:before {
+	content: '';
+	visibility: hidden;
+}
+
+/* Jita, Dodixie, Rens, Hek, Amarr */
+span[location_id="60003760"]:before,
+span[location_id="60011866"]:before,
+span[location_id="60004588"]:before,
+span[location_id="60015140"]:before,
+span[location_id="60008494"]:before {
+	visibility: visible;
+}
+
+span[location_id="60003760"][region_id]:after {
+	/* Jita 4-4 */
+	filter: invert(1);
+	color: lightblue;
+}
+
+span[location_id="60008494"][region_id]:after {
+	/* Amarr */
+	filter: invert(1);
+	color: gold;
+}
+
+span[location_id="60011866"][region_id]:after,
+span[location_id="60004588"][region_id]:after {
+	/* Dodixie, Rens */
+	filter: invert(1);
+	color: green;
+}
+
+span[location_id="60015140"][region_id]:after {
+	/* Dodixie */
+	filter: invert(1);
+	color: #B7410E;
+}

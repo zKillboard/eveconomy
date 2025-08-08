@@ -4,7 +4,7 @@ const default_item_id = 44992;
 const default_region_id = null;
 const modification_indication_delay_insert = 300;
 const modification_indication_delay_modify = 300;
-const modification_indication_delay_remove= 5;
+const modification_indication_delay_remove = 5;
 
 document.addEventListener('DOMContentLoaded', exec);
 document.getElementById('searchbox').addEventListener('input', doSearch);
@@ -47,30 +47,30 @@ function addGroups(parent, data, depth) {
 		let group = data[key];
 
 		let forid = 'subgroup' + group.id;
-		let div = createElement('div', undefined, {classes: 'mlist'})
-		let anchor = createElement('a', key, {classes: 'btn btn-sm btn-default groupname', for: forid, href: '#subgroup' + group.id, role: 'button', 'aria-expanded': false});
+		let div = createElement('div', undefined, { classes: 'mlist' })
+		let anchor = createElement('a', key, { classes: 'btn btn-sm btn-default groupname', for: forid, href: '#subgroup' + group.id, role: 'button', 'aria-expanded': false });
 		anchor.onclick = anchorClick;
-		let subgroup = createElement('div', undefined, {id: forid, classes: 'hideit subgroup'});
+		let subgroup = createElement('div', undefined, { id: forid, classes: 'hideit subgroup' });
 
 		div.appendChild(anchor);
 		div.appendChild(subgroup);
 		parent.appendChild(div);
 
-		setTimeout(function() { addGroups(subgroup, group.subgroups, depth + 1) }, 1);
-		
+		setTimeout(function () { addGroups(subgroup, group.subgroups, depth + 1) }, 1);
+
 		if (Object.keys(group.items).length > 0) {
 			let ul = createElement('ul');
 			for (let itemName of Object.keys(group.items).sort()) {
 				let item = group.items[itemName];
 				let itemNameL = itemName.toLowerCase();
 
-				let li = createElement('li', undefined, {item_id: item.item_id, itemname: itemNameL, classes: 'itemname'});
+				let li = createElement('li', undefined, { item_id: item.item_id, itemname: itemNameL, classes: 'itemname' });
 				li.onclick = litem;
-				let anchor = createElement('a', item.name, {item_id: item.item_id, href: '/item/' + item.item_id});
+				let anchor = createElement('a', item.name, { item_id: item.item_id, href: '/item/' + item.item_id });
 				anchor.onclick = litem;
 				li.appendChild(anchor);
 				ul.appendChild(li);
-				
+
 				searchArray.push(itemNameL);
 				searchArrayMap[itemNameL] = li;
 			}
@@ -91,7 +91,7 @@ function anchorClick() {
 		child.classList.add('hideit');
 		this.setAttribute('aria-expanded', 'false');
 	}
-	
+
 	return false;
 }
 
@@ -137,7 +137,7 @@ function elementsDisplay(selector, display) {
 }
 
 function itemMatch(elem) {
-	do {		
+	do {
 		elem.classList.add('match');
 		elem = elem.parentNode;
 	} while (elem.getAttribute('id') != 'items');
@@ -162,7 +162,7 @@ function litem(e) {
 
 function pushLiItem(li) {
 	let url = '/item/' + li.getAttribute('item_id');
-	window.history.pushState({path: url},'', url);
+	window.history.pushState({ path: url }, '', url);
 	setTimeout(exec, 1);
 	setTimeout(showOrders, 1);
 	return false;
@@ -174,17 +174,18 @@ function exec() {
 	setTimeout(updateTqStatus, 0);
 	loadRegions();
 	loadStructures();
+	addRegions();
 
 	const path = window.location.pathname;
 	const split = path.split('/');
-	
-	switch(split[1]) {
-	case 'item':
-		loadItem(split[2]);
-		break;
-	default:
-		console.log('unknown or invalid path, defaulting to 44992');
-		loadItem(44992);
+
+	switch (split[1]) {
+		case 'item':
+			loadItem(split[2]);
+			break;
+		default:
+			console.log('unknown or invalid path, defaulting to 44992');
+			loadItem(44992);
 	}
 }
 
@@ -267,14 +268,14 @@ let current_load_item = null;
 function loadItem(item_id, region_id = null, refresh = false) {
 	if (regions === null) return setTimeout(loadItem.bind(null, item_id, region_id), 1);
 	clearTimeout(current_item_timeout);
-	if (current_item_id != item_id) doGetJSON(`https://esi.evetech.net/universe/types/${item_id}/?datasource=tranquility&language=en`, populateInfo);	
+	if (current_item_id != item_id) doGetJSON(`https://esi.evetech.net/universe/types/${item_id}/?datasource=tranquility&language=en`, populateInfo);
 
 	console.log('Loading item', item_id, region_id, refresh);
 	item_id = parseInt(item_id);
 	let check_regions = regions;
 	if (item_id == 44992) check_regions = [19000001];
 	else if (region_id != null) check_regions = [parseInt(region_id)];
-	
+
 	region_id = region_id ? parseInt(region_id) : null;
 
 	current_item_id = item_id;
@@ -286,12 +287,12 @@ function loadItem(item_id, region_id = null, refresh = false) {
 		selldiv.innerHTML = '';
 		buydiv.innerHTML = '';
 	} else {
-		document.querySelectorAll('.modified').forEach(el => { el.classList.remove('modified')});
-		document.querySelectorAll('.inserted').forEach(el => { el.classList.remove('inserted')});
+		document.querySelectorAll('.modified').forEach(el => { el.classList.remove('modified') });
+		document.querySelectorAll('.inserted').forEach(el => { el.classList.remove('inserted') });
 	}
-	
+
 	let now = Math.floor(Date.parse(new Date().toISOString()) / 1000);
-	check_regions.forEach((region_id) => doGetJSON(`https://esi.evetech.net/markets/${region_id}/orders/?datasource=tranquility&order_type=all&page=1&&type_id=${item_id}`, populateOrders, {page: 1, now: now, refresh: refresh}))
+	check_regions.forEach((region_id) => doGetJSON(`https://esi.evetech.net/markets/${region_id}/orders/?datasource=tranquility&order_type=all&page=1&&type_id=${item_id}`, populateOrders, { page: 1, now: now, refresh: refresh }))
 	setTimeout(loadMarketGroups, 250);
 	if (refresh) setTimeout(removeOrders.bind(null, now), 250);
 	fetchLocations();
@@ -310,7 +311,7 @@ function populateOrders(data, path, params) {
 			else sell.append(ohtml);
 		}
 	})
-	
+
 	let selldiv = document.querySelector('.orders[of="sell"]');
 	selldiv.innerHTML = selldiv.innerHTML + sell.innerHTML;
 
@@ -324,7 +325,7 @@ function populateOrders(data, path, params) {
 	if (data.length >= 1000) {
 		let page = params.page + 1;
 		let item_id = data[0].type_id;
-		doGetJSON(`https://esi.evetech.net/markets/${region_id}/orders/?datasource=tranquility&order_type=all&${page}=1&&type_id=${item_id}`, populateOrders, {page: page, now: params.now});
+		doGetJSON(`https://esi.evetech.net/markets/${region_id}/orders/?datasource=tranquility&order_type=all&${page}=1&&type_id=${item_id}`, populateOrders, { page: page, now: params.now });
 	}
 }
 
@@ -348,7 +349,7 @@ function fetchLocation(el) {
 	} else {
 		if (structures[location_id] != null) {
 			el.textContent = structures[location_id];
-			el.removeAttribute('fetch_location');	
+			el.removeAttribute('fetch_location');
 			return;
 		}
 		const system_id = parseInt(el.getAttribute('system_id'));
@@ -360,11 +361,11 @@ function fetchLocation(el) {
 function updateNameById(path, el, location_id, structure) {
 	let data = localStorage.getItem(`${location_id}`);
 	if (data == null) {
-			localStorage.setItem(`${location_id}`, "false")
-			doGetJSON(path, (data) => { saveName(location_id, data, structure); }, { id: location_id });
+		localStorage.setItem(`${location_id}`, "false")
+		doGetJSON(path, (data) => { saveName(location_id, data, structure); }, { id: location_id });
 	} else if (data !== "false") {
 		el.textContent = data;
-		el.removeAttribute('fetch_location');	
+		el.removeAttribute('fetch_location');
 	}
 }
 
@@ -378,26 +379,27 @@ const ORDERSHEAD = `
 		<span field='location_name'>Location</span>
 		<span class='text-end'>Range</span>`;
 const columns = {
-	'volume_remain': {field: 'volume_remain', format: 'int', classes: 'text-end'},
-	'price': {field: 'price', format: 'dec', classes: 'text-end'},
-	'location_name': {field: 'location_name', location: true},
-	'range': {field: 'range', classes: 'text-end capitalize'},
+	'volume_remain': { field: 'volume_remain', format: 'int', classes: 'text-end' },
+	'price': { field: 'price', format: 'dec', classes: 'text-end' },
+	'location_name': { field: 'location_name', location: true },
+	'range': { field: 'range', classes: 'text-end capitalize' },
 };
 
 function createOrder(now, order, refresh = false) {
 	if (order.volume_remain == 0) return;
 	try {
-		let pdiv = createElement('div', undefined, {classes: 'order', oid: order.order_id, price: Math.floor(order.price * 100)});
+		let pdiv = createElement('div', undefined, { classes: 'order', oid: order.order_id, price: Math.floor(order.price * 100) });
 		pdiv.setAttribute('last_modified', now);
 		for (let column of Object.keys(columns)) {
 			let val = order[column];
 			if (columns[column]['format']) val = getValueFormatted(val, columns[column]['format']);
-			
+
 			let span = createElement('span', val, columns[column]);
 			if (column == 'location_name') {
+				span.classList.add('add_region');
 				span.setAttribute('location_id', order.location_id);
 				span.setAttribute('system_id', order.system_id);
-				
+
 				let name = localStorage.getItem(`${order.location_id}`);
 				if (name != null && name != 'false') span.innerHTML = name;
 				else span.setAttribute('fetch_location', true);
@@ -413,10 +415,38 @@ function createOrder(now, order, refresh = false) {
 	}
 }
 
+async function addRegions() {
+	try {
+		let spans = document.querySelectorAll('.add_region');
+		for (const span of spans) {
+			let system_id = span.getAttribute('system_id');
+			let system = localStorage.getItem(`system-info-${system_id}`);
+			if (system) system = JSON.parse(system);
+
+			if (system == null) {
+				console.log('Fetching system', system_id);
+				let system = await doGetJSONasync(`https://esi.evetech.net/universe/systems/${system_id}`);
+				let constellation = await doGetJSONasync(`https://esi.evetech.net/universe/constellations/${system.constellation_id}`);
+				// let region = await doGetJSONasync(`https://esi.evetech.net/universe/regions/${constellation.region_id}`);
+				system.constellation_id = system.constellation_id;
+				system.region_id = constellation.region_id;
+				localStorage.setItem(`system-info-${system_id}`, JSON.stringify(system));
+			}
+			if (system == null) continue;
+			span.setAttribute('region_id', system.region_id);
+			span.classList.remove('add_region');
+		}
+	} catch (e) {
+		console.error(e);
+	} finally {
+		setTimeout(addRegions, 1000);
+	}
+}
+
 function modifyOrder(now, order) {
 	const order_id = order.order_id;
 	let el = document.querySelector(`.order[oid="${order_id}"]`);
-	
+
 	if (el == null) return false;
 	el.setAttribute('last_modified', now);
 	let children = el.children;
@@ -445,13 +475,13 @@ function removeOrders(now) {
 
 	goodbye.forEach(order => {
 		let order_id = order.getAttribute('oid');
-		
+
 		order.classList.remove('inserted');
 		order.classList.remove('modified');
 		order.classList.add('remove');
 
 		let span_vr = document.querySelector(`.order[oid="${order_id}"] span[field="volume_remain"]`);
-		span_vr.innerHTML = 0;			
+		span_vr.innerHTML = 0;
 
 		setTimeout(() => { order.remove(); }, modification_indication_delay_remove * 1000);
 	});
@@ -469,7 +499,7 @@ let inflight = 0;
 function doGetJSON(path, f, params = {}) {
 	console.log(getTime(), 'fetching', path);
 	const xhr = new XMLHttpRequest();
-	xhr.onreadystatechange = function() {
+	xhr.onreadystatechange = function () {
 		if (xhr.readyState === 4 && xhr.status < 400) f(JSON.parse(xhr.responseText), path, params);
 		else if (xhr.readyState == 4) {
 			console.log(xhr.status, path);
@@ -477,7 +507,7 @@ function doGetJSON(path, f, params = {}) {
 			keyCleanupID = setTimeout(keyCleanup, 1000); // remove "false" from localStorage
 		}
 	};
-	xhr.onloadend  = function() { 
+	xhr.onloadend = function () {
 		inflight--;
 		if (inflight == 0) document.getElementById('inflight_spinner').classList.add('d-none');
 	};
@@ -487,6 +517,12 @@ function doGetJSON(path, f, params = {}) {
 	document.getElementById('inflight_spinner').classList.remove('d-none');
 }
 
+async function doGetJSONasync(path) {
+	let res = await fetch(path);
+	if (!res.ok) throw new Error(`Fetch error: ${res.status} ${res.statusText}`);
+	return await res.json();
+}
+
 const formats = {
 	int: 0,
 	dec: 2
@@ -494,7 +530,7 @@ const formats = {
 function getValueFormatted(value, format) {
 	let n = ('' + value).length > 10 ? BigInt(value) : Number(value);
 	let dec = formats[format];
-	return n.toLocaleString(undefined, {minimumFractionDigits: dec, maximumFractionDigits: dec});
+	return n.toLocaleString(undefined, { minimumFractionDigits: dec, maximumFractionDigits: dec });
 }
 
 function showOrders() {
@@ -508,15 +544,15 @@ function showSearch() {
 }
 
 function sort(parent) {
-  let children = parent.children;
+	let children = parent.children;
 
-  children = Array.from(children);
-  children = children.sort((a, b) => {
-  	let price_compare = parseInt(a.getAttribute('price')) - parseInt(b.getAttribute('price'));
-    
-    if (price_compare != 0) return price_compare;
+	children = Array.from(children);
+	children = children.sort((a, b) => {
+		let price_compare = parseInt(a.getAttribute('price')) - parseInt(b.getAttribute('price'));
 
-    return parseInt(b.getAttribute('oid')) - parseInt(a.getAttribute('oid'));
-  });
-  children.forEach((child, index) => child.style.order = index);
+		if (price_compare != 0) return price_compare;
+
+		return parseInt(b.getAttribute('oid')) - parseInt(a.getAttribute('oid'));
+	});
+	children.forEach((child, index) => child.style.order = index);
 }
