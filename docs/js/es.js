@@ -336,6 +336,8 @@ function populateInfo(data) {
 }
 
 function fetchLocations() {
+	if (!structures) setTimeout(fetchLocations, 1000);
+
 	let needs_fetching = document.querySelectorAll('span[fetch_location="true"]');
 	needs_fetching.forEach(el => fetchLocation(el));
 	if (inflight > 0) setTimeout(fetchLocations, 100);
@@ -496,7 +498,9 @@ function createElement(element, content = '', attributes = {}) {
 
 let keyCleanupID = -1;
 let inflight = 0;
-function doGetJSON(path, f, params = {}) {
+async function doGetJSON(path, f, params = {}) {
+	while (inflight >= 10) await sleep(1);
+
 	console.log(getTime(), 'fetching', path);
 	const xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function () {
@@ -555,4 +559,8 @@ function sort(parent) {
 		return parseInt(b.getAttribute('oid')) - parseInt(a.getAttribute('oid'));
 	});
 	children.forEach((child, index) => child.style.order = index);
+}
+
+function sleep(ms) {
+	return new Promise(resolve => setTimeout(resolve, ms));
 }
