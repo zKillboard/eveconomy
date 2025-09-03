@@ -200,7 +200,10 @@ function updateTime() {
 	setTimeout(updateTime, 1000 * (60 - seconds));
 }
 
+let udpating_tq_status = false;
 function updateTqStatus() {
+	if (udpating_tq_status == true) return;
+	udpating_tq_status = true;
 	doGetJSON('https://esi.evetech.net/status/', setTqStatus);
 }
 
@@ -223,6 +226,7 @@ function setTqStatus(data) {
 		let seconds = nowUTC.getUTCSeconds();
 		clearTimeout(tqstatusid);
 		tqstatus = setTimeout(updateTqStatus, 1000 * (60 - seconds));
+		udpating_tq_status = false;
 	}
 }
 
@@ -417,6 +421,7 @@ function createOrder(now, order, refresh = false) {
 	}
 }
 
+const fetching_systems = {};
 async function addRegions() {
 	try {
 		let spans = document.querySelectorAll('.add_region');
@@ -425,7 +430,8 @@ async function addRegions() {
 			let system = localStorage.getItem(`system-info-${system_id}`);
 			if (system) system = JSON.parse(system);
 
-			if (system == null) {
+			if (system == null && typeof fetching_systems[system_id] === 'undefined') {
+				fetching_systems[system_id] = true;
 				console.log('Fetching system', system_id);
 				let system = await doGetJSONasync(`https://esi.evetech.net/universe/systems/${system_id}`);
 				let constellation = await doGetJSONasync(`https://esi.evetech.net/universe/constellations/${system.constellation_id}`);
@@ -498,7 +504,11 @@ function createElement(element, content = '', attributes = {}) {
 
 let keyCleanupID = -1;
 let inflight = 0;
+let active_fetches = {};
 async function doGetJSON(path, f, params = {}) {
+	if (typeof active_fetches[path] != 'undefined') return;
+	active_fetches[path] = true;
+
 	while (inflight >= 10) await sleep(1);
 
 	console.log(getTime(), 'fetching', path);
@@ -512,6 +522,7 @@ async function doGetJSON(path, f, params = {}) {
 		}
 	};
 	xhr.onloadend = function () {
+		delete active_fetches[path];
 		inflight--;
 		if (inflight == 0) document.getElementById('inflight_spinner').classList.add('d-none');
 	};
@@ -564,3 +575,4 @@ function sort(parent) {
 function sleep(ms) {
 	return new Promise(resolve => setTimeout(resolve, ms));
 }
+
