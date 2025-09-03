@@ -171,7 +171,7 @@ function pushLiItem(li) {
 function exec() {
 	setTimeout(keyCleanup, 0);
 	setTimeout(updateTime, 0);
-	setTimeout(updateTqStatus, 0);
+	tqstatusid = setTimeout(updateTqStatus, 1);
 	loadRegions();
 	loadStructures();
 	addRegions();
@@ -200,33 +200,36 @@ function updateTime() {
 	setTimeout(updateTime, 1000 * (60 - seconds));
 }
 
-let udpating_tq_status = false;
+let onCooldown = false;
 function updateTqStatus() {
-	if (udpating_tq_status == true) return;
-	udpating_tq_status = true;
+	if (onCooldown) return;
+	onCooldown = true;
+
 	doGetJSON('https://esi.evetech.net/status/', setTqStatus);
+
+	// delay until the next minute at xx:xx:01
+	const now = new Date();
+	const next = new Date(now);
+	next.setMinutes(now.getMinutes() + 1, 1, 0);
+	const delay = next - now;
+
+	setTimeout(() => {
+		onCooldown = false;
+		updateTqStatus();
+	}, delay);
 }
 
-let tqstatusid = -1;
 function setTqStatus(data) {
-	try {
-		if (data == null || data.players == null) return;
-		const tqStatus = document.getElementById('tqStatus');
-		if (data.players >= 500) {
-			tqStatus.innerHTML = ' TQ ONLINE';
-			tqStatus.classList.add('online');
-			tqStatus.classList.remove('offline');
-		} else {
-			tqStatus.innerHTML = ' TQ OFFLINE';
-			tqStatus.classList.remove('online');
-			tqStatus.classList.add('offline');
-		}
-	} finally {
-		const nowUTC = new Date();
-		let seconds = nowUTC.getUTCSeconds();
-		clearTimeout(tqstatusid);
-		tqstatus = setTimeout(updateTqStatus, 1000 * (60 - seconds));
-		udpating_tq_status = false;
+	if (data == null || data.players == null) return;
+	const tqStatus = document.getElementById('tqStatus');
+	if (data.players >= 500) {
+		tqStatus.innerHTML = ' TQ ONLINE';
+		tqStatus.classList.add('online');
+		tqStatus.classList.remove('offline');
+	} else {
+		tqStatus.innerHTML = ' TQ OFFLINE';
+		tqStatus.classList.remove('online');
+		tqStatus.classList.add('offline');
 	}
 }
 
