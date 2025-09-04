@@ -39432,9 +39432,9 @@
   "1044131055611": "Perckhevin - FREEPORT - pleasure hub",
   "1044133638928": "J124007 - Only Probes",
   "1044139717102": "Hageken - The Badgers' Sett",
-  "1044140392605": "Aurejet - MISRIAH ICE REFINERY",
-  "1044140443705": "Aurejet - MISRIAH MOON REFINERY",
-  "1044140493449": "Aurejet - MISRIAH ORE REFINERY",
+  "1044140392605": "Aurejet - MISRIAH MOON DRILL 05",
+  "1044140443705": "Aurejet - MISRIAH MOON DRILL 04",
+  "1044140493449": "Aurejet - MISRIAH MOON DRILL 06",
   "1044140616520": "Aurejet - MISRIAH MOON DRILL 01",
   "1044140648520": "Aurejet - MISRIAH MOON DRILL 02",
   "1044141522930": "Aurejet - MISRIAH MOON DRILL 03",
@@ -42265,7 +42265,7 @@
   "1050307205782": "Torvi - MOON MINING X",
   "1050314060147": "Dudreda - III-1",
   "1050323793666": "J152825 - Spaceball One",
-  "1050327402941": "Assiettes - Refining",
+  "1050327402941": "Assiettes - Refining 0,5% Tax",
   "1050329585182": "Dabrid - Planschbecken",
   "1050332908999": "Osmeden - Vinti Investment Solutions",
   "1050342349599": "Zhilshinou - Freeport",
@@ -42313,7 +42313,7 @@
   "1050482345508": "Isanamo - Public - Loxmenardi's Forge",
   "1050483649934": "Niyabainen - Caldari Public Production Plant",
   "1050491515706": "Uchomida - HDSE 1",
-  "1050491563613": "Slays - ED256",
+  "1050491563613": "Slays - T1 Component and T2 Structure",
   "1050492874496": "Hror - Public Moon 2 - Read Bio",
   "1050495175363": "Kihtaled - PleniMart",
   "1050496828500": "Sosala - BANANAE",
@@ -42327,5 +42327,6 @@
   "1050508507682": "Kihtaled - Pumping Station",
   "1050509556644": "Lari - C.M.G-Miner-10",
   "1050521374379": "Inari - B IV",
-  "1050522035307": "Ethernity - Manufacturing"
+  "1050522035307": "Ethernity - Manufacturing",
+  "1050528780689": "Reblier - EZ Cheez Extraction Facility"
 }
