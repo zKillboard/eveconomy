@@ -435,7 +435,7 @@ async function addRegions() {
 
 			if (system == null && typeof fetching_systems[system_id] === 'undefined') {
 				fetching_systems[system_id] = true;
-				console.log('Fetching system', system_id);
+				//console.log('Fetching system', system_id);
 				let system = await doGetJSONasync(`https://esi.evetech.net/universe/systems/${system_id}`);
 				let constellation = await doGetJSONasync(`https://esi.evetech.net/universe/constellations/${system.constellation_id}`);
 				// let region = await doGetJSONasync(`https://esi.evetech.net/universe/regions/${constellation.region_id}`);
@@ -514,7 +514,7 @@ async function doGetJSON(path, f, params = {}) {
 
 	while (inflight >= 10) await sleep(1);
 
-	console.log(getTime(), 'fetching', path);
+	//Mconsole.log(getTime(), 'fetching', path);
 	const xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function () {
 		if (xhr.readyState === 4 && xhr.status < 400) f(JSON.parse(xhr.responseText), path, params);
@@ -546,7 +546,7 @@ const formats = {
 	dec: 2
 }
 function getValueFormatted(value, format) {
-	let n = ('' + value).length > 10 ? BigInt(value) : Number(value);
+	let n = ('' + value).length > 10 ? BigInt(Math.round(Number(value))) : Number(value);
 	let dec = formats[format];
 	return n.toLocaleString(undefined, { minimumFractionDigits: dec, maximumFractionDigits: dec });
 }
