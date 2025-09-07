@@ -337,7 +337,7 @@ function populateOrders(data, path, params) {
 }
 
 function populateInfo(data) {
-	let iamge_type = data.name.includes(' Blueprint') ? 'bp' : 'icon';
+	let iamge_type = data.name.endsWith(' Blueprint') ? 'bp' : 'icon';
 	let image = `https://images.evetech.net/types/${data.type_id}/${iamge_type}?size=128`;
 	document.getElementById('itemimg').setAttribute('src', image);
 	document.getElementById('itemname').innerHTML = data.name;
