@@ -48,7 +48,7 @@ jobs:
         echo "🔧 Using enhanced updater with no cache and no backup"
         
         # Run the enhanced updater with no cache and no backup
-        ./update_groups.sh --enhanced --no-cache --no-backup
+        ./update_groups.sh update --no-cache --no-backup
         
         echo "✅ Market groups update completed"
     
