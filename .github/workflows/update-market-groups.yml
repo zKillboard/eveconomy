@@ -29,13 +29,13 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
-        cache: 'npm'
+        # No cache needed - project uses only built-in modules
     
-    - name: Install dependencies
+    - name: Check dependencies
       run: |
-        if [ -f package.json ]; then
-          npm ci
-        fi
+        echo "✅ Project uses Node.js built-in modules only"
+        echo "📦 No npm dependencies to install"
+        node --version
     
     - name: Make scripts executable
       run: |
