@@ -1,0 +1,15 @@
+{
+  "name": "eveconomy-market-groups",
+  "version": "1.0.0",
+  "description": "EVE Online Market Groups Updater",
+  "type": "commonjs",
+  "scripts": {
+    "update": "node update_market_groups.js",
+    "update-basic": "node populate_market_groups.js",
+    "validate": "node validate_market_groups.js"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

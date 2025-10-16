@@ -147,7 +147,7 @@ class EnhancedMarketGroupsUpdater {
                                 .then(resolve)
                                 .catch(reject);
                         }, 2000);
-                    } else if (res.statusCode === 420 && retries > 0) {
+                    } else if ((res.statusCode === 420 || res.statusCode === 429) && retries > 0) {
                         // Rate limited by ESI
                         this.log('Rate limited by ESI, waiting 60s...', true);
                         setTimeout(() => {
@@ -178,6 +178,90 @@ class EnhancedMarketGroupsUpdater {
                 req.destroy();
                 reject(new Error(`Request timeout for ${url}`));
             });
+        });
+    }
+
+    /**
+     * Enhanced HTTP POST request for bulk operations
+     */
+    async makeRequestPost(endpoint, postData, retries = 3, timeout = 30000) {
+        await this.enforceRateLimit();
+        this.stats.apiCalls++;
+        
+        return new Promise((resolve, reject) => {
+            const url = `${this.esiBaseUrl}${endpoint}`;
+            this.log(`API POST Call: ${url} (${postData.length} items)`, true);
+            
+            const postBody = JSON.stringify(postData);
+            
+            const options = {
+                method: 'POST',
+                headers: {
+                    'User-Agent': this.userAgent,
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'Content-Length': Buffer.byteLength(postBody),
+                    'Cache-Control': 'no-cache'
+                },
+                timeout: timeout
+            };
+            
+            const req = https.request(url, options, (res) => {
+                let data = '';
+                
+                res.on('data', (chunk) => {
+                    data += chunk;
+                });
+                
+                res.on('end', () => {
+                    if (res.statusCode === 200) {
+                        try {
+                            const json = JSON.parse(data);
+                            resolve(json);
+                        } catch (error) {
+                            reject(new Error(`JSON parse error for ${url}: ${error.message}`));
+                        }
+                    } else if (res.statusCode >= 500 && retries > 0) {
+                        this.log(`Server error ${res.statusCode} for ${url}, retrying in 2s...`);
+                        setTimeout(() => {
+                            this.makeRequestPost(endpoint, postData, retries - 1, timeout)
+                                .then(resolve)
+                                .catch(reject);
+                        }, 2000);
+                    } else if ((res.statusCode === 420 || res.statusCode === 429) && retries > 0) {
+                        this.log('Rate limited by ESI, waiting 60s...', true);
+                        setTimeout(() => {
+                            this.makeRequestPost(endpoint, postData, retries - 1, timeout)
+                                .then(resolve)
+                                .catch(reject);
+                        }, 60000);
+                    } else {
+                        reject(new Error(`HTTP ${res.statusCode} for ${url}: ${data.substring(0, 200)}`));
+                    }
+                });
+            });
+            
+            req.on('error', (error) => {
+                if (retries > 0) {
+                    this.log(`POST request error for ${url}, retrying: ${error.message}`, true);
+                    setTimeout(() => {
+                        this.makeRequestPost(endpoint, postData, retries - 1, timeout)
+                            .then(resolve)
+                            .catch(reject);
+                    }, 1000);
+                } else {
+                    reject(new Error(`POST request failed for ${url}: ${error.message}`));
+                }
+            });
+            
+            req.setTimeout(timeout, () => {
+                req.destroy();
+                reject(new Error(`POST request timeout for ${url}`));
+            });
+            
+            // Send the POST data
+            req.write(postBody);
+            req.end();
         });
     }
 
@@ -299,7 +383,7 @@ class EnhancedMarketGroupsUpdater {
     }
 
     /**
-     * Fetch type information for items
+     * Fetch type information for items using bulk name resolver
      */
     async fetchTypeInformation() {
         // Collect all unique type IDs
@@ -310,37 +394,82 @@ class EnhancedMarketGroupsUpdater {
             }
         });
         
-        this.log(`Found ${typeIds.size} unique types to fetch`);
+        this.log(`Found ${typeIds.size} unique types to fetch using bulk resolver`);
         
         const typeIdArray = Array.from(typeIds);
-        const batchSize = 3; // Conservative batch size
+        
+        // ESI bulk names endpoint accepts up to 1000 IDs per request
+        const batchSize = 1000;
         
         for (let i = 0; i < typeIdArray.length; i += batchSize) {
             const batch = typeIdArray.slice(i, i + batchSize);
             
-            // Process types sequentially
-            for (const typeId of batch) {
-                try {
-                    await this.fetchTypeDetails(typeId);
-                    this.stats.typesFetched++;
-                } catch (error) {
-                    this.log(`Error fetching type ${typeId}: ${error.message}`);
-                }
-            }
-            
-            // Progress update
-            if (i % (batchSize * 10) === 0 || i + batchSize >= typeIdArray.length) {
+            try {
+                await this.fetchTypeDetailsBulk(batch);
                 this.log(`Progress: ${Math.min(i + batchSize, typeIdArray.length)}/${typeIdArray.length} types`);
+            } catch (error) {
+                this.log(`Error fetching bulk types batch ${i}-${i + batchSize}: ${error.message}`);
+                // Fallback to individual requests for this batch
+                this.log('Falling back to individual type requests for this batch...');
+                await this.fetchTypesIndividually(batch);
             }
             
-            await this.sleep(30);
+            // Small delay between batches
+            if (i + batchSize < typeIdArray.length) {
+                await this.sleep(100);
+            }
         }
         
         this.log(`Fetched ${this.stats.typesFetched} types successfully`);
     }
 
     /**
-     * Fetch details for a specific type
+     * Fetch type names in bulk using ESI bulk names resolver
+     */
+    async fetchTypeDetailsBulk(typeIds) {
+        if (typeIds.length === 0) return;
+        
+        // First, get names from bulk resolver
+        const nameData = await this.makeRequestPost('/latest/universe/names/', typeIds);
+        
+        if (Array.isArray(nameData)) {
+            // Store the names
+            nameData.forEach(item => {
+                if (item.id && item.name && item.category === 'inventory_type') {
+                    this.typeInfo.set(item.id, {
+                        id: item.id,
+                        name: item.name,
+                        description: '', // Bulk resolver doesn't provide descriptions
+                        group_id: null, // Will be populated by individual requests if needed
+                        category_id: null, // Will be populated by individual requests if needed
+                        published: true, // Assume published if in bulk resolver
+                        market_group_id: null // Will be populated by individual requests if needed
+                    });
+                    this.stats.typesFetched++;
+                }
+            });
+            
+            this.log(`Bulk resolved ${nameData.filter(item => item.category === 'inventory_type').length} type names`, true);
+        } else {
+            throw new Error('Bulk name resolver returned invalid data');
+        }
+    }
+
+    /**
+     * Fallback method to fetch types individually
+     */
+    async fetchTypesIndividually(typeIds) {
+        for (const typeId of typeIds) {
+            try {
+                await this.fetchTypeDetails(typeId);
+            } catch (error) {
+                this.log(`Error fetching individual type ${typeId}: ${error.message}`);
+            }
+        }
+    }
+
+    /**
+     * Fetch details for a specific type (fallback method)
      */
     async fetchTypeDetails(typeId) {
         const typeData = await this.makeRequest(`/latest/universe/types/${typeId}/`);
@@ -355,6 +484,7 @@ class EnhancedMarketGroupsUpdater {
                 published: typeData.published !== false,
                 market_group_id: typeData.market_group_id
             });
+            this.stats.typesFetched++;
         }
     }
 

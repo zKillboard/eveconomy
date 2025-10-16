@@ -3590,6 +3590,10 @@
             "name": "Structure Anticapital Missiles",
             "subgroups": {},
             "items": {
+              "Standup AXL-SR Missile": {
+                "item_id": 37845,
+                "name": "Standup AXL-SR Missile"
+              },
               "Standup Super-heavy Torpedo": {
                 "item_id": 37843,
                 "name": "Standup Super-heavy Torpedo"
@@ -3948,6 +3952,10 @@
             "name": "Interdiction Probes",
             "subgroups": {},
             "items": {
+              "Phobetor Warp Disrupt Probe": {
+                "item_id": 41402,
+                "name": "Phobetor Warp Disrupt Probe"
+              },
               "Stasis Webification Probe": {
                 "item_id": 56748,
                 "name": "Stasis Webification Probe"
@@ -6027,6 +6035,10 @@
                 "item_id": 54376,
                 "name": "Men's Albedo Affluence Pants"
               },
+              "Men's Azure Abundance Pants": {
+                "item_id": 54372,
+                "name": "Men's Azure Abundance Pants"
+              },
               "Men's Federation Commander's Dress Pants": {
                 "item_id": 58953,
                 "name": "Men's Federation Commander's Dress Pants"
@@ -6071,6 +6083,10 @@
                 "item_id": 54375,
                 "name": "Men's Rubedo Richesse Pants"
               },
+              "Men's Silver Supremacy Pants": {
+                "item_id": 54374,
+                "name": "Men's Silver Supremacy Pants"
+              },
               "Men's State Commander's Dress Pants": {
                 "item_id": 58951,
                 "name": "Men's State Commander's Dress Pants"
@@ -6078,6 +6094,10 @@
               "Men's State Stargate Crew Pants": {
                 "item_id": 58792,
                 "name": "Men's State Stargate Crew Pants"
+              },
+              "Men's Tawny Treasure Pants": {
+                "item_id": 54373,
+                "name": "Men's Tawny Treasure Pants"
               },
               "Men's Worker's Indigo Pants": {
                 "item_id": 82041,
@@ -6268,6 +6288,10 @@
               "'Silvershore' Greatcoat": {
                 "item_id": 4245,
                 "name": "'Silvershore' Greatcoat"
+              },
+              "88186_Male_outer_AugmentationSuitM01_Types_AugmentationSuitM01_Black.png": {
+                "item_id": 88186,
+                "name": "88186_Male_outer_AugmentationSuitM01_Types_AugmentationSuitM01_Black.png"
               },
               "Men's 'Crimson Harvest' Jacket": {
                 "item_id": 56638,
@@ -6701,6 +6725,10 @@
                 "item_id": 37864,
                 "name": "Men's Scope Network Special Correspondent Suit"
               },
+              "Men's Silver Supremacy Jacket": {
+                "item_id": 54380,
+                "name": "Men's Silver Supremacy Jacket"
+              },
               "Men's Sisters of EVE Advanced Combat Suit": {
                 "item_id": 37815,
                 "name": "Men's Sisters of EVE Advanced Combat Suit"
@@ -6720,6 +6748,10 @@
               "Men's Sukuuvestaa Crew Jacket": {
                 "item_id": 70845,
                 "name": "Men's Sukuuvestaa Crew Jacket"
+              },
+              "Men's Tawny Treasure Jacket": {
+                "item_id": 54379,
+                "name": "Men's Tawny Treasure Jacket"
               },
               "Men's Triglavian Survival Suit (Bioadaptive)": {
                 "item_id": 48082,
@@ -7442,6 +7474,10 @@
                 "item_id": 54370,
                 "name": "Women's Albedo Affluence Pants"
               },
+              "Women's Azure Abundance Pants": {
+                "item_id": 54366,
+                "name": "Women's Azure Abundance Pants"
+              },
               "Women's Federation Commander's Dress Pants": {
                 "item_id": 58948,
                 "name": "Women's Federation Commander's Dress Pants"
@@ -7486,6 +7522,10 @@
                 "item_id": 54369,
                 "name": "Women's Rubedo Richesse Pants"
               },
+              "Women's Silver Supremacy Pants": {
+                "item_id": 54368,
+                "name": "Women's Silver Supremacy Pants"
+              },
               "Women's State Commander's Dress Pants": {
                 "item_id": 58946,
                 "name": "Women's State Commander's Dress Pants"
@@ -7493,6 +7533,10 @@
               "Women's State Stargate Crew Pants": {
                 "item_id": 58786,
                 "name": "Women's State Stargate Crew Pants"
+              },
+              "Women's Tawny Treasure Pants": {
+                "item_id": 54367,
+                "name": "Women's Tawny Treasure Pants"
               },
               "Women's Worker's Indigo Pants": {
                 "item_id": 82040,
@@ -7803,6 +7847,10 @@
             "name": "Outerwear",
             "subgroups": {},
             "items": {
+              "88187_Female_Outer_AugmentationSuitF01_Types_AugmentationSuitF01_Black.png": {
+                "item_id": 88187,
+                "name": "88187_Female_Outer_AugmentationSuitF01_Types_AugmentationSuitF01_Black.png"
+              },
               "Women's 'Crimson Harvest' Jacket": {
                 "item_id": 56635,
                 "name": "Women's 'Crimson Harvest' Jacket"
@@ -8327,6 +8375,10 @@
                 "item_id": 37863,
                 "name": "Women's Scope Network Special Correspondent Suit"
               },
+              "Women's Silver Supremacy Jacket": {
+                "item_id": 54362,
+                "name": "Women's Silver Supremacy Jacket"
+              },
               "Women's Sisters of EVE Advanced Combat Suit": {
                 "item_id": 37603,
                 "name": "Women's Sisters of EVE Advanced Combat Suit"
@@ -8346,6 +8398,10 @@
               "Women's Sukuuvestaa Crew Jacket": {
                 "item_id": 70854,
                 "name": "Women's Sukuuvestaa Crew Jacket"
+              },
+              "Women's Tawny Treasure Jacket": {
+                "item_id": 54361,
+                "name": "Women's Tawny Treasure Jacket"
               },
               "Women's Triglavian Survival Suit (Bioadaptive)": {
                 "item_id": 48081,
@@ -9651,6 +9707,10 @@
                 "name": "Structure Anticapital Missiles",
                 "subgroups": {},
                 "items": {
+                  "Standup AXL-SR Missile Blueprint": {
+                    "item_id": 37854,
+                    "name": "Standup AXL-SR Missile Blueprint"
+                  },
                   "Standup Super-heavy Torpedo Blueprint": {
                     "item_id": 37852,
                     "name": "Standup Super-heavy Torpedo Blueprint"
@@ -10354,6 +10414,14 @@
                     "item_id": 32326,
                     "name": "Cyclops I Blueprint"
                   },
+                  "DogBlueprint_PLACEHOLDER": {
+                    "item_id": 45674,
+                    "name": "DogBlueprint_PLACEHOLDER"
+                  },
+                  "EasyBlueprint_PLACEHOLDER": {
+                    "item_id": 45676,
+                    "name": "EasyBlueprint_PLACEHOLDER"
+                  },
                   "Gungnir I Blueprint": {
                     "item_id": 41365,
                     "name": "Gungnir I Blueprint"
@@ -10413,6 +10481,14 @@
                 "name": "Light Fighters",
                 "subgroups": {},
                 "items": {
+                  "BakerBlueprint_PLACEHOLDER": {
+                    "item_id": 45670,
+                    "name": "BakerBlueprint_PLACEHOLDER"
+                  },
+                  "CharlieBlueprint_PLACEHOLDER": {
+                    "item_id": 45672,
+                    "name": "CharlieBlueprint_PLACEHOLDER"
+                  },
                   "Dragonfly I Blueprint": {
                     "item_id": 23058,
                     "name": "Dragonfly I Blueprint"
@@ -10484,6 +10560,10 @@
                 "name": "Support Fighters",
                 "subgroups": {},
                 "items": {
+                  "AbleBlueprint_PLACEHOLDER": {
+                    "item_id": 45650,
+                    "name": "AbleBlueprint_PLACEHOLDER"
+                  },
                   "Cenobite I Blueprint": {
                     "item_id": 41367,
                     "name": "Cenobite I Blueprint"
@@ -12085,6 +12165,10 @@
                     "item_id": 41393,
                     "name": "Stasis Webification Burst Projector Blueprint"
                   },
+                  "Superweapon_AOEGuide Blueprint": {
+                    "item_id": 41389,
+                    "name": "Superweapon_AOEGuide Blueprint"
+                  },
                   "Target Illumination Burst Projector Blueprint": {
                     "item_id": 41391,
                     "name": "Target Illumination Burst Projector Blueprint"
@@ -12113,6 +12197,10 @@
                   "Burst Jammer I Blueprint": {
                     "item_id": 1210,
                     "name": "Burst Jammer I Blueprint"
+                  },
+                  "Superweapon_AOEECM Blueprint": {
+                    "item_id": 41395,
+                    "name": "Superweapon_AOEECM Blueprint"
                   }
                 }
               },
@@ -12179,7 +12267,28 @@
                 "id": 1583,
                 "name": "Sensor Backup Arrays",
                 "subgroups": {},
-                "items": {}
+                "items": {
+                  "Gravimetric Backup Array I Blueprint": {
+                    "item_id": 11820,
+                    "name": "Gravimetric Backup Array I Blueprint"
+                  },
+                  "Ladar Backup Array I Blueprint": {
+                    "item_id": 11824,
+                    "name": "Ladar Backup Array I Blueprint"
+                  },
+                  "Magnetometric Backup Array I Blueprint": {
+                    "item_id": 11828,
+                    "name": "Magnetometric Backup Array I Blueprint"
+                  },
+                  "Multi Sensor Backup Array I Blueprint": {
+                    "item_id": 11832,
+                    "name": "Multi Sensor Backup Array I Blueprint"
+                  },
+                  "RADAR Backup Array I Blueprint": {
+                    "item_id": 11836,
+                    "name": "RADAR Backup Array I Blueprint"
+                  }
+                }
               },
               "Stasis Grapplers": {
                 "id": 2153,
@@ -12831,6 +12940,10 @@
                     "item_id": 11298,
                     "name": "400mm Steel Plates I Blueprint"
                   },
+                  "50mm Steel Plates I Blueprint": {
+                    "item_id": 11292,
+                    "name": "50mm Steel Plates I Blueprint"
+                  },
                   "800mm Steel Plates I Blueprint": {
                     "item_id": 11300,
                     "name": "800mm Steel Plates I Blueprint"
@@ -12923,6 +13036,10 @@
                   "Multispectrum Energized Membrane I Blueprint": {
                     "item_id": 11268,
                     "name": "Multispectrum Energized Membrane I Blueprint"
+                  },
+                  "testArmorMod_Blueprint_PLACEHOLDER": {
+                    "item_id": 46013,
+                    "name": "testArmorMod_Blueprint_PLACEHOLDER"
                   },
                   "Thermal Energized Membrane I Blueprint": {
                     "item_id": 11258,
@@ -13426,6 +13543,10 @@
                   "Multispectrum Shield Hardener I Blueprint": {
                     "item_id": 1129,
                     "name": "Multispectrum Shield Hardener I Blueprint"
+                  },
+                  "testShieldMod_Blueprint_PLACEHOLDER": {
+                    "item_id": 46011,
+                    "name": "testShieldMod_Blueprint_PLACEHOLDER"
                   },
                   "Thermal Shield Hardener I Blueprint": {
                     "item_id": 2296,
@@ -18139,6 +18260,10 @@
                 "item_id": 37417,
                 "name": "Standup L-Set EW Command System I Blueprint"
               },
+              "Standup L-Set Fighter Mission Control I Blueprint": {
+                "item_id": 37415,
+                "name": "Standup L-Set Fighter Mission Control I Blueprint"
+              },
               "Standup L-Set Missile Flight Processor I Blueprint": {
                 "item_id": 37410,
                 "name": "Standup L-Set Missile Flight Processor I Blueprint"
@@ -18171,6 +18296,14 @@
                 "item_id": 37396,
                 "name": "Standup M-Set Enhanced Targeting System I Blueprint"
               },
+              "Standup M-Set Fighter Navigation I Blueprint": {
+                "item_id": 37388,
+                "name": "Standup M-Set Fighter Navigation I Blueprint"
+              },
+              "Standup M-Set Fighter Survival I Blueprint": {
+                "item_id": 37386,
+                "name": "Standup M-Set Fighter Survival I Blueprint"
+              },
               "Standup M-Set Missile Precision I Blueprint": {
                 "item_id": 37378,
                 "name": "Standup M-Set Missile Precision I Blueprint"
@@ -18190,6 +18323,10 @@
               "Standup XL-Set Extinction Level Weapons Suite I Blueprint": {
                 "item_id": 37437,
                 "name": "Standup XL-Set Extinction Level Weapons Suite I Blueprint"
+              },
+              "Standup XL-Set Integrated Fighter and PD Network I Blueprint": {
+                "item_id": 37433,
+                "name": "Standup XL-Set Integrated Fighter and PD Network I Blueprint"
               },
               "Standup XL-Set Missile Fire Control Computer I Blueprint": {
                 "item_id": 37431,
@@ -19878,6 +20015,14 @@
                     "item_id": 40563,
                     "name": "Cyclops II"
                   },
+                  "Dog_PLACEHOLDER": {
+                    "item_id": 45673,
+                    "name": "Dog_PLACEHOLDER"
+                  },
+                  "Easy_PLACEHOLDER": {
+                    "item_id": 45675,
+                    "name": "Easy_PLACEHOLDER"
+                  },
                   "Gungnir I": {
                     "item_id": 40365,
                     "name": "Gungnir I"
@@ -19929,6 +20074,10 @@
                 "name": "Light Fighters",
                 "subgroups": {},
                 "items": {
+                  "Baker_PLACEHOLDER": {
+                    "item_id": 45669,
+                    "name": "Baker_PLACEHOLDER"
+                  },
                   "Caldari Navy Dragonfly": {
                     "item_id": 83582,
                     "name": "Caldari Navy Dragonfly"
@@ -19936,6 +20085,10 @@
                   "Caldari Navy Locust": {
                     "item_id": 83586,
                     "name": "Caldari Navy Locust"
+                  },
+                  "Charlie_PLACEHOLDER": {
+                    "item_id": 45671,
+                    "name": "Charlie_PLACEHOLDER"
                   },
                   "Dragonfly I": {
                     "item_id": 23057,
@@ -20808,6 +20961,38 @@
                 "item_id": 90297,
                 "name": "Chemal Tech Mining Booster III"
               },
+              "Expired Hunt Probing Booster I": {
+                "item_id": 63645,
+                "name": "Expired Hunt Probing Booster I"
+              },
+              "Expired Hunt Probing Booster II": {
+                "item_id": 63646,
+                "name": "Expired Hunt Probing Booster II"
+              },
+              "Expired Hunt Probing Booster III": {
+                "item_id": 63647,
+                "name": "Expired Hunt Probing Booster III"
+              },
+              "Expired Hunt Probing Booster IV": {
+                "item_id": 63648,
+                "name": "Expired Hunt Probing Booster IV"
+              },
+              "Expired Hunt Pursuit Booster I": {
+                "item_id": 63649,
+                "name": "Expired Hunt Pursuit Booster I"
+              },
+              "Expired Hunt Pursuit Booster II": {
+                "item_id": 63650,
+                "name": "Expired Hunt Pursuit Booster II"
+              },
+              "Expired Hunt Pursuit Booster III": {
+                "item_id": 63651,
+                "name": "Expired Hunt Pursuit Booster III"
+              },
+              "Expired Hunt Pursuit Booster IV": {
+                "item_id": 63652,
+                "name": "Expired Hunt Pursuit Booster IV"
+              },
               "Harvest Anti-Disruptor Booster I": {
                 "item_id": 89581,
                 "name": "Harvest Anti-Disruptor Booster I"
@@ -20863,6 +21048,38 @@
                 "item_id": 90303,
                 "name": "Chemal Tech Exploration Booster III"
               },
+              "Expired Hunt Rapid Repair Booster I": {
+                "item_id": 63653,
+                "name": "Expired Hunt Rapid Repair Booster I"
+              },
+              "Expired Hunt Rapid Repair Booster II": {
+                "item_id": 63654,
+                "name": "Expired Hunt Rapid Repair Booster II"
+              },
+              "Expired Hunt Rapid Repair Booster III": {
+                "item_id": 63655,
+                "name": "Expired Hunt Rapid Repair Booster III"
+              },
+              "Expired Hunt Rapid Repair Booster IV": {
+                "item_id": 63656,
+                "name": "Expired Hunt Rapid Repair Booster IV"
+              },
+              "Expired Hunt Resistance Booster I": {
+                "item_id": 63657,
+                "name": "Expired Hunt Resistance Booster I"
+              },
+              "Expired Hunt Resistance Booster II": {
+                "item_id": 63658,
+                "name": "Expired Hunt Resistance Booster II"
+              },
+              "Expired Hunt Resistance Booster III": {
+                "item_id": 63659,
+                "name": "Expired Hunt Resistance Booster III"
+              },
+              "Expired Hunt Resistance Booster IV": {
+                "item_id": 63660,
+                "name": "Expired Hunt Resistance Booster IV"
+              },
               "Harvest Nosferatu Booster I": {
                 "item_id": 89573,
                 "name": "Harvest Nosferatu Booster I"
@@ -20914,6 +21131,38 @@
                 "item_id": 90306,
                 "name": "Chemal Tech Repair Booster III"
               },
+              "Expired Hunt Drone Precision Booster I": {
+                "item_id": 63661,
+                "name": "Expired Hunt Drone Precision Booster I"
+              },
+              "Expired Hunt Drone Precision Booster II": {
+                "item_id": 63662,
+                "name": "Expired Hunt Drone Precision Booster II"
+              },
+              "Expired Hunt Drone Precision Booster III": {
+                "item_id": 63663,
+                "name": "Expired Hunt Drone Precision Booster III"
+              },
+              "Expired Hunt Drone Precision Booster IV": {
+                "item_id": 63664,
+                "name": "Expired Hunt Drone Precision Booster IV"
+              },
+              "Expired Hunt Missile Velocity Booster I": {
+                "item_id": 63665,
+                "name": "Expired Hunt Missile Velocity Booster I"
+              },
+              "Expired Hunt Missile Velocity Booster II": {
+                "item_id": 63666,
+                "name": "Expired Hunt Missile Velocity Booster II"
+              },
+              "Expired Hunt Missile Velocity Booster III": {
+                "item_id": 63667,
+                "name": "Expired Hunt Missile Velocity Booster III"
+              },
+              "Expired Hunt Missile Velocity Booster IV": {
+                "item_id": 63668,
+                "name": "Expired Hunt Missile Velocity Booster IV"
+              },
               "Harvest Webifier Booster I": {
                 "item_id": 89561,
                 "name": "Harvest Webifier Booster I"
@@ -20929,6 +21178,10 @@
               "Harvest Webifier Booster IV": {
                 "item_id": 89564,
                 "name": "Harvest Webifier Booster IV"
+              },
+              "Nocturne Anti-Drain Booster II ( copy )": {
+                "item_id": 87886,
+                "name": "Nocturne Anti-Drain Booster II ( copy )"
               },
               "Tetrimon Resistance Booster I": {
                 "item_id": 89596,
@@ -20972,6 +21225,38 @@
               "Expired Balneum Volatile Booster": {
                 "item_id": 88352,
                 "name": "Expired Balneum Volatile Booster"
+              },
+              "Expired Hunt Drone Damage Booster I": {
+                "item_id": 63669,
+                "name": "Expired Hunt Drone Damage Booster I"
+              },
+              "Expired Hunt Drone Damage Booster II": {
+                "item_id": 63670,
+                "name": "Expired Hunt Drone Damage Booster II"
+              },
+              "Expired Hunt Drone Damage Booster III": {
+                "item_id": 63671,
+                "name": "Expired Hunt Drone Damage Booster III"
+              },
+              "Expired Hunt Drone Damage Booster IV": {
+                "item_id": 63672,
+                "name": "Expired Hunt Drone Damage Booster IV"
+              },
+              "Expired Hunt Missile Damage Booster I": {
+                "item_id": 63673,
+                "name": "Expired Hunt Missile Damage Booster I"
+              },
+              "Expired Hunt Missile Damage Booster II": {
+                "item_id": 63674,
+                "name": "Expired Hunt Missile Damage Booster II"
+              },
+              "Expired Hunt Missile Damage Booster III": {
+                "item_id": 63675,
+                "name": "Expired Hunt Missile Damage Booster III"
+              },
+              "Expired Hunt Missile Damage Booster IV": {
+                "item_id": 63676,
+                "name": "Expired Hunt Missile Damage Booster IV"
               },
               "Expired Mithridate Volatile Booster": {
                 "item_id": 88354,
@@ -21038,25 +21323,77 @@
         "name": "Cerebral Accelerators",
         "subgroups": {},
         "items": {
+          "Amarr spaceship skill accelerator": {
+            "item_id": 55803,
+            "name": "Amarr spaceship skill accelerator"
+          },
           "Basic 'Radiance' Cerebral Accelerator": {
             "item_id": 89604,
             "name": "Basic 'Radiance' Cerebral Accelerator"
+          },
+          "Caldari spaceship skill accelerator": {
+            "item_id": 55804,
+            "name": "Caldari spaceship skill accelerator"
           },
           "Expert Cerebral Accelerator": {
             "item_id": 55826,
             "name": "Expert Cerebral Accelerator"
           },
+          "Expired Basic 'Guri Kikhivaa' Cerebral Accelerator": {
+            "item_id": 63633,
+            "name": "Expired Basic 'Guri Kikhivaa' Cerebral Accelerator"
+          },
+          "Expired Extended 'Guri Kikhivaa' Cerebral Accelerator": {
+            "item_id": 63635,
+            "name": "Expired Extended 'Guri Kikhivaa' Cerebral Accelerator"
+          },
+          "Expired Potent 'Guri Kikhivaa' Cerebral Accelerator": {
+            "item_id": 63634,
+            "name": "Expired Potent 'Guri Kikhivaa' Cerebral Accelerator"
+          },
           "Extended 'Radiance' Cerebral Accelerator": {
             "item_id": 89606,
             "name": "Extended 'Radiance' Cerebral Accelerator"
+          },
+          "Gallente spaceship skill accelerator": {
+            "item_id": 55805,
+            "name": "Gallente spaceship skill accelerator"
           },
           "Master-at-Arms Cerebral Accelerator": {
             "item_id": 48582,
             "name": "Master-at-Arms Cerebral Accelerator"
           },
+          "Minmatar spaceship skill accelerator": {
+            "item_id": 55806,
+            "name": "Minmatar spaceship skill accelerator"
+          },
           "Potent 'Radiance' Cerebral Accelerator": {
             "item_id": 89605,
             "name": "Potent 'Radiance' Cerebral Accelerator"
+          },
+          "Serenity Basic 'Bonding' Cerebral Accelerator": {
+            "item_id": 57433,
+            "name": "Serenity Basic 'Bonding' Cerebral Accelerator"
+          },
+          "Serenity Extended 'Bonding' Cerebral Accelerator": {
+            "item_id": 57435,
+            "name": "Serenity Extended 'Bonding' Cerebral Accelerator"
+          },
+          "Serenity Monthly Cerebral Accelerator - 2020.6": {
+            "item_id": 54976,
+            "name": "Serenity Monthly Cerebral Accelerator - 2020.6"
+          },
+          "Serenity Monthly Cerebral Accelerator - 2020.7": {
+            "item_id": 55747,
+            "name": "Serenity Monthly Cerebral Accelerator - 2020.7"
+          },
+          "Serenity Potent 'Bonding' Cerebral Accelerator": {
+            "item_id": 57434,
+            "name": "Serenity Potent 'Bonding' Cerebral Accelerator"
+          },
+          "Serenity Special Cerebral Accelerator": {
+            "item_id": 55700,
+            "name": "Serenity Special Cerebral Accelerator"
           }
         }
       },
@@ -30895,6 +31232,10 @@
                     "item_id": 83358,
                     "name": "Oceanic Serpent Gloss - Unlimited"
                   },
+                  "Old Man's Sunset Gloss - Limited": {
+                    "item_id": 84013,
+                    "name": "Old Man's Sunset Gloss - Limited"
+                  },
                   "Opal Mantle Gloss - Limited": {
                     "item_id": 89710,
                     "name": "Opal Mantle Gloss - Limited"
@@ -31091,6 +31432,10 @@
                     "item_id": 88478,
                     "name": "Verdant Atmos Gloss - Unlimited"
                   },
+                  "Villore Viridescent Gloss - Limited": {
+                    "item_id": 84010,
+                    "name": "Villore Viridescent Gloss - Limited"
+                  },
                   "Violet Blight Gloss - Limited": {
                     "item_id": 88543,
                     "name": "Violet Blight Gloss - Limited"
@@ -31245,6 +31590,10 @@
                   "Deep Void Matte - Unlimited": {
                     "item_id": 83302,
                     "name": "Deep Void Matte - Unlimited"
+                  },
+                  "Deprecated - Do not publish": {
+                    "item_id": 84807,
+                    "name": "Deprecated - Do not publish"
                   },
                   "Edge of Cerulean Matte - Limited": {
                     "item_id": 86104,
@@ -32187,6 +32536,10 @@
                 "item_id": 88573,
                 "name": "Deep Space Iron Metallic - Unlimited"
               },
+              "Deprecated - Do not publish": {
+                "item_id": 84808,
+                "name": "Deprecated - Do not publish"
+              },
               "Drifted Electrum Metallic - Limited": {
                 "item_id": 87839,
                 "name": "Drifted Electrum Metallic - Limited"
@@ -32300,7 +32653,7 @@
                 "name": "Insightful Azure Metallic - Limited"
               },
               "Intaki Emerald Metallic - Limited": {
-                "item_id": 84014,
+                "item_id": 84095,
                 "name": "Intaki Emerald Metallic - Limited"
               },
               "Ionized Verdigris Metallic - Limited": {
@@ -39195,6 +39548,10 @@
                 "item_id": 40690,
                 "name": "Sentient Burst Jammer"
               },
+              "Superweapon_AOEECM": {
+                "item_id": 41350,
+                "name": "Superweapon_AOEECM"
+              },
               "Unit D-34343's Modified Burst Jammer": {
                 "item_id": 40691,
                 "name": "Unit D-34343's Modified Burst Jammer"
@@ -39847,6 +40204,10 @@
                 "item_id": 28516,
                 "name": "Khanid Navy Warp Disruptor"
               },
+              "Makur's Modified Warp Disruptor": {
+                "item_id": 15431,
+                "name": "Makur's Modified Warp Disruptor"
+              },
               "Mizuro's Modified Heavy Warp Disruptor": {
                 "item_id": 14656,
                 "name": "Mizuro's Modified Heavy Warp Disruptor"
@@ -39893,6 +40254,10 @@
               "Caldari Navy Warp Scrambler": {
                 "item_id": 15887,
                 "name": "Caldari Navy Warp Scrambler"
+              },
+              "CONCORD Modified Warp Scrambler": {
+                "item_id": 16140,
+                "name": "CONCORD Modified Warp Scrambler"
               },
               "Dark Blood Warp Scrambler": {
                 "item_id": 14252,
@@ -39957,6 +40322,10 @@
               "Khanid Navy Warp Scrambler": {
                 "item_id": 28518,
                 "name": "Khanid Navy Warp Scrambler"
+              },
+              "Makur's Modified Warp Scrambler": {
+                "item_id": 15433,
+                "name": "Makur's Modified Warp Scrambler"
               },
               "Mizuro's Modified Heavy Warp Scrambler": {
                 "item_id": 14664,
@@ -41873,6 +42242,10 @@
                 "item_id": 23735,
                 "name": "Clone Vat Bay I"
               },
+              "QA Tactical Capsuleer Recloner": {
+                "item_id": 56569,
+                "name": "QA Tactical Capsuleer Recloner"
+              },
               "Tactical Capsuleer Recloner": {
                 "item_id": 56735,
                 "name": "Tactical Capsuleer Recloner"
@@ -43588,6 +43961,10 @@
                     "item_id": 4529,
                     "name": "Small I-a Enduring Armor Repairer"
                   },
+                  "Test Site Armor Repair": {
+                    "item_id": 52265,
+                    "name": "Test Site Armor Repair"
+                  },
                   "True Sansha Small Armor Repairer": {
                     "item_id": 13963,
                     "name": "True Sansha Small Armor Repairer"
@@ -45028,6 +45405,10 @@
                     "item_id": 14938,
                     "name": "Tairei's Modified Multispectrum Energized Membrane"
                   },
+                  "testArmorMod_PLACEHOLDER": {
+                    "item_id": 46012,
+                    "name": "testArmorMod_PLACEHOLDER"
+                  },
                   "True Sansha Multispectrum Energized Membrane": {
                     "item_id": 14072,
                     "name": "True Sansha Multispectrum Energized Membrane"
@@ -45308,6 +45689,10 @@
                   "Expanded Cargohold II": {
                     "item_id": 1319,
                     "name": "Expanded Cargohold II"
+                  },
+                  "Guri Malakim Expanded Cargohold": {
+                    "item_id": 83647,
+                    "name": "Guri Malakim Expanded Cargohold"
                   },
                   "Limited Expanded 'Archiver' Cargo": {
                     "item_id": 21493,
@@ -46968,7 +47353,12 @@
                 "id": 604,
                 "name": "Micro",
                 "subgroups": {},
-                "items": {}
+                "items": {
+                  "Micro Remote Shield Booster II": {
+                    "item_id": 406,
+                    "name": "Micro Remote Shield Booster II"
+                  }
+                }
               },
               "Small": {
                 "id": 603,
@@ -51914,6 +52304,10 @@
                         "item_id": 9371,
                         "name": "1200mm Heavy Gallium Cannon"
                       },
+                      "1200mm Heavy Prototype Artillery": {
+                        "item_id": 9373,
+                        "name": "1200mm Heavy Prototype Artillery"
+                      },
                       "1200mm Heavy Prototype Siege Cannon": {
                         "item_id": 9377,
                         "name": "1200mm Heavy Prototype Siege Cannon"
@@ -53248,6 +53642,10 @@
                   "Medium Industrial Core II": {
                     "item_id": 62591,
                     "name": "Medium Industrial Core II"
+                  },
+                  "QA Prototype Siege Module": {
+                    "item_id": 87444,
+                    "name": "QA Prototype Siege Module"
                   },
                   "Siege Module I": {
                     "item_id": 20280,
@@ -55878,6 +56276,14 @@
                       "Marshal SARO 'Black Troop' SKIN": {
                         "item_id": 47683,
                         "name": "Marshal SARO 'Black Troop' SKIN"
+                      },
+                      "Marshal Victorious Venom SKIN": {
+                        "item_id": 85884,
+                        "name": "Marshal Victorious Venom SKIN"
+                      },
+                      "Python Victorious Venom SKIN": {
+                        "item_id": 85887,
+                        "name": "Python Victorious Venom SKIN"
                       }
                     }
                   }
@@ -56799,6 +57205,10 @@
                   "Barghest Waschi Uprising 'Parade' SKIN": {
                     "item_id": 37967,
                     "name": "Barghest Waschi Uprising 'Parade' SKIN"
+                  },
+                  "Bhaalgorn Blood Raider Victory SKIN": {
+                    "item_id": 43535,
+                    "name": "Bhaalgorn Blood Raider Victory SKIN"
                   },
                   "Bhaalgorn Glacial Drift SKIN": {
                     "item_id": 46821,
@@ -61314,6 +61724,10 @@
                       "Monitor SARO 'Black Troop' SKIN": {
                         "item_id": 47682,
                         "name": "Monitor SARO 'Black Troop' SKIN"
+                      },
+                      "Monitor Victorious Venom SKIN": {
+                        "item_id": 85883,
+                        "name": "Monitor Victorious Venom SKIN"
                       }
                     }
                   }
@@ -62962,6 +63376,10 @@
                     "name": "Special Recon Ships",
                     "subgroups": {},
                     "items": {
+                      "Cobra Victorious Venom SKIN": {
+                        "item_id": 85886,
+                        "name": "Cobra Victorious Venom SKIN"
+                      },
                       "Enforcer Biosecurity Responders SKIN": {
                         "item_id": 55296,
                         "name": "Enforcer Biosecurity Responders SKIN"
@@ -63005,6 +63423,10 @@
                       "Enforcer SARO 'Black Troop' SKIN": {
                         "item_id": 47681,
                         "name": "Enforcer SARO 'Black Troop' SKIN"
+                      },
+                      "Enforcer Victorious Venom SKIN": {
+                        "item_id": 85882,
+                        "name": "Enforcer Victorious Venom SKIN"
                       }
                     }
                   }
@@ -63675,6 +64097,10 @@
                   "Ashimmu Aurora Universalis SKIN": {
                     "item_id": 60909,
                     "name": "Ashimmu Aurora Universalis SKIN"
+                  },
+                  "Ashimmu Blood Raider Victory SKIN": {
+                    "item_id": 43534,
+                    "name": "Ashimmu Blood Raider Victory SKIN"
                   },
                   "Ashimmu Glacial Drift SKIN": {
                     "item_id": 46820,
@@ -65762,6 +66188,10 @@
                       "Bifrost Snowline Bladeracer SKIN": {
                         "item_id": 52862,
                         "name": "Bifrost Snowline Bladeracer SKIN"
+                      },
+                      "Bifrost Tronhadar Ink SKIN": {
+                        "item_id": 40517,
+                        "name": "Bifrost Tronhadar Ink SKIN"
                       },
                       "Bifrost Valklear Glory SKIN": {
                         "item_id": 40326,
@@ -68387,6 +68817,14 @@
                       "Pacifier SARO 'Black Troop' SKIN": {
                         "item_id": 47680,
                         "name": "Pacifier SARO 'Black Troop' SKIN"
+                      },
+                      "Pacifier Victorious Venom SKIN": {
+                        "item_id": 85881,
+                        "name": "Pacifier Victorious Venom SKIN"
+                      },
+                      "Sidewinder Victorious Venom SKIN": {
+                        "item_id": 85885,
+                        "name": "Sidewinder Victorious Venom SKIN"
                       }
                     }
                   }
@@ -69368,6 +69806,10 @@
                         "item_id": 52857,
                         "name": "Scalpel Snowline Bladeracer SKIN"
                       },
+                      "Scalpel Tronhadar Ink SKIN": {
+                        "item_id": 40516,
+                        "name": "Scalpel Tronhadar Ink SKIN"
+                      },
                       "Scalpel Valklear Glory SKIN": {
                         "item_id": 40325,
                         "name": "Scalpel Valklear Glory SKIN"
@@ -69910,6 +70352,10 @@
                   "Cruor Aurora Universalis SKIN": {
                     "item_id": 74143,
                     "name": "Cruor Aurora Universalis SKIN"
+                  },
+                  "Cruor Blood Raider Victory SKIN": {
+                    "item_id": 43533,
+                    "name": "Cruor Blood Raider Victory SKIN"
                   },
                   "Cruor Deathglow Remnant SKIN": {
                     "item_id": 84351,
@@ -72371,6 +72817,10 @@
                         "item_id": 52899,
                         "name": "Mastodon Snowline Bladeracer SKIN"
                       },
+                      "Mastodon Tronhadar Ink SKIN": {
+                        "item_id": 40513,
+                        "name": "Mastodon Tronhadar Ink SKIN"
+                      },
                       "Mastodon Valklear Glory SKIN": {
                         "item_id": 36795,
                         "name": "Mastodon Valklear Glory SKIN"
@@ -72414,6 +72864,10 @@
                       "Prowler Snowline Bladeracer SKIN": {
                         "item_id": 52898,
                         "name": "Prowler Snowline Bladeracer SKIN"
+                      },
+                      "Prowler Tronhadar Ink SKIN": {
+                        "item_id": 40512,
+                        "name": "Prowler Tronhadar Ink SKIN"
                       },
                       "Prowler Valklear Glory SKIN": {
                         "item_id": 36794,
@@ -74679,6 +75133,10 @@
                   "Thanatos": {
                     "item_id": 23911,
                     "name": "Thanatos"
+                  },
+                  "Vanguard": {
+                    "item_id": 42132,
+                    "name": "Vanguard"
                   }
                 }
               },
@@ -74936,6 +75394,10 @@
                   "Ninazu": {
                     "item_id": 37607,
                     "name": "Ninazu"
+                  },
+                  "Venerable": {
+                    "item_id": 42133,
+                    "name": "Venerable"
                   }
                 }
               },
@@ -75607,6 +76069,10 @@
                   "Omen": {
                     "item_id": 2006,
                     "name": "Omen"
+                  },
+                  "Test Site Maller": {
+                    "item_id": 52267,
+                    "name": "Test Site Maller"
                   }
                 }
               },
@@ -76393,6 +76859,10 @@
                     "item_id": 37456,
                     "name": "Maulus Navy Issue"
                   },
+                  "Police Pursuit Comet": {
+                    "item_id": 33677,
+                    "name": "Police Pursuit Comet"
+                  },
                   "Probe Fleet Issue": {
                     "item_id": 72903,
                     "name": "Probe Fleet Issue"
@@ -76596,6 +77066,10 @@
                 "name": "ORE",
                 "subgroups": {},
                 "items": {
+                  "Citizen Venture": {
+                    "item_id": 48648,
+                    "name": "Citizen Venture"
+                  },
                   "Venture": {
                     "item_id": 32880,
                     "name": "Venture"
@@ -77020,6 +77494,10 @@
               "Raven State Issue": {
                 "item_id": 26840,
                 "name": "Raven State Issue"
+              },
+              "Scorpion Ishukone Watch": {
+                "item_id": 4005,
+                "name": "Scorpion Ishukone Watch"
               },
               "Tempest Tribal Issue": {
                 "item_id": 26842,
@@ -77903,6 +78381,10 @@
             "item_id": 55035,
             "name": "Medium Vorton Projector"
           },
+          "Medium Vorton Projector (old)": {
+            "item_id": 54825,
+            "name": "Medium Vorton Projector (old)"
+          },
           "Medium Vorton Specialization": {
             "item_id": 54828,
             "name": "Medium Vorton Specialization"
@@ -77967,6 +78449,10 @@
             "item_id": 55034,
             "name": "Small Vorton Projector"
           },
+          "Small Vorton Projector (old)": {
+            "item_id": 54824,
+            "name": "Small Vorton Projector (old)"
+          },
           "Small Vorton Specialization": {
             "item_id": 54827,
             "name": "Small Vorton Specialization"
@@ -77998,6 +78484,10 @@
           "Vorton Projector Operation": {
             "item_id": 55033,
             "name": "Vorton Projector Operation"
+          },
+          "Vorton Projector Operation (old)": {
+            "item_id": 54839,
+            "name": "Vorton Projector Operation (old)"
           }
         }
       },
@@ -78341,9 +78831,21 @@
             "item_id": 45749,
             "name": "Advanced Mass Reactions"
           },
+          "Arkonor Processing": {
+            "item_id": 12180,
+            "name": "Arkonor Processing"
+          },
           "Astrogeology": {
             "item_id": 3410,
             "name": "Astrogeology"
+          },
+          "Bezdnacine Processing": {
+            "item_id": 56631,
+            "name": "Bezdnacine Processing"
+          },
+          "Bistot Processing": {
+            "item_id": 12181,
+            "name": "Bistot Processing"
           },
           "Capital Industrial Reconfiguration": {
             "item_id": 28585,
@@ -78365,6 +78867,14 @@
             "item_id": 60380,
             "name": "Complex Ore Processing"
           },
+          "Crokite Processing": {
+            "item_id": 12182,
+            "name": "Crokite Processing"
+          },
+          "Dark Ochre Processing": {
+            "item_id": 12183,
+            "name": "Dark Ochre Processing"
+          },
           "Deep Core Mining": {
             "item_id": 11395,
             "name": "Deep Core Mining"
@@ -78385,6 +78895,18 @@
             "item_id": 62452,
             "name": "Gas Decompression Efficiency"
           },
+          "Gneiss Processing": {
+            "item_id": 12184,
+            "name": "Gneiss Processing"
+          },
+          "Hedbergite Processing": {
+            "item_id": 12185,
+            "name": "Hedbergite Processing"
+          },
+          "Hemorphite Processing": {
+            "item_id": 12186,
+            "name": "Hemorphite Processing"
+          },
           "Ice Harvesting": {
             "item_id": 16281,
             "name": "Ice Harvesting"
@@ -78396,6 +78918,14 @@
           "Industrial Reconfiguration": {
             "item_id": 58956,
             "name": "Industrial Reconfiguration"
+          },
+          "Jaspet Processing": {
+            "item_id": 12187,
+            "name": "Jaspet Processing"
+          },
+          "Kernite Processing": {
+            "item_id": 12188,
+            "name": "Kernite Processing"
           },
           "Mass Reactions": {
             "item_id": 45748,
@@ -78412,6 +78942,22 @@
           "Mining Upgrades": {
             "item_id": 22578,
             "name": "Mining Upgrades"
+          },
+          "Omber Processing": {
+            "item_id": 12190,
+            "name": "Omber Processing"
+          },
+          "Plagioclase Processing": {
+            "item_id": 12191,
+            "name": "Plagioclase Processing"
+          },
+          "Pyroxeres Processing": {
+            "item_id": 12192,
+            "name": "Pyroxeres Processing"
+          },
+          "Rakovene Processing": {
+            "item_id": 56633,
+            "name": "Rakovene Processing"
           },
           "Rare Moon Ore Processing": {
             "item_id": 46155,
@@ -78437,6 +78983,10 @@
             "item_id": 25863,
             "name": "Salvaging"
           },
+          "Scordite Processing": {
+            "item_id": 12193,
+            "name": "Scordite Processing"
+          },
           "Scrapmetal Processing": {
             "item_id": 12196,
             "name": "Scrapmetal Processing"
@@ -78449,6 +78999,14 @@
             "item_id": 60377,
             "name": "Simple Ore Processing"
           },
+          "Spodumain Processing": {
+            "item_id": 12194,
+            "name": "Spodumain Processing"
+          },
+          "Talassonite Processing": {
+            "item_id": 56632,
+            "name": "Talassonite Processing"
+          },
           "Ubiquitous Moon Ore Processing": {
             "item_id": 46152,
             "name": "Ubiquitous Moon Ore Processing"
@@ -78460,6 +79018,10 @@
           "Variegated Ore Processing": {
             "item_id": 60379,
             "name": "Variegated Ore Processing"
+          },
+          "Veldspar Processing": {
+            "item_id": 12195,
+            "name": "Veldspar Processing"
           }
         }
       },
@@ -78930,6 +79492,10 @@
             "item_id": 20525,
             "name": "Amarr Dreadnought"
           },
+          "Amarr Force Auxiliary": {
+            "item_id": 40535,
+            "name": "Amarr Force Auxiliary"
+          },
           "Amarr Freighter": {
             "item_id": 20524,
             "name": "Amarr Freighter"
@@ -78986,6 +79552,10 @@
             "item_id": 20530,
             "name": "Caldari Dreadnought"
           },
+          "Caldari Force Auxiliary": {
+            "item_id": 40536,
+            "name": "Caldari Force Auxiliary"
+          },
           "Caldari Freighter": {
             "item_id": 20526,
             "name": "Caldari Freighter"
@@ -79038,9 +79608,17 @@
             "item_id": 55032,
             "name": "EDENCOM Cruiser"
           },
+          "EDENCOM Cruiser (old)": {
+            "item_id": 54793,
+            "name": "EDENCOM Cruiser (old)"
+          },
           "EDENCOM Frigate": {
             "item_id": 55031,
             "name": "EDENCOM Frigate"
+          },
+          "EDENCOM Frigate (old)": {
+            "item_id": 54790,
+            "name": "EDENCOM Frigate (old)"
           },
           "Electronic Attack Ships": {
             "item_id": 28615,
@@ -79081,6 +79659,10 @@
           "Gallente Dreadnought": {
             "item_id": 20531,
             "name": "Gallente Dreadnought"
+          },
+          "Gallente Force Auxiliary": {
+            "item_id": 40537,
+            "name": "Gallente Force Auxiliary"
           },
           "Gallente Freighter": {
             "item_id": 20527,
@@ -79177,6 +79759,10 @@
           "Minmatar Dreadnought": {
             "item_id": 20532,
             "name": "Minmatar Dreadnought"
+          },
+          "Minmatar Force Auxiliary": {
+            "item_id": 40538,
+            "name": "Minmatar Force Auxiliary"
           },
           "Minmatar Freighter": {
             "item_id": 20528,
@@ -80013,6 +80599,10 @@
           "Delve Yoiul Calendar": {
             "item_id": 47043,
             "name": "Delve Yoiul Calendar"
+          },
+          "DEPRICATED (DO NOT TRANSLATE)": {
+            "item_id": 88569,
+            "name": "DEPRICATED (DO NOT TRANSLATE)"
           },
           "Diamond Ring": {
             "item_id": 54160,
@@ -80978,6 +81568,10 @@
             "item_id": 87606,
             "name": "Terminated Knot"
           },
+          "Test item": {
+            "item_id": 41496,
+            "name": "Test item"
+          },
           "Tetrimonic Warclone Blanks": {
             "item_id": 85178,
             "name": "Tetrimonic Warclone Blanks"
@@ -81246,6 +81840,54 @@
             "item_id": 37889,
             "name": "YC118 Succession Trial Champion's Decree - House Tash-Murkon"
           },
+          "YC119 Yoiul Festival Day 1": {
+            "item_id": 44187,
+            "name": "YC119 Yoiul Festival Day 1"
+          },
+          "YC119 Yoiul Festival Day 10": {
+            "item_id": 44197,
+            "name": "YC119 Yoiul Festival Day 10"
+          },
+          "YC119 Yoiul Festival Day 11": {
+            "item_id": 44198,
+            "name": "YC119 Yoiul Festival Day 11"
+          },
+          "YC119 Yoiul Festival Day 12": {
+            "item_id": 44199,
+            "name": "YC119 Yoiul Festival Day 12"
+          },
+          "YC119 Yoiul Festival Day 2": {
+            "item_id": 44188,
+            "name": "YC119 Yoiul Festival Day 2"
+          },
+          "YC119 Yoiul Festival Day 3": {
+            "item_id": 44189,
+            "name": "YC119 Yoiul Festival Day 3"
+          },
+          "YC119 Yoiul Festival Day 4": {
+            "item_id": 44190,
+            "name": "YC119 Yoiul Festival Day 4"
+          },
+          "YC119 Yoiul Festival Day 5": {
+            "item_id": 44191,
+            "name": "YC119 Yoiul Festival Day 5"
+          },
+          "YC119 Yoiul Festival Day 6": {
+            "item_id": 44192,
+            "name": "YC119 Yoiul Festival Day 6"
+          },
+          "YC119 Yoiul Festival Day 7": {
+            "item_id": 44193,
+            "name": "YC119 Yoiul Festival Day 7"
+          },
+          "YC119 Yoiul Festival Day 8": {
+            "item_id": 44194,
+            "name": "YC119 Yoiul Festival Day 8"
+          },
+          "YC119 Yoiul Festival Day 9": {
+            "item_id": 44195,
+            "name": "YC119 Yoiul Festival Day 9"
+          },
           "YC121 Guardian's Gala Ticket": {
             "item_id": 50039,
             "name": "YC121 Guardian's Gala Ticket"
@@ -81277,6 +81919,10 @@
           "Yoiul Stormchasers T-Shirt and Pants Crate": {
             "item_id": 57168,
             "name": "Yoiul Stormchasers T-Shirt and Pants Crate"
+          },
+          "未来人类纪念章": {
+            "item_id": 41035,
+            "name": "未来人类纪念章"
           }
         }
       },
@@ -81364,6 +82010,10 @@
             "item_id": 63165,
             "name": "Capsuleer Starburst Firework"
           },
+          "Cd Trade Crate 2": {
+            "item_id": 81035,
+            "name": "Cd Trade Crate 2"
+          },
           "Cherubic Heartburst Firework": {
             "item_id": 49992,
             "name": "Cherubic Heartburst Firework"
@@ -81415,6 +82065,42 @@
           "Eros Blossom Firework": {
             "item_id": 47264,
             "name": "Eros Blossom Firework"
+          },
+          "Expired BLTZN-05L Lowsec Ice Storm Filament": {
+            "item_id": 74432,
+            "name": "Expired BLTZN-05L Lowsec Ice Storm Filament"
+          },
+          "Expired CMT-05N Nullsec Ice Storm Filament": {
+            "item_id": 74433,
+            "name": "Expired CMT-05N Nullsec Ice Storm Filament"
+          },
+          "Expired CPD-10N Nullsec Ice Storm Filament": {
+            "item_id": 74434,
+            "name": "Expired CPD-10N Nullsec Ice Storm Filament"
+          },
+          "Expired DNCR-05H Highsec Ice Storm Filament": {
+            "item_id": 74426,
+            "name": "Expired DNCR-05H Highsec Ice Storm Filament"
+          },
+          "Expired DNNR-01L Lowsec Ice Storm Filament": {
+            "item_id": 74427,
+            "name": "Expired DNNR-01L Lowsec Ice Storm Filament"
+          },
+          "Expired DSHR-01H Highsec Ice Storm Filament": {
+            "item_id": 74428,
+            "name": "Expired DSHR-01H Highsec Ice Storm Filament"
+          },
+          "Expired PRNCR-10H Highsec Ice Storm Filament": {
+            "item_id": 74429,
+            "name": "Expired PRNCR-10H Highsec Ice Storm Filament"
+          },
+          "Expired RDLF-10L Lowsec Ice Storm Filament": {
+            "item_id": 74430,
+            "name": "Expired RDLF-10L Lowsec Ice Storm Filament"
+          },
+          "Expired VXN-01N Nullsec Ice Storm Filament": {
+            "item_id": 74431,
+            "name": "Expired VXN-01N Nullsec Ice Storm Filament"
           },
           "Fangs of the Serpent Firework": {
             "item_id": 44272,
@@ -82995,6 +83681,22 @@
             "name": "Large Structure Resource Processing Rigs",
             "subgroups": {},
             "items": {
+              "OLD L-Set Ice Grading Processor I": {
+                "item_id": 41428,
+                "name": "OLD L-Set Ice Grading Processor I"
+              },
+              "OLD L-Set Ice Grading Processor II": {
+                "item_id": 41429,
+                "name": "OLD L-Set Ice Grading Processor II"
+              },
+              "OLD L-Set Ore Grading Processor I": {
+                "item_id": 37282,
+                "name": "OLD L-Set Ore Grading Processor I"
+              },
+              "OLD L-Set Ore Grading Processor II": {
+                "item_id": 37283,
+                "name": "OLD L-Set Ore Grading Processor II"
+              },
               "Standup L-Set Moon Drilling Proficiency I": {
                 "item_id": 46327,
                 "name": "Standup L-Set Moon Drilling Proficiency I"
@@ -83026,6 +83728,38 @@
             "name": "Medium Structure Resource Processing Rigs",
             "subgroups": {},
             "items": {
+              "OLD M-Set HS Materials Reclamation I": {
+                "item_id": 37280,
+                "name": "OLD M-Set HS Materials Reclamation I"
+              },
+              "OLD M-Set HS Materials Reclamation II": {
+                "item_id": 37281,
+                "name": "OLD M-Set HS Materials Reclamation II"
+              },
+              "OLD M-Set I1 Materials Reclamation I": {
+                "item_id": 41424,
+                "name": "OLD M-Set I1 Materials Reclamation I"
+              },
+              "OLD M-Set I1 Materials Reclamation II": {
+                "item_id": 41425,
+                "name": "OLD M-Set I1 Materials Reclamation II"
+              },
+              "OLD M-Set I2 Materials Reclamation I": {
+                "item_id": 41426,
+                "name": "OLD M-Set I2 Materials Reclamation I"
+              },
+              "OLD M-Set I2 Materials Reclamation II": {
+                "item_id": 41427,
+                "name": "OLD M-Set I2 Materials Reclamation II"
+              },
+              "OLD M-Set LNS Materials Reclamation I": {
+                "item_id": 41422,
+                "name": "OLD M-Set LNS Materials Reclamation I"
+              },
+              "OLD M-Set LNS Materials Reclamation II": {
+                "item_id": 41423,
+                "name": "OLD M-Set LNS Materials Reclamation II"
+              },
               "Standup M-Set Asteroid Ore Grading Processor I": {
                 "item_id": 46633,
                 "name": "Standup M-Set Asteroid Ore Grading Processor I"
@@ -83121,6 +83855,14 @@
             "name": "X-Large Structure Resource Processing Rigs",
             "subgroups": {},
             "items": {
+              "OLD XL-Set Reprocessing Monitor I": {
+                "item_id": 37284,
+                "name": "OLD XL-Set Reprocessing Monitor I"
+              },
+              "OLD XL-Set Reprocessing Monitor II": {
+                "item_id": 37285,
+                "name": "OLD XL-Set Reprocessing Monitor II"
+              },
               "Standup XL-Set Reprocessing Monitor I": {
                 "item_id": 46641,
                 "name": "Standup XL-Set Reprocessing Monitor I"
@@ -83537,6 +84279,10 @@
             "name": "Warp Disruption Fields",
             "subgroups": {},
             "items": {
+              "Mobile Large Jump Disruptor I": {
+                "item_id": 4386,
+                "name": "Mobile Large Jump Disruptor I"
+              },
               "Mobile Large Warp Disruptor I": {
                 "item_id": 12200,
                 "name": "Mobile Large Warp Disruptor I"
@@ -83926,6 +84672,10 @@
                   "Exploration Detector 3": {
                     "item_id": 87954,
                     "name": "Exploration Detector 3"
+                  },
+                  "QA Exploration Detector": {
+                    "item_id": 88763,
+                    "name": "QA Exploration Detector"
                   }
                 }
               },
@@ -86373,6 +87123,14 @@
         "name": "Industrial Goods",
         "subgroups": {},
         "items": {
+          "Audio Log Backup – 115/11/11 A-0477": {
+            "item_id": 41024,
+            "name": "Audio Log Backup – 115/11/11 A-0477"
+          },
+          "Audio Log Backup – 117/07/01 G-6640": {
+            "item_id": 41025,
+            "name": "Audio Log Backup – 117/07/01 G-6640"
+          },
           "Broken Broadcast Node": {
             "item_id": 2375,
             "name": "Broken Broadcast Node"
@@ -86412,6 +87170,10 @@
           "Compressed Dense Polycrase": {
             "item_id": 79785,
             "name": "Compressed Dense Polycrase"
+          },
+          "Convoy Hawk 6 Escort Roster": {
+            "item_id": 41023,
+            "name": "Convoy Hawk 6 Escort Roster"
           },
           "Corrupted Neurosynaptic Profile": {
             "item_id": 56709,
@@ -86485,9 +87247,17 @@
             "item_id": 40549,
             "name": "Large 'Fortizar' Citadel BPC Token"
           },
+          "Manifest – Cargo 118/01/06 – CLEARENCE 1B": {
+            "item_id": 41026,
+            "name": "Manifest – Cargo 118/01/06 – CLEARENCE 1B"
+          },
           "Manufacturing Tools": {
             "item_id": 16686,
             "name": "Manufacturing Tools"
+          },
+          "Medical Report 0401A – 117/01/19": {
+            "item_id": 41028,
+            "name": "Medical Report 0401A – 117/01/19"
           },
           "Medium 'Astrahus' Citadel BPC Token": {
             "item_id": 40548,
@@ -86509,6 +87279,10 @@
             "item_id": 56710,
             "name": "Partial Neurosynaptic Profile"
           },
+          "Progress Report 0466B – 117/02/28": {
+            "item_id": 41029,
+            "name": "Progress Report 0466B – 117/02/28"
+          },
           "Protective Equipment Patterns": {
             "item_id": 56716,
             "name": "Protective Equipment Patterns"
@@ -86528,6 +87302,10 @@
           "Research Tools": {
             "item_id": 15353,
             "name": "Research Tools"
+          },
+          "Secure Comms Uplink ALPHA-6": {
+            "item_id": 41027,
+            "name": "Secure Comms Uplink ALPHA-6"
           },
           "Shattered Villard Wheel": {
             "item_id": 33539,
@@ -87847,6 +88625,14 @@
             "item_id": 34543,
             "name": "Barbican Sequence 1"
           },
+          "CD Component Y-107 ( copy )": {
+            "item_id": 80021,
+            "name": "CD Component Y-107 ( copy )"
+          },
+          "CD Data Collection": {
+            "item_id": 80026,
+            "name": "CD Data Collection"
+          },
           "Coalesced Element": {
             "item_id": 36902,
             "name": "Coalesced Element"
@@ -87870,6 +88656,90 @@
           "Conflux Sequence 1": {
             "item_id": 34547,
             "name": "Conflux Sequence 1"
+          },
+          "EGDLI (2) Abyssal Tier 1 (Omega)": {
+            "item_id": 55839,
+            "name": "EGDLI (2) Abyssal Tier 1 (Omega)"
+          },
+          "EGDLI (2) Abyssal Tier 2 (Omega)": {
+            "item_id": 55840,
+            "name": "EGDLI (2) Abyssal Tier 2 (Omega)"
+          },
+          "EGDLI (2) Abyssal Tier 4 (Alpha)": {
+            "item_id": 55911,
+            "name": "EGDLI (2) Abyssal Tier 4 (Alpha)"
+          },
+          "EGDLI (2) Boosters Tier 1 (Alpha)": {
+            "item_id": 55902,
+            "name": "EGDLI (2) Boosters Tier 1 (Alpha)"
+          },
+          "EGDLI (2) Boosters Tier 1 (Omega)": {
+            "item_id": 55836,
+            "name": "EGDLI (2) Boosters Tier 1 (Omega)"
+          },
+          "EGDLI (2) Boosters Tier 2 (Alpha)": {
+            "item_id": 55903,
+            "name": "EGDLI (2) Boosters Tier 2 (Alpha)"
+          },
+          "EGDLI (2) Boosters Tier 2 (Omega)": {
+            "item_id": 55837,
+            "name": "EGDLI (2) Boosters Tier 2 (Omega)"
+          },
+          "EGDLI (2) Boosters Tier 3 (Alpha)": {
+            "item_id": 55904,
+            "name": "EGDLI (2) Boosters Tier 3 (Alpha)"
+          },
+          "EGDLI (2) Boosters Tier 3 (Omega)": {
+            "item_id": 55838,
+            "name": "EGDLI (2) Boosters Tier 3 (Omega)"
+          },
+          "EGDLI (2) BPC Tier 1 (Alpha)": {
+            "item_id": 55905,
+            "name": "EGDLI (2) BPC Tier 1 (Alpha)"
+          },
+          "EGDLI (2) BPC Tier 1 (Omega)": {
+            "item_id": 55841,
+            "name": "EGDLI (2) BPC Tier 1 (Omega)"
+          },
+          "EGDLI (2) BPC Tier 2 (Alpha)": {
+            "item_id": 55906,
+            "name": "EGDLI (2) BPC Tier 2 (Alpha)"
+          },
+          "EGDLI (2) BPC Tier 2 (Omega)": {
+            "item_id": 55842,
+            "name": "EGDLI (2) BPC Tier 2 (Omega)"
+          },
+          "EGDLI (2) BPC Tier 3 (Alpha)": {
+            "item_id": 55907,
+            "name": "EGDLI (2) BPC Tier 3 (Alpha)"
+          },
+          "EGDLI (2) BPC Tier 3 (Omega)": {
+            "item_id": 55843,
+            "name": "EGDLI (2) BPC Tier 3 (Omega)"
+          },
+          "EGDLI (2) Skin Tier 1 (Alpha)": {
+            "item_id": 55908,
+            "name": "EGDLI (2) Skin Tier 1 (Alpha)"
+          },
+          "EGDLI (2) Skin Tier 1 (Omega)": {
+            "item_id": 55844,
+            "name": "EGDLI (2) Skin Tier 1 (Omega)"
+          },
+          "EGDLI (2) Skin Tier 2 (Alpha)": {
+            "item_id": 55909,
+            "name": "EGDLI (2) Skin Tier 2 (Alpha)"
+          },
+          "EGDLI (2) Skin Tier 2 (Omega)": {
+            "item_id": 55845,
+            "name": "EGDLI (2) Skin Tier 2 (Omega)"
+          },
+          "EGDLI (2) Skin Tier 3 (Alpha)": {
+            "item_id": 55910,
+            "name": "EGDLI (2) Skin Tier 3 (Alpha)"
+          },
+          "EGDLI (2) Skin Tier 3 (Omega)": {
+            "item_id": 55846,
+            "name": "EGDLI (2) Skin Tier 3 (Omega)"
           },
           "Element Containment Vessel": {
             "item_id": 78887,
@@ -87902,6 +88772,10 @@
           "Isolated Dimensional Thread": {
             "item_id": 80025,
             "name": "Isolated Dimensional Thread"
+          },
+          "Jovian DNA Strand": {
+            "item_id": 40541,
+            "name": "Jovian DNA Strand"
           },
           "Peculiar Data Collection": {
             "item_id": 62031,

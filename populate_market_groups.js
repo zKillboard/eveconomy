@@ -128,6 +128,80 @@ class MarketGroupsUpdater {
     }
 
     /**
+     * Make HTTP POST request for bulk operations
+     */
+    async makeRequestPost(endpoint, postData, retries = 3) {
+        //await this.enforceRateLimit();
+        
+        return new Promise((resolve, reject) => {
+            const url = `${this.esiBaseUrl}${endpoint}`;
+            console.log(`POST Request: ${url} (${postData.length} items)`);
+            
+            const postBody = JSON.stringify(postData);
+            
+            const options = {
+                method: 'POST',
+                headers: {
+                    'User-Agent': this.userAgent,
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'Content-Length': Buffer.byteLength(postBody)
+                }
+            };
+            
+            const req = https.request(url, options, (res) => {
+                let data = '';
+                
+                res.on('data', (chunk) => {
+                    data += chunk;
+                });
+                
+                res.on('end', () => {
+                    if (res.statusCode === 200) {
+                        try {
+                            const json = JSON.parse(data);
+                            resolve(json);
+                        } catch (error) {
+                            reject(new Error(`JSON parse error: ${error.message}`));
+                        }
+                    } else if (res.statusCode >= 500 && retries > 0) {
+                        console.log(`Server error ${res.statusCode}, retrying in 2s...`);
+                        setTimeout(() => {
+                            this.makeRequestPost(endpoint, postData, retries - 1)
+                                .then(resolve)
+                                .catch(reject);
+                        }, 2000);
+                    } else {
+                        reject(new Error(`HTTP ${res.statusCode}: ${data}`));
+                    }
+                });
+            });
+            
+            req.on('error', (error) => {
+                if (retries > 0) {
+                    console.log(`POST request error, retrying: ${error.message}`);
+                    setTimeout(() => {
+                        this.makeRequestPost(endpoint, postData, retries - 1)
+                            .then(resolve)
+                            .catch(reject);
+                    }, 1000);
+                } else {
+                    reject(error);
+                }
+            });
+            
+            req.setTimeout(30000, () => {
+                req.destroy();
+                reject(new Error('POST request timeout'));
+            });
+            
+            // Send the POST data
+            req.write(postBody);
+            req.end();
+        });
+    }
+
+    /**
      * Fetch all market groups from ESI
      */
     async fetchMarketGroups() {
@@ -185,10 +259,10 @@ class MarketGroupsUpdater {
     }
 
     /**
-     * Fetch type information for items
+     * Fetch type information for items using bulk name resolver
      */
     async fetchTypeInformation() {
-        console.log('Fetching type information...');
+        console.log('Fetching type information using bulk resolver...');
         
         // Collect all unique type IDs from market groups
         const typeIds = new Set();
@@ -198,26 +272,29 @@ class MarketGroupsUpdater {
             }
         });
         
-        console.log(`Found ${typeIds.size} unique types, fetching details...`);
+        console.log(`Found ${typeIds.size} unique types, fetching names in bulk...`);
         
-        // Fetch type details in batches
         const typeIdArray = Array.from(typeIds);
-        const batchSize = 50;
+        
+        // ESI bulk names endpoint accepts up to 1000 IDs per request
+        const batchSize = 1000;
         
         for (let i = 0; i < typeIdArray.length; i += batchSize) {
             const batch = typeIdArray.slice(i, i + batchSize);
-            const promises = batch.map(id => this.fetchTypeDetails(id));
             
             try {
-                await Promise.all(promises);
+                await this.fetchTypeNamesBulk(batch);
                 console.log(`Processed ${Math.min(i + batchSize, typeIdArray.length)}/${typeIdArray.length} types`);
             } catch (error) {
-                console.error(`Error processing type batch ${i}-${i + batchSize}:`, error.message);
+                console.error(`Error processing bulk names batch ${i}-${i + batchSize}:`, error.message);
+                // Fallback to individual requests for this batch
+                console.log('Falling back to individual requests for this batch...');
+                await this.fetchTypesIndividually(batch);
             }
             
             // Delay between batches
             if (i + batchSize < typeIdArray.length) {
-                await this.sleep(100);
+                await this.sleep(200);
             }
         }
         
@@ -225,7 +302,60 @@ class MarketGroupsUpdater {
     }
 
     /**
-     * Fetch details for a specific type/item
+     * Fetch type names in bulk using ESI bulk names resolver
+     */
+    async fetchTypeNamesBulk(typeIds) {
+        if (typeIds.length === 0) return;
+        
+        try {
+            // Use bulk names endpoint
+            const nameData = await this.makeRequestPost('/latest/universe/names/', typeIds);
+            
+            if (Array.isArray(nameData)) {
+                // Store the names
+                nameData.forEach(item => {
+                    if (item.id && item.name && item.category === 'inventory_type') {
+                        this.typeInfo.set(item.id, {
+                            id: item.id,
+                            name: item.name,
+                            description: '',
+                            group_id: null,
+                            category_id: null,
+                            published: true,
+                            market_group_id: null
+                        });
+                    }
+                });
+                
+                console.log(`Bulk resolved ${nameData.filter(item => item.category === 'inventory_type').length} type names`);
+            }
+        } catch (error) {
+            console.error(`Failed to fetch bulk type names:`, error.message);
+            throw error;
+        }
+    }
+
+    /**
+     * Fallback method to fetch types individually
+     */
+    async fetchTypesIndividually(typeIds) {
+        const batchSize = 10;
+        for (let i = 0; i < typeIds.length; i += batchSize) {
+            const batch = typeIds.slice(i, i + batchSize);
+            const promises = batch.map(id => this.fetchTypeDetails(id));
+            
+            try {
+                await Promise.all(promises);
+            } catch (error) {
+                console.error(`Error in individual fallback batch:`, error.message);
+            }
+            
+            await this.sleep(100);
+        }
+    }
+
+    /**
+     * Fetch details for a specific type/item (fallback method)
      */
     async fetchTypeDetails(typeId) {
         try {
