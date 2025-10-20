@@ -405,6 +405,8 @@ function createOrder(now, order, refresh = false) {
 			let val = order[column];
 			if (columns[column]['format']) val = getValueFormatted(val, columns[column]['format']);
 
+			if (columns[column]['field'] == 'range' && val == 'solarsystem') val = 'system';
+
 			let span = createElement('span', val, columns[column]);
 			if (column == 'location_name') {
 				span.classList.add('add_region');
