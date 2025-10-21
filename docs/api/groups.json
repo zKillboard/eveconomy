@@ -3880,6 +3880,29 @@
                   }
                 }
               },
+              "Advanced Long Range XL Torpedoes": {
+                "id": 2259,
+                "name": "Advanced Long Range XL Torpedoes",
+                "subgroups": {},
+                "items": {
+                  "Inferno Javelin XL Torpedo": {
+                    "item_id": 41276,
+                    "name": "Inferno Javelin XL Torpedo"
+                  },
+                  "Mjolnir Javelin XL Torpedo": {
+                    "item_id": 41274,
+                    "name": "Mjolnir Javelin XL Torpedo"
+                  },
+                  "Nova Javelin XL Torpedo": {
+                    "item_id": 41272,
+                    "name": "Nova Javelin XL Torpedo"
+                  },
+                  "Scourge Javelin XL Torpedo": {
+                    "item_id": 41270,
+                    "name": "Scourge Javelin XL Torpedo"
+                  }
+                }
+              },
               "Faction XL Torpedoes": {
                 "id": 1194,
                 "name": "Faction XL Torpedoes",
@@ -12488,6 +12511,21 @@
                   "Signal Amplifier I Blueprint": {
                     "item_id": 11634,
                     "name": "Signal Amplifier I Blueprint"
+                  }
+                }
+              },
+              "Tractor Beams": {
+                "id": 905,
+                "name": "Tractor Beams",
+                "subgroups": {},
+                "items": {
+                  "Capital Tractor Beam I Blueprint": {
+                    "item_id": 24645,
+                    "name": "Capital Tractor Beam I Blueprint"
+                  },
+                  "Small Tractor Beam I Blueprint": {
+                    "item_id": 24349,
+                    "name": "Small Tractor Beam I Blueprint"
                   }
                 }
               }
@@ -25798,6 +25836,12 @@
                   "Gallente Improvement Platforms": {
                     "id": 1868,
                     "name": "Gallente Improvement Platforms",
+                    "subgroups": {},
+                    "items": {}
+                  },
+                  "Minmatar Improvement Platforms": {
+                    "id": 1869,
+                    "name": "Minmatar Improvement Platforms",
                     "subgroups": {},
                     "items": {}
                   }
@@ -39478,6 +39522,45 @@
         "id": 657,
         "name": "Electronic Warfare",
         "subgroups": {
+          "Burst Projectors": {
+            "id": 2249,
+            "name": "Burst Projectors",
+            "subgroups": {},
+            "items": {
+              "ECM Jammer Burst Projector": {
+                "item_id": 27678,
+                "name": "ECM Jammer Burst Projector"
+              },
+              "Energy Neutralization Burst Projector": {
+                "item_id": 40636,
+                "name": "Energy Neutralization Burst Projector"
+              },
+              "Sensor Dampening Burst Projector": {
+                "item_id": 40697,
+                "name": "Sensor Dampening Burst Projector"
+              },
+              "Stasis Webification Burst Projector": {
+                "item_id": 40635,
+                "name": "Stasis Webification Burst Projector"
+              },
+              "Superweapon_AOEGuide": {
+                "item_id": 40700,
+                "name": "Superweapon_AOEGuide"
+              },
+              "Target Illumination Burst Projector": {
+                "item_id": 40698,
+                "name": "Target Illumination Burst Projector"
+              },
+              "Warp Disruption Burst Projector": {
+                "item_id": 40696,
+                "name": "Warp Disruption Burst Projector"
+              },
+              "Weapon Disruption Burst Projector": {
+                "item_id": 40699,
+                "name": "Weapon Disruption Burst Projector"
+              }
+            }
+          },
           "ECCM": {
             "id": 685,
             "name": "ECCM",
@@ -41592,6 +41675,65 @@
                   "True Sansha Medium Energy Neutralizer": {
                     "item_id": 14166,
                     "name": "True Sansha Medium Energy Neutralizer"
+                  }
+                }
+              },
+              "Small": {
+                "id": 689,
+                "name": "Small",
+                "subgroups": {},
+                "items": {
+                  "Ammatar Navy Small Energy Neutralizer": {
+                    "item_id": 15794,
+                    "name": "Ammatar Navy Small Energy Neutralizer"
+                  },
+                  "Corpii A-Type Small Energy Neutralizer": {
+                    "item_id": 37624,
+                    "name": "Corpii A-Type Small Energy Neutralizer"
+                  },
+                  "Corpii B-Type Small Energy Neutralizer": {
+                    "item_id": 37623,
+                    "name": "Corpii B-Type Small Energy Neutralizer"
+                  },
+                  "Corpii C-Type Small Energy Neutralizer": {
+                    "item_id": 37622,
+                    "name": "Corpii C-Type Small Energy Neutralizer"
+                  },
+                  "Dark Blood Small Energy Neutralizer": {
+                    "item_id": 14160,
+                    "name": "Dark Blood Small Energy Neutralizer"
+                  },
+                  "Imperial Navy Small Energy Neutralizer": {
+                    "item_id": 15800,
+                    "name": "Imperial Navy Small Energy Neutralizer"
+                  },
+                  "Makra's Modified Small Energy Neutralizer": {
+                    "item_id": 84991,
+                    "name": "Makra's Modified Small Energy Neutralizer"
+                  },
+                  "Small 'Caltrop' Energy Neutralizer": {
+                    "item_id": 23815,
+                    "name": "Small 'Caltrop' Energy Neutralizer"
+                  },
+                  "Small Energy Neutralizer I": {
+                    "item_id": 533,
+                    "name": "Small Energy Neutralizer I"
+                  },
+                  "Small Energy Neutralizer II": {
+                    "item_id": 13003,
+                    "name": "Small Energy Neutralizer II"
+                  },
+                  "Small Gremlin Compact Energy Neutralizer": {
+                    "item_id": 4477,
+                    "name": "Small Gremlin Compact Energy Neutralizer"
+                  },
+                  "Small Infectious Scoped Energy Neutralizer": {
+                    "item_id": 4471,
+                    "name": "Small Infectious Scoped Energy Neutralizer"
+                  },
+                  "True Sansha Small Energy Neutralizer": {
+                    "item_id": 14162,
+                    "name": "True Sansha Small Energy Neutralizer"
                   }
                 }
               }
@@ -45661,6 +45803,41 @@
                     "name": "Medium Inefficient Hull Repair Unit"
                   }
                 }
+              },
+              "Small": {
+                "id": 1053,
+                "name": "Small",
+                "subgroups": {},
+                "items": {
+                  "Small 'Hope' Hull Reconstructor I": {
+                    "item_id": 5743,
+                    "name": "Small 'Hope' Hull Reconstructor I"
+                  },
+                  "Small 'Integrative' Hull Repair Unit": {
+                    "item_id": 21504,
+                    "name": "Small 'Integrative' Hull Repair Unit"
+                  },
+                  "Small Automated Structural Restoration": {
+                    "item_id": 5745,
+                    "name": "Small Automated Structural Restoration"
+                  },
+                  "Small Hull Repairer I": {
+                    "item_id": 524,
+                    "name": "Small Hull Repairer I"
+                  },
+                  "Small Hull Repairer II": {
+                    "item_id": 2355,
+                    "name": "Small Hull Repairer II"
+                  },
+                  "Small I-b Polarized Structural Regenerator": {
+                    "item_id": 5747,
+                    "name": "Small I-b Polarized Structural Regenerator"
+                  },
+                  "Small Inefficient Hull Repair Unit": {
+                    "item_id": 5693,
+                    "name": "Small Inefficient Hull Repair Unit"
+                  }
+                }
               }
             },
             "items": {}
@@ -48439,6 +48616,93 @@
                   "Vepas' Modified Kinetic Shield Hardener": {
                     "item_id": 14750,
                     "name": "Vepas' Modified Kinetic Shield Hardener"
+                  }
+                }
+              },
+              "Multispectrum Shield Hardeners": {
+                "id": 1696,
+                "name": "Multispectrum Shield Hardeners",
+                "subgroups": {},
+                "items": {
+                  "'Posse' Multispectrum Shield Hardener": {
+                    "item_id": 20637,
+                    "name": "'Posse' Multispectrum Shield Hardener"
+                  },
+                  "Caldari Navy Multispectrum Shield Hardener": {
+                    "item_id": 17498,
+                    "name": "Caldari Navy Multispectrum Shield Hardener"
+                  },
+                  "Compact Multispectrum Shield Hardener": {
+                    "item_id": 9632,
+                    "name": "Compact Multispectrum Shield Hardener"
+                  },
+                  "Domination Multispectrum Shield Hardener": {
+                    "item_id": 13998,
+                    "name": "Domination Multispectrum Shield Hardener"
+                  },
+                  "Dread Guristas Multispectrum Shield Hardener": {
+                    "item_id": 13969,
+                    "name": "Dread Guristas Multispectrum Shield Hardener"
+                  },
+                  "Enduring Multispectrum Shield Hardener": {
+                    "item_id": 54291,
+                    "name": "Enduring Multispectrum Shield Hardener"
+                  },
+                  "Estamel's Modified Multispectrum Shield Hardener": {
+                    "item_id": 14767,
+                    "name": "Estamel's Modified Multispectrum Shield Hardener"
+                  },
+                  "Gistum A-Type Multispectrum Shield Hardener": {
+                    "item_id": 4346,
+                    "name": "Gistum A-Type Multispectrum Shield Hardener"
+                  },
+                  "Gistum B-Type Multispectrum Shield Hardener": {
+                    "item_id": 4345,
+                    "name": "Gistum B-Type Multispectrum Shield Hardener"
+                  },
+                  "Gistum C-Type Multispectrum Shield Hardener": {
+                    "item_id": 2050,
+                    "name": "Gistum C-Type Multispectrum Shield Hardener"
+                  },
+                  "Kaikka's Modified Multispectrum Shield Hardener": {
+                    "item_id": 14764,
+                    "name": "Kaikka's Modified Multispectrum Shield Hardener"
+                  },
+                  "Multispectrum Shield Hardener I": {
+                    "item_id": 578,
+                    "name": "Multispectrum Shield Hardener I"
+                  },
+                  "Multispectrum Shield Hardener II": {
+                    "item_id": 2281,
+                    "name": "Multispectrum Shield Hardener II"
+                  },
+                  "Pithum A-Type Multispectrum Shield Hardener": {
+                    "item_id": 4347,
+                    "name": "Pithum A-Type Multispectrum Shield Hardener"
+                  },
+                  "Pithum B-Type Multispectrum Shield Hardener": {
+                    "item_id": 4348,
+                    "name": "Pithum B-Type Multispectrum Shield Hardener"
+                  },
+                  "Pithum C-Type Multispectrum Shield Hardener": {
+                    "item_id": 4349,
+                    "name": "Pithum C-Type Multispectrum Shield Hardener"
+                  },
+                  "Strategos' Modified Multispectrum Shield Hardener": {
+                    "item_id": 88262,
+                    "name": "Strategos' Modified Multispectrum Shield Hardener"
+                  },
+                  "testShieldMod_PLACEHOLDER": {
+                    "item_id": 46010,
+                    "name": "testShieldMod_PLACEHOLDER"
+                  },
+                  "Thon's Modified Multispectrum Shield Hardener": {
+                    "item_id": 14765,
+                    "name": "Thon's Modified Multispectrum Shield Hardener"
+                  },
+                  "Vepas' Modified Multispectrum Shield Hardener": {
+                    "item_id": 14766,
+                    "name": "Vepas' Modified Multispectrum Shield Hardener"
                   }
                 }
               },
@@ -74593,6 +74857,21 @@
                         "name": "Eos"
                       }
                     }
+                  },
+                  "Minmatar": {
+                    "id": 834,
+                    "name": "Minmatar",
+                    "subgroups": {},
+                    "items": {
+                      "Claymore": {
+                        "item_id": 22468,
+                        "name": "Claymore"
+                      },
+                      "Sleipnir": {
+                        "item_id": 22444,
+                        "name": "Sleipnir"
+                      }
+                    }
                   }
                 },
                 "items": {}
@@ -74604,6 +74883,45 @@
             "id": 1703,
             "name": "Faction Battlecruisers",
             "subgroups": {
+              "Navy Faction": {
+                "id": 1704,
+                "name": "Navy Faction",
+                "subgroups": {},
+                "items": {
+                  "Brutix Navy Issue": {
+                    "item_id": 33151,
+                    "name": "Brutix Navy Issue"
+                  },
+                  "Cyclone Fleet Issue": {
+                    "item_id": 72811,
+                    "name": "Cyclone Fleet Issue"
+                  },
+                  "Drake Navy Issue": {
+                    "item_id": 33153,
+                    "name": "Drake Navy Issue"
+                  },
+                  "Ferox Navy Issue": {
+                    "item_id": 72812,
+                    "name": "Ferox Navy Issue"
+                  },
+                  "Harbinger Navy Issue": {
+                    "item_id": 33155,
+                    "name": "Harbinger Navy Issue"
+                  },
+                  "Hurricane Fleet Issue": {
+                    "item_id": 33157,
+                    "name": "Hurricane Fleet Issue"
+                  },
+                  "Myrmidon Navy Issue": {
+                    "item_id": 72869,
+                    "name": "Myrmidon Navy Issue"
+                  },
+                  "Prophecy Navy Issue": {
+                    "item_id": 72872,
+                    "name": "Prophecy Navy Issue"
+                  }
+                }
+              },
               "Pirate Faction": {
                 "id": 3534,
                 "name": "Pirate Faction",
@@ -75533,6 +75851,80 @@
                   "Nomad": {
                     "item_id": 28846,
                     "name": "Nomad"
+                  }
+                }
+              }
+            },
+            "items": {}
+          },
+          "Titans": {
+            "id": 812,
+            "name": "Titans",
+            "subgroups": {
+              "Amarr": {
+                "id": 813,
+                "name": "Amarr",
+                "subgroups": {},
+                "items": {
+                  "Avatar": {
+                    "item_id": 11567,
+                    "name": "Avatar"
+                  }
+                }
+              },
+              "Caldari": {
+                "id": 814,
+                "name": "Caldari",
+                "subgroups": {},
+                "items": {
+                  "Leviathan": {
+                    "item_id": 3764,
+                    "name": "Leviathan"
+                  }
+                }
+              },
+              "Faction Titans": {
+                "id": 2287,
+                "name": "Faction Titans",
+                "subgroups": {},
+                "items": {
+                  "Azariel": {
+                    "item_id": 78576,
+                    "name": "Azariel"
+                  },
+                  "Komodo": {
+                    "item_id": 45649,
+                    "name": "Komodo"
+                  },
+                  "Molok": {
+                    "item_id": 42241,
+                    "name": "Molok"
+                  },
+                  "Vanquisher": {
+                    "item_id": 42126,
+                    "name": "Vanquisher"
+                  }
+                }
+              },
+              "Gallente": {
+                "id": 815,
+                "name": "Gallente",
+                "subgroups": {},
+                "items": {
+                  "Erebus": {
+                    "item_id": 671,
+                    "name": "Erebus"
+                  }
+                }
+              },
+              "Minmatar": {
+                "id": 816,
+                "name": "Minmatar",
+                "subgroups": {},
+                "items": {
+                  "Ragnarok": {
+                    "item_id": 23773,
+                    "name": "Ragnarok"
                   }
                 }
               }
