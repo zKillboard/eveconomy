@@ -29,18 +29,21 @@ searchOverride();
 let groupsLoaded = false;
 function loadMarketGroups() {
 	if (groupsLoaded == false) {
-		groupsLoaded = true;
 		doGetJSON(`/api/groups.json`, parseGroups);
 		console.log('Loading groups');
 	}
 }
 
-function parseGroups(data) {
+async function parseGroups(data) {
 	let itemdiv = document.getElementById('items');
-	addGroups(itemdiv, data, 0);
+	await addGroups(itemdiv, data, 0);
+
+	let searchbox = document.getElementById('searchbox');
+	if (searchbox.value.length > 0) doSearch();
+	groupsLoaded = true;
 }
 
-function addGroups(parent, data, depth) {
+async function addGroups(parent, data, depth) {
 	if (typeof data == 'undefined') return;
 	let keys = Object.keys(data).sort();
 	for (let key of keys) {
@@ -56,7 +59,7 @@ function addGroups(parent, data, depth) {
 		div.appendChild(subgroup);
 		parent.appendChild(div);
 
-		setTimeout(function () { addGroups(subgroup, group.subgroups, depth + 1) }, 1);
+		await addGroups(subgroup, group.subgroups, depth + 1);
 
 		if (Object.keys(group.items).length > 0) {
 			let ul = createElement('ul');
@@ -122,7 +125,7 @@ function doSearch() {
 
 			[...matches].map((t) => itemMatch(searchArrayMap[t]));
 
-			noncollapsing = document.querySelectorAll('.searching .match > .groupname');
+			// noncollapsing = document.querySelectorAll('.searching .match > .groupname');
 			// [...noncollapsing].map((nc) => nc.setAttribute('data-bs-toggle', 'non-collapsing'));
 
 			if (exact.length == 1) {
@@ -337,11 +340,32 @@ function populateOrders(data, path, params) {
 }
 
 function populateInfo(data) {
-	let iamge_type = data.name.endsWith(' Blueprint') ? 'bp' : 'icon';
-	let image = `https://images.evetech.net/types/${data.type_id}/${iamge_type}?size=128`;
+	let image_type = data.name.endsWith(' Blueprint') ? 'bp' : 'icon';
+	let image = `https://images.evetech.net/types/${data.type_id}/${image_type}?size=128`;
 	document.getElementById('itemimg').setAttribute('src', image);
 	document.getElementById('itemname').innerHTML = data.name;
 	document.title = data.name + ' - EVEconomy';
+
+	let searchbox = document.getElementById('searchbox');
+	if (searchbox.value.length == 0) {
+		searchbox.value = data.name;
+		doSearch();
+	}
+	markSelected(data);
+}
+
+let markSelectedTimeout = 0;
+function markSelected(data) {
+	clearTimeout(markSelectedTimeout);
+	if (document.querySelector(`[item_id="${data.type_id}"]`) == null) {
+		markSelectedTimeout = setTimeout(markSelected.bind(null, data), 1000);
+		return;
+	}
+	
+	// remove selected class from all previously selected items
+	document.querySelectorAll('.selected').forEach(el => el.classList.remove('selected'));
+	// add selected class to the current item (idenified by attribute item_id)
+	document.querySelector(`[item_id="${data.type_id}"]`)?.classList.add('selected');
 }
 
 function fetchLocations() {
