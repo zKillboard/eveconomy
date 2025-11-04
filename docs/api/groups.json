@@ -5860,6 +5860,14 @@
             "name": "Tattoos",
             "subgroups": {},
             "items": {
+              "Sleeve - 'Bloodfire' (Left)": {
+                "item_id": 34005,
+                "name": "Sleeve - 'Bloodfire' (Left)"
+              },
+              "Sleeve - 'Bloodfire' (Right)": {
+                "item_id": 34016,
+                "name": "Sleeve - 'Bloodfire' (Right)"
+              },
               "Sleeve - 'Drone' (left)": {
                 "item_id": 33377,
                 "name": "Sleeve - 'Drone' (left)"
@@ -15043,6 +15051,37 @@
             "id": 948,
             "name": "Electronics Superiority Rigs",
             "subgroups": {
+              "Capital Electronics Superiority Rigs": {
+                "id": 1723,
+                "name": "Capital Electronics Superiority Rigs",
+                "subgroups": {},
+                "items": {
+                  "Capital Inverted Signal Field Projector I Blueprint": {
+                    "item_id": 31267,
+                    "name": "Capital Inverted Signal Field Projector I Blueprint"
+                  },
+                  "Capital Particle Dispersion Augmentor I Blueprint": {
+                    "item_id": 31291,
+                    "name": "Capital Particle Dispersion Augmentor I Blueprint"
+                  },
+                  "Capital Particle Dispersion Projector I Blueprint": {
+                    "item_id": 31303,
+                    "name": "Capital Particle Dispersion Projector I Blueprint"
+                  },
+                  "Capital Signal Disruption Amplifier I Blueprint": {
+                    "item_id": 31255,
+                    "name": "Capital Signal Disruption Amplifier I Blueprint"
+                  },
+                  "Capital Targeting Systems Stabilizer I Blueprint": {
+                    "item_id": 31339,
+                    "name": "Capital Targeting Systems Stabilizer I Blueprint"
+                  },
+                  "Capital Tracking Diagnostic Subroutines I Blueprint": {
+                    "item_id": 31351,
+                    "name": "Capital Tracking Diagnostic Subroutines I Blueprint"
+                  }
+                }
+              },
               "Large Electronics Superiority Rigs": {
                 "id": 1251,
                 "name": "Large Electronics Superiority Rigs",
@@ -18862,25 +18901,6 @@
                     "name": "Mobile Tractor Unit Blueprint"
                   }
                 }
-              },
-              "Warp Disruption Fields": {
-                "id": 407,
-                "name": "Warp Disruption Fields",
-                "subgroups": {},
-                "items": {
-                  "Mobile Large Warp Disruptor I Blueprint": {
-                    "item_id": 12301,
-                    "name": "Mobile Large Warp Disruptor I Blueprint"
-                  },
-                  "Mobile Medium Warp Disruptor I Blueprint": {
-                    "item_id": 12300,
-                    "name": "Mobile Medium Warp Disruptor I Blueprint"
-                  },
-                  "Mobile Small Warp Disruptor I Blueprint": {
-                    "item_id": 12297,
-                    "name": "Mobile Small Warp Disruptor I Blueprint"
-                  }
-                }
               }
             },
             "items": {}
@@ -19174,6 +19194,29 @@
                   "Supercapital Construction Facilities Blueprint": {
                     "item_id": 81625,
                     "name": "Supercapital Construction Facilities Blueprint"
+                  }
+                }
+              },
+              "System Effect Generator Upgrades": {
+                "id": 3740,
+                "name": "System Effect Generator Upgrades",
+                "subgroups": {},
+                "items": {
+                  "Electric Stability Generator Blueprint": {
+                    "item_id": 88077,
+                    "name": "Electric Stability Generator Blueprint"
+                  },
+                  "Exotic Stability Generator Blueprint": {
+                    "item_id": 88078,
+                    "name": "Exotic Stability Generator Blueprint"
+                  },
+                  "Gamma Stability Generator Blueprint": {
+                    "item_id": 88075,
+                    "name": "Gamma Stability Generator Blueprint"
+                  },
+                  "Plasma Stability Generator Blueprint": {
+                    "item_id": 88076,
+                    "name": "Plasma Stability Generator Blueprint"
                   }
                 }
               }
@@ -25030,6 +25073,37 @@
                 "id": 1479,
                 "name": "Shield Implants",
                 "subgroups": {
+                  "Implant Slot 06": {
+                    "id": 1480,
+                    "name": "Implant Slot 06",
+                    "subgroups": {},
+                    "items": {
+                      "Zainou 'Gnome' Shield Upgrades SU-601": {
+                        "item_id": 27104,
+                        "name": "Zainou 'Gnome' Shield Upgrades SU-601"
+                      },
+                      "Zainou 'Gnome' Shield Upgrades SU-602": {
+                        "item_id": 3077,
+                        "name": "Zainou 'Gnome' Shield Upgrades SU-602"
+                      },
+                      "Zainou 'Gnome' Shield Upgrades SU-603": {
+                        "item_id": 13253,
+                        "name": "Zainou 'Gnome' Shield Upgrades SU-603"
+                      },
+                      "Zainou 'Gnome' Shield Upgrades SU-604": {
+                        "item_id": 3078,
+                        "name": "Zainou 'Gnome' Shield Upgrades SU-604"
+                      },
+                      "Zainou 'Gnome' Shield Upgrades SU-605": {
+                        "item_id": 16245,
+                        "name": "Zainou 'Gnome' Shield Upgrades SU-605"
+                      },
+                      "Zainou 'Gnome' Shield Upgrades SU-606": {
+                        "item_id": 3079,
+                        "name": "Zainou 'Gnome' Shield Upgrades SU-606"
+                      }
+                    }
+                  },
                   "Implant Slot 07": {
                     "id": 1481,
                     "name": "Implant Slot 07",
@@ -25162,6 +25236,37 @@
                       "Zainou 'Gypsy' Signature Analysis SA-706": {
                         "item_id": 3270,
                         "name": "Zainou 'Gypsy' Signature Analysis SA-706"
+                      }
+                    }
+                  },
+                  "Implant Slot 08": {
+                    "id": 1766,
+                    "name": "Implant Slot 08",
+                    "subgroups": {},
+                    "items": {
+                      "Zainou 'Gypsy' Long Range Targeting LT-801": {
+                        "item_id": 27229,
+                        "name": "Zainou 'Gypsy' Long Range Targeting LT-801"
+                      },
+                      "Zainou 'Gypsy' Long Range Targeting LT-802": {
+                        "item_id": 3274,
+                        "name": "Zainou 'Gypsy' Long Range Targeting LT-802"
+                      },
+                      "Zainou 'Gypsy' Long Range Targeting LT-803": {
+                        "item_id": 13233,
+                        "name": "Zainou 'Gypsy' Long Range Targeting LT-803"
+                      },
+                      "Zainou 'Gypsy' Long Range Targeting LT-804": {
+                        "item_id": 3275,
+                        "name": "Zainou 'Gypsy' Long Range Targeting LT-804"
+                      },
+                      "Zainou 'Gypsy' Long Range Targeting LT-805": {
+                        "item_id": 27227,
+                        "name": "Zainou 'Gypsy' Long Range Targeting LT-805"
+                      },
+                      "Zainou 'Gypsy' Long Range Targeting LT-806": {
+                        "item_id": 3276,
+                        "name": "Zainou 'Gypsy' Long Range Targeting LT-806"
                       }
                     }
                   }
@@ -25690,6 +25795,56 @@
                 "name": "Oxygen Fuel Block"
               }
             }
+          },
+          "Outpost Components": {
+            "id": 1021,
+            "name": "Outpost Components",
+            "subgroups": {
+              "Construction Platforms": {
+                "id": 1864,
+                "name": "Construction Platforms",
+                "subgroups": {},
+                "items": {}
+              },
+              "Improvement Platforms": {
+                "id": 1022,
+                "name": "Improvement Platforms",
+                "subgroups": {
+                  "Amarr Improvement Platforms": {
+                    "id": 1866,
+                    "name": "Amarr Improvement Platforms",
+                    "subgroups": {},
+                    "items": {}
+                  },
+                  "Caldari Improvement Platforms": {
+                    "id": 1867,
+                    "name": "Caldari Improvement Platforms",
+                    "subgroups": {},
+                    "items": {}
+                  },
+                  "Gallente Improvement Platforms": {
+                    "id": 1868,
+                    "name": "Gallente Improvement Platforms",
+                    "subgroups": {},
+                    "items": {}
+                  },
+                  "Minmatar Improvement Platforms": {
+                    "id": 1869,
+                    "name": "Minmatar Improvement Platforms",
+                    "subgroups": {},
+                    "items": {}
+                  }
+                },
+                "items": {}
+              },
+              "Outpost Upgrade Platforms": {
+                "id": 1027,
+                "name": "Outpost Upgrade Platforms",
+                "subgroups": {},
+                "items": {}
+              }
+            },
+            "items": {}
           },
           "Protective Components": {
             "id": 2768,
@@ -38132,6 +38287,53 @@
                   }
                 }
               },
+              "Medium Projectile Weapon Rigs": {
+                "id": 1238,
+                "name": "Medium Projectile Weapon Rigs",
+                "subgroups": {},
+                "items": {
+                  "Medium Projectile Ambit Extension I": {
+                    "item_id": 31658,
+                    "name": "Medium Projectile Ambit Extension I"
+                  },
+                  "Medium Projectile Ambit Extension II": {
+                    "item_id": 31664,
+                    "name": "Medium Projectile Ambit Extension II"
+                  },
+                  "Medium Projectile Burst Aerator I": {
+                    "item_id": 31670,
+                    "name": "Medium Projectile Burst Aerator I"
+                  },
+                  "Medium Projectile Burst Aerator II": {
+                    "item_id": 31676,
+                    "name": "Medium Projectile Burst Aerator II"
+                  },
+                  "Medium Projectile Collision Accelerator I": {
+                    "item_id": 31682,
+                    "name": "Medium Projectile Collision Accelerator I"
+                  },
+                  "Medium Projectile Collision Accelerator II": {
+                    "item_id": 31688,
+                    "name": "Medium Projectile Collision Accelerator II"
+                  },
+                  "Medium Projectile Locus Coordinator I": {
+                    "item_id": 31694,
+                    "name": "Medium Projectile Locus Coordinator I"
+                  },
+                  "Medium Projectile Locus Coordinator II": {
+                    "item_id": 31700,
+                    "name": "Medium Projectile Locus Coordinator II"
+                  },
+                  "Medium Projectile Metastasis Adjuster I": {
+                    "item_id": 31706,
+                    "name": "Medium Projectile Metastasis Adjuster I"
+                  },
+                  "Medium Projectile Metastasis Adjuster II": {
+                    "item_id": 31712,
+                    "name": "Medium Projectile Metastasis Adjuster II"
+                  }
+                }
+              },
               "Small Projectile Weapon Rigs": {
                 "id": 1237,
                 "name": "Small Projectile Weapon Rigs",
@@ -42645,6 +42847,21 @@
               }
             }
           },
+          "Salvagers": {
+            "id": 1715,
+            "name": "Salvagers",
+            "subgroups": {},
+            "items": {
+              "Salvager I": {
+                "item_id": 25861,
+                "name": "Salvager I"
+              },
+              "Salvager II": {
+                "item_id": 30836,
+                "name": "Salvager II"
+              }
+            }
+          },
           "Strip Miners": {
             "id": 1040,
             "name": "Strip Miners",
@@ -44060,6 +44277,768 @@
             },
             "items": {}
           },
+          "Armor Resistance Coatings": {
+            "id": 540,
+            "name": "Armor Resistance Coatings",
+            "subgroups": {
+              "EM Coatings": {
+                "id": 1668,
+                "name": "EM Coatings",
+                "subgroups": {},
+                "items": {
+                  "'Basic' EM Coating": {
+                    "item_id": 1193,
+                    "name": "'Basic' EM Coating"
+                  },
+                  "Ahremen's Modified EM Coating": {
+                    "item_id": 14914,
+                    "name": "Ahremen's Modified EM Coating"
+                  },
+                  "Ammatar Navy EM Coating": {
+                    "item_id": 17518,
+                    "name": "Ammatar Navy EM Coating"
+                  },
+                  "Brokara's Modified EM Coating": {
+                    "item_id": 14904,
+                    "name": "Brokara's Modified EM Coating"
+                  },
+                  "Brynn's Modified EM Coating": {
+                    "item_id": 15180,
+                    "name": "Brynn's Modified EM Coating"
+                  },
+                  "Centii A-Type EM Coating": {
+                    "item_id": 18762,
+                    "name": "Centii A-Type EM Coating"
+                  },
+                  "Centii B-Type EM Coating": {
+                    "item_id": 18750,
+                    "name": "Centii B-Type EM Coating"
+                  },
+                  "Centii C-Type EM Coating": {
+                    "item_id": 18722,
+                    "name": "Centii C-Type EM Coating"
+                  },
+                  "Chelm's Modified EM Coating": {
+                    "item_id": 14916,
+                    "name": "Chelm's Modified EM Coating"
+                  },
+                  "Coreli A-Type EM Coating": {
+                    "item_id": 18795,
+                    "name": "Coreli A-Type EM Coating"
+                  },
+                  "Coreli B-Type EM Coating": {
+                    "item_id": 18785,
+                    "name": "Coreli B-Type EM Coating"
+                  },
+                  "Coreli C-Type EM Coating": {
+                    "item_id": 18775,
+                    "name": "Coreli C-Type EM Coating"
+                  },
+                  "Cormack's Modified EM Coating": {
+                    "item_id": 15186,
+                    "name": "Cormack's Modified EM Coating"
+                  },
+                  "Corpii A-Type EM Coating": {
+                    "item_id": 18760,
+                    "name": "Corpii A-Type EM Coating"
+                  },
+                  "Corpii B-Type EM Coating": {
+                    "item_id": 18748,
+                    "name": "Corpii B-Type EM Coating"
+                  },
+                  "Corpii C-Type EM Coating": {
+                    "item_id": 18720,
+                    "name": "Corpii C-Type EM Coating"
+                  },
+                  "Dark Blood EM Coating": {
+                    "item_id": 14021,
+                    "name": "Dark Blood EM Coating"
+                  },
+                  "Domination EM Coating": {
+                    "item_id": 14017,
+                    "name": "Domination EM Coating"
+                  },
+                  "Draclira's Modified EM Coating": {
+                    "item_id": 14918,
+                    "name": "Draclira's Modified EM Coating"
+                  },
+                  "EM Coating I": {
+                    "item_id": 1197,
+                    "name": "EM Coating I"
+                  },
+                  "EM Coating II": {
+                    "item_id": 1198,
+                    "name": "EM Coating II"
+                  },
+                  "Federation Navy EM Coating": {
+                    "item_id": 17555,
+                    "name": "Federation Navy EM Coating"
+                  },
+                  "Gotan's Modified EM Coating": {
+                    "item_id": 14584,
+                    "name": "Gotan's Modified EM Coating"
+                  },
+                  "Imperial Navy EM Coating": {
+                    "item_id": 15687,
+                    "name": "Imperial Navy EM Coating"
+                  },
+                  "Khanid Navy EM Coating": {
+                    "item_id": 28554,
+                    "name": "Khanid Navy EM Coating"
+                  },
+                  "Mizuro's Modified EM Coating": {
+                    "item_id": 14580,
+                    "name": "Mizuro's Modified EM Coating"
+                  },
+                  "Raysere's Modified EM Coating": {
+                    "item_id": 14910,
+                    "name": "Raysere's Modified EM Coating"
+                  },
+                  "Republic Fleet EM Coating": {
+                    "item_id": 15697,
+                    "name": "Republic Fleet EM Coating"
+                  },
+                  "Selynne's Modified EM Coating": {
+                    "item_id": 14908,
+                    "name": "Selynne's Modified EM Coating"
+                  },
+                  "Setele's Modified EM Coating": {
+                    "item_id": 15184,
+                    "name": "Setele's Modified EM Coating"
+                  },
+                  "Shadow Serpentis EM Coating": {
+                    "item_id": 14055,
+                    "name": "Shadow Serpentis EM Coating"
+                  },
+                  "Tairei's Modified EM Coating": {
+                    "item_id": 14906,
+                    "name": "Tairei's Modified EM Coating"
+                  },
+                  "True Sansha EM Coating": {
+                    "item_id": 14019,
+                    "name": "True Sansha EM Coating"
+                  },
+                  "Tuvan's Modified EM Coating": {
+                    "item_id": 15182,
+                    "name": "Tuvan's Modified EM Coating"
+                  },
+                  "Upgraded EM Coating I": {
+                    "item_id": 16329,
+                    "name": "Upgraded EM Coating I"
+                  },
+                  "Vizan's Modified EM Coating": {
+                    "item_id": 14912,
+                    "name": "Vizan's Modified EM Coating"
+                  }
+                }
+              },
+              "Explosive Coatings": {
+                "id": 1667,
+                "name": "Explosive Coatings",
+                "subgroups": {},
+                "items": {
+                  "'Basic' Explosive Coating": {
+                    "item_id": 1262,
+                    "name": "'Basic' Explosive Coating"
+                  },
+                  "Ahremen's Modified Explosive Coating": {
+                    "item_id": 14898,
+                    "name": "Ahremen's Modified Explosive Coating"
+                  },
+                  "Ammatar Navy Explosive Coating": {
+                    "item_id": 17516,
+                    "name": "Ammatar Navy Explosive Coating"
+                  },
+                  "Brokara's Modified Explosive Coating": {
+                    "item_id": 14888,
+                    "name": "Brokara's Modified Explosive Coating"
+                  },
+                  "Brynn's Modified Explosive Coating": {
+                    "item_id": 15188,
+                    "name": "Brynn's Modified Explosive Coating"
+                  },
+                  "Centii A-Type Explosive Coating": {
+                    "item_id": 18758,
+                    "name": "Centii A-Type Explosive Coating"
+                  },
+                  "Centii B-Type Explosive Coating": {
+                    "item_id": 18746,
+                    "name": "Centii B-Type Explosive Coating"
+                  },
+                  "Centii C-Type Explosive Coating": {
+                    "item_id": 18718,
+                    "name": "Centii C-Type Explosive Coating"
+                  },
+                  "Chelm's Modified Explosive Coating": {
+                    "item_id": 14900,
+                    "name": "Chelm's Modified Explosive Coating"
+                  },
+                  "Coreli A-Type Explosive Coating": {
+                    "item_id": 18793,
+                    "name": "Coreli A-Type Explosive Coating"
+                  },
+                  "Coreli B-Type Explosive Coating": {
+                    "item_id": 18783,
+                    "name": "Coreli B-Type Explosive Coating"
+                  },
+                  "Coreli C-Type Explosive Coating": {
+                    "item_id": 18772,
+                    "name": "Coreli C-Type Explosive Coating"
+                  },
+                  "Cormack's Modified Explosive Coating": {
+                    "item_id": 15194,
+                    "name": "Cormack's Modified Explosive Coating"
+                  },
+                  "Corpii A-Type Explosive Coating": {
+                    "item_id": 18756,
+                    "name": "Corpii A-Type Explosive Coating"
+                  },
+                  "Corpii B-Type Explosive Coating": {
+                    "item_id": 18744,
+                    "name": "Corpii B-Type Explosive Coating"
+                  },
+                  "Corpii C-Type Explosive Coating": {
+                    "item_id": 18716,
+                    "name": "Corpii C-Type Explosive Coating"
+                  },
+                  "Dark Blood Explosive Coating": {
+                    "item_id": 14015,
+                    "name": "Dark Blood Explosive Coating"
+                  },
+                  "Domination Explosive Coating": {
+                    "item_id": 14011,
+                    "name": "Domination Explosive Coating"
+                  },
+                  "Draclira's Modified Explosive Coating": {
+                    "item_id": 14902,
+                    "name": "Draclira's Modified Explosive Coating"
+                  },
+                  "Explosive Coating I": {
+                    "item_id": 1264,
+                    "name": "Explosive Coating I"
+                  },
+                  "Explosive Coating II": {
+                    "item_id": 1266,
+                    "name": "Explosive Coating II"
+                  },
+                  "Federation Navy Explosive Coating": {
+                    "item_id": 17553,
+                    "name": "Federation Navy Explosive Coating"
+                  },
+                  "Gotan's Modified Explosive Coating": {
+                    "item_id": 14576,
+                    "name": "Gotan's Modified Explosive Coating"
+                  },
+                  "Imperial Navy Explosive Coating": {
+                    "item_id": 15689,
+                    "name": "Imperial Navy Explosive Coating"
+                  },
+                  "Khanid Navy Explosive Coating": {
+                    "item_id": 28552,
+                    "name": "Khanid Navy Explosive Coating"
+                  },
+                  "Mizuro's Modified Explosive Coating": {
+                    "item_id": 14572,
+                    "name": "Mizuro's Modified Explosive Coating"
+                  },
+                  "Raysere's Modified Explosive Coating": {
+                    "item_id": 14894,
+                    "name": "Raysere's Modified Explosive Coating"
+                  },
+                  "Republic Fleet Explosive Coating": {
+                    "item_id": 15699,
+                    "name": "Republic Fleet Explosive Coating"
+                  },
+                  "Selynne's Modified Explosive Coating": {
+                    "item_id": 14892,
+                    "name": "Selynne's Modified Explosive Coating"
+                  },
+                  "Setele's Modified Explosive Coating": {
+                    "item_id": 15192,
+                    "name": "Setele's Modified Explosive Coating"
+                  },
+                  "Shadow Serpentis Explosive Coating": {
+                    "item_id": 14053,
+                    "name": "Shadow Serpentis Explosive Coating"
+                  },
+                  "Tairei's Modified Explosive Coating": {
+                    "item_id": 14890,
+                    "name": "Tairei's Modified Explosive Coating"
+                  },
+                  "True Sansha Explosive Coating": {
+                    "item_id": 14013,
+                    "name": "True Sansha Explosive Coating"
+                  },
+                  "Tuvan's Modified Explosive Coating": {
+                    "item_id": 15190,
+                    "name": "Tuvan's Modified Explosive Coating"
+                  },
+                  "Upgraded Explosive Coating I": {
+                    "item_id": 16321,
+                    "name": "Upgraded Explosive Coating I"
+                  },
+                  "Vizan's Modified Explosive Coating": {
+                    "item_id": 14896,
+                    "name": "Vizan's Modified Explosive Coating"
+                  }
+                }
+              },
+              "Kinetic Coatings": {
+                "id": 1666,
+                "name": "Kinetic Coatings",
+                "subgroups": {},
+                "items": {
+                  "'Basic' Kinetic Coating": {
+                    "item_id": 1282,
+                    "name": "'Basic' Kinetic Coating"
+                  },
+                  "Ahremen's Modified Kinetic Coating": {
+                    "item_id": 14882,
+                    "name": "Ahremen's Modified Kinetic Coating"
+                  },
+                  "Ammatar Navy Kinetic Coating": {
+                    "item_id": 17512,
+                    "name": "Ammatar Navy Kinetic Coating"
+                  },
+                  "Brokara's Modified Kinetic Coating": {
+                    "item_id": 14872,
+                    "name": "Brokara's Modified Kinetic Coating"
+                  },
+                  "Brynn's Modified Kinetic Coating": {
+                    "item_id": 15196,
+                    "name": "Brynn's Modified Kinetic Coating"
+                  },
+                  "Centii A-Type Kinetic Coating": {
+                    "item_id": 18754,
+                    "name": "Centii A-Type Kinetic Coating"
+                  },
+                  "Centii B-Type Kinetic Coating": {
+                    "item_id": 18742,
+                    "name": "Centii B-Type Kinetic Coating"
+                  },
+                  "Centii C-Type Kinetic Coating": {
+                    "item_id": 18714,
+                    "name": "Centii C-Type Kinetic Coating"
+                  },
+                  "Chelm's Modified Kinetic Coating": {
+                    "item_id": 14884,
+                    "name": "Chelm's Modified Kinetic Coating"
+                  },
+                  "Coreli A-Type Kinetic Coating": {
+                    "item_id": 18791,
+                    "name": "Coreli A-Type Kinetic Coating"
+                  },
+                  "Coreli B-Type Kinetic Coating": {
+                    "item_id": 18781,
+                    "name": "Coreli B-Type Kinetic Coating"
+                  },
+                  "Coreli C-Type Kinetic Coating": {
+                    "item_id": 18770,
+                    "name": "Coreli C-Type Kinetic Coating"
+                  },
+                  "Cormack's Modified Kinetic Coating": {
+                    "item_id": 15202,
+                    "name": "Cormack's Modified Kinetic Coating"
+                  },
+                  "Corpii A-Type Kinetic Coating": {
+                    "item_id": 18752,
+                    "name": "Corpii A-Type Kinetic Coating"
+                  },
+                  "Corpii B-Type Kinetic Coating": {
+                    "item_id": 18740,
+                    "name": "Corpii B-Type Kinetic Coating"
+                  },
+                  "Corpii C-Type Kinetic Coating": {
+                    "item_id": 18712,
+                    "name": "Corpii C-Type Kinetic Coating"
+                  },
+                  "Dark Blood Kinetic Coating": {
+                    "item_id": 14009,
+                    "name": "Dark Blood Kinetic Coating"
+                  },
+                  "Domination Kinetic Coating": {
+                    "item_id": 14005,
+                    "name": "Domination Kinetic Coating"
+                  },
+                  "Draclira's Modified Kinetic Coating": {
+                    "item_id": 14886,
+                    "name": "Draclira's Modified Kinetic Coating"
+                  },
+                  "Federation Navy Kinetic Coating": {
+                    "item_id": 17551,
+                    "name": "Federation Navy Kinetic Coating"
+                  },
+                  "Gotan's Modified Kinetic Coating": {
+                    "item_id": 14568,
+                    "name": "Gotan's Modified Kinetic Coating"
+                  },
+                  "Imperial Navy Kinetic Coating": {
+                    "item_id": 15691,
+                    "name": "Imperial Navy Kinetic Coating"
+                  },
+                  "Khanid Navy Kinetic Coating": {
+                    "item_id": 28547,
+                    "name": "Khanid Navy Kinetic Coating"
+                  },
+                  "Kinetic Coating I": {
+                    "item_id": 1284,
+                    "name": "Kinetic Coating I"
+                  },
+                  "Kinetic Coating II": {
+                    "item_id": 1286,
+                    "name": "Kinetic Coating II"
+                  },
+                  "Mizuro's Modified Kinetic Coating": {
+                    "item_id": 14564,
+                    "name": "Mizuro's Modified Kinetic Coating"
+                  },
+                  "Raysere's Modified Kinetic Coating": {
+                    "item_id": 14878,
+                    "name": "Raysere's Modified Kinetic Coating"
+                  },
+                  "Republic Fleet Kinetic Coating": {
+                    "item_id": 15701,
+                    "name": "Republic Fleet Kinetic Coating"
+                  },
+                  "Selynne's Modified Kinetic Coating": {
+                    "item_id": 14876,
+                    "name": "Selynne's Modified Kinetic Coating"
+                  },
+                  "Setele's Modified Kinetic Coating": {
+                    "item_id": 15200,
+                    "name": "Setele's Modified Kinetic Coating"
+                  },
+                  "Shadow Serpentis Kinetic Coating": {
+                    "item_id": 14051,
+                    "name": "Shadow Serpentis Kinetic Coating"
+                  },
+                  "Tairei's Modified Kinetic Coating": {
+                    "item_id": 14874,
+                    "name": "Tairei's Modified Kinetic Coating"
+                  },
+                  "True Sansha Kinetic Coating": {
+                    "item_id": 14007,
+                    "name": "True Sansha Kinetic Coating"
+                  },
+                  "Tuvan's Modified Kinetic Coating": {
+                    "item_id": 15198,
+                    "name": "Tuvan's Modified Kinetic Coating"
+                  },
+                  "Upgraded Kinetic Coating I": {
+                    "item_id": 16313,
+                    "name": "Upgraded Kinetic Coating I"
+                  },
+                  "Vizan's Modified Kinetic Coating": {
+                    "item_id": 14880,
+                    "name": "Vizan's Modified Kinetic Coating"
+                  }
+                }
+              },
+              "Multispectrum Coatings": {
+                "id": 1670,
+                "name": "Multispectrum Coatings",
+                "subgroups": {},
+                "items": {
+                  "'Basic' Multispectrum Coating": {
+                    "item_id": 1302,
+                    "name": "'Basic' Multispectrum Coating"
+                  },
+                  "Ahremen's Modified Multispectrum Coating": {
+                    "item_id": 14866,
+                    "name": "Ahremen's Modified Multispectrum Coating"
+                  },
+                  "Ammatar Navy Multispectrum Coating": {
+                    "item_id": 17514,
+                    "name": "Ammatar Navy Multispectrum Coating"
+                  },
+                  "Brokara's Modified Multispectrum Coating": {
+                    "item_id": 14856,
+                    "name": "Brokara's Modified Multispectrum Coating"
+                  },
+                  "Brynn's Modified Multispectrum Coating": {
+                    "item_id": 15164,
+                    "name": "Brynn's Modified Multispectrum Coating"
+                  },
+                  "Centii A-Type Multispectrum Coating": {
+                    "item_id": 18710,
+                    "name": "Centii A-Type Multispectrum Coating"
+                  },
+                  "Centii B-Type Multispectrum Coating": {
+                    "item_id": 18706,
+                    "name": "Centii B-Type Multispectrum Coating"
+                  },
+                  "Centii C-Type Multispectrum Coating": {
+                    "item_id": 18702,
+                    "name": "Centii C-Type Multispectrum Coating"
+                  },
+                  "Chelm's Modified Multispectrum Coating": {
+                    "item_id": 14868,
+                    "name": "Chelm's Modified Multispectrum Coating"
+                  },
+                  "Coreli A-Type Multispectrum Coating": {
+                    "item_id": 18789,
+                    "name": "Coreli A-Type Multispectrum Coating"
+                  },
+                  "Coreli B-Type Multispectrum Coating": {
+                    "item_id": 18779,
+                    "name": "Coreli B-Type Multispectrum Coating"
+                  },
+                  "Coreli C-Type Multispectrum Coating": {
+                    "item_id": 18768,
+                    "name": "Coreli C-Type Multispectrum Coating"
+                  },
+                  "Cormack's Modified Multispectrum Coating": {
+                    "item_id": 15170,
+                    "name": "Cormack's Modified Multispectrum Coating"
+                  },
+                  "Corpii A-Type Multispectrum Coating": {
+                    "item_id": 18708,
+                    "name": "Corpii A-Type Multispectrum Coating"
+                  },
+                  "Corpii B-Type Multispectrum Coating": {
+                    "item_id": 18704,
+                    "name": "Corpii B-Type Multispectrum Coating"
+                  },
+                  "Corpii C-Type Multispectrum Coating": {
+                    "item_id": 18700,
+                    "name": "Corpii C-Type Multispectrum Coating"
+                  },
+                  "Dark Blood Multispectrum Coating": {
+                    "item_id": 14003,
+                    "name": "Dark Blood Multispectrum Coating"
+                  },
+                  "Domination Multispectrum Coating": {
+                    "item_id": 13999,
+                    "name": "Domination Multispectrum Coating"
+                  },
+                  "Draclira's Modified Multispectrum Coating": {
+                    "item_id": 14870,
+                    "name": "Draclira's Modified Multispectrum Coating"
+                  },
+                  "Federation Navy Multispectrum Coating": {
+                    "item_id": 17549,
+                    "name": "Federation Navy Multispectrum Coating"
+                  },
+                  "Gotan's Modified Multispectrum Coating": {
+                    "item_id": 14560,
+                    "name": "Gotan's Modified Multispectrum Coating"
+                  },
+                  "Imperial Navy Multispectrum Coating": {
+                    "item_id": 15693,
+                    "name": "Imperial Navy Multispectrum Coating"
+                  },
+                  "Khanid Navy Multispectrum Coating": {
+                    "item_id": 28520,
+                    "name": "Khanid Navy Multispectrum Coating"
+                  },
+                  "Mizuro's Modified Multispectrum Coating": {
+                    "item_id": 14556,
+                    "name": "Mizuro's Modified Multispectrum Coating"
+                  },
+                  "Multispectrum Coating I": {
+                    "item_id": 1304,
+                    "name": "Multispectrum Coating I"
+                  },
+                  "Multispectrum Coating II": {
+                    "item_id": 1306,
+                    "name": "Multispectrum Coating II"
+                  },
+                  "Raysere's Modified Multispectrum Coating": {
+                    "item_id": 14862,
+                    "name": "Raysere's Modified Multispectrum Coating"
+                  },
+                  "Republic Fleet Multispectrum Coating": {
+                    "item_id": 15703,
+                    "name": "Republic Fleet Multispectrum Coating"
+                  },
+                  "Selynne's Modified Multispectrum Coating": {
+                    "item_id": 14860,
+                    "name": "Selynne's Modified Multispectrum Coating"
+                  },
+                  "Setele's Modified Multispectrum Coating": {
+                    "item_id": 15168,
+                    "name": "Setele's Modified Multispectrum Coating"
+                  },
+                  "Shadow Serpentis Multispectrum Coating": {
+                    "item_id": 14049,
+                    "name": "Shadow Serpentis Multispectrum Coating"
+                  },
+                  "Tairei's Modified Multispectrum Coating": {
+                    "item_id": 14858,
+                    "name": "Tairei's Modified Multispectrum Coating"
+                  },
+                  "True Sansha Multispectrum Coating": {
+                    "item_id": 14001,
+                    "name": "True Sansha Multispectrum Coating"
+                  },
+                  "Tuvan's Modified Multispectrum Coating": {
+                    "item_id": 15166,
+                    "name": "Tuvan's Modified Multispectrum Coating"
+                  },
+                  "Upgraded Multispectrum Coating I": {
+                    "item_id": 16305,
+                    "name": "Upgraded Multispectrum Coating I"
+                  },
+                  "Vizan's Modified Multispectrum Coating": {
+                    "item_id": 14864,
+                    "name": "Vizan's Modified Multispectrum Coating"
+                  }
+                }
+              },
+              "Thermal Coatings": {
+                "id": 1665,
+                "name": "Thermal Coatings",
+                "subgroups": {},
+                "items": {
+                  "'Basic' Thermal Coating": {
+                    "item_id": 1292,
+                    "name": "'Basic' Thermal Coating"
+                  },
+                  "Ahremen's Modified Thermal Coating": {
+                    "item_id": 14930,
+                    "name": "Ahremen's Modified Thermal Coating"
+                  },
+                  "Ammatar Navy Thermal Coating": {
+                    "item_id": 32809,
+                    "name": "Ammatar Navy Thermal Coating"
+                  },
+                  "Brokara's Modified Thermal Coating": {
+                    "item_id": 14920,
+                    "name": "Brokara's Modified Thermal Coating"
+                  },
+                  "Brynn's Modified Thermal Coating": {
+                    "item_id": 15172,
+                    "name": "Brynn's Modified Thermal Coating"
+                  },
+                  "Centii A-Type Thermal Coating": {
+                    "item_id": 18766,
+                    "name": "Centii A-Type Thermal Coating"
+                  },
+                  "Centii B-Type Thermal Coating": {
+                    "item_id": 18730,
+                    "name": "Centii B-Type Thermal Coating"
+                  },
+                  "Centii C-Type Thermal Coating": {
+                    "item_id": 18726,
+                    "name": "Centii C-Type Thermal Coating"
+                  },
+                  "Chelm's Modified Thermal Coating": {
+                    "item_id": 14932,
+                    "name": "Chelm's Modified Thermal Coating"
+                  },
+                  "Coreli A-Type Thermal Coating": {
+                    "item_id": 18797,
+                    "name": "Coreli A-Type Thermal Coating"
+                  },
+                  "Coreli B-Type Thermal Coating": {
+                    "item_id": 18787,
+                    "name": "Coreli B-Type Thermal Coating"
+                  },
+                  "Coreli C-Type Thermal Coating": {
+                    "item_id": 18777,
+                    "name": "Coreli C-Type Thermal Coating"
+                  },
+                  "Cormack's Modified Thermal Coating": {
+                    "item_id": 15178,
+                    "name": "Cormack's Modified Thermal Coating"
+                  },
+                  "Corpii A-Type Thermal Coating": {
+                    "item_id": 18764,
+                    "name": "Corpii A-Type Thermal Coating"
+                  },
+                  "Corpii B-Type Thermal Coating": {
+                    "item_id": 18728,
+                    "name": "Corpii B-Type Thermal Coating"
+                  },
+                  "Corpii C-Type Thermal Coating": {
+                    "item_id": 18724,
+                    "name": "Corpii C-Type Thermal Coating"
+                  },
+                  "Dark Blood Thermal Coating": {
+                    "item_id": 14027,
+                    "name": "Dark Blood Thermal Coating"
+                  },
+                  "Domination Thermal Coating": {
+                    "item_id": 14023,
+                    "name": "Domination Thermal Coating"
+                  },
+                  "Draclira's Modified Thermal Coating": {
+                    "item_id": 14934,
+                    "name": "Draclira's Modified Thermal Coating"
+                  },
+                  "Federation Navy Thermal Coating": {
+                    "item_id": 17557,
+                    "name": "Federation Navy Thermal Coating"
+                  },
+                  "Gotan's Modified Thermal Coating": {
+                    "item_id": 14592,
+                    "name": "Gotan's Modified Thermal Coating"
+                  },
+                  "Imperial Navy Thermal Coating": {
+                    "item_id": 15685,
+                    "name": "Imperial Navy Thermal Coating"
+                  },
+                  "Khanid Navy Thermal Coating": {
+                    "item_id": 28559,
+                    "name": "Khanid Navy Thermal Coating"
+                  },
+                  "Mizuro's Modified Thermal Coating": {
+                    "item_id": 14588,
+                    "name": "Mizuro's Modified Thermal Coating"
+                  },
+                  "Raysere's Modified Thermal Coating": {
+                    "item_id": 14926,
+                    "name": "Raysere's Modified Thermal Coating"
+                  },
+                  "Republic Fleet Thermal Coating": {
+                    "item_id": 15695,
+                    "name": "Republic Fleet Thermal Coating"
+                  },
+                  "Selynne's Modified Thermal Coating": {
+                    "item_id": 14924,
+                    "name": "Selynne's Modified Thermal Coating"
+                  },
+                  "Setele's Modified Thermal Coating": {
+                    "item_id": 15176,
+                    "name": "Setele's Modified Thermal Coating"
+                  },
+                  "Shadow Serpentis Thermal Coating": {
+                    "item_id": 14057,
+                    "name": "Shadow Serpentis Thermal Coating"
+                  },
+                  "Tairei's Modified Thermal Coating": {
+                    "item_id": 14922,
+                    "name": "Tairei's Modified Thermal Coating"
+                  },
+                  "Thermal Coating I": {
+                    "item_id": 1294,
+                    "name": "Thermal Coating I"
+                  },
+                  "Thermal Coating II": {
+                    "item_id": 1296,
+                    "name": "Thermal Coating II"
+                  },
+                  "True Sansha Thermal Coating": {
+                    "item_id": 14025,
+                    "name": "True Sansha Thermal Coating"
+                  },
+                  "Tuvan's Modified Thermal Coating": {
+                    "item_id": 15174,
+                    "name": "Tuvan's Modified Thermal Coating"
+                  },
+                  "Upgraded Thermal Coating I": {
+                    "item_id": 16337,
+                    "name": "Upgraded Thermal Coating I"
+                  },
+                  "Vizan's Modified Thermal Coating": {
+                    "item_id": 14928,
+                    "name": "Vizan's Modified Thermal Coating"
+                  }
+                }
+              }
+            },
+            "items": {}
+          },
           "Damage Controls": {
             "id": 615,
             "name": "Damage Controls",
@@ -45160,6 +46139,29 @@
               "Upgraded Layered Coating I": {
                 "item_id": 16345,
                 "name": "Upgraded Layered Coating I"
+              }
+            }
+          },
+          "Layered Energized Armor Membranes": {
+            "id": 1687,
+            "name": "Layered Energized Armor Membranes",
+            "subgroups": {},
+            "items": {
+              "'Basic' Layered Energized Membrane": {
+                "item_id": 11235,
+                "name": "'Basic' Layered Energized Membrane"
+              },
+              "Compact Layered Energized Membrane": {
+                "item_id": 16423,
+                "name": "Compact Layered Energized Membrane"
+              },
+              "Layered Energized Membrane I": {
+                "item_id": 11237,
+                "name": "Layered Energized Membrane I"
+              },
+              "Layered Energized Membrane II": {
+                "item_id": 11239,
+                "name": "Layered Energized Membrane II"
               }
             }
           },
@@ -67447,6 +68449,117 @@
                       }
                     }
                   },
+                  "Gallente": {
+                    "id": 2049,
+                    "name": "Gallente",
+                    "subgroups": {},
+                    "items": {
+                      "Enyo Arkombine Arisen SKIN": {
+                        "item_id": 89656,
+                        "name": "Enyo Arkombine Arisen SKIN"
+                      },
+                      "Enyo Aurora Universalis SKIN": {
+                        "item_id": 79733,
+                        "name": "Enyo Aurora Universalis SKIN"
+                      },
+                      "Enyo Biosecurity Responders SKIN": {
+                        "item_id": 55630,
+                        "name": "Enyo Biosecurity Responders SKIN"
+                      },
+                      "Enyo Exoplanets Hunter SKIN": {
+                        "item_id": 45877,
+                        "name": "Enyo Exoplanets Hunter SKIN"
+                      },
+                      "Enyo Glacial Drift SKIN": {
+                        "item_id": 46929,
+                        "name": "Enyo Glacial Drift SKIN"
+                      },
+                      "Enyo Glittering Dream SKIN": {
+                        "item_id": 47524,
+                        "name": "Enyo Glittering Dream SKIN"
+                      },
+                      "Enyo Inner Zone Vanguard SKIN": {
+                        "item_id": 52712,
+                        "name": "Enyo Inner Zone Vanguard SKIN"
+                      },
+                      "Enyo Intaki Syndicate SKIN": {
+                        "item_id": 36389,
+                        "name": "Enyo Intaki Syndicate SKIN"
+                      },
+                      "Enyo Kopis Edge SKIN": {
+                        "item_id": 46389,
+                        "name": "Enyo Kopis Edge SKIN"
+                      },
+                      "Enyo Serpentis SKIN": {
+                        "item_id": 42153,
+                        "name": "Enyo Serpentis SKIN"
+                      },
+                      "Enyo Spirit SKIN": {
+                        "item_id": 44895,
+                        "name": "Enyo Spirit SKIN"
+                      },
+                      "Enyo Valimor Legacy SKIN": {
+                        "item_id": 37553,
+                        "name": "Enyo Valimor Legacy SKIN"
+                      },
+                      "Ishkur Arkombine Arisen SKIN": {
+                        "item_id": 89655,
+                        "name": "Ishkur Arkombine Arisen SKIN"
+                      },
+                      "Ishkur Aurora Universalis SKIN": {
+                        "item_id": 79725,
+                        "name": "Ishkur Aurora Universalis SKIN"
+                      },
+                      "Ishkur Biosecurity Responders SKIN": {
+                        "item_id": 55623,
+                        "name": "Ishkur Biosecurity Responders SKIN"
+                      },
+                      "Ishkur Exoplanets Hunter SKIN": {
+                        "item_id": 45878,
+                        "name": "Ishkur Exoplanets Hunter SKIN"
+                      },
+                      "Ishkur GalNet StreamCast Unit SKIN": {
+                        "item_id": 57729,
+                        "name": "Ishkur GalNet StreamCast Unit SKIN"
+                      },
+                      "Ishkur Glacial Drift SKIN": {
+                        "item_id": 46930,
+                        "name": "Ishkur Glacial Drift SKIN"
+                      },
+                      "Ishkur Glittering Dream SKIN": {
+                        "item_id": 47523,
+                        "name": "Ishkur Glittering Dream SKIN"
+                      },
+                      "Ishkur Inner Zone Vanguard SKIN": {
+                        "item_id": 52713,
+                        "name": "Ishkur Inner Zone Vanguard SKIN"
+                      },
+                      "Ishkur Intaki Syndicate SKIN": {
+                        "item_id": 36388,
+                        "name": "Ishkur Intaki Syndicate SKIN"
+                      },
+                      "Ishkur Kopis Edge SKIN": {
+                        "item_id": 46390,
+                        "name": "Ishkur Kopis Edge SKIN"
+                      },
+                      "Ishkur Serpentis SKIN": {
+                        "item_id": 42154,
+                        "name": "Ishkur Serpentis SKIN"
+                      },
+                      "Ishkur Spirit SKIN": {
+                        "item_id": 44896,
+                        "name": "Ishkur Spirit SKIN"
+                      },
+                      "Ishkur Valimor Legacy SKIN": {
+                        "item_id": 37554,
+                        "name": "Ishkur Valimor Legacy SKIN"
+                      },
+                      "Ishkur Zydrine Burn SKIN": {
+                        "item_id": 76954,
+                        "name": "Ishkur Zydrine Burn SKIN"
+                      }
+                    }
+                  },
                   "Minmatar": {
                     "id": 2050,
                     "name": "Minmatar",
@@ -83398,390 +84511,6 @@
               "Keepstar": {
                 "item_id": 35834,
                 "name": "Keepstar"
-              }
-            }
-          }
-        },
-        "items": {}
-      },
-      "Deployable Structures": {
-        "id": 404,
-        "name": "Deployable Structures",
-        "subgroups": {
-          "Analysis Beacons": {
-            "id": 2798,
-            "name": "Analysis Beacons",
-            "subgroups": {},
-            "items": {
-              "CONCORD Rogue Analysis Beacon": {
-                "item_id": 60244,
-                "name": "CONCORD Rogue Analysis Beacon"
-              }
-            }
-          },
-          "Cargo Containers": {
-            "id": 379,
-            "name": "Cargo Containers",
-            "subgroups": {
-              "Audit Log Containers": {
-                "id": 1652,
-                "name": "Audit Log Containers",
-                "subgroups": {},
-                "items": {
-                  "Large Audit Log Secure Container": {
-                    "item_id": 17365,
-                    "name": "Large Audit Log Secure Container"
-                  },
-                  "Medium Audit Log Secure Container": {
-                    "item_id": 17364,
-                    "name": "Medium Audit Log Secure Container"
-                  },
-                  "Small Audit Log Secure Container": {
-                    "item_id": 17363,
-                    "name": "Small Audit Log Secure Container"
-                  }
-                }
-              },
-              "Freight Containers": {
-                "id": 1653,
-                "name": "Freight Containers",
-                "subgroups": {},
-                "items": {
-                  "Enormous Freight Container": {
-                    "item_id": 33003,
-                    "name": "Enormous Freight Container"
-                  },
-                  "Giant Freight Container": {
-                    "item_id": 24445,
-                    "name": "Giant Freight Container"
-                  },
-                  "Huge Freight Container": {
-                    "item_id": 33005,
-                    "name": "Huge Freight Container"
-                  },
-                  "Large Freight Container": {
-                    "item_id": 33007,
-                    "name": "Large Freight Container"
-                  },
-                  "Medium Freight Container": {
-                    "item_id": 33009,
-                    "name": "Medium Freight Container"
-                  },
-                  "Small Freight Container": {
-                    "item_id": 33011,
-                    "name": "Small Freight Container"
-                  }
-                }
-              },
-              "Secure Containers": {
-                "id": 1651,
-                "name": "Secure Containers",
-                "subgroups": {},
-                "items": {
-                  "Giant Secure Container": {
-                    "item_id": 11489,
-                    "name": "Giant Secure Container"
-                  },
-                  "Huge Secure Container": {
-                    "item_id": 11488,
-                    "name": "Huge Secure Container"
-                  },
-                  "Large Secure Container": {
-                    "item_id": 3465,
-                    "name": "Large Secure Container"
-                  },
-                  "Medium Secure Container": {
-                    "item_id": 3466,
-                    "name": "Medium Secure Container"
-                  },
-                  "Small Secure Container": {
-                    "item_id": 3467,
-                    "name": "Small Secure Container"
-                  }
-                }
-              },
-              "Standard Containers": {
-                "id": 1657,
-                "name": "Standard Containers",
-                "subgroups": {},
-                "items": {
-                  "Large Standard Container": {
-                    "item_id": 3296,
-                    "name": "Large Standard Container"
-                  },
-                  "Medium Standard Container": {
-                    "item_id": 3293,
-                    "name": "Medium Standard Container"
-                  },
-                  "Small Standard Container": {
-                    "item_id": 3297,
-                    "name": "Small Standard Container"
-                  }
-                }
-              },
-              "Station Containers": {
-                "id": 1658,
-                "name": "Station Containers",
-                "subgroups": {},
-                "items": {
-                  "Station Container": {
-                    "item_id": 17366,
-                    "name": "Station Container"
-                  },
-                  "Station Vault Container": {
-                    "item_id": 17367,
-                    "name": "Station Vault Container"
-                  },
-                  "Station Warehouse Container": {
-                    "item_id": 17368,
-                    "name": "Station Warehouse Container"
-                  }
-                }
-              }
-            },
-            "items": {}
-          },
-          "Encounter Surveillance Systems": {
-            "id": 1847,
-            "name": "Encounter Surveillance Systems",
-            "subgroups": {},
-            "items": {
-              "Defunct Amarr Encounter Surveillance System": {
-                "item_id": 33585,
-                "name": "Defunct Amarr Encounter Surveillance System"
-              },
-              "Defunct Caldari Encounter Surveillance System": {
-                "item_id": 33595,
-                "name": "Defunct Caldari Encounter Surveillance System"
-              },
-              "Defunct Gallente Encounter Surveillance System": {
-                "item_id": 33608,
-                "name": "Defunct Gallente Encounter Surveillance System"
-              },
-              "Defunct Minmatar Encounter Surveillance System": {
-                "item_id": 33610,
-                "name": "Defunct Minmatar Encounter Surveillance System"
-              }
-            }
-          },
-          "Mercenary Dens": {
-            "id": 3680,
-            "name": "Mercenary Dens",
-            "subgroups": {},
-            "items": {
-              "'Seneschal' Mercenary Den": {
-                "item_id": 85980,
-                "name": "'Seneschal' Mercenary Den"
-              },
-              "Mercenary Den": {
-                "item_id": 85230,
-                "name": "Mercenary Den"
-              }
-            }
-          },
-          "Mobile Cynosural Beacons": {
-            "id": 2763,
-            "name": "Mobile Cynosural Beacons",
-            "subgroups": {},
-            "items": {
-              "Covert Mobile Cynosural Beacon": {
-                "item_id": 59630,
-                "name": "Covert Mobile Cynosural Beacon"
-              },
-              "Mobile Cynosural Beacon": {
-                "item_id": 57319,
-                "name": "Mobile Cynosural Beacon"
-              }
-            }
-          },
-          "Mobile Cynosural Inhibitors": {
-            "id": 1832,
-            "name": "Mobile Cynosural Inhibitors",
-            "subgroups": {},
-            "items": {
-              "Mobile Cynosural Inhibitor": {
-                "item_id": 33476,
-                "name": "Mobile Cynosural Inhibitor"
-              }
-            }
-          },
-          "Mobile Depots": {
-            "id": 1831,
-            "name": "Mobile Depots",
-            "subgroups": {},
-            "items": {
-              "'Wetu' Mobile Depot": {
-                "item_id": 33520,
-                "name": "'Wetu' Mobile Depot"
-              },
-              "'Yurt' Mobile Depot": {
-                "item_id": 33522,
-                "name": "'Yurt' Mobile Depot"
-              },
-              "Mobile Depot": {
-                "item_id": 33474,
-                "name": "Mobile Depot"
-              }
-            }
-          },
-          "Mobile Micro Jump Units": {
-            "id": 1844,
-            "name": "Mobile Micro Jump Units",
-            "subgroups": {},
-            "items": {
-              "Mobile Micro Jump Unit": {
-                "item_id": 33591,
-                "name": "Mobile Micro Jump Unit"
-              }
-            }
-          },
-          "Mobile Observatories": {
-            "id": 2771,
-            "name": "Mobile Observatories",
-            "subgroups": {},
-            "items": {
-              "Mobile Observatory": {
-                "item_id": 58904,
-                "name": "Mobile Observatory"
-              }
-            }
-          },
-          "Mobile Scan Inhibitors": {
-            "id": 1845,
-            "name": "Mobile Scan Inhibitors",
-            "subgroups": {},
-            "items": {
-              "Mobile Scan Inhibitor": {
-                "item_id": 33589,
-                "name": "Mobile Scan Inhibitor"
-              }
-            }
-          },
-          "Mobile Siphon Units": {
-            "id": 1835,
-            "name": "Mobile Siphon Units",
-            "subgroups": {},
-            "items": {
-              "Small Mobile 'Hybrid' Siphon Unit": {
-                "item_id": 33581,
-                "name": "Small Mobile 'Hybrid' Siphon Unit"
-              },
-              "Small Mobile 'Rote' Siphon Unit": {
-                "item_id": 33583,
-                "name": "Small Mobile 'Rote' Siphon Unit"
-              },
-              "Small Mobile Siphon Unit": {
-                "item_id": 33477,
-                "name": "Small Mobile Siphon Unit"
-              }
-            }
-          },
-          "Mobile Strategic Objectives": {
-            "id": 3450,
-            "name": "Mobile Strategic Objectives",
-            "subgroups": {},
-            "items": {
-              "Amarr Listening Outpost": {
-                "item_id": 73270,
-                "name": "Amarr Listening Outpost"
-              },
-              "Amarr Propaganda Broadcast Structure": {
-                "item_id": 73225,
-                "name": "Amarr Propaganda Broadcast Structure"
-              },
-              "Caldari Listening Outpost": {
-                "item_id": 73272,
-                "name": "Caldari Listening Outpost"
-              },
-              "Caldari Propaganda Broadcast Structure": {
-                "item_id": 73227,
-                "name": "Caldari Propaganda Broadcast Structure"
-              },
-              "Gallente Listening Outpost": {
-                "item_id": 73273,
-                "name": "Gallente Listening Outpost"
-              },
-              "Gallente Propaganda Broadcast Structure": {
-                "item_id": 73228,
-                "name": "Gallente Propaganda Broadcast Structure"
-              },
-              "Minmatar Listening Outpost": {
-                "item_id": 73271,
-                "name": "Minmatar Listening Outpost"
-              },
-              "Minmatar Propaganda Broadcast Structure": {
-                "item_id": 73226,
-                "name": "Minmatar Propaganda Broadcast Structure"
-              }
-            }
-          },
-          "Mobile Tractor Units": {
-            "id": 1833,
-            "name": "Mobile Tractor Units",
-            "subgroups": {},
-            "items": {
-              "'Magpie' Mobile Tractor Unit": {
-                "item_id": 33702,
-                "name": "'Magpie' Mobile Tractor Unit"
-              },
-              "'Packrat' Mobile Tractor Unit": {
-                "item_id": 33700,
-                "name": "'Packrat' Mobile Tractor Unit"
-              },
-              "Consortium Mobile Tractor Unit": {
-                "item_id": 81951,
-                "name": "Consortium Mobile Tractor Unit"
-              },
-              "Mobile Tractor Unit": {
-                "item_id": 33475,
-                "name": "Mobile Tractor Unit"
-              }
-            }
-          },
-          "Warp Disruption Fields": {
-            "id": 405,
-            "name": "Warp Disruption Fields",
-            "subgroups": {},
-            "items": {
-              "Mobile Large Jump Disruptor I": {
-                "item_id": 4386,
-                "name": "Mobile Large Jump Disruptor I"
-              },
-              "Mobile Large Warp Disruptor I": {
-                "item_id": 12200,
-                "name": "Mobile Large Warp Disruptor I"
-              },
-              "Mobile Large Warp Disruptor II": {
-                "item_id": 26888,
-                "name": "Mobile Large Warp Disruptor II"
-              },
-              "Mobile Medium Warp Disruptor I": {
-                "item_id": 12199,
-                "name": "Mobile Medium Warp Disruptor I"
-              },
-              "Mobile Medium Warp Disruptor II": {
-                "item_id": 26890,
-                "name": "Mobile Medium Warp Disruptor II"
-              },
-              "Mobile Small Warp Disruptor I": {
-                "item_id": 12198,
-                "name": "Mobile Small Warp Disruptor I"
-              },
-              "Mobile Small Warp Disruptor II": {
-                "item_id": 26892,
-                "name": "Mobile Small Warp Disruptor II"
-              },
-              "Syndicate Mobile Large Warp Disruptor": {
-                "item_id": 28770,
-                "name": "Syndicate Mobile Large Warp Disruptor"
-              },
-              "Syndicate Mobile Medium Warp Disruptor": {
-                "item_id": 28772,
-                "name": "Syndicate Mobile Medium Warp Disruptor"
-              },
-              "Syndicate Mobile Small Warp Disruptor": {
-                "item_id": 28774,
-                "name": "Syndicate Mobile Small Warp Disruptor"
               }
             }
           }
