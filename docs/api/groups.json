@@ -3454,137 +3454,6 @@
             },
             "items": {}
           },
-          "Rockets": {
-            "id": 118,
-            "name": "Rockets",
-            "subgroups": {
-              "Advanced Anti-Ship Rockets": {
-                "id": 930,
-                "name": "Advanced Anti-Ship Rockets",
-                "subgroups": {},
-                "items": {
-                  "Inferno Rage Rocket": {
-                    "item_id": 24475,
-                    "name": "Inferno Rage Rocket"
-                  },
-                  "Mjolnir Rage Rocket": {
-                    "item_id": 2817,
-                    "name": "Mjolnir Rage Rocket"
-                  },
-                  "Nova Rage Rocket": {
-                    "item_id": 24473,
-                    "name": "Nova Rage Rocket"
-                  },
-                  "Scourge Rage Rocket": {
-                    "item_id": 24471,
-                    "name": "Scourge Rage Rocket"
-                  }
-                }
-              },
-              "Advanced Long Range Rockets": {
-                "id": 928,
-                "name": "Advanced Long Range Rockets",
-                "subgroups": {},
-                "items": {
-                  "Inferno Javelin Rocket": {
-                    "item_id": 24479,
-                    "name": "Inferno Javelin Rocket"
-                  },
-                  "Mjolnir Javelin Rocket": {
-                    "item_id": 13119,
-                    "name": "Mjolnir Javelin Rocket"
-                  },
-                  "Nova Javelin Rocket": {
-                    "item_id": 24478,
-                    "name": "Nova Javelin Rocket"
-                  },
-                  "Scourge Javelin Rocket": {
-                    "item_id": 24477,
-                    "name": "Scourge Javelin Rocket"
-                  }
-                }
-              },
-              "Faction Rockets": {
-                "id": 999,
-                "name": "Faction Rockets",
-                "subgroups": {},
-                "items": {
-                  "Caldari Navy Inferno Rocket": {
-                    "item_id": 27315,
-                    "name": "Caldari Navy Inferno Rocket"
-                  },
-                  "Caldari Navy Mjolnir Rocket": {
-                    "item_id": 27321,
-                    "name": "Caldari Navy Mjolnir Rocket"
-                  },
-                  "Caldari Navy Nova Rocket": {
-                    "item_id": 27327,
-                    "name": "Caldari Navy Nova Rocket"
-                  },
-                  "Caldari Navy Scourge Rocket": {
-                    "item_id": 27333,
-                    "name": "Caldari Navy Scourge Rocket"
-                  },
-                  "Dread Guristas Inferno Rocket": {
-                    "item_id": 27317,
-                    "name": "Dread Guristas Inferno Rocket"
-                  },
-                  "Dread Guristas Mjolnir Rocket": {
-                    "item_id": 27323,
-                    "name": "Dread Guristas Mjolnir Rocket"
-                  },
-                  "Dread Guristas Nova Rocket": {
-                    "item_id": 27329,
-                    "name": "Dread Guristas Nova Rocket"
-                  },
-                  "Dread Guristas Scourge Rocket": {
-                    "item_id": 27335,
-                    "name": "Dread Guristas Scourge Rocket"
-                  },
-                  "Guristas Inferno Rocket": {
-                    "item_id": 27313,
-                    "name": "Guristas Inferno Rocket"
-                  },
-                  "Guristas Mjolnir Rocket": {
-                    "item_id": 27319,
-                    "name": "Guristas Mjolnir Rocket"
-                  },
-                  "Guristas Nova Rocket": {
-                    "item_id": 27325,
-                    "name": "Guristas Nova Rocket"
-                  },
-                  "Guristas Scourge Rocket": {
-                    "item_id": 27331,
-                    "name": "Guristas Scourge Rocket"
-                  }
-                }
-              },
-              "Standard Rockets": {
-                "id": 922,
-                "name": "Standard Rockets",
-                "subgroups": {},
-                "items": {
-                  "Inferno Rocket": {
-                    "item_id": 2514,
-                    "name": "Inferno Rocket"
-                  },
-                  "Mjolnir Rocket": {
-                    "item_id": 2512,
-                    "name": "Mjolnir Rocket"
-                  },
-                  "Nova Rocket": {
-                    "item_id": 2516,
-                    "name": "Nova Rocket"
-                  },
-                  "Scourge Rocket": {
-                    "item_id": 266,
-                    "name": "Scourge Rocket"
-                  }
-                }
-              }
-            },
-            "items": {}
-          },
           "Structure Anticapital Missiles": {
             "id": 2197,
             "name": "Structure Anticapital Missiles",
@@ -18899,6 +18768,25 @@
                   "Mobile Tractor Unit Blueprint": {
                     "item_id": 33519,
                     "name": "Mobile Tractor Unit Blueprint"
+                  }
+                }
+              },
+              "Warp Disruption Fields": {
+                "id": 407,
+                "name": "Warp Disruption Fields",
+                "subgroups": {},
+                "items": {
+                  "Mobile Large Warp Disruptor I Blueprint": {
+                    "item_id": 12301,
+                    "name": "Mobile Large Warp Disruptor I Blueprint"
+                  },
+                  "Mobile Medium Warp Disruptor I Blueprint": {
+                    "item_id": 12300,
+                    "name": "Mobile Medium Warp Disruptor I Blueprint"
+                  },
+                  "Mobile Small Warp Disruptor I Blueprint": {
+                    "item_id": 12297,
+                    "name": "Mobile Small Warp Disruptor I Blueprint"
                   }
                 }
               }
@@ -69340,6 +69228,10 @@
                         "item_id": 36643,
                         "name": "Kitsune Raata Sunset SKIN"
                       },
+                      "Kitsune Shattered Paradigm SKIN": {
+                        "item_id": 90813,
+                        "name": "Kitsune Shattered Paradigm SKIN"
+                      },
                       "Kitsune Steel Cardinal SKIN": {
                         "item_id": 46099,
                         "name": "Kitsune Steel Cardinal SKIN"
@@ -81493,6 +81385,10 @@
             "item_id": 90137,
             "name": "Historic Crimson Harvest Trinket Crate"
           },
+          "Historic SOE SKINs Crate": {
+            "item_id": 90885,
+            "name": "Historic SOE SKINs Crate"
+          },
           "How to Retire Your Starbase": {
             "item_id": 47058,
             "name": "How to Retire Your Starbase"
@@ -81676,6 +81572,10 @@
           "Men's & Women's Frostline Exploration Suit": {
             "item_id": 49803,
             "name": "Men's & Women's Frostline Exploration Suit"
+          },
+          "Men's Empire Exploration Suit crate": {
+            "item_id": 90892,
+            "name": "Men's Empire Exploration Suit crate"
           },
           "Midband Emission Amplifier": {
             "item_id": 88174,
@@ -82300,6 +82200,10 @@
           "Wideband Emission Limiter": {
             "item_id": 88177,
             "name": "Wideband Emission Limiter"
+          },
+          "Women's Empire Exploration Suit crate": {
+            "item_id": 90893,
+            "name": "Women's Empire Exploration Suit crate"
           },
           "XV Anniversary Gift Box (Alpha)": {
             "item_id": 47962,
@@ -84511,6 +84415,390 @@
               "Keepstar": {
                 "item_id": 35834,
                 "name": "Keepstar"
+              }
+            }
+          }
+        },
+        "items": {}
+      },
+      "Deployable Structures": {
+        "id": 404,
+        "name": "Deployable Structures",
+        "subgroups": {
+          "Analysis Beacons": {
+            "id": 2798,
+            "name": "Analysis Beacons",
+            "subgroups": {},
+            "items": {
+              "CONCORD Rogue Analysis Beacon": {
+                "item_id": 60244,
+                "name": "CONCORD Rogue Analysis Beacon"
+              }
+            }
+          },
+          "Cargo Containers": {
+            "id": 379,
+            "name": "Cargo Containers",
+            "subgroups": {
+              "Audit Log Containers": {
+                "id": 1652,
+                "name": "Audit Log Containers",
+                "subgroups": {},
+                "items": {
+                  "Large Audit Log Secure Container": {
+                    "item_id": 17365,
+                    "name": "Large Audit Log Secure Container"
+                  },
+                  "Medium Audit Log Secure Container": {
+                    "item_id": 17364,
+                    "name": "Medium Audit Log Secure Container"
+                  },
+                  "Small Audit Log Secure Container": {
+                    "item_id": 17363,
+                    "name": "Small Audit Log Secure Container"
+                  }
+                }
+              },
+              "Freight Containers": {
+                "id": 1653,
+                "name": "Freight Containers",
+                "subgroups": {},
+                "items": {
+                  "Enormous Freight Container": {
+                    "item_id": 33003,
+                    "name": "Enormous Freight Container"
+                  },
+                  "Giant Freight Container": {
+                    "item_id": 24445,
+                    "name": "Giant Freight Container"
+                  },
+                  "Huge Freight Container": {
+                    "item_id": 33005,
+                    "name": "Huge Freight Container"
+                  },
+                  "Large Freight Container": {
+                    "item_id": 33007,
+                    "name": "Large Freight Container"
+                  },
+                  "Medium Freight Container": {
+                    "item_id": 33009,
+                    "name": "Medium Freight Container"
+                  },
+                  "Small Freight Container": {
+                    "item_id": 33011,
+                    "name": "Small Freight Container"
+                  }
+                }
+              },
+              "Secure Containers": {
+                "id": 1651,
+                "name": "Secure Containers",
+                "subgroups": {},
+                "items": {
+                  "Giant Secure Container": {
+                    "item_id": 11489,
+                    "name": "Giant Secure Container"
+                  },
+                  "Huge Secure Container": {
+                    "item_id": 11488,
+                    "name": "Huge Secure Container"
+                  },
+                  "Large Secure Container": {
+                    "item_id": 3465,
+                    "name": "Large Secure Container"
+                  },
+                  "Medium Secure Container": {
+                    "item_id": 3466,
+                    "name": "Medium Secure Container"
+                  },
+                  "Small Secure Container": {
+                    "item_id": 3467,
+                    "name": "Small Secure Container"
+                  }
+                }
+              },
+              "Standard Containers": {
+                "id": 1657,
+                "name": "Standard Containers",
+                "subgroups": {},
+                "items": {
+                  "Large Standard Container": {
+                    "item_id": 3296,
+                    "name": "Large Standard Container"
+                  },
+                  "Medium Standard Container": {
+                    "item_id": 3293,
+                    "name": "Medium Standard Container"
+                  },
+                  "Small Standard Container": {
+                    "item_id": 3297,
+                    "name": "Small Standard Container"
+                  }
+                }
+              },
+              "Station Containers": {
+                "id": 1658,
+                "name": "Station Containers",
+                "subgroups": {},
+                "items": {
+                  "Station Container": {
+                    "item_id": 17366,
+                    "name": "Station Container"
+                  },
+                  "Station Vault Container": {
+                    "item_id": 17367,
+                    "name": "Station Vault Container"
+                  },
+                  "Station Warehouse Container": {
+                    "item_id": 17368,
+                    "name": "Station Warehouse Container"
+                  }
+                }
+              }
+            },
+            "items": {}
+          },
+          "Encounter Surveillance Systems": {
+            "id": 1847,
+            "name": "Encounter Surveillance Systems",
+            "subgroups": {},
+            "items": {
+              "Defunct Amarr Encounter Surveillance System": {
+                "item_id": 33585,
+                "name": "Defunct Amarr Encounter Surveillance System"
+              },
+              "Defunct Caldari Encounter Surveillance System": {
+                "item_id": 33595,
+                "name": "Defunct Caldari Encounter Surveillance System"
+              },
+              "Defunct Gallente Encounter Surveillance System": {
+                "item_id": 33608,
+                "name": "Defunct Gallente Encounter Surveillance System"
+              },
+              "Defunct Minmatar Encounter Surveillance System": {
+                "item_id": 33610,
+                "name": "Defunct Minmatar Encounter Surveillance System"
+              }
+            }
+          },
+          "Mercenary Dens": {
+            "id": 3680,
+            "name": "Mercenary Dens",
+            "subgroups": {},
+            "items": {
+              "'Seneschal' Mercenary Den": {
+                "item_id": 85980,
+                "name": "'Seneschal' Mercenary Den"
+              },
+              "Mercenary Den": {
+                "item_id": 85230,
+                "name": "Mercenary Den"
+              }
+            }
+          },
+          "Mobile Cynosural Beacons": {
+            "id": 2763,
+            "name": "Mobile Cynosural Beacons",
+            "subgroups": {},
+            "items": {
+              "Covert Mobile Cynosural Beacon": {
+                "item_id": 59630,
+                "name": "Covert Mobile Cynosural Beacon"
+              },
+              "Mobile Cynosural Beacon": {
+                "item_id": 57319,
+                "name": "Mobile Cynosural Beacon"
+              }
+            }
+          },
+          "Mobile Cynosural Inhibitors": {
+            "id": 1832,
+            "name": "Mobile Cynosural Inhibitors",
+            "subgroups": {},
+            "items": {
+              "Mobile Cynosural Inhibitor": {
+                "item_id": 33476,
+                "name": "Mobile Cynosural Inhibitor"
+              }
+            }
+          },
+          "Mobile Depots": {
+            "id": 1831,
+            "name": "Mobile Depots",
+            "subgroups": {},
+            "items": {
+              "'Wetu' Mobile Depot": {
+                "item_id": 33520,
+                "name": "'Wetu' Mobile Depot"
+              },
+              "'Yurt' Mobile Depot": {
+                "item_id": 33522,
+                "name": "'Yurt' Mobile Depot"
+              },
+              "Mobile Depot": {
+                "item_id": 33474,
+                "name": "Mobile Depot"
+              }
+            }
+          },
+          "Mobile Micro Jump Units": {
+            "id": 1844,
+            "name": "Mobile Micro Jump Units",
+            "subgroups": {},
+            "items": {
+              "Mobile Micro Jump Unit": {
+                "item_id": 33591,
+                "name": "Mobile Micro Jump Unit"
+              }
+            }
+          },
+          "Mobile Observatories": {
+            "id": 2771,
+            "name": "Mobile Observatories",
+            "subgroups": {},
+            "items": {
+              "Mobile Observatory": {
+                "item_id": 58904,
+                "name": "Mobile Observatory"
+              }
+            }
+          },
+          "Mobile Scan Inhibitors": {
+            "id": 1845,
+            "name": "Mobile Scan Inhibitors",
+            "subgroups": {},
+            "items": {
+              "Mobile Scan Inhibitor": {
+                "item_id": 33589,
+                "name": "Mobile Scan Inhibitor"
+              }
+            }
+          },
+          "Mobile Siphon Units": {
+            "id": 1835,
+            "name": "Mobile Siphon Units",
+            "subgroups": {},
+            "items": {
+              "Small Mobile 'Hybrid' Siphon Unit": {
+                "item_id": 33581,
+                "name": "Small Mobile 'Hybrid' Siphon Unit"
+              },
+              "Small Mobile 'Rote' Siphon Unit": {
+                "item_id": 33583,
+                "name": "Small Mobile 'Rote' Siphon Unit"
+              },
+              "Small Mobile Siphon Unit": {
+                "item_id": 33477,
+                "name": "Small Mobile Siphon Unit"
+              }
+            }
+          },
+          "Mobile Strategic Objectives": {
+            "id": 3450,
+            "name": "Mobile Strategic Objectives",
+            "subgroups": {},
+            "items": {
+              "Amarr Listening Outpost": {
+                "item_id": 73270,
+                "name": "Amarr Listening Outpost"
+              },
+              "Amarr Propaganda Broadcast Structure": {
+                "item_id": 73225,
+                "name": "Amarr Propaganda Broadcast Structure"
+              },
+              "Caldari Listening Outpost": {
+                "item_id": 73272,
+                "name": "Caldari Listening Outpost"
+              },
+              "Caldari Propaganda Broadcast Structure": {
+                "item_id": 73227,
+                "name": "Caldari Propaganda Broadcast Structure"
+              },
+              "Gallente Listening Outpost": {
+                "item_id": 73273,
+                "name": "Gallente Listening Outpost"
+              },
+              "Gallente Propaganda Broadcast Structure": {
+                "item_id": 73228,
+                "name": "Gallente Propaganda Broadcast Structure"
+              },
+              "Minmatar Listening Outpost": {
+                "item_id": 73271,
+                "name": "Minmatar Listening Outpost"
+              },
+              "Minmatar Propaganda Broadcast Structure": {
+                "item_id": 73226,
+                "name": "Minmatar Propaganda Broadcast Structure"
+              }
+            }
+          },
+          "Mobile Tractor Units": {
+            "id": 1833,
+            "name": "Mobile Tractor Units",
+            "subgroups": {},
+            "items": {
+              "'Magpie' Mobile Tractor Unit": {
+                "item_id": 33702,
+                "name": "'Magpie' Mobile Tractor Unit"
+              },
+              "'Packrat' Mobile Tractor Unit": {
+                "item_id": 33700,
+                "name": "'Packrat' Mobile Tractor Unit"
+              },
+              "Consortium Mobile Tractor Unit": {
+                "item_id": 81951,
+                "name": "Consortium Mobile Tractor Unit"
+              },
+              "Mobile Tractor Unit": {
+                "item_id": 33475,
+                "name": "Mobile Tractor Unit"
+              }
+            }
+          },
+          "Warp Disruption Fields": {
+            "id": 405,
+            "name": "Warp Disruption Fields",
+            "subgroups": {},
+            "items": {
+              "Mobile Large Jump Disruptor I": {
+                "item_id": 4386,
+                "name": "Mobile Large Jump Disruptor I"
+              },
+              "Mobile Large Warp Disruptor I": {
+                "item_id": 12200,
+                "name": "Mobile Large Warp Disruptor I"
+              },
+              "Mobile Large Warp Disruptor II": {
+                "item_id": 26888,
+                "name": "Mobile Large Warp Disruptor II"
+              },
+              "Mobile Medium Warp Disruptor I": {
+                "item_id": 12199,
+                "name": "Mobile Medium Warp Disruptor I"
+              },
+              "Mobile Medium Warp Disruptor II": {
+                "item_id": 26890,
+                "name": "Mobile Medium Warp Disruptor II"
+              },
+              "Mobile Small Warp Disruptor I": {
+                "item_id": 12198,
+                "name": "Mobile Small Warp Disruptor I"
+              },
+              "Mobile Small Warp Disruptor II": {
+                "item_id": 26892,
+                "name": "Mobile Small Warp Disruptor II"
+              },
+              "Syndicate Mobile Large Warp Disruptor": {
+                "item_id": 28770,
+                "name": "Syndicate Mobile Large Warp Disruptor"
+              },
+              "Syndicate Mobile Medium Warp Disruptor": {
+                "item_id": 28772,
+                "name": "Syndicate Mobile Medium Warp Disruptor"
+              },
+              "Syndicate Mobile Small Warp Disruptor": {
+                "item_id": 28774,
+                "name": "Syndicate Mobile Small Warp Disruptor"
               }
             }
           }
