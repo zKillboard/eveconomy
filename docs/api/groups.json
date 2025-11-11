@@ -3454,6 +3454,137 @@
             },
             "items": {}
           },
+          "Rockets": {
+            "id": 118,
+            "name": "Rockets",
+            "subgroups": {
+              "Advanced Anti-Ship Rockets": {
+                "id": 930,
+                "name": "Advanced Anti-Ship Rockets",
+                "subgroups": {},
+                "items": {
+                  "Inferno Rage Rocket": {
+                    "item_id": 24475,
+                    "name": "Inferno Rage Rocket"
+                  },
+                  "Mjolnir Rage Rocket": {
+                    "item_id": 2817,
+                    "name": "Mjolnir Rage Rocket"
+                  },
+                  "Nova Rage Rocket": {
+                    "item_id": 24473,
+                    "name": "Nova Rage Rocket"
+                  },
+                  "Scourge Rage Rocket": {
+                    "item_id": 24471,
+                    "name": "Scourge Rage Rocket"
+                  }
+                }
+              },
+              "Advanced Long Range Rockets": {
+                "id": 928,
+                "name": "Advanced Long Range Rockets",
+                "subgroups": {},
+                "items": {
+                  "Inferno Javelin Rocket": {
+                    "item_id": 24479,
+                    "name": "Inferno Javelin Rocket"
+                  },
+                  "Mjolnir Javelin Rocket": {
+                    "item_id": 13119,
+                    "name": "Mjolnir Javelin Rocket"
+                  },
+                  "Nova Javelin Rocket": {
+                    "item_id": 24478,
+                    "name": "Nova Javelin Rocket"
+                  },
+                  "Scourge Javelin Rocket": {
+                    "item_id": 24477,
+                    "name": "Scourge Javelin Rocket"
+                  }
+                }
+              },
+              "Faction Rockets": {
+                "id": 999,
+                "name": "Faction Rockets",
+                "subgroups": {},
+                "items": {
+                  "Caldari Navy Inferno Rocket": {
+                    "item_id": 27315,
+                    "name": "Caldari Navy Inferno Rocket"
+                  },
+                  "Caldari Navy Mjolnir Rocket": {
+                    "item_id": 27321,
+                    "name": "Caldari Navy Mjolnir Rocket"
+                  },
+                  "Caldari Navy Nova Rocket": {
+                    "item_id": 27327,
+                    "name": "Caldari Navy Nova Rocket"
+                  },
+                  "Caldari Navy Scourge Rocket": {
+                    "item_id": 27333,
+                    "name": "Caldari Navy Scourge Rocket"
+                  },
+                  "Dread Guristas Inferno Rocket": {
+                    "item_id": 27317,
+                    "name": "Dread Guristas Inferno Rocket"
+                  },
+                  "Dread Guristas Mjolnir Rocket": {
+                    "item_id": 27323,
+                    "name": "Dread Guristas Mjolnir Rocket"
+                  },
+                  "Dread Guristas Nova Rocket": {
+                    "item_id": 27329,
+                    "name": "Dread Guristas Nova Rocket"
+                  },
+                  "Dread Guristas Scourge Rocket": {
+                    "item_id": 27335,
+                    "name": "Dread Guristas Scourge Rocket"
+                  },
+                  "Guristas Inferno Rocket": {
+                    "item_id": 27313,
+                    "name": "Guristas Inferno Rocket"
+                  },
+                  "Guristas Mjolnir Rocket": {
+                    "item_id": 27319,
+                    "name": "Guristas Mjolnir Rocket"
+                  },
+                  "Guristas Nova Rocket": {
+                    "item_id": 27325,
+                    "name": "Guristas Nova Rocket"
+                  },
+                  "Guristas Scourge Rocket": {
+                    "item_id": 27331,
+                    "name": "Guristas Scourge Rocket"
+                  }
+                }
+              },
+              "Standard Rockets": {
+                "id": 922,
+                "name": "Standard Rockets",
+                "subgroups": {},
+                "items": {
+                  "Inferno Rocket": {
+                    "item_id": 2514,
+                    "name": "Inferno Rocket"
+                  },
+                  "Mjolnir Rocket": {
+                    "item_id": 2512,
+                    "name": "Mjolnir Rocket"
+                  },
+                  "Nova Rocket": {
+                    "item_id": 2516,
+                    "name": "Nova Rocket"
+                  },
+                  "Scourge Rocket": {
+                    "item_id": 266,
+                    "name": "Scourge Rocket"
+                  }
+                }
+              }
+            },
+            "items": {}
+          },
           "Structure Anticapital Missiles": {
             "id": 2197,
             "name": "Structure Anticapital Missiles",
@@ -38837,29 +38968,6 @@
             "id": 1781,
             "name": "Targeting Rigs",
             "subgroups": {
-              "Capital Targeting Rigs": {
-                "id": 1793,
-                "name": "Capital Targeting Rigs",
-                "subgroups": {},
-                "items": {
-                  "Capital Ionic Field Projector I": {
-                    "item_id": 31278,
-                    "name": "Capital Ionic Field Projector I"
-                  },
-                  "Capital Ionic Field Projector II": {
-                    "item_id": 31284,
-                    "name": "Capital Ionic Field Projector II"
-                  },
-                  "Capital Targeting System Subcontroller I": {
-                    "item_id": 31326,
-                    "name": "Capital Targeting System Subcontroller I"
-                  },
-                  "Capital Targeting System Subcontroller II": {
-                    "item_id": 31332,
-                    "name": "Capital Targeting System Subcontroller II"
-                  }
-                }
-              },
               "Large Targeting Rigs": {
                 "id": 1792,
                 "name": "Large Targeting Rigs",
@@ -77889,17 +77997,6 @@
               "Utu": {
                 "item_id": 2834,
                 "name": "Utu"
-              }
-            }
-          },
-          "Special Edition Battlecruisers": {
-            "id": 1698,
-            "name": "Special Edition Battlecruisers",
-            "subgroups": {},
-            "items": {
-              "Gnosis": {
-                "item_id": 3756,
-                "name": "Gnosis"
               }
             }
           },
