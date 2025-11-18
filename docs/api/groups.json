@@ -155,6 +155,25 @@
               }
             }
           },
+          "Expedition Command Burst Charges": {
+            "id": 3756,
+            "name": "Expedition Command Burst Charges",
+            "subgroups": {},
+            "items": {
+              "Expedition Pinpointing Charge": {
+                "item_id": 89614,
+                "name": "Expedition Pinpointing Charge"
+              },
+              "Expedition Reach Charge": {
+                "item_id": 89613,
+                "name": "Expedition Reach Charge"
+              },
+              "Expedition Strength Charge": {
+                "item_id": 89612,
+                "name": "Expedition Strength Charge"
+              }
+            }
+          },
           "Information Command Burst Charges": {
             "id": 2299,
             "name": "Information Command Burst Charges",
@@ -182,6 +201,10 @@
               "Mining Equipment Preservation Charge": {
                 "item_id": 42831,
                 "name": "Mining Equipment Preservation Charge"
+              },
+              "Mining Laser Efficiency Charge": {
+                "item_id": 90733,
+                "name": "Mining Laser Efficiency Charge"
               },
               "Mining Laser Field Enhancement Charge": {
                 "item_id": 42829,
@@ -2520,280 +2543,388 @@
           "Asteroid Mining Crystals": {
             "id": 2804,
             "name": "Asteroid Mining Crystals",
-            "subgroups": {},
-            "items": {
-              "Abyssal Asteroid Mining Crystal Type A I": {
-                "item_id": 60303,
-                "name": "Abyssal Asteroid Mining Crystal Type A I"
+            "subgroups": {
+              "Abyssal Asteroid Mining Crystals": {
+                "id": 3806,
+                "name": "Abyssal Asteroid Mining Crystals",
+                "subgroups": {},
+                "items": {
+                  "Abyssal Asteroid Mining Crystal Type A I": {
+                    "item_id": 60303,
+                    "name": "Abyssal Asteroid Mining Crystal Type A I"
+                  },
+                  "Abyssal Asteroid Mining Crystal Type A II": {
+                    "item_id": 60306,
+                    "name": "Abyssal Asteroid Mining Crystal Type A II"
+                  },
+                  "Abyssal Asteroid Mining Crystal Type B I": {
+                    "item_id": 60304,
+                    "name": "Abyssal Asteroid Mining Crystal Type B I"
+                  },
+                  "Abyssal Asteroid Mining Crystal Type B II": {
+                    "item_id": 60307,
+                    "name": "Abyssal Asteroid Mining Crystal Type B II"
+                  },
+                  "Abyssal Asteroid Mining Crystal Type C I": {
+                    "item_id": 60305,
+                    "name": "Abyssal Asteroid Mining Crystal Type C I"
+                  },
+                  "Abyssal Asteroid Mining Crystal Type C II": {
+                    "item_id": 60308,
+                    "name": "Abyssal Asteroid Mining Crystal Type C II"
+                  }
+                }
               },
-              "Abyssal Asteroid Mining Crystal Type A II": {
-                "item_id": 60306,
-                "name": "Abyssal Asteroid Mining Crystal Type A II"
+              "Coherent Asteroid Mining Crystals": {
+                "id": 3802,
+                "name": "Coherent Asteroid Mining Crystals",
+                "subgroups": {},
+                "items": {
+                  "Coherent Asteroid Mining Crystal Type A I": {
+                    "item_id": 60285,
+                    "name": "Coherent Asteroid Mining Crystal Type A I"
+                  },
+                  "Coherent Asteroid Mining Crystal Type A II": {
+                    "item_id": 60288,
+                    "name": "Coherent Asteroid Mining Crystal Type A II"
+                  },
+                  "Coherent Asteroid Mining Crystal Type B I": {
+                    "item_id": 60286,
+                    "name": "Coherent Asteroid Mining Crystal Type B I"
+                  },
+                  "Coherent Asteroid Mining Crystal Type B II": {
+                    "item_id": 60289,
+                    "name": "Coherent Asteroid Mining Crystal Type B II"
+                  },
+                  "Coherent Asteroid Mining Crystal Type C I": {
+                    "item_id": 60287,
+                    "name": "Coherent Asteroid Mining Crystal Type C I"
+                  },
+                  "Coherent Asteroid Mining Crystal Type C II": {
+                    "item_id": 60290,
+                    "name": "Coherent Asteroid Mining Crystal Type C II"
+                  }
+                }
               },
-              "Abyssal Asteroid Mining Crystal Type B I": {
-                "item_id": 60304,
-                "name": "Abyssal Asteroid Mining Crystal Type B I"
+              "Complex Asteroid Mining Crystals": {
+                "id": 3804,
+                "name": "Complex Asteroid Mining Crystals",
+                "subgroups": {},
+                "items": {
+                  "Complex Asteroid Mining Crystal Type A I": {
+                    "item_id": 60297,
+                    "name": "Complex Asteroid Mining Crystal Type A I"
+                  },
+                  "Complex Asteroid Mining Crystal Type A II": {
+                    "item_id": 60300,
+                    "name": "Complex Asteroid Mining Crystal Type A II"
+                  },
+                  "Complex Asteroid Mining Crystal Type B I": {
+                    "item_id": 60298,
+                    "name": "Complex Asteroid Mining Crystal Type B I"
+                  },
+                  "Complex Asteroid Mining Crystal Type B II": {
+                    "item_id": 60301,
+                    "name": "Complex Asteroid Mining Crystal Type B II"
+                  },
+                  "Complex Asteroid Mining Crystal Type C I": {
+                    "item_id": 60299,
+                    "name": "Complex Asteroid Mining Crystal Type C I"
+                  },
+                  "Complex Asteroid Mining Crystal Type C II": {
+                    "item_id": 60302,
+                    "name": "Complex Asteroid Mining Crystal Type C II"
+                  }
+                }
               },
-              "Abyssal Asteroid Mining Crystal Type B II": {
-                "item_id": 60307,
-                "name": "Abyssal Asteroid Mining Crystal Type B II"
+              "Mercoxit Asteroid Mining Crystals": {
+                "id": 3805,
+                "name": "Mercoxit Asteroid Mining Crystals",
+                "subgroups": {},
+                "items": {
+                  "Mercoxit Asteroid Mining Crystal Type A I": {
+                    "item_id": 18054,
+                    "name": "Mercoxit Asteroid Mining Crystal Type A I"
+                  },
+                  "Mercoxit Asteroid Mining Crystal Type A II": {
+                    "item_id": 18608,
+                    "name": "Mercoxit Asteroid Mining Crystal Type A II"
+                  },
+                  "Mercoxit Asteroid Mining Crystal Type B I": {
+                    "item_id": 60309,
+                    "name": "Mercoxit Asteroid Mining Crystal Type B I"
+                  },
+                  "Mercoxit Asteroid Mining Crystal Type B II": {
+                    "item_id": 60311,
+                    "name": "Mercoxit Asteroid Mining Crystal Type B II"
+                  },
+                  "Mercoxit Asteroid Mining Crystal Type C I": {
+                    "item_id": 60310,
+                    "name": "Mercoxit Asteroid Mining Crystal Type C I"
+                  },
+                  "Mercoxit Asteroid Mining Crystal Type C II": {
+                    "item_id": 60312,
+                    "name": "Mercoxit Asteroid Mining Crystal Type C II"
+                  }
+                }
               },
-              "Abyssal Asteroid Mining Crystal Type C I": {
-                "item_id": 60305,
-                "name": "Abyssal Asteroid Mining Crystal Type C I"
+              "Phased Asteroid Mining Crystals": {
+                "id": 3807,
+                "name": "Phased Asteroid Mining Crystals",
+                "subgroups": {},
+                "items": {
+                  "Erratic Ore Mining Crystal Type A I": {
+                    "item_id": 90045,
+                    "name": "Erratic Ore Mining Crystal Type A I"
+                  },
+                  "Erratic Ore Mining Crystal Type A II": {
+                    "item_id": 90047,
+                    "name": "Erratic Ore Mining Crystal Type A II"
+                  },
+                  "Erratic Ore Mining Crystal Type B I": {
+                    "item_id": 90046,
+                    "name": "Erratic Ore Mining Crystal Type B I"
+                  },
+                  "Erratic Ore Mining Crystal Type B II": {
+                    "item_id": 90050,
+                    "name": "Erratic Ore Mining Crystal Type B II"
+                  },
+                  "Erratic Ore Mining Crystal Type C I": {
+                    "item_id": 90048,
+                    "name": "Erratic Ore Mining Crystal Type C I"
+                  },
+                  "Erratic Ore Mining Crystal Type C II": {
+                    "item_id": 90049,
+                    "name": "Erratic Ore Mining Crystal Type C II"
+                  }
+                }
               },
-              "Abyssal Asteroid Mining Crystal Type C II": {
-                "item_id": 60308,
-                "name": "Abyssal Asteroid Mining Crystal Type C II"
+              "Simple Asteroid Mining Crystals": {
+                "id": 3801,
+                "name": "Simple Asteroid Mining Crystals",
+                "subgroups": {},
+                "items": {
+                  "Simple Asteroid Mining Crystal Type A I": {
+                    "item_id": 60276,
+                    "name": "Simple Asteroid Mining Crystal Type A I"
+                  },
+                  "Simple Asteroid Mining Crystal Type A II": {
+                    "item_id": 60281,
+                    "name": "Simple Asteroid Mining Crystal Type A II"
+                  },
+                  "Simple Asteroid Mining Crystal Type B I": {
+                    "item_id": 60279,
+                    "name": "Simple Asteroid Mining Crystal Type B I"
+                  },
+                  "Simple Asteroid Mining Crystal Type B II": {
+                    "item_id": 60283,
+                    "name": "Simple Asteroid Mining Crystal Type B II"
+                  },
+                  "Simple Asteroid Mining Crystal Type C I": {
+                    "item_id": 60280,
+                    "name": "Simple Asteroid Mining Crystal Type C I"
+                  },
+                  "Simple Asteroid Mining Crystal Type C II": {
+                    "item_id": 60284,
+                    "name": "Simple Asteroid Mining Crystal Type C II"
+                  }
+                }
               },
-              "Coherent Asteroid Mining Crystal Type A I": {
-                "item_id": 60285,
-                "name": "Coherent Asteroid Mining Crystal Type A I"
-              },
-              "Coherent Asteroid Mining Crystal Type A II": {
-                "item_id": 60288,
-                "name": "Coherent Asteroid Mining Crystal Type A II"
-              },
-              "Coherent Asteroid Mining Crystal Type B I": {
-                "item_id": 60286,
-                "name": "Coherent Asteroid Mining Crystal Type B I"
-              },
-              "Coherent Asteroid Mining Crystal Type B II": {
-                "item_id": 60289,
-                "name": "Coherent Asteroid Mining Crystal Type B II"
-              },
-              "Coherent Asteroid Mining Crystal Type C I": {
-                "item_id": 60287,
-                "name": "Coherent Asteroid Mining Crystal Type C I"
-              },
-              "Coherent Asteroid Mining Crystal Type C II": {
-                "item_id": 60290,
-                "name": "Coherent Asteroid Mining Crystal Type C II"
-              },
-              "Complex Asteroid Mining Crystal Type A I": {
-                "item_id": 60297,
-                "name": "Complex Asteroid Mining Crystal Type A I"
-              },
-              "Complex Asteroid Mining Crystal Type A II": {
-                "item_id": 60300,
-                "name": "Complex Asteroid Mining Crystal Type A II"
-              },
-              "Complex Asteroid Mining Crystal Type B I": {
-                "item_id": 60298,
-                "name": "Complex Asteroid Mining Crystal Type B I"
-              },
-              "Complex Asteroid Mining Crystal Type B II": {
-                "item_id": 60301,
-                "name": "Complex Asteroid Mining Crystal Type B II"
-              },
-              "Complex Asteroid Mining Crystal Type C I": {
-                "item_id": 60299,
-                "name": "Complex Asteroid Mining Crystal Type C I"
-              },
-              "Complex Asteroid Mining Crystal Type C II": {
-                "item_id": 60302,
-                "name": "Complex Asteroid Mining Crystal Type C II"
-              },
-              "Mercoxit Asteroid Mining Crystal Type A I": {
-                "item_id": 18054,
-                "name": "Mercoxit Asteroid Mining Crystal Type A I"
-              },
-              "Mercoxit Asteroid Mining Crystal Type A II": {
-                "item_id": 18608,
-                "name": "Mercoxit Asteroid Mining Crystal Type A II"
-              },
-              "Mercoxit Asteroid Mining Crystal Type B I": {
-                "item_id": 60309,
-                "name": "Mercoxit Asteroid Mining Crystal Type B I"
-              },
-              "Mercoxit Asteroid Mining Crystal Type B II": {
-                "item_id": 60311,
-                "name": "Mercoxit Asteroid Mining Crystal Type B II"
-              },
-              "Mercoxit Asteroid Mining Crystal Type C I": {
-                "item_id": 60310,
-                "name": "Mercoxit Asteroid Mining Crystal Type C I"
-              },
-              "Mercoxit Asteroid Mining Crystal Type C II": {
-                "item_id": 60312,
-                "name": "Mercoxit Asteroid Mining Crystal Type C II"
-              },
-              "Simple Asteroid Mining Crystal Type A I": {
-                "item_id": 60276,
-                "name": "Simple Asteroid Mining Crystal Type A I"
-              },
-              "Simple Asteroid Mining Crystal Type A II": {
-                "item_id": 60281,
-                "name": "Simple Asteroid Mining Crystal Type A II"
-              },
-              "Simple Asteroid Mining Crystal Type B I": {
-                "item_id": 60279,
-                "name": "Simple Asteroid Mining Crystal Type B I"
-              },
-              "Simple Asteroid Mining Crystal Type B II": {
-                "item_id": 60283,
-                "name": "Simple Asteroid Mining Crystal Type B II"
-              },
-              "Simple Asteroid Mining Crystal Type C I": {
-                "item_id": 60280,
-                "name": "Simple Asteroid Mining Crystal Type C I"
-              },
-              "Simple Asteroid Mining Crystal Type C II": {
-                "item_id": 60284,
-                "name": "Simple Asteroid Mining Crystal Type C II"
-              },
-              "Variegated Asteroid Mining Crystal Type A I": {
-                "item_id": 60291,
-                "name": "Variegated Asteroid Mining Crystal Type A I"
-              },
-              "Variegated Asteroid Mining Crystal Type A II": {
-                "item_id": 60294,
-                "name": "Variegated Asteroid Mining Crystal Type A II"
-              },
-              "Variegated Asteroid Mining Crystal Type B I": {
-                "item_id": 60292,
-                "name": "Variegated Asteroid Mining Crystal Type B I"
-              },
-              "Variegated Asteroid Mining Crystal Type B II": {
-                "item_id": 60295,
-                "name": "Variegated Asteroid Mining Crystal Type B II"
-              },
-              "Variegated Asteroid Mining Crystal Type C I": {
-                "item_id": 60293,
-                "name": "Variegated Asteroid Mining Crystal Type C I"
-              },
-              "Variegated Asteroid Mining Crystal Type C II": {
-                "item_id": 60296,
-                "name": "Variegated Asteroid Mining Crystal Type C II"
+              "Variegated Asteroid Mining Crystals": {
+                "id": 3803,
+                "name": "Variegated Asteroid Mining Crystals",
+                "subgroups": {},
+                "items": {
+                  "Variegated Asteroid Mining Crystal Type A I": {
+                    "item_id": 60291,
+                    "name": "Variegated Asteroid Mining Crystal Type A I"
+                  },
+                  "Variegated Asteroid Mining Crystal Type A II": {
+                    "item_id": 60294,
+                    "name": "Variegated Asteroid Mining Crystal Type A II"
+                  },
+                  "Variegated Asteroid Mining Crystal Type B I": {
+                    "item_id": 60292,
+                    "name": "Variegated Asteroid Mining Crystal Type B I"
+                  },
+                  "Variegated Asteroid Mining Crystal Type B II": {
+                    "item_id": 60295,
+                    "name": "Variegated Asteroid Mining Crystal Type B II"
+                  },
+                  "Variegated Asteroid Mining Crystal Type C I": {
+                    "item_id": 60293,
+                    "name": "Variegated Asteroid Mining Crystal Type C I"
+                  },
+                  "Variegated Asteroid Mining Crystal Type C II": {
+                    "item_id": 60296,
+                    "name": "Variegated Asteroid Mining Crystal Type C II"
+                  }
+                }
               }
-            }
+            },
+            "items": {}
           },
           "Moon Mining Crystals": {
             "id": 2805,
             "name": "Moon Mining Crystals",
-            "subgroups": {},
-            "items": {
-              "Common Moon Mining Crystal Type A I": {
-                "item_id": 46365,
-                "name": "Common Moon Mining Crystal Type A I"
+            "subgroups": {
+              "Common Moon Mining Crystals": {
+                "id": 3808,
+                "name": "Common Moon Mining Crystals",
+                "subgroups": {},
+                "items": {
+                  "Common Moon Mining Crystal Type A I": {
+                    "item_id": 46365,
+                    "name": "Common Moon Mining Crystal Type A I"
+                  },
+                  "Common Moon Mining Crystal Type A II": {
+                    "item_id": 46366,
+                    "name": "Common Moon Mining Crystal Type A II"
+                  },
+                  "Common Moon Mining Crystal Type B I": {
+                    "item_id": 61201,
+                    "name": "Common Moon Mining Crystal Type B I"
+                  },
+                  "Common Moon Mining Crystal Type B II": {
+                    "item_id": 61203,
+                    "name": "Common Moon Mining Crystal Type B II"
+                  },
+                  "Common Moon Mining Crystal Type C I": {
+                    "item_id": 61202,
+                    "name": "Common Moon Mining Crystal Type C I"
+                  },
+                  "Common Moon Mining Crystal Type C II": {
+                    "item_id": 61204,
+                    "name": "Common Moon Mining Crystal Type C II"
+                  }
+                }
               },
-              "Common Moon Mining Crystal Type A II": {
-                "item_id": 46366,
-                "name": "Common Moon Mining Crystal Type A II"
+              "Exceptional Moon Mining Crystals": {
+                "id": 3812,
+                "name": "Exceptional Moon Mining Crystals",
+                "subgroups": {},
+                "items": {
+                  "Exceptional Moon Mining Crystal Type A I": {
+                    "item_id": 46371,
+                    "name": "Exceptional Moon Mining Crystal Type A I"
+                  },
+                  "Exceptional Moon Mining Crystal Type A II": {
+                    "item_id": 46372,
+                    "name": "Exceptional Moon Mining Crystal Type A II"
+                  },
+                  "Exceptional Moon Mining Crystal Type B I": {
+                    "item_id": 61213,
+                    "name": "Exceptional Moon Mining Crystal Type B I"
+                  },
+                  "Exceptional Moon Mining Crystal Type B II": {
+                    "item_id": 61215,
+                    "name": "Exceptional Moon Mining Crystal Type B II"
+                  },
+                  "Exceptional Moon Mining Crystal Type C I": {
+                    "item_id": 61214,
+                    "name": "Exceptional Moon Mining Crystal Type C I"
+                  },
+                  "Exceptional Moon Mining Crystal Type C II": {
+                    "item_id": 61216,
+                    "name": "Exceptional Moon Mining Crystal Type C II"
+                  }
+                }
               },
-              "Common Moon Mining Crystal Type B I": {
-                "item_id": 61201,
-                "name": "Common Moon Mining Crystal Type B I"
+              "Rare Moon Mining Crystals": {
+                "id": 3811,
+                "name": "Rare Moon Mining Crystals",
+                "subgroups": {},
+                "items": {
+                  "Rare Moon Mining Crystal Type A I": {
+                    "item_id": 46369,
+                    "name": "Rare Moon Mining Crystal Type A I"
+                  },
+                  "Rare Moon Mining Crystal Type A II": {
+                    "item_id": 46370,
+                    "name": "Rare Moon Mining Crystal Type A II"
+                  },
+                  "Rare Moon Mining Crystal Type B I": {
+                    "item_id": 61209,
+                    "name": "Rare Moon Mining Crystal Type B I"
+                  },
+                  "Rare Moon Mining Crystal Type B II": {
+                    "item_id": 61211,
+                    "name": "Rare Moon Mining Crystal Type B II"
+                  },
+                  "Rare Moon Mining Crystal Type C I": {
+                    "item_id": 61210,
+                    "name": "Rare Moon Mining Crystal Type C I"
+                  },
+                  "Rare Moon Mining Crystal Type C II": {
+                    "item_id": 61212,
+                    "name": "Rare Moon Mining Crystal Type C II"
+                  }
+                }
               },
-              "Common Moon Mining Crystal Type B II": {
-                "item_id": 61203,
-                "name": "Common Moon Mining Crystal Type B II"
+              "Ubiquitous Moon Mining Crystals": {
+                "id": 3809,
+                "name": "Ubiquitous Moon Mining Crystals",
+                "subgroups": {},
+                "items": {
+                  "Ubiquitous Moon Mining Crystal Type A I": {
+                    "item_id": 46355,
+                    "name": "Ubiquitous Moon Mining Crystal Type A I"
+                  },
+                  "Ubiquitous Moon Mining Crystal Type A II": {
+                    "item_id": 46356,
+                    "name": "Ubiquitous Moon Mining Crystal Type A II"
+                  },
+                  "Ubiquitous Moon Mining Crystal Type B I": {
+                    "item_id": 61197,
+                    "name": "Ubiquitous Moon Mining Crystal Type B I"
+                  },
+                  "Ubiquitous Moon Mining Crystal Type B II": {
+                    "item_id": 61199,
+                    "name": "Ubiquitous Moon Mining Crystal Type B II"
+                  },
+                  "Ubiquitous Moon Mining Crystal Type C I": {
+                    "item_id": 61198,
+                    "name": "Ubiquitous Moon Mining Crystal Type C I"
+                  },
+                  "Ubiquitous Moon Mining Crystal Type C II": {
+                    "item_id": 61200,
+                    "name": "Ubiquitous Moon Mining Crystal Type C II"
+                  }
+                }
               },
-              "Common Moon Mining Crystal Type C I": {
-                "item_id": 61202,
-                "name": "Common Moon Mining Crystal Type C I"
-              },
-              "Common Moon Mining Crystal Type C II": {
-                "item_id": 61204,
-                "name": "Common Moon Mining Crystal Type C II"
-              },
-              "Exceptional Moon Mining Crystal Type A I": {
-                "item_id": 46371,
-                "name": "Exceptional Moon Mining Crystal Type A I"
-              },
-              "Exceptional Moon Mining Crystal Type A II": {
-                "item_id": 46372,
-                "name": "Exceptional Moon Mining Crystal Type A II"
-              },
-              "Exceptional Moon Mining Crystal Type B I": {
-                "item_id": 61213,
-                "name": "Exceptional Moon Mining Crystal Type B I"
-              },
-              "Exceptional Moon Mining Crystal Type B II": {
-                "item_id": 61215,
-                "name": "Exceptional Moon Mining Crystal Type B II"
-              },
-              "Exceptional Moon Mining Crystal Type C I": {
-                "item_id": 61214,
-                "name": "Exceptional Moon Mining Crystal Type C I"
-              },
-              "Exceptional Moon Mining Crystal Type C II": {
-                "item_id": 61216,
-                "name": "Exceptional Moon Mining Crystal Type C II"
-              },
-              "Rare Moon Mining Crystal Type A I": {
-                "item_id": 46369,
-                "name": "Rare Moon Mining Crystal Type A I"
-              },
-              "Rare Moon Mining Crystal Type A II": {
-                "item_id": 46370,
-                "name": "Rare Moon Mining Crystal Type A II"
-              },
-              "Rare Moon Mining Crystal Type B I": {
-                "item_id": 61209,
-                "name": "Rare Moon Mining Crystal Type B I"
-              },
-              "Rare Moon Mining Crystal Type B II": {
-                "item_id": 61211,
-                "name": "Rare Moon Mining Crystal Type B II"
-              },
-              "Rare Moon Mining Crystal Type C I": {
-                "item_id": 61210,
-                "name": "Rare Moon Mining Crystal Type C I"
-              },
-              "Rare Moon Mining Crystal Type C II": {
-                "item_id": 61212,
-                "name": "Rare Moon Mining Crystal Type C II"
-              },
-              "Ubiquitous Moon Mining Crystal Type A I": {
-                "item_id": 46355,
-                "name": "Ubiquitous Moon Mining Crystal Type A I"
-              },
-              "Ubiquitous Moon Mining Crystal Type A II": {
-                "item_id": 46356,
-                "name": "Ubiquitous Moon Mining Crystal Type A II"
-              },
-              "Ubiquitous Moon Mining Crystal Type B I": {
-                "item_id": 61197,
-                "name": "Ubiquitous Moon Mining Crystal Type B I"
-              },
-              "Ubiquitous Moon Mining Crystal Type B II": {
-                "item_id": 61199,
-                "name": "Ubiquitous Moon Mining Crystal Type B II"
-              },
-              "Ubiquitous Moon Mining Crystal Type C I": {
-                "item_id": 61198,
-                "name": "Ubiquitous Moon Mining Crystal Type C I"
-              },
-              "Ubiquitous Moon Mining Crystal Type C II": {
-                "item_id": 61200,
-                "name": "Ubiquitous Moon Mining Crystal Type C II"
-              },
-              "Uncommon Moon Mining Crystal Type A I": {
-                "item_id": 46367,
-                "name": "Uncommon Moon Mining Crystal Type A I"
-              },
-              "Uncommon Moon Mining Crystal Type A II": {
-                "item_id": 46368,
-                "name": "Uncommon Moon Mining Crystal Type A II"
-              },
-              "Uncommon Moon Mining Crystal Type B I": {
-                "item_id": 61205,
-                "name": "Uncommon Moon Mining Crystal Type B I"
-              },
-              "Uncommon Moon Mining Crystal Type B II": {
-                "item_id": 61207,
-                "name": "Uncommon Moon Mining Crystal Type B II"
-              },
-              "Uncommon Moon Mining Crystal Type C I": {
-                "item_id": 61206,
-                "name": "Uncommon Moon Mining Crystal Type C I"
-              },
-              "Uncommon Moon Mining Crystal Type C II": {
-                "item_id": 61208,
-                "name": "Uncommon Moon Mining Crystal Type C II"
+              "Uncommon Moon Mining Crystals": {
+                "id": 3810,
+                "name": "Uncommon Moon Mining Crystals",
+                "subgroups": {},
+                "items": {
+                  "Uncommon Moon Mining Crystal Type A I": {
+                    "item_id": 46367,
+                    "name": "Uncommon Moon Mining Crystal Type A I"
+                  },
+                  "Uncommon Moon Mining Crystal Type A II": {
+                    "item_id": 46368,
+                    "name": "Uncommon Moon Mining Crystal Type A II"
+                  },
+                  "Uncommon Moon Mining Crystal Type B I": {
+                    "item_id": 61205,
+                    "name": "Uncommon Moon Mining Crystal Type B I"
+                  },
+                  "Uncommon Moon Mining Crystal Type B II": {
+                    "item_id": 61207,
+                    "name": "Uncommon Moon Mining Crystal Type B II"
+                  },
+                  "Uncommon Moon Mining Crystal Type C I": {
+                    "item_id": 61206,
+                    "name": "Uncommon Moon Mining Crystal Type C I"
+                  },
+                  "Uncommon Moon Mining Crystal Type C II": {
+                    "item_id": 61208,
+                    "name": "Uncommon Moon Mining Crystal Type C II"
+                  }
+                }
               }
-            }
+            },
+            "items": {}
           }
         },
         "items": {}
@@ -8978,6 +9109,25 @@
                   }
                 }
               },
+              "Expedition Command Burst Charges": {
+                "id": 3757,
+                "name": "Expedition Command Burst Charges",
+                "subgroups": {},
+                "items": {
+                  "Expedition Pinpointing Charge Blueprint": {
+                    "item_id": 89636,
+                    "name": "Expedition Pinpointing Charge Blueprint"
+                  },
+                  "Expedition Reach Charge Blueprint": {
+                    "item_id": 89635,
+                    "name": "Expedition Reach Charge Blueprint"
+                  },
+                  "Expedition Strength Charge Blueprint": {
+                    "item_id": 89634,
+                    "name": "Expedition Strength Charge Blueprint"
+                  }
+                }
+              },
               "Information Command Burst Charges": {
                 "id": 2292,
                 "name": "Information Command Burst Charges",
@@ -9005,6 +9155,10 @@
                   "Mining Equipment Preservation Charge Blueprint": {
                     "item_id": 42880,
                     "name": "Mining Equipment Preservation Charge Blueprint"
+                  },
+                  "Mining Laser Efficiency Charge Blueprint": {
+                    "item_id": 90734,
+                    "name": "Mining Laser Efficiency Charge Blueprint"
                   },
                   "Mining Laser Field Enhancement Charge Blueprint": {
                     "item_id": 42881,
@@ -9439,6 +9593,18 @@
                   "Complex Asteroid Mining Crystal Type C I Blueprint": {
                     "item_id": 60370,
                     "name": "Complex Asteroid Mining Crystal Type C I Blueprint"
+                  },
+                  "Erratic Ore Mining Crystal Type A I Blueprint": {
+                    "item_id": 90054,
+                    "name": "Erratic Ore Mining Crystal Type A I Blueprint"
+                  },
+                  "Erratic Ore Mining Crystal Type B I Blueprint": {
+                    "item_id": 90055,
+                    "name": "Erratic Ore Mining Crystal Type B I Blueprint"
+                  },
+                  "Erratic Ore Mining Crystal Type C I Blueprint": {
+                    "item_id": 90056,
+                    "name": "Erratic Ore Mining Crystal Type C I Blueprint"
                   },
                   "Mercoxit Asteroid Mining Crystal Type A I Blueprint": {
                     "item_id": 18055,
@@ -11958,6 +12124,45 @@
               }
             }
           },
+          "Erratic Ore Formulas": {
+            "id": 3782,
+            "name": "Erratic Ore Formulas",
+            "subgroups": {},
+            "items": {
+              "Unrefined Isogen Formula": {
+                "item_id": 90277,
+                "name": "Unrefined Isogen Formula"
+              },
+              "Unrefined Megacyte Formula": {
+                "item_id": 90281,
+                "name": "Unrefined Megacyte Formula"
+              },
+              "Unrefined Mexallon Formula": {
+                "item_id": 90276,
+                "name": "Unrefined Mexallon Formula"
+              },
+              "Unrefined Morphite Formula": {
+                "item_id": 90282,
+                "name": "Unrefined Morphite Formula"
+              },
+              "Unrefined Nocxium Formula": {
+                "item_id": 90278,
+                "name": "Unrefined Nocxium Formula"
+              },
+              "Unrefined Pyerite Formula": {
+                "item_id": 90275,
+                "name": "Unrefined Pyerite Formula"
+              },
+              "Unrefined Tritanium Formula": {
+                "item_id": 90274,
+                "name": "Unrefined Tritanium Formula"
+              },
+              "Unrefined Zydrine Formula": {
+                "item_id": 90279,
+                "name": "Unrefined Zydrine Formula"
+              }
+            }
+          },
           "Molecular-Forged Reaction Formulas": {
             "id": 2769,
             "name": "Molecular-Forged Reaction Formulas",
@@ -12501,6 +12706,10 @@
                 "name": "Sensor Boosters",
                 "subgroups": {},
                 "items": {
+                  "Integrated Sensor Array Blueprint": {
+                    "item_id": 90476,
+                    "name": "Integrated Sensor Array Blueprint"
+                  },
                   "Networked Sensor Array Blueprint": {
                     "item_id": 41412,
                     "name": "Networked Sensor Array Blueprint"
@@ -12784,6 +12993,10 @@
               "Cynosural Field Generator I Blueprint": {
                 "item_id": 21604,
                 "name": "Cynosural Field Generator I Blueprint"
+              },
+              "Expedition Command Burst I Blueprint": {
+                "item_id": 89632,
+                "name": "Expedition Command Burst I Blueprint"
               },
               "Industrial Cynosural Field Generator Blueprint": {
                 "item_id": 52695,
@@ -13398,13 +13611,13 @@
                     "item_id": 1074,
                     "name": "Cargo Scanner I Blueprint"
                   },
+                  "Mining Survey Chipset I Blueprint": {
+                    "item_id": 1076,
+                    "name": "Mining Survey Chipset I Blueprint"
+                  },
                   "Ship Scanner I Blueprint": {
                     "item_id": 1075,
                     "name": "Ship Scanner I Blueprint"
-                  },
-                  "Survey Scanner I Blueprint": {
-                    "item_id": 1076,
-                    "name": "Survey Scanner I Blueprint"
                   }
                 }
               },
@@ -14426,93 +14639,6 @@
                   "Pulse Activated Nexus Invulnerability Core Blueprint": {
                     "item_id": 42889,
                     "name": "Pulse Activated Nexus Invulnerability Core Blueprint"
-                  }
-                }
-              },
-              "Weapon Upgrades": {
-                "id": 343,
-                "name": "Weapon Upgrades",
-                "subgroups": {},
-                "items": {
-                  "Ballistic Control System I Blueprint": {
-                    "item_id": 12275,
-                    "name": "Ballistic Control System I Blueprint"
-                  },
-                  "Bastion Module I Blueprint": {
-                    "item_id": 33401,
-                    "name": "Bastion Module I Blueprint"
-                  },
-                  "Capital Industrial Core I Blueprint": {
-                    "item_id": 28584,
-                    "name": "Capital Industrial Core I Blueprint"
-                  },
-                  "Consortium Vorton Tuning System Blueprint": {
-                    "item_id": 79175,
-                    "name": "Consortium Vorton Tuning System Blueprint"
-                  },
-                  "Entropic Radiation Sink I Blueprint": {
-                    "item_id": 48095,
-                    "name": "Entropic Radiation Sink I Blueprint"
-                  },
-                  "Gyrostabilizer I Blueprint": {
-                    "item_id": 1096,
-                    "name": "Gyrostabilizer I Blueprint"
-                  },
-                  "Heat Sink I Blueprint": {
-                    "item_id": 11612,
-                    "name": "Heat Sink I Blueprint"
-                  },
-                  "Kasiha's Modified Vorton Tuning System Blueprint": {
-                    "item_id": 79176,
-                    "name": "Kasiha's Modified Vorton Tuning System Blueprint"
-                  },
-                  "Large Industrial Core I Blueprint": {
-                    "item_id": 59171,
-                    "name": "Large Industrial Core I Blueprint"
-                  },
-                  "Magnetic Field Stabilizer I Blueprint": {
-                    "item_id": 9945,
-                    "name": "Magnetic Field Stabilizer I Blueprint"
-                  },
-                  "Medium Industrial Core I Blueprint": {
-                    "item_id": 62592,
-                    "name": "Medium Industrial Core I Blueprint"
-                  },
-                  "Missile Guidance Computer I Blueprint": {
-                    "item_id": 35791,
-                    "name": "Missile Guidance Computer I Blueprint"
-                  },
-                  "Missile Guidance Enhancer I Blueprint": {
-                    "item_id": 35772,
-                    "name": "Missile Guidance Enhancer I Blueprint"
-                  },
-                  "ML-EKP 'Polybolos' Ballistic Control System Blueprint": {
-                    "item_id": 49971,
-                    "name": "ML-EKP 'Polybolos' Ballistic Control System Blueprint"
-                  },
-                  "Remote Tracking Computer I Blueprint": {
-                    "item_id": 11617,
-                    "name": "Remote Tracking Computer I Blueprint"
-                  },
-                  "Siege Module I Blueprint": {
-                    "item_id": 20281,
-                    "name": "Siege Module I Blueprint"
-                  },
-                  "Tracking Computer I Blueprint": {
-                    "item_id": 11621,
-                    "name": "Tracking Computer I Blueprint"
-                  },
-                  "Tracking Enhancer I Blueprint": {
-                    "item_id": 11616,
-                    "name": "Tracking Enhancer I Blueprint"
-                  },
-                  "Triage Module I Blueprint": {
-                    "item_id": 27952,
-                    "name": "Triage Module I Blueprint"
-                  },
-                  "Veles Entropic Radiation Sink Blueprint": {
-                    "item_id": 52245,
-                    "name": "Veles Entropic Radiation Sink Blueprint"
                   }
                 }
               }
@@ -16906,6 +17032,17 @@
                     "name": "Thrasher Blueprint"
                   }
                 }
+              },
+              "ORE": {
+                "id": 3754,
+                "name": "ORE",
+                "subgroups": {},
+                "items": {
+                  "Pioneer Blueprint": {
+                    "item_id": 89485,
+                    "name": "Pioneer Blueprint"
+                  }
+                }
               }
             },
             "items": {}
@@ -18868,6 +19005,17 @@
                   }
                 }
               },
+              "Mobile Phase Anchors": {
+                "id": 3779,
+                "name": "Mobile Phase Anchors",
+                "subgroups": {},
+                "items": {
+                  "Mobile Phase Anchor Blueprint": {
+                    "item_id": 90039,
+                    "name": "Mobile Phase Anchor Blueprint"
+                  }
+                }
+              },
               "Mobile Scan Inhibitors": {
                 "id": 1843,
                 "name": "Mobile Scan Inhibitors",
@@ -20602,6 +20750,10 @@
           "Mining Drone II": {
             "item_id": 10250,
             "name": "Mining Drone II"
+          },
+          "Mutated 'Excavator' Ice Harvesting Drone": {
+            "item_id": 90622,
+            "name": "Mutated 'Excavator' Ice Harvesting Drone"
           }
         }
       },
@@ -23640,6 +23792,10 @@
                         "item_id": 33406,
                         "name": "Caldari Navy Command Mindlink"
                       },
+                      "Expedition Command Mindlink": {
+                        "item_id": 89617,
+                        "name": "Expedition Command Mindlink"
+                      },
                       "Federation Navy Command Mindlink": {
                         "item_id": 33404,
                         "name": "Federation Navy Command Mindlink"
@@ -23671,6 +23827,10 @@
                       "Shield Command Mindlink": {
                         "item_id": 21888,
                         "name": "Shield Command Mindlink"
+                      },
+                      "Sisters Expedition Command Mindlink": {
+                        "item_id": 89618,
+                        "name": "Sisters Expedition Command Mindlink"
                       },
                       "Skirmish Command Mindlink": {
                         "item_id": 21890,
@@ -27855,25 +28015,37 @@
                     "item_id": 16264,
                     "name": "Blue Ice"
                   },
+                  "Blue Ice IV-Grade": {
+                    "item_id": 17975,
+                    "name": "Blue Ice IV-Grade"
+                  },
                   "Clear Icicle": {
                     "item_id": 16262,
                     "name": "Clear Icicle"
+                  },
+                  "Clear Icicle IV-Grade": {
+                    "item_id": 17978,
+                    "name": "Clear Icicle IV-Grade"
                   },
                   "Compressed Blue Ice": {
                     "item_id": 28433,
                     "name": "Compressed Blue Ice"
                   },
+                  "Compressed Blue Ice IV-Grade": {
+                    "item_id": 28443,
+                    "name": "Compressed Blue Ice IV-Grade"
+                  },
                   "Compressed Clear Icicle": {
                     "item_id": 28434,
                     "name": "Compressed Clear Icicle"
                   },
+                  "Compressed Clear Icicle IV-Grade": {
+                    "item_id": 28436,
+                    "name": "Compressed Clear Icicle IV-Grade"
+                  },
                   "Compressed Dark Glitter": {
                     "item_id": 28435,
                     "name": "Compressed Dark Glitter"
-                  },
-                  "Compressed Enriched Clear Icicle": {
-                    "item_id": 28436,
-                    "name": "Compressed Enriched Clear Icicle"
                   },
                   "Compressed Gelidus": {
                     "item_id": 28437,
@@ -27883,6 +28055,10 @@
                     "item_id": 28438,
                     "name": "Compressed Glacial Mass"
                   },
+                  "Compressed Glacial Mass IV-Grade": {
+                    "item_id": 28442,
+                    "name": "Compressed Glacial Mass IV-Grade"
+                  },
                   "Compressed Glare Crust": {
                     "item_id": 28439,
                     "name": "Compressed Glare Crust"
@@ -27891,29 +28067,17 @@
                     "item_id": 28440,
                     "name": "Compressed Krystallos"
                   },
-                  "Compressed Pristine White Glaze": {
-                    "item_id": 28441,
-                    "name": "Compressed Pristine White Glaze"
-                  },
-                  "Compressed Smooth Glacial Mass": {
-                    "item_id": 28442,
-                    "name": "Compressed Smooth Glacial Mass"
-                  },
-                  "Compressed Thick Blue Ice": {
-                    "item_id": 28443,
-                    "name": "Compressed Thick Blue Ice"
-                  },
                   "Compressed White Glaze": {
                     "item_id": 28444,
                     "name": "Compressed White Glaze"
                   },
+                  "Compressed White Glaze IV-Grade": {
+                    "item_id": 28441,
+                    "name": "Compressed White Glaze IV-Grade"
+                  },
                   "Dark Glitter": {
                     "item_id": 16267,
                     "name": "Dark Glitter"
-                  },
-                  "Enriched Clear Icicle": {
-                    "item_id": 17978,
-                    "name": "Enriched Clear Icicle"
                   },
                   "Gelidus": {
                     "item_id": 16268,
@@ -27923,6 +28087,10 @@
                     "item_id": 16263,
                     "name": "Glacial Mass"
                   },
+                  "Glacial Mass IV-Grade": {
+                    "item_id": 17977,
+                    "name": "Glacial Mass IV-Grade"
+                  },
                   "Glare Crust": {
                     "item_id": 16266,
                     "name": "Glare Crust"
@@ -27931,21 +28099,13 @@
                     "item_id": 16269,
                     "name": "Krystallos"
                   },
-                  "Pristine White Glaze": {
-                    "item_id": 17976,
-                    "name": "Pristine White Glaze"
-                  },
-                  "Smooth Glacial Mass": {
-                    "item_id": 17977,
-                    "name": "Smooth Glacial Mass"
-                  },
-                  "Thick Blue Ice": {
-                    "item_id": 17975,
-                    "name": "Thick Blue Ice"
-                  },
                   "White Glaze": {
                     "item_id": 16265,
                     "name": "White Glaze"
+                  },
+                  "White Glaze IV-Grade": {
+                    "item_id": 17976,
+                    "name": "White Glaze IV-Grade"
                   }
                 }
               },
@@ -28484,49 +28644,49 @@
                         "item_id": 22,
                         "name": "Arkonor"
                       },
+                      "Arkonor II-Grade": {
+                        "item_id": 17425,
+                        "name": "Arkonor II-Grade"
+                      },
+                      "Arkonor III-Grade": {
+                        "item_id": 17426,
+                        "name": "Arkonor III-Grade"
+                      },
+                      "Arkonor IV-Grade": {
+                        "item_id": 46678,
+                        "name": "Arkonor IV-Grade"
+                      },
                       "Batch Compressed Arkonor": {
                         "item_id": 28367,
                         "name": "Batch Compressed Arkonor"
                       },
-                      "Batch Compressed Crimson Arkonor": {
+                      "Batch Compressed Arkonor II-Grade": {
                         "item_id": 28385,
-                        "name": "Batch Compressed Crimson Arkonor"
+                        "name": "Batch Compressed Arkonor II-Grade"
                       },
-                      "Batch Compressed Flawless Arkonor": {
-                        "item_id": 46691,
-                        "name": "Batch Compressed Flawless Arkonor"
-                      },
-                      "Batch Compressed Prime Arkonor": {
+                      "Batch Compressed Arkonor III-Grade": {
                         "item_id": 28387,
-                        "name": "Batch Compressed Prime Arkonor"
+                        "name": "Batch Compressed Arkonor III-Grade"
+                      },
+                      "Batch Compressed Arkonor IV-Grade": {
+                        "item_id": 46691,
+                        "name": "Batch Compressed Arkonor IV-Grade"
                       },
                       "Compressed Arkonor": {
                         "item_id": 62568,
                         "name": "Compressed Arkonor"
                       },
-                      "Compressed Crimson Arkonor": {
+                      "Compressed Arkonor II-Grade": {
                         "item_id": 62569,
-                        "name": "Compressed Crimson Arkonor"
+                        "name": "Compressed Arkonor II-Grade"
                       },
-                      "Compressed Flawless Arkonor": {
-                        "item_id": 62571,
-                        "name": "Compressed Flawless Arkonor"
-                      },
-                      "Compressed Prime Arkonor": {
+                      "Compressed Arkonor III-Grade": {
                         "item_id": 62570,
-                        "name": "Compressed Prime Arkonor"
+                        "name": "Compressed Arkonor III-Grade"
                       },
-                      "Crimson Arkonor": {
-                        "item_id": 17425,
-                        "name": "Crimson Arkonor"
-                      },
-                      "Flawless Arkonor": {
-                        "item_id": 46678,
-                        "name": "Flawless Arkonor"
-                      },
-                      "Prime Arkonor": {
-                        "item_id": 17426,
-                        "name": "Prime Arkonor"
+                      "Compressed Arkonor IV-Grade": {
+                        "item_id": 62571,
+                        "name": "Compressed Arkonor IV-Grade"
                       }
                     }
                   },
@@ -28535,29 +28695,29 @@
                     "name": "Bezdnacine",
                     "subgroups": {},
                     "items": {
-                      "Abyssal Bezdnacine": {
-                        "item_id": 56627,
-                        "name": "Abyssal Bezdnacine"
-                      },
                       "Bezdnacine": {
                         "item_id": 52316,
                         "name": "Bezdnacine"
                       },
-                      "Compressed Abyssal Bezdnacine": {
-                        "item_id": 62577,
-                        "name": "Compressed Abyssal Bezdnacine"
+                      "Bezdnacine II-Grade": {
+                        "item_id": 56627,
+                        "name": "Bezdnacine II-Grade"
+                      },
+                      "Bezdnacine III-Grade": {
+                        "item_id": 56628,
+                        "name": "Bezdnacine III-Grade"
                       },
                       "Compressed Bezdnacine": {
                         "item_id": 62576,
                         "name": "Compressed Bezdnacine"
                       },
-                      "Compressed Hadal Bezdnacine": {
-                        "item_id": 62578,
-                        "name": "Compressed Hadal Bezdnacine"
+                      "Compressed Bezdnacine II-Grade": {
+                        "item_id": 62577,
+                        "name": "Compressed Bezdnacine II-Grade"
                       },
-                      "Hadal Bezdnacine": {
-                        "item_id": 56628,
-                        "name": "Hadal Bezdnacine"
+                      "Compressed Bezdnacine III-Grade": {
+                        "item_id": 62578,
+                        "name": "Compressed Bezdnacine III-Grade"
                       }
                     }
                   },
@@ -28570,49 +28730,49 @@
                         "item_id": 28388,
                         "name": "Batch Compressed Bistot"
                       },
-                      "Batch Compressed Cubic Bistot": {
-                        "item_id": 46692,
-                        "name": "Batch Compressed Cubic Bistot"
-                      },
-                      "Batch Compressed Monoclinic Bistot": {
-                        "item_id": 28389,
-                        "name": "Batch Compressed Monoclinic Bistot"
-                      },
-                      "Batch Compressed Triclinic Bistot": {
+                      "Batch Compressed Bistot II-Grade": {
                         "item_id": 28390,
-                        "name": "Batch Compressed Triclinic Bistot"
+                        "name": "Batch Compressed Bistot II-Grade"
+                      },
+                      "Batch Compressed Bistot III-Grade": {
+                        "item_id": 28389,
+                        "name": "Batch Compressed Bistot III-Grade"
+                      },
+                      "Batch Compressed Bistot IV-Grade": {
+                        "item_id": 46692,
+                        "name": "Batch Compressed Bistot IV-Grade"
                       },
                       "Bistot": {
                         "item_id": 1223,
                         "name": "Bistot"
                       },
+                      "Bistot II-Grade": {
+                        "item_id": 17428,
+                        "name": "Bistot II-Grade"
+                      },
+                      "Bistot III-Grade": {
+                        "item_id": 17429,
+                        "name": "Bistot III-Grade"
+                      },
+                      "Bistot IV-Grade": {
+                        "item_id": 46676,
+                        "name": "Bistot IV-Grade"
+                      },
                       "Compressed Bistot": {
                         "item_id": 62564,
                         "name": "Compressed Bistot"
                       },
-                      "Compressed Cubic Bistot": {
-                        "item_id": 62567,
-                        "name": "Compressed Cubic Bistot"
-                      },
-                      "Compressed Monoclinic Bistot": {
-                        "item_id": 62566,
-                        "name": "Compressed Monoclinic Bistot"
-                      },
-                      "Compressed Triclinic Bistot": {
+                      "Compressed Bistot II-Grade": {
                         "item_id": 62565,
-                        "name": "Compressed Triclinic Bistot"
+                        "name": "Compressed Bistot II-Grade"
                       },
-                      "Cubic Bistot": {
-                        "item_id": 46676,
-                        "name": "Cubic Bistot"
+                      "Compressed Bistot III-Grade": {
+                        "item_id": 62566,
+                        "name": "Compressed Bistot III-Grade"
                       },
-                      "Monoclinic Bistot": {
-                        "item_id": 17429,
-                        "name": "Monoclinic Bistot"
-                      },
-                      "Triclinic Bistot": {
-                        "item_id": 17428,
-                        "name": "Triclinic Bistot"
+                      "Compressed Bistot IV-Grade": {
+                        "item_id": 62567,
+                        "name": "Compressed Bistot IV-Grade"
                       }
                     }
                   },
@@ -28625,49 +28785,45 @@
                         "item_id": 28391,
                         "name": "Batch Compressed Crokite"
                       },
-                      "Batch Compressed Crystalline Crokite": {
+                      "Batch Compressed Crokite III-Grade": {
                         "item_id": 28392,
-                        "name": "Batch Compressed Crystalline Crokite"
+                        "name": "Batch Compressed Crokite III-Grade"
                       },
-                      "Batch Compressed Pellucid Crokite": {
-                        "item_id": 46693,
-                        "name": "Batch Compressed Pellucid Crokite"
-                      },
-                      "Batch Compressed Sharp Crokite": {
+                      "Batch Compressed Crokite IV-Grade": {
                         "item_id": 28393,
-                        "name": "Batch Compressed Sharp Crokite"
+                        "name": "Batch Compressed Crokite IV-Grade"
+                      },
+                      "Compressed  Crokite IV-Grade": {
+                        "item_id": 62563,
+                        "name": "Compressed  Crokite IV-Grade"
                       },
                       "Compressed Crokite": {
                         "item_id": 62560,
                         "name": "Compressed Crokite"
                       },
-                      "Compressed Crystalline Crokite": {
-                        "item_id": 62562,
-                        "name": "Compressed Crystalline Crokite"
-                      },
-                      "Compressed Pellucid Crokite": {
-                        "item_id": 62563,
-                        "name": "Compressed Pellucid Crokite"
-                      },
-                      "Compressed Sharp Crokite": {
+                      "Compressed Crokite II-Grade": {
                         "item_id": 62561,
-                        "name": "Compressed Sharp Crokite"
+                        "name": "Compressed Crokite II-Grade"
+                      },
+                      "Compressed Crokite III-Grade": {
+                        "item_id": 62562,
+                        "name": "Compressed Crokite III-Grade"
                       },
                       "Crokite": {
                         "item_id": 1225,
                         "name": "Crokite"
                       },
-                      "Crystalline Crokite": {
-                        "item_id": 17433,
-                        "name": "Crystalline Crokite"
-                      },
-                      "Pellucid Crokite": {
-                        "item_id": 46677,
-                        "name": "Pellucid Crokite"
-                      },
-                      "Sharp Crokite": {
+                      "Crokite II-Grade": {
                         "item_id": 17432,
-                        "name": "Sharp Crokite"
+                        "name": "Crokite II-Grade"
+                      },
+                      "Crokite III-Grade": {
+                        "item_id": 17433,
+                        "name": "Crokite III-Grade"
+                      },
+                      "Crokite IV-Grade": {
+                        "item_id": 46677,
+                        "name": "Crokite IV-Grade"
                       }
                     }
                   },
@@ -28680,49 +28836,49 @@
                         "item_id": 28394,
                         "name": "Batch Compressed Dark Ochre"
                       },
-                      "Batch Compressed Jet Ochre": {
-                        "item_id": 46694,
-                        "name": "Batch Compressed Jet Ochre"
-                      },
-                      "Batch Compressed Obsidian Ochre": {
-                        "item_id": 28395,
-                        "name": "Batch Compressed Obsidian Ochre"
-                      },
-                      "Batch Compressed Onyx Ochre": {
+                      "Batch Compressed Dark Ochre II-Grade": {
                         "item_id": 28396,
-                        "name": "Batch Compressed Onyx Ochre"
+                        "name": "Batch Compressed Dark Ochre II-Grade"
+                      },
+                      "Batch Compressed Dark Ochre III-Grade": {
+                        "item_id": 28395,
+                        "name": "Batch Compressed Dark Ochre III-Grade"
+                      },
+                      "Batch Compressed Dark Ochre IV-Grade": {
+                        "item_id": 46694,
+                        "name": "Batch Compressed Dark Ochre IV-Grade"
                       },
                       "Compressed Dark Ochre": {
                         "item_id": 62556,
                         "name": "Compressed Dark Ochre"
                       },
-                      "Compressed Jet Ochre": {
-                        "item_id": 62559,
-                        "name": "Compressed Jet Ochre"
-                      },
-                      "Compressed Obsidian Ochre": {
-                        "item_id": 62558,
-                        "name": "Compressed Obsidian Ochre"
-                      },
-                      "Compressed Onyx Ochre": {
+                      "Compressed Dark Ochre II-Grade": {
                         "item_id": 62557,
-                        "name": "Compressed Onyx Ochre"
+                        "name": "Compressed Dark Ochre II-Grade"
+                      },
+                      "Compressed Dark Ochre III-Grade": {
+                        "item_id": 62558,
+                        "name": "Compressed Dark Ochre III-Grade"
+                      },
+                      "Compressed Dark Ochre IV-Grade": {
+                        "item_id": 62559,
+                        "name": "Compressed Dark Ochre IV-Grade"
                       },
                       "Dark Ochre": {
                         "item_id": 1232,
                         "name": "Dark Ochre"
                       },
-                      "Jet Ochre": {
-                        "item_id": 46675,
-                        "name": "Jet Ochre"
-                      },
-                      "Obsidian Ochre": {
-                        "item_id": 17437,
-                        "name": "Obsidian Ochre"
-                      },
-                      "Onyx Ochre": {
+                      "Dark Ochre II-Grade": {
                         "item_id": 17436,
-                        "name": "Onyx Ochre"
+                        "name": "Dark Ochre II-Grade"
+                      },
+                      "Dark Ochre III-Grade": {
+                        "item_id": 17437,
+                        "name": "Dark Ochre III-Grade"
+                      },
+                      "Dark Ochre IV-Grade": {
+                        "item_id": 46675,
+                        "name": "Dark Ochre IV-Grade"
                       }
                     }
                   },
@@ -28735,33 +28891,33 @@
                         "item_id": 75287,
                         "name": "Compressed Ducinium"
                       },
-                      "Compressed Imperial Ducinium": {
-                        "item_id": 75290,
-                        "name": "Compressed Imperial Ducinium"
-                      },
-                      "Compressed Noble Ducinium": {
+                      "Compressed Ducinium II-Grade": {
                         "item_id": 75288,
-                        "name": "Compressed Noble Ducinium"
+                        "name": "Compressed Ducinium II-Grade"
                       },
-                      "Compressed Royal Ducinium": {
+                      "Compressed Ducinium III-Grade": {
                         "item_id": 75289,
-                        "name": "Compressed Royal Ducinium"
+                        "name": "Compressed Ducinium III-Grade"
+                      },
+                      "Compressed Ducinium IV-Grade": {
+                        "item_id": 75290,
+                        "name": "Compressed Ducinium IV-Grade"
                       },
                       "Ducinium": {
                         "item_id": 74533,
                         "name": "Ducinium"
                       },
-                      "Imperial Ducinium": {
-                        "item_id": 74536,
-                        "name": "Imperial Ducinium"
-                      },
-                      "Noble Ducinium": {
+                      "Ducinium II-Grade": {
                         "item_id": 74534,
-                        "name": "Noble Ducinium"
+                        "name": "Ducinium II-Grade"
                       },
-                      "Royal Ducinium": {
+                      "Ducinium III-Grade": {
                         "item_id": 74535,
-                        "name": "Royal Ducinium"
+                        "name": "Ducinium III-Grade"
+                      },
+                      "Ducinium IV-Grade": {
+                        "item_id": 74536,
+                        "name": "Ducinium IV-Grade"
                       }
                     }
                   },
@@ -28770,37 +28926,37 @@
                     "name": "Eifyrium",
                     "subgroups": {},
                     "items": {
-                      "Augmented Eifyrium": {
-                        "item_id": 74532,
-                        "name": "Augmented Eifyrium"
-                      },
-                      "Boosted Eifyrium": {
-                        "item_id": 74531,
-                        "name": "Boosted Eifyrium"
-                      },
-                      "Compressed Augmented Eifyrium": {
-                        "item_id": 75286,
-                        "name": "Compressed Augmented Eifyrium"
-                      },
-                      "Compressed Boosted Eifyrium": {
-                        "item_id": 75285,
-                        "name": "Compressed Boosted Eifyrium"
-                      },
-                      "Compressed Doped Eifyrium": {
-                        "item_id": 75284,
-                        "name": "Compressed Doped Eifyrium"
-                      },
                       "Compressed Eifyrium": {
                         "item_id": 75283,
                         "name": "Compressed Eifyrium"
                       },
-                      "Doped Eifyrium": {
-                        "item_id": 74530,
-                        "name": "Doped Eifyrium"
+                      "Compressed Eifyrium II-Grade": {
+                        "item_id": 75284,
+                        "name": "Compressed Eifyrium II-Grade"
+                      },
+                      "Compressed Eifyrium III-Grade": {
+                        "item_id": 75285,
+                        "name": "Compressed Eifyrium III-Grade"
+                      },
+                      "Compressed Eifyrium IV-Grade": {
+                        "item_id": 75286,
+                        "name": "Compressed Eifyrium IV-Grade"
                       },
                       "Eifyrium": {
                         "item_id": 74529,
                         "name": "Eifyrium"
+                      },
+                      "Eifyrium II-Grade": {
+                        "item_id": 74530,
+                        "name": "Eifyrium II-Grade"
+                      },
+                      "Eifyrium III-Grade": {
+                        "item_id": 74531,
+                        "name": "Eifyrium III-Grade"
+                      },
+                      "Eifyrium IV-Grade": {
+                        "item_id": 74532,
+                        "name": "Eifyrium IV-Grade"
                       }
                     }
                   },
@@ -28809,53 +28965,53 @@
                     "name": "Gneiss",
                     "subgroups": {},
                     "items": {
-                      "Batch Compressed Brilliant Gneiss": {
-                        "item_id": 46695,
-                        "name": "Batch Compressed Brilliant Gneiss"
-                      },
                       "Batch Compressed Gneiss": {
                         "item_id": 28397,
                         "name": "Batch Compressed Gneiss"
                       },
-                      "Batch Compressed Iridescent Gneiss": {
+                      "Batch Compressed Gneiss II-Grade": {
                         "item_id": 28398,
-                        "name": "Batch Compressed Iridescent Gneiss"
+                        "name": "Batch Compressed Gneiss II-Grade"
                       },
-                      "Batch Compressed Prismatic Gneiss": {
+                      "Batch Compressed Gneiss III-Grade": {
                         "item_id": 28399,
-                        "name": "Batch Compressed Prismatic Gneiss"
+                        "name": "Batch Compressed Gneiss III-Grade"
                       },
-                      "Brilliant Gneiss": {
-                        "item_id": 46679,
-                        "name": "Brilliant Gneiss"
-                      },
-                      "Compressed Brilliant Gneiss": {
-                        "item_id": 62555,
-                        "name": "Compressed Brilliant Gneiss"
+                      "Batch Compressed Gneiss IV-Grade": {
+                        "item_id": 46695,
+                        "name": "Batch Compressed Gneiss IV-Grade"
                       },
                       "Compressed Gneiss": {
                         "item_id": 62552,
                         "name": "Compressed Gneiss"
                       },
-                      "Compressed Iridescent Gneiss": {
-                        "item_id": 62553,
-                        "name": "Compressed Iridescent Gneiss"
+                      "Compressed Gneiss (IV-Grade)": {
+                        "item_id": 62555,
+                        "name": "Compressed Gneiss (IV-Grade)"
                       },
-                      "Compressed Prismatic Gneiss": {
+                      "Compressed Gneiss II-Grade": {
+                        "item_id": 62553,
+                        "name": "Compressed Gneiss II-Grade"
+                      },
+                      "Compressed Gneiss III-Grade": {
                         "item_id": 62554,
-                        "name": "Compressed Prismatic Gneiss"
+                        "name": "Compressed Gneiss III-Grade"
                       },
                       "Gneiss": {
                         "item_id": 1229,
                         "name": "Gneiss"
                       },
-                      "Iridescent Gneiss": {
+                      "Gneiss II-Grade": {
                         "item_id": 17865,
-                        "name": "Iridescent Gneiss"
+                        "name": "Gneiss II-Grade"
                       },
-                      "Prismatic Gneiss": {
+                      "Gneiss III-Grade": {
                         "item_id": 17866,
-                        "name": "Prismatic Gneiss"
+                        "name": "Gneiss III-Grade"
+                      },
+                      "Gneiss IV-Grade": {
+                        "item_id": 46679,
+                        "name": "Gneiss IV-Grade"
                       }
                     }
                   },
@@ -28864,37 +29020,37 @@
                     "name": "Griemeer",
                     "subgroups": {},
                     "items": {
-                      "Clear Griemeer": {
-                        "item_id": 81976,
-                        "name": "Clear Griemeer"
-                      },
-                      "Compressed Clear Griemeer": {
-                        "item_id": 82317,
-                        "name": "Compressed Clear Griemeer"
-                      },
                       "Compressed Griemeer": {
                         "item_id": 82316,
                         "name": "Compressed Griemeer"
                       },
-                      "Compressed Inky Griemeer": {
-                        "item_id": 82318,
-                        "name": "Compressed Inky Griemeer"
+                      "Compressed Griemeer II-Grade": {
+                        "item_id": 82317,
+                        "name": "Compressed Griemeer II-Grade"
                       },
-                      "Compressed Opaque Griemeer": {
+                      "Compressed Griemeer III-Grade": {
+                        "item_id": 82318,
+                        "name": "Compressed Griemeer III-Grade"
+                      },
+                      "Compressed Griemeer IV-Grade": {
                         "item_id": 82319,
-                        "name": "Compressed Opaque Griemeer"
+                        "name": "Compressed Griemeer IV-Grade"
                       },
                       "Griemeer": {
                         "item_id": 81975,
                         "name": "Griemeer"
                       },
-                      "Inky Griemeer": {
-                        "item_id": 81977,
-                        "name": "Inky Griemeer"
+                      "Griemeer II-Grade": {
+                        "item_id": 81976,
+                        "name": "Griemeer II-Grade"
                       },
-                      "Opaque Griemeer": {
+                      "Griemeer III-Grade": {
+                        "item_id": 81977,
+                        "name": "Griemeer III-Grade"
+                      },
+                      "Griemeer IV-Grade": {
                         "item_id": 81978,
-                        "name": "Opaque Griemeer"
+                        "name": "Griemeer IV-Grade"
                       }
                     }
                   },
@@ -28903,53 +29059,53 @@
                     "name": "Hedbergite",
                     "subgroups": {},
                     "items": {
-                      "Batch Compressed Glazed Hedbergite": {
-                        "item_id": 28400,
-                        "name": "Batch Compressed Glazed Hedbergite"
-                      },
                       "Batch Compressed Hedbergite": {
                         "item_id": 28401,
                         "name": "Batch Compressed Hedbergite"
                       },
-                      "Batch Compressed Lustrous Hedbergite": {
-                        "item_id": 46696,
-                        "name": "Batch Compressed Lustrous Hedbergite"
-                      },
-                      "Batch Compressed Vitric Hedbergite": {
+                      "Batch Compressed Hedbergite II-Grade": {
                         "item_id": 28402,
-                        "name": "Batch Compressed Vitric Hedbergite"
+                        "name": "Batch Compressed Hedbergite II-Grade"
                       },
-                      "Compressed Glazed Hedbergite": {
-                        "item_id": 62550,
-                        "name": "Compressed Glazed Hedbergite"
+                      "Batch Compressed Hedbergite III-Grade": {
+                        "item_id": 28400,
+                        "name": "Batch Compressed Hedbergite III-Grade"
+                      },
+                      "Batch Compressed Hedbergite IV-Grade": {
+                        "item_id": 46696,
+                        "name": "Batch Compressed Hedbergite IV-Grade"
                       },
                       "Compressed Hedbergite": {
                         "item_id": 62548,
                         "name": "Compressed Hedbergite"
                       },
-                      "Compressed Lustrous Hedbergite": {
-                        "item_id": 62551,
-                        "name": "Compressed Lustrous Hedbergite"
-                      },
-                      "Compressed Vitric Hedbergite": {
+                      "Compressed Hedbergite II-Grade": {
                         "item_id": 62549,
-                        "name": "Compressed Vitric Hedbergite"
+                        "name": "Compressed Hedbergite II-Grade"
                       },
-                      "Glazed Hedbergite": {
-                        "item_id": 17441,
-                        "name": "Glazed Hedbergite"
+                      "Compressed Hedbergite III-Grade": {
+                        "item_id": 62550,
+                        "name": "Compressed Hedbergite III-Grade"
+                      },
+                      "Compressed Hedbergite IV-Grade": {
+                        "item_id": 62551,
+                        "name": "Compressed Hedbergite IV-Grade"
                       },
                       "Hedbergite": {
                         "item_id": 21,
                         "name": "Hedbergite"
                       },
-                      "Lustrous Hedbergite": {
-                        "item_id": 46680,
-                        "name": "Lustrous Hedbergite"
-                      },
-                      "Vitric Hedbergite": {
+                      "Hedbergite II-Grade": {
                         "item_id": 17440,
-                        "name": "Vitric Hedbergite"
+                        "name": "Hedbergite II-Grade"
+                      },
+                      "Hedbergite III-Grade": {
+                        "item_id": 17441,
+                        "name": "Hedbergite III-Grade"
+                      },
+                      "Hedbergite IV-Grade": {
+                        "item_id": 46680,
+                        "name": "Hedbergite IV-Grade"
                       }
                     }
                   },
@@ -28962,49 +29118,49 @@
                         "item_id": 28403,
                         "name": "Batch Compressed Hemorphite"
                       },
-                      "Batch Compressed Radiant Hemorphite": {
-                        "item_id": 28404,
-                        "name": "Batch Compressed Radiant Hemorphite"
-                      },
-                      "Batch Compressed Scintillating Hemorphite": {
-                        "item_id": 46697,
-                        "name": "Batch Compressed Scintillating Hemorphite"
-                      },
-                      "Batch Compressed Vivid Hemorphite": {
+                      "Batch Compressed Hemorphite II-Grade": {
                         "item_id": 28405,
-                        "name": "Batch Compressed Vivid Hemorphite"
+                        "name": "Batch Compressed Hemorphite II-Grade"
+                      },
+                      "Batch Compressed Hemorphite III-Grade": {
+                        "item_id": 28404,
+                        "name": "Batch Compressed Hemorphite III-Grade"
+                      },
+                      "Batch Compressed Hemorphite IV-Grade": {
+                        "item_id": 46697,
+                        "name": "Batch Compressed Hemorphite IV-Grade"
                       },
                       "Compressed Hemorphite": {
                         "item_id": 62544,
                         "name": "Compressed Hemorphite"
                       },
-                      "Compressed Radiant Hemorphite": {
-                        "item_id": 62546,
-                        "name": "Compressed Radiant Hemorphite"
-                      },
-                      "Compressed Scintillating Hemorphite": {
-                        "item_id": 62547,
-                        "name": "Compressed Scintillating Hemorphite"
-                      },
-                      "Compressed Vivid Hemorphite": {
+                      "Compressed Hemorphite II-Grade": {
                         "item_id": 62545,
-                        "name": "Compressed Vivid Hemorphite"
+                        "name": "Compressed Hemorphite II-Grade"
+                      },
+                      "Compressed Hemorphite III-Grade": {
+                        "item_id": 62546,
+                        "name": "Compressed Hemorphite III-Grade"
+                      },
+                      "Compressed Hemorphite IV-Grade": {
+                        "item_id": 62547,
+                        "name": "Compressed Hemorphite IV-Grade"
                       },
                       "Hemorphite": {
                         "item_id": 1231,
                         "name": "Hemorphite"
                       },
-                      "Radiant Hemorphite": {
-                        "item_id": 17445,
-                        "name": "Radiant Hemorphite"
-                      },
-                      "Scintillating Hemorphite": {
-                        "item_id": 46681,
-                        "name": "Scintillating Hemorphite"
-                      },
-                      "Vivid Hemorphite": {
+                      "Hemorphite II-Grade": {
                         "item_id": 17444,
-                        "name": "Vivid Hemorphite"
+                        "name": "Hemorphite II-Grade"
+                      },
+                      "Hemorphite III-Grade": {
+                        "item_id": 17445,
+                        "name": "Hemorphite III-Grade"
+                      },
+                      "Hemorphite IV-Grade": {
+                        "item_id": 46681,
+                        "name": "Hemorphite IV-Grade"
                       }
                     }
                   },
@@ -29013,37 +29169,33 @@
                     "name": "Hezorime",
                     "subgroups": {},
                     "items": {
-                      "Compressed Dull Hezorime": {
-                        "item_id": 82313,
-                        "name": "Compressed Dull Hezorime"
-                      },
                       "Compressed Hezorime": {
                         "item_id": 82312,
                         "name": "Compressed Hezorime"
                       },
-                      "Compressed Serrated Hezorime": {
+                      "Compressed Hezorime II-Grade": {
                         "item_id": 82314,
-                        "name": "Compressed Serrated Hezorime"
+                        "name": "Compressed Hezorime II-Grade"
                       },
-                      "Compressed Sharp Hezorime": {
+                      "Compressed Hezorime IV-Grade": {
                         "item_id": 82315,
-                        "name": "Compressed Sharp Hezorime"
-                      },
-                      "Dull Hezorime": {
-                        "item_id": 82164,
-                        "name": "Dull Hezorime"
+                        "name": "Compressed Hezorime IV-Grade"
                       },
                       "Hezorime": {
                         "item_id": 82163,
                         "name": "Hezorime"
                       },
-                      "Serrated Hezorime": {
-                        "item_id": 82165,
-                        "name": "Serrated Hezorime"
+                      "Hezorime II-Grade": {
+                        "item_id": 82164,
+                        "name": "Hezorime II-Grade"
                       },
-                      "Sharp Hezorime": {
+                      "Hezorime III-Grade": {
+                        "item_id": 82165,
+                        "name": "Hezorime III-Grade"
+                      },
+                      "Hezorime IV-Grade": {
                         "item_id": 82166,
-                        "name": "Sharp Hezorime"
+                        "name": "Hezorime IV-Grade"
                       }
                     }
                   },
@@ -29052,53 +29204,53 @@
                     "name": "Jaspet",
                     "subgroups": {},
                     "items": {
-                      "Batch Compressed Immaculate Jaspet": {
-                        "item_id": 46698,
-                        "name": "Batch Compressed Immaculate Jaspet"
-                      },
                       "Batch Compressed Jaspet": {
                         "item_id": 28406,
                         "name": "Batch Compressed Jaspet"
                       },
-                      "Batch Compressed Pristine Jaspet": {
-                        "item_id": 28407,
-                        "name": "Batch Compressed Pristine Jaspet"
-                      },
-                      "Batch Compressed Pure Jaspet": {
+                      "Batch Compressed Jaspet II-Grade": {
                         "item_id": 28408,
-                        "name": "Batch Compressed Pure Jaspet"
+                        "name": "Batch Compressed Jaspet II-Grade"
                       },
-                      "Compressed Immaculate Jaspet": {
-                        "item_id": 62543,
-                        "name": "Compressed Immaculate Jaspet"
+                      "Batch Compressed Jaspet III-Grade": {
+                        "item_id": 28407,
+                        "name": "Batch Compressed Jaspet III-Grade"
+                      },
+                      "Batch Compressed Jaspet IV-Grade": {
+                        "item_id": 46698,
+                        "name": "Batch Compressed Jaspet IV-Grade"
                       },
                       "Compressed Jaspet": {
                         "item_id": 62540,
                         "name": "Compressed Jaspet"
                       },
-                      "Compressed Pristine Jaspet": {
-                        "item_id": 62542,
-                        "name": "Compressed Pristine Jaspet"
-                      },
-                      "Compressed Pure Jaspet": {
+                      "Compressed Jaspet II-Grade": {
                         "item_id": 62541,
-                        "name": "Compressed Pure Jaspet"
+                        "name": "Compressed Jaspet II-Grade"
                       },
-                      "Immaculate Jaspet": {
-                        "item_id": 46682,
-                        "name": "Immaculate Jaspet"
+                      "Compressed Jaspet III-Grade": {
+                        "item_id": 62542,
+                        "name": "Compressed Jaspet III-Grade"
+                      },
+                      "Compressed Jaspet IV-Grade": {
+                        "item_id": 62543,
+                        "name": "Compressed Jaspet IV-Grade"
                       },
                       "Jaspet": {
                         "item_id": 1226,
                         "name": "Jaspet"
                       },
-                      "Pristine Jaspet": {
-                        "item_id": 17449,
-                        "name": "Pristine Jaspet"
-                      },
-                      "Pure Jaspet": {
+                      "Jaspet II-Grade": {
                         "item_id": 17448,
-                        "name": "Pure Jaspet"
+                        "name": "Jaspet II-Grade"
+                      },
+                      "Jaspet III-Grade": {
+                        "item_id": 17449,
+                        "name": "Jaspet III-Grade"
+                      },
+                      "Jaspet IV-Grade": {
+                        "item_id": 46682,
+                        "name": "Jaspet IV-Grade"
                       }
                     }
                   },
@@ -29107,53 +29259,53 @@
                     "name": "Kernite",
                     "subgroups": {},
                     "items": {
-                      "Batch Compressed Fiery Kernite": {
-                        "item_id": 28409,
-                        "name": "Batch Compressed Fiery Kernite"
-                      },
                       "Batch Compressed Kernite": {
                         "item_id": 28410,
                         "name": "Batch Compressed Kernite"
                       },
-                      "Batch Compressed Luminous Kernite": {
+                      "Batch Compressed Kernite II-Grade": {
                         "item_id": 28411,
-                        "name": "Batch Compressed Luminous Kernite"
+                        "name": "Batch Compressed Kernite II-Grade"
                       },
-                      "Batch Compressed Resplendant Kernite": {
+                      "Batch Compressed Kernite III-Grade": {
+                        "item_id": 28409,
+                        "name": "Batch Compressed Kernite III-Grade"
+                      },
+                      "Batch Compressed Kernite IV-Grade": {
                         "item_id": 46699,
-                        "name": "Batch Compressed Resplendant Kernite"
-                      },
-                      "Compressed Fiery Kernite": {
-                        "item_id": 62538,
-                        "name": "Compressed Fiery Kernite"
+                        "name": "Batch Compressed Kernite IV-Grade"
                       },
                       "Compressed Kernite": {
                         "item_id": 62536,
                         "name": "Compressed Kernite"
                       },
-                      "Compressed Luminous Kernite": {
+                      "Compressed Kernite II-Grade": {
                         "item_id": 62537,
-                        "name": "Compressed Luminous Kernite"
+                        "name": "Compressed Kernite II-Grade"
                       },
-                      "Compressed Resplendant Kernite": {
+                      "Compressed Kernite III-Grade": {
+                        "item_id": 62538,
+                        "name": "Compressed Kernite III-Grade"
+                      },
+                      "Compressed Kernite IV-Grade": {
                         "item_id": 62539,
-                        "name": "Compressed Resplendant Kernite"
-                      },
-                      "Fiery Kernite": {
-                        "item_id": 17453,
-                        "name": "Fiery Kernite"
+                        "name": "Compressed Kernite IV-Grade"
                       },
                       "Kernite": {
                         "item_id": 20,
                         "name": "Kernite"
                       },
-                      "Luminous Kernite": {
+                      "Kernite II-Grade": {
                         "item_id": 17452,
-                        "name": "Luminous Kernite"
+                        "name": "Kernite II-Grade"
                       },
-                      "Resplendant Kernite": {
+                      "Kernite III-Grade": {
+                        "item_id": 17453,
+                        "name": "Kernite III-Grade"
+                      },
+                      "Kernite IV-Grade": {
                         "item_id": 46683,
-                        "name": "Resplendant Kernite"
+                        "name": "Kernite IV-Grade"
                       }
                     }
                   },
@@ -29162,37 +29314,37 @@
                     "name": "Kylixium",
                     "subgroups": {},
                     "items": {
-                      "Adobe Kylixium": {
-                        "item_id": 81903,
-                        "name": "Adobe Kylixium"
-                      },
-                      "Argil Kylixium": {
-                        "item_id": 81902,
-                        "name": "Argil Kylixium"
-                      },
-                      "Compressed Adobe Kylixium": {
-                        "item_id": 82303,
-                        "name": "Compressed Adobe Kylixium"
-                      },
-                      "Compressed Argil Kylixium": {
-                        "item_id": 82302,
-                        "name": "Compressed Argil Kylixium"
-                      },
-                      "Compressed Kaolin Kylixium": {
-                        "item_id": 82301,
-                        "name": "Compressed Kaolin Kylixium"
-                      },
                       "Compressed Kylixium": {
                         "item_id": 82300,
                         "name": "Compressed Kylixium"
                       },
-                      "Kaolin Kylixium": {
-                        "item_id": 81901,
-                        "name": "Kaolin Kylixium"
+                      "Compressed Kylixium II-Grade": {
+                        "item_id": 82301,
+                        "name": "Compressed Kylixium II-Grade"
+                      },
+                      "Compressed Kylixium III-Grade": {
+                        "item_id": 82302,
+                        "name": "Compressed Kylixium III-Grade"
+                      },
+                      "Compressed Kylixium IV-Grade": {
+                        "item_id": 82303,
+                        "name": "Compressed Kylixium IV-Grade"
                       },
                       "Kylixium": {
                         "item_id": 81900,
                         "name": "Kylixium"
+                      },
+                      "Kylixium II-Grade": {
+                        "item_id": 81901,
+                        "name": "Kylixium II-Grade"
+                      },
+                      "Kylixium III-Grade": {
+                        "item_id": 81902,
+                        "name": "Kylixium III-Grade"
+                      },
+                      "Kylixium IV-Grade": {
+                        "item_id": 81903,
+                        "name": "Kylixium IV-Grade"
                       }
                     }
                   },
@@ -29201,41 +29353,41 @@
                     "name": "Mercoxit",
                     "subgroups": {},
                     "items": {
-                      "Batch Compressed Magma Mercoxit": {
-                        "item_id": 28412,
-                        "name": "Batch Compressed Magma Mercoxit"
-                      },
                       "Batch Compressed Mercoxit": {
                         "item_id": 28413,
                         "name": "Batch Compressed Mercoxit"
                       },
-                      "Batch Compressed Vitreous Mercoxit": {
-                        "item_id": 28414,
-                        "name": "Batch Compressed Vitreous Mercoxit"
+                      "Batch Compressed Mercoxit II-Grade": {
+                        "item_id": 28412,
+                        "name": "Batch Compressed Mercoxit II-Grade"
                       },
-                      "Compressed Magma Mercoxit": {
-                        "item_id": 62587,
-                        "name": "Compressed Magma Mercoxit"
+                      "Batch Compressed Mercoxit III-Grade": {
+                        "item_id": 28414,
+                        "name": "Batch Compressed Mercoxit III-Grade"
                       },
                       "Compressed Mercoxit": {
                         "item_id": 62586,
                         "name": "Compressed Mercoxit"
                       },
-                      "Compressed Vitreous Mercoxit": {
-                        "item_id": 62588,
-                        "name": "Compressed Vitreous Mercoxit"
+                      "Compressed Mercoxit II-Grade": {
+                        "item_id": 62587,
+                        "name": "Compressed Mercoxit II-Grade"
                       },
-                      "Magma Mercoxit": {
-                        "item_id": 17869,
-                        "name": "Magma Mercoxit"
+                      "Compressed Mercoxit III-Grade": {
+                        "item_id": 62588,
+                        "name": "Compressed Mercoxit III-Grade"
                       },
                       "Mercoxit": {
                         "item_id": 11396,
                         "name": "Mercoxit"
                       },
-                      "Vitreous Mercoxit": {
+                      "Mercoxit II-Grade": {
+                        "item_id": 17869,
+                        "name": "Mercoxit II-Grade"
+                      },
+                      "Mercoxit III-Grade": {
                         "item_id": 17870,
-                        "name": "Vitreous Mercoxit"
+                        "name": "Mercoxit III-Grade"
                       }
                     }
                   },
@@ -29244,37 +29396,37 @@
                     "name": "Mordunium",
                     "subgroups": {},
                     "items": {
+                      "Compressed  Mordunium IV-Grade": {
+                        "item_id": 75278,
+                        "name": "Compressed  Mordunium IV-Grade"
+                      },
                       "Compressed Mordunium": {
                         "item_id": 75275,
                         "name": "Compressed Mordunium"
                       },
-                      "Compressed Plum Mordunium": {
+                      "Compressed Mordunium II-Grade": {
                         "item_id": 75276,
-                        "name": "Compressed Plum Mordunium"
+                        "name": "Compressed Mordunium II-Grade"
                       },
-                      "Compressed Plunder Mordunium": {
-                        "item_id": 75278,
-                        "name": "Compressed Plunder Mordunium"
-                      },
-                      "Compressed Prize Mordunium": {
+                      "Compressed Mordunium III-Grade": {
                         "item_id": 75277,
-                        "name": "Compressed Prize Mordunium"
+                        "name": "Compressed Mordunium III-Grade"
                       },
                       "Mordunium": {
                         "item_id": 74521,
                         "name": "Mordunium"
                       },
-                      "Plum Mordunium": {
+                      "Mordunium II-Grade": {
                         "item_id": 74522,
-                        "name": "Plum Mordunium"
+                        "name": "Mordunium II-Grade"
                       },
-                      "Plunder Mordunium": {
-                        "item_id": 74524,
-                        "name": "Plunder Mordunium"
-                      },
-                      "Prize Mordunium": {
+                      "Mordunium III-Grade": {
                         "item_id": 74523,
-                        "name": "Prize Mordunium"
+                        "name": "Mordunium III-Grade"
+                      },
+                      "Mordunium IV-Grade": {
+                        "item_id": 74524,
+                        "name": "Mordunium IV-Grade"
                       }
                     }
                   },
@@ -29283,37 +29435,37 @@
                     "name": "Nocxite",
                     "subgroups": {},
                     "items": {
-                      "Ambrosial Nocxite": {
-                        "item_id": 82019,
-                        "name": "Ambrosial Nocxite"
-                      },
-                      "Compressed Ambrosial Nocxite": {
-                        "item_id": 82307,
-                        "name": "Compressed Ambrosial Nocxite"
-                      },
-                      "Compressed Fragrant Nocxite": {
-                        "item_id": 82305,
-                        "name": "Compressed Fragrant Nocxite"
-                      },
-                      "Compressed Intoxicating Nocxite": {
-                        "item_id": 82306,
-                        "name": "Compressed Intoxicating Nocxite"
-                      },
                       "Compressed Nocxite": {
                         "item_id": 82304,
                         "name": "Compressed Nocxite"
                       },
-                      "Fragrant Nocxite": {
-                        "item_id": 82017,
-                        "name": "Fragrant Nocxite"
+                      "Compressed Nocxite II-Grade": {
+                        "item_id": 82305,
+                        "name": "Compressed Nocxite II-Grade"
                       },
-                      "Intoxicating Nocxite": {
-                        "item_id": 82018,
-                        "name": "Intoxicating Nocxite"
+                      "Compressed Nocxite III-Grade": {
+                        "item_id": 82306,
+                        "name": "Compressed Nocxite III-Grade"
+                      },
+                      "Compressed Nocxite IV-Grade": {
+                        "item_id": 82307,
+                        "name": "Compressed Nocxite IV-Grade"
                       },
                       "Nocxite": {
                         "item_id": 82016,
                         "name": "Nocxite"
+                      },
+                      "Nocxite II-Grade": {
+                        "item_id": 82017,
+                        "name": "Nocxite II-Grade"
+                      },
+                      "Nocxite III-Grade": {
+                        "item_id": 82018,
+                        "name": "Nocxite III-Grade"
+                      },
+                      "Nocxite IV-Grade": {
+                        "item_id": 82019,
+                        "name": "Nocxite IV-Grade"
                       }
                     }
                   },
@@ -29322,53 +29474,53 @@
                     "name": "Omber",
                     "subgroups": {},
                     "items": {
-                      "Batch Compressed Golden Omber": {
-                        "item_id": 28415,
-                        "name": "Batch Compressed Golden Omber"
-                      },
                       "Batch Compressed Omber": {
                         "item_id": 28416,
                         "name": "Batch Compressed Omber"
                       },
-                      "Batch Compressed Platinoid Omber": {
-                        "item_id": 46700,
-                        "name": "Batch Compressed Platinoid Omber"
-                      },
-                      "Batch Compressed Silvery Omber": {
+                      "Batch Compressed Omber II-Grade": {
                         "item_id": 28417,
-                        "name": "Batch Compressed Silvery Omber"
+                        "name": "Batch Compressed Omber II-Grade"
                       },
-                      "Compressed Golden Omber": {
-                        "item_id": 62534,
-                        "name": "Compressed Golden Omber"
+                      "Batch Compressed Omber III-Grade": {
+                        "item_id": 28415,
+                        "name": "Batch Compressed Omber III-Grade"
+                      },
+                      "Batch Compressed Omber IV-Grade": {
+                        "item_id": 46700,
+                        "name": "Batch Compressed Omber IV-Grade"
                       },
                       "Compressed Omber": {
                         "item_id": 62532,
                         "name": "Compressed Omber"
                       },
-                      "Compressed Platinoid Omber": {
-                        "item_id": 62535,
-                        "name": "Compressed Platinoid Omber"
-                      },
-                      "Compressed Silvery Omber": {
+                      "Compressed Omber II-Grade": {
                         "item_id": 62533,
-                        "name": "Compressed Silvery Omber"
+                        "name": "Compressed Omber II-Grade"
                       },
-                      "Golden Omber": {
-                        "item_id": 17868,
-                        "name": "Golden Omber"
+                      "Compressed Omber III-Grade": {
+                        "item_id": 62534,
+                        "name": "Compressed Omber III-Grade"
+                      },
+                      "Compressed Omber IV-Grade": {
+                        "item_id": 62535,
+                        "name": "Compressed Omber IV-Grade"
                       },
                       "Omber": {
                         "item_id": 1227,
                         "name": "Omber"
                       },
-                      "Platinoid Omber": {
-                        "item_id": 46684,
-                        "name": "Platinoid Omber"
-                      },
-                      "Silvery Omber": {
+                      "Omber II-Grade": {
                         "item_id": 17867,
-                        "name": "Silvery Omber"
+                        "name": "Omber II-Grade"
+                      },
+                      "Omber III-Grade": {
+                        "item_id": 17868,
+                        "name": "Omber III-Grade"
+                      },
+                      "Omber IV-Grade": {
+                        "item_id": 46684,
+                        "name": "Omber IV-Grade"
                       }
                     }
                   },
@@ -29377,53 +29529,68 @@
                     "name": "Plagioclase",
                     "subgroups": {},
                     "items": {
-                      "Azure Plagioclase": {
-                        "item_id": 17455,
-                        "name": "Azure Plagioclase"
-                      },
-                      "Batch Compressed Azure Plagioclase": {
-                        "item_id": 28421,
-                        "name": "Batch Compressed Azure Plagioclase"
-                      },
                       "Batch Compressed Plagioclase": {
                         "item_id": 28422,
                         "name": "Batch Compressed Plagioclase"
                       },
-                      "Batch Compressed Rich Plagioclase": {
+                      "Batch Compressed Plagioclase II-Grade": {
+                        "item_id": 28421,
+                        "name": "Batch Compressed Plagioclase II-Grade"
+                      },
+                      "Batch Compressed Plagioclase III-Grade": {
                         "item_id": 28423,
-                        "name": "Batch Compressed Rich Plagioclase"
+                        "name": "Batch Compressed Plagioclase III-Grade"
                       },
-                      "Batch Compressed Sparkling Plagioclase": {
+                      "Batch Compressed Plagioclase IV-Grade": {
                         "item_id": 46701,
-                        "name": "Batch Compressed Sparkling Plagioclase"
-                      },
-                      "Compressed Azure Plagioclase": {
-                        "item_id": 62529,
-                        "name": "Compressed Azure Plagioclase"
+                        "name": "Batch Compressed Plagioclase IV-Grade"
                       },
                       "Compressed Plagioclase": {
                         "item_id": 62528,
                         "name": "Compressed Plagioclase"
                       },
-                      "Compressed Rich Plagioclase": {
-                        "item_id": 62530,
-                        "name": "Compressed Rich Plagioclase"
+                      "Compressed Plagioclase II-Grade": {
+                        "item_id": 62529,
+                        "name": "Compressed Plagioclase II-Grade"
                       },
-                      "Compressed Sparkling Plagioclase": {
+                      "Compressed Plagioclase III-Grade": {
+                        "item_id": 62530,
+                        "name": "Compressed Plagioclase III-Grade"
+                      },
+                      "Compressed Plagioclase IV-Grade": {
                         "item_id": 62531,
-                        "name": "Compressed Sparkling Plagioclase"
+                        "name": "Compressed Plagioclase IV-Grade"
                       },
                       "Plagioclase": {
                         "item_id": 18,
                         "name": "Plagioclase"
                       },
-                      "Rich Plagioclase": {
-                        "item_id": 17456,
-                        "name": "Rich Plagioclase"
+                      "Plagioclase II-Grade": {
+                        "item_id": 17455,
+                        "name": "Plagioclase II-Grade"
                       },
-                      "Sparkling Plagioclase": {
+                      "Plagioclase III-Grade": {
+                        "item_id": 17456,
+                        "name": "Plagioclase III-Grade"
+                      },
+                      "Plagioclase IV-Grade": {
                         "item_id": 46685,
-                        "name": "Sparkling Plagioclase"
+                        "name": "Plagioclase IV-Grade"
+                      }
+                    }
+                  },
+                  "Prismaticite": {
+                    "id": 3776,
+                    "name": "Prismaticite",
+                    "subgroups": {},
+                    "items": {
+                      "Compressed Prismaticite": {
+                        "item_id": 90307,
+                        "name": "Compressed Prismaticite"
+                      },
+                      "Prismaticite": {
+                        "item_id": 90041,
+                        "name": "Prismaticite"
                       }
                     }
                   },
@@ -29432,53 +29599,53 @@
                     "name": "Pyroxeres",
                     "subgroups": {},
                     "items": {
-                      "Batch Compressed Opulent Pyroxeres": {
-                        "item_id": 46702,
-                        "name": "Batch Compressed Opulent Pyroxeres"
-                      },
                       "Batch Compressed Pyroxeres": {
                         "item_id": 28424,
                         "name": "Batch Compressed Pyroxeres"
                       },
-                      "Batch Compressed Solid Pyroxeres": {
+                      "Batch Compressed Pyroxeres II-Grade": {
                         "item_id": 28425,
-                        "name": "Batch Compressed Solid Pyroxeres"
+                        "name": "Batch Compressed Pyroxeres II-Grade"
                       },
-                      "Batch Compressed Viscous Pyroxeres": {
+                      "Batch Compressed Pyroxeres III-Grade": {
                         "item_id": 28426,
-                        "name": "Batch Compressed Viscous Pyroxeres"
+                        "name": "Batch Compressed Pyroxeres III-Grade"
                       },
-                      "Compressed Opulent Pyroxeres": {
-                        "item_id": 62527,
-                        "name": "Compressed Opulent Pyroxeres"
+                      "Batch Compressed Pyroxeres IV-Grade": {
+                        "item_id": 46702,
+                        "name": "Batch Compressed Pyroxeres IV-Grade"
                       },
                       "Compressed Pyroxeres": {
                         "item_id": 62524,
                         "name": "Compressed Pyroxeres"
                       },
-                      "Compressed Solid Pyroxeres": {
+                      "Compressed Pyroxeres II-Grade": {
                         "item_id": 62525,
-                        "name": "Compressed Solid Pyroxeres"
+                        "name": "Compressed Pyroxeres II-Grade"
                       },
-                      "Compressed Viscous Pyroxeres": {
+                      "Compressed Pyroxeres III-Grade": {
                         "item_id": 62526,
-                        "name": "Compressed Viscous Pyroxeres"
+                        "name": "Compressed Pyroxeres III-Grade"
                       },
-                      "Opulent Pyroxeres": {
-                        "item_id": 46686,
-                        "name": "Opulent Pyroxeres"
+                      "Compressed Pyroxeres IV-Grade": {
+                        "item_id": 62527,
+                        "name": "Compressed Pyroxeres IV-Grade"
                       },
                       "Pyroxeres": {
                         "item_id": 1224,
                         "name": "Pyroxeres"
                       },
-                      "Solid Pyroxeres": {
+                      "Pyroxeres II-Grade": {
                         "item_id": 17459,
-                        "name": "Solid Pyroxeres"
+                        "name": "Pyroxeres II-Grade"
                       },
-                      "Viscous Pyroxeres": {
+                      "Pyroxeres III-Grade": {
                         "item_id": 17460,
-                        "name": "Viscous Pyroxeres"
+                        "name": "Pyroxeres III-Grade"
+                      },
+                      "Pyroxeres IV-Grade": {
+                        "item_id": 46686,
+                        "name": "Pyroxeres IV-Grade"
                       }
                     }
                   },
@@ -29487,25 +29654,17 @@
                     "name": "Rakovene",
                     "subgroups": {},
                     "items": {
-                      "Abyssal Rakovene": {
-                        "item_id": 56629,
-                        "name": "Abyssal Rakovene"
-                      },
-                      "Compressed Abyssal Rakovene": {
-                        "item_id": 62580,
-                        "name": "Compressed Abyssal Rakovene"
-                      },
-                      "Compressed Hadal Rakovene": {
-                        "item_id": 62581,
-                        "name": "Compressed Hadal Rakovene"
-                      },
                       "Compressed Rakovene": {
                         "item_id": 62579,
                         "name": "Compressed Rakovene"
                       },
-                      "Hadal Rakovene": {
-                        "item_id": 56630,
-                        "name": "Hadal Rakovene"
+                      "Compressed Rakovene II-Grade": {
+                        "item_id": 62580,
+                        "name": "Compressed Rakovene II-Grade"
+                      },
+                      "Compressed Rakovene III-Grade": {
+                        "item_id": 62581,
+                        "name": "Compressed Rakovene III-Grade"
                       },
                       "Nesosilicate Rakovene": {
                         "item_id": 76373,
@@ -29514,6 +29673,14 @@
                       "Rakovene": {
                         "item_id": 52315,
                         "name": "Rakovene"
+                      },
+                      "Rakovene II-Grade": {
+                        "item_id": 56629,
+                        "name": "Rakovene II-Grade"
+                      },
+                      "Rakovene III-Grade": {
+                        "item_id": 56630,
+                        "name": "Rakovene III-Grade"
                       }
                     }
                   },
@@ -29522,53 +29689,53 @@
                     "name": "Scordite",
                     "subgroups": {},
                     "items": {
-                      "Batch Compressed Condensed Scordite": {
-                        "item_id": 28427,
-                        "name": "Batch Compressed Condensed Scordite"
-                      },
-                      "Batch Compressed Glossy Scordite": {
-                        "item_id": 46703,
-                        "name": "Batch Compressed Glossy Scordite"
-                      },
-                      "Batch Compressed Massive Scordite": {
-                        "item_id": 28428,
-                        "name": "Batch Compressed Massive Scordite"
-                      },
                       "Batch Compressed Scordite": {
                         "item_id": 28429,
                         "name": "Batch Compressed Scordite"
                       },
-                      "Compressed Condensed Scordite": {
-                        "item_id": 62521,
-                        "name": "Compressed Condensed Scordite"
+                      "Batch Compressed Scordite II-Grade": {
+                        "item_id": 28427,
+                        "name": "Batch Compressed Scordite II-Grade"
                       },
-                      "Compressed Glossy Scordite": {
-                        "item_id": 62523,
-                        "name": "Compressed Glossy Scordite"
+                      "Batch Compressed Scordite III-Grade": {
+                        "item_id": 28428,
+                        "name": "Batch Compressed Scordite III-Grade"
                       },
-                      "Compressed Massive Scordite": {
-                        "item_id": 62522,
-                        "name": "Compressed Massive Scordite"
+                      "Batch Compressed Scordite IV-Grade": {
+                        "item_id": 46703,
+                        "name": "Batch Compressed Scordite IV-Grade"
                       },
                       "Compressed Scordite": {
                         "item_id": 62520,
                         "name": "Compressed Scordite"
                       },
-                      "Condensed Scordite": {
-                        "item_id": 17463,
-                        "name": "Condensed Scordite"
+                      "Compressed Scordite II-Grade": {
+                        "item_id": 62521,
+                        "name": "Compressed Scordite II-Grade"
                       },
-                      "Glossy Scordite": {
-                        "item_id": 46687,
-                        "name": "Glossy Scordite"
+                      "Compressed Scordite III-Grade": {
+                        "item_id": 62522,
+                        "name": "Compressed Scordite III-Grade"
                       },
-                      "Massive Scordite": {
-                        "item_id": 17464,
-                        "name": "Massive Scordite"
+                      "Compressed Scordite IV-Grade": {
+                        "item_id": 62523,
+                        "name": "Compressed Scordite IV-Grade"
                       },
                       "Scordite": {
                         "item_id": 1228,
                         "name": "Scordite"
+                      },
+                      "Scordite II-Grade": {
+                        "item_id": 17463,
+                        "name": "Scordite II-Grade"
+                      },
+                      "Scordite III-Grade": {
+                        "item_id": 17464,
+                        "name": "Scordite III-Grade"
+                      },
+                      "Scordite IV-Grade": {
+                        "item_id": 46687,
+                        "name": "Scordite IV-Grade"
                       }
                     }
                   },
@@ -29577,53 +29744,53 @@
                     "name": "Spodumain",
                     "subgroups": {},
                     "items": {
-                      "Batch Compressed Bright Spodumain": {
-                        "item_id": 28418,
-                        "name": "Batch Compressed Bright Spodumain"
-                      },
-                      "Batch Compressed Dazzling Spodumain": {
-                        "item_id": 46704,
-                        "name": "Batch Compressed Dazzling Spodumain"
-                      },
-                      "Batch Compressed Gleaming Spodumain": {
-                        "item_id": 28419,
-                        "name": "Batch Compressed Gleaming Spodumain"
-                      },
                       "Batch Compressed Spodumain": {
                         "item_id": 28420,
                         "name": "Batch Compressed Spodumain"
                       },
-                      "Bright Spodumain": {
-                        "item_id": 17466,
-                        "name": "Bright Spodumain"
+                      "Batch Compressed Spodumain II-Grade": {
+                        "item_id": 28418,
+                        "name": "Batch Compressed Spodumain II-Grade"
                       },
-                      "Compressed Bright Spodumain": {
-                        "item_id": 62573,
-                        "name": "Compressed Bright Spodumain"
+                      "Batch Compressed Spodumain III-Grade": {
+                        "item_id": 28419,
+                        "name": "Batch Compressed Spodumain III-Grade"
                       },
-                      "Compressed Dazzling Spodumain": {
-                        "item_id": 62575,
-                        "name": "Compressed Dazzling Spodumain"
-                      },
-                      "Compressed Gleaming Spodumain": {
-                        "item_id": 62574,
-                        "name": "Compressed Gleaming Spodumain"
+                      "Batch Compressed Spodumain IV-Grade": {
+                        "item_id": 46704,
+                        "name": "Batch Compressed Spodumain IV-Grade"
                       },
                       "Compressed Spodumain": {
                         "item_id": 62572,
                         "name": "Compressed Spodumain"
                       },
-                      "Dazzling Spodumain": {
-                        "item_id": 46688,
-                        "name": "Dazzling Spodumain"
+                      "Compressed Spodumain II-Grade": {
+                        "item_id": 62573,
+                        "name": "Compressed Spodumain II-Grade"
                       },
-                      "Gleaming Spodumain": {
-                        "item_id": 17467,
-                        "name": "Gleaming Spodumain"
+                      "Compressed Spodumain III-Grade": {
+                        "item_id": 62574,
+                        "name": "Compressed Spodumain III-Grade"
+                      },
+                      "Compressed Spodumain IV-Grade": {
+                        "item_id": 62575,
+                        "name": "Compressed Spodumain IV-Grade"
                       },
                       "Spodumain": {
                         "item_id": 19,
                         "name": "Spodumain"
+                      },
+                      "Spodumain II-Grade": {
+                        "item_id": 17466,
+                        "name": "Spodumain II-Grade"
+                      },
+                      "Spodumain III-Grade": {
+                        "item_id": 17467,
+                        "name": "Spodumain III-Grade"
+                      },
+                      "Spodumain IV-Grade": {
+                        "item_id": 46688,
+                        "name": "Spodumain IV-Grade"
                       }
                     }
                   },
@@ -29632,29 +29799,29 @@
                     "name": "Talassonite",
                     "subgroups": {},
                     "items": {
-                      "Abyssal Talassonite": {
-                        "item_id": 56625,
-                        "name": "Abyssal Talassonite"
-                      },
-                      "Compressed Abyssal Talassonite": {
-                        "item_id": 62583,
-                        "name": "Compressed Abyssal Talassonite"
-                      },
-                      "Compressed Hadal Talassonite": {
-                        "item_id": 62584,
-                        "name": "Compressed Hadal Talassonite"
-                      },
                       "Compressed Talassonite": {
                         "item_id": 62582,
                         "name": "Compressed Talassonite"
                       },
-                      "Hadal Talassonite": {
-                        "item_id": 56626,
-                        "name": "Hadal Talassonite"
+                      "Compressed Talassonite II-Grade": {
+                        "item_id": 62583,
+                        "name": "Compressed Talassonite II-Grade"
+                      },
+                      "Compressed Talassonite III-Grade": {
+                        "item_id": 62584,
+                        "name": "Compressed Talassonite III-Grade"
                       },
                       "Talassonite": {
                         "item_id": 52306,
                         "name": "Talassonite"
+                      },
+                      "Talassonite II-Grade": {
+                        "item_id": 56625,
+                        "name": "Talassonite II-Grade"
+                      },
+                      "Talassonite III-Grade": {
+                        "item_id": 56626,
+                        "name": "Talassonite III-Grade"
                       }
                     }
                   },
@@ -29674,37 +29841,37 @@
                     "name": "Ueganite",
                     "subgroups": {},
                     "items": {
-                      "Compressed Foggy Ueganite": {
-                        "item_id": 82309,
-                        "name": "Compressed Foggy Ueganite"
-                      },
-                      "Compressed Overcast Ueganite": {
-                        "item_id": 82310,
-                        "name": "Compressed Overcast Ueganite"
-                      },
-                      "Compressed Stormy Ueganite": {
-                        "item_id": 82311,
-                        "name": "Compressed Stormy Ueganite"
-                      },
                       "Compressed Ueganite": {
                         "item_id": 82308,
                         "name": "Compressed Ueganite"
                       },
-                      "Foggy Ueganite": {
-                        "item_id": 82206,
-                        "name": "Foggy Ueganite"
+                      "Compressed Ueganite II-Grade": {
+                        "item_id": 82309,
+                        "name": "Compressed Ueganite II-Grade"
                       },
-                      "Overcast Ueganite": {
-                        "item_id": 82207,
-                        "name": "Overcast Ueganite"
+                      "Compressed Ueganite III-Grade": {
+                        "item_id": 82310,
+                        "name": "Compressed Ueganite III-Grade"
                       },
-                      "Stormy Ueganite": {
-                        "item_id": 82208,
-                        "name": "Stormy Ueganite"
+                      "Compressed Ueganite IV-Grade": {
+                        "item_id": 82311,
+                        "name": "Compressed Ueganite IV-Grade"
                       },
                       "Ueganite": {
                         "item_id": 82205,
                         "name": "Ueganite"
+                      },
+                      "Ueganite II-Grade": {
+                        "item_id": 82206,
+                        "name": "Ueganite II-Grade"
+                      },
+                      "Ueganite III-Grade": {
+                        "item_id": 82207,
+                        "name": "Ueganite III-Grade"
+                      },
+                      "Ueganite IV-Grade": {
+                        "item_id": 82208,
+                        "name": "Ueganite IV-Grade"
                       }
                     }
                   },
@@ -29713,45 +29880,37 @@
                     "name": "Veldspar",
                     "subgroups": {},
                     "items": {
-                      "Batch Compressed Concentrated Veldspar": {
-                        "item_id": 28430,
-                        "name": "Batch Compressed Concentrated Veldspar"
-                      },
-                      "Batch Compressed Dense Veldspar": {
-                        "item_id": 28431,
-                        "name": "Batch Compressed Dense Veldspar"
-                      },
-                      "Batch Compressed Stable Veldspar": {
-                        "item_id": 46705,
-                        "name": "Batch Compressed Stable Veldspar"
-                      },
                       "Batch Compressed Veldspar": {
                         "item_id": 28432,
                         "name": "Batch Compressed Veldspar"
                       },
-                      "Compressed Concentrated Veldspar": {
-                        "item_id": 62517,
-                        "name": "Compressed Concentrated Veldspar"
+                      "Batch Compressed Veldspar II-Grade": {
+                        "item_id": 28430,
+                        "name": "Batch Compressed Veldspar II-Grade"
                       },
-                      "Compressed Dense Veldspar": {
-                        "item_id": 62518,
-                        "name": "Compressed Dense Veldspar"
+                      "Batch Compressed Veldspar III-Grade": {
+                        "item_id": 28431,
+                        "name": "Batch Compressed Veldspar III-Grade"
                       },
-                      "Compressed Stable Veldspar": {
-                        "item_id": 62519,
-                        "name": "Compressed Stable Veldspar"
+                      "Batch Compressed Veldspar IV-Grade": {
+                        "item_id": 46705,
+                        "name": "Batch Compressed Veldspar IV-Grade"
                       },
                       "Compressed Veldspar": {
                         "item_id": 62516,
                         "name": "Compressed Veldspar"
                       },
-                      "Concentrated Veldspar": {
-                        "item_id": 17470,
-                        "name": "Concentrated Veldspar"
+                      "Compressed Veldspar II-Grade": {
+                        "item_id": 62517,
+                        "name": "Compressed Veldspar II-Grade"
                       },
-                      "Dense Veldspar": {
-                        "item_id": 17471,
-                        "name": "Dense Veldspar"
+                      "Compressed Veldspar III-Grade": {
+                        "item_id": 62518,
+                        "name": "Compressed Veldspar III-Grade"
+                      },
+                      "Compressed Veldspar IV-Grade": {
+                        "item_id": 62519,
+                        "name": "Compressed Veldspar IV-Grade"
                       },
                       "Hiemal Tricarboxyl Vapor": {
                         "item_id": 49787,
@@ -29761,13 +29920,21 @@
                         "item_id": 60771,
                         "name": "Nephrite"
                       },
-                      "Stable Veldspar": {
-                        "item_id": 46689,
-                        "name": "Stable Veldspar"
-                      },
                       "Veldspar": {
                         "item_id": 1230,
                         "name": "Veldspar"
+                      },
+                      "Veldspar II-Grade": {
+                        "item_id": 17470,
+                        "name": "Veldspar II-Grade"
+                      },
+                      "Veldspar III-Grade": {
+                        "item_id": 17471,
+                        "name": "Veldspar III-Grade"
+                      },
+                      "Veldspar IV-Grade": {
+                        "item_id": 46689,
+                        "name": "Veldspar IV-Grade"
                       }
                     }
                   },
@@ -29776,42 +29943,81 @@
                     "name": "Ytirium",
                     "subgroups": {},
                     "items": {
-                      "Bootleg Ytirium": {
-                        "item_id": 74526,
-                        "name": "Bootleg Ytirium"
-                      },
-                      "Compressed Bootleg Ytirium": {
-                        "item_id": 75280,
-                        "name": "Compressed Bootleg Ytirium"
-                      },
-                      "Compressed Firewater Ytirium": {
-                        "item_id": 75281,
-                        "name": "Compressed Firewater Ytirium"
-                      },
-                      "Compressed Moonshine Ytirium": {
-                        "item_id": 75282,
-                        "name": "Compressed Moonshine Ytirium"
-                      },
                       "Compressed Ytirium": {
                         "item_id": 75279,
                         "name": "Compressed Ytirium"
                       },
-                      "Firewater Ytirium": {
-                        "item_id": 74527,
-                        "name": "Firewater Ytirium"
+                      "Compressed Ytirium II-Grade": {
+                        "item_id": 75280,
+                        "name": "Compressed Ytirium II-Grade"
                       },
-                      "Moonshine Ytirium": {
-                        "item_id": 74528,
-                        "name": "Moonshine Ytirium"
+                      "Compressed Ytirium III-Grade": {
+                        "item_id": 75281,
+                        "name": "Compressed Ytirium III-Grade"
+                      },
+                      "Compressed Ytirium IV-Grade": {
+                        "item_id": 75282,
+                        "name": "Compressed Ytirium IV-Grade"
                       },
                       "Ytirium": {
                         "item_id": 74525,
                         "name": "Ytirium"
+                      },
+                      "Ytirium II-Grade": {
+                        "item_id": 74526,
+                        "name": "Ytirium II-Grade"
+                      },
+                      "Ytirium III-Grade": {
+                        "item_id": 74527,
+                        "name": "Ytirium III-Grade"
+                      },
+                      "Ytirium IV-Grade": {
+                        "item_id": 74528,
+                        "name": "Ytirium IV-Grade"
                       }
                     }
                   }
                 },
                 "items": {}
+              },
+              "Unrefined Minerals": {
+                "id": 3784,
+                "name": "Unrefined Minerals",
+                "subgroups": {},
+                "items": {
+                  "Unrefined Isogen": {
+                    "item_id": 90289,
+                    "name": "Unrefined Isogen"
+                  },
+                  "Unrefined Megacyte": {
+                    "item_id": 90296,
+                    "name": "Unrefined Megacyte"
+                  },
+                  "Unrefined Mexallon": {
+                    "item_id": 90286,
+                    "name": "Unrefined Mexallon"
+                  },
+                  "Unrefined Morphite": {
+                    "item_id": 90298,
+                    "name": "Unrefined Morphite"
+                  },
+                  "Unrefined Nocxium": {
+                    "item_id": 90292,
+                    "name": "Unrefined Nocxium"
+                  },
+                  "Unrefined Pyerite": {
+                    "item_id": 90284,
+                    "name": "Unrefined Pyerite"
+                  },
+                  "Unrefined Tritanium": {
+                    "item_id": 90283,
+                    "name": "Unrefined Tritanium"
+                  },
+                  "Unrefined Zydrine": {
+                    "item_id": 90294,
+                    "name": "Unrefined Zydrine"
+                  }
+                }
               }
             },
             "items": {}
@@ -31695,13 +31901,13 @@
                     "item_id": 84807,
                     "name": "Deprecated - Do not publish"
                   },
-                  "Dusty Redisue Matte - Unlimited": {
-                    "item_id": 90600,
-                    "name": "Dusty Redisue Matte - Unlimited"
-                  },
                   "Dusty Residue Matte - Limited": {
                     "item_id": 90601,
                     "name": "Dusty Residue Matte - Limited"
+                  },
+                  "Dusty Residue Matte - Unlimited": {
+                    "item_id": 90600,
+                    "name": "Dusty Residue Matte - Unlimited"
                   },
                   "Edge of Cerulean Matte - Limited": {
                     "item_id": 86104,
@@ -31731,13 +31937,13 @@
                     "item_id": 83311,
                     "name": "Emerald Boulevard Matte - Unlimited"
                   },
+                  "Event Horizon Black Matte - Limited": {
+                    "item_id": 90610,
+                    "name": "Event Horizon Black Matte - Limited"
+                  },
                   "Event Horizon Black Matte - Unlimited": {
                     "item_id": 90608,
                     "name": "Event Horizon Black Matte - Unlimited"
-                  },
-                  "Event Horizon Matte - Limited": {
-                    "item_id": 90610,
-                    "name": "Event Horizon Matte - Limited"
                   },
                   "Exoplanet Sunrise Matte - Limited": {
                     "item_id": 83226,
@@ -34779,6 +34985,29 @@
                   }
                 }
               },
+              "Harvesting Drone Mutaplasmids": {
+                "id": 3800,
+                "name": "Harvesting Drone Mutaplasmids",
+                "subgroups": {},
+                "items": {
+                  "Exigent 'Excavator' Ice Harvesting Drone Mutaplasmid": {
+                    "item_id": 90620,
+                    "name": "Exigent 'Excavator' Ice Harvesting Drone Mutaplasmid"
+                  },
+                  "Exigent 'Excavator' Mining Drone Mutaplasmid": {
+                    "item_id": 90619,
+                    "name": "Exigent 'Excavator' Mining Drone Mutaplasmid"
+                  },
+                  "Exigent Ice Harvesting Drone Mutaplasmid": {
+                    "item_id": 90611,
+                    "name": "Exigent Ice Harvesting Drone Mutaplasmid"
+                  },
+                  "Exigent Mining Drone Mutaplasmid": {
+                    "item_id": 90609,
+                    "name": "Exigent Mining Drone Mutaplasmid"
+                  }
+                }
+              },
               "Heavy Drone Mutaplasmids": {
                 "id": 3722,
                 "name": "Heavy Drone Mutaplasmids",
@@ -35231,6 +35460,187 @@
                   "Unstable Small Energy Nosferatu Mutaplasmid": {
                     "item_id": 48418,
                     "name": "Unstable Small Energy Nosferatu Mutaplasmid"
+                  }
+                }
+              }
+            },
+            "items": {}
+          },
+          "Harvesting Mutaplasmids": {
+            "id": 3786,
+            "name": "Harvesting Mutaplasmids",
+            "subgroups": {
+              "Gas Cloud Harvesters": {
+                "id": 3799,
+                "name": "Gas Cloud Harvesters",
+                "subgroups": {},
+                "items": {
+                  "Decayed Gas Cloud Harvester Mutaplasmid": {
+                    "item_id": 90590,
+                    "name": "Decayed Gas Cloud Harvester Mutaplasmid"
+                  },
+                  "Gravid Gas Cloud Harvester Mutaplasmid": {
+                    "item_id": 90591,
+                    "name": "Gravid Gas Cloud Harvester Mutaplasmid"
+                  },
+                  "Unstable Gas Cloud Harvester Mutaplasmid": {
+                    "item_id": 90592,
+                    "name": "Unstable Gas Cloud Harvester Mutaplasmid"
+                  }
+                }
+              },
+              "Gas Cloud Scoops": {
+                "id": 3798,
+                "name": "Gas Cloud Scoops",
+                "subgroups": {},
+                "items": {
+                  "Decayed Gas Cloud Scoop Mutaplasmid": {
+                    "item_id": 90526,
+                    "name": "Decayed Gas Cloud Scoop Mutaplasmid"
+                  },
+                  "Gravid Gas Cloud Scoop Mutaplasmid": {
+                    "item_id": 90527,
+                    "name": "Gravid Gas Cloud Scoop Mutaplasmid"
+                  },
+                  "Unstable Gas Cloud Scoop Mutaplasmid": {
+                    "item_id": 90528,
+                    "name": "Unstable Gas Cloud Scoop Mutaplasmid"
+                  }
+                }
+              },
+              "Ice Harvesters": {
+                "id": 3797,
+                "name": "Ice Harvesters",
+                "subgroups": {},
+                "items": {
+                  "Decayed Ice Harvester Mutaplasmid": {
+                    "item_id": 90521,
+                    "name": "Decayed Ice Harvester Mutaplasmid"
+                  },
+                  "Gravid Ice Harvester Mutaplasmid": {
+                    "item_id": 90522,
+                    "name": "Gravid Ice Harvester Mutaplasmid"
+                  },
+                  "Unstable Ice Harvester Mutaplasmid": {
+                    "item_id": 90523,
+                    "name": "Unstable Ice Harvester Mutaplasmid"
+                  }
+                }
+              },
+              "Ice Mining Lasers": {
+                "id": 3795,
+                "name": "Ice Mining Lasers",
+                "subgroups": {},
+                "items": {
+                  "Decayed Ice Mining Laser Mutaplasmid": {
+                    "item_id": 90499,
+                    "name": "Decayed Ice Mining Laser Mutaplasmid"
+                  },
+                  "Gravid Ice Mining Laser Mutaplasmid": {
+                    "item_id": 90500,
+                    "name": "Gravid Ice Mining Laser Mutaplasmid"
+                  },
+                  "Unstable Ice Mining Laser Mutaplasmid": {
+                    "item_id": 90501,
+                    "name": "Unstable Ice Mining Laser Mutaplasmid"
+                  }
+                }
+              },
+              "Laser Miners": {
+                "id": 3790,
+                "name": "Laser Miners",
+                "subgroups": {},
+                "items": {
+                  "Decayed Deep Core Mining Laser Mutaplasmid": {
+                    "item_id": 90480,
+                    "name": "Decayed Deep Core Mining Laser Mutaplasmid"
+                  },
+                  "Decayed Mining Laser Mutaplasmid": {
+                    "item_id": 90457,
+                    "name": "Decayed Mining Laser Mutaplasmid"
+                  },
+                  "Decayed Modulated Deep Core Miner Mutaplasmid": {
+                    "item_id": 90470,
+                    "name": "Decayed Modulated Deep Core Miner Mutaplasmid"
+                  },
+                  "Gravid Deep Core Mining Laser Mutaplasmid": {
+                    "item_id": 90481,
+                    "name": "Gravid Deep Core Mining Laser Mutaplasmid"
+                  },
+                  "Gravid Mining Laser Mutaplasmid": {
+                    "item_id": 90458,
+                    "name": "Gravid Mining Laser Mutaplasmid"
+                  },
+                  "Gravid Modulated Deep Core Miner Mutaplasmid": {
+                    "item_id": 90472,
+                    "name": "Gravid Modulated Deep Core Miner Mutaplasmid"
+                  },
+                  "Unstable Deep Core Mining Laser Mutaplasmid": {
+                    "item_id": 90482,
+                    "name": "Unstable Deep Core Mining Laser Mutaplasmid"
+                  },
+                  "Unstable Mining Laser Mutaplasmid": {
+                    "item_id": 90459,
+                    "name": "Unstable Mining Laser Mutaplasmid"
+                  },
+                  "Unstable Modulated Deep Core Miner Mutaplasmid": {
+                    "item_id": 90471,
+                    "name": "Unstable Modulated Deep Core Miner Mutaplasmid"
+                  }
+                }
+              },
+              "Strip Miners": {
+                "id": 3792,
+                "name": "Strip Miners",
+                "subgroups": {},
+                "items": {
+                  "Decayed Deep Core Strip Miner Mutaplasmid": {
+                    "item_id": 90495,
+                    "name": "Decayed Deep Core Strip Miner Mutaplasmid"
+                  },
+                  "Decayed Modulated Deep Core Strip Miner Mutaplasmid": {
+                    "item_id": 90484,
+                    "name": "Decayed Modulated Deep Core Strip Miner Mutaplasmid"
+                  },
+                  "Decayed Modulated Strip Miner Mutaplasmid": {
+                    "item_id": 90466,
+                    "name": "Decayed Modulated Strip Miner Mutaplasmid"
+                  },
+                  "Decayed Strip Miner Mutaplasmid": {
+                    "item_id": 90489,
+                    "name": "Decayed Strip Miner Mutaplasmid"
+                  },
+                  "Gravid Deep Core Strip Miner Mutaplasmid": {
+                    "item_id": 90496,
+                    "name": "Gravid Deep Core Strip Miner Mutaplasmid"
+                  },
+                  "Gravid Modulated Deep Core Strip Miner Mutaplasmid": {
+                    "item_id": 90485,
+                    "name": "Gravid Modulated Deep Core Strip Miner Mutaplasmid"
+                  },
+                  "Gravid Modulated Strip Miner Mutaplasmid": {
+                    "item_id": 90468,
+                    "name": "Gravid Modulated Strip Miner Mutaplasmid"
+                  },
+                  "Gravid Strip Miner Mutaplasmid": {
+                    "item_id": 90490,
+                    "name": "Gravid Strip Miner Mutaplasmid"
+                  },
+                  "Unstable Deep Core Strip Miner Mutaplasmid": {
+                    "item_id": 90497,
+                    "name": "Unstable Deep Core Strip Miner Mutaplasmid"
+                  },
+                  "Unstable Modulated Deep Core Strip Miner Mutaplasmid": {
+                    "item_id": 90486,
+                    "name": "Unstable Modulated Deep Core Strip Miner Mutaplasmid"
+                  },
+                  "Unstable Modulated Strip Miner Mutaplasmid": {
+                    "item_id": 90469,
+                    "name": "Unstable Modulated Strip Miner Mutaplasmid"
+                  },
+                  "Unstable Strip Miner Mutaplasmid": {
+                    "item_id": 90491,
+                    "name": "Unstable Strip Miner Mutaplasmid"
                   }
                 }
               }
@@ -38968,6 +39378,29 @@
             "id": 1781,
             "name": "Targeting Rigs",
             "subgroups": {
+              "Capital Targeting Rigs": {
+                "id": 1793,
+                "name": "Capital Targeting Rigs",
+                "subgroups": {},
+                "items": {
+                  "Capital Ionic Field Projector I": {
+                    "item_id": 31278,
+                    "name": "Capital Ionic Field Projector I"
+                  },
+                  "Capital Ionic Field Projector II": {
+                    "item_id": 31284,
+                    "name": "Capital Ionic Field Projector II"
+                  },
+                  "Capital Targeting System Subcontroller I": {
+                    "item_id": 31326,
+                    "name": "Capital Targeting System Subcontroller I"
+                  },
+                  "Capital Targeting System Subcontroller II": {
+                    "item_id": 31332,
+                    "name": "Capital Targeting System Subcontroller II"
+                  }
+                }
+              },
               "Large Targeting Rigs": {
                 "id": 1792,
                 "name": "Large Targeting Rigs",
@@ -40935,6 +41368,10 @@
                 "item_id": 17520,
                 "name": "Federation Navy Sensor Booster"
               },
+              "Integrated Sensor Array": {
+                "item_id": 90475,
+                "name": "Integrated Sensor Array"
+              },
               "Networked Sensor Array": {
                 "item_id": 41411,
                 "name": "Networked Sensor Array"
@@ -42568,6 +43005,14 @@
                 "item_id": 43552,
                 "name": "Armor Command Burst II"
               },
+              "Expedition Command Burst I": {
+                "item_id": 89608,
+                "name": "Expedition Command Burst I"
+              },
+              "Expedition Command Burst II": {
+                "item_id": 89615,
+                "name": "Expedition Command Burst II"
+              },
               "Information Command Burst I": {
                 "item_id": 42527,
                 "name": "Information Command Burst I"
@@ -42591,6 +43036,10 @@
               "Shield Command Burst II": {
                 "item_id": 43555,
                 "name": "Shield Command Burst II"
+              },
+              "Sisters Expedition Command Burst": {
+                "item_id": 89616,
+                "name": "Sisters Expedition Command Burst"
               },
               "Skirmish Command Burst I": {
                 "item_id": 42530,
@@ -47396,6 +47845,25 @@
               }
             }
           },
+          "Mining Survey Chipsets": {
+            "id": 714,
+            "name": "Mining Survey Chipsets",
+            "subgroups": {},
+            "items": {
+              "Mining Survey Chipset I": {
+                "item_id": 444,
+                "name": "Mining Survey Chipset I"
+              },
+              "Mining Survey Chipset II": {
+                "item_id": 2333,
+                "name": "Mining Survey Chipset II"
+              },
+              "ML-3 Compact Mining Survey Chipset": {
+                "item_id": 6569,
+                "name": "ML-3 Compact Mining Survey Chipset"
+              }
+            }
+          },
           "Scan Probe Launchers": {
             "id": 712,
             "name": "Scan Probe Launchers",
@@ -47505,25 +47973,6 @@
               "Survey Probe Launcher II": {
                 "item_id": 33272,
                 "name": "Survey Probe Launcher II"
-              }
-            }
-          },
-          "Survey Scanners": {
-            "id": 714,
-            "name": "Survey Scanners",
-            "subgroups": {},
-            "items": {
-              "ML-3 Scoped Survey Scanner": {
-                "item_id": 6569,
-                "name": "ML-3 Scoped Survey Scanner"
-              },
-              "Survey Scanner I": {
-                "item_id": 444,
-                "name": "Survey Scanner I"
-              },
-              "Survey Scanner II": {
-                "item_id": 2333,
-                "name": "Survey Scanner II"
               }
             }
           }
@@ -50089,9 +50538,9 @@
                         "item_id": 14455,
                         "name": "Draclira's Modified Tachyon Beam Laser"
                       },
-                      "Dual Afocal Heavy Maser I": {
+                      "Dual Afocal Heavy Laser I": {
                         "item_id": 7045,
-                        "name": "Dual Afocal Heavy Maser I"
+                        "name": "Dual Afocal Heavy Laser I"
                       },
                       "Dual Anode Heavy Particle Stream I": {
                         "item_id": 7049,
@@ -50125,9 +50574,9 @@
                         "item_id": 15860,
                         "name": "Imperial Navy Tachyon Beam Laser"
                       },
-                      "Mega Afocal Maser I": {
+                      "Mega Afocal Laser I": {
                         "item_id": 7125,
-                        "name": "Mega Afocal Maser I"
+                        "name": "Mega Afocal Laser I"
                       },
                       "Mega Anode Particle Stream I": {
                         "item_id": 7131,
@@ -50173,9 +50622,9 @@
                         "item_id": 14449,
                         "name": "Selynne's Modified Tachyon Beam Laser"
                       },
-                      "Tachyon Afocal Maser I": {
+                      "Tachyon Afocal Laser I": {
                         "item_id": 7169,
-                        "name": "Tachyon Afocal Maser I"
+                        "name": "Tachyon Afocal Laser I"
                       },
                       "Tachyon Anode Particle Stream I": {
                         "item_id": 7173,
@@ -50248,9 +50697,9 @@
                         "item_id": 13819,
                         "name": "Dark Blood Quad Beam Laser"
                       },
-                      "Focused Afocal Medium Maser I": {
+                      "Focused Afocal Medium Laser I": {
                         "item_id": 6861,
-                        "name": "Focused Afocal Medium Maser I"
+                        "name": "Focused Afocal Medium Laser I"
                       },
                       "Focused Anode Medium Particle Stream I": {
                         "item_id": 6865,
@@ -50272,9 +50721,9 @@
                         "item_id": 6863,
                         "name": "Focused Modulated Medium Energy Beam I"
                       },
-                      "Heavy Afocal Maser I": {
+                      "Heavy Afocal Laser I": {
                         "item_id": 6961,
-                        "name": "Heavy Afocal Maser I"
+                        "name": "Heavy Afocal Laser I"
                       },
                       "Heavy Anode Particle Stream I": {
                         "item_id": 6965,
@@ -50308,9 +50757,9 @@
                         "item_id": 15861,
                         "name": "Imperial Navy Quad Beam Laser"
                       },
-                      "Quad Afocal Light Maser I": {
+                      "Quad Afocal Light Laser I": {
                         "item_id": 6759,
-                        "name": "Quad Afocal Light Maser I"
+                        "name": "Quad Afocal Light Laser I"
                       },
                       "Quad Anode Light Particle Stream I": {
                         "item_id": 6763,
@@ -50375,9 +50824,9 @@
                         "item_id": 13809,
                         "name": "Dark Blood Small Focused Beam Laser"
                       },
-                      "Dual Afocal Light Maser I": {
+                      "Dual Afocal Light Laser I": {
                         "item_id": 6633,
-                        "name": "Dual Afocal Light Maser I"
+                        "name": "Dual Afocal Light Laser I"
                       },
                       "Dual Anode Light Particle Stream I": {
                         "item_id": 6637,
@@ -50407,9 +50856,9 @@
                         "item_id": 15865,
                         "name": "Imperial Navy Small Focused Beam Laser"
                       },
-                      "Small Focused Afocal Maser I": {
+                      "Small Focused Afocal Laser I": {
                         "item_id": 6717,
-                        "name": "Small Focused Afocal Maser I"
+                        "name": "Small Focused Afocal Laser I"
                       },
                       "Small Focused Anode Particle Stream I": {
                         "item_id": 6721,
@@ -50564,9 +51013,9 @@
                         "item_id": 13815,
                         "name": "Dark Blood Mega Pulse Laser"
                       },
-                      "Dual Heavy Afocal Pulse Maser I": {
+                      "Dual Heavy Afocal Pulse Laser I": {
                         "item_id": 7001,
-                        "name": "Dual Heavy Afocal Pulse Maser I"
+                        "name": "Dual Heavy Afocal Pulse Laser I"
                       },
                       "Dual Heavy Anode Pulse Particle Stream I": {
                         "item_id": 7005,
@@ -50596,9 +51045,9 @@
                         "item_id": 15862,
                         "name": "Imperial Navy Mega Pulse Laser"
                       },
-                      "Mega Afocal Pulse Maser I": {
+                      "Mega Afocal Pulse Laser I": {
                         "item_id": 7085,
-                        "name": "Mega Afocal Pulse Maser I"
+                        "name": "Mega Afocal Pulse Laser I"
                       },
                       "Mega Anode Pulse Particle Stream I": {
                         "item_id": 7089,
@@ -50675,9 +51124,9 @@
                         "item_id": 13807,
                         "name": "Dark Blood Heavy Pulse Laser"
                       },
-                      "Focused Afocal Pulse Maser I": {
+                      "Focused Afocal Pulse Laser I": {
                         "item_id": 6807,
-                        "name": "Focused Afocal Pulse Maser I"
+                        "name": "Focused Afocal Pulse Laser I"
                       },
                       "Focused Anode Pulse Particle Stream I": {
                         "item_id": 6811,
@@ -50699,9 +51148,9 @@
                         "item_id": 6809,
                         "name": "Focused Modulated Pulse Energy Beam I"
                       },
-                      "Heavy Afocal Pulse Maser I": {
+                      "Heavy Afocal Pulse Laser I": {
                         "item_id": 6921,
-                        "name": "Heavy Afocal Pulse Maser I"
+                        "name": "Heavy Afocal Pulse Laser I"
                       },
                       "Heavy Anode Pulse Particle Stream I": {
                         "item_id": 6925,
@@ -50786,9 +51235,9 @@
                         "item_id": 13811,
                         "name": "Dark Blood Small Focused Pulse Laser"
                       },
-                      "Dual Afocal Pulse Maser I": {
+                      "Dual Afocal Pulse Laser I": {
                         "item_id": 5217,
-                        "name": "Dual Afocal Pulse Maser I"
+                        "name": "Dual Afocal Pulse Laser I"
                       },
                       "Dual Anode Pulse Particle Stream I": {
                         "item_id": 5221,
@@ -50810,9 +51259,9 @@
                         "item_id": 5219,
                         "name": "Dual Modulated Pulse Energy Beam I"
                       },
-                      "Gatling Afocal Maser I": {
+                      "Gatling Afocal Laser I": {
                         "item_id": 5177,
-                        "name": "Gatling Afocal Maser I"
+                        "name": "Gatling Afocal Laser I"
                       },
                       "Gatling Anode Particle Stream I": {
                         "item_id": 5181,
@@ -50854,9 +51303,9 @@
                         "item_id": 34272,
                         "name": "Polarized Small Focused Pulse Laser"
                       },
-                      "Small Focused Afocal Pulse Maser I": {
+                      "Small Focused Afocal Pulse Laser I": {
                         "item_id": 6673,
-                        "name": "Small Focused Afocal Pulse Maser I"
+                        "name": "Small Focused Afocal Pulse Laser I"
                       },
                       "Small Focused Anode Pulse Particle Stream I": {
                         "item_id": 6677,
@@ -66615,6 +67064,17 @@
                         "name": "Bifrost Valklear Glory SKIN"
                       }
                     }
+                  },
+                  "ORE": {
+                    "id": 3818,
+                    "name": "ORE",
+                    "subgroups": {},
+                    "items": {
+                      "Outrider Refined Resourcer SKIN": {
+                        "item_id": 91099,
+                        "name": "Outrider Refined Resourcer SKIN"
+                      }
+                    }
                   }
                 },
                 "items": {}
@@ -67208,6 +67668,10 @@
                   "Cormorant Navy Issue State Police SKIN": {
                     "item_id": 82175,
                     "name": "Cormorant Navy Issue State Police SKIN"
+                  },
+                  "Pioneer Consortium Issue Refined Resourcer SKIN": {
+                    "item_id": 91098,
+                    "name": "Pioneer Consortium Issue Refined Resourcer SKIN"
                   },
                   "Thrasher Fleet Issue Arkombine Arisen SKIN": {
                     "item_id": 79941,
@@ -68190,6 +68654,17 @@
                   "Thrasher Zakura Shumyu SKIN": {
                     "item_id": 57065,
                     "name": "Thrasher Zakura Shumyu SKIN"
+                  }
+                }
+              },
+              "ORE": {
+                "id": 3813,
+                "name": "ORE",
+                "subgroups": {},
+                "items": {
+                  "Pioneer Refined Resourcer SKIN": {
+                    "item_id": 91097,
+                    "name": "Pioneer Refined Resourcer SKIN"
                   }
                 }
               }
@@ -72824,6 +73299,10 @@
                     "item_id": 60944,
                     "name": "Venture Radioactives Reclamation SKIN"
                   },
+                  "Venture Refined Resourcer SKIN": {
+                    "item_id": 91096,
+                    "name": "Venture Refined Resourcer SKIN"
+                  },
                   "Venture Rockbreaker Pioneers SKIN": {
                     "item_id": 56604,
                     "name": "Venture Rockbreaker Pioneers SKIN"
@@ -73421,6 +73900,10 @@
                   "Orca Radioactives Reclamation SKIN": {
                     "item_id": 60953,
                     "name": "Orca Radioactives Reclamation SKIN"
+                  },
+                  "Orca Refined Resourcer SKIN": {
+                    "item_id": 91104,
+                    "name": "Orca Refined Resourcer SKIN"
                   },
                   "Orca Rockbreaker Pioneers SKIN": {
                     "item_id": 56612,
@@ -74334,6 +74817,10 @@
                 "item_id": 60951,
                 "name": "Mackinaw Radioactives Reclamation SKIN"
               },
+              "Mackinaw Refined Resourcer SKIN": {
+                "item_id": 91103,
+                "name": "Mackinaw Refined Resourcer SKIN"
+              },
               "Mackinaw Rockbreaker Pioneers SKIN": {
                 "item_id": 56616,
                 "name": "Mackinaw Rockbreaker Pioneers SKIN"
@@ -74410,6 +74897,10 @@
                 "item_id": 60950,
                 "name": "Skiff Radioactives Reclamation SKIN"
               },
+              "Skiff Refined Resourcer SKIN": {
+                "item_id": 91102,
+                "name": "Skiff Refined Resourcer SKIN"
+              },
               "Skiff Rockbreaker Pioneers SKIN": {
                 "item_id": 56615,
                 "name": "Skiff Rockbreaker Pioneers SKIN"
@@ -74485,6 +74976,10 @@
                 "item_id": 60949,
                 "name": "Covetor Radioactives Reclamation SKIN"
               },
+              "Covetor Refined Resourcer SKIN": {
+                "item_id": 91101,
+                "name": "Covetor Refined Resourcer SKIN"
+              },
               "Covetor Rockbreaker Pioneers SKIN": {
                 "item_id": 56610,
                 "name": "Covetor Rockbreaker Pioneers SKIN"
@@ -74552,6 +75047,10 @@
               "Procurer Radioactives Reclamation SKIN": {
                 "item_id": 60947,
                 "name": "Procurer Radioactives Reclamation SKIN"
+              },
+              "Procurer Refined Resourcer SKIN": {
+                "item_id": 91100,
+                "name": "Procurer Refined Resourcer SKIN"
               },
               "Procurer Rockbreaker Pioneers SKIN": {
                 "item_id": 56608,
@@ -74624,6 +75123,10 @@
               "Retriever Radioactives Reclamation SKIN": {
                 "item_id": 60948,
                 "name": "Retriever Radioactives Reclamation SKIN"
+              },
+              "Retriever Refined Resourcer SKIN": {
+                "item_id": 91108,
+                "name": "Retriever Refined Resourcer SKIN"
               },
               "Retriever Rockbreaker Pioneers SKIN": {
                 "item_id": 56609,
@@ -75032,6 +75535,24 @@
                   }
                 },
                 "items": {}
+              }
+            },
+            "items": {}
+          },
+          "Expedition Command Ships": {
+            "id": 3759,
+            "name": "Expedition Command Ships",
+            "subgroups": {
+              "Sisters of EVE": {
+                "id": 3762,
+                "name": "Sisters of EVE",
+                "subgroups": {},
+                "items": {
+                  "Odysseus": {
+                    "item_id": 89607,
+                    "name": "Odysseus"
+                  }
+                }
               }
             },
             "items": {}
@@ -76756,6 +77277,17 @@
                       }
                     }
                   },
+                  "ORE": {
+                    "id": 3764,
+                    "name": "ORE",
+                    "subgroups": {},
+                    "items": {
+                      "Outrider": {
+                        "item_id": 89649,
+                        "name": "Outrider"
+                      }
+                    }
+                  },
                   "Triglavian": {
                     "id": 2537,
                     "name": "Triglavian",
@@ -76882,25 +77414,64 @@
               "Navy Faction": {
                 "id": 3481,
                 "name": "Navy Faction",
-                "subgroups": {},
-                "items": {
-                  "Catalyst Navy Issue": {
-                    "item_id": 73796,
-                    "name": "Catalyst Navy Issue"
+                "subgroups": {
+                  "Amarr": {
+                    "id": 3765,
+                    "name": "Amarr",
+                    "subgroups": {},
+                    "items": {
+                      "Coercer Navy Issue": {
+                        "item_id": 73789,
+                        "name": "Coercer Navy Issue"
+                      }
+                    }
                   },
-                  "Coercer Navy Issue": {
-                    "item_id": 73789,
-                    "name": "Coercer Navy Issue"
+                  "Caldari": {
+                    "id": 3766,
+                    "name": "Caldari",
+                    "subgroups": {},
+                    "items": {
+                      "Cormorant Navy Issue": {
+                        "item_id": 73795,
+                        "name": "Cormorant Navy Issue"
+                      }
+                    }
                   },
-                  "Cormorant Navy Issue": {
-                    "item_id": 73795,
-                    "name": "Cormorant Navy Issue"
+                  "Gallente": {
+                    "id": 3767,
+                    "name": "Gallente",
+                    "subgroups": {},
+                    "items": {
+                      "Catalyst Navy Issue": {
+                        "item_id": 73796,
+                        "name": "Catalyst Navy Issue"
+                      }
+                    }
                   },
-                  "Thrasher Fleet Issue": {
-                    "item_id": 73794,
-                    "name": "Thrasher Fleet Issue"
+                  "Minmatar": {
+                    "id": 3768,
+                    "name": "Minmatar",
+                    "subgroups": {},
+                    "items": {
+                      "Thrasher Fleet Issue": {
+                        "item_id": 73794,
+                        "name": "Thrasher Fleet Issue"
+                      }
+                    }
+                  },
+                  "ORE": {
+                    "id": 3769,
+                    "name": "ORE",
+                    "subgroups": {},
+                    "items": {
+                      "Pioneer Consortium Issue": {
+                        "item_id": 89647,
+                        "name": "Pioneer Consortium Issue"
+                      }
+                    }
                   }
-                }
+                },
+                "items": {}
               },
               "Pirate Faction": {
                 "id": 3531,
@@ -77003,6 +77574,17 @@
                   "Thrasher": {
                     "item_id": 16242,
                     "name": "Thrasher"
+                  }
+                }
+              },
+              "ORE": {
+                "id": 3755,
+                "name": "ORE",
+                "subgroups": {},
+                "items": {
+                  "Pioneer": {
+                    "item_id": 89240,
+                    "name": "Pioneer"
                   }
                 }
               }
@@ -77370,59 +77952,99 @@
               "Navy Faction": {
                 "id": 1366,
                 "name": "Navy Faction",
-                "subgroups": {},
+                "subgroups": {
+                  "Amarr": {
+                    "id": 3770,
+                    "name": "Amarr",
+                    "subgroups": {},
+                    "items": {
+                      "Crucifier Navy Issue": {
+                        "item_id": 37453,
+                        "name": "Crucifier Navy Issue"
+                      },
+                      "Imperial Navy Slicer": {
+                        "item_id": 17703,
+                        "name": "Imperial Navy Slicer"
+                      },
+                      "Magnate Navy Issue": {
+                        "item_id": 72907,
+                        "name": "Magnate Navy Issue"
+                      }
+                    }
+                  },
+                  "Caldari": {
+                    "id": 3771,
+                    "name": "Caldari",
+                    "subgroups": {},
+                    "items": {
+                      "Caldari Navy Hookbill": {
+                        "item_id": 17619,
+                        "name": "Caldari Navy Hookbill"
+                      },
+                      "Griffin Navy Issue": {
+                        "item_id": 37455,
+                        "name": "Griffin Navy Issue"
+                      },
+                      "Heron Navy Issue": {
+                        "item_id": 72904,
+                        "name": "Heron Navy Issue"
+                      }
+                    }
+                  },
+                  "Gallente": {
+                    "id": 3772,
+                    "name": "Gallente",
+                    "subgroups": {},
+                    "items": {
+                      "Federation Navy Comet": {
+                        "item_id": 17841,
+                        "name": "Federation Navy Comet"
+                      },
+                      "Imicus Navy Issue": {
+                        "item_id": 72913,
+                        "name": "Imicus Navy Issue"
+                      },
+                      "Maulus Navy Issue": {
+                        "item_id": 37456,
+                        "name": "Maulus Navy Issue"
+                      }
+                    }
+                  },
+                  "Minmatar": {
+                    "id": 3773,
+                    "name": "Minmatar",
+                    "subgroups": {},
+                    "items": {
+                      "Probe Fleet Issue": {
+                        "item_id": 72903,
+                        "name": "Probe Fleet Issue"
+                      },
+                      "Republic Fleet Firetail": {
+                        "item_id": 17812,
+                        "name": "Republic Fleet Firetail"
+                      },
+                      "Vigil Fleet Issue": {
+                        "item_id": 37454,
+                        "name": "Vigil Fleet Issue"
+                      }
+                    }
+                  },
+                  "ORE": {
+                    "id": 3774,
+                    "name": "ORE",
+                    "subgroups": {},
+                    "items": {
+                      "Venture Consortium Issue": {
+                        "item_id": 89648,
+                        "name": "Venture Consortium Issue"
+                      }
+                    }
+                  }
+                },
                 "items": {
-                  "Caldari Navy Hookbill": {
-                    "item_id": 17619,
-                    "name": "Caldari Navy Hookbill"
-                  },
-                  "Crucifier Navy Issue": {
-                    "item_id": 37453,
-                    "name": "Crucifier Navy Issue"
-                  },
-                  "Federation Navy Comet": {
-                    "item_id": 17841,
-                    "name": "Federation Navy Comet"
-                  },
-                  "Griffin Navy Issue": {
-                    "item_id": 37455,
-                    "name": "Griffin Navy Issue"
-                  },
-                  "Heron Navy Issue": {
-                    "item_id": 72904,
-                    "name": "Heron Navy Issue"
-                  },
-                  "Imicus Navy Issue": {
-                    "item_id": 72913,
-                    "name": "Imicus Navy Issue"
-                  },
-                  "Imperial Navy Slicer": {
-                    "item_id": 17703,
-                    "name": "Imperial Navy Slicer"
-                  },
-                  "Magnate Navy Issue": {
-                    "item_id": 72907,
-                    "name": "Magnate Navy Issue"
-                  },
-                  "Maulus Navy Issue": {
-                    "item_id": 37456,
-                    "name": "Maulus Navy Issue"
-                  },
                   "Police Pursuit Comet": {
                     "item_id": 33677,
                     "name": "Police Pursuit Comet"
-                  },
-                  "Probe Fleet Issue": {
-                    "item_id": 72903,
-                    "name": "Probe Fleet Issue"
-                  },
-                  "Republic Fleet Firetail": {
-                    "item_id": 17812,
-                    "name": "Republic Fleet Firetail"
-                  },
-                  "Vigil Fleet Issue": {
-                    "item_id": 37454,
-                    "name": "Vigil Fleet Issue"
                   }
                 }
               },
@@ -77997,6 +78619,17 @@
               "Utu": {
                 "item_id": 2834,
                 "name": "Utu"
+              }
+            }
+          },
+          "Special Edition Battlecruisers": {
+            "id": 1698,
+            "name": "Special Edition Battlecruisers",
+            "subgroups": {},
+            "items": {
+              "Gnosis": {
+                "item_id": 3756,
+                "name": "Gnosis"
               }
             }
           },
@@ -78691,6 +79324,14 @@
           "Command Burst Specialist": {
             "item_id": 3354,
             "name": "Command Burst Specialist"
+          },
+          "Expedition Command": {
+            "item_id": 89611,
+            "name": "Expedition Command"
+          },
+          "Expedition Command Specialist": {
+            "item_id": 89610,
+            "name": "Expedition Command Specialist"
           },
           "Fleet Command": {
             "item_id": 24764,
@@ -79417,6 +80058,10 @@
             "item_id": 11395,
             "name": "Deep Core Mining"
           },
+          "Erratic Ore Processing": {
+            "item_id": 90040,
+            "name": "Erratic Ore Processing"
+          },
           "Exceptional Moon Ore Processing": {
             "item_id": 46156,
             "name": "Exceptional Moon Ore Processing"
@@ -79476,6 +80121,14 @@
           "Mining": {
             "item_id": 3386,
             "name": "Mining"
+          },
+          "Mining Exploitation": {
+            "item_id": 90728,
+            "name": "Mining Exploitation"
+          },
+          "Mining Precision": {
+            "item_id": 90727,
+            "name": "Mining Precision"
           },
           "Mining Upgrades": {
             "item_id": 22578,
@@ -79552,6 +80205,10 @@
           "Uncommon Moon Ore Processing": {
             "item_id": 46154,
             "name": "Uncommon Moon Ore Processing"
+          },
+          "Unrefined Minerals Processing": {
+            "item_id": 90398,
+            "name": "Unrefined Minerals Processing"
           },
           "Variegated Ore Processing": {
             "item_id": 60379,
@@ -80166,6 +80823,10 @@
             "item_id": 22551,
             "name": "Exhumers"
           },
+          "Expedition Command Ships": {
+            "item_id": 89609,
+            "name": "Expedition Command Ships"
+          },
           "Expedition Frigates": {
             "item_id": 33856,
             "name": "Expedition Frigates"
@@ -80269,6 +80930,10 @@
           "Mining Barge": {
             "item_id": 17940,
             "name": "Mining Barge"
+          },
+          "Mining Destroyer": {
+            "item_id": 89241,
+            "name": "Mining Destroyer"
           },
           "Mining Frigate": {
             "item_id": 32918,
@@ -84760,6 +85425,17 @@
               }
             }
           },
+          "Mobile Phase Anchors": {
+            "id": 3781,
+            "name": "Mobile Phase Anchors",
+            "subgroups": {},
+            "items": {
+              "Mobile Phase Anchor": {
+                "item_id": 90037,
+                "name": "Mobile Phase Anchor"
+              }
+            }
+          },
           "Mobile Scan Inhibitors": {
             "id": 1845,
             "name": "Mobile Scan Inhibitors",
@@ -88718,6 +89394,10 @@
           "Operation Center Reward Token": {
             "item_id": 72258,
             "name": "Operation Center Reward Token"
+          },
+          "Pioneer Redemption Token": {
+            "item_id": 90180,
+            "name": "Pioneer Redemption Token"
           },
           "Pro-Trade Pamphlets": {
             "item_id": 17755,
