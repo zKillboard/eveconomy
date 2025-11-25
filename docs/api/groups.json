@@ -14641,6 +14641,93 @@
                     "name": "Pulse Activated Nexus Invulnerability Core Blueprint"
                   }
                 }
+              },
+              "Weapon Upgrades": {
+                "id": 343,
+                "name": "Weapon Upgrades",
+                "subgroups": {},
+                "items": {
+                  "Ballistic Control System I Blueprint": {
+                    "item_id": 12275,
+                    "name": "Ballistic Control System I Blueprint"
+                  },
+                  "Bastion Module I Blueprint": {
+                    "item_id": 33401,
+                    "name": "Bastion Module I Blueprint"
+                  },
+                  "Capital Industrial Core I Blueprint": {
+                    "item_id": 28584,
+                    "name": "Capital Industrial Core I Blueprint"
+                  },
+                  "Consortium Vorton Tuning System Blueprint": {
+                    "item_id": 79175,
+                    "name": "Consortium Vorton Tuning System Blueprint"
+                  },
+                  "Entropic Radiation Sink I Blueprint": {
+                    "item_id": 48095,
+                    "name": "Entropic Radiation Sink I Blueprint"
+                  },
+                  "Gyrostabilizer I Blueprint": {
+                    "item_id": 1096,
+                    "name": "Gyrostabilizer I Blueprint"
+                  },
+                  "Heat Sink I Blueprint": {
+                    "item_id": 11612,
+                    "name": "Heat Sink I Blueprint"
+                  },
+                  "Kasiha's Modified Vorton Tuning System Blueprint": {
+                    "item_id": 79176,
+                    "name": "Kasiha's Modified Vorton Tuning System Blueprint"
+                  },
+                  "Large Industrial Core I Blueprint": {
+                    "item_id": 59171,
+                    "name": "Large Industrial Core I Blueprint"
+                  },
+                  "Magnetic Field Stabilizer I Blueprint": {
+                    "item_id": 9945,
+                    "name": "Magnetic Field Stabilizer I Blueprint"
+                  },
+                  "Medium Industrial Core I Blueprint": {
+                    "item_id": 62592,
+                    "name": "Medium Industrial Core I Blueprint"
+                  },
+                  "Missile Guidance Computer I Blueprint": {
+                    "item_id": 35791,
+                    "name": "Missile Guidance Computer I Blueprint"
+                  },
+                  "Missile Guidance Enhancer I Blueprint": {
+                    "item_id": 35772,
+                    "name": "Missile Guidance Enhancer I Blueprint"
+                  },
+                  "ML-EKP 'Polybolos' Ballistic Control System Blueprint": {
+                    "item_id": 49971,
+                    "name": "ML-EKP 'Polybolos' Ballistic Control System Blueprint"
+                  },
+                  "Remote Tracking Computer I Blueprint": {
+                    "item_id": 11617,
+                    "name": "Remote Tracking Computer I Blueprint"
+                  },
+                  "Siege Module I Blueprint": {
+                    "item_id": 20281,
+                    "name": "Siege Module I Blueprint"
+                  },
+                  "Tracking Computer I Blueprint": {
+                    "item_id": 11621,
+                    "name": "Tracking Computer I Blueprint"
+                  },
+                  "Tracking Enhancer I Blueprint": {
+                    "item_id": 11616,
+                    "name": "Tracking Enhancer I Blueprint"
+                  },
+                  "Triage Module I Blueprint": {
+                    "item_id": 27952,
+                    "name": "Triage Module I Blueprint"
+                  },
+                  "Veles Entropic Radiation Sink Blueprint": {
+                    "item_id": 52245,
+                    "name": "Veles Entropic Radiation Sink Blueprint"
+                  }
+                }
               }
             },
             "items": {}
@@ -28985,10 +29072,6 @@
                         "item_id": 62552,
                         "name": "Compressed Gneiss"
                       },
-                      "Compressed Gneiss (IV-Grade)": {
-                        "item_id": 62555,
-                        "name": "Compressed Gneiss (IV-Grade)"
-                      },
                       "Compressed Gneiss II-Grade": {
                         "item_id": 62553,
                         "name": "Compressed Gneiss II-Grade"
@@ -28996,6 +29079,10 @@
                       "Compressed Gneiss III-Grade": {
                         "item_id": 62554,
                         "name": "Compressed Gneiss III-Grade"
+                      },
+                      "Compressed Gneiss IV-Grade": {
+                        "item_id": 62555,
+                        "name": "Compressed Gneiss IV-Grade"
                       },
                       "Gneiss": {
                         "item_id": 1229,
@@ -29174,8 +29261,12 @@
                         "name": "Compressed Hezorime"
                       },
                       "Compressed Hezorime II-Grade": {
-                        "item_id": 82314,
+                        "item_id": 82313,
                         "name": "Compressed Hezorime II-Grade"
+                      },
+                      "Compressed Hezorime III-Grade": {
+                        "item_id": 82314,
+                        "name": "Compressed Hezorime III-Grade"
                       },
                       "Compressed Hezorime IV-Grade": {
                         "item_id": 82315,
@@ -55522,6 +55613,54 @@
                   "Khizriel Luminae Polaris SKIN": {
                     "item_id": 79950,
                     "name": "Khizriel Luminae Polaris SKIN"
+                  },
+                  "Odysseus Arkombine Arisen SKIN": {
+                    "item_id": 91169,
+                    "name": "Odysseus Arkombine Arisen SKIN"
+                  },
+                  "Odysseus Crystal Blast SKIN": {
+                    "item_id": 91167,
+                    "name": "Odysseus Crystal Blast SKIN"
+                  },
+                  "Odysseus Deathglow Remnant SKIN": {
+                    "item_id": 91168,
+                    "name": "Odysseus Deathglow Remnant SKIN"
+                  },
+                  "Odysseus Friendship League SKIN": {
+                    "item_id": 91170,
+                    "name": "Odysseus Friendship League SKIN"
+                  },
+                  "Odysseus One Eden SKIN": {
+                    "item_id": 91162,
+                    "name": "Odysseus One Eden SKIN"
+                  },
+                  "Odysseus Sanctuary SKIN": {
+                    "item_id": 91163,
+                    "name": "Odysseus Sanctuary SKIN"
+                  },
+                  "Odysseus SOE Blue Cell SKIN": {
+                    "item_id": 91173,
+                    "name": "Odysseus SOE Blue Cell SKIN"
+                  },
+                  "Odysseus SOE Fire Cell SKIN": {
+                    "item_id": 91172,
+                    "name": "Odysseus SOE Fire Cell SKIN"
+                  },
+                  "Odysseus SOE Gold Cell SKIN": {
+                    "item_id": 91171,
+                    "name": "Odysseus SOE Gold Cell SKIN"
+                  },
+                  "Odysseus Spectral Shift SKIN": {
+                    "item_id": 91164,
+                    "name": "Odysseus Spectral Shift SKIN"
+                  },
+                  "Odysseus Yoiul Festival YC121 SKIN": {
+                    "item_id": 91165,
+                    "name": "Odysseus Yoiul Festival YC121 SKIN"
+                  },
+                  "Odysseus Yoiul Star SKIN": {
+                    "item_id": 91166,
+                    "name": "Odysseus Yoiul Star SKIN"
                   }
                 }
               }
@@ -81411,9 +81550,25 @@
             "item_id": 33060,
             "name": "*Sneaks in a classic*"
           },
+          "1000 PLEX and Rare SKINR Supplies Crate": {
+            "item_id": 91198,
+            "name": "1000 PLEX and Rare SKINR Supplies Crate"
+          },
+          "1500 PLEX and Rare SKINR Supplies Crate": {
+            "item_id": 91199,
+            "name": "1500 PLEX and Rare SKINR Supplies Crate"
+          },
+          "200 PLEX and Rare SKINR Supplies Crate": {
+            "item_id": 91196,
+            "name": "200 PLEX and Rare SKINR Supplies Crate"
+          },
           "300 Billion ISK Contract Copy": {
             "item_id": 47056,
             "name": "300 Billion ISK Contract Copy"
+          },
+          "500 PLEX and Rare SKINR Supplies Crate": {
+            "item_id": 91197,
+            "name": "500 PLEX and Rare SKINR Supplies Crate"
           },
           "95th Interstellar Mindclash Championship Tickets": {
             "item_id": 37883,
@@ -82419,6 +82574,10 @@
             "item_id": 88178,
             "name": "Nexus Cypher"
           },
+          "Odysseus Definitive SOE SKINs Crate": {
+            "item_id": 91185,
+            "name": "Odysseus Definitive SOE SKINs Crate"
+          },
           "Offensive Content Reports, Jan. YC120, vol. I": {
             "item_id": 48759,
             "name": "Offensive Content Reports, Jan. YC120, vol. I"
@@ -82894,6 +83053,10 @@
           "Uncertainty Thread": {
             "item_id": 87603,
             "name": "Uncertainty Thread"
+          },
+          "Uncommon SKINR Studio Supplies Crate": {
+            "item_id": 91195,
+            "name": "Uncommon SKINR Studio Supplies Crate"
           },
           "Unit of Lag": {
             "item_id": 33021,
@@ -87992,6 +88155,14 @@
           "Compressed Capsule Shell": {
             "item_id": 47450,
             "name": "Compressed Capsule Shell"
+          },
+          "Proof of Destruction": {
+            "item_id": 90565,
+            "name": "Proof of Destruction"
+          },
+          "Proof of Transmission": {
+            "item_id": 90566,
+            "name": "Proof of Transmission"
           }
         }
       },
