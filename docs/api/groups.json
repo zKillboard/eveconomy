@@ -3481,29 +3481,6 @@
                   }
                 }
               },
-              "Advanced High Precision Light Missiles": {
-                "id": 917,
-                "name": "Advanced High Precision Light Missiles",
-                "subgroups": {},
-                "items": {
-                  "Inferno Precision Light Missile": {
-                    "item_id": 2647,
-                    "name": "Inferno Precision Light Missile"
-                  },
-                  "Mjolnir Precision Light Missile": {
-                    "item_id": 24505,
-                    "name": "Mjolnir Precision Light Missile"
-                  },
-                  "Nova Precision Light Missile": {
-                    "item_id": 24503,
-                    "name": "Nova Precision Light Missile"
-                  },
-                  "Scourge Precision Light Missile": {
-                    "item_id": 24501,
-                    "name": "Scourge Precision Light Missile"
-                  }
-                }
-              },
               "Faction Light Missiles": {
                 "id": 998,
                 "name": "Faction Light Missiles",
@@ -3556,29 +3533,6 @@
                   "Guristas Scourge Light Missile": {
                     "item_id": 27353,
                     "name": "Guristas Scourge Light Missile"
-                  }
-                }
-              },
-              "Standard Light Missiles": {
-                "id": 920,
-                "name": "Standard Light Missiles",
-                "subgroups": {},
-                "items": {
-                  "Inferno Light Missile": {
-                    "item_id": 211,
-                    "name": "Inferno Light Missile"
-                  },
-                  "Mjolnir Light Missile": {
-                    "item_id": 212,
-                    "name": "Mjolnir Light Missile"
-                  },
-                  "Nova Light Missile": {
-                    "item_id": 213,
-                    "name": "Nova Light Missile"
-                  },
-                  "Scourge Light Missile": {
-                    "item_id": 210,
-                    "name": "Scourge Light Missile"
                   }
                 }
               }
@@ -12882,37 +12836,6 @@
                   }
                 }
               },
-              "Energy Nosferatu": {
-                "id": 1564,
-                "name": "Energy Nosferatu",
-                "subgroups": {},
-                "items": {
-                  "Capital Energy Nosferatu I Blueprint": {
-                    "item_id": 40684,
-                    "name": "Capital Energy Nosferatu I Blueprint"
-                  },
-                  "Capital Ghoul Compact Energy Nosferatu Blueprint": {
-                    "item_id": 40685,
-                    "name": "Capital Ghoul Compact Energy Nosferatu Blueprint"
-                  },
-                  "Capital Knave Scoped Energy Nosferatu Blueprint": {
-                    "item_id": 40686,
-                    "name": "Capital Knave Scoped Energy Nosferatu Blueprint"
-                  },
-                  "Heavy Energy Nosferatu I Blueprint": {
-                    "item_id": 12262,
-                    "name": "Heavy Energy Nosferatu I Blueprint"
-                  },
-                  "Medium Energy Nosferatu I Blueprint": {
-                    "item_id": 12258,
-                    "name": "Medium Energy Nosferatu I Blueprint"
-                  },
-                  "Small Energy Nosferatu I Blueprint": {
-                    "item_id": 1106,
-                    "name": "Small Energy Nosferatu I Blueprint"
-                  }
-                }
-              },
               "Power Diagnostic Systems": {
                 "id": 1560,
                 "name": "Power Diagnostic Systems",
@@ -17804,17 +17727,6 @@
                   }
                 }
               },
-              "Caldari": {
-                "id": 444,
-                "name": "Caldari",
-                "subgroups": {},
-                "items": {
-                  "Basilisk Blueprint": {
-                    "item_id": 11986,
-                    "name": "Basilisk Blueprint"
-                  }
-                }
-              },
               "Gallente": {
                 "id": 445,
                 "name": "Gallente",
@@ -19117,12 +19029,6 @@
               "Mobile Siphon Units": {
                 "id": 1834,
                 "name": "Mobile Siphon Units",
-                "subgroups": {},
-                "items": {}
-              },
-              "Mobile Strategic Objectives": {
-                "id": 3451,
-                "name": "Mobile Strategic Objectives",
                 "subgroups": {},
                 "items": {}
               },
@@ -39022,45 +38928,6 @@
                   }
                 }
               },
-              "Large Scanning Rigs": {
-                "id": 1788,
-                "name": "Large Scanning Rigs",
-                "subgroups": {},
-                "items": {
-                  "Large Emission Scope Sharpener I": {
-                    "item_id": 25930,
-                    "name": "Large Emission Scope Sharpener I"
-                  },
-                  "Large Emission Scope Sharpener II": {
-                    "item_id": 26342,
-                    "name": "Large Emission Scope Sharpener II"
-                  },
-                  "Large Gravity Capacitor Upgrade I": {
-                    "item_id": 25936,
-                    "name": "Large Gravity Capacitor Upgrade I"
-                  },
-                  "Large Gravity Capacitor Upgrade II": {
-                    "item_id": 26350,
-                    "name": "Large Gravity Capacitor Upgrade II"
-                  },
-                  "Large Memetic Algorithm Bank I": {
-                    "item_id": 25932,
-                    "name": "Large Memetic Algorithm Bank I"
-                  },
-                  "Large Memetic Algorithm Bank II": {
-                    "item_id": 26346,
-                    "name": "Large Memetic Algorithm Bank II"
-                  },
-                  "Large Signal Focusing Kit I": {
-                    "item_id": 26104,
-                    "name": "Large Signal Focusing Kit I"
-                  },
-                  "Large Signal Focusing Kit II": {
-                    "item_id": 26362,
-                    "name": "Large Signal Focusing Kit II"
-                  }
-                }
-              },
               "Medium Scanning Rigs": {
                 "id": 1787,
                 "name": "Medium Scanning Rigs",
@@ -39469,29 +39336,6 @@
             "id": 1781,
             "name": "Targeting Rigs",
             "subgroups": {
-              "Capital Targeting Rigs": {
-                "id": 1793,
-                "name": "Capital Targeting Rigs",
-                "subgroups": {},
-                "items": {
-                  "Capital Ionic Field Projector I": {
-                    "item_id": 31278,
-                    "name": "Capital Ionic Field Projector I"
-                  },
-                  "Capital Ionic Field Projector II": {
-                    "item_id": 31284,
-                    "name": "Capital Ionic Field Projector II"
-                  },
-                  "Capital Targeting System Subcontroller I": {
-                    "item_id": 31326,
-                    "name": "Capital Targeting System Subcontroller I"
-                  },
-                  "Capital Targeting System Subcontroller II": {
-                    "item_id": 31332,
-                    "name": "Capital Targeting System Subcontroller II"
-                  }
-                }
-              },
               "Large Targeting Rigs": {
                 "id": 1792,
                 "name": "Large Targeting Rigs",
@@ -40237,43 +40081,6 @@
                 "name": "Weapon Disruption Burst Projector"
               }
             }
-          },
-          "ECCM": {
-            "id": 685,
-            "name": "ECCM",
-            "subgroups": {
-              "Gravimetric Sensors": {
-                "id": 725,
-                "name": "Gravimetric Sensors",
-                "subgroups": {},
-                "items": {}
-              },
-              "Ladar Sensors": {
-                "id": 726,
-                "name": "Ladar Sensors",
-                "subgroups": {},
-                "items": {}
-              },
-              "Magnetometric Sensors": {
-                "id": 727,
-                "name": "Magnetometric Sensors",
-                "subgroups": {},
-                "items": {}
-              },
-              "Multi-Spectrum Sensors": {
-                "id": 728,
-                "name": "Multi-Spectrum Sensors",
-                "subgroups": {},
-                "items": {}
-              },
-              "Radar Sensors": {
-                "id": 729,
-                "name": "Radar Sensors",
-                "subgroups": {},
-                "items": {}
-              }
-            },
-            "items": {}
           },
           "ECM Bursts": {
             "id": 678,
@@ -55634,6 +55441,10 @@
                     "item_id": 91162,
                     "name": "Odysseus One Eden SKIN"
                   },
+                  "Odysseus Refined Resourcer SKIN": {
+                    "item_id": 91289,
+                    "name": "Odysseus Refined Resourcer SKIN"
+                  },
                   "Odysseus Sanctuary SKIN": {
                     "item_id": 91163,
                     "name": "Odysseus Sanctuary SKIN"
@@ -59931,6 +59742,10 @@
                     "item_id": 60954,
                     "name": "Rorqual Radioactives Reclamation SKIN"
                   },
+                  "Rorqual Refined Resourcer SKIN": {
+                    "item_id": 91288,
+                    "name": "Rorqual Refined Resourcer SKIN"
+                  },
                   "Rorqual Rockbreaker Pioneers SKIN": {
                     "item_id": 56613,
                     "name": "Rorqual Rockbreaker Pioneers SKIN"
@@ -61834,6 +61649,10 @@
                   "Bowhead Radioactives Reclamation SKIN": {
                     "item_id": 60958,
                     "name": "Bowhead Radioactives Reclamation SKIN"
+                  },
+                  "Bowhead Refined Resourcer SKIN": {
+                    "item_id": 91287,
+                    "name": "Bowhead Refined Resourcer SKIN"
                   },
                   "Bowhead Rockbreaker Pioneers SKIN": {
                     "item_id": 56614,
@@ -70134,6 +69953,10 @@
                     "item_id": 60945,
                     "name": "Endurance Radioactives Reclamation SKIN"
                   },
+                  "Endurance Refined Resourcer SKIN": {
+                    "item_id": 91280,
+                    "name": "Endurance Refined Resourcer SKIN"
+                  },
                   "Endurance Rockbreaker Pioneers SKIN": {
                     "item_id": 56607,
                     "name": "Endurance Rockbreaker Pioneers SKIN"
@@ -70189,6 +70012,10 @@
                   "Prospect Radioactives Reclamation SKIN": {
                     "item_id": 60946,
                     "name": "Prospect Radioactives Reclamation SKIN"
+                  },
+                  "Prospect Refined Resourcer SKIN": {
+                    "item_id": 91281,
+                    "name": "Prospect Refined Resourcer SKIN"
                   },
                   "Prospect Rockbreaker Pioneers SKIN": {
                     "item_id": 56605,
@@ -74108,6 +73935,10 @@
                     "item_id": 60957,
                     "name": "Porpoise Radioactives Reclamation SKIN"
                   },
+                  "Porpoise Refined Resourcer SKIN": {
+                    "item_id": 91285,
+                    "name": "Porpoise Refined Resourcer SKIN"
+                  },
                   "Porpoise Rockbreaker Pioneers SKIN": {
                     "item_id": 56606,
                     "name": "Porpoise Rockbreaker Pioneers SKIN"
@@ -74141,6 +73972,10 @@
                   "Primae Radioactives Reclamation SKIN": {
                     "item_id": 60955,
                     "name": "Primae Radioactives Reclamation SKIN"
+                  },
+                  "Primae Refined Resourcer SKIN": {
+                    "item_id": 91284,
+                    "name": "Primae Refined Resourcer SKIN"
                   },
                   "Primae Rockbreaker Pioneers SKIN": {
                     "item_id": 56611,
@@ -74756,6 +74591,10 @@
                     "item_id": 60956,
                     "name": "Noctis Radioactives Reclamation SKIN"
                   },
+                  "Noctis Refined Resourcer SKIN": {
+                    "item_id": 91286,
+                    "name": "Noctis Refined Resourcer SKIN"
+                  },
                   "Noctis Rockbreaker Pioneers SKIN": {
                     "item_id": 56618,
                     "name": "Noctis Rockbreaker Pioneers SKIN"
@@ -74879,6 +74718,10 @@
               "Hulk Radioactives Reclamation SKIN": {
                 "item_id": 60952,
                 "name": "Hulk Radioactives Reclamation SKIN"
+              },
+              "Hulk Refined Resourcer SKIN": {
+                "item_id": 91283,
+                "name": "Hulk Refined Resourcer SKIN"
               },
               "Hulk Rockbreaker Pioneers SKIN": {
                 "item_id": 56617,
@@ -75116,7 +74959,7 @@
                 "name": "Covetor Radioactives Reclamation SKIN"
               },
               "Covetor Refined Resourcer SKIN": {
-                "item_id": 91101,
+                "item_id": 91282,
                 "name": "Covetor Refined Resourcer SKIN"
               },
               "Covetor Rockbreaker Pioneers SKIN": {
@@ -75287,47 +75130,7 @@
       "Multiple Hull SKINs": {
         "id": 2119,
         "name": "Multiple Hull SKINs",
-        "subgroups": {
-          "Special Edition SKINs": {
-            "id": 2120,
-            "name": "Special Edition SKINs",
-            "subgroups": {},
-            "items": {
-              "Blood Raider Victory SKIN": {
-                "item_id": 43935,
-                "name": "Blood Raider Victory SKIN"
-              },
-              "CONCORD Victory SKIN": {
-                "item_id": 85979,
-                "name": "CONCORD Victory SKIN"
-              },
-              "Daredevil Serpentis Victory SKIN": {
-                "item_id": 46584,
-                "name": "Daredevil Serpentis Victory SKIN"
-              },
-              "Gallente Victory SKIN": {
-                "item_id": 78267,
-                "name": "Gallente Victory SKIN"
-              },
-              "Guristas Victory SKIN": {
-                "item_id": 45552,
-                "name": "Guristas Victory SKIN"
-              },
-              "Minmatar Victory SKIN": {
-                "item_id": 75911,
-                "name": "Minmatar Victory SKIN"
-              },
-              "Sansha Victory SKIN": {
-                "item_id": 36854,
-                "name": "Sansha Victory SKIN"
-              },
-              "Serpentis Victory SKIN": {
-                "item_id": 46582,
-                "name": "Serpentis Victory SKIN"
-              }
-            }
-          }
-        },
+        "subgroups": {},
         "items": {}
       },
       "Shuttles": {
@@ -78730,37 +78533,6 @@
         "id": 1612,
         "name": "Special Edition Ships",
         "subgroups": {
-          "Special Edition Assault Frigates": {
-            "id": 1623,
-            "name": "Special Edition Assault Frigates",
-            "subgroups": {},
-            "items": {
-              "Cambion": {
-                "item_id": 32788,
-                "name": "Cambion"
-              },
-              "Freki": {
-                "item_id": 32207,
-                "name": "Freki"
-              },
-              "Geri": {
-                "item_id": 74141,
-                "name": "Geri"
-              },
-              "Malice": {
-                "item_id": 3516,
-                "name": "Malice"
-              },
-              "Shapash": {
-                "item_id": 78414,
-                "name": "Shapash"
-              },
-              "Utu": {
-                "item_id": 2834,
-                "name": "Utu"
-              }
-            }
-          },
           "Special Edition Battlecruisers": {
             "id": 1698,
             "name": "Special Edition Battlecruisers",
@@ -81397,7 +81169,12 @@
         }
       }
     },
-    "items": {}
+    "items": {
+      "Freelancing": {
+        "item_id": 91017,
+        "name": "Freelancing"
+      }
+    }
   },
   "Special Edition Assets": {
     "id": 1659,
