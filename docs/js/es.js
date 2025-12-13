@@ -11,6 +11,7 @@ document.getElementById('searchbox').addEventListener('input', doSearch);
 document.getElementById('itemparent').addEventListener('click', stopCollapseToggleWhenSearching);
 document.getElementById('btnorders').addEventListener('click', showOrders);
 document.getElementById('btnsearch').addEventListener('click', showSearch);
+document.getElementById('itemname').addEventListener('click', populateSearchbox);
 
 window.addEventListener("popstate", exec);
 
@@ -276,6 +277,8 @@ let current_item_id = null;
 let current_region_id = null;
 let current_load_item = null;
 function loadItem(item_id, region_id = null, refresh = false) {
+	if (item_id == current_item_id && region_id == current_region_id && refresh == false) return;
+	
 	if (regions === null) return setTimeout(loadItem.bind(null, item_id, region_id), 1);
 	clearTimeout(current_item_timeout);
 	if (current_item_id != item_id) doGetJSON(`https://esi.evetech.net/universe/types/${item_id}/?datasource=tranquility&language=en`, populateInfo);
@@ -346,12 +349,16 @@ function populateInfo(data) {
 	document.getElementById('itemname').innerHTML = data.name;
 	document.title = data.name + ' - EVEconomy';
 
-	let searchbox = document.getElementById('searchbox');
-	if (searchbox.value.length == 0) {
-		searchbox.value = data.name;
-		doSearch();
-	}
 	markSelected(data);
+}
+
+function populateSearchbox() {
+	let data = document.getElementById('itemname').innerText;
+	let searchbox = document.getElementById('searchbox');
+	searchbox.value = data;
+	
+	markSelected(data);
+	doSearch();
 }
 
 let markSelectedTimeout = 0;

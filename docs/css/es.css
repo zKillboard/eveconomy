@@ -21,6 +21,10 @@ img {
 	margin: 0.25em;
 }
 
+#itemname {
+	cursor: pointer;
+}
+
 .capitalize {
 	text-transform: capitalize;
 }
