@@ -436,7 +436,10 @@ function createOrder(now, order, refresh = false) {
 			let val = order[column];
 			if (columns[column]['format']) val = getValueFormatted(val, columns[column]['format']);
 
-			if (columns[column]['field'] == 'range' && val == 'solarsystem') val = 'system';
+			if (columns[column]['field'] == 'range') {
+				if (order.type_id == 44992) val = 'universe';
+				else if (val == 'solarsystem') val = 'system';
+			}
 
 			let span = createElement('span', val, columns[column]);
 			if (column == 'location_name') {
