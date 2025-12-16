@@ -34721,6 +34721,67 @@
     },
     "items": {}
   },
+  "Planetary Infrastructure": {
+    "id": 1320,
+    "name": "Planetary Infrastructure",
+    "subgroups": {
+      "Command Centers": {
+        "id": 1322,
+        "name": "Command Centers",
+        "subgroups": {},
+        "items": {
+          "Barren Command Center": {
+            "item_id": 2524,
+            "name": "Barren Command Center"
+          },
+          "Gas Command Center": {
+            "item_id": 2534,
+            "name": "Gas Command Center"
+          },
+          "Ice Command Center": {
+            "item_id": 2533,
+            "name": "Ice Command Center"
+          },
+          "Lava Command Center": {
+            "item_id": 2549,
+            "name": "Lava Command Center"
+          },
+          "Oceanic Command Center": {
+            "item_id": 2525,
+            "name": "Oceanic Command Center"
+          },
+          "Plasma Command Center": {
+            "item_id": 2551,
+            "name": "Plasma Command Center"
+          },
+          "Storm Command Center": {
+            "item_id": 2550,
+            "name": "Storm Command Center"
+          },
+          "Temperate Command Center": {
+            "item_id": 2254,
+            "name": "Temperate Command Center"
+          }
+        }
+      },
+      "Orbital Infrastructure": {
+        "id": 1410,
+        "name": "Orbital Infrastructure",
+        "subgroups": {},
+        "items": {
+          "Customs Office Gantry": {
+            "item_id": 3962,
+            "name": "Customs Office Gantry"
+          },
+          "Orbital Skyhook": {
+            "item_id": 81080,
+            "name": "Orbital Skyhook"
+          }
+        }
+      }
+    },
+    "items": {}
+  },
   "Ship and Module Modifications": {
     "id": 955,
     "name": "Ship and Module Modifications",
@@ -75628,6 +75689,10 @@
                 "item_id": 43935,
                 "name": "Blood Raider Victory SKIN"
               },
+              "Caldari Victory SKIN": {
+                "item_id": 91516,
+                "name": "Caldari Victory SKIN"
+              },
               "CONCORD Victory SKIN": {
                 "item_id": 85979,
                 "name": "CONCORD Victory SKIN"
@@ -79097,6 +79162,10 @@
             "name": "Special Edition Battlecruisers",
             "subgroups": {},
             "items": {
+              "Anhinga": {
+                "item_id": 89807,
+                "name": "Anhinga"
+              },
               "Gnosis": {
                 "item_id": 3756,
                 "name": "Gnosis"
@@ -79231,6 +79300,10 @@
               "Perseverance": {
                 "item_id": 91174,
                 "name": "Perseverance"
+              },
+              "Skua": {
+                "item_id": 89808,
+                "name": "Skua"
               },
               "Sunesis": {
                 "item_id": 42685,
