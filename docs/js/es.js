@@ -237,11 +237,13 @@ function setTqStatus(data) {
 	}
 }
 
-function keyCleanup() {
+async function keyCleanup() {
 	// cleanup keys if necesary
 	for (let i = 0; i < localStorage.length; i++) {
 		const key = localStorage.key(i);
 		if (localStorage.getItem(key) == "false") localStorage.removeItem(key);
+
+		if (i % 50 == 0) await sleep(1); // yield to avoid blocking
 	}
 }
 
