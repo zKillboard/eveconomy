@@ -557,7 +557,7 @@ async function doGetJSON(path, f, params = {}) {
 	//Mconsole.log(getTime(), 'fetching', path);
 	const xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function () {
-		if (xhr.readyState === 4 && xhr.status < 400) f(JSON.parse(xhr.responseText), path, params);
+		if (xhr.readyState === 4 && xhr.status < 400) handleResult(xhr.responseText, f, path, params);
 		else if (xhr.readyState == 4) {
 			console.log(xhr.status, path);
 			clearTimeout(keyCleanupID);
@@ -573,6 +573,15 @@ async function doGetJSON(path, f, params = {}) {
 	xhr.send();
 	inflight++;
 	document.getElementById('inflight_spinner').classList.remove('d-none');
+}
+
+async function handleResult(text, f, path, params) {
+	try {
+		let data = JSON.parse(text);		
+		f(data, path, params);
+	} catch (e) {
+		console.error('Error parsing JSON from', f, path, params, e);
+	}
 }
 
 async function doGetJSONasync(path) {
