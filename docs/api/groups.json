@@ -25098,37 +25098,6 @@
                         "name": "Zor's Custom Navigation Hyper-Link"
                       }
                     }
-                  },
-                  "Implant Slot 09": {
-                    "id": 1492,
-                    "name": "Implant Slot 09",
-                    "subgroups": {},
-                    "items": {
-                      "Eifyr and Co. 'Rogue' High Speed Maneuvering HS-901": {
-                        "item_id": 27100,
-                        "name": "Eifyr and Co. 'Rogue' High Speed Maneuvering HS-901"
-                      },
-                      "Eifyr and Co. 'Rogue' High Speed Maneuvering HS-902": {
-                        "item_id": 3112,
-                        "name": "Eifyr and Co. 'Rogue' High Speed Maneuvering HS-902"
-                      },
-                      "Eifyr and Co. 'Rogue' High Speed Maneuvering HS-903": {
-                        "item_id": 13243,
-                        "name": "Eifyr and Co. 'Rogue' High Speed Maneuvering HS-903"
-                      },
-                      "Eifyr and Co. 'Rogue' High Speed Maneuvering HS-904": {
-                        "item_id": 3113,
-                        "name": "Eifyr and Co. 'Rogue' High Speed Maneuvering HS-904"
-                      },
-                      "Eifyr and Co. 'Rogue' High Speed Maneuvering HS-905": {
-                        "item_id": 16006,
-                        "name": "Eifyr and Co. 'Rogue' High Speed Maneuvering HS-905"
-                      },
-                      "Eifyr and Co. 'Rogue' High Speed Maneuvering HS-906": {
-                        "item_id": 3116,
-                        "name": "Eifyr and Co. 'Rogue' High Speed Maneuvering HS-906"
-                      }
-                    }
                   }
                 },
                 "items": {}
@@ -62160,21 +62129,6 @@
                     "name": "Bowhead Sansha Industrial Livery SKIN"
                   }
                 }
-              },
-              "Upwell": {
-                "id": 3746,
-                "name": "Upwell",
-                "subgroups": {},
-                "items": {
-                  "Avalanche Deathglow Remnant SKIN": {
-                    "item_id": 84348,
-                    "name": "Avalanche Deathglow Remnant SKIN"
-                  },
-                  "Avalanche Sponsored Security SKIN": {
-                    "item_id": 88790,
-                    "name": "Avalanche Sponsored Security SKIN"
-                  }
-                }
               }
             },
             "items": {}
@@ -78523,25 +78477,6 @@
                       "Heron Navy Issue": {
                         "item_id": 72904,
                         "name": "Heron Navy Issue"
-                      }
-                    }
-                  },
-                  "Gallente": {
-                    "id": 3772,
-                    "name": "Gallente",
-                    "subgroups": {},
-                    "items": {
-                      "Federation Navy Comet": {
-                        "item_id": 17841,
-                        "name": "Federation Navy Comet"
-                      },
-                      "Imicus Navy Issue": {
-                        "item_id": 72913,
-                        "name": "Imicus Navy Issue"
-                      },
-                      "Maulus Navy Issue": {
-                        "item_id": 37456,
-                        "name": "Maulus Navy Issue"
                       }
                     }
                   },
