@@ -43120,7 +43120,7 @@
   "1051698597006": "Ham - Khanid Checkpoint",
   "1051698691371": "Claini - Khanid Checkpoint",
   "1051700257115": "Shihuken - RockForge Freeport",
-  "1051701107605": "Tash-Murkon Prime - Trash Factory",
+  "1051701107605": "Tash-Murkon Prime - Public Engineering",
   "1051702880658": "Pucherie - Routine Extraction Annex",
   "1051703235827": "Hampinen - METEPRO",
   "1051704354013": "Finanar - Super Drill 9000",
@@ -43162,7 +43162,7 @@
   "1051851267531": "Charmerout - No Station Found",
   "1051861122924": "Pemene - Mining Corp Manufacturing",
   "1051864247083": "Channace - oui oui",
-  "1051866642397": "New Caldari - Greater Good Public Industry",
+  "1051866642397": "New Caldari - Greater Good - Public - Low Tax",
   "1051869103643": "Narai - ROCK SHACK",
   "1051870180291": "J172354 - Freeport Astra",
   "1051871280407": "Bawilan - The Finale",
@@ -43185,8 +43185,10 @@
   "1051909637152": "J110545 - Daedalus",
   "1051911444573": "Tash-Murkon Prime - Repocessing",
   "1051912623735": "Pator - Vulpes Foraminis",
-  "1051915490581": "Kamio - Stable (Clone + Refinery)",
+  "1051915490581": "Kamio - Stables (Clone + Refinery)",
   "1051917205420": "J134306 - KCLU Mobile Deployment",
+  "1051921434411": "Ruvas - usu",
   "1051925633133": "Kuoka - Omega Labs",
-  "1051929295453": "Joamma - The Crystal Mine Freeport"
+  "1051929295453": "Joamma - The Crystal Mine Freeport",
+  "1051945541484": "Niyabainen - INDUSTRIAL MEGA CENTRE"
 }
