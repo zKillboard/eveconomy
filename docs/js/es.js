@@ -247,10 +247,6 @@ async function keyCleanup() {
 	}
 }
 
-function scheduleRemoval(element, timeout_seconds = 1) {
-	setTimeout(() => { element.remove(); }, (timeout_seconds * 1000) + 1);
-}
-
 let regions = null;
 function loadRegions() {
 	if (regions == null) doGetJSON(`https://esi.evetech.net/universe/regions`, saveRegions);
@@ -278,7 +274,7 @@ let current_item_timeout = -1;
 let current_item_id = null;
 let current_region_id = null;
 let current_load_item = null;
-function loadItem(item_id, region_id = null, refresh = false) {
+async function loadItem(item_id, region_id = null, refresh = false) {
 	if (item_id == current_item_id && region_id == current_region_id && refresh == false) return;
 	
 	if (regions === null) return setTimeout(loadItem.bind(null, item_id, region_id), 1);
@@ -307,7 +303,11 @@ function loadItem(item_id, region_id = null, refresh = false) {
 	}
 
 	let now = Math.floor(Date.parse(new Date().toISOString()) / 1000);
-	check_regions.forEach((region_id) => doGetJSON(`https://esi.evetech.net/markets/${region_id}/orders/?datasource=tranquility&order_type=all&page=1&&type_id=${item_id}`, populateOrders, { page: 1, now: now, refresh: refresh }))
+	let promises = [];
+	check_regions.forEach((region_id) => {
+		promises.push(doGetJSON(`https://esi.evetech.net/markets/${region_id}/orders/?datasource=tranquility&order_type=all&page=1&&type_id=${item_id}`, populateOrders, { page: 1, now: now, refresh: refresh }));
+	});
+	await Promise.allSettled(promises);
 	setTimeout(loadMarketGroups, 250);
 	if (refresh) setTimeout(removeOrders.bind(null, now), 250);
 	fetchLocations();
@@ -521,6 +521,7 @@ function modifyOrder(now, order) {
 }
 
 function removeOrders(now) {
+	console.log('Removing old orders', now);
 	if (inflight > 0) return setTimeout(removeOrders.bind(null, now), 250);
 	let goodbye = document.querySelectorAll(`.order:not([last_modified="${now}"])`);
 
