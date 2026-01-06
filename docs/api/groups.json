@@ -54781,25 +54781,6 @@
                   }
                 }
               },
-              "Missile Guidance Enhancers": {
-                "id": 2033,
-                "name": "Missile Guidance Enhancers",
-                "subgroups": {},
-                "items": {
-                  "Missile Guidance Enhancer I": {
-                    "item_id": 35770,
-                    "name": "Missile Guidance Enhancer I"
-                  },
-                  "Missile Guidance Enhancer II": {
-                    "item_id": 35771,
-                    "name": "Missile Guidance Enhancer II"
-                  },
-                  "Pro-Nav Compact Missile Guidance Enhancer": {
-                    "item_id": 35774,
-                    "name": "Pro-Nav Compact Missile Guidance Enhancer"
-                  }
-                }
-              },
               "Remote Tracking Computers": {
                 "id": 708,
                 "name": "Remote Tracking Computers",
@@ -57569,6 +57550,10 @@
                       "Marshal Victorious Venom SKIN": {
                         "item_id": 85884,
                         "name": "Marshal Victorious Venom SKIN"
+                      },
+                      "Praxis GalNet StreamCast Unit SKIN": {
+                        "item_id": 91568,
+                        "name": "Praxis GalNet StreamCast Unit SKIN"
                       },
                       "Python Victorious Venom SKIN": {
                         "item_id": 85887,
@@ -65575,6 +65560,10 @@
                     "item_id": 79757,
                     "name": "Gila Empyrean Outlaws SKIN"
                   },
+                  "Gila GalNet StreamCast Unit SKIN": {
+                    "item_id": 91567,
+                    "name": "Gila GalNet StreamCast Unit SKIN"
+                  },
                   "Gila Gilded Predator SKIN": {
                     "item_id": 77176,
                     "name": "Gila Gilded Predator SKIN"
@@ -66864,6 +66853,10 @@
                   "Vexor Federal Police SKIN": {
                     "item_id": 50002,
                     "name": "Vexor Federal Police SKIN"
+                  },
+                  "Vexor GalNet StreamCast Unit SKIN": {
+                    "item_id": 91571,
+                    "name": "Vexor GalNet StreamCast Unit SKIN"
                   },
                   "Vexor Glacial Drift SKIN": {
                     "item_id": 44184,
@@ -69145,6 +69138,10 @@
                 "name": "ORE",
                 "subgroups": {},
                 "items": {
+                  "Pioneer GalNet StreamCast Unit SKIN": {
+                    "item_id": 91570,
+                    "name": "Pioneer GalNet StreamCast Unit SKIN"
+                  },
                   "Pioneer Refined Resourcer SKIN": {
                     "item_id": 91097,
                     "name": "Pioneer Refined Resourcer SKIN"
@@ -70640,6 +70637,10 @@
                       "Malediction Exoplanets Hunter SKIN": {
                         "item_id": 45765,
                         "name": "Malediction Exoplanets Hunter SKIN"
+                      },
+                      "Malediction GalNet StreamCast Unit SKIN": {
+                        "item_id": 91569,
+                        "name": "Malediction GalNet StreamCast Unit SKIN"
                       },
                       "Malediction Glacial Drift SKIN": {
                         "item_id": 46780,
