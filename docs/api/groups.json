@@ -21234,18 +21234,6 @@
             "name": "Booster Slot 14",
             "subgroups": {},
             "items": {
-              "Chemal Tech Mining Booster I": {
-                "item_id": 90293,
-                "name": "Chemal Tech Mining Booster I"
-              },
-              "Chemal Tech Mining Booster II": {
-                "item_id": 90295,
-                "name": "Chemal Tech Mining Booster II"
-              },
-              "Chemal Tech Mining Booster III": {
-                "item_id": 90297,
-                "name": "Chemal Tech Mining Booster III"
-              },
               "Expired Hunt Probing Booster I": {
                 "item_id": 63645,
                 "name": "Expired Hunt Probing Booster I"
@@ -21278,41 +21266,9 @@
                 "item_id": 63652,
                 "name": "Expired Hunt Pursuit Booster IV"
               },
-              "Harvest Anti-Disruptor Booster I": {
-                "item_id": 89581,
-                "name": "Harvest Anti-Disruptor Booster I"
-              },
-              "Harvest Anti-Disruptor Booster II": {
-                "item_id": 89585,
-                "name": "Harvest Anti-Disruptor Booster II"
-              },
-              "Harvest Anti-Disruptor Booster III": {
-                "item_id": 89586,
-                "name": "Harvest Anti-Disruptor Booster III"
-              },
-              "Harvest Anti-Disruptor Booster IV": {
-                "item_id": 89587,
-                "name": "Harvest Anti-Disruptor Booster IV"
-              },
               "Strong Veilguard Booster": {
                 "item_id": 59633,
                 "name": "Strong Veilguard Booster"
-              },
-              "Tetrimon Anti-Drain Booster I": {
-                "item_id": 89588,
-                "name": "Tetrimon Anti-Drain Booster I"
-              },
-              "Tetrimon Anti-Drain Booster II": {
-                "item_id": 89589,
-                "name": "Tetrimon Anti-Drain Booster II"
-              },
-              "Tetrimon Anti-Drain Booster III": {
-                "item_id": 89590,
-                "name": "Tetrimon Anti-Drain Booster III"
-              },
-              "Tetrimon Anti-Drain Booster IV": {
-                "item_id": 89591,
-                "name": "Tetrimon Anti-Drain Booster IV"
               },
               "Wightstorm Sunyata Booster I": {
                 "item_id": 90690,
@@ -21337,18 +21293,6 @@
             "name": "Booster Slot 15",
             "subgroups": {},
             "items": {
-              "Chemal Tech Exploration Booster I": {
-                "item_id": 90301,
-                "name": "Chemal Tech Exploration Booster I"
-              },
-              "Chemal Tech Exploration Booster II": {
-                "item_id": 90302,
-                "name": "Chemal Tech Exploration Booster II"
-              },
-              "Chemal Tech Exploration Booster III": {
-                "item_id": 90303,
-                "name": "Chemal Tech Exploration Booster III"
-              },
               "Expired Hunt Rapid Repair Booster I": {
                 "item_id": 63653,
                 "name": "Expired Hunt Rapid Repair Booster I"
@@ -21380,38 +21324,6 @@
               "Expired Hunt Resistance Booster IV": {
                 "item_id": 63660,
                 "name": "Expired Hunt Resistance Booster IV"
-              },
-              "Harvest Nosferatu Booster I": {
-                "item_id": 89573,
-                "name": "Harvest Nosferatu Booster I"
-              },
-              "Harvest Nosferatu Booster II": {
-                "item_id": 89574,
-                "name": "Harvest Nosferatu Booster II"
-              },
-              "Harvest Nosferatu Booster III": {
-                "item_id": 89576,
-                "name": "Harvest Nosferatu Booster III"
-              },
-              "Harvest Nosferatu Booster IV": {
-                "item_id": 89577,
-                "name": "Harvest Nosferatu Booster IV"
-              },
-              "Tetrimon Capacitor Booster I": {
-                "item_id": 89592,
-                "name": "Tetrimon Capacitor Booster I"
-              },
-              "Tetrimon Capacitor Booster II": {
-                "item_id": 89593,
-                "name": "Tetrimon Capacitor Booster II"
-              },
-              "Tetrimon Capacitor Booster III": {
-                "item_id": 89594,
-                "name": "Tetrimon Capacitor Booster III"
-              },
-              "Tetrimon Capacitor Booster IV": {
-                "item_id": 89595,
-                "name": "Tetrimon Capacitor Booster IV"
               },
               "Wightstorm Nirvana Booster I": {
                 "item_id": 90686,
@@ -21452,18 +21364,6 @@
             "name": "Booster Slot 16",
             "subgroups": {},
             "items": {
-              "Chemal Tech Repair Booster I": {
-                "item_id": 90324,
-                "name": "Chemal Tech Repair Booster I"
-              },
-              "Chemal Tech Repair Booster II": {
-                "item_id": 90305,
-                "name": "Chemal Tech Repair Booster II"
-              },
-              "Chemal Tech Repair Booster III": {
-                "item_id": 90306,
-                "name": "Chemal Tech Repair Booster III"
-              },
               "Expired Hunt Drone Precision Booster I": {
                 "item_id": 63661,
                 "name": "Expired Hunt Drone Precision Booster I"
@@ -21496,41 +21396,9 @@
                 "item_id": 63668,
                 "name": "Expired Hunt Missile Velocity Booster IV"
               },
-              "Harvest Webifier Booster I": {
-                "item_id": 89561,
-                "name": "Harvest Webifier Booster I"
-              },
-              "Harvest Webifier Booster II": {
-                "item_id": 89562,
-                "name": "Harvest Webifier Booster II"
-              },
-              "Harvest Webifier Booster III": {
-                "item_id": 89563,
-                "name": "Harvest Webifier Booster III"
-              },
-              "Harvest Webifier Booster IV": {
-                "item_id": 89564,
-                "name": "Harvest Webifier Booster IV"
-              },
               "Nocturne Anti-Drain Booster II ( copy )": {
                 "item_id": 87886,
                 "name": "Nocturne Anti-Drain Booster II ( copy )"
-              },
-              "Tetrimon Resistance Booster I": {
-                "item_id": 89596,
-                "name": "Tetrimon Resistance Booster I"
-              },
-              "Tetrimon Resistance Booster II": {
-                "item_id": 89597,
-                "name": "Tetrimon Resistance Booster II"
-              },
-              "Tetrimon Resistance Booster III": {
-                "item_id": 89598,
-                "name": "Tetrimon Resistance Booster III"
-              },
-              "Tetrimon Resistance Booster IV": {
-                "item_id": 89599,
-                "name": "Tetrimon Resistance Booster IV"
               },
               "Wightstorm Cetana Booster I": {
                 "item_id": 90677,
@@ -21555,18 +21423,6 @@
             "name": "Booster Slot 17",
             "subgroups": {},
             "items": {
-              "Chemal Tech Turret Booster I": {
-                "item_id": 90280,
-                "name": "Chemal Tech Turret Booster I"
-              },
-              "Chemal Tech Turret Booster II": {
-                "item_id": 90285,
-                "name": "Chemal Tech Turret Booster II"
-              },
-              "Chemal Tech Turret Booster III": {
-                "item_id": 90290,
-                "name": "Chemal Tech Turret Booster III"
-              },
               "Expired Aegytica Volatile Booster": {
                 "item_id": 88350,
                 "name": "Expired Aegytica Volatile Booster"
@@ -21618,38 +21474,6 @@
               "Expired Vis Vitalis Volatile Booster": {
                 "item_id": 88351,
                 "name": "Expired Vis Vitalis Volatile Booster"
-              },
-              "Harvest Damage Booster I": {
-                "item_id": 89557,
-                "name": "Harvest Damage Booster I"
-              },
-              "Harvest Damage Booster II": {
-                "item_id": 89558,
-                "name": "Harvest Damage Booster II"
-              },
-              "Harvest Damage Booster III": {
-                "item_id": 89559,
-                "name": "Harvest Damage Booster III"
-              },
-              "Harvest Damage Booster IV": {
-                "item_id": 89560,
-                "name": "Harvest Damage Booster IV"
-              },
-              "Tetrimon Precision Booster I": {
-                "item_id": 89600,
-                "name": "Tetrimon Precision Booster I"
-              },
-              "Tetrimon Precision Booster II": {
-                "item_id": 89601,
-                "name": "Tetrimon Precision Booster II"
-              },
-              "Tetrimon Precision Booster III": {
-                "item_id": 89602,
-                "name": "Tetrimon Precision Booster III"
-              },
-              "Tetrimon Precision Booster IV": {
-                "item_id": 89603,
-                "name": "Tetrimon Precision Booster IV"
               },
               "Wightstorm Manasikara Booster I": {
                 "item_id": 90669,
@@ -21712,10 +21536,6 @@
             "item_id": 90694,
             "name": "Basic 'Brainfreeze' Cerebral Accelerator"
           },
-          "Basic 'Radiance' Cerebral Accelerator": {
-            "item_id": 89604,
-            "name": "Basic 'Radiance' Cerebral Accelerator"
-          },
           "Caldari spaceship skill accelerator": {
             "item_id": 55804,
             "name": "Caldari spaceship skill accelerator"
@@ -21740,10 +21560,6 @@
             "item_id": 90696,
             "name": "Extended 'Brainfreeze' Cerebral Accelerator"
           },
-          "Extended 'Radiance' Cerebral Accelerator": {
-            "item_id": 89606,
-            "name": "Extended 'Radiance' Cerebral Accelerator"
-          },
           "Gallente spaceship skill accelerator": {
             "item_id": 55805,
             "name": "Gallente spaceship skill accelerator"
@@ -21759,10 +21575,6 @@
           "Potent 'Brainfreeze' Cerebral Accelerator": {
             "item_id": 90695,
             "name": "Potent 'Brainfreeze' Cerebral Accelerator"
-          },
-          "Potent 'Radiance' Cerebral Accelerator": {
-            "item_id": 89605,
-            "name": "Potent 'Radiance' Cerebral Accelerator"
           },
           "Serenity Basic 'Bonding' Cerebral Accelerator": {
             "item_id": 57433,
@@ -28988,10 +28800,6 @@
                         "item_id": 28393,
                         "name": "Batch Compressed Crokite IV-Grade"
                       },
-                      "Compressed  Crokite IV-Grade": {
-                        "item_id": 62563,
-                        "name": "Compressed  Crokite IV-Grade"
-                      },
                       "Compressed Crokite": {
                         "item_id": 62560,
                         "name": "Compressed Crokite"
@@ -29003,6 +28811,10 @@
                       "Compressed Crokite III-Grade": {
                         "item_id": 62562,
                         "name": "Compressed Crokite III-Grade"
+                      },
+                      "Compressed Crokite IV-Grade": {
+                        "item_id": 62563,
+                        "name": "Compressed Crokite IV-Grade"
                       },
                       "Crokite": {
                         "item_id": 1225,
@@ -29595,10 +29407,6 @@
                     "name": "Mordunium",
                     "subgroups": {},
                     "items": {
-                      "Compressed  Mordunium IV-Grade": {
-                        "item_id": 75278,
-                        "name": "Compressed  Mordunium IV-Grade"
-                      },
                       "Compressed Mordunium": {
                         "item_id": 75275,
                         "name": "Compressed Mordunium"
@@ -29610,6 +29418,10 @@
                       "Compressed Mordunium III-Grade": {
                         "item_id": 75277,
                         "name": "Compressed Mordunium III-Grade"
+                      },
+                      "Compressed Mordunium IV-Grade": {
+                        "item_id": 75278,
+                        "name": "Compressed Mordunium IV-Grade"
                       },
                       "Mordunium": {
                         "item_id": 74521,
@@ -32503,10 +32315,6 @@
                 "name": "Satin",
                 "subgroups": {},
                 "items": {
-                  " Tyrant Blue Satin - Limited": {
-                    "item_id": 87831,
-                    "name": " Tyrant Blue Satin - Limited"
-                  },
                   "Argon Heat Satin - Limited": {
                     "item_id": 83248,
                     "name": "Argon Heat Satin - Limited"
@@ -32950,6 +32758,10 @@
                   "Synthetic Mocha Satin - Unlimited": {
                     "item_id": 83345,
                     "name": "Synthetic Mocha Satin - Unlimited"
+                  },
+                  "Tyrant Blue Satin - Limited": {
+                    "item_id": 87831,
+                    "name": "Tyrant Blue Satin - Limited"
                   },
                   "Uncompromising Scarlet Satin - Limited": {
                     "item_id": 83256,
@@ -54781,6 +54593,25 @@
                   }
                 }
               },
+              "Missile Guidance Enhancers": {
+                "id": 2033,
+                "name": "Missile Guidance Enhancers",
+                "subgroups": {},
+                "items": {
+                  "Missile Guidance Enhancer I": {
+                    "item_id": 35770,
+                    "name": "Missile Guidance Enhancer I"
+                  },
+                  "Missile Guidance Enhancer II": {
+                    "item_id": 35771,
+                    "name": "Missile Guidance Enhancer II"
+                  },
+                  "Pro-Nav Compact Missile Guidance Enhancer": {
+                    "item_id": 35774,
+                    "name": "Pro-Nav Compact Missile Guidance Enhancer"
+                  }
+                }
+              },
               "Remote Tracking Computers": {
                 "id": 708,
                 "name": "Remote Tracking Computers",
@@ -55887,6 +55718,10 @@
                     "item_id": 91170,
                     "name": "Odysseus Friendship League SKIN"
                   },
+                  "Odysseus Media Miasma SKIN": {
+                    "item_id": 91632,
+                    "name": "Odysseus Media Miasma SKIN"
+                  },
                   "Odysseus One Eden SKIN": {
                     "item_id": 91162,
                     "name": "Odysseus One Eden SKIN"
@@ -55998,6 +55833,10 @@
                   "Gnosis Capsuleer Networker XV SKIN": {
                     "item_id": 47654,
                     "name": "Gnosis Capsuleer Networker XV SKIN"
+                  },
+                  "Gnosis Friendship League SKIN": {
+                    "item_id": 91613,
+                    "name": "Gnosis Friendship League SKIN"
                   },
                   "Gnosis GalNet StreamCast Unit SKIN": {
                     "item_id": 76494,
@@ -57551,10 +57390,6 @@
                         "item_id": 85884,
                         "name": "Marshal Victorious Venom SKIN"
                       },
-                      "Praxis GalNet StreamCast Unit SKIN": {
-                        "item_id": 91568,
-                        "name": "Praxis GalNet StreamCast Unit SKIN"
-                      },
                       "Python Victorious Venom SKIN": {
                         "item_id": 85887,
                         "name": "Python Victorious Venom SKIN"
@@ -57624,6 +57459,10 @@
                       "Paladin Malagrin Marshlight SKIN": {
                         "item_id": 53008,
                         "name": "Paladin Malagrin Marshlight SKIN"
+                      },
+                      "Paladin Media Miasma SKIN": {
+                        "item_id": 91617,
+                        "name": "Paladin Media Miasma SKIN"
                       },
                       "Paladin Oasis of Faith SKIN": {
                         "item_id": 53639,
@@ -57715,6 +57554,10 @@
                       "Golem Matigu Seabeast SKIN": {
                         "item_id": 40616,
                         "name": "Golem Matigu Seabeast SKIN"
+                      },
+                      "Golem Media Miasma SKIN": {
+                        "item_id": 91619,
+                        "name": "Golem Media Miasma SKIN"
                       },
                       "Golem Octopus Orange Flight SKIN": {
                         "item_id": 47619,
@@ -57822,6 +57665,10 @@
                       "Kronos Malagrin Marshlight SKIN": {
                         "item_id": 60568,
                         "name": "Kronos Malagrin Marshlight SKIN"
+                      },
+                      "Kronos Media Miasma SKIN": {
+                        "item_id": 91640,
+                        "name": "Kronos Media Miasma SKIN"
                       },
                       "Kronos Ruby Sungrazer SKIN": {
                         "item_id": 45571,
@@ -57994,6 +57841,10 @@
                     "item_id": 57708,
                     "name": "Thunderchild EDENCOM Victory SKIN"
                   },
+                  "Thunderchild Media Miasma SKIN": {
+                    "item_id": 91634,
+                    "name": "Thunderchild Media Miasma SKIN"
+                  },
                   "Thunderchild Sponsored Security SKIN": {
                     "item_id": 88786,
                     "name": "Thunderchild Sponsored Security SKIN"
@@ -58044,6 +57895,10 @@
                   "Apocalypse Navy Issue Lavacore Imperial SKIN": {
                     "item_id": 49820,
                     "name": "Apocalypse Navy Issue Lavacore Imperial SKIN"
+                  },
+                  "Apocalypse Navy Issue Media Miasma SKIN": {
+                    "item_id": 91615,
+                    "name": "Apocalypse Navy Issue Media Miasma SKIN"
                   },
                   "Apocalypse Navy Issue Oasis of Faith SKIN": {
                     "item_id": 53640,
@@ -58564,6 +58419,10 @@
                     "item_id": 56603,
                     "name": "Machariel Malagrin Marshlight SKIN"
                   },
+                  "Machariel Media Miasma SKIN": {
+                    "item_id": 91629,
+                    "name": "Machariel Media Miasma SKIN"
+                  },
                   "Machariel Red Stargazer SKIN": {
                     "item_id": 75907,
                     "name": "Machariel Red Stargazer SKIN"
@@ -58719,6 +58578,10 @@
                   "Rattlesnake Luminae Polaris SKIN": {
                     "item_id": 79952,
                     "name": "Rattlesnake Luminae Polaris SKIN"
+                  },
+                  "Rattlesnake Media Miasma SKIN": {
+                    "item_id": 91631,
+                    "name": "Rattlesnake Media Miasma SKIN"
                   },
                   "Rattlesnake Red Stargazer SKIN": {
                     "item_id": 75906,
@@ -58883,6 +58746,14 @@
                   "Praxis Capsuleer Networker XV SKIN": {
                     "item_id": 47655,
                     "name": "Praxis Capsuleer Networker XV SKIN"
+                  },
+                  "Praxis Friendship League SKIN": {
+                    "item_id": 91614,
+                    "name": "Praxis Friendship League SKIN"
+                  },
+                  "Praxis GalNet StreamCast Unit SKIN": {
+                    "item_id": 91568,
+                    "name": "Praxis GalNet StreamCast Unit SKIN"
                   },
                   "Praxis Genolution Dazzle SKIN": {
                     "item_id": 79841,
@@ -61136,6 +61007,10 @@
                         "item_id": 76292,
                         "name": "Phoenix Navy Issue Heartsurge SKIN"
                       },
+                      "Phoenix Navy Issue Media Miasma SKIN": {
+                        "item_id": 91620,
+                        "name": "Phoenix Navy Issue Media Miasma SKIN"
+                      },
                       "Phoenix Navy Issue Union Day Executive SKIN": {
                         "item_id": 78816,
                         "name": "Phoenix Navy Issue Union Day Executive SKIN"
@@ -61151,6 +61026,10 @@
                       "Revelation Navy Issue Khanid Cyber Knight SKIN": {
                         "item_id": 89674,
                         "name": "Revelation Navy Issue Khanid Cyber Knight SKIN"
+                      },
+                      "Revelation Navy Issue Media Miasma SKIN": {
+                        "item_id": 91616,
+                        "name": "Revelation Navy Issue Media Miasma SKIN"
                       },
                       "Revelation Navy Issue Sanguinary Savant SKIN": {
                         "item_id": 79614,
@@ -61212,6 +61091,10 @@
                       "Zirnitra Blackfire Steel SKIN": {
                         "item_id": 53668,
                         "name": "Zirnitra Blackfire Steel SKIN"
+                      },
+                      "Zirnitra Media Miasma SKIN": {
+                        "item_id": 91637,
+                        "name": "Zirnitra Media Miasma SKIN"
                       },
                       "Zirnitra Metamateria Exotica SKIN": {
                         "item_id": 54222,
@@ -61535,6 +61418,10 @@
                       "Naglfar Malagrin Marshlight SKIN": {
                         "item_id": 56600,
                         "name": "Naglfar Malagrin Marshlight SKIN"
+                      },
+                      "Naglfar Media Miasma SKIN": {
+                        "item_id": 91626,
+                        "name": "Naglfar Media Miasma SKIN"
                       },
                       "Naglfar Snowline Bladeracer SKIN": {
                         "item_id": 52891,
@@ -63499,6 +63386,10 @@
                         "item_id": 64569,
                         "name": "Ishtar Luminaire Rising SKIN"
                       },
+                      "Ishtar Media Miasma SKIN": {
+                        "item_id": 91623,
+                        "name": "Ishtar Media Miasma SKIN"
+                      },
                       "Ishtar Ruby Sungrazer SKIN": {
                         "item_id": 45567,
                         "name": "Ishtar Ruby Sungrazer SKIN"
@@ -64986,6 +64877,10 @@
                     "item_id": 57707,
                     "name": "Stormbringer EDENCOM Victory SKIN"
                   },
+                  "Stormbringer Media Miasma SKIN": {
+                    "item_id": 91633,
+                    "name": "Stormbringer Media Miasma SKIN"
+                  },
                   "Stormbringer Sponsored Security SKIN": {
                     "item_id": 88785,
                     "name": "Stormbringer Sponsored Security SKIN"
@@ -65124,6 +65019,10 @@
                   "Exequror Navy Issue Kopis Edge SKIN": {
                     "item_id": 46415,
                     "name": "Exequror Navy Issue Kopis Edge SKIN"
+                  },
+                  "Exequror Navy Issue Media Miasma SKIN": {
+                    "item_id": 91622,
+                    "name": "Exequror Navy Issue Media Miasma SKIN"
                   },
                   "Exequror Navy Issue Sapphire Sungrazer SKIN": {
                     "item_id": 45023,
@@ -65583,6 +65482,10 @@
                   "Gila IGC SKIN": {
                     "item_id": 48553,
                     "name": "Gila IGC SKIN"
+                  },
+                  "Gila Media Miasma SKIN": {
+                    "item_id": 91630,
+                    "name": "Gila Media Miasma SKIN"
                   },
                   "Gila Scope Syndication YC122 SKIN": {
                     "item_id": 56891,
@@ -67534,6 +67437,10 @@
                         "item_id": 91248,
                         "name": "Outrider Aurora Universalis SKIN"
                       },
+                      "Outrider Media Miasma SKIN": {
+                        "item_id": 91628,
+                        "name": "Outrider Media Miasma SKIN"
+                      },
                       "Outrider Refined Resourcer SKIN": {
                         "item_id": 91099,
                         "name": "Outrider Refined Resourcer SKIN"
@@ -67646,6 +67553,10 @@
                       "Flycatcher Matigu Seabeast SKIN": {
                         "item_id": 40596,
                         "name": "Flycatcher Matigu Seabeast SKIN"
+                      },
+                      "Flycatcher Media Miasma SKIN": {
+                        "item_id": 91618,
+                        "name": "Flycatcher Media Miasma SKIN"
                       },
                       "Flycatcher Raata Sunset SKIN": {
                         "item_id": 36648,
@@ -67772,6 +67683,10 @@
                       "Sabre Justice SKIN": {
                         "item_id": 36447,
                         "name": "Sabre Justice SKIN"
+                      },
+                      "Sabre Media Miasma SKIN": {
+                        "item_id": 91624,
+                        "name": "Sabre Media Miasma SKIN"
                       },
                       "Sabre Permaband - Warp to the Dance Floor SKIN": {
                         "item_id": 52287,
@@ -68109,6 +68024,10 @@
                     "item_id": 77886,
                     "name": "Catalyst Navy Issue Luminaire Rising SKIN"
                   },
+                  "Catalyst Navy Issue Media Miasma SKIN": {
+                    "item_id": 91621,
+                    "name": "Catalyst Navy Issue Media Miasma SKIN"
+                  },
                   "Coercer Navy Issue Heartsurge SKIN": {
                     "item_id": 76293,
                     "name": "Coercer Navy Issue Heartsurge SKIN"
@@ -68156,6 +68075,10 @@
                   "Thrasher Fleet Issue Heartsurge SKIN": {
                     "item_id": 76284,
                     "name": "Thrasher Fleet Issue Heartsurge SKIN"
+                  },
+                  "Thrasher Fleet Issue Media Miasma SKIN": {
+                    "item_id": 91625,
+                    "name": "Thrasher Fleet Issue Media Miasma SKIN"
                   },
                   "Thrasher Fleet Issue Republic Police SKIN": {
                     "item_id": 82184,
@@ -68282,6 +68205,10 @@
                     "item_id": 54914,
                     "name": "Kikimora Kybernaut Clade SKIN"
                   },
+                  "Kikimora Media Miasma SKIN": {
+                    "item_id": 91636,
+                    "name": "Kikimora Media Miasma SKIN"
+                  },
                   "Kikimora Metamateria Exotica SKIN": {
                     "item_id": 50140,
                     "name": "Kikimora Metamateria Exotica SKIN"
@@ -68323,6 +68250,10 @@
                   "Sunesis Capsuleer Networker XV SKIN": {
                     "item_id": 47653,
                     "name": "Sunesis Capsuleer Networker XV SKIN"
+                  },
+                  "Sunesis Friendship League SKIN": {
+                    "item_id": 91612,
+                    "name": "Sunesis Friendship League SKIN"
                   },
                   "Sunesis Genolution Dazzle SKIN": {
                     "item_id": 79007,
@@ -69141,6 +69072,10 @@
                   "Pioneer GalNet StreamCast Unit SKIN": {
                     "item_id": 91570,
                     "name": "Pioneer GalNet StreamCast Unit SKIN"
+                  },
+                  "Pioneer Media Miasma SKIN": {
+                    "item_id": 91627,
+                    "name": "Pioneer Media Miasma SKIN"
                   },
                   "Pioneer Refined Resourcer SKIN": {
                     "item_id": 91097,
@@ -72093,6 +72028,10 @@
                 "name": "Special Frigates",
                 "subgroups": {},
                 "items": {
+                  "Metamorphosis Friendship League SKIN": {
+                    "item_id": 91611,
+                    "name": "Metamorphosis Friendship League SKIN"
+                  },
                   "Metamorphosis Genolution Dazzle SKIN": {
                     "item_id": 79006,
                     "name": "Metamorphosis Genolution Dazzle SKIN"
@@ -74875,6 +74814,10 @@
                     "item_id": 46436,
                     "name": "Kryos Kopis Edge SKIN"
                   },
+                  "Kryos Media Miasma SKIN": {
+                    "item_id": 91639,
+                    "name": "Kryos Media Miasma SKIN"
+                  },
                   "Kryos Serpentis SKIN": {
                     "item_id": 42193,
                     "name": "Kryos Serpentis SKIN"
@@ -74954,6 +74897,10 @@
                   "Nereus Kopis Edge SKIN": {
                     "item_id": 46438,
                     "name": "Nereus Kopis Edge SKIN"
+                  },
+                  "Nereus Media Miasma SKIN": {
+                    "item_id": 91638,
+                    "name": "Nereus Media Miasma SKIN"
                   },
                   "Nereus Ruby Sungrazer SKIN": {
                     "item_id": 45578,
@@ -75171,6 +75118,10 @@
                   "Squall Mabebu Exchange SKIN": {
                     "item_id": 84689,
                     "name": "Squall Mabebu Exchange SKIN"
+                  },
+                  "Squall Media Miasma SKIN": {
+                    "item_id": 91635,
+                    "name": "Squall Media Miasma SKIN"
                   },
                   "Squall Shattered Paradigm SKIN": {
                     "item_id": 90416,
@@ -75843,6 +75794,10 @@
               "Apotheosis Capsuleer Networker XV SKIN": {
                 "item_id": 47652,
                 "name": "Apotheosis Capsuleer Networker XV SKIN"
+              },
+              "Apotheosis Friendship League SKIN": {
+                "item_id": 91610,
+                "name": "Apotheosis Friendship League SKIN"
               },
               "Apotheosis Genolution Dazzle SKIN": {
                 "item_id": 79840,
@@ -81923,2034 +81878,2105 @@
           }
         }
       },
-      "Special Edition Blueprints": {
-        "id": 1664,
-        "name": "Special Edition Blueprints",
-        "subgroups": {},
-        "items": {
-          "Deactivated Station Key Pass Blueprint": {
-            "item_id": 33067,
-            "name": "Deactivated Station Key Pass Blueprint"
-          }
-        }
-      },
       "Special Edition Commodities": {
         "id": 1661,
         "name": "Special Edition Commodities",
-        "subgroups": {},
-        "items": {
-          " Alliance Tournament XXI Script": {
-            "item_id": 91387,
-            "name": " Alliance Tournament XXI Script"
-          },
-          "'Bitwave Glacier' Augmentation Crate": {
-            "item_id": 49804,
-            "name": "'Bitwave Glacier' Augmentation Crate"
-          },
-          "'Domino Turquoise' Augmentation Crate": {
-            "item_id": 49705,
-            "name": "'Domino Turquoise' Augmentation Crate"
-          },
-          "'Seneschal' Mercenary Den Blueprint Crate": {
-            "item_id": 86276,
-            "name": "'Seneschal' Mercenary Den Blueprint Crate"
-          },
-          "'Subverted' JVN-UC49 Blueprint Crate": {
-            "item_id": 48928,
-            "name": "'Subverted' JVN-UC49 Blueprint Crate"
-          },
-          "[CNS] Kiirasha Final Broadcast Fragment": {
-            "item_id": 44209,
-            "name": "[CNS] Kiirasha Final Broadcast Fragment"
-          },
-          "*Sneaks in a classic*": {
-            "item_id": 33060,
-            "name": "*Sneaks in a classic*"
-          },
-          "1000 PLEX and Rare SKINR Supplies Crate": {
-            "item_id": 91198,
-            "name": "1000 PLEX and Rare SKINR Supplies Crate"
-          },
-          "1500 PLEX and Rare SKINR Supplies Crate": {
-            "item_id": 91199,
-            "name": "1500 PLEX and Rare SKINR Supplies Crate"
-          },
-          "200 PLEX and Rare SKINR Supplies Crate": {
-            "item_id": 91196,
-            "name": "200 PLEX and Rare SKINR Supplies Crate"
-          },
-          "300 Billion ISK Contract Copy": {
-            "item_id": 47056,
-            "name": "300 Billion ISK Contract Copy"
-          },
-          "500 PLEX and Rare SKINR Supplies Crate": {
-            "item_id": 91197,
-            "name": "500 PLEX and Rare SKINR Supplies Crate"
-          },
-          "95th Interstellar Mindclash Championship Tickets": {
-            "item_id": 37883,
-            "name": "95th Interstellar Mindclash Championship Tickets"
-          },
-          "A Big Red Button": {
-            "item_id": 33020,
-            "name": "A Big Red Button"
-          },
-          "A Capsuleer’s Guide To Dropping Dreads": {
-            "item_id": 91405,
-            "name": "A Capsuleer’s Guide To Dropping Dreads"
-          },
-          "A Handful of Tiny Stars": {
-            "item_id": 33016,
-            "name": "A Handful of Tiny Stars"
-          },
-          "A Letter Of Complaint": {
-            "item_id": 44206,
-            "name": "A Letter Of Complaint"
-          },
-          "A Piece of Steve": {
-            "item_id": 33213,
-            "name": "A Piece of Steve"
-          },
-          "A Pile of Logs": {
-            "item_id": 48749,
-            "name": "A Pile of Logs"
-          },
-          "A Stolen Voting Pebble": {
-            "item_id": 47045,
-            "name": "A Stolen Voting Pebble"
-          },
-          "A Tank of Honor": {
-            "item_id": 33023,
-            "name": "A Tank of Honor"
-          },
-          "Aberrant Mynos Forked Packet": {
-            "item_id": 88568,
-            "name": "Aberrant Mynos Forked Packet"
-          },
-          "Admiral Noir's - Spiced Rum": {
-            "item_id": 82432,
-            "name": "Admiral Noir's - Spiced Rum"
-          },
-          "Agency Support Drop": {
-            "item_id": 46381,
-            "name": "Agency Support Drop"
-          },
-          "Airlock-Slammer Display": {
-            "item_id": 56977,
-            "name": "Airlock-Slammer Display"
-          },
-          "Alice Saki's Good Posting Guide": {
-            "item_id": 34434,
-            "name": "Alice Saki's Good Posting Guide"
-          },
-          "Alliance Tournament XV Meta": {
-            "item_id": 47057,
-            "name": "Alliance Tournament XV Meta"
-          },
-          "Amarr Inception Package": {
-            "item_id": 43930,
-            "name": "Amarr Inception Package"
-          },
-          "Amarr Religious Mask": {
-            "item_id": 49641,
-            "name": "Amarr Religious Mask"
-          },
-          "Ancillary Preservation Canister": {
-            "item_id": 87207,
-            "name": "Ancillary Preservation Canister"
-          },
-          "Animal Medical Expert": {
-            "item_id": 33024,
-            "name": "Animal Medical Expert"
-          },
-          "Armor Plating From TES Seraph": {
-            "item_id": 44216,
-            "name": "Armor Plating From TES Seraph"
-          },
-          "Arms Race Battlecruiser Assembler": {
-            "item_id": 46771,
-            "name": "Arms Race Battlecruiser Assembler"
-          },
-          "Arms Race Battleship Assembler": {
-            "item_id": 46772,
-            "name": "Arms Race Battleship Assembler"
-          },
-          "Ashimmu Blueprint Crate": {
-            "item_id": 90660,
-            "name": "Ashimmu Blueprint Crate"
-          },
-          "Assassination Contract: Mirial": {
-            "item_id": 33218,
-            "name": "Assassination Contract: Mirial"
-          },
-          "Badly Corrupted Holoreel": {
-            "item_id": 47054,
-            "name": "Badly Corrupted Holoreel"
-          },
-          "Bag of Gelatinized Confectionary": {
-            "item_id": 62048,
-            "name": "Bag of Gelatinized Confectionary"
-          },
-          "Band of Brothers Director Access Key": {
-            "item_id": 33214,
-            "name": "Band of Brothers Director Access Key"
-          },
-          "Basic 'Ardour' Cerebral Accelerator Blueprint Crate": {
-            "item_id": 50029,
-            "name": "Basic 'Ardour' Cerebral Accelerator Blueprint Crate"
-          },
-          "Bhaalgorn Blueprint Crate": {
-            "item_id": 90661,
-            "name": "Bhaalgorn Blueprint Crate"
-          },
-          "Biomechanical Armor Fragment": {
-            "item_id": 62053,
-            "name": "Biomechanical Armor Fragment"
-          },
-          "Black Dagger": {
-            "item_id": 49644,
-            "name": "Black Dagger"
-          },
-          "Blackbody Driver": {
-            "item_id": 88179,
-            "name": "Blackbody Driver"
-          },
-          "Blood Coated Statuette": {
-            "item_id": 49646,
-            "name": "Blood Coated Statuette"
-          },
-          "Blood Raider Crate": {
-            "item_id": 90396,
-            "name": "Blood Raider Crate"
-          },
-          "Bouquet of Flowers": {
-            "item_id": 54162,
-            "name": "Bouquet of Flowers"
-          },
-          "Box of Chocolates": {
-            "item_id": 54161,
-            "name": "Box of Chocolates"
-          },
-          "Broken Skill Canister": {
-            "item_id": 54968,
-            "name": "Broken Skill Canister"
-          },
-          "Burned Transneural Scanner": {
-            "item_id": 54226,
-            "name": "Burned Transneural Scanner"
-          },
-          "Caldari Inception Package": {
-            "item_id": 43931,
-            "name": "Caldari Inception Package"
-          },
-          "Calm Abyssal Filaments Crate": {
-            "item_id": 49708,
-            "name": "Calm Abyssal Filaments Crate"
-          },
-          "Canned Quantum Superposition Wormhole": {
-            "item_id": 91413,
-            "name": "Canned Quantum Superposition Wormhole"
-          },
-          "Capital Parking Ticket": {
-            "item_id": 37886,
-            "name": "Capital Parking Ticket"
-          },
-          "Capsule Subsystem Holostorage EH-CN-J44-001": {
-            "item_id": 63704,
-            "name": "Capsule Subsystem Holostorage EH-CN-J44-001"
-          },
-          "Capsule Subsystem Holostorage EH-CN-J44-002": {
-            "item_id": 63712,
-            "name": "Capsule Subsystem Holostorage EH-CN-J44-002"
-          },
-          "Capsule Subsystem Holostorage EH-CN-J44-003": {
-            "item_id": 63713,
-            "name": "Capsule Subsystem Holostorage EH-CN-J44-003"
-          },
-          "Capsule Subsystem Holostorage EH-CN-J44-004": {
-            "item_id": 63705,
-            "name": "Capsule Subsystem Holostorage EH-CN-J44-004"
-          },
-          "Capsule Subsystem Holostorage EH-CN-J44-005": {
-            "item_id": 63706,
-            "name": "Capsule Subsystem Holostorage EH-CN-J44-005"
-          },
-          "Capsule Subsystem Holostorage EH-CN-J44-006": {
-            "item_id": 63707,
-            "name": "Capsule Subsystem Holostorage EH-CN-J44-006"
-          },
-          "Capsule Subsystem Holostorage EH-CN-J44-007": {
-            "item_id": 63708,
-            "name": "Capsule Subsystem Holostorage EH-CN-J44-007"
-          },
-          "Capsule Subsystem Holostorage EH-CN-J44-008": {
-            "item_id": 63709,
-            "name": "Capsule Subsystem Holostorage EH-CN-J44-008"
-          },
-          "Capsule Subsystem Holostorage EH-CN-J44-009": {
-            "item_id": 63710,
-            "name": "Capsule Subsystem Holostorage EH-CN-J44-009"
-          },
-          "Capsule Subsystem Holostorage EH-CN-J44-010": {
-            "item_id": 63711,
-            "name": "Capsule Subsystem Holostorage EH-CN-J44-010"
-          },
-          "Capsuleer Day XVI Apotheosis & SKIN Crate": {
-            "item_id": 52296,
-            "name": "Capsuleer Day XVI Apotheosis & SKIN Crate"
-          },
-          "Capsuleer Day XVI Cap Crate": {
-            "item_id": 52294,
-            "name": "Capsuleer Day XVI Cap Crate"
-          },
-          "Capsuleer Day XVI Gnosis & SKIN Crate": {
-            "item_id": 52291,
-            "name": "Capsuleer Day XVI Gnosis & SKIN Crate"
-          },
-          "Capsuleer Day XVI Praxis & SKIN Crate": {
-            "item_id": 52298,
-            "name": "Capsuleer Day XVI Praxis & SKIN Crate"
-          },
-          "Capsuleer Day XVI Sunesis & SKIN Crate": {
-            "item_id": 52295,
-            "name": "Capsuleer Day XVI Sunesis & SKIN Crate"
-          },
-          "Capsuleer Day XVI T-Shirt Crate": {
-            "item_id": 52290,
-            "name": "Capsuleer Day XVI T-Shirt Crate"
-          },
-          "CDIA Training Exercise Supply Crate": {
-            "item_id": 47482,
-            "name": "CDIA Training Exercise Supply Crate"
-          },
-          "Cenotaph Blueprint Crate": {
-            "item_id": 86271,
-            "name": "Cenotaph Blueprint Crate"
-          },
-          "Cerebrum In A Container": {
-            "item_id": 37877,
-            "name": "Cerebrum In A Container"
-          },
-          "Chemosh Blueprint Crate": {
-            "item_id": 90662,
-            "name": "Chemosh Blueprint Crate"
-          },
-          "Chribba's Modified Strip Miner": {
-            "item_id": 34421,
-            "name": "Chribba's Modified Strip Miner"
-          },
-          "Chronologically Curious Blue Diary": {
-            "item_id": 62049,
-            "name": "Chronologically Curious Blue Diary"
-          },
-          "Classified Caldari Databank": {
-            "item_id": 63699,
-            "name": "Classified Caldari Databank"
-          },
-          "Collections of paintings": {
-            "item_id": 91392,
-            "name": "Collections of paintings"
-          },
-          "Colonize! Board Game": {
-            "item_id": 49653,
-            "name": "Colonize! Board Game"
-          },
-          "CONCORD GalNet Monitoring Archive": {
-            "item_id": 47055,
-            "name": "CONCORD GalNet Monitoring Archive"
-          },
-          "CONCORD Speeding Ticket": {
-            "item_id": 44214,
-            "name": "CONCORD Speeding Ticket"
-          },
-          "CONCORD Universal Translator": {
-            "item_id": 48754,
-            "name": "CONCORD Universal Translator"
-          },
-          "Concordokken": {
-            "item_id": 33058,
-            "name": "Concordokken"
-          },
-          "Contraband Amarrian Walnuts": {
-            "item_id": 37875,
-            "name": "Contraband Amarrian Walnuts"
-          },
-          "Cooking With Veldspar": {
-            "item_id": 34420,
-            "name": "Cooking With Veldspar"
-          },
-          "Copper Ouroboros": {
-            "item_id": 42229,
-            "name": "Copper Ouroboros"
-          },
-          "Copy of the Gallente Federation Constitution": {
-            "item_id": 48135,
-            "name": "Copy of the Gallente Federation Constitution"
-          },
-          "Counterfeit Alliance Tournament Emergency Auxiliary Rebroadcasting System": {
-            "item_id": 91411,
-            "name": "Counterfeit Alliance Tournament Emergency Auxiliary Rebroadcasting System"
-          },
-          "Counterfeit Dominix Model": {
-            "item_id": 37887,
-            "name": "Counterfeit Dominix Model"
-          },
-          "Crimson Harvest Cerebral Accelerator Crate": {
-            "item_id": 90136,
-            "name": "Crimson Harvest Cerebral Accelerator Crate"
-          },
-          "Crimson Harvest SKINR Crate": {
-            "item_id": 90135,
-            "name": "Crimson Harvest SKINR Crate"
-          },
-          "Crunch Fuel": {
-            "item_id": 48755,
-            "name": "Crunch Fuel"
-          },
-          "Cruor Blueprint Crate": {
-            "item_id": 90659,
-            "name": "Cruor Blueprint Crate"
-          },
-          "Cryograph Diffractor": {
-            "item_id": 91082,
-            "name": "Cryograph Diffractor"
-          },
-          "Cryograph Exactor": {
-            "item_id": 91083,
-            "name": "Cryograph Exactor"
-          },
-          "Cryograph Resolver": {
-            "item_id": 91084,
-            "name": "Cryograph Resolver"
-          },
-          "Cryostatic Estimator": {
-            "item_id": 91019,
-            "name": "Cryostatic Estimator"
-          },
-          "Cryostatic Nullifier": {
-            "item_id": 91021,
-            "name": "Cryostatic Nullifier"
-          },
-          "Cryostatic Suppressor": {
-            "item_id": 91020,
-            "name": "Cryostatic Suppressor"
-          },
-          "Cryostorm Clarifier": {
-            "item_id": 90894,
-            "name": "Cryostorm Clarifier"
-          },
-          "Cryostorm Mapper": {
-            "item_id": 90895,
-            "name": "Cryostorm Mapper"
-          },
-          "Cryostorm Reconciler": {
-            "item_id": 90896,
-            "name": "Cryostorm Reconciler"
-          },
-          "CSM 1 Electee Archive Script": {
-            "item_id": 34769,
-            "name": "CSM 1 Electee Archive Script"
-          },
-          "CSM 10 Electee Archive Script": {
-            "item_id": 34778,
-            "name": "CSM 10 Electee Archive Script"
-          },
-          "CSM 11 Electee Archive Script": {
-            "item_id": 40656,
-            "name": "CSM 11 Electee Archive Script"
-          },
-          "CSM 19 Electee Archive Script": {
-            "item_id": 91399,
-            "name": "CSM 19 Electee Archive Script"
-          },
-          "CSM 2 Electee Archive Script": {
-            "item_id": 34770,
-            "name": "CSM 2 Electee Archive Script"
-          },
-          "CSM 20 Electee Archive Script": {
-            "item_id": 91403,
-            "name": "CSM 20 Electee Archive Script"
-          },
-          "CSM 3 Electee Archive Script": {
-            "item_id": 34771,
-            "name": "CSM 3 Electee Archive Script"
-          },
-          "CSM 4 Electee Archive Script": {
-            "item_id": 34772,
-            "name": "CSM 4 Electee Archive Script"
-          },
-          "CSM 5 Electee Archive Script": {
-            "item_id": 34773,
-            "name": "CSM 5 Electee Archive Script"
-          },
-          "CSM 6 Electee Archive Script": {
-            "item_id": 34774,
-            "name": "CSM 6 Electee Archive Script"
-          },
-          "CSM 7 Electee Archive Script": {
-            "item_id": 34775,
-            "name": "CSM 7 Electee Archive Script"
-          },
-          "CSM 8 Electee Archive Script": {
-            "item_id": 34776,
-            "name": "CSM 8 Electee Archive Script"
-          },
-          "CSM 9 Electee Archive Script": {
-            "item_id": 34777,
-            "name": "CSM 9 Electee Archive Script"
-          },
-          "Dagon Blueprint Crate": {
-            "item_id": 90663,
-            "name": "Dagon Blueprint Crate"
-          },
-          "Damaged Ancient PEG": {
-            "item_id": 47053,
-            "name": "Damaged Ancient PEG"
-          },
-          "Data-Sniffer Display": {
-            "item_id": 56981,
-            "name": "Data-Sniffer Display"
-          },
-          "Dawn of Liberation Battleship SKINs": {
-            "item_id": 48533,
-            "name": "Dawn of Liberation Battleship SKINs"
-          },
-          "Dawn of Liberation Cruiser SKINs": {
-            "item_id": 48532,
-            "name": "Dawn of Liberation Cruiser SKINs"
-          },
-          "Dawn of Liberation Frigate SKINs": {
-            "item_id": 48531,
-            "name": "Dawn of Liberation Frigate SKINs"
-          },
-          "Deactivated Station Key Pass": {
-            "item_id": 33017,
-            "name": "Deactivated Station Key Pass"
-          },
-          "Deathglow Residue": {
-            "item_id": 49619,
-            "name": "Deathglow Residue"
-          },
-          "Decayed Deathglow": {
-            "item_id": 49620,
-            "name": "Decayed Deathglow"
-          },
-          "Decommissioned ERIC Prototype": {
-            "item_id": 48758,
-            "name": "Decommissioned ERIC Prototype"
-          },
-          "DED Informant's Frozen Corpse": {
-            "item_id": 54228,
-            "name": "DED Informant's Frozen Corpse"
-          },
-          "Deepflow Adaptive Canister": {
-            "item_id": 80382,
-            "name": "Deepflow Adaptive Canister"
-          },
-          "Definitive Thread": {
-            "item_id": 87604,
-            "name": "Definitive Thread"
-          },
-          "Defunct Name Change Token": {
-            "item_id": 48760,
-            "name": "Defunct Name Change Token"
-          },
-          "Delve Yoiul Calendar": {
-            "item_id": 47043,
-            "name": "Delve Yoiul Calendar"
-          },
-          "DEPRICATED (DO NOT TRANSLATE)": {
-            "item_id": 88569,
-            "name": "DEPRICATED (DO NOT TRANSLATE)"
-          },
-          "Diamond Ring": {
-            "item_id": 54160,
-            "name": "Diamond Ring"
-          },
-          "Dice of Jade": {
-            "item_id": 48587,
-            "name": "Dice of Jade"
-          },
-          "Dominance Command Unit": {
-            "item_id": 87607,
-            "name": "Dominance Command Unit"
-          },
-          "Donut Holder": {
-            "item_id": 33065,
-            "name": "Donut Holder"
-          },
-          "Drake & Oracle Argyros SKIN Crate": {
-            "item_id": 52297,
-            "name": "Drake & Oracle Argyros SKIN Crate"
-          },
-          "Drake & Rupture SKIN Crate": {
-            "item_id": 49805,
-            "name": "Drake & Rupture SKIN Crate"
-          },
-          "Dried Moss": {
-            "item_id": 48756,
-            "name": "Dried Moss"
-          },
-          "Drifter Plugsuit Reward Crate": {
-            "item_id": 87853,
-            "name": "Drifter Plugsuit Reward Crate"
-          },
-          "Drone Lands Evacuation Plans": {
-            "item_id": 91390,
-            "name": "Drone Lands Evacuation Plans"
-          },
-          "Drone Regions YC109": {
-            "item_id": 52274,
-            "name": "Drone Regions YC109"
-          },
-          "Dropsuit Fragment": {
-            "item_id": 48757,
-            "name": "Dropsuit Fragment"
-          },
-          "Ectoplasm-Skimmer Display": {
-            "item_id": 56978,
-            "name": "Ectoplasm-Skimmer Display"
-          },
-          "Eico Redarc/Redwire XVI Augmentations Crate": {
-            "item_id": 52299,
-            "name": "Eico Redarc/Redwire XVI Augmentations Crate"
-          },
-          "Electron Spin Resonance": {
-            "item_id": 84520,
-            "name": "Electron Spin Resonance"
-          },
-          "Emergency Application Form – A-77B/Redline": {
-            "item_id": 91395,
-            "name": "Emergency Application Form – A-77B/Redline"
-          },
-          "Empire Civilian Container": {
-            "item_id": 43640,
-            "name": "Empire Civilian Container"
-          },
-          "Execution Command Unit": {
-            "item_id": 87605,
-            "name": "Execution Command Unit"
-          },
-          "Exoplanets Hunter Reward Crate": {
-            "item_id": 45996,
-            "name": "Exoplanets Hunter Reward Crate"
-          },
-          "Experimental Mutaplasmid Repository": {
-            "item_id": 48642,
-            "name": "Experimental Mutaplasmid Repository"
-          },
-          "Extendable plunger tool": {
-            "item_id": 62052,
-            "name": "Extendable plunger tool"
-          },
-          "Faded Astrometric Chart": {
-            "item_id": 53341,
-            "name": "Faded Astrometric Chart"
-          },
-          "Fall of “Hoth”": {
-            "item_id": 91404,
-            "name": "Fall of “Hoth”"
-          },
-          "Fall of Fort Knocks YC120": {
-            "item_id": 52277,
-            "name": "Fall of Fort Knocks YC120"
-          },
-          "Feawen's Approval Documentation": {
-            "item_id": 37884,
-            "name": "Feawen's Approval Documentation"
-          },
-          "Federation Civilian Container": {
-            "item_id": 43678,
-            "name": "Federation Civilian Container"
-          },
-          "Federation Grand Prix Bronze Package": {
-            "item_id": 48375,
-            "name": "Federation Grand Prix Bronze Package"
-          },
-          "Federation Grand Prix CreoDron Package": {
-            "item_id": 48376,
-            "name": "Federation Grand Prix CreoDron Package"
-          },
-          "Federation Grand Prix Gold Package": {
-            "item_id": 48379,
-            "name": "Federation Grand Prix Gold Package"
-          },
-          "Federation Grand Prix Impetus Package": {
-            "item_id": 48374,
-            "name": "Federation Grand Prix Impetus Package"
-          },
-          "Federation Grand Prix Quafe Package": {
-            "item_id": 48378,
-            "name": "Federation Grand Prix Quafe Package"
-          },
-          "Federation Grand Prix Silver Package": {
-            "item_id": 48377,
-            "name": "Federation Grand Prix Silver Package"
-          },
-          "Festival Battlecruiser SKINs and Snowballs Crate": {
-            "item_id": 53509,
-            "name": "Festival Battlecruiser SKINs and Snowballs Crate"
-          },
-          "Festival Battleship SKINs, HyperCore and Snowballs Crate": {
-            "item_id": 53514,
-            "name": "Festival Battleship SKINs, HyperCore and Snowballs Crate"
-          },
-          "Festival Cap and Snowballs Crate": {
-            "item_id": 53498,
-            "name": "Festival Cap and Snowballs Crate"
-          },
-          "Festival Destroyer SKINs and Snowballs Crate": {
-            "item_id": 53491,
-            "name": "Festival Destroyer SKINs and Snowballs Crate"
-          },
-          "Festival Exploration Suit and Snowballs Crate": {
-            "item_id": 53496,
-            "name": "Festival Exploration Suit and Snowballs Crate"
-          },
-          "Festival Facial Augmentation and Snowballs Crate": {
-            "item_id": 53513,
-            "name": "Festival Facial Augmentation and Snowballs Crate"
-          },
-          "Festival Fireworks Crate": {
-            "item_id": 53494,
-            "name": "Festival Fireworks Crate"
-          },
-          "Festival Frigate SKINs and Snowballs Crate": {
-            "item_id": 53486,
-            "name": "Festival Frigate SKINs and Snowballs Crate"
-          },
-          "Festival HyperCore and Snowballs Crate": {
-            "item_id": 53512,
-            "name": "Festival HyperCore and Snowballs Crate"
-          },
-          "Festival HyperCore, Body Augmentation and Snowballs Crate": {
-            "item_id": 53508,
-            "name": "Festival HyperCore, Body Augmentation and Snowballs Crate"
-          },
-          "Festival Snowballs Crate": {
-            "item_id": 53488,
-            "name": "Festival Snowballs Crate"
-          },
-          "Festival Tier 1 Filament Crate": {
-            "item_id": 53490,
-            "name": "Festival Tier 1 Filament Crate"
-          },
-          "Festive Firecrackers": {
-            "item_id": 37879,
-            "name": "Festive Firecrackers"
-          },
-          "Fierce Abyssal Filaments Crate": {
-            "item_id": 49709,
-            "name": "Fierce Abyssal Filaments Crate"
-          },
-          "Flow Cytometry Rewards Crate": {
-            "item_id": 55358,
-            "name": "Flow Cytometry Rewards Crate"
-          },
-          "For Those Lost, But Never Forgotten": {
-            "item_id": 91412,
-            "name": "For Those Lost, But Never Forgotten"
-          },
-          "Forged Frigate Blueprints": {
-            "item_id": 44208,
-            "name": "Forged Frigate Blueprints"
-          },
-          "Fragment Inscribed with Odd Circular Text": {
-            "item_id": 62050,
-            "name": "Fragment Inscribed with Odd Circular Text"
-          },
-          "Fragmented Quarterly Earnings Report Holoreel": {
-            "item_id": 91397,
-            "name": "Fragmented Quarterly Earnings Report Holoreel"
-          },
-          "Freezer-Thief Display": {
-            "item_id": 56982,
-            "name": "Freezer-Thief Display"
-          },
-          "Frostline 'Clavicula' Integrated Analyzer Blueprint Crate": {
-            "item_id": 49975,
-            "name": "Frostline 'Clavicula' Integrated Analyzer Blueprint Crate"
-          },
-          "Frostline 'Omnivore' Harvester Upgrade Blueprint Crate": {
-            "item_id": 49981,
-            "name": "Frostline 'Omnivore' Harvester Upgrade Blueprint Crate"
-          },
-          "Frozen Droplet of Blood": {
-            "item_id": 47048,
-            "name": "Frozen Droplet of Blood"
-          },
-          "Fuel-Stealer Display": {
-            "item_id": 56972,
-            "name": "Fuel-Stealer Display"
-          },
-          "Galaxy Pack - Crystal": {
-            "item_id": 47253,
-            "name": "Galaxy Pack - Crystal"
-          },
-          "Galaxy Pack - Spectral": {
-            "item_id": 47154,
-            "name": "Galaxy Pack - Spectral"
-          },
-          "Gallente Inception Package": {
-            "item_id": 43932,
-            "name": "Gallente Inception Package"
-          },
-          "Gamealfur Ale": {
-            "item_id": 54163,
-            "name": "Gamealfur Ale"
-          },
-          "Genolution CA-X": {
-            "item_id": 47961,
-            "name": "Genolution CA-X"
-          },
-          "Glacial Drift Festival Box": {
-            "item_id": 46766,
-            "name": "Glacial Drift Festival Box"
-          },
-          "Glorified Deepflow Adaptive Canister": {
-            "item_id": 88853,
-            "name": "Glorified Deepflow Adaptive Canister"
-          },
-          "Gnosis & Punisher SKIN Crate": {
-            "item_id": 49802,
-            "name": "Gnosis & Punisher SKIN Crate"
-          },
-          "Gold Ouroboros": {
-            "item_id": 42231,
-            "name": "Gold Ouroboros"
-          },
-          "Golden Sabik Vial": {
-            "item_id": 49647,
-            "name": "Golden Sabik Vial"
-          },
-          "Grand Tiegjon Casino Chip": {
-            "item_id": 37881,
-            "name": "Grand Tiegjon Casino Chip"
-          },
-          "Gratuity for Warden Connection Harmonic": {
-            "item_id": 87982,
-            "name": "Gratuity for Warden Connection Harmonic"
-          },
-          "Guardian's Gala Surprise Gift": {
-            "item_id": 50045,
-            "name": "Guardian's Gala Surprise Gift"
-          },
-          "Guardian's Gala Surprise Gift, Damaged": {
-            "item_id": 50047,
-            "name": "Guardian's Gala Surprise Gift, Damaged"
-          },
-          "Guardian's Gala VIP Surprise Gift": {
-            "item_id": 50046,
-            "name": "Guardian's Gala VIP Surprise Gift"
-          },
-          "Guardian's Gala VIP Surprise Gift, Damaged": {
-            "item_id": 50048,
-            "name": "Guardian's Gala VIP Surprise Gift, Damaged"
-          },
-          "Guillome Renard's Sleeper Loot Stash": {
-            "item_id": 34431,
-            "name": "Guillome Renard's Sleeper Loot Stash"
-          },
-          "Guristas Infiltrator Clone Corpse": {
-            "item_id": 63698,
-            "name": "Guristas Infiltrator Clone Corpse"
-          },
-          "Hair Accessory Shipment (Damaged)": {
-            "item_id": 49707,
-            "name": "Hair Accessory Shipment (Damaged)"
-          },
-          "Halloween Horrors Astero SKIN": {
-            "item_id": 53055,
-            "name": "Halloween Horrors Astero SKIN"
-          },
-          "Halloween Horrors Avatar SKIN and Fireworks Crate": {
-            "item_id": 53059,
-            "name": "Halloween Horrors Avatar SKIN and Fireworks Crate"
-          },
-          "Halloween Horrors Fireworks and Launcher Crate": {
-            "item_id": 53053,
-            "name": "Halloween Horrors Fireworks and Launcher Crate"
-          },
-          "Halloween Horrors Fireworks Crate": {
-            "item_id": 53056,
-            "name": "Halloween Horrors Fireworks Crate"
-          },
-          "Halloween Horrors Gila SKIN": {
-            "item_id": 53057,
-            "name": "Halloween Horrors Gila SKIN"
-          },
-          "Halloween Horrors Headhunter Cruiser SKINs": {
-            "item_id": 53060,
-            "name": "Halloween Horrors Headhunter Cruiser SKINs"
-          },
-          "Halloween Horrors Machariel SKIN": {
-            "item_id": 53058,
-            "name": "Halloween Horrors Machariel SKIN"
-          },
-          "Headhunter Crate": {
-            "item_id": 46756,
-            "name": "Headhunter Crate"
-          },
-          "Historic Crimson Harvest SKIN Crate": {
-            "item_id": 90134,
-            "name": "Historic Crimson Harvest SKIN Crate"
-          },
-          "Historic Crimson Harvest Trinket Crate": {
-            "item_id": 90137,
-            "name": "Historic Crimson Harvest Trinket Crate"
-          },
-          "Historic SOE SKINs Crate": {
-            "item_id": 90885,
-            "name": "Historic SOE SKINs Crate"
-          },
-          "Historic Yoiul Festival SKIN Crate": {
-            "item_id": 90739,
-            "name": "Historic Yoiul Festival SKIN Crate"
-          },
-          "Historic Yoiul Festival SKINR Crate": {
-            "item_id": 90740,
-            "name": "Historic Yoiul Festival SKINR Crate"
-          },
-          "How to Retire Your Starbase": {
-            "item_id": 47058,
-            "name": "How to Retire Your Starbase"
-          },
-          "Hull Tanking, Elite": {
-            "item_id": 33575,
-            "name": "Hull Tanking, Elite"
-          },
-          "Hypercatabolic Clone Tissue": {
-            "item_id": 85242,
-            "name": "Hypercatabolic Clone Tissue"
-          },
-          "Ice Storm Filaments Crate": {
-            "item_id": 90736,
-            "name": "Ice Storm Filaments Crate"
-          },
-          "IGC Garment Keeper": {
-            "item_id": 46151,
-            "name": "IGC Garment Keeper"
-          },
-          "Impetus Trading Cards": {
-            "item_id": 48138,
-            "name": "Impetus Trading Cards"
-          },
-          "Inactive Sonic Multitool": {
-            "item_id": 62047,
-            "name": "Inactive Sonic Multitool"
-          },
-          "Industrial-sized Container of Bubble Bath": {
-            "item_id": 91391,
-            "name": "Industrial-sized Container of Bubble Bath"
-          },
-          "Intaki Cycle of Ida Bracelet": {
-            "item_id": 48140,
-            "name": "Intaki Cycle of Ida Bracelet"
-          },
-          "Intaki Spiced Tea": {
-            "item_id": 48143,
-            "name": "Intaki Spiced Tea"
-          },
-          "Internal Policies": {
-            "item_id": 48752,
-            "name": "Internal Policies"
-          },
-          "Jezaja's Giant Secure Container": {
-            "item_id": 44205,
-            "name": "Jezaja's Giant Secure Container"
-          },
-          "Jin-Mei Silk Cord": {
-            "item_id": 48142,
-            "name": "Jin-Mei Silk Cord"
-          },
-          "Jita Protest YC113": {
-            "item_id": 52275,
-            "name": "Jita Protest YC113"
-          },
-          "Jump Fatigue Recovery Agent": {
-            "item_id": 34419,
-            "name": "Jump Fatigue Recovery Agent"
-          },
-          "Jump Portal Generation Instruction Holoreel": {
-            "item_id": 34428,
-            "name": "Jump Portal Generation Instruction Holoreel"
-          },
-          "Kaalakiota Peaks Vodka": {
-            "item_id": 44215,
-            "name": "Kaalakiota Peaks Vodka"
-          },
-          "Kapli Bread": {
-            "item_id": 48590,
-            "name": "Kapli Bread"
-          },
-          "Keepstar Fragment": {
-            "item_id": 91408,
-            "name": "Keepstar Fragment"
-          },
-          "Kor-Azor Family Decree": {
-            "item_id": 44207,
-            "name": "Kor-Azor Family Decree"
-          },
-          "Kri'tak Knife": {
-            "item_id": 48591,
-            "name": "Kri'tak Knife"
-          },
-          "Krusual Etched Sticks": {
-            "item_id": 48588,
-            "name": "Krusual Etched Sticks"
-          },
-          "Ladon Forked Packet": {
-            "item_id": 87601,
-            "name": "Ladon Forked Packet"
-          },
-          "Large Faction Ammunition Crate": {
-            "item_id": 49748,
-            "name": "Large Faction Ammunition Crate"
-          },
-          "Lifeblood (Collector's Edition)": {
-            "item_id": 49649,
-            "name": "Lifeblood (Collector's Edition)"
-          },
-          "Liminal Strawberry Jam": {
-            "item_id": 91396,
-            "name": "Liminal Strawberry Jam"
-          },
-          "Little Helper, Female": {
-            "item_id": 33027,
-            "name": "Little Helper, Female"
-          },
-          "Little Helper, Male": {
-            "item_id": 33028,
-            "name": "Little Helper, Male"
-          },
-          "Livestock-Liberator Display": {
-            "item_id": 56971,
-            "name": "Livestock-Liberator Display"
-          },
-          "Locus Cypher": {
-            "item_id": 88571,
-            "name": "Locus Cypher"
-          },
-          "Log Fragment 1 (Gala YC121)": {
-            "item_id": 48950,
-            "name": "Log Fragment 1 (Gala YC121)"
-          },
-          "Log Fragment 2 (Gala YC121)": {
-            "item_id": 48951,
-            "name": "Log Fragment 2 (Gala YC121)"
-          },
-          "Log Fragment 3 (Gala YC121)": {
-            "item_id": 48952,
-            "name": "Log Fragment 3 (Gala YC121)"
-          },
-          "Log Fragment 4 (Gala YC121)": {
-            "item_id": 48953,
-            "name": "Log Fragment 4 (Gala YC121)"
-          },
-          "Log Fragment 5 (Gala YC121)": {
-            "item_id": 48954,
-            "name": "Log Fragment 5 (Gala YC121)"
-          },
-          "Log Fragment 6 (Gala YC121)": {
-            "item_id": 50040,
-            "name": "Log Fragment 6 (Gala YC121)"
-          },
-          "Log Fragment 7 (Gala YC121)": {
-            "item_id": 50041,
-            "name": "Log Fragment 7 (Gala YC121)"
-          },
-          "Log Fragment 8 (Gala YC121)": {
-            "item_id": 50042,
-            "name": "Log Fragment 8 (Gala YC121)"
-          },
-          "Looping Audio log": {
-            "item_id": 91409,
-            "name": "Looping Audio log"
-          },
-          "Lost reminder to pay sov bill": {
-            "item_id": 33217,
-            "name": "Lost reminder to pay sov bill"
-          },
-          "Lump of Carbon": {
-            "item_id": 47047,
-            "name": "Lump of Carbon"
-          },
-          "Magic Crystal Ball": {
-            "item_id": 28840,
-            "name": "Magic Crystal Ball"
-          },
-          "Mannar Hair Gel": {
-            "item_id": 48139,
-            "name": "Mannar Hair Gel"
-          },
-          "Manufacturing Union's Placard": {
-            "item_id": 34417,
-            "name": "Manufacturing Union's Placard"
-          },
-          "Matari Word Calendar": {
-            "item_id": 48589,
-            "name": "Matari Word Calendar"
-          },
-          "Max Amarria": {
-            "item_id": 37880,
-            "name": "Max Amarria"
-          },
-          "Meat Popsicle": {
-            "item_id": 37885,
-            "name": "Meat Popsicle"
-          },
-          "Medium Breacher Pod Launcher Blueprint Crate": {
-            "item_id": 86275,
-            "name": "Medium Breacher Pod Launcher Blueprint Crate"
-          },
-          "Medium Faction Ammunition Crate": {
-            "item_id": 49719,
-            "name": "Medium Faction Ammunition Crate"
-          },
-          "Melted Scraps of Capsule Plating": {
-            "item_id": 54227,
-            "name": "Melted Scraps of Capsule Plating"
-          },
-          "Men's & Women's Frostline Exploration Suit": {
-            "item_id": 49803,
-            "name": "Men's & Women's Frostline Exploration Suit"
-          },
-          "Men's Empire Exploration Suit crate": {
-            "item_id": 90892,
-            "name": "Men's Empire Exploration Suit crate"
-          },
-          "Midband Emission Amplifier": {
-            "item_id": 88174,
-            "name": "Midband Emission Amplifier"
-          },
-          "Midband Emission Limiter": {
-            "item_id": 88175,
-            "name": "Midband Emission Limiter"
-          },
-          "Military Experts and You": {
-            "item_id": 33025,
-            "name": "Military Experts and You"
-          },
-          "Minmatar Inception Package": {
-            "item_id": 43933,
-            "name": "Minmatar Inception Package"
-          },
-          "ML-EKP 'Polybolos' Ballistic Control System Blueprint Crate": {
-            "item_id": 49974,
-            "name": "ML-EKP 'Polybolos' Ballistic Control System Blueprint Crate"
-          },
-          "Model of a Fighter": {
-            "item_id": 33030,
-            "name": "Model of a Fighter"
-          },
-          "Molok Blueprint Crate": {
-            "item_id": 90664,
-            "name": "Molok Blueprint Crate"
-          },
-          "Muon Cosmic Resonance": {
-            "item_id": 84521,
-            "name": "Muon Cosmic Resonance"
-          },
-          "My God, It's Full Of Holes!": {
-            "item_id": 34430,
-            "name": "My God, It's Full Of Holes!"
-          },
-          "Mynos Forked Packet": {
-            "item_id": 87608,
-            "name": "Mynos Forked Packet"
-          },
-          "Myrmidon & Tornado Argyros SKIN Crate": {
-            "item_id": 52293,
-            "name": "Myrmidon & Tornado Argyros SKIN Crate"
-          },
-          "Mysterious Booster Crate I": {
-            "item_id": 81603,
-            "name": "Mysterious Booster Crate I"
-          },
-          "Mysterious GalNet Crate": {
-            "item_id": 78889,
-            "name": "Mysterious GalNet Crate"
-          },
-          "Mysterious GalNet Crate II": {
-            "item_id": 79186,
-            "name": "Mysterious GalNet Crate II"
-          },
-          "Narrowband Emission Amplifier": {
-            "item_id": 88172,
-            "name": "Narrowband Emission Amplifier"
-          },
-          "Narrowband Emission Limiter": {
-            "item_id": 88173,
-            "name": "Narrowband Emission Limiter"
-          },
-          "Neutron Flow Polarity Reverser": {
-            "item_id": 62054,
-            "name": "Neutron Flow Polarity Reverser"
-          },
-          "New Eden Soundbox": {
-            "item_id": 33066,
-            "name": "New Eden Soundbox"
-          },
-          "New Eden Source": {
-            "item_id": 33809,
-            "name": "New Eden Source"
-          },
-          "Nexus Cypher": {
-            "item_id": 88178,
-            "name": "Nexus Cypher"
-          },
-          "Odysseus Definitive SOE SKINs Crate": {
-            "item_id": 91185,
-            "name": "Odysseus Definitive SOE SKINs Crate"
-          },
-          "Offensive Content Reports, Jan. YC120, vol. I": {
-            "item_id": 48759,
-            "name": "Offensive Content Reports, Jan. YC120, vol. I"
-          },
-          "OODA Loop Expert System Package": {
-            "item_id": 54811,
-            "name": "OODA Loop Expert System Package"
-          },
-          "ORE Faded Cache": {
-            "item_id": 91085,
-            "name": "ORE Faded Cache"
-          },
-          "ORE Fresh Cache": {
-            "item_id": 91087,
-            "name": "ORE Fresh Cache"
-          },
-          "ORE Friable Cache": {
-            "item_id": 91086,
-            "name": "ORE Friable Cache"
-          },
-          "ORE Green Salvage Package": {
-            "item_id": 90741,
-            "name": "ORE Green Salvage Package"
-          },
-          "ORE Red Salvage Package": {
-            "item_id": 90743,
-            "name": "ORE Red Salvage Package"
-          },
-          "ORE Research Data Fragment": {
-            "item_id": 62709,
-            "name": "ORE Research Data Fragment"
-          },
-          "ORE White Salvage Package": {
-            "item_id": 90742,
-            "name": "ORE White Salvage Package"
-          },
-          "Overseer Sabik Vial": {
-            "item_id": 85179,
-            "name": "Overseer Sabik Vial"
-          },
-          "Pax e Kilizhi Do": {
-            "item_id": 52783,
-            "name": "Pax e Kilizhi Do"
-          },
-          "Peculiar Icebound Salvage": {
-            "item_id": 90744,
-            "name": "Peculiar Icebound Salvage"
-          },
-          "Permaband Tour Cap Crate": {
-            "item_id": 52292,
-            "name": "Permaband Tour Cap Crate"
-          },
-          "Permaband Tour T-Shirt Crate": {
-            "item_id": 52300,
-            "name": "Permaband Tour T-Shirt Crate"
-          },
-          "Polaris Eviction Notice": {
-            "item_id": 34427,
-            "name": "Polaris Eviction Notice"
-          },
-          "POS Fuel": {
-            "item_id": 54166,
-            "name": "POS Fuel"
-          },
-          "Postcard From Poitot": {
-            "item_id": 33022,
-            "name": "Postcard From Poitot"
-          },
-          "Power-Drainer Display": {
-            "item_id": 56983,
-            "name": "Power-Drainer Display"
-          },
-          "Pre-Completed CSM 10 Ballot Paper": {
-            "item_id": 34423,
-            "name": "Pre-Completed CSM 10 Ballot Paper"
-          },
-          "Predictive Light Cone Plotter": {
-            "item_id": 54808,
-            "name": "Predictive Light Cone Plotter"
-          },
-          "Premier ticket for: Clear Skies": {
-            "item_id": 33220,
-            "name": "Premier ticket for: Clear Skies"
-          },
-          "Premier ticket for: Day of Darkness": {
-            "item_id": 33221,
-            "name": "Premier ticket for: Day of Darkness"
-          },
-          "Premier ticket for: The last G campaign": {
-            "item_id": 33219,
-            "name": "Premier ticket for: The last G campaign"
-          },
-          "Press pass to Prometheus Station opening": {
-            "item_id": 33215,
-            "name": "Press pass to Prometheus Station opening"
-          },
-          "Prime Conservation Canister": {
-            "item_id": 87208,
-            "name": "Prime Conservation Canister"
-          },
-          "Project Compass Star Charts": {
-            "item_id": 37874,
-            "name": "Project Compass Star Charts"
-          },
-          "Project Firebird Dossier": {
-            "item_id": 91406,
-            "name": "Project Firebird Dossier"
-          },
-          "Proven Deepflow Adaptive Canister": {
-            "item_id": 88852,
-            "name": "Proven Deepflow Adaptive Canister"
-          },
-          "Public Portrait: How To": {
-            "item_id": 33061,
-            "name": "Public Portrait: How To"
-          },
-          "Purgative Coffin": {
-            "item_id": 49651,
-            "name": "Purgative Coffin"
-          },
-          "Query: Spaghetti or Chicken Sandwich?": {
-            "item_id": 48748,
-            "name": "Query: Spaghetti or Chicken Sandwich?"
-          },
-          "Raata Wind Chimes": {
-            "item_id": 48141,
-            "name": "Raata Wind Chimes"
-          },
-          "Radiation-Rogue Display": {
-            "item_id": 56973,
-            "name": "Radiation-Rogue Display"
-          },
-          "Rare Icebound Salvage": {
-            "item_id": 90745,
-            "name": "Rare Icebound Salvage"
-          },
-          "Ration-Grabber Display": {
-            "item_id": 56979,
-            "name": "Ration-Grabber Display"
-          },
-          "Reconstructed Spectral Vision Amarr": {
-            "item_id": 87392,
-            "name": "Reconstructed Spectral Vision Amarr"
-          },
-          "Reconstructed Spectral Vision Annihilation": {
-            "item_id": 87391,
-            "name": "Reconstructed Spectral Vision Annihilation"
-          },
-          "Reconstructed Spectral Vision Gallente Prime": {
-            "item_id": 87389,
-            "name": "Reconstructed Spectral Vision Gallente Prime"
-          },
-          "Reconstructed Spectral Vision Jita": {
-            "item_id": 87393,
-            "name": "Reconstructed Spectral Vision Jita"
-          },
-          "Reconstructed Spectral Vision Matar": {
-            "item_id": 87374,
-            "name": "Reconstructed Spectral Vision Matar"
-          },
-          "Reconstructed Spectral Vision Torment": {
-            "item_id": 87390,
-            "name": "Reconstructed Spectral Vision Torment"
-          },
-          "Recursive Knot": {
-            "item_id": 87602,
-            "name": "Recursive Knot"
-          },
-          "Recycler-Raider Display": {
-            "item_id": 56975,
-            "name": "Recycler-Raider Display"
-          },
-          "Rejected Ship Replacement Program Request": {
-            "item_id": 44211,
-            "name": "Rejected Ship Replacement Program Request"
-          },
-          "Remember Myrskaa Flyers": {
-            "item_id": 47044,
-            "name": "Remember Myrskaa Flyers"
-          },
-          "Replica Gallente Cruiser": {
-            "item_id": 33029,
-            "name": "Replica Gallente Cruiser"
-          },
-          "Replica Gold Magnate Decorative Plating": {
-            "item_id": 45062,
-            "name": "Replica Gold Magnate Decorative Plating"
-          },
-          "Replica Miss Federation Trophy": {
-            "item_id": 48137,
-            "name": "Replica Miss Federation Trophy"
-          },
-          "Replica Mister Federation Trophy": {
-            "item_id": 48136,
-            "name": "Replica Mister Federation Trophy"
-          },
-          "Replica of the ISCSS Venture": {
-            "item_id": 48144,
-            "name": "Replica of the ISCSS Venture"
-          },
-          "Republic Civilian Container": {
-            "item_id": 43679,
-            "name": "Republic Civilian Container"
-          },
-          "Republic Justice Department Bronze Reward": {
-            "item_id": 48534,
-            "name": "Republic Justice Department Bronze Reward"
-          },
-          "Republic Justice Department Gold Reward": {
-            "item_id": 48536,
-            "name": "Republic Justice Department Gold Reward"
-          },
-          "Republic Justice Department Silver Reward": {
-            "item_id": 48535,
-            "name": "Republic Justice Department Silver Reward"
-          },
-          "Retired Server Hamster": {
-            "item_id": 48750,
-            "name": "Retired Server Hamster"
-          },
-          "Rooks & Kings - The Clarion Call Compilation": {
-            "item_id": 34422,
-            "name": "Rooks & Kings - The Clarion Call Compilation"
-          },
-          "Rorqual Design Change Log": {
-            "item_id": 47042,
-            "name": "Rorqual Design Change Log"
-          },
-          "Rules of Engagement": {
-            "item_id": 33026,
-            "name": "Rules of Engagement"
-          },
-          "Sani Sabik Murder Security Tapes": {
-            "item_id": 49650,
-            "name": "Sani Sabik Murder Security Tapes"
-          },
-          "Sani Sabik Sermon": {
-            "item_id": 49648,
-            "name": "Sani Sabik Sermon"
-          },
-          "Sansha Claws Fairytale Book": {
-            "item_id": 37878,
-            "name": "Sansha Claws Fairytale Book"
-          },
-          "Sarpati Reserve Brandy": {
-            "item_id": 54164,
-            "name": "Sarpati Reserve Brandy"
-          },
-          "Scale Model Of [RFS] Mah'tu Rea": {
-            "item_id": 44210,
-            "name": "Scale Model Of [RFS] Mah'tu Rea"
-          },
-          "Scale Model of a Blue Box": {
-            "item_id": 62046,
-            "name": "Scale Model of a Blue Box"
-          },
-          "Scanner-Jacker Display": {
-            "item_id": 56980,
-            "name": "Scanner-Jacker Display"
-          },
-          "SCARAB Breacher Pod M Blueprint Crate": {
-            "item_id": 86273,
-            "name": "SCARAB Breacher Pod M Blueprint Crate"
-          },
-          "SCARAB Breacher Pod S Blueprint Crate": {
-            "item_id": 86272,
-            "name": "SCARAB Breacher Pod S Blueprint Crate"
-          },
-          "SCC Guidelines - Lotteries For Dummies": {
-            "item_id": 34425,
-            "name": "SCC Guidelines - Lotteries For Dummies"
-          },
-          "Scotty the Docking Manager's Clone": {
-            "item_id": 33019,
-            "name": "Scotty the Docking Manager's Clone"
-          },
-          "Scrap of paper": {
-            "item_id": 91414,
-            "name": "Scrap of paper"
-          },
-          "Sealed Projects Container": {
-            "item_id": 89784,
-            "name": "Sealed Projects Container"
-          },
-          "Sequence Binder Welcome Package": {
-            "item_id": 83832,
-            "name": "Sequence Binder Welcome Package"
-          },
-          "Serenity Special SKINs Crate": {
-            "item_id": 55827,
-            "name": "Serenity Special SKINs Crate"
-          },
-          "Ship Fitting Guide": {
-            "item_id": 33018,
-            "name": "Ship Fitting Guide"
-          },
-          "Shuttle Piloting For Dummies": {
-            "item_id": 33059,
-            "name": "Shuttle Piloting For Dummies"
-          },
-          "Silver Monocle Interface Crate": {
-            "item_id": 52301,
-            "name": "Silver Monocle Interface Crate"
-          },
-          "Silver Ouroboros": {
-            "item_id": 42230,
-            "name": "Silver Ouroboros"
-          },
-          "Sisters Of EVE Charity Statue": {
-            "item_id": 34432,
-            "name": "Sisters Of EVE Charity Statue"
-          },
-          "SKINR Studio Supplies": {
-            "item_id": 83709,
-            "name": "SKINR Studio Supplies"
-          },
-          "Slaver Tooth Necklace": {
-            "item_id": 48593,
-            "name": "Slaver Tooth Necklace"
-          },
-          "Small Breacher Pod Launcher Blueprint Crate": {
-            "item_id": 86274,
-            "name": "Small Breacher Pod Launcher Blueprint Crate"
-          },
-          "Small Navy Ammunition Crate": {
-            "item_id": 49746,
-            "name": "Small Navy Ammunition Crate"
-          },
-          "Smuggler Lockbox": {
-            "item_id": 64033,
-            "name": "Smuggler Lockbox"
-          },
-          "Snow Globe with Peculiar Architecture": {
-            "item_id": 62051,
-            "name": "Snow Globe with Peculiar Architecture"
-          },
-          "Snowstar Crystalburst Fireworks Crate": {
-            "item_id": 57166,
-            "name": "Snowstar Crystalburst Fireworks Crate"
-          },
-          "Solar Fest Crate": {
-            "item_id": 89328,
-            "name": "Solar Fest Crate"
-          },
-          "Sort Dragon's Guide To Diplomacy": {
-            "item_id": 34426,
-            "name": "Sort Dragon's Guide To Diplomacy"
-          },
-          "Soxfour's Spaceboots": {
-            "item_id": 34435,
-            "name": "Soxfour's Spaceboots"
-          },
-          "Spatiotemporal Boundary Detector": {
-            "item_id": 54809,
-            "name": "Spatiotemporal Boundary Detector"
-          },
-          "Spectral Vision Capture Reward Crate": {
-            "item_id": 87360,
-            "name": "Spectral Vision Capture Reward Crate"
-          },
-          "Spiked Quafe": {
-            "item_id": 54165,
-            "name": "Spiked Quafe"
-          },
-          "St. Tetrimon's Finger": {
-            "item_id": 49634,
-            "name": "St. Tetrimon's Finger"
-          },
-          "Standard 'Ardour' Cerebral Accelerator Blueprint Crate": {
-            "item_id": 50030,
-            "name": "Standard 'Ardour' Cerebral Accelerator Blueprint Crate"
-          },
-          "Starsi": {
-            "item_id": 37888,
-            "name": "Starsi"
-          },
-          "Stellar Transmuter Datacore": {
-            "item_id": 76203,
-            "name": "Stellar Transmuter Datacore"
-          },
-          "Stellar Transmuter Research Data Fragment": {
-            "item_id": 76208,
-            "name": "Stellar Transmuter Research Data Fragment"
-          },
-          "Stellar Transmuter Research Encryption Key": {
-            "item_id": 76209,
-            "name": "Stellar Transmuter Research Encryption Key"
-          },
-          "Stellar Transmuter Research Index File": {
-            "item_id": 76207,
-            "name": "Stellar Transmuter Research Index File"
-          },
-          "String Charge Evaluation Couple": {
-            "item_id": 54810,
-            "name": "String Charge Evaluation Couple"
-          },
-          "Subspace Energy & You": {
-            "item_id": 45061,
-            "name": "Subspace Energy & You"
-          },
-          "Superior Exoplanets Hunter Reward Crate": {
-            "item_id": 46050,
-            "name": "Superior Exoplanets Hunter Reward Crate"
-          },
-          "Superior Flow Cytometry Rewards Crate": {
-            "item_id": 55359,
-            "name": "Superior Flow Cytometry Rewards Crate"
-          },
-          "Suspicious “mining permit”": {
-            "item_id": 91410,
-            "name": "Suspicious “mining permit”"
-          },
-          "Tarot of St. Jamyl": {
-            "item_id": 49645,
-            "name": "Tarot of St. Jamyl"
-          },
-          "Tau Decay Resonance": {
-            "item_id": 84519,
-            "name": "Tau Decay Resonance"
-          },
-          "Templis Dragonaurs Log 1220107-VC47": {
-            "item_id": 53846,
-            "name": "Templis Dragonaurs Log 1220107-VC47"
-          },
-          "Ten Most Wanted Slavers": {
-            "item_id": 48592,
-            "name": "Ten Most Wanted Slavers"
-          },
-          "Terminated Knot": {
-            "item_id": 87606,
-            "name": "Terminated Knot"
-          },
-          "Test item": {
-            "item_id": 41496,
-            "name": "Test item"
-          },
-          "Tetrimonic Warclone Blanks": {
-            "item_id": 85178,
-            "name": "Tetrimonic Warclone Blanks"
-          },
-          "The Capsuleer’s Confectionary Codex – Field Edition": {
-            "item_id": 91415,
-            "name": "The Capsuleer’s Confectionary Codex – Field Edition"
-          },
-          "The Champion Ship": {
-            "item_id": 44213,
-            "name": "The Champion Ship"
-          },
-          "The Damsel's Drunk Bodyguard": {
-            "item_id": 34433,
-            "name": "The Damsel's Drunk Bodyguard"
-          },
-          "The Friend Ship": {
-            "item_id": 34436,
-            "name": "The Friend Ship"
-          },
-          "The Galactic Party Planning Guide": {
-            "item_id": 34418,
-            "name": "The Galactic Party Planning Guide"
-          },
-          "The Mini Monolith": {
-            "item_id": 33015,
-            "name": "The Mini Monolith"
-          },
-          "The Policy Enforcer": {
-            "item_id": 48753,
-            "name": "The Policy Enforcer"
-          },
-          "The Yulai Siege YC106": {
-            "item_id": 52273,
-            "name": "The Yulai Siege YC106"
-          },
-          "Tholos Blueprint Crate": {
-            "item_id": 86270,
-            "name": "Tholos Blueprint Crate"
-          },
-          "Titanium Plated Cranial Shielding": {
-            "item_id": 34424,
-            "name": "Titanium Plated Cranial Shielding"
-          },
-          "Titanomachy YC116": {
-            "item_id": 52276,
-            "name": "Titanomachy YC116"
-          },
-          "TLF Recruitment Poster": {
-            "item_id": 48584,
-            "name": "TLF Recruitment Poster"
-          },
-          "To Kill the Risen Dead": {
-            "item_id": 47059,
-            "name": "To Kill the Risen Dead"
-          },
-          "Tool-Swiper Display": {
-            "item_id": 56974,
-            "name": "Tool-Swiper Display"
-          },
-          "Top Grade Deathglow": {
-            "item_id": 49621,
-            "name": "Top Grade Deathglow"
-          },
-          "Tranquil Abyssal Filaments Crate": {
-            "item_id": 56365,
-            "name": "Tranquil Abyssal Filaments Crate"
-          },
-          "Transport Relay Datacore": {
-            "item_id": 76204,
-            "name": "Transport Relay Datacore"
-          },
-          "Transport Relay Research Data Fragment": {
-            "item_id": 76211,
-            "name": "Transport Relay Research Data Fragment"
-          },
-          "Transport Relay Research Encryption Key": {
-            "item_id": 76212,
-            "name": "Transport Relay Research Encryption Key"
-          },
-          "Transport Relay Research Index File": {
-            "item_id": 76210,
-            "name": "Transport Relay Research Index File"
-          },
-          "Uncertainty Thread": {
-            "item_id": 87603,
-            "name": "Uncertainty Thread"
-          },
-          "Uncommon SKINR Studio Supplies Crate": {
-            "item_id": 91195,
-            "name": "Uncommon SKINR Studio Supplies Crate"
-          },
-          "Unfinished Romance Novel": {
-            "item_id": 91416,
-            "name": "Unfinished Romance Novel"
-          },
-          "Unit of Lag": {
-            "item_id": 33021,
-            "name": "Unit of Lag"
-          },
-          "Unpainted ship miniature": {
-            "item_id": 91393,
-            "name": "Unpainted ship miniature"
-          },
-          "Unusual Icebound Salvage": {
-            "item_id": 90746,
-            "name": "Unusual Icebound Salvage"
-          },
-          "Upwell Consortium Propaganda Reel": {
-            "item_id": 44212,
-            "name": "Upwell Consortium Propaganda Reel"
-          },
-          "Used Ectoplasmic Fluid": {
-            "item_id": 54225,
-            "name": "Used Ectoplasmic Fluid"
-          },
-          "Verity Tech Crate": {
-            "item_id": 91204,
-            "name": "Verity Tech Crate"
-          },
-          "Vherokior Medicinal Herbs": {
-            "item_id": 48585,
-            "name": "Vherokior Medicinal Herbs"
-          },
-          "Vial of Kyonoke Plague Cure": {
-            "item_id": 47046,
-            "name": "Vial of Kyonoke Plague Cure"
-          },
-          "Vial of Mikramurka": {
-            "item_id": 48586,
-            "name": "Vial of Mikramurka"
-          },
-          "Vimoksha Chorus Log 1220108-TD53": {
-            "item_id": 53851,
-            "name": "Vimoksha Chorus Log 1220108-TD53"
-          },
-          "Vincent Pryce's Warp Disruption Field Generator": {
-            "item_id": 34429,
-            "name": "Vincent Pryce's Warp Disruption Field Generator"
-          },
-          "Vintage Frigate Blueprints": {
-            "item_id": 45060,
-            "name": "Vintage Frigate Blueprints"
-          },
-          "Vintage Wine?": {
-            "item_id": 49652,
-            "name": "Vintage Wine?"
-          },
-          "Vorton Projector Booster Gift Box": {
-            "item_id": 55029,
-            "name": "Vorton Projector Booster Gift Box"
-          },
-          "Warclone Blanks": {
-            "item_id": 56788,
-            "name": "Warclone Blanks"
-          },
-          "Warden Connection Harmonics": {
-            "item_id": 87618,
-            "name": "Warden Connection Harmonics"
-          },
-          "Warp-Shifted Reflections – Personal Journal Page": {
-            "item_id": 91394,
-            "name": "Warp-Shifted Reflections – Personal Journal Page"
-          },
-          "Water-Sucker Display": {
-            "item_id": 56976,
-            "name": "Water-Sucker Display"
-          },
-          "Well-Used Camera Drone": {
-            "item_id": 91388,
-            "name": "Well-Used Camera Drone"
-          },
-          "Well-Worn Fedora": {
-            "item_id": 48751,
-            "name": "Well-Worn Fedora"
-          },
-          "Wideband Emission Amplifier": {
-            "item_id": 88176,
-            "name": "Wideband Emission Amplifier"
-          },
-          "Wideband Emission Limiter": {
-            "item_id": 88177,
-            "name": "Wideband Emission Limiter"
-          },
-          "Women's Empire Exploration Suit crate": {
-            "item_id": 90893,
-            "name": "Women's Empire Exploration Suit crate"
-          },
-          "Worn-out Titan Jump Console": {
-            "item_id": 91407,
-            "name": "Worn-out Titan Jump Console"
-          },
-          "XV Anniversary Gift Box (Alpha)": {
-            "item_id": 47962,
-            "name": "XV Anniversary Gift Box (Alpha)"
-          },
-          "XV Anniversary Gift Box (Omega)": {
-            "item_id": 47963,
-            "name": "XV Anniversary Gift Box (Omega)"
-          },
-          "YC110.05.29 - Arceho. Student Yosef Okada Journal entry": {
-            "item_id": 85712,
-            "name": "YC110.05.29 - Arceho. Student Yosef Okada Journal entry"
-          },
-          "YC110.06.09 - Asst. Archeo. Yosef Okada Journal entry": {
-            "item_id": 85713,
-            "name": "YC110.06.09 - Asst. Archeo. Yosef Okada Journal entry"
-          },
-          "YC110.08.20 - Asst. Archeo. Yosef Okada Journal entry": {
-            "item_id": 85714,
-            "name": "YC110.08.20 - Asst. Archeo. Yosef Okada Journal entry"
-          },
-          "YC110.11.30 - Asst. Archeo. Yosef Okada Journal entry": {
-            "item_id": 85715,
-            "name": "YC110.11.30 - Asst. Archeo. Yosef Okada Journal entry"
-          },
-          "YC110.12.04 - Asst. Archeo. Yosef Okada Journal entry": {
-            "item_id": 85716,
-            "name": "YC110.12.04 - Asst. Archeo. Yosef Okada Journal entry"
-          },
-          "YC110.12.10 - Asst. Archeo. Yosef Okada Journal entry": {
-            "item_id": 85717,
-            "name": "YC110.12.10 - Asst. Archeo. Yosef Okada Journal entry"
-          },
-          "YC113.01.15 - Dr. Yosef Okada Journal entry": {
-            "item_id": 85718,
-            "name": "YC113.01.15 - Dr. Yosef Okada Journal entry"
-          },
-          "YC113.04.15 - Dr. Yosef Okada Journal entry": {
-            "item_id": 85719,
-            "name": "YC113.04.15 - Dr. Yosef Okada Journal entry"
-          },
-          "YC113.05.01 - Dr. Yosef Okada Journal entry": {
-            "item_id": 85720,
-            "name": "YC113.05.01 - Dr. Yosef Okada Journal entry"
-          },
-          "YC113.05.24 - Dr. Yosef Okada Journal entry": {
-            "item_id": 85721,
-            "name": "YC113.05.24 - Dr. Yosef Okada Journal entry"
-          },
-          "YC113.11.09 - Dr. Yosef Okada Journal entry": {
-            "item_id": 85722,
-            "name": "YC113.11.09 - Dr. Yosef Okada Journal entry"
-          },
-          "YC114.01.19 - Dr. Yosef Okada Journal entry": {
-            "item_id": 85723,
-            "name": "YC114.01.19 - Dr. Yosef Okada Journal entry"
-          },
-          "YC115.08.19 - Yosef Okada Journal entry": {
-            "item_id": 85724,
-            "name": "YC115.08.19 - Yosef Okada Journal entry"
-          },
-          "YC117 Symposium On Emergent Threats Access Pass": {
-            "item_id": 37882,
-            "name": "YC117 Symposium On Emergent Threats Access Pass"
-          },
-          "YC117.02.06 - Yosef Okada Journal entry": {
-            "item_id": 85725,
-            "name": "YC117.02.06 - Yosef Okada Journal entry"
-          },
-          "YC117.02.20 - Yosef Okada Journal entry": {
-            "item_id": 85726,
-            "name": "YC117.02.20 - Yosef Okada Journal entry"
-          },
-          "YC117.10.15 - Yosef Okada Journal entry": {
-            "item_id": 85727,
-            "name": "YC117.10.15 - Yosef Okada Journal entry"
-          },
-          "YC117.10.30 - Yosef Okada Journal entry": {
-            "item_id": 85728,
-            "name": "YC117.10.30 - Yosef Okada Journal entry"
-          },
-          "YC117.11.01 - Yosef Okada Journal entry": {
-            "item_id": 85729,
-            "name": "YC117.11.01 - Yosef Okada Journal entry"
-          },
-          "YC117.11.06 - dictated record": {
-            "item_id": 85730,
-            "name": "YC117.11.06 - dictated record"
-          },
-          "YC117.11.08 - dictated record": {
-            "item_id": 85731,
-            "name": "YC117.11.08 - dictated record"
-          },
-          "YC118 Succession Trial Champion's Decree - House Ardishapur": {
-            "item_id": 37892,
-            "name": "YC118 Succession Trial Champion's Decree - House Ardishapur"
-          },
-          "YC118 Succession Trial Champion's Decree - House Kador": {
-            "item_id": 37893,
-            "name": "YC118 Succession Trial Champion's Decree - House Kador"
-          },
-          "YC118 Succession Trial Champion's Decree - House Khanid": {
-            "item_id": 37894,
-            "name": "YC118 Succession Trial Champion's Decree - House Khanid"
-          },
-          "YC118 Succession Trial Champion's Decree - House Kor-Azor": {
-            "item_id": 37895,
-            "name": "YC118 Succession Trial Champion's Decree - House Kor-Azor"
-          },
-          "YC118 Succession Trial Champion's Decree - House Sarum": {
-            "item_id": 37896,
-            "name": "YC118 Succession Trial Champion's Decree - House Sarum"
-          },
-          "YC118 Succession Trial Champion's Decree - House Tash-Murkon": {
-            "item_id": 37889,
-            "name": "YC118 Succession Trial Champion's Decree - House Tash-Murkon"
-          },
-          "YC119 Yoiul Festival Day 1": {
-            "item_id": 44187,
-            "name": "YC119 Yoiul Festival Day 1"
-          },
-          "YC119 Yoiul Festival Day 10": {
-            "item_id": 44197,
-            "name": "YC119 Yoiul Festival Day 10"
-          },
-          "YC119 Yoiul Festival Day 11": {
-            "item_id": 44198,
-            "name": "YC119 Yoiul Festival Day 11"
-          },
-          "YC119 Yoiul Festival Day 12": {
-            "item_id": 44199,
-            "name": "YC119 Yoiul Festival Day 12"
-          },
-          "YC119 Yoiul Festival Day 2": {
-            "item_id": 44188,
-            "name": "YC119 Yoiul Festival Day 2"
-          },
-          "YC119 Yoiul Festival Day 3": {
-            "item_id": 44189,
-            "name": "YC119 Yoiul Festival Day 3"
-          },
-          "YC119 Yoiul Festival Day 4": {
-            "item_id": 44190,
-            "name": "YC119 Yoiul Festival Day 4"
-          },
-          "YC119 Yoiul Festival Day 5": {
-            "item_id": 44191,
-            "name": "YC119 Yoiul Festival Day 5"
-          },
-          "YC119 Yoiul Festival Day 6": {
-            "item_id": 44192,
-            "name": "YC119 Yoiul Festival Day 6"
-          },
-          "YC119 Yoiul Festival Day 7": {
-            "item_id": 44193,
-            "name": "YC119 Yoiul Festival Day 7"
-          },
-          "YC119 Yoiul Festival Day 8": {
-            "item_id": 44194,
-            "name": "YC119 Yoiul Festival Day 8"
-          },
-          "YC119 Yoiul Festival Day 9": {
-            "item_id": 44195,
-            "name": "YC119 Yoiul Festival Day 9"
-          },
-          "YC121 Guardian's Gala Ticket": {
-            "item_id": 50039,
-            "name": "YC121 Guardian's Gala Ticket"
-          },
-          "Yoiul Festival Booster Crate": {
-            "item_id": 90737,
-            "name": "Yoiul Festival Booster Crate"
-          },
-          "Yoiul Festival Brainfreeze Crate": {
-            "item_id": 90738,
-            "name": "Yoiul Festival Brainfreeze Crate"
-          },
-          "Yoiul Festival Fireworks Package": {
-            "item_id": 46825,
-            "name": "Yoiul Festival Fireworks Package"
-          },
-          "Yoiul Festival YC120 Coin (Amarr)": {
-            "item_id": 47060,
-            "name": "Yoiul Festival YC120 Coin (Amarr)"
-          },
-          "Yoiul Festival YC120 Coin (Caldari)": {
-            "item_id": 47063,
-            "name": "Yoiul Festival YC120 Coin (Caldari)"
-          },
-          "Yoiul Festival YC120 Coin (Gallente)": {
-            "item_id": 47064,
-            "name": "Yoiul Festival YC120 Coin (Gallente)"
-          },
-          "Yoiul Festival YC120 Coin (Minmatar)": {
-            "item_id": 47062,
-            "name": "Yoiul Festival YC120 Coin (Minmatar)"
-          },
-          "Yoiul Stormchasers Suit and Cap Crate": {
-            "item_id": 57170,
-            "name": "Yoiul Stormchasers Suit and Cap Crate"
-          },
-          "Yoiul Stormchasers T-Shirt and Pants Crate": {
-            "item_id": 57168,
-            "name": "Yoiul Stormchasers T-Shirt and Pants Crate"
-          },
-          "未来人类纪念章": {
-            "item_id": 41035,
-            "name": "未来人类纪念章"
+        "subgroups": {
+          "Event Assets": {
+            "id": 3834,
+            "name": "Event Assets",
+            "subgroups": {
+              "Capsuleer Day Assets": {
+                "id": 3837,
+                "name": "Capsuleer Day Assets",
+                "subgroups": {},
+                "items": {
+                  "Basic 'Ardour' Cerebral Accelerator Blueprint Crate": {
+                    "item_id": 50029,
+                    "name": "Basic 'Ardour' Cerebral Accelerator Blueprint Crate"
+                  },
+                  "Capsuleer Day Glamourex Crate": {
+                    "item_id": 77055,
+                    "name": "Capsuleer Day Glamourex Crate"
+                  },
+                  "Capsuleer Day XVI Apotheosis & SKIN Crate": {
+                    "item_id": 52296,
+                    "name": "Capsuleer Day XVI Apotheosis & SKIN Crate"
+                  },
+                  "Capsuleer Day XVI Cap Crate": {
+                    "item_id": 52294,
+                    "name": "Capsuleer Day XVI Cap Crate"
+                  },
+                  "Capsuleer Day XVI Gnosis & SKIN Crate": {
+                    "item_id": 52291,
+                    "name": "Capsuleer Day XVI Gnosis & SKIN Crate"
+                  },
+                  "Capsuleer Day XVI Praxis & SKIN Crate": {
+                    "item_id": 52298,
+                    "name": "Capsuleer Day XVI Praxis & SKIN Crate"
+                  },
+                  "Capsuleer Day XVI Sunesis & SKIN Crate": {
+                    "item_id": 52295,
+                    "name": "Capsuleer Day XVI Sunesis & SKIN Crate"
+                  },
+                  "Capsuleer Day XVI T-Shirt Crate": {
+                    "item_id": 52290,
+                    "name": "Capsuleer Day XVI T-Shirt Crate"
+                  },
+                  "Drake & Oracle Argyros SKIN Crate": {
+                    "item_id": 52297,
+                    "name": "Drake & Oracle Argyros SKIN Crate"
+                  },
+                  "Genolution CA-X": {
+                    "item_id": 47961,
+                    "name": "Genolution CA-X"
+                  },
+                  "Myrmidon & Tornado Argyros SKIN Crate": {
+                    "item_id": 52293,
+                    "name": "Myrmidon & Tornado Argyros SKIN Crate"
+                  },
+                  "Standard 'Ardour' Cerebral Accelerator Blueprint Crate": {
+                    "item_id": 50030,
+                    "name": "Standard 'Ardour' Cerebral Accelerator Blueprint Crate"
+                  },
+                  "Vorton Projector Booster Gift Box": {
+                    "item_id": 55029,
+                    "name": "Vorton Projector Booster Gift Box"
+                  },
+                  "XV Anniversary Gift Box (Alpha)": {
+                    "item_id": 47962,
+                    "name": "XV Anniversary Gift Box (Alpha)"
+                  },
+                  "XV Anniversary Gift Box (Omega)": {
+                    "item_id": 47963,
+                    "name": "XV Anniversary Gift Box (Omega)"
+                  }
+                }
+              },
+              "Crimson Harvest Assets": {
+                "id": 3836,
+                "name": "Crimson Harvest Assets",
+                "subgroups": {},
+                "items": {
+                  "Ashimmu Blueprint Crate": {
+                    "item_id": 90660,
+                    "name": "Ashimmu Blueprint Crate"
+                  },
+                  "Bhaalgorn Blueprint Crate": {
+                    "item_id": 90661,
+                    "name": "Bhaalgorn Blueprint Crate"
+                  },
+                  "Blood Raider Crate": {
+                    "item_id": 90396,
+                    "name": "Blood Raider Crate"
+                  },
+                  "Crimson Harvest Cerebral Accelerator Crate": {
+                    "item_id": 90136,
+                    "name": "Crimson Harvest Cerebral Accelerator Crate"
+                  },
+                  "Crimson Harvest SKINR Crate": {
+                    "item_id": 90135,
+                    "name": "Crimson Harvest SKINR Crate"
+                  },
+                  "Dagon Blueprint Crate": {
+                    "item_id": 90663,
+                    "name": "Dagon Blueprint Crate"
+                  },
+                  "Halloween Horrors Astero SKIN": {
+                    "item_id": 53055,
+                    "name": "Halloween Horrors Astero SKIN"
+                  },
+                  "Halloween Horrors Avatar SKIN and Fireworks Crate": {
+                    "item_id": 53059,
+                    "name": "Halloween Horrors Avatar SKIN and Fireworks Crate"
+                  },
+                  "Halloween Horrors Fireworks and Launcher Crate": {
+                    "item_id": 53053,
+                    "name": "Halloween Horrors Fireworks and Launcher Crate"
+                  },
+                  "Halloween Horrors Fireworks Crate": {
+                    "item_id": 53056,
+                    "name": "Halloween Horrors Fireworks Crate"
+                  },
+                  "Halloween Horrors Gila SKIN": {
+                    "item_id": 53057,
+                    "name": "Halloween Horrors Gila SKIN"
+                  },
+                  "Halloween Horrors Headhunter Cruiser SKINs": {
+                    "item_id": 53060,
+                    "name": "Halloween Horrors Headhunter Cruiser SKINs"
+                  },
+                  "Halloween Horrors Machariel SKIN": {
+                    "item_id": 53058,
+                    "name": "Halloween Horrors Machariel SKIN"
+                  },
+                  "Headhunter Crate": {
+                    "item_id": 46756,
+                    "name": "Headhunter Crate"
+                  },
+                  "Historic Crimson Harvest SKIN Crate": {
+                    "item_id": 90134,
+                    "name": "Historic Crimson Harvest SKIN Crate"
+                  },
+                  "Historic Crimson Harvest Trinket Crate": {
+                    "item_id": 90137,
+                    "name": "Historic Crimson Harvest Trinket Crate"
+                  },
+                  "Mobile Sanguine Harvester": {
+                    "item_id": 56701,
+                    "name": "Mobile Sanguine Harvester"
+                  },
+                  "Molok Blueprint Crate": {
+                    "item_id": 90664,
+                    "name": "Molok Blueprint Crate"
+                  }
+                }
+              },
+              "Empire Days Assets": {
+                "id": 3838,
+                "name": "Empire Days Assets",
+                "subgroups": {},
+                "items": {
+                  "Dawn of Liberation Battleship SKINs": {
+                    "item_id": 48533,
+                    "name": "Dawn of Liberation Battleship SKINs"
+                  },
+                  "Dawn of Liberation Cruiser SKINs": {
+                    "item_id": 48532,
+                    "name": "Dawn of Liberation Cruiser SKINs"
+                  },
+                  "Dawn of Liberation Frigate SKINs": {
+                    "item_id": 48531,
+                    "name": "Dawn of Liberation Frigate SKINs"
+                  },
+                  "Federation Day Clothing Crate": {
+                    "item_id": 55746,
+                    "name": "Federation Day Clothing Crate"
+                  },
+                  "Federation Grand Prix Bronze Package": {
+                    "item_id": 48375,
+                    "name": "Federation Grand Prix Bronze Package"
+                  },
+                  "Federation Grand Prix CreoDron Package": {
+                    "item_id": 48376,
+                    "name": "Federation Grand Prix CreoDron Package"
+                  },
+                  "Federation Grand Prix Gold Package": {
+                    "item_id": 48379,
+                    "name": "Federation Grand Prix Gold Package"
+                  },
+                  "Federation Grand Prix Impetus Package": {
+                    "item_id": 48374,
+                    "name": "Federation Grand Prix Impetus Package"
+                  },
+                  "Federation Grand Prix Quafe Package": {
+                    "item_id": 48378,
+                    "name": "Federation Grand Prix Quafe Package"
+                  },
+                  "Federation Grand Prix Silver Package": {
+                    "item_id": 48377,
+                    "name": "Federation Grand Prix Silver Package"
+                  },
+                  "Republic Justice Department Bronze Reward": {
+                    "item_id": 48534,
+                    "name": "Republic Justice Department Bronze Reward"
+                  },
+                  "Republic Justice Department Gold Reward": {
+                    "item_id": 48536,
+                    "name": "Republic Justice Department Gold Reward"
+                  },
+                  "Republic Justice Department Silver Reward": {
+                    "item_id": 48535,
+                    "name": "Republic Justice Department Silver Reward"
+                  }
+                }
+              },
+              "Guardian's Gala Assets": {
+                "id": 3839,
+                "name": "Guardian's Gala Assets",
+                "subgroups": {},
+                "items": {
+                  "Guardian's Gala Booster Crate": {
+                    "item_id": 62651,
+                    "name": "Guardian's Gala Booster Crate"
+                  },
+                  "Guardian's Gala Surprise Gift": {
+                    "item_id": 50045,
+                    "name": "Guardian's Gala Surprise Gift"
+                  },
+                  "Guardian's Gala Surprise Gift, Damaged": {
+                    "item_id": 50047,
+                    "name": "Guardian's Gala Surprise Gift, Damaged"
+                  },
+                  "Guardian's Gala VIP Surprise Gift": {
+                    "item_id": 50046,
+                    "name": "Guardian's Gala VIP Surprise Gift"
+                  },
+                  "Guardian's Gala VIP Surprise Gift, Damaged": {
+                    "item_id": 50048,
+                    "name": "Guardian's Gala VIP Surprise Gift, Damaged"
+                  },
+                  "Log Fragment 1 (Gala YC121)": {
+                    "item_id": 48950,
+                    "name": "Log Fragment 1 (Gala YC121)"
+                  },
+                  "Log Fragment 2 (Gala YC121)": {
+                    "item_id": 48951,
+                    "name": "Log Fragment 2 (Gala YC121)"
+                  },
+                  "Log Fragment 3 (Gala YC121)": {
+                    "item_id": 48952,
+                    "name": "Log Fragment 3 (Gala YC121)"
+                  },
+                  "Log Fragment 4 (Gala YC121)": {
+                    "item_id": 48953,
+                    "name": "Log Fragment 4 (Gala YC121)"
+                  },
+                  "Log Fragment 5 (Gala YC121)": {
+                    "item_id": 48954,
+                    "name": "Log Fragment 5 (Gala YC121)"
+                  },
+                  "Log Fragment 6 (Gala YC121)": {
+                    "item_id": 50040,
+                    "name": "Log Fragment 6 (Gala YC121)"
+                  },
+                  "Log Fragment 7 (Gala YC121)": {
+                    "item_id": 50041,
+                    "name": "Log Fragment 7 (Gala YC121)"
+                  },
+                  "Log Fragment 8 (Gala YC121)": {
+                    "item_id": 50042,
+                    "name": "Log Fragment 8 (Gala YC121)"
+                  },
+                  "YC121 Guardian's Gala Ticket": {
+                    "item_id": 50039,
+                    "name": "YC121 Guardian's Gala Ticket"
+                  }
+                }
+              },
+              "Interstellar Convergence Assets": {
+                "id": 3840,
+                "name": "Interstellar Convergence Assets",
+                "subgroups": {},
+                "items": {
+                  "Interstellar Convergence Booster Crate": {
+                    "item_id": 62028,
+                    "name": "Interstellar Convergence Booster Crate"
+                  }
+                }
+              },
+              "Winter Nexus Assets": {
+                "id": 3841,
+                "name": "Winter Nexus Assets",
+                "subgroups": {},
+                "items": {
+                  "Calm Abyssal Filaments Crate": {
+                    "item_id": 49708,
+                    "name": "Calm Abyssal Filaments Crate"
+                  },
+                  "Drake & Rupture SKIN Crate": {
+                    "item_id": 49805,
+                    "name": "Drake & Rupture SKIN Crate"
+                  },
+                  "Festival Battlecruiser SKINs and Snowballs Crate": {
+                    "item_id": 53509,
+                    "name": "Festival Battlecruiser SKINs and Snowballs Crate"
+                  },
+                  "Festival Battleship SKINs, HyperCore and Snowballs Crate": {
+                    "item_id": 53514,
+                    "name": "Festival Battleship SKINs, HyperCore and Snowballs Crate"
+                  },
+                  "Festival Cap and Snowballs Crate": {
+                    "item_id": 53498,
+                    "name": "Festival Cap and Snowballs Crate"
+                  },
+                  "Festival Destroyer SKINs and Snowballs Crate": {
+                    "item_id": 53491,
+                    "name": "Festival Destroyer SKINs and Snowballs Crate"
+                  },
+                  "Festival Exploration Suit and Snowballs Crate": {
+                    "item_id": 53496,
+                    "name": "Festival Exploration Suit and Snowballs Crate"
+                  },
+                  "Festival Facial Augmentation and Snowballs Crate": {
+                    "item_id": 53493,
+                    "name": "Festival Facial Augmentation and Snowballs Crate"
+                  },
+                  "Festival Frigate SKINs and Snowballs Crate": {
+                    "item_id": 53486,
+                    "name": "Festival Frigate SKINs and Snowballs Crate"
+                  },
+                  "Festival HyperCore and Snowballs Crate": {
+                    "item_id": 53512,
+                    "name": "Festival HyperCore and Snowballs Crate"
+                  },
+                  "Festival HyperCore, Body Augmentation and Snowballs Crate": {
+                    "item_id": 53508,
+                    "name": "Festival HyperCore, Body Augmentation and Snowballs Crate"
+                  },
+                  "Festival Snowballs Crate": {
+                    "item_id": 53488,
+                    "name": "Festival Snowballs Crate"
+                  },
+                  "Festival Tier 1 Filament Crate": {
+                    "item_id": 53490,
+                    "name": "Festival Tier 1 Filament Crate"
+                  },
+                  "Fierce Abyssal Filaments Crate": {
+                    "item_id": 49709,
+                    "name": "Fierce Abyssal Filaments Crate"
+                  },
+                  "Frostline 'Clavicula' Integrated Analyzer Blueprint Crate": {
+                    "item_id": 49975,
+                    "name": "Frostline 'Clavicula' Integrated Analyzer Blueprint Crate"
+                  },
+                  "Frostline 'Omnivore' Harvester Upgrade Blueprint Crate": {
+                    "item_id": 49981,
+                    "name": "Frostline 'Omnivore' Harvester Upgrade Blueprint Crate"
+                  },
+                  "Glacial Drift Festival Box": {
+                    "item_id": 46766,
+                    "name": "Glacial Drift Festival Box"
+                  },
+                  "Gnosis & Punisher SKIN Crate": {
+                    "item_id": 49802,
+                    "name": "Gnosis & Punisher SKIN Crate"
+                  },
+                  "Historic Yoiul Festival SKIN Crate": {
+                    "item_id": 90739,
+                    "name": "Historic Yoiul Festival SKIN Crate"
+                  },
+                  "Historic Yoiul Festival SKINR Crate": {
+                    "item_id": 90740,
+                    "name": "Historic Yoiul Festival SKINR Crate"
+                  },
+                  "Ice Storm Filaments Crate": {
+                    "item_id": 90736,
+                    "name": "Ice Storm Filaments Crate"
+                  },
+                  "Men's & Women's Frostline Exploration Suit": {
+                    "item_id": 49803,
+                    "name": "Men's & Women's Frostline Exploration Suit"
+                  },
+                  "ORE Faded Cache": {
+                    "item_id": 91085,
+                    "name": "ORE Faded Cache"
+                  },
+                  "ORE Fresh Cache": {
+                    "item_id": 91087,
+                    "name": "ORE Fresh Cache"
+                  },
+                  "ORE Friable Cache": {
+                    "item_id": 91086,
+                    "name": "ORE Friable Cache"
+                  },
+                  "ORE Green Salvage Package": {
+                    "item_id": 90741,
+                    "name": "ORE Green Salvage Package"
+                  },
+                  "ORE Red Salvage Package": {
+                    "item_id": 90743,
+                    "name": "ORE Red Salvage Package"
+                  },
+                  "ORE White Salvage Package": {
+                    "item_id": 90742,
+                    "name": "ORE White Salvage Package"
+                  },
+                  "Peculiar Icebound Salvage": {
+                    "item_id": 90744,
+                    "name": "Peculiar Icebound Salvage"
+                  },
+                  "Rare Icebound Salvage": {
+                    "item_id": 90745,
+                    "name": "Rare Icebound Salvage"
+                  },
+                  "Tranquil Abyssal Filaments Crate": {
+                    "item_id": 56365,
+                    "name": "Tranquil Abyssal Filaments Crate"
+                  },
+                  "Unusual Icebound Salvage": {
+                    "item_id": 90746,
+                    "name": "Unusual Icebound Salvage"
+                  },
+                  "YC119 Yoiul Festival Day 1": {
+                    "item_id": 44187,
+                    "name": "YC119 Yoiul Festival Day 1"
+                  },
+                  "YC119 Yoiul Festival Day 10": {
+                    "item_id": 44197,
+                    "name": "YC119 Yoiul Festival Day 10"
+                  },
+                  "YC119 Yoiul Festival Day 11": {
+                    "item_id": 44198,
+                    "name": "YC119 Yoiul Festival Day 11"
+                  },
+                  "YC119 Yoiul Festival Day 12": {
+                    "item_id": 44199,
+                    "name": "YC119 Yoiul Festival Day 12"
+                  },
+                  "YC119 Yoiul Festival Day 2": {
+                    "item_id": 44188,
+                    "name": "YC119 Yoiul Festival Day 2"
+                  },
+                  "YC119 Yoiul Festival Day 3": {
+                    "item_id": 44189,
+                    "name": "YC119 Yoiul Festival Day 3"
+                  },
+                  "YC119 Yoiul Festival Day 4": {
+                    "item_id": 44190,
+                    "name": "YC119 Yoiul Festival Day 4"
+                  },
+                  "YC119 Yoiul Festival Day 5": {
+                    "item_id": 44191,
+                    "name": "YC119 Yoiul Festival Day 5"
+                  },
+                  "YC119 Yoiul Festival Day 6": {
+                    "item_id": 44192,
+                    "name": "YC119 Yoiul Festival Day 6"
+                  },
+                  "YC119 Yoiul Festival Day 7": {
+                    "item_id": 44193,
+                    "name": "YC119 Yoiul Festival Day 7"
+                  },
+                  "YC119 Yoiul Festival Day 8": {
+                    "item_id": 44194,
+                    "name": "YC119 Yoiul Festival Day 8"
+                  },
+                  "YC119 Yoiul Festival Day 9": {
+                    "item_id": 44195,
+                    "name": "YC119 Yoiul Festival Day 9"
+                  },
+                  "Yoiul Festival Booster Crate": {
+                    "item_id": 90737,
+                    "name": "Yoiul Festival Booster Crate"
+                  },
+                  "Yoiul Festival Brainfreeze Crate": {
+                    "item_id": 90738,
+                    "name": "Yoiul Festival Brainfreeze Crate"
+                  },
+                  "Yoiul Festival Fireworks Package": {
+                    "item_id": 46825,
+                    "name": "Yoiul Festival Fireworks Package"
+                  },
+                  "Yoiul Festival YC120 Coin (Amarr)": {
+                    "item_id": 47060,
+                    "name": "Yoiul Festival YC120 Coin (Amarr)"
+                  },
+                  "Yoiul Festival YC120 Coin (Caldari)": {
+                    "item_id": 47063,
+                    "name": "Yoiul Festival YC120 Coin (Caldari)"
+                  },
+                  "Yoiul Festival YC120 Coin (Gallente)": {
+                    "item_id": 47064,
+                    "name": "Yoiul Festival YC120 Coin (Gallente)"
+                  },
+                  "Yoiul Festival YC120 Coin (Minmatar)": {
+                    "item_id": 47062,
+                    "name": "Yoiul Festival YC120 Coin (Minmatar)"
+                  },
+                  "Yoiul Stormchasers Suit and Cap Crate": {
+                    "item_id": 57170,
+                    "name": "Yoiul Stormchasers Suit and Cap Crate"
+                  },
+                  "Yoiul Stormchasers T-Shirt and Pants Crate": {
+                    "item_id": 57168,
+                    "name": "Yoiul Stormchasers T-Shirt and Pants Crate"
+                  }
+                }
+              }
+            },
+            "items": {}
+          },
+          "Special Blueprint Crates": {
+            "id": 3831,
+            "name": "Special Blueprint Crates",
+            "subgroups": {},
+            "items": {
+              "'Seneschal' Mercenary Den Blueprint Crate": {
+                "item_id": 86276,
+                "name": "'Seneschal' Mercenary Den Blueprint Crate"
+              },
+              "'Subverted' JVN-UC49 Blueprint Crate": {
+                "item_id": 48928,
+                "name": "'Subverted' JVN-UC49 Blueprint Crate"
+              },
+              "Cenotaph Blueprint Crate": {
+                "item_id": 86271,
+                "name": "Cenotaph Blueprint Crate"
+              },
+              "Chemosh Blueprint Crate": {
+                "item_id": 90662,
+                "name": "Chemosh Blueprint Crate"
+              },
+              "Cruor Blueprint Crate": {
+                "item_id": 90659,
+                "name": "Cruor Blueprint Crate"
+              },
+              "Medium Breacher Pod Launcher Blueprint Crate": {
+                "item_id": 86275,
+                "name": "Medium Breacher Pod Launcher Blueprint Crate"
+              },
+              "ML-EKP 'Polybolos' Ballistic Control System Blueprint Crate": {
+                "item_id": 49974,
+                "name": "ML-EKP 'Polybolos' Ballistic Control System Blueprint Crate"
+              },
+              "SCARAB Breacher Pod M Blueprint Crate": {
+                "item_id": 86273,
+                "name": "SCARAB Breacher Pod M Blueprint Crate"
+              },
+              "SCARAB Breacher Pod S Blueprint Crate": {
+                "item_id": 86272,
+                "name": "SCARAB Breacher Pod S Blueprint Crate"
+              },
+              "Small Breacher Pod Launcher Blueprint Crate": {
+                "item_id": 86274,
+                "name": "Small Breacher Pod Launcher Blueprint Crate"
+              },
+              "Tholos Blueprint Crate": {
+                "item_id": 86270,
+                "name": "Tholos Blueprint Crate"
+              }
+            }
+          },
+          "Special Cosmetic Crates": {
+            "id": 3832,
+            "name": "Special Cosmetic Crates",
+            "subgroups": {},
+            "items": {
+              "'Bitwave Glacier' Augmentation Crate": {
+                "item_id": 49804,
+                "name": "'Bitwave Glacier' Augmentation Crate"
+              },
+              "'Domino Turquoise' Augmentation Crate": {
+                "item_id": 49705,
+                "name": "'Domino Turquoise' Augmentation Crate"
+              },
+              "1000 PLEX and Rare SKINR Supplies Crate": {
+                "item_id": 91198,
+                "name": "1000 PLEX and Rare SKINR Supplies Crate"
+              },
+              "1500 PLEX and Rare SKINR Supplies Crate": {
+                "item_id": 91199,
+                "name": "1500 PLEX and Rare SKINR Supplies Crate"
+              },
+              "200 PLEX and Rare SKINR Supplies Crate": {
+                "item_id": 91196,
+                "name": "200 PLEX and Rare SKINR Supplies Crate"
+              },
+              "500 PLEX and Rare SKINR Supplies Crate": {
+                "item_id": 91197,
+                "name": "500 PLEX and Rare SKINR Supplies Crate"
+              },
+              "CDIA Training Exercise Supply Crate": {
+                "item_id": 47482,
+                "name": "CDIA Training Exercise Supply Crate"
+              },
+              "Drifter Plugsuit Reward Crate": {
+                "item_id": 87853,
+                "name": "Drifter Plugsuit Reward Crate"
+              },
+              "Eico Redarc/Redwire XVI Augmentations Crate": {
+                "item_id": 52299,
+                "name": "Eico Redarc/Redwire XVI Augmentations Crate"
+              },
+              "Exoplanets Hunter Reward Crate": {
+                "item_id": 45996,
+                "name": "Exoplanets Hunter Reward Crate"
+              },
+              "Flow Cytometry Rewards Crate": {
+                "item_id": 55358,
+                "name": "Flow Cytometry Rewards Crate"
+              },
+              "Galaxy Pack - Crystal": {
+                "item_id": 47253,
+                "name": "Galaxy Pack - Crystal"
+              },
+              "Galaxy Pack - Spectral": {
+                "item_id": 47154,
+                "name": "Galaxy Pack - Spectral"
+              },
+              "Historic SOE SKINs Crate": {
+                "item_id": 90885,
+                "name": "Historic SOE SKINs Crate"
+              },
+              "IGC Garment Keeper": {
+                "item_id": 46151,
+                "name": "IGC Garment Keeper"
+              },
+              "Men's Empire Exploration Suit crate": {
+                "item_id": 90892,
+                "name": "Men's Empire Exploration Suit crate"
+              },
+              "Mysterious GalNet Crate": {
+                "item_id": 78889,
+                "name": "Mysterious GalNet Crate"
+              },
+              "Mysterious GalNet Crate II": {
+                "item_id": 79186,
+                "name": "Mysterious GalNet Crate II"
+              },
+              "Odysseus Definitive SOE SKINs Crate": {
+                "item_id": 91185,
+                "name": "Odysseus Definitive SOE SKINs Crate"
+              },
+              "Permaband Tour Cap Crate": {
+                "item_id": 52292,
+                "name": "Permaband Tour Cap Crate"
+              },
+              "Permaband Tour T-Shirt Crate": {
+                "item_id": 52300,
+                "name": "Permaband Tour T-Shirt Crate"
+              },
+              "Serenity Special SKINs Crate": {
+                "item_id": 55827,
+                "name": "Serenity Special SKINs Crate"
+              },
+              "Silver Monocle Interface Crate": {
+                "item_id": 52301,
+                "name": "Silver Monocle Interface Crate"
+              },
+              "SKINR Studio Supplies": {
+                "item_id": 83709,
+                "name": "SKINR Studio Supplies"
+              },
+              "Solar Fest Crate": {
+                "item_id": 89328,
+                "name": "Solar Fest Crate"
+              },
+              "Superior Flow Cytometry Rewards Crate": {
+                "item_id": 55359,
+                "name": "Superior Flow Cytometry Rewards Crate"
+              },
+              "Uncommon SKINR Studio Supplies Crate": {
+                "item_id": 91195,
+                "name": "Uncommon SKINR Studio Supplies Crate"
+              },
+              "Women's Empire Exploration Suit crate": {
+                "item_id": 90893,
+                "name": "Women's Empire Exploration Suit crate"
+              }
+            }
+          },
+          "Special Trade Items": {
+            "id": 3833,
+            "name": "Special Trade Items",
+            "subgroups": {},
+            "items": {
+              "Classified Caldari Databank": {
+                "item_id": 63699,
+                "name": "Classified Caldari Databank"
+              },
+              "Cryograph Diffractor": {
+                "item_id": 91082,
+                "name": "Cryograph Diffractor"
+              },
+              "Cryograph Exactor": {
+                "item_id": 91083,
+                "name": "Cryograph Exactor"
+              },
+              "Cryograph Resolver": {
+                "item_id": 91084,
+                "name": "Cryograph Resolver"
+              },
+              "Cryostatic Estimator": {
+                "item_id": 91019,
+                "name": "Cryostatic Estimator"
+              },
+              "Cryostatic Nullifier": {
+                "item_id": 91021,
+                "name": "Cryostatic Nullifier"
+              },
+              "Cryostatic Suppressor": {
+                "item_id": 91020,
+                "name": "Cryostatic Suppressor"
+              },
+              "Cryostorm Clarifier": {
+                "item_id": 90894,
+                "name": "Cryostorm Clarifier"
+              },
+              "Cryostorm Mapper": {
+                "item_id": 90895,
+                "name": "Cryostorm Mapper"
+              },
+              "Cryostorm Reconciler": {
+                "item_id": 90896,
+                "name": "Cryostorm Reconciler"
+              },
+              "Gratuity for Warden Connection Harmonic": {
+                "item_id": 87982,
+                "name": "Gratuity for Warden Connection Harmonic"
+              },
+              "Hypercatabolic Clone Tissue": {
+                "item_id": 85242,
+                "name": "Hypercatabolic Clone Tissue"
+              },
+              "Midband Emission Amplifier": {
+                "item_id": 88174,
+                "name": "Midband Emission Amplifier"
+              },
+              "Midband Emission Limiter": {
+                "item_id": 88175,
+                "name": "Midband Emission Limiter"
+              },
+              "Narrowband Emission Amplifier": {
+                "item_id": 88172,
+                "name": "Narrowband Emission Amplifier"
+              },
+              "Narrowband Emission Limiter": {
+                "item_id": 88173,
+                "name": "Narrowband Emission Limiter"
+              },
+              "ORE Research Data Fragment": {
+                "item_id": 62709,
+                "name": "ORE Research Data Fragment"
+              },
+              "Overseer Sabik Vial": {
+                "item_id": 85179,
+                "name": "Overseer Sabik Vial"
+              },
+              "Reconstructed Spectral Vision Amarr": {
+                "item_id": 87392,
+                "name": "Reconstructed Spectral Vision Amarr"
+              },
+              "Reconstructed Spectral Vision Annihilation": {
+                "item_id": 87391,
+                "name": "Reconstructed Spectral Vision Annihilation"
+              },
+              "Reconstructed Spectral Vision Gallente Prime": {
+                "item_id": 87389,
+                "name": "Reconstructed Spectral Vision Gallente Prime"
+              },
+              "Reconstructed Spectral Vision Jita": {
+                "item_id": 87393,
+                "name": "Reconstructed Spectral Vision Jita"
+              },
+              "Reconstructed Spectral Vision Matar": {
+                "item_id": 87374,
+                "name": "Reconstructed Spectral Vision Matar"
+              },
+              "Reconstructed Spectral Vision Torment": {
+                "item_id": 87390,
+                "name": "Reconstructed Spectral Vision Torment"
+              },
+              "Smuggler Lockbox": {
+                "item_id": 64033,
+                "name": "Smuggler Lockbox"
+              },
+              "Stellar Transmuter Datacore": {
+                "item_id": 76203,
+                "name": "Stellar Transmuter Datacore"
+              },
+              "Tetrimonic Warclone Blanks": {
+                "item_id": 85178,
+                "name": "Tetrimonic Warclone Blanks"
+              },
+              "Transport Relay Datacore": {
+                "item_id": 76204,
+                "name": "Transport Relay Datacore"
+              },
+              "Verity Tech Crate": {
+                "item_id": 91204,
+                "name": "Verity Tech Crate"
+              },
+              "Warclone Blanks": {
+                "item_id": 56788,
+                "name": "Warclone Blanks"
+              },
+              "Warden Connection Harmonics": {
+                "item_id": 87618,
+                "name": "Warden Connection Harmonics"
+              },
+              "Wideband Emission Amplifier": {
+                "item_id": 88176,
+                "name": "Wideband Emission Amplifier"
+              },
+              "Wideband Emission Limiter": {
+                "item_id": 88177,
+                "name": "Wideband Emission Limiter"
+              }
+            }
+          },
+          "Trinkets and misc.": {
+            "id": 3835,
+            "name": "Trinkets and misc.",
+            "subgroups": {},
+            "items": {
+              " Alliance Tournament XXI Script": {
+                "item_id": 91387,
+                "name": " Alliance Tournament XXI Script"
+              },
+              "[CNS] Kiirasha Final Broadcast Fragment": {
+                "item_id": 44209,
+                "name": "[CNS] Kiirasha Final Broadcast Fragment"
+              },
+              "*Sneaks in a classic*": {
+                "item_id": 33060,
+                "name": "*Sneaks in a classic*"
+              },
+              "300 Billion ISK Contract Copy": {
+                "item_id": 47056,
+                "name": "300 Billion ISK Contract Copy"
+              },
+              "95th Interstellar Mindclash Championship Tickets": {
+                "item_id": 37883,
+                "name": "95th Interstellar Mindclash Championship Tickets"
+              },
+              "A Big Red Button": {
+                "item_id": 33020,
+                "name": "A Big Red Button"
+              },
+              "A Capsuleer’s Guide To Dropping Dreads": {
+                "item_id": 91405,
+                "name": "A Capsuleer’s Guide To Dropping Dreads"
+              },
+              "A Handful of Tiny Stars": {
+                "item_id": 33016,
+                "name": "A Handful of Tiny Stars"
+              },
+              "A Letter Of Complaint": {
+                "item_id": 44206,
+                "name": "A Letter Of Complaint"
+              },
+              "A Piece of Steve": {
+                "item_id": 33213,
+                "name": "A Piece of Steve"
+              },
+              "A Pile of Logs": {
+                "item_id": 48749,
+                "name": "A Pile of Logs"
+              },
+              "A Stolen Voting Pebble": {
+                "item_id": 47045,
+                "name": "A Stolen Voting Pebble"
+              },
+              "A Tank of Honor": {
+                "item_id": 33023,
+                "name": "A Tank of Honor"
+              },
+              "Aberrant Mynos Forked Packet": {
+                "item_id": 88568,
+                "name": "Aberrant Mynos Forked Packet"
+              },
+              "Admiral Noir's - Spiced Rum": {
+                "item_id": 82432,
+                "name": "Admiral Noir's - Spiced Rum"
+              },
+              "Agency Support Drop": {
+                "item_id": 46381,
+                "name": "Agency Support Drop"
+              },
+              "Airlock-Slammer Display": {
+                "item_id": 56977,
+                "name": "Airlock-Slammer Display"
+              },
+              "Alice Saki's Good Posting Guide": {
+                "item_id": 34434,
+                "name": "Alice Saki's Good Posting Guide"
+              },
+              "Alliance Tournament XV Meta": {
+                "item_id": 47057,
+                "name": "Alliance Tournament XV Meta"
+              },
+              "Amarr Inception Package": {
+                "item_id": 43930,
+                "name": "Amarr Inception Package"
+              },
+              "Amarr Religious Mask": {
+                "item_id": 49641,
+                "name": "Amarr Religious Mask"
+              },
+              "Ancillary Preservation Canister": {
+                "item_id": 87207,
+                "name": "Ancillary Preservation Canister"
+              },
+              "Animal Medical Expert": {
+                "item_id": 33024,
+                "name": "Animal Medical Expert"
+              },
+              "Armor Plating From TES Seraph": {
+                "item_id": 44216,
+                "name": "Armor Plating From TES Seraph"
+              },
+              "Arms Race Battlecruiser Assembler": {
+                "item_id": 46771,
+                "name": "Arms Race Battlecruiser Assembler"
+              },
+              "Arms Race Battleship Assembler": {
+                "item_id": 46772,
+                "name": "Arms Race Battleship Assembler"
+              },
+              "Assassination Contract: Mirial": {
+                "item_id": 33218,
+                "name": "Assassination Contract: Mirial"
+              },
+              "Badly Corrupted Holoreel": {
+                "item_id": 47054,
+                "name": "Badly Corrupted Holoreel"
+              },
+              "Bag of Gelatinized Confectionary": {
+                "item_id": 62048,
+                "name": "Bag of Gelatinized Confectionary"
+              },
+              "Band of Brothers Director Access Key": {
+                "item_id": 33214,
+                "name": "Band of Brothers Director Access Key"
+              },
+              "Biomechanical Armor Fragment": {
+                "item_id": 62053,
+                "name": "Biomechanical Armor Fragment"
+              },
+              "Black Dagger": {
+                "item_id": 49644,
+                "name": "Black Dagger"
+              },
+              "Blackbody Driver": {
+                "item_id": 88179,
+                "name": "Blackbody Driver"
+              },
+              "Blood Coated Statuette": {
+                "item_id": 49646,
+                "name": "Blood Coated Statuette"
+              },
+              "Bouquet of Flowers": {
+                "item_id": 54162,
+                "name": "Bouquet of Flowers"
+              },
+              "Box of Chocolates": {
+                "item_id": 54161,
+                "name": "Box of Chocolates"
+              },
+              "Broken Skill Canister": {
+                "item_id": 54968,
+                "name": "Broken Skill Canister"
+              },
+              "Burned Transneural Scanner": {
+                "item_id": 54226,
+                "name": "Burned Transneural Scanner"
+              },
+              "Caldari Inception Package": {
+                "item_id": 43931,
+                "name": "Caldari Inception Package"
+              },
+              "Canned Quantum Superposition Wormhole": {
+                "item_id": 91413,
+                "name": "Canned Quantum Superposition Wormhole"
+              },
+              "Capital Parking Ticket": {
+                "item_id": 37886,
+                "name": "Capital Parking Ticket"
+              },
+              "Capsule Subsystem Holostorage EH-CN-J44-001": {
+                "item_id": 63704,
+                "name": "Capsule Subsystem Holostorage EH-CN-J44-001"
+              },
+              "Capsule Subsystem Holostorage EH-CN-J44-002": {
+                "item_id": 63712,
+                "name": "Capsule Subsystem Holostorage EH-CN-J44-002"
+              },
+              "Capsule Subsystem Holostorage EH-CN-J44-003": {
+                "item_id": 63713,
+                "name": "Capsule Subsystem Holostorage EH-CN-J44-003"
+              },
+              "Capsule Subsystem Holostorage EH-CN-J44-004": {
+                "item_id": 63705,
+                "name": "Capsule Subsystem Holostorage EH-CN-J44-004"
+              },
+              "Capsule Subsystem Holostorage EH-CN-J44-005": {
+                "item_id": 63706,
+                "name": "Capsule Subsystem Holostorage EH-CN-J44-005"
+              },
+              "Capsule Subsystem Holostorage EH-CN-J44-006": {
+                "item_id": 63707,
+                "name": "Capsule Subsystem Holostorage EH-CN-J44-006"
+              },
+              "Capsule Subsystem Holostorage EH-CN-J44-007": {
+                "item_id": 63708,
+                "name": "Capsule Subsystem Holostorage EH-CN-J44-007"
+              },
+              "Capsule Subsystem Holostorage EH-CN-J44-008": {
+                "item_id": 63709,
+                "name": "Capsule Subsystem Holostorage EH-CN-J44-008"
+              },
+              "Capsule Subsystem Holostorage EH-CN-J44-009": {
+                "item_id": 63710,
+                "name": "Capsule Subsystem Holostorage EH-CN-J44-009"
+              },
+              "Capsule Subsystem Holostorage EH-CN-J44-010": {
+                "item_id": 63711,
+                "name": "Capsule Subsystem Holostorage EH-CN-J44-010"
+              },
+              "Cerebrum In A Container": {
+                "item_id": 37877,
+                "name": "Cerebrum In A Container"
+              },
+              "Chribba's Modified Strip Miner": {
+                "item_id": 34421,
+                "name": "Chribba's Modified Strip Miner"
+              },
+              "Chronologically Curious Blue Diary": {
+                "item_id": 62049,
+                "name": "Chronologically Curious Blue Diary"
+              },
+              "Collections of paintings": {
+                "item_id": 91392,
+                "name": "Collections of paintings"
+              },
+              "Colonize! Board Game": {
+                "item_id": 49653,
+                "name": "Colonize! Board Game"
+              },
+              "CONCORD GalNet Monitoring Archive": {
+                "item_id": 47055,
+                "name": "CONCORD GalNet Monitoring Archive"
+              },
+              "CONCORD Speeding Ticket": {
+                "item_id": 44214,
+                "name": "CONCORD Speeding Ticket"
+              },
+              "CONCORD Universal Translator": {
+                "item_id": 48754,
+                "name": "CONCORD Universal Translator"
+              },
+              "Concordokken": {
+                "item_id": 33058,
+                "name": "Concordokken"
+              },
+              "Contraband Amarrian Walnuts": {
+                "item_id": 37875,
+                "name": "Contraband Amarrian Walnuts"
+              },
+              "Cooking With Veldspar": {
+                "item_id": 34420,
+                "name": "Cooking With Veldspar"
+              },
+              "Copper Ouroboros": {
+                "item_id": 42229,
+                "name": "Copper Ouroboros"
+              },
+              "Copy of the Gallente Federation Constitution": {
+                "item_id": 48135,
+                "name": "Copy of the Gallente Federation Constitution"
+              },
+              "Counterfeit Alliance Tournament Emergency Auxiliary Rebroadcasting System": {
+                "item_id": 91411,
+                "name": "Counterfeit Alliance Tournament Emergency Auxiliary Rebroadcasting System"
+              },
+              "Counterfeit Dominix Model": {
+                "item_id": 37887,
+                "name": "Counterfeit Dominix Model"
+              },
+              "Crunch Fuel": {
+                "item_id": 48755,
+                "name": "Crunch Fuel"
+              },
+              "CSM 1 Electee Archive Script": {
+                "item_id": 34769,
+                "name": "CSM 1 Electee Archive Script"
+              },
+              "CSM 10 Electee Archive Script": {
+                "item_id": 34778,
+                "name": "CSM 10 Electee Archive Script"
+              },
+              "CSM 11 Electee Archive Script": {
+                "item_id": 40656,
+                "name": "CSM 11 Electee Archive Script"
+              },
+              "CSM 19 Electee Archive Script": {
+                "item_id": 91399,
+                "name": "CSM 19 Electee Archive Script"
+              },
+              "CSM 2 Electee Archive Script": {
+                "item_id": 34770,
+                "name": "CSM 2 Electee Archive Script"
+              },
+              "CSM 20 Electee Archive Script": {
+                "item_id": 91403,
+                "name": "CSM 20 Electee Archive Script"
+              },
+              "CSM 3 Electee Archive Script": {
+                "item_id": 34771,
+                "name": "CSM 3 Electee Archive Script"
+              },
+              "CSM 4 Electee Archive Script": {
+                "item_id": 34772,
+                "name": "CSM 4 Electee Archive Script"
+              },
+              "CSM 5 Electee Archive Script": {
+                "item_id": 34773,
+                "name": "CSM 5 Electee Archive Script"
+              },
+              "CSM 6 Electee Archive Script": {
+                "item_id": 34774,
+                "name": "CSM 6 Electee Archive Script"
+              },
+              "CSM 7 Electee Archive Script": {
+                "item_id": 34775,
+                "name": "CSM 7 Electee Archive Script"
+              },
+              "CSM 8 Electee Archive Script": {
+                "item_id": 34776,
+                "name": "CSM 8 Electee Archive Script"
+              },
+              "CSM 9 Electee Archive Script": {
+                "item_id": 34777,
+                "name": "CSM 9 Electee Archive Script"
+              },
+              "Damaged Ancient PEG": {
+                "item_id": 47053,
+                "name": "Damaged Ancient PEG"
+              },
+              "Data-Sniffer Display": {
+                "item_id": 56981,
+                "name": "Data-Sniffer Display"
+              },
+              "Deactivated Station Key Pass": {
+                "item_id": 33017,
+                "name": "Deactivated Station Key Pass"
+              },
+              "Deactivated Station Key Pass Blueprint": {
+                "item_id": 33067,
+                "name": "Deactivated Station Key Pass Blueprint"
+              },
+              "Deathglow Residue": {
+                "item_id": 49619,
+                "name": "Deathglow Residue"
+              },
+              "Decayed Deathglow": {
+                "item_id": 49620,
+                "name": "Decayed Deathglow"
+              },
+              "Decommissioned ERIC Prototype": {
+                "item_id": 48758,
+                "name": "Decommissioned ERIC Prototype"
+              },
+              "DED Informant's Frozen Corpse": {
+                "item_id": 54228,
+                "name": "DED Informant's Frozen Corpse"
+              },
+              "Deepflow Adaptive Canister": {
+                "item_id": 80382,
+                "name": "Deepflow Adaptive Canister"
+              },
+              "Definitive Thread": {
+                "item_id": 87604,
+                "name": "Definitive Thread"
+              },
+              "Defunct Name Change Token": {
+                "item_id": 48760,
+                "name": "Defunct Name Change Token"
+              },
+              "Delve Yoiul Calendar": {
+                "item_id": 47043,
+                "name": "Delve Yoiul Calendar"
+              },
+              "DEPRICATED (DO NOT TRANSLATE)": {
+                "item_id": 88569,
+                "name": "DEPRICATED (DO NOT TRANSLATE)"
+              },
+              "Diamond Ring": {
+                "item_id": 54160,
+                "name": "Diamond Ring"
+              },
+              "Dice of Jade": {
+                "item_id": 48587,
+                "name": "Dice of Jade"
+              },
+              "Dominance Command Unit": {
+                "item_id": 87607,
+                "name": "Dominance Command Unit"
+              },
+              "Donut Holder": {
+                "item_id": 33065,
+                "name": "Donut Holder"
+              },
+              "Dried Moss": {
+                "item_id": 48756,
+                "name": "Dried Moss"
+              },
+              "Drone Lands Evacuation Plans": {
+                "item_id": 91390,
+                "name": "Drone Lands Evacuation Plans"
+              },
+              "Drone Regions YC109": {
+                "item_id": 52274,
+                "name": "Drone Regions YC109"
+              },
+              "Dropsuit Fragment": {
+                "item_id": 48757,
+                "name": "Dropsuit Fragment"
+              },
+              "Ectoplasm-Skimmer Display": {
+                "item_id": 56978,
+                "name": "Ectoplasm-Skimmer Display"
+              },
+              "Electron Spin Resonance": {
+                "item_id": 84520,
+                "name": "Electron Spin Resonance"
+              },
+              "Emergency Application Form – A-77B/Redline": {
+                "item_id": 91395,
+                "name": "Emergency Application Form – A-77B/Redline"
+              },
+              "Empire Civilian Container": {
+                "item_id": 43640,
+                "name": "Empire Civilian Container"
+              },
+              "Execution Command Unit": {
+                "item_id": 87605,
+                "name": "Execution Command Unit"
+              },
+              "Experimental Mutaplasmid Repository": {
+                "item_id": 48642,
+                "name": "Experimental Mutaplasmid Repository"
+              },
+              "Extendable plunger tool": {
+                "item_id": 62052,
+                "name": "Extendable plunger tool"
+              },
+              "Faded Astrometric Chart": {
+                "item_id": 53341,
+                "name": "Faded Astrometric Chart"
+              },
+              "Fall of “Hoth”": {
+                "item_id": 91404,
+                "name": "Fall of “Hoth”"
+              },
+              "Fall of Fort Knocks YC120": {
+                "item_id": 52277,
+                "name": "Fall of Fort Knocks YC120"
+              },
+              "Feawen's Approval Documentation": {
+                "item_id": 37884,
+                "name": "Feawen's Approval Documentation"
+              },
+              "Federation Civilian Container": {
+                "item_id": 43678,
+                "name": "Federation Civilian Container"
+              },
+              "Festive Firecrackers": {
+                "item_id": 37879,
+                "name": "Festive Firecrackers"
+              },
+              "For Those Lost, But Never Forgotten": {
+                "item_id": 91412,
+                "name": "For Those Lost, But Never Forgotten"
+              },
+              "Forged Frigate Blueprints": {
+                "item_id": 44208,
+                "name": "Forged Frigate Blueprints"
+              },
+              "Fragment Inscribed with Odd Circular Text": {
+                "item_id": 62050,
+                "name": "Fragment Inscribed with Odd Circular Text"
+              },
+              "Fragmented Quarterly Earnings Report Holoreel": {
+                "item_id": 91397,
+                "name": "Fragmented Quarterly Earnings Report Holoreel"
+              },
+              "Freezer-Thief Display": {
+                "item_id": 56982,
+                "name": "Freezer-Thief Display"
+              },
+              "Frozen Droplet of Blood": {
+                "item_id": 47048,
+                "name": "Frozen Droplet of Blood"
+              },
+              "Fuel-Stealer Display": {
+                "item_id": 56972,
+                "name": "Fuel-Stealer Display"
+              },
+              "Gallente Inception Package": {
+                "item_id": 43932,
+                "name": "Gallente Inception Package"
+              },
+              "Gamealfur Ale": {
+                "item_id": 54163,
+                "name": "Gamealfur Ale"
+              },
+              "Glorified Deepflow Adaptive Canister": {
+                "item_id": 88853,
+                "name": "Glorified Deepflow Adaptive Canister"
+              },
+              "Gold Ouroboros": {
+                "item_id": 42231,
+                "name": "Gold Ouroboros"
+              },
+              "Golden Sabik Vial": {
+                "item_id": 49647,
+                "name": "Golden Sabik Vial"
+              },
+              "Grand Tiegjon Casino Chip": {
+                "item_id": 37881,
+                "name": "Grand Tiegjon Casino Chip"
+              },
+              "Guillome Renard's Sleeper Loot Stash": {
+                "item_id": 34431,
+                "name": "Guillome Renard's Sleeper Loot Stash"
+              },
+              "Guristas Infiltrator Clone Corpse": {
+                "item_id": 63698,
+                "name": "Guristas Infiltrator Clone Corpse"
+              },
+              "Hair Accessory Shipment (Damaged)": {
+                "item_id": 49707,
+                "name": "Hair Accessory Shipment (Damaged)"
+              },
+              "How to Retire Your Starbase": {
+                "item_id": 47058,
+                "name": "How to Retire Your Starbase"
+              },
+              "Hull Tanking, Elite": {
+                "item_id": 33575,
+                "name": "Hull Tanking, Elite"
+              },
+              "Impetus Trading Cards": {
+                "item_id": 48138,
+                "name": "Impetus Trading Cards"
+              },
+              "Inactive Sonic Multitool": {
+                "item_id": 62047,
+                "name": "Inactive Sonic Multitool"
+              },
+              "Industrial-sized Container of Bubble Bath": {
+                "item_id": 91391,
+                "name": "Industrial-sized Container of Bubble Bath"
+              },
+              "Intaki Cycle of Ida Bracelet": {
+                "item_id": 48140,
+                "name": "Intaki Cycle of Ida Bracelet"
+              },
+              "Intaki Spiced Tea": {
+                "item_id": 48143,
+                "name": "Intaki Spiced Tea"
+              },
+              "Internal Policies": {
+                "item_id": 48752,
+                "name": "Internal Policies"
+              },
+              "Jezaja's Giant Secure Container": {
+                "item_id": 44205,
+                "name": "Jezaja's Giant Secure Container"
+              },
+              "Jin-Mei Silk Cord": {
+                "item_id": 48142,
+                "name": "Jin-Mei Silk Cord"
+              },
+              "Jita Protest YC113": {
+                "item_id": 52275,
+                "name": "Jita Protest YC113"
+              },
+              "Jump Fatigue Recovery Agent": {
+                "item_id": 34419,
+                "name": "Jump Fatigue Recovery Agent"
+              },
+              "Jump Portal Generation Instruction Holoreel": {
+                "item_id": 34428,
+                "name": "Jump Portal Generation Instruction Holoreel"
+              },
+              "Kaalakiota Peaks Vodka": {
+                "item_id": 44215,
+                "name": "Kaalakiota Peaks Vodka"
+              },
+              "Kapli Bread": {
+                "item_id": 48590,
+                "name": "Kapli Bread"
+              },
+              "Keepstar Fragment": {
+                "item_id": 91408,
+                "name": "Keepstar Fragment"
+              },
+              "Kor-Azor Family Decree": {
+                "item_id": 44207,
+                "name": "Kor-Azor Family Decree"
+              },
+              "Kri'tak Knife": {
+                "item_id": 48591,
+                "name": "Kri'tak Knife"
+              },
+              "Krusual Etched Sticks": {
+                "item_id": 48588,
+                "name": "Krusual Etched Sticks"
+              },
+              "Ladon Forked Packet": {
+                "item_id": 87601,
+                "name": "Ladon Forked Packet"
+              },
+              "Large Faction Ammunition Crate": {
+                "item_id": 49748,
+                "name": "Large Faction Ammunition Crate"
+              },
+              "Lifeblood (Collector's Edition)": {
+                "item_id": 49649,
+                "name": "Lifeblood (Collector's Edition)"
+              },
+              "Liminal Strawberry Jam": {
+                "item_id": 91396,
+                "name": "Liminal Strawberry Jam"
+              },
+              "Little Helper, Female": {
+                "item_id": 33027,
+                "name": "Little Helper, Female"
+              },
+              "Little Helper, Male": {
+                "item_id": 33028,
+                "name": "Little Helper, Male"
+              },
+              "Livestock-Liberator Display": {
+                "item_id": 56971,
+                "name": "Livestock-Liberator Display"
+              },
+              "Locus Cypher": {
+                "item_id": 88571,
+                "name": "Locus Cypher"
+              },
+              "Looping Audio log": {
+                "item_id": 91409,
+                "name": "Looping Audio log"
+              },
+              "Lost reminder to pay sov bill": {
+                "item_id": 33217,
+                "name": "Lost reminder to pay sov bill"
+              },
+              "Lump of Carbon": {
+                "item_id": 47047,
+                "name": "Lump of Carbon"
+              },
+              "Magic Crystal Ball": {
+                "item_id": 28840,
+                "name": "Magic Crystal Ball"
+              },
+              "Mannar Hair Gel": {
+                "item_id": 48139,
+                "name": "Mannar Hair Gel"
+              },
+              "Manufacturing Union's Placard": {
+                "item_id": 34417,
+                "name": "Manufacturing Union's Placard"
+              },
+              "Matari Word Calendar": {
+                "item_id": 48589,
+                "name": "Matari Word Calendar"
+              },
+              "Max Amarria": {
+                "item_id": 37880,
+                "name": "Max Amarria"
+              },
+              "Meat Popsicle": {
+                "item_id": 37885,
+                "name": "Meat Popsicle"
+              },
+              "Medium Faction Ammunition Crate": {
+                "item_id": 49719,
+                "name": "Medium Faction Ammunition Crate"
+              },
+              "Melted Scraps of Capsule Plating": {
+                "item_id": 54227,
+                "name": "Melted Scraps of Capsule Plating"
+              },
+              "Military Experts and You": {
+                "item_id": 33025,
+                "name": "Military Experts and You"
+              },
+              "Minmatar Inception Package": {
+                "item_id": 43933,
+                "name": "Minmatar Inception Package"
+              },
+              "Model of a Fighter": {
+                "item_id": 33030,
+                "name": "Model of a Fighter"
+              },
+              "Muon Cosmic Resonance": {
+                "item_id": 84521,
+                "name": "Muon Cosmic Resonance"
+              },
+              "My God, It's Full Of Holes!": {
+                "item_id": 34430,
+                "name": "My God, It's Full Of Holes!"
+              },
+              "Mynos Forked Packet": {
+                "item_id": 87608,
+                "name": "Mynos Forked Packet"
+              },
+              "Mysterious Booster Crate I": {
+                "item_id": 81603,
+                "name": "Mysterious Booster Crate I"
+              },
+              "Neutron Flow Polarity Reverser": {
+                "item_id": 62054,
+                "name": "Neutron Flow Polarity Reverser"
+              },
+              "New Eden Soundbox": {
+                "item_id": 33066,
+                "name": "New Eden Soundbox"
+              },
+              "New Eden Source": {
+                "item_id": 33809,
+                "name": "New Eden Source"
+              },
+              "Nexus Cypher": {
+                "item_id": 88178,
+                "name": "Nexus Cypher"
+              },
+              "Offensive Content Reports, Jan. YC120, vol. I": {
+                "item_id": 48759,
+                "name": "Offensive Content Reports, Jan. YC120, vol. I"
+              },
+              "OODA Loop Expert System Package": {
+                "item_id": 54811,
+                "name": "OODA Loop Expert System Package"
+              },
+              "Pax e Kilizhi Do": {
+                "item_id": 52783,
+                "name": "Pax e Kilizhi Do"
+              },
+              "Polaris Eviction Notice": {
+                "item_id": 34427,
+                "name": "Polaris Eviction Notice"
+              },
+              "POS Fuel": {
+                "item_id": 54166,
+                "name": "POS Fuel"
+              },
+              "Postcard From Poitot": {
+                "item_id": 33022,
+                "name": "Postcard From Poitot"
+              },
+              "Power-Drainer Display": {
+                "item_id": 56983,
+                "name": "Power-Drainer Display"
+              },
+              "Pre-Completed CSM 10 Ballot Paper": {
+                "item_id": 34423,
+                "name": "Pre-Completed CSM 10 Ballot Paper"
+              },
+              "Predictive Light Cone Plotter": {
+                "item_id": 54808,
+                "name": "Predictive Light Cone Plotter"
+              },
+              "Premier ticket for: Clear Skies": {
+                "item_id": 33220,
+                "name": "Premier ticket for: Clear Skies"
+              },
+              "Premier ticket for: Day of Darkness": {
+                "item_id": 33221,
+                "name": "Premier ticket for: Day of Darkness"
+              },
+              "Premier ticket for: The last G campaign": {
+                "item_id": 33219,
+                "name": "Premier ticket for: The last G campaign"
+              },
+              "Press pass to Prometheus Station opening": {
+                "item_id": 33215,
+                "name": "Press pass to Prometheus Station opening"
+              },
+              "Prime Conservation Canister": {
+                "item_id": 87208,
+                "name": "Prime Conservation Canister"
+              },
+              "Project Compass Star Charts": {
+                "item_id": 37874,
+                "name": "Project Compass Star Charts"
+              },
+              "Project Firebird Dossier": {
+                "item_id": 91406,
+                "name": "Project Firebird Dossier"
+              },
+              "Proven Deepflow Adaptive Canister": {
+                "item_id": 88852,
+                "name": "Proven Deepflow Adaptive Canister"
+              },
+              "Public Portrait: How To": {
+                "item_id": 33061,
+                "name": "Public Portrait: How To"
+              },
+              "Purgative Coffin": {
+                "item_id": 49651,
+                "name": "Purgative Coffin"
+              },
+              "Query: Spaghetti or Chicken Sandwich?": {
+                "item_id": 48748,
+                "name": "Query: Spaghetti or Chicken Sandwich?"
+              },
+              "Raata Wind Chimes": {
+                "item_id": 48141,
+                "name": "Raata Wind Chimes"
+              },
+              "Radiation-Rogue Display": {
+                "item_id": 56973,
+                "name": "Radiation-Rogue Display"
+              },
+              "Ration-Grabber Display": {
+                "item_id": 56979,
+                "name": "Ration-Grabber Display"
+              },
+              "Recursive Knot": {
+                "item_id": 87602,
+                "name": "Recursive Knot"
+              },
+              "Recycler-Raider Display": {
+                "item_id": 56975,
+                "name": "Recycler-Raider Display"
+              },
+              "Rejected Ship Replacement Program Request": {
+                "item_id": 44211,
+                "name": "Rejected Ship Replacement Program Request"
+              },
+              "Remember Myrskaa Flyers": {
+                "item_id": 47044,
+                "name": "Remember Myrskaa Flyers"
+              },
+              "Replica Gallente Cruiser": {
+                "item_id": 33029,
+                "name": "Replica Gallente Cruiser"
+              },
+              "Replica Gold Magnate Decorative Plating": {
+                "item_id": 45062,
+                "name": "Replica Gold Magnate Decorative Plating"
+              },
+              "Replica Miss Federation Trophy": {
+                "item_id": 48137,
+                "name": "Replica Miss Federation Trophy"
+              },
+              "Replica Mister Federation Trophy": {
+                "item_id": 48136,
+                "name": "Replica Mister Federation Trophy"
+              },
+              "Replica of the ISCSS Venture": {
+                "item_id": 48144,
+                "name": "Replica of the ISCSS Venture"
+              },
+              "Republic Civilian Container": {
+                "item_id": 43679,
+                "name": "Republic Civilian Container"
+              },
+              "Retired Server Hamster": {
+                "item_id": 48750,
+                "name": "Retired Server Hamster"
+              },
+              "Rooks & Kings - The Clarion Call Compilation": {
+                "item_id": 34422,
+                "name": "Rooks & Kings - The Clarion Call Compilation"
+              },
+              "Rorqual Design Change Log": {
+                "item_id": 47042,
+                "name": "Rorqual Design Change Log"
+              },
+              "Rules of Engagement": {
+                "item_id": 33026,
+                "name": "Rules of Engagement"
+              },
+              "Sani Sabik Murder Security Tapes": {
+                "item_id": 49650,
+                "name": "Sani Sabik Murder Security Tapes"
+              },
+              "Sani Sabik Sermon": {
+                "item_id": 49648,
+                "name": "Sani Sabik Sermon"
+              },
+              "Sansha Claws Fairytale Book": {
+                "item_id": 37878,
+                "name": "Sansha Claws Fairytale Book"
+              },
+              "Sarpati Reserve Brandy": {
+                "item_id": 54164,
+                "name": "Sarpati Reserve Brandy"
+              },
+              "Scale Model Of [RFS] Mah'tu Rea": {
+                "item_id": 44210,
+                "name": "Scale Model Of [RFS] Mah'tu Rea"
+              },
+              "Scale Model of a Blue Box": {
+                "item_id": 62046,
+                "name": "Scale Model of a Blue Box"
+              },
+              "Scanner-Jacker Display": {
+                "item_id": 56980,
+                "name": "Scanner-Jacker Display"
+              },
+              "SCC Guidelines - Lotteries For Dummies": {
+                "item_id": 34425,
+                "name": "SCC Guidelines - Lotteries For Dummies"
+              },
+              "Scotty the Docking Manager's Clone": {
+                "item_id": 33019,
+                "name": "Scotty the Docking Manager's Clone"
+              },
+              "Scrap of paper": {
+                "item_id": 91414,
+                "name": "Scrap of paper"
+              },
+              "Sealed Projects Container": {
+                "item_id": 89784,
+                "name": "Sealed Projects Container"
+              },
+              "Sequence Binder Welcome Package": {
+                "item_id": 83832,
+                "name": "Sequence Binder Welcome Package"
+              },
+              "Ship Fitting Guide": {
+                "item_id": 33018,
+                "name": "Ship Fitting Guide"
+              },
+              "Shuttle Piloting For Dummies": {
+                "item_id": 33059,
+                "name": "Shuttle Piloting For Dummies"
+              },
+              "Silver Ouroboros": {
+                "item_id": 42230,
+                "name": "Silver Ouroboros"
+              },
+              "Sisters Of EVE Charity Statue": {
+                "item_id": 34432,
+                "name": "Sisters Of EVE Charity Statue"
+              },
+              "Slaver Tooth Necklace": {
+                "item_id": 48593,
+                "name": "Slaver Tooth Necklace"
+              },
+              "Small Navy Ammunition Crate": {
+                "item_id": 49746,
+                "name": "Small Navy Ammunition Crate"
+              },
+              "Snow Globe with Peculiar Architecture": {
+                "item_id": 62051,
+                "name": "Snow Globe with Peculiar Architecture"
+              },
+              "Sort Dragon's Guide To Diplomacy": {
+                "item_id": 34426,
+                "name": "Sort Dragon's Guide To Diplomacy"
+              },
+              "Soxfour's Spaceboots": {
+                "item_id": 34435,
+                "name": "Soxfour's Spaceboots"
+              },
+              "Spatiotemporal Boundary Detector": {
+                "item_id": 54809,
+                "name": "Spatiotemporal Boundary Detector"
+              },
+              "Spectral Vision Capture Reward Crate": {
+                "item_id": 87360,
+                "name": "Spectral Vision Capture Reward Crate"
+              },
+              "Spiked Quafe": {
+                "item_id": 54165,
+                "name": "Spiked Quafe"
+              },
+              "St. Tetrimon's Finger": {
+                "item_id": 49634,
+                "name": "St. Tetrimon's Finger"
+              },
+              "Starsi": {
+                "item_id": 37888,
+                "name": "Starsi"
+              },
+              "Stellar Transmuter Research Data Fragment": {
+                "item_id": 76208,
+                "name": "Stellar Transmuter Research Data Fragment"
+              },
+              "Stellar Transmuter Research Encryption Key": {
+                "item_id": 76209,
+                "name": "Stellar Transmuter Research Encryption Key"
+              },
+              "Stellar Transmuter Research Index File": {
+                "item_id": 76207,
+                "name": "Stellar Transmuter Research Index File"
+              },
+              "String Charge Evaluation Couple": {
+                "item_id": 54810,
+                "name": "String Charge Evaluation Couple"
+              },
+              "Subspace Energy & You": {
+                "item_id": 45061,
+                "name": "Subspace Energy & You"
+              },
+              "Superior Exoplanets Hunter Reward Crate": {
+                "item_id": 46050,
+                "name": "Superior Exoplanets Hunter Reward Crate"
+              },
+              "Suspicious “mining permit”": {
+                "item_id": 91410,
+                "name": "Suspicious “mining permit”"
+              },
+              "Tarot of St. Jamyl": {
+                "item_id": 49645,
+                "name": "Tarot of St. Jamyl"
+              },
+              "Tau Decay Resonance": {
+                "item_id": 84519,
+                "name": "Tau Decay Resonance"
+              },
+              "Templis Dragonaurs Log 1220107-VC47": {
+                "item_id": 53846,
+                "name": "Templis Dragonaurs Log 1220107-VC47"
+              },
+              "Ten Most Wanted Slavers": {
+                "item_id": 48592,
+                "name": "Ten Most Wanted Slavers"
+              },
+              "Terminated Knot": {
+                "item_id": 87606,
+                "name": "Terminated Knot"
+              },
+              "Test item": {
+                "item_id": 41496,
+                "name": "Test item"
+              },
+              "The Capsuleer’s Confectionary Codex – Field Edition": {
+                "item_id": 91415,
+                "name": "The Capsuleer’s Confectionary Codex – Field Edition"
+              },
+              "The Champion Ship": {
+                "item_id": 44213,
+                "name": "The Champion Ship"
+              },
+              "The Damsel's Drunk Bodyguard": {
+                "item_id": 34433,
+                "name": "The Damsel's Drunk Bodyguard"
+              },
+              "The Friend Ship": {
+                "item_id": 34436,
+                "name": "The Friend Ship"
+              },
+              "The Galactic Party Planning Guide": {
+                "item_id": 34418,
+                "name": "The Galactic Party Planning Guide"
+              },
+              "The Mini Monolith": {
+                "item_id": 33015,
+                "name": "The Mini Monolith"
+              },
+              "The Policy Enforcer": {
+                "item_id": 48753,
+                "name": "The Policy Enforcer"
+              },
+              "The Yulai Siege YC106": {
+                "item_id": 52273,
+                "name": "The Yulai Siege YC106"
+              },
+              "Titanium Plated Cranial Shielding": {
+                "item_id": 34424,
+                "name": "Titanium Plated Cranial Shielding"
+              },
+              "Titanomachy YC116": {
+                "item_id": 52276,
+                "name": "Titanomachy YC116"
+              },
+              "TLF Recruitment Poster": {
+                "item_id": 48584,
+                "name": "TLF Recruitment Poster"
+              },
+              "To Kill the Risen Dead": {
+                "item_id": 47059,
+                "name": "To Kill the Risen Dead"
+              },
+              "Tool-Swiper Display": {
+                "item_id": 56974,
+                "name": "Tool-Swiper Display"
+              },
+              "Top Grade Deathglow": {
+                "item_id": 49621,
+                "name": "Top Grade Deathglow"
+              },
+              "Transport Relay Research Data Fragment": {
+                "item_id": 76211,
+                "name": "Transport Relay Research Data Fragment"
+              },
+              "Transport Relay Research Encryption Key": {
+                "item_id": 76212,
+                "name": "Transport Relay Research Encryption Key"
+              },
+              "Transport Relay Research Index File": {
+                "item_id": 76210,
+                "name": "Transport Relay Research Index File"
+              },
+              "Uncertainty Thread": {
+                "item_id": 87603,
+                "name": "Uncertainty Thread"
+              },
+              "Unfinished Romance Novel": {
+                "item_id": 91416,
+                "name": "Unfinished Romance Novel"
+              },
+              "Unit of Lag": {
+                "item_id": 33021,
+                "name": "Unit of Lag"
+              },
+              "Unpainted ship miniature": {
+                "item_id": 91393,
+                "name": "Unpainted ship miniature"
+              },
+              "Upwell Consortium Propaganda Reel": {
+                "item_id": 44212,
+                "name": "Upwell Consortium Propaganda Reel"
+              },
+              "Used Ectoplasmic Fluid": {
+                "item_id": 54225,
+                "name": "Used Ectoplasmic Fluid"
+              },
+              "Vherokior Medicinal Herbs": {
+                "item_id": 48585,
+                "name": "Vherokior Medicinal Herbs"
+              },
+              "Vial of Kyonoke Plague Cure": {
+                "item_id": 47046,
+                "name": "Vial of Kyonoke Plague Cure"
+              },
+              "Vial of Mikramurka": {
+                "item_id": 48586,
+                "name": "Vial of Mikramurka"
+              },
+              "Vimoksha Chorus Log 1220108-TD53": {
+                "item_id": 53851,
+                "name": "Vimoksha Chorus Log 1220108-TD53"
+              },
+              "Vincent Pryce's Warp Disruption Field Generator": {
+                "item_id": 34429,
+                "name": "Vincent Pryce's Warp Disruption Field Generator"
+              },
+              "Vintage Frigate Blueprints": {
+                "item_id": 45060,
+                "name": "Vintage Frigate Blueprints"
+              },
+              "Vintage Wine?": {
+                "item_id": 49652,
+                "name": "Vintage Wine?"
+              },
+              "Warp-Shifted Reflections – Personal Journal Page": {
+                "item_id": 91394,
+                "name": "Warp-Shifted Reflections – Personal Journal Page"
+              },
+              "Water-Sucker Display": {
+                "item_id": 56976,
+                "name": "Water-Sucker Display"
+              },
+              "Well-Used Camera Drone": {
+                "item_id": 91388,
+                "name": "Well-Used Camera Drone"
+              },
+              "Well-Worn Fedora": {
+                "item_id": 48751,
+                "name": "Well-Worn Fedora"
+              },
+              "Worn-out Titan Jump Console": {
+                "item_id": 91407,
+                "name": "Worn-out Titan Jump Console"
+              },
+              "YC110.05.29 - Arceho. Student Yosef Okada Journal entry": {
+                "item_id": 85712,
+                "name": "YC110.05.29 - Arceho. Student Yosef Okada Journal entry"
+              },
+              "YC110.06.09 - Asst. Archeo. Yosef Okada Journal entry": {
+                "item_id": 85713,
+                "name": "YC110.06.09 - Asst. Archeo. Yosef Okada Journal entry"
+              },
+              "YC110.08.20 - Asst. Archeo. Yosef Okada Journal entry": {
+                "item_id": 85714,
+                "name": "YC110.08.20 - Asst. Archeo. Yosef Okada Journal entry"
+              },
+              "YC110.11.30 - Asst. Archeo. Yosef Okada Journal entry": {
+                "item_id": 85715,
+                "name": "YC110.11.30 - Asst. Archeo. Yosef Okada Journal entry"
+              },
+              "YC110.12.04 - Asst. Archeo. Yosef Okada Journal entry": {
+                "item_id": 85716,
+                "name": "YC110.12.04 - Asst. Archeo. Yosef Okada Journal entry"
+              },
+              "YC110.12.10 - Asst. Archeo. Yosef Okada Journal entry": {
+                "item_id": 85717,
+                "name": "YC110.12.10 - Asst. Archeo. Yosef Okada Journal entry"
+              },
+              "YC113.01.15 - Dr. Yosef Okada Journal entry": {
+                "item_id": 85718,
+                "name": "YC113.01.15 - Dr. Yosef Okada Journal entry"
+              },
+              "YC113.04.15 - Dr. Yosef Okada Journal entry": {
+                "item_id": 85719,
+                "name": "YC113.04.15 - Dr. Yosef Okada Journal entry"
+              },
+              "YC113.05.01 - Dr. Yosef Okada Journal entry": {
+                "item_id": 85720,
+                "name": "YC113.05.01 - Dr. Yosef Okada Journal entry"
+              },
+              "YC113.05.24 - Dr. Yosef Okada Journal entry": {
+                "item_id": 85721,
+                "name": "YC113.05.24 - Dr. Yosef Okada Journal entry"
+              },
+              "YC113.11.09 - Dr. Yosef Okada Journal entry": {
+                "item_id": 85722,
+                "name": "YC113.11.09 - Dr. Yosef Okada Journal entry"
+              },
+              "YC114.01.19 - Dr. Yosef Okada Journal entry": {
+                "item_id": 85723,
+                "name": "YC114.01.19 - Dr. Yosef Okada Journal entry"
+              },
+              "YC115.08.19 - Yosef Okada Journal entry": {
+                "item_id": 85724,
+                "name": "YC115.08.19 - Yosef Okada Journal entry"
+              },
+              "YC117 Symposium On Emergent Threats Access Pass": {
+                "item_id": 37882,
+                "name": "YC117 Symposium On Emergent Threats Access Pass"
+              },
+              "YC117.02.06 - Yosef Okada Journal entry": {
+                "item_id": 85725,
+                "name": "YC117.02.06 - Yosef Okada Journal entry"
+              },
+              "YC117.02.20 - Yosef Okada Journal entry": {
+                "item_id": 85726,
+                "name": "YC117.02.20 - Yosef Okada Journal entry"
+              },
+              "YC117.10.15 - Yosef Okada Journal entry": {
+                "item_id": 85727,
+                "name": "YC117.10.15 - Yosef Okada Journal entry"
+              },
+              "YC117.10.30 - Yosef Okada Journal entry": {
+                "item_id": 85728,
+                "name": "YC117.10.30 - Yosef Okada Journal entry"
+              },
+              "YC117.11.01 - Yosef Okada Journal entry": {
+                "item_id": 85729,
+                "name": "YC117.11.01 - Yosef Okada Journal entry"
+              },
+              "YC117.11.06 - dictated record": {
+                "item_id": 85730,
+                "name": "YC117.11.06 - dictated record"
+              },
+              "YC117.11.08 - dictated record": {
+                "item_id": 85731,
+                "name": "YC117.11.08 - dictated record"
+              },
+              "YC118 Succession Trial Champion's Decree - House Ardishapur": {
+                "item_id": 37892,
+                "name": "YC118 Succession Trial Champion's Decree - House Ardishapur"
+              },
+              "YC118 Succession Trial Champion's Decree - House Kador": {
+                "item_id": 37893,
+                "name": "YC118 Succession Trial Champion's Decree - House Kador"
+              },
+              "YC118 Succession Trial Champion's Decree - House Khanid": {
+                "item_id": 37894,
+                "name": "YC118 Succession Trial Champion's Decree - House Khanid"
+              },
+              "YC118 Succession Trial Champion's Decree - House Kor-Azor": {
+                "item_id": 37895,
+                "name": "YC118 Succession Trial Champion's Decree - House Kor-Azor"
+              },
+              "YC118 Succession Trial Champion's Decree - House Sarum": {
+                "item_id": 37896,
+                "name": "YC118 Succession Trial Champion's Decree - House Sarum"
+              },
+              "YC118 Succession Trial Champion's Decree - House Tash-Murkon": {
+                "item_id": 37889,
+                "name": "YC118 Succession Trial Champion's Decree - House Tash-Murkon"
+              },
+              "未来人类纪念章": {
+                "item_id": 41035,
+                "name": "未来人类纪念章"
+              }
+            }
           }
-        }
-      },
-      "Special Edition Deployable Structures": {
-        "id": 2760,
-        "name": "Special Edition Deployable Structures",
-        "subgroups": {},
-        "items": {
-          "Mobile Sanguine Harvester": {
-            "item_id": 56701,
-            "name": "Mobile Sanguine Harvester"
-          }
-        }
+        },
+        "items": {}
       },
       "Special Edition Festival Assets": {
         "id": 1663,
@@ -83988,10 +84014,6 @@
           "Capsuleer Dawn Firework (Large)": {
             "item_id": 47300,
             "name": "Capsuleer Dawn Firework (Large)"
-          },
-          "Capsuleer Day Glamourex Crate": {
-            "item_id": 77055,
-            "name": "Capsuleer Day Glamourex Crate"
           },
           "Capsuleer Day XX Fireworks Package": {
             "item_id": 76964,
@@ -84121,6 +84143,10 @@
             "item_id": 44272,
             "name": "Fangs of the Serpent Firework"
           },
+          "Festival Fireworks Crate": {
+            "item_id": 53494,
+            "name": "Festival Fireworks Crate"
+          },
           "Festival Launcher": {
             "item_id": 19660,
             "name": "Festival Launcher"
@@ -84212,6 +84238,10 @@
           "Snowstar Crystalburst Firework": {
             "item_id": 57149,
             "name": "Snowstar Crystalburst Firework"
+          },
+          "Snowstar Crystalburst Fireworks Crate": {
+            "item_id": 57166,
+            "name": "Snowstar Crystalburst Fireworks Crate"
           },
           "Sodium Firework": {
             "item_id": 33571,
