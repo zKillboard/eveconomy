@@ -34486,10 +34486,6 @@
         "name": "Pilot's Services",
         "subgroups": {},
         "items": {
-          "Multiple Pilot Training Certificate": {
-            "item_id": 34133,
-            "name": "Multiple Pilot Training Certificate"
-          },
           "Pilot's Body Resculpt Certificate": {
             "item_id": 34132,
             "name": "Pilot's Body Resculpt Certificate"
