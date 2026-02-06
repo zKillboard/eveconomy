@@ -9,9 +9,20 @@ body.dark {
 	filter: invert(1);
 }
 
+a {
+	text-decoration: none;
+	color: var(--bs-link-color);
+}
+
 img {
 	filter: invert(1);
 	background-color: #111;
+}
+
+hr {
+	color: #ccc;
+	background-color: #ccc;
+	height: 1px;
 }
 
 #sitelogo,
@@ -40,10 +51,16 @@ img {
 }
 
 #itemparent {
-	min-height: calc(100vh - 4.72em);
-	max-height: calc(100vh - 4.72em);
+	min-height: calc(100vh - 8.72em);
+	max-height: calc(100vh - 8.72em);
 	overflow-x: hidden;
 	overflow-y: scroll;
+}
+
+#aboutbox {
+	min-height: 4em;
+	max-height: 4em;
+	padding: 0.5em;
 }
 
 #orders {
