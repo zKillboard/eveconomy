@@ -20,8 +20,8 @@ class CustomHandler(SimpleHTTPRequestHandler):
 
 if __name__ == '__main__':
     os.chdir('.')  # Serve from current dir
-    httpd = HTTPServer(('0.0.0.0', 8080), CustomHandler)
-    print("Serving on http://localhost:8080")
+    httpd = HTTPServer(('0.0.0.0', 8989), CustomHandler)
+    print("Serving on http://localhost:8989")
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:
