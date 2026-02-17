@@ -3077,6 +3077,29 @@
                   }
                 }
               },
+              "Advanced High Precision Cruise Missiles": {
+                "id": 918,
+                "name": "Advanced High Precision Cruise Missiles",
+                "subgroups": {},
+                "items": {
+                  "Inferno Precision Cruise Missile": {
+                    "item_id": 2637,
+                    "name": "Inferno Precision Cruise Missile"
+                  },
+                  "Mjolnir Precision Cruise Missile": {
+                    "item_id": 24539,
+                    "name": "Mjolnir Precision Cruise Missile"
+                  },
+                  "Nova Precision Cruise Missile": {
+                    "item_id": 24537,
+                    "name": "Nova Precision Cruise Missile"
+                  },
+                  "Scourge Precision Cruise Missile": {
+                    "item_id": 24541,
+                    "name": "Scourge Precision Cruise Missile"
+                  }
+                }
+              },
               "Faction Cruise Missiles": {
                 "id": 1001,
                 "name": "Faction Cruise Missiles",
@@ -17847,6 +17870,21 @@
             "id": 882,
             "name": "Recon Ships",
             "subgroups": {
+              "Amarr": {
+                "id": 900,
+                "name": "Amarr",
+                "subgroups": {},
+                "items": {
+                  "Curse Blueprint": {
+                    "item_id": 20126,
+                    "name": "Curse Blueprint"
+                  },
+                  "Pilgrim Blueprint": {
+                    "item_id": 11966,
+                    "name": "Pilgrim Blueprint"
+                  }
+                }
+              },
               "Caldari": {
                 "id": 901,
                 "name": "Caldari",
@@ -39600,6 +39638,345 @@
                   "Small Targeting System Subcontroller II": {
                     "item_id": 31328,
                     "name": "Small Targeting System Subcontroller II"
+                  }
+                }
+              }
+            },
+            "items": {}
+          }
+        },
+        "items": {}
+      },
+      "Subsystems": {
+        "id": 1112,
+        "name": "Subsystems",
+        "subgroups": {
+          "Amarr Subsystems": {
+            "id": 1610,
+            "name": "Amarr Subsystems",
+            "subgroups": {
+              "Amarr Core Subsystems": {
+                "id": 1122,
+                "name": "Amarr Core Subsystems",
+                "subgroups": {},
+                "items": {
+                  "Legion Core - Augmented Antimatter Reactor": {
+                    "item_id": 45623,
+                    "name": "Legion Core - Augmented Antimatter Reactor"
+                  },
+                  "Legion Core - Dissolution Sequencer": {
+                    "item_id": 45622,
+                    "name": "Legion Core - Dissolution Sequencer"
+                  },
+                  "Legion Core - Energy Parasitic Complex": {
+                    "item_id": 45624,
+                    "name": "Legion Core - Energy Parasitic Complex"
+                  }
+                }
+              },
+              "Amarr Defensive Subsystems": {
+                "id": 1126,
+                "name": "Amarr Defensive Subsystems",
+                "subgroups": {},
+                "items": {
+                  "Legion Defensive - Augmented Plating": {
+                    "item_id": 45587,
+                    "name": "Legion Defensive - Augmented Plating"
+                  },
+                  "Legion Defensive - Covert Reconfiguration": {
+                    "item_id": 45586,
+                    "name": "Legion Defensive - Covert Reconfiguration"
+                  },
+                  "Legion Defensive - Nanobot Injector": {
+                    "item_id": 45588,
+                    "name": "Legion Defensive - Nanobot Injector"
+                  }
+                }
+              },
+              "Amarr Offensive Subsystems": {
+                "id": 1130,
+                "name": "Amarr Offensive Subsystems",
+                "subgroups": {},
+                "items": {
+                  "Legion Offensive - Assault Optimization": {
+                    "item_id": 45599,
+                    "name": "Legion Offensive - Assault Optimization"
+                  },
+                  "Legion Offensive - Liquid Crystal Magnifiers": {
+                    "item_id": 45598,
+                    "name": "Legion Offensive - Liquid Crystal Magnifiers"
+                  },
+                  "Legion Offensive - Support Processor": {
+                    "item_id": 45600,
+                    "name": "Legion Offensive - Support Processor"
+                  }
+                }
+              },
+              "Amarr Propulsion Subsystems": {
+                "id": 1134,
+                "name": "Amarr Propulsion Subsystems",
+                "subgroups": {},
+                "items": {
+                  "Legion Propulsion - Intercalated Nanofibers": {
+                    "item_id": 45611,
+                    "name": "Legion Propulsion - Intercalated Nanofibers"
+                  },
+                  "Legion Propulsion - Interdiction Nullifier": {
+                    "item_id": 45610,
+                    "name": "Legion Propulsion - Interdiction Nullifier"
+                  },
+                  "Legion Propulsion - Wake Limiter": {
+                    "item_id": 45612,
+                    "name": "Legion Propulsion - Wake Limiter"
+                  }
+                }
+              }
+            },
+            "items": {}
+          },
+          "Caldari Subsystems": {
+            "id": 1625,
+            "name": "Caldari Subsystems",
+            "subgroups": {
+              "Caldari Core Subsystems": {
+                "id": 1123,
+                "name": "Caldari Core Subsystems",
+                "subgroups": {},
+                "items": {
+                  "Tengu Core - Augmented Graviton Reactor": {
+                    "item_id": 45626,
+                    "name": "Tengu Core - Augmented Graviton Reactor"
+                  },
+                  "Tengu Core - Electronic Efficiency Gate": {
+                    "item_id": 45625,
+                    "name": "Tengu Core - Electronic Efficiency Gate"
+                  },
+                  "Tengu Core - Obfuscation Manifold": {
+                    "item_id": 45627,
+                    "name": "Tengu Core - Obfuscation Manifold"
+                  }
+                }
+              },
+              "Caldari Defensive Subsystems": {
+                "id": 1127,
+                "name": "Caldari Defensive Subsystems",
+                "subgroups": {},
+                "items": {
+                  "Tengu Defensive - Amplification Node": {
+                    "item_id": 45591,
+                    "name": "Tengu Defensive - Amplification Node"
+                  },
+                  "Tengu Defensive - Covert Reconfiguration": {
+                    "item_id": 45589,
+                    "name": "Tengu Defensive - Covert Reconfiguration"
+                  },
+                  "Tengu Defensive - Supplemental Screening": {
+                    "item_id": 45590,
+                    "name": "Tengu Defensive - Supplemental Screening"
+                  }
+                }
+              },
+              "Caldari Offensive Subsystems": {
+                "id": 1131,
+                "name": "Caldari Offensive Subsystems",
+                "subgroups": {},
+                "items": {
+                  "Tengu Offensive - Accelerated Ejection Bay": {
+                    "item_id": 45601,
+                    "name": "Tengu Offensive - Accelerated Ejection Bay"
+                  },
+                  "Tengu Offensive - Magnetic Infusion Basin": {
+                    "item_id": 45602,
+                    "name": "Tengu Offensive - Magnetic Infusion Basin"
+                  },
+                  "Tengu Offensive - Support Processor": {
+                    "item_id": 45603,
+                    "name": "Tengu Offensive - Support Processor"
+                  }
+                }
+              },
+              "Caldari Propulsion Subsystems": {
+                "id": 1135,
+                "name": "Caldari Propulsion Subsystems",
+                "subgroups": {},
+                "items": {
+                  "Tengu Propulsion - Chassis Optimization": {
+                    "item_id": 45614,
+                    "name": "Tengu Propulsion - Chassis Optimization"
+                  },
+                  "Tengu Propulsion - Fuel Catalyst": {
+                    "item_id": 45615,
+                    "name": "Tengu Propulsion - Fuel Catalyst"
+                  },
+                  "Tengu Propulsion - Interdiction Nullifier": {
+                    "item_id": 45613,
+                    "name": "Tengu Propulsion - Interdiction Nullifier"
+                  }
+                }
+              }
+            },
+            "items": {}
+          },
+          "Gallente Subsystems": {
+            "id": 1627,
+            "name": "Gallente Subsystems",
+            "subgroups": {
+              "Gallente Core Subsystems": {
+                "id": 1124,
+                "name": "Gallente Core Subsystems",
+                "subgroups": {},
+                "items": {
+                  "Proteus Core - Augmented Fusion Reactor": {
+                    "item_id": 45629,
+                    "name": "Proteus Core - Augmented Fusion Reactor"
+                  },
+                  "Proteus Core - Electronic Efficiency Gate": {
+                    "item_id": 45628,
+                    "name": "Proteus Core - Electronic Efficiency Gate"
+                  },
+                  "Proteus Core - Friction Extension Processor": {
+                    "item_id": 45630,
+                    "name": "Proteus Core - Friction Extension Processor"
+                  }
+                }
+              },
+              "Gallente Defensive Subsystems": {
+                "id": 1129,
+                "name": "Gallente Defensive Subsystems",
+                "subgroups": {},
+                "items": {
+                  "Proteus Defensive - Augmented Plating": {
+                    "item_id": 45593,
+                    "name": "Proteus Defensive - Augmented Plating"
+                  },
+                  "Proteus Defensive - Covert Reconfiguration": {
+                    "item_id": 45592,
+                    "name": "Proteus Defensive - Covert Reconfiguration"
+                  },
+                  "Proteus Defensive - Nanobot Injector": {
+                    "item_id": 45594,
+                    "name": "Proteus Defensive - Nanobot Injector"
+                  }
+                }
+              },
+              "Gallente Offensive Subsystems": {
+                "id": 1132,
+                "name": "Gallente Offensive Subsystems",
+                "subgroups": {},
+                "items": {
+                  "Proteus Offensive - Drone Synthesis Projector": {
+                    "item_id": 45605,
+                    "name": "Proteus Offensive - Drone Synthesis Projector"
+                  },
+                  "Proteus Offensive - Hybrid Encoding Platform": {
+                    "item_id": 45604,
+                    "name": "Proteus Offensive - Hybrid Encoding Platform"
+                  },
+                  "Proteus Offensive - Support Processor": {
+                    "item_id": 45606,
+                    "name": "Proteus Offensive - Support Processor"
+                  }
+                }
+              },
+              "Gallente Propulsion Subsystems": {
+                "id": 1136,
+                "name": "Gallente Propulsion Subsystems",
+                "subgroups": {},
+                "items": {
+                  "Proteus Propulsion - Hyperspatial Optimization": {
+                    "item_id": 45617,
+                    "name": "Proteus Propulsion - Hyperspatial Optimization"
+                  },
+                  "Proteus Propulsion - Interdiction Nullifier": {
+                    "item_id": 45616,
+                    "name": "Proteus Propulsion - Interdiction Nullifier"
+                  },
+                  "Proteus Propulsion - Localized Injectors": {
+                    "item_id": 45618,
+                    "name": "Proteus Propulsion - Localized Injectors"
+                  }
+                }
+              }
+            },
+            "items": {}
+          },
+          "Minmatar Subsystems": {
+            "id": 1626,
+            "name": "Minmatar Subsystems",
+            "subgroups": {
+              "Minmatar Core Subsystems": {
+                "id": 1125,
+                "name": "Minmatar Core Subsystems",
+                "subgroups": {},
+                "items": {
+                  "Loki Core - Augmented Nuclear Reactor": {
+                    "item_id": 45632,
+                    "name": "Loki Core - Augmented Nuclear Reactor"
+                  },
+                  "Loki Core - Dissolution Sequencer": {
+                    "item_id": 45631,
+                    "name": "Loki Core - Dissolution Sequencer"
+                  },
+                  "Loki Core - Immobility Drivers": {
+                    "item_id": 45633,
+                    "name": "Loki Core - Immobility Drivers"
+                  }
+                }
+              },
+              "Minmatar Defensive Subsystems": {
+                "id": 1128,
+                "name": "Minmatar Defensive Subsystems",
+                "subgroups": {},
+                "items": {
+                  "Loki Defensive - Adaptive Defense Node": {
+                    "item_id": 45597,
+                    "name": "Loki Defensive - Adaptive Defense Node"
+                  },
+                  "Loki Defensive - Augmented Durability": {
+                    "item_id": 45596,
+                    "name": "Loki Defensive - Augmented Durability"
+                  },
+                  "Loki Defensive - Covert Reconfiguration": {
+                    "item_id": 45595,
+                    "name": "Loki Defensive - Covert Reconfiguration"
+                  }
+                }
+              },
+              "Minmatar Offensive Subsystems": {
+                "id": 1133,
+                "name": "Minmatar Offensive Subsystems",
+                "subgroups": {},
+                "items": {
+                  "Loki Offensive - Launcher Efficiency Configuration": {
+                    "item_id": 45608,
+                    "name": "Loki Offensive - Launcher Efficiency Configuration"
+                  },
+                  "Loki Offensive - Projectile Scoping Array": {
+                    "item_id": 45607,
+                    "name": "Loki Offensive - Projectile Scoping Array"
+                  },
+                  "Loki Offensive - Support Processor": {
+                    "item_id": 45609,
+                    "name": "Loki Offensive - Support Processor"
+                  }
+                }
+              },
+              "Minmatar Propulsion Subsystems": {
+                "id": 1137,
+                "name": "Minmatar Propulsion Subsystems",
+                "subgroups": {},
+                "items": {
+                  "Loki Propulsion - Intercalated Nanofibers": {
+                    "item_id": 45620,
+                    "name": "Loki Propulsion - Intercalated Nanofibers"
+                  },
+                  "Loki Propulsion - Interdiction Nullifier": {
+                    "item_id": 45619,
+                    "name": "Loki Propulsion - Interdiction Nullifier"
+                  },
+                  "Loki Propulsion - Wake Limiter": {
+                    "item_id": 45621,
+                    "name": "Loki Propulsion - Wake Limiter"
                   }
                 }
               }
@@ -89027,6 +89404,541 @@
             "name": "Zirnitra Blueprint Data Vault"
           }
         }
+      },
+      "Insignias": {
+        "id": 616,
+        "name": "Insignias",
+        "subgroups": {
+          "Amarr Navy": {
+            "id": 730,
+            "name": "Amarr Navy",
+            "subgroups": {},
+            "items": {
+              "Imperial Navy Captain Insignia I": {
+                "item_id": 15612,
+                "name": "Imperial Navy Captain Insignia I"
+              },
+              "Imperial Navy Colonel Insignia I": {
+                "item_id": 15614,
+                "name": "Imperial Navy Colonel Insignia I"
+              },
+              "Imperial Navy Fleet Commander Insignia": {
+                "item_id": 15670,
+                "name": "Imperial Navy Fleet Commander Insignia"
+              },
+              "Imperial Navy Fleet Rear-Admiral Insignia": {
+                "item_id": 28238,
+                "name": "Imperial Navy Fleet Rear-Admiral Insignia"
+              },
+              "Imperial Navy General Insignia I": {
+                "item_id": 15615,
+                "name": "Imperial Navy General Insignia I"
+              },
+              "Imperial Navy General Insignia II": {
+                "item_id": 15669,
+                "name": "Imperial Navy General Insignia II"
+              },
+              "Imperial Navy Major Insignia I": {
+                "item_id": 15613,
+                "name": "Imperial Navy Major Insignia I"
+              },
+              "Imperial Navy Midshipman Insignia I": {
+                "item_id": 15607,
+                "name": "Imperial Navy Midshipman Insignia I"
+              },
+              "Imperial Navy Midshipman Insignia II": {
+                "item_id": 15608,
+                "name": "Imperial Navy Midshipman Insignia II"
+              },
+              "Imperial Navy Midshipman Insignia III": {
+                "item_id": 15609,
+                "name": "Imperial Navy Midshipman Insignia III"
+              },
+              "Imperial Navy Raid Leader Insignia": {
+                "item_id": 15635,
+                "name": "Imperial Navy Raid Leader Insignia"
+              },
+              "Imperial Navy Sergeant Elite Insignia": {
+                "item_id": 15636,
+                "name": "Imperial Navy Sergeant Elite Insignia"
+              },
+              "Imperial Navy Sergeant Insignia I": {
+                "item_id": 15610,
+                "name": "Imperial Navy Sergeant Insignia I"
+              },
+              "Imperial Navy Sergeant Insignia II": {
+                "item_id": 15992,
+                "name": "Imperial Navy Sergeant Insignia II"
+              },
+              "Imperial Navy Sergeant Insignia III": {
+                "item_id": 16000,
+                "name": "Imperial Navy Sergeant Insignia III"
+              },
+              "Imperial Navy Sergeant Major Insignia I": {
+                "item_id": 15611,
+                "name": "Imperial Navy Sergeant Major Insignia I"
+              },
+              "Imperial Navy Squad Leader Insignia": {
+                "item_id": 15634,
+                "name": "Imperial Navy Squad Leader Insignia"
+              }
+            }
+          },
+          "Ammatar Navy": {
+            "id": 731,
+            "name": "Ammatar Navy",
+            "subgroups": {},
+            "items": {
+              "Ammatar Navy Captain Insignia I": {
+                "item_id": 15622,
+                "name": "Ammatar Navy Captain Insignia I"
+              },
+              "Ammatar Navy Colonel Insignia I": {
+                "item_id": 17999,
+                "name": "Ammatar Navy Colonel Insignia I"
+              },
+              "Ammatar Navy Colonel Insignia II": {
+                "item_id": 15671,
+                "name": "Ammatar Navy Colonel Insignia II"
+              },
+              "Ammatar Navy Fleet Commander Insignia": {
+                "item_id": 15643,
+                "name": "Ammatar Navy Fleet Commander Insignia"
+              },
+              "Ammatar Navy Major Insignia I": {
+                "item_id": 15623,
+                "name": "Ammatar Navy Major Insignia I"
+              },
+              "Ammatar Navy Major Insignia II": {
+                "item_id": 15672,
+                "name": "Ammatar Navy Major Insignia II"
+              },
+              "Ammatar Navy Midshipman Insignia I": {
+                "item_id": 15617,
+                "name": "Ammatar Navy Midshipman Insignia I"
+              },
+              "Ammatar Navy Midshipman Insignia II": {
+                "item_id": 15618,
+                "name": "Ammatar Navy Midshipman Insignia II"
+              },
+              "Ammatar Navy Midshipman Insignia III": {
+                "item_id": 15619,
+                "name": "Ammatar Navy Midshipman Insignia III"
+              },
+              "Ammatar Navy Raid Leader Insignia": {
+                "item_id": 15641,
+                "name": "Ammatar Navy Raid Leader Insignia"
+              },
+              "Ammatar Navy Sergeant Elite Insignia": {
+                "item_id": 15642,
+                "name": "Ammatar Navy Sergeant Elite Insignia"
+              },
+              "Ammatar Navy Sergeant Insignia I": {
+                "item_id": 15620,
+                "name": "Ammatar Navy Sergeant Insignia I"
+              },
+              "Ammatar Navy Sergeant Insignia II": {
+                "item_id": 15993,
+                "name": "Ammatar Navy Sergeant Insignia II"
+              },
+              "Ammatar Navy Sergeant Insignia III": {
+                "item_id": 16001,
+                "name": "Ammatar Navy Sergeant Insignia III"
+              },
+              "Ammatar Navy Sergeant Major Insignia I": {
+                "item_id": 15621,
+                "name": "Ammatar Navy Sergeant Major Insignia I"
+              },
+              "Ammatar Navy Squad Leader Insignia": {
+                "item_id": 15640,
+                "name": "Ammatar Navy Squad Leader Insignia"
+              },
+              "Ammatar Slave Trader Insignia": {
+                "item_id": 15979,
+                "name": "Ammatar Slave Trader Insignia"
+              }
+            }
+          },
+          "Caldari Navy": {
+            "id": 732,
+            "name": "Caldari Navy",
+            "subgroups": {},
+            "items": {
+              "Caldari Navy Admiral Insignia I": {
+                "item_id": 15604,
+                "name": "Caldari Navy Admiral Insignia I"
+              },
+              "Caldari Navy Captain Elite Insignia": {
+                "item_id": 15653,
+                "name": "Caldari Navy Captain Elite Insignia"
+              },
+              "Caldari Navy Captain Insignia I": {
+                "item_id": 15599,
+                "name": "Caldari Navy Captain Insignia I"
+              },
+              "Caldari Navy Captain Insignia II": {
+                "item_id": 15600,
+                "name": "Caldari Navy Captain Insignia II"
+              },
+              "Caldari Navy Captain Insignia III": {
+                "item_id": 15601,
+                "name": "Caldari Navy Captain Insignia III"
+              },
+              "Caldari Navy Captain Insignia IV": {
+                "item_id": 15996,
+                "name": "Caldari Navy Captain Insignia IV"
+              },
+              "Caldari Navy Captain Insignia V": {
+                "item_id": 15999,
+                "name": "Caldari Navy Captain Insignia V"
+              },
+              "Caldari Navy Commodore Insignia I": {
+                "item_id": 15602,
+                "name": "Caldari Navy Commodore Insignia I"
+              },
+              "Caldari Navy Commodore Insignia II": {
+                "item_id": 15656,
+                "name": "Caldari Navy Commodore Insignia II"
+              },
+              "Caldari Navy Fleet Commander Insignia": {
+                "item_id": 15657,
+                "name": "Caldari Navy Fleet Commander Insignia"
+              },
+              "Caldari Navy Fleet Rear-Admiral Insignia": {
+                "item_id": 28237,
+                "name": "Caldari Navy Fleet Rear-Admiral Insignia"
+              },
+              "Caldari Navy Midshipman Insignia I": {
+                "item_id": 15596,
+                "name": "Caldari Navy Midshipman Insignia I"
+              },
+              "Caldari Navy Midshipman Insignia II": {
+                "item_id": 15597,
+                "name": "Caldari Navy Midshipman Insignia II"
+              },
+              "Caldari Navy Midshipman Insignia III": {
+                "item_id": 15598,
+                "name": "Caldari Navy Midshipman Insignia III"
+              },
+              "Caldari Navy Raid Leader Insignia": {
+                "item_id": 15655,
+                "name": "Caldari Navy Raid Leader Insignia"
+              },
+              "Caldari Navy Squad Leader Insignia": {
+                "item_id": 15654,
+                "name": "Caldari Navy Squad Leader Insignia"
+              },
+              "Caldari Navy Vice Admiral Insignia I": {
+                "item_id": 15605,
+                "name": "Caldari Navy Vice Admiral Insignia I"
+              }
+            }
+          },
+          "CONCORD": {
+            "id": 733,
+            "name": "CONCORD",
+            "subgroups": {},
+            "items": {
+              "CONCORD Captain Emblem": {
+                "item_id": 16122,
+                "name": "CONCORD Captain Emblem"
+              },
+              "CONCORD Colonel Emblem": {
+                "item_id": 16124,
+                "name": "CONCORD Colonel Emblem"
+              },
+              "CONCORD General Emblem": {
+                "item_id": 16125,
+                "name": "CONCORD General Emblem"
+              },
+              "CONCORD Officer Emblem": {
+                "item_id": 16118,
+                "name": "CONCORD Officer Emblem"
+              },
+              "CONCORD Panther Emblem": {
+                "item_id": 16121,
+                "name": "CONCORD Panther Emblem"
+              },
+              "CONCORD Piranha Emblem": {
+                "item_id": 16120,
+                "name": "CONCORD Piranha Emblem"
+              },
+              "CONCORD Raptor Emblem": {
+                "item_id": 16123,
+                "name": "CONCORD Raptor Emblem"
+              },
+              "CONCORD Soldier Emblem": {
+                "item_id": 16119,
+                "name": "CONCORD Soldier Emblem"
+              },
+              "CONCORD Star Emblem": {
+                "item_id": 16617,
+                "name": "CONCORD Star Emblem"
+              }
+            }
+          },
+          "Gallente Navy": {
+            "id": 734,
+            "name": "Gallente Navy",
+            "subgroups": {},
+            "items": {
+              "Federation Navy Command Sergeant Major Insignia I": {
+                "item_id": 15646,
+                "name": "Federation Navy Command Sergeant Major Insignia I"
+              },
+              "Federation Navy Fleet Captain Insignia I": {
+                "item_id": 15592,
+                "name": "Federation Navy Fleet Captain Insignia I"
+              },
+              "Federation Navy Fleet Colonel Insignia I": {
+                "item_id": 15594,
+                "name": "Federation Navy Fleet Colonel Insignia I"
+              },
+              "Federation Navy Fleet Colonel Insignia II": {
+                "item_id": 15673,
+                "name": "Federation Navy Fleet Colonel Insignia II"
+              },
+              "Federation Navy Fleet Commander Insignia": {
+                "item_id": 15650,
+                "name": "Federation Navy Fleet Commander Insignia"
+              },
+              "Federation Navy Fleet Major Insignia I": {
+                "item_id": 15593,
+                "name": "Federation Navy Fleet Major Insignia I"
+              },
+              "Federation Navy Fleet Rear-Admiral Insignia": {
+                "item_id": 28236,
+                "name": "Federation Navy Fleet Rear-Admiral Insignia"
+              },
+              "Federation Navy Midshipman Insignia I": {
+                "item_id": 15587,
+                "name": "Federation Navy Midshipman Insignia I"
+              },
+              "Federation Navy Midshipman Insignia II": {
+                "item_id": 15588,
+                "name": "Federation Navy Midshipman Insignia II"
+              },
+              "Federation Navy Midshipman Insignia III": {
+                "item_id": 15589,
+                "name": "Federation Navy Midshipman Insignia III"
+              },
+              "Federation Navy Raid Leader Insignia": {
+                "item_id": 15648,
+                "name": "Federation Navy Raid Leader Insignia"
+              },
+              "Federation Navy Sergeant Elite Insignia": {
+                "item_id": 15649,
+                "name": "Federation Navy Sergeant Elite Insignia"
+              },
+              "Federation Navy Sergeant Insignia I": {
+                "item_id": 15590,
+                "name": "Federation Navy Sergeant Insignia I"
+              },
+              "Federation Navy Sergeant Insignia II": {
+                "item_id": 15994,
+                "name": "Federation Navy Sergeant Insignia II"
+              },
+              "Federation Navy Sergeant Insignia III": {
+                "item_id": 16002,
+                "name": "Federation Navy Sergeant Insignia III"
+              },
+              "Federation Navy Sergeant Major Insignia I": {
+                "item_id": 15591,
+                "name": "Federation Navy Sergeant Major Insignia I"
+              },
+              "Federation Navy Squad Leader Insignia": {
+                "item_id": 15647,
+                "name": "Federation Navy Squad Leader Insignia"
+              }
+            }
+          },
+          "Individuals": {
+            "id": 737,
+            "name": "Individuals",
+            "subgroups": {},
+            "items": {
+              "Amarr Empire Slave Trader Insignia": {
+                "item_id": 15980,
+                "name": "Amarr Empire Slave Trader Insignia"
+              },
+              "Genom Tara's Insignia": {
+                "item_id": 17817,
+                "name": "Genom Tara's Insignia"
+              },
+              "Jerek Zuomi's Insignia": {
+                "item_id": 15645,
+                "name": "Jerek Zuomi's Insignia"
+              },
+              "Kali Midez's Insignia": {
+                "item_id": 15667,
+                "name": "Kali Midez's Insignia"
+              },
+              "Karzo Sarum's Insignia": {
+                "item_id": 15639,
+                "name": "Karzo Sarum's Insignia"
+              },
+              "Mizuma Gomi's Insignia": {
+                "item_id": 15659,
+                "name": "Mizuma Gomi's Insignia"
+              },
+              "Naiyon Tai's Insignia": {
+                "item_id": 15658,
+                "name": "Naiyon Tai's Insignia"
+              },
+              "Shaqil Dragat's Insignia": {
+                "item_id": 15668,
+                "name": "Shaqil Dragat's Insignia"
+              },
+              "Shimon Jaen's Insignia": {
+                "item_id": 18657,
+                "name": "Shimon Jaen's Insignia"
+              },
+              "Terachi Tash-Murkon's Insignia": {
+                "item_id": 15638,
+                "name": "Terachi Tash-Murkon's Insignia"
+              },
+              "Yeni Sarum's Insignia": {
+                "item_id": 15637,
+                "name": "Yeni Sarum's Insignia"
+              }
+            }
+          },
+          "Khanid Navy": {
+            "id": 735,
+            "name": "Khanid Navy",
+            "subgroups": {},
+            "items": {
+              "Khanid Eagle Insignia": {
+                "item_id": 16186,
+                "name": "Khanid Eagle Insignia"
+              },
+              "Khanid Elite Fighter Insignia": {
+                "item_id": 16181,
+                "name": "Khanid Elite Fighter Insignia"
+              },
+              "Khanid Fighter Insignia": {
+                "item_id": 16180,
+                "name": "Khanid Fighter Insignia"
+              },
+              "Khanid Hawk Insignia": {
+                "item_id": 16185,
+                "name": "Khanid Hawk Insignia"
+              },
+              "Khanid High Commander Insignia": {
+                "item_id": 16188,
+                "name": "Khanid High Commander Insignia"
+              },
+              "Khanid Officer Insignia": {
+                "item_id": 16184,
+                "name": "Khanid Officer Insignia"
+              },
+              "Khanid Rookie Insignia": {
+                "item_id": 16179,
+                "name": "Khanid Rookie Insignia"
+              },
+              "Khanid Royal Insignia": {
+                "item_id": 16189,
+                "name": "Khanid Royal Insignia"
+              },
+              "Khanid Scout Insignia": {
+                "item_id": 16182,
+                "name": "Khanid Scout Insignia"
+              },
+              "Khanid Slave Trader Insignia": {
+                "item_id": 15981,
+                "name": "Khanid Slave Trader Insignia"
+              },
+              "Khanid Sparrow Insignia": {
+                "item_id": 16183,
+                "name": "Khanid Sparrow Insignia"
+              },
+              "Khanid Warbird Insignia": {
+                "item_id": 16187,
+                "name": "Khanid Warbird Insignia"
+              }
+            }
+          },
+          "Minmatar Fleet": {
+            "id": 736,
+            "name": "Minmatar Fleet",
+            "subgroups": {},
+            "items": {
+              "Minmatar Freedom Fighter Insignia I": {
+                "item_id": 15674,
+                "name": "Minmatar Freedom Fighter Insignia I"
+              },
+              "Republic Fleet Captain Insignia I": {
+                "item_id": 15630,
+                "name": "Republic Fleet Captain Insignia I"
+              },
+              "Republic Fleet Commander Insignia I": {
+                "item_id": 15632,
+                "name": "Republic Fleet Commander Insignia I"
+              },
+              "Republic Fleet Commander Insignia II": {
+                "item_id": 15661,
+                "name": "Republic Fleet Commander Insignia II"
+              },
+              "Republic Fleet High Captain Insignia I": {
+                "item_id": 15631,
+                "name": "Republic Fleet High Captain Insignia I"
+              },
+              "Republic Fleet Midshipman Insignia I": {
+                "item_id": 15625,
+                "name": "Republic Fleet Midshipman Insignia I"
+              },
+              "Republic Fleet Midshipman Insignia II": {
+                "item_id": 15626,
+                "name": "Republic Fleet Midshipman Insignia II"
+              },
+              "Republic Fleet Midshipman Insignia III": {
+                "item_id": 15627,
+                "name": "Republic Fleet Midshipman Insignia III"
+              },
+              "Republic Fleet Navy Commander Insignia": {
+                "item_id": 15664,
+                "name": "Republic Fleet Navy Commander Insignia"
+              },
+              "Republic Fleet Navy Rear-Admiral Insignia": {
+                "item_id": 28231,
+                "name": "Republic Fleet Navy Rear-Admiral Insignia"
+              },
+              "Republic Fleet Private Elite Insignia": {
+                "item_id": 15666,
+                "name": "Republic Fleet Private Elite Insignia"
+              },
+              "Republic Fleet Private Insignia I": {
+                "item_id": 15628,
+                "name": "Republic Fleet Private Insignia I"
+              },
+              "Republic Fleet Private Insignia II": {
+                "item_id": 15629,
+                "name": "Republic Fleet Private Insignia II"
+              },
+              "Republic Fleet Private Insignia III": {
+                "item_id": 15660,
+                "name": "Republic Fleet Private Insignia III"
+              },
+              "Republic Fleet Private Insignia IV": {
+                "item_id": 15997,
+                "name": "Republic Fleet Private Insignia IV"
+              },
+              "Republic Fleet Private Insignia V": {
+                "item_id": 15998,
+                "name": "Republic Fleet Private Insignia V"
+              },
+              "Republic Fleet Raid Leader Insignia": {
+                "item_id": 15663,
+                "name": "Republic Fleet Raid Leader Insignia"
+              },
+              "Republic Fleet Squad Leader Insignia": {
+                "item_id": 15662,
+                "name": "Republic Fleet Squad Leader Insignia"
+              }
+            }
+          }
+        },
+        "items": {}
       },
       "Limited Rarities": {
         "id": 3737,
