@@ -574,7 +574,7 @@ async function doGetJSON(path, f, params = {}) {
 		if (inflight == 0) document.getElementById('inflight_spinner').classList.add('d-none');
 	};
 	xhr.open('GET', path);
-	xhr.setRequestHeader('User-Agent', USER_AGENT);
+	xhr.setRequestHeader('X-User-Agent', USER_AGENT);
 	xhr.send();
 	inflight++;
 	document.getElementById('inflight_spinner').classList.remove('d-none');
@@ -592,7 +592,7 @@ async function handleResult(text, f, path, params) {
 async function doGetJSONasync(path) {
 	let res = await fetch(path, {
 		headers: {
-			'User-Agent': USER_AGENT
+			'X-User-Agent': USER_AGENT
 		}
 	});
 	if (!res.ok) throw new Error(`Fetch error: ${res.status} ${res.statusText}`);
