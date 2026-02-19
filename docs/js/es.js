@@ -1,6 +1,6 @@
 let server_started = null;
 
-const USER_AGENT = "EVEconomy (https://eveconomy.online)";
+const USER_AGENT = "EVEconomy (https://eveconomy.online) Squizz Caphinator (squizzc@gmail.com)";
 
 const default_item_id = 44992;
 const default_region_id = null;
