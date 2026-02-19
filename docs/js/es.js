@@ -1,5 +1,7 @@
 let server_started = null;
 
+const USER_AGENT = "EVEconomy (https://eveconomy.online)";
+
 const default_item_id = 44992;
 const default_region_id = null;
 const modification_indication_delay_insert = 300;
@@ -279,7 +281,7 @@ async function loadItem(item_id, region_id = null, refresh = false) {
 	
 	if (regions === null) return setTimeout(loadItem.bind(null, item_id, region_id), 1);
 	clearTimeout(current_item_timeout);
-	if (current_item_id != item_id) doGetJSON(`https://esi.evetech.net/universe/types/${item_id}/?datasource=tranquility&language=en`, populateInfo);
+	if (current_item_id != item_id) doGetJSON(`https://esi.evetech.net/universe/types/${item_id}`, populateInfo);
 
 	console.log('Loading item', item_id, region_id, refresh);
 	item_id = parseInt(item_id);
@@ -305,7 +307,7 @@ async function loadItem(item_id, region_id = null, refresh = false) {
 	let now = Math.floor(Date.parse(new Date().toISOString()) / 1000);
 	let promises = [];
 	check_regions.forEach((region_id) => {
-		promises.push(doGetJSON(`https://esi.evetech.net/markets/${region_id}/orders/?datasource=tranquility&order_type=all&page=1&&type_id=${item_id}`, populateOrders, { page: 1, now: now, refresh: refresh }));
+		promises.push(doGetJSON(`https://esi.evetech.net/markets/${region_id}/orders/?order_type=all&page=1&&type_id=${item_id}`, populateOrders, { page: 1, now: now, refresh: refresh }));
 	});
 	await Promise.allSettled(promises);
 	setTimeout(loadMarketGroups, 250);
@@ -340,7 +342,7 @@ function populateOrders(data, path, params) {
 	if (data.length >= 1000) {
 		let page = params.page + 1;
 		let item_id = data[0].type_id;
-		doGetJSON(`https://esi.evetech.net/markets/${region_id}/orders/?datasource=tranquility&order_type=all&${page}=1&&type_id=${item_id}`, populateOrders, { page: page, now: params.now });
+		doGetJSON(`https://esi.evetech.net/markets/${region_id}/orders/?order_type=all&${page}=1&&type_id=${item_id}`, populateOrders, { page: page, now: params.now });
 	}
 }
 
@@ -388,7 +390,7 @@ function fetchLocations() {
 function fetchLocation(el) {
 	const location_id = parseInt(el.getAttribute('location_id'));
 	if (parseInt(location_id) <= 69999999) {
-		const path = `https://esi.evetech.net/universe/stations/${location_id}/?datasource=tranquility`;
+		const path = `https://esi.evetech.net/universe/stations/${location_id}`;
 		updateNameById(path, el, location_id, false);
 	} else {
 		if (structures[location_id] != null) {
@@ -397,7 +399,7 @@ function fetchLocation(el) {
 			return;
 		}
 		const system_id = parseInt(el.getAttribute('system_id'));
-		const path = `https://esi.evetech.net/universe/systems/${system_id}/?datasource=tranquility&language=en`;
+		const path = `https://esi.evetech.net/universe/systems/${system_id}`;
 		updateNameById(path, el, location_id, true);
 	}
 }
@@ -571,6 +573,7 @@ async function doGetJSON(path, f, params = {}) {
 		if (inflight == 0) document.getElementById('inflight_spinner').classList.add('d-none');
 	};
 	xhr.open('GET', path);
+	xhr.setRequestHeader('User-Agent', USER_AGENT);
 	xhr.send();
 	inflight++;
 	document.getElementById('inflight_spinner').classList.remove('d-none');
@@ -586,7 +589,11 @@ async function handleResult(text, f, path, params) {
 }
 
 async function doGetJSONasync(path) {
-	let res = await fetch(path);
+	let res = await fetch(path, {
+		headers: {
+			'User-Agent': USER_AGENT
+		}
+	});
 	if (!res.ok) throw new Error(`Fetch error: ${res.status} ${res.statusText}`);
 	return await res.json();
 }
