@@ -307,7 +307,7 @@ async function loadItem(item_id, region_id = null, refresh = false) {
 	let now = Math.floor(Date.parse(new Date().toISOString()) / 1000);
 	let promises = [];
 	check_regions.forEach((region_id) => {
-		promises.push(doGetJSON(`https://esi.evetech.net/markets/${region_id}/orders/?order_type=all&page=1&&type_id=${item_id}`, populateOrders, { page: 1, now: now, refresh: refresh }));
+		promises.push(doGetJSON(`https://esi.evetech.net/markets/${region_id}/orders/?order_type=all&page=1&type_id=${item_id}`, populateOrders, { page: 1, now: now, refresh: refresh }));
 	});
 	await Promise.allSettled(promises);
 	setTimeout(loadMarketGroups, 250);
@@ -342,7 +342,7 @@ function populateOrders(data, path, params) {
 	if (data.length >= 1000) {
 		let page = params.page + 1;
 		let item_id = data[0].type_id;
-		doGetJSON(`https://esi.evetech.net/markets/${region_id}/orders/?order_type=all&${page}=1&&type_id=${item_id}`, populateOrders, { page: page, now: params.now });
+		doGetJSON(`https://esi.evetech.net/markets/${region_id}/orders/?order_type=all&page=${page}&type_id=${item_id}`, populateOrders, { page: page, now: params.now });
 	}
 }
 
@@ -556,6 +556,7 @@ async function doGetJSON(path, f, params = {}) {
 	active_fetches[path] = true;
 
 	while (inflight >= 10) await sleep(1);
+	console.log(path);
 
 	//Mconsole.log(getTime(), 'fetching', path);
 	const xhr = new XMLHttpRequest();
