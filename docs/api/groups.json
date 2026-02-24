@@ -21269,22 +21269,6 @@
               "Strong Veilguard Booster": {
                 "item_id": 59633,
                 "name": "Strong Veilguard Booster"
-              },
-              "Wightstorm Sunyata Booster I": {
-                "item_id": 90690,
-                "name": "Wightstorm Sunyata Booster I"
-              },
-              "Wightstorm Sunyata Booster II": {
-                "item_id": 90691,
-                "name": "Wightstorm Sunyata Booster II"
-              },
-              "Wightstorm Sunyata Booster III": {
-                "item_id": 90692,
-                "name": "Wightstorm Sunyata Booster III"
-              },
-              "Wightstorm Sunyata Booster IV": {
-                "item_id": 90693,
-                "name": "Wightstorm Sunyata Booster IV"
               }
             }
           },
@@ -21324,38 +21308,6 @@
               "Expired Hunt Resistance Booster IV": {
                 "item_id": 63660,
                 "name": "Expired Hunt Resistance Booster IV"
-              },
-              "Wightstorm Nirvana Booster I": {
-                "item_id": 90686,
-                "name": "Wightstorm Nirvana Booster I"
-              },
-              "Wightstorm Nirvana Booster II": {
-                "item_id": 90687,
-                "name": "Wightstorm Nirvana Booster II"
-              },
-              "Wightstorm Nirvana Booster III": {
-                "item_id": 90688,
-                "name": "Wightstorm Nirvana Booster III"
-              },
-              "Wightstorm Nirvana Booster IV": {
-                "item_id": 90689,
-                "name": "Wightstorm Nirvana Booster IV"
-              },
-              "Wightstorm Rapture Booster I": {
-                "item_id": 90682,
-                "name": "Wightstorm Rapture Booster I"
-              },
-              "Wightstorm Rapture Booster II": {
-                "item_id": 90683,
-                "name": "Wightstorm Rapture Booster II"
-              },
-              "Wightstorm Rapture Booster III": {
-                "item_id": 90684,
-                "name": "Wightstorm Rapture Booster III"
-              },
-              "Wightstorm Rapture Booster IV": {
-                "item_id": 90685,
-                "name": "Wightstorm Rapture Booster IV"
               }
             }
           },
@@ -21399,22 +21351,6 @@
               "Nocturne Anti-Drain Booster II ( copy )": {
                 "item_id": 87886,
                 "name": "Nocturne Anti-Drain Booster II ( copy )"
-              },
-              "Wightstorm Cetana Booster I": {
-                "item_id": 90677,
-                "name": "Wightstorm Cetana Booster I"
-              },
-              "Wightstorm Cetana Booster II": {
-                "item_id": 90678,
-                "name": "Wightstorm Cetana Booster II"
-              },
-              "Wightstorm Cetana Booster III": {
-                "item_id": 90679,
-                "name": "Wightstorm Cetana Booster III"
-              },
-              "Wightstorm Cetana Booster IV": {
-                "item_id": 90680,
-                "name": "Wightstorm Cetana Booster IV"
               }
             }
           },
@@ -21474,38 +21410,6 @@
               "Expired Vis Vitalis Volatile Booster": {
                 "item_id": 88351,
                 "name": "Expired Vis Vitalis Volatile Booster"
-              },
-              "Wightstorm Manasikara Booster I": {
-                "item_id": 90669,
-                "name": "Wightstorm Manasikara Booster I"
-              },
-              "Wightstorm Manasikara Booster II": {
-                "item_id": 90670,
-                "name": "Wightstorm Manasikara Booster II"
-              },
-              "Wightstorm Manasikara Booster III": {
-                "item_id": 90671,
-                "name": "Wightstorm Manasikara Booster III"
-              },
-              "Wightstorm Manasikara Booster IV": {
-                "item_id": 90672,
-                "name": "Wightstorm Manasikara Booster IV"
-              },
-              "Wightstorm Vitarka Booster I": {
-                "item_id": 90673,
-                "name": "Wightstorm Vitarka Booster I"
-              },
-              "Wightstorm Vitarka Booster II": {
-                "item_id": 90674,
-                "name": "Wightstorm Vitarka Booster II"
-              },
-              "Wightstorm Vitarka Booster III": {
-                "item_id": 90675,
-                "name": "Wightstorm Vitarka Booster III"
-              },
-              "Wightstorm Vitarka Booster IV": {
-                "item_id": 90676,
-                "name": "Wightstorm Vitarka Booster IV"
               }
             }
           },
@@ -21532,10 +21436,6 @@
             "item_id": 55803,
             "name": "Amarr spaceship skill accelerator"
           },
-          "Basic 'Brainfreeze' Cerebral Accelerator": {
-            "item_id": 90694,
-            "name": "Basic 'Brainfreeze' Cerebral Accelerator"
-          },
           "Caldari spaceship skill accelerator": {
             "item_id": 55804,
             "name": "Caldari spaceship skill accelerator"
@@ -21556,10 +21456,6 @@
             "item_id": 63634,
             "name": "Expired Potent 'Guri Kikhivaa' Cerebral Accelerator"
           },
-          "Extended 'Brainfreeze' Cerebral Accelerator": {
-            "item_id": 90696,
-            "name": "Extended 'Brainfreeze' Cerebral Accelerator"
-          },
           "Gallente spaceship skill accelerator": {
             "item_id": 55805,
             "name": "Gallente spaceship skill accelerator"
@@ -21571,10 +21467,6 @@
           "Minmatar spaceship skill accelerator": {
             "item_id": 55806,
             "name": "Minmatar spaceship skill accelerator"
-          },
-          "Potent 'Brainfreeze' Cerebral Accelerator": {
-            "item_id": 90695,
-            "name": "Potent 'Brainfreeze' Cerebral Accelerator"
           },
           "Serenity Basic 'Bonding' Cerebral Accelerator": {
             "item_id": 57433,
@@ -32857,6 +32749,10 @@
                 "item_id": 88587,
                 "name": "Aqueous Cobalt - Unlimited"
               },
+              "Blazing Teal Metallic - Limited": {
+                "item_id": 91987,
+                "name": "Blazing Teal Metallic - Limited"
+              },
               "Bloodcurse Alloy Metallic - Limited": {
                 "item_id": 89946,
                 "name": "Bloodcurse Alloy Metallic - Limited"
@@ -34015,6 +33911,10 @@
               "Metaliminal Typhoon - Limited": {
                 "item_id": 89267,
                 "name": "Metaliminal Typhoon - Limited"
+              },
+              "Momentous Churn - Limited": {
+                "item_id": 91986,
+                "name": "Momentous Churn - Limited"
               },
               "Mountain Wind Spirit - Limited": {
                 "item_id": 84171,
@@ -58275,6 +58175,10 @@
                   "Typhoon Fleet Issue Snowline Bladeracer SKIN": {
                     "item_id": 52890,
                     "name": "Typhoon Fleet Issue Snowline Bladeracer SKIN"
+                  },
+                  "Typhoon Fleet Issue Unbridled Glory SKIN": {
+                    "item_id": 92388,
+                    "name": "Typhoon Fleet Issue Unbridled Glory SKIN"
                   }
                 }
               },
@@ -58430,6 +58334,10 @@
                   "Machariel Spirit SKIN": {
                     "item_id": 44949,
                     "name": "Machariel Spirit SKIN"
+                  },
+                  "Machariel Unbridled Glory SKIN": {
+                    "item_id": 92386,
+                    "name": "Machariel Unbridled Glory SKIN"
                   },
                   "Machariel Versus Blueforce SKIN": {
                     "item_id": 62647,
@@ -61030,6 +60938,10 @@
                       "Revelation Navy Issue Sanguinary Savant SKIN": {
                         "item_id": 79614,
                         "name": "Revelation Navy Issue Sanguinary Savant SKIN"
+                      },
+                      "Revelation Navy Issue Unbridled Glory SKIN": {
+                        "item_id": 92382,
+                        "name": "Revelation Navy Issue Unbridled Glory SKIN"
                       }
                     }
                   },
@@ -62991,6 +62903,10 @@
                       "Sacrilege Star Captain SKIN": {
                         "item_id": 52581,
                         "name": "Sacrilege Star Captain SKIN"
+                      },
+                      "Sacrilege Unbridled Glory SKIN": {
+                        "item_id": 92383,
+                        "name": "Sacrilege Unbridled Glory SKIN"
                       },
                       "Sacrilege War for the Empire SKIN": {
                         "item_id": 84101,
@@ -65032,6 +64948,10 @@
                     "item_id": 44921,
                     "name": "Exequror Navy Issue Spirit SKIN"
                   },
+                  "Exequror Navy Issue Unbridled Glory SKIN": {
+                    "item_id": 92385,
+                    "name": "Exequror Navy Issue Unbridled Glory SKIN"
+                  },
                   "Omen Navy Issue Biosecurity Responders SKIN": {
                     "item_id": 55339,
                     "name": "Omen Navy Issue Biosecurity Responders SKIN"
@@ -65821,6 +65741,10 @@
                     "item_id": 48564,
                     "name": "Vedmak Triglavian Victory SKIN"
                   },
+                  "Vedmak Unbridled Glory SKIN": {
+                    "item_id": 92387,
+                    "name": "Vedmak Unbridled Glory SKIN"
+                  },
                   "Zarmazd Azdaja Extirpated SKIN": {
                     "item_id": 90405,
                     "name": "Zarmazd Azdaja Extirpated SKIN"
@@ -65982,6 +65906,10 @@
                   "Augoror Spirit SKIN": {
                     "item_id": 47305,
                     "name": "Augoror Spirit SKIN"
+                  },
+                  "Augoror Unbridled Glory SKIN": {
+                    "item_id": 92379,
+                    "name": "Augoror Unbridled Glory SKIN"
                   },
                   "Maller Aurora Universalis SKIN": {
                     "item_id": 53368,
@@ -67928,6 +67856,10 @@
                         "item_id": 44909,
                         "name": "Hecate Spirit SKIN"
                       },
+                      "Hecate Unbridled Glory SKIN": {
+                        "item_id": 92384,
+                        "name": "Hecate Unbridled Glory SKIN"
+                      },
                       "Hecate Yoiul Star SKIN": {
                         "item_id": 61125,
                         "name": "Hecate Yoiul Star SKIN"
@@ -69161,6 +69093,10 @@
                       "Retribution Star Captain SKIN": {
                         "item_id": 52571,
                         "name": "Retribution Star Captain SKIN"
+                      },
+                      "Retribution Unbridled Glory SKIN": {
+                        "item_id": 92380,
+                        "name": "Retribution Unbridled Glory SKIN"
                       },
                       "Retribution Yoiul Star SKIN": {
                         "item_id": 57156,
@@ -70608,6 +70544,10 @@
                       "Malediction Star Captain SKIN": {
                         "item_id": 52570,
                         "name": "Malediction Star Captain SKIN"
+                      },
+                      "Malediction Unbridled Glory SKIN": {
+                        "item_id": 92381,
+                        "name": "Malediction Unbridled Glory SKIN"
                       },
                       "Malediction Zydrine Burn SKIN": {
                         "item_id": 81353,
@@ -82341,14 +82281,6 @@
                   "YC119 Yoiul Festival Day 9": {
                     "item_id": 44195,
                     "name": "YC119 Yoiul Festival Day 9"
-                  },
-                  "Yoiul Festival Booster Crate": {
-                    "item_id": 90737,
-                    "name": "Yoiul Festival Booster Crate"
-                  },
-                  "Yoiul Festival Brainfreeze Crate": {
-                    "item_id": 90738,
-                    "name": "Yoiul Festival Brainfreeze Crate"
                   },
                   "Yoiul Festival Fireworks Package": {
                     "item_id": 46825,
