@@ -31633,9 +31633,9 @@
                     "item_id": 85781,
                     "name": "True Krystallos Gloss - Limited"
                   },
-                  "Twilight Treasure Gloss": {
+                  "Twilight Treasure Gloss - Limited": {
                     "item_id": 91138,
-                    "name": "Twilight Treasure Gloss"
+                    "name": "Twilight Treasure Gloss - Limited"
                   },
                   "Uncompromising Scarlet Gloss - Limited": {
                     "item_id": 83288,
@@ -64804,6 +64804,10 @@
                 "name": "Navy Faction",
                 "subgroups": {},
                 "items": {
+                  "Augoror Navy Issue Ardishapur SKIN": {
+                    "item_id": 60675,
+                    "name": "Augoror Navy Issue Ardishapur SKIN"
+                  },
                   "Augoror Navy Issue Arkombine Arisen SKIN": {
                     "item_id": 81021,
                     "name": "Augoror Navy Issue Arkombine Arisen SKIN"
@@ -65882,10 +65886,6 @@
                   "Augoror Khanid SKIN": {
                     "item_id": 34679,
                     "name": "Augoror Khanid SKIN"
-                  },
-                  "Augoror Navy Issue Ardishapur SKIN": {
-                    "item_id": 60675,
-                    "name": "Augoror Navy Issue Ardishapur SKIN"
                   },
                   "Augoror Oasis of Faith SKIN": {
                     "item_id": 53617,
