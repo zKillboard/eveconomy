@@ -17789,57 +17789,6 @@
             },
             "items": {}
           },
-          "Logistics": {
-            "id": 442,
-            "name": "Logistics",
-            "subgroups": {
-              "Amarr": {
-                "id": 443,
-                "name": "Amarr",
-                "subgroups": {},
-                "items": {
-                  "Guardian Blueprint": {
-                    "item_id": 11988,
-                    "name": "Guardian Blueprint"
-                  }
-                }
-              },
-              "Caldari": {
-                "id": 444,
-                "name": "Caldari",
-                "subgroups": {},
-                "items": {
-                  "Basilisk Blueprint": {
-                    "item_id": 11986,
-                    "name": "Basilisk Blueprint"
-                  }
-                }
-              },
-              "Gallente": {
-                "id": 445,
-                "name": "Gallente",
-                "subgroups": {},
-                "items": {
-                  "Oneiros Blueprint": {
-                    "item_id": 11990,
-                    "name": "Oneiros Blueprint"
-                  }
-                }
-              },
-              "Minmatar": {
-                "id": 446,
-                "name": "Minmatar",
-                "subgroups": {},
-                "items": {
-                  "Scimitar Blueprint": {
-                    "item_id": 11979,
-                    "name": "Scimitar Blueprint"
-                  }
-                }
-              }
-            },
-            "items": {}
-          },
           "Mining Barges": {
             "id": 496,
             "name": "Mining Barges",
@@ -31653,6 +31602,14 @@
                     "item_id": 88478,
                     "name": "Verdant Atmos Gloss - Unlimited"
                   },
+                  "Verdigris Referendum Gloss - Limited": {
+                    "item_id": 92577,
+                    "name": "Verdigris Referendum Gloss - Limited"
+                  },
+                  "Verdigris Referendum Gloss - Unlimited": {
+                    "item_id": 92578,
+                    "name": "Verdigris Referendum Gloss - Unlimited"
+                  },
                   "Villore Viridescent Gloss - Limited": {
                     "item_id": 84010,
                     "name": "Villore Viridescent Gloss - Limited"
@@ -31780,6 +31737,14 @@
                     "item_id": 83325,
                     "name": "Citric Substitute Matte - Unlimited"
                   },
+                  "Civic Ember Matte - Limited": {
+                    "item_id": 92579,
+                    "name": "Civic Ember Matte - Limited"
+                  },
+                  "Civic Ember Matte - Unlimited": {
+                    "item_id": 92580,
+                    "name": "Civic Ember Matte - Unlimited"
+                  },
                   "Corrupted Coral Matte - Unlimited": {
                     "item_id": 86678,
                     "name": "Corrupted Coral Matte - Unlimited"
@@ -31827,6 +31792,14 @@
                   "Deprecated - Do not publish": {
                     "item_id": 84807,
                     "name": "Deprecated - Do not publish"
+                  },
+                  "Diverse Unakite Matte - Limited": {
+                    "item_id": 92581,
+                    "name": "Diverse Unakite Matte - Limited"
+                  },
+                  "Diverse Unakite Matte - Unlimited": {
+                    "item_id": 92582,
+                    "name": "Diverse Unakite Matte - Unlimited"
                   },
                   "Dusty Residue Matte - Limited": {
                     "item_id": 90601,
@@ -32789,6 +32762,14 @@
                 "item_id": 88608,
                 "name": "Burnt Patina Metallic - Unlimited"
               },
+              "Caille Steel Metallic - Limited": {
+                "item_id": 92589,
+                "name": "Caille Steel Metallic - Limited"
+              },
+              "Caille Steel Metallic - Unlimited": {
+                "item_id": 92590,
+                "name": "Caille Steel Metallic - Unlimited"
+              },
               "Cereulean Crest Metallic - Limited": {
                 "item_id": 91142,
                 "name": "Cereulean Crest Metallic - Limited"
@@ -32973,6 +32954,14 @@
                 "item_id": 84095,
                 "name": "Intaki Emerald Metallic - Limited"
               },
+              "Intaki Obsidian Metallic - Unlimited": {
+                "item_id": 92592,
+                "name": "Intaki Obsidian Metallic - Unlimited"
+              },
+              "Intaki Obsidian Metallic- Limited": {
+                "item_id": 92591,
+                "name": "Intaki Obsidian Metallic- Limited"
+              },
               "Ionized Verdigris Metallic - Limited": {
                 "item_id": 88581,
                 "name": "Ionized Verdigris Metallic - Limited"
@@ -33109,6 +33098,10 @@
                 "item_id": 83065,
                 "name": "Sefrim Gold Metallic - Unlimited"
               },
+              "Senatorial Swamp Metallic - Limited": {
+                "item_id": 92583,
+                "name": "Senatorial Swamp Metallic - Limited"
+              },
               "Silver Honor Metallic - Limited": {
                 "item_id": 84170,
                 "name": "Silver Honor Metallic - Limited"
@@ -33165,6 +33158,14 @@
                 "item_id": 89264,
                 "name": "Sunken Plating Metallic - Limited"
               },
+              "Tei-Su Meadow Metallic - Unlimited": {
+                "item_id": 92588,
+                "name": "Tei-Su Meadow Metallic - Unlimited"
+              },
+              "Tei-Su Meadow Metallic- Limited": {
+                "item_id": 92587,
+                "name": "Tei-Su Meadow Metallic- Limited"
+              },
               "Tekton Verdigris Metallic - Limited": {
                 "item_id": 87797,
                 "name": "Tekton Verdigris Metallic - Limited"
@@ -33192,6 +33193,14 @@
               "Tropic Alloy Metallic - Unlimited": {
                 "item_id": 88591,
                 "name": "Tropic Alloy Metallic - Unlimited"
+              },
+              "Turquoise Accord Metallic - Limited": {
+                "item_id": 92585,
+                "name": "Turquoise Accord Metallic - Limited"
+              },
+              "Turquoise Accord Metallic - Unlimited": {
+                "item_id": 92586,
+                "name": "Turquoise Accord Metallic - Unlimited"
               },
               "Twilight Corrosion Metallic - Limited": {
                 "item_id": 88605,
@@ -33643,6 +33652,22 @@
               "Failing Fifth - Unlimited": {
                 "item_id": 82486,
                 "name": "Failing Fifth - Unlimited"
+              },
+              "Federation Ascent - Limited": {
+                "item_id": 92573,
+                "name": "Federation Ascent - Limited"
+              },
+              "Federation Ascent - Unlimited": {
+                "item_id": 92574,
+                "name": "Federation Ascent - Unlimited"
+              },
+              "Federation Field - Limited": {
+                "item_id": 92575,
+                "name": "Federation Field - Limited"
+              },
+              "Federation Field - Unlimited": {
+                "item_id": 92576,
+                "name": "Federation Field - Unlimited"
               },
               "Folded Path - Limited": {
                 "item_id": 82354,
@@ -55011,6 +55036,10 @@
                         "item_id": 37576,
                         "name": "Astarte Valimor Legacy SKIN"
                       },
+                      "Astarte Zydrine Burn SKIN": {
+                        "item_id": 92666,
+                        "name": "Astarte Zydrine Burn SKIN"
+                      },
                       "Eos Biosecurity Responders SKIN": {
                         "item_id": 55622,
                         "name": "Eos Biosecurity Responders SKIN"
@@ -57044,6 +57073,10 @@
                       "Widow Zento Isideko Combine SKIN": {
                         "item_id": 53192,
                         "name": "Widow Zento Isideko Combine SKIN"
+                      },
+                      "Widow Zydrine Burn SKIN": {
+                        "item_id": 92664,
+                        "name": "Widow Zydrine Burn SKIN"
                       }
                     }
                   },
@@ -60842,6 +60875,10 @@
                           "Hubris Luminaire Rising SKIN": {
                             "item_id": 77887,
                             "name": "Hubris Luminaire Rising SKIN"
+                          },
+                          "Hubris Zydrine Burn SKIN": {
+                            "item_id": 92667,
+                            "name": "Hubris Zydrine Burn SKIN"
                           }
                         }
                       },
@@ -64271,6 +64308,10 @@
                       "Rook Zento Isideko Combine SKIN": {
                         "item_id": 53179,
                         "name": "Rook Zento Isideko Combine SKIN"
+                      },
+                      "Rook Zydrine Burn SKIN": {
+                        "item_id": 92663,
+                        "name": "Rook Zydrine Burn SKIN"
                       }
                     }
                   },
@@ -67434,6 +67475,10 @@
                       "Heretic Raata Sunset SKIN": {
                         "item_id": 37499,
                         "name": "Heretic Raata Sunset SKIN"
+                      },
+                      "Heretic Zydrine Burn SKIN": {
+                        "item_id": 92662,
+                        "name": "Heretic Zydrine Burn SKIN"
                       }
                     }
                   },
@@ -69961,6 +70006,10 @@
                       "Cheetah Versus Redforce SKIN": {
                         "item_id": 62021,
                         "name": "Cheetah Versus Redforce SKIN"
+                      },
+                      "Cheetah Zydrine Burn SKIN": {
+                        "item_id": 92661,
+                        "name": "Cheetah Zydrine Burn SKIN"
                       },
                       "Hound Aurora Universalis SKIN": {
                         "item_id": 60918,
@@ -77147,21 +77196,6 @@
                       "Eagle": {
                         "item_id": 12011,
                         "name": "Eagle"
-                      }
-                    }
-                  },
-                  "Gallente": {
-                    "id": 451,
-                    "name": "Gallente",
-                    "subgroups": {},
-                    "items": {
-                      "Deimos": {
-                        "item_id": 12023,
-                        "name": "Deimos"
-                      },
-                      "Ishtar": {
-                        "item_id": 12005,
-                        "name": "Ishtar"
                       }
                     }
                   },
