@@ -538,73 +538,6 @@
         "id": 101,
         "name": "Frequency Crystals",
         "subgroups": {
-          "Advanced Beam Laser Crystals": {
-            "id": 852,
-            "name": "Advanced Beam Laser Crystals",
-            "subgroups": {
-              "Extra Large": {
-                "id": 2257,
-                "name": "Extra Large",
-                "subgroups": {},
-                "items": {
-                  "Aurora XL": {
-                    "item_id": 41336,
-                    "name": "Aurora XL"
-                  },
-                  "Gleam XL": {
-                    "item_id": 41334,
-                    "name": "Gleam XL"
-                  }
-                }
-              },
-              "Large": {
-                "id": 866,
-                "name": "Large",
-                "subgroups": {},
-                "items": {
-                  "Aurora L": {
-                    "item_id": 12824,
-                    "name": "Aurora L"
-                  },
-                  "Gleam L": {
-                    "item_id": 12828,
-                    "name": "Gleam L"
-                  }
-                }
-              },
-              "Medium": {
-                "id": 867,
-                "name": "Medium",
-                "subgroups": {},
-                "items": {
-                  "Aurora M": {
-                    "item_id": 12822,
-                    "name": "Aurora M"
-                  },
-                  "Gleam M": {
-                    "item_id": 12826,
-                    "name": "Gleam M"
-                  }
-                }
-              },
-              "Small": {
-                "id": 868,
-                "name": "Small",
-                "subgroups": {},
-                "items": {
-                  "Aurora S": {
-                    "item_id": 12559,
-                    "name": "Aurora S"
-                  },
-                  "Gleam S": {
-                    "item_id": 12557,
-                    "name": "Gleam S"
-                  }
-                }
-              }
-            },
-            "items": {}
-          },
           "Advanced Pulse Laser Crystals": {
             "id": 853,
             "name": "Advanced Pulse Laser Crystals",
@@ -3609,29 +3542,6 @@
                   "Scourge Rage Rocket": {
                     "item_id": 24471,
                     "name": "Scourge Rage Rocket"
-                  }
-                }
-              },
-              "Advanced Long Range Rockets": {
-                "id": 928,
-                "name": "Advanced Long Range Rockets",
-                "subgroups": {},
-                "items": {
-                  "Inferno Javelin Rocket": {
-                    "item_id": 24479,
-                    "name": "Inferno Javelin Rocket"
-                  },
-                  "Mjolnir Javelin Rocket": {
-                    "item_id": 13119,
-                    "name": "Mjolnir Javelin Rocket"
-                  },
-                  "Nova Javelin Rocket": {
-                    "item_id": 24478,
-                    "name": "Nova Javelin Rocket"
-                  },
-                  "Scourge Javelin Rocket": {
-                    "item_id": 24477,
-                    "name": "Scourge Javelin Rocket"
                   }
                 }
               },
@@ -10019,62 +9929,6 @@
                 "name": "Nanite Repair Paste Blueprint"
               }
             }
-          },
-          "Probes": {
-            "id": 1520,
-            "name": "Probes",
-            "subgroups": {
-              "Interdiction Probes": {
-                "id": 1529,
-                "name": "Interdiction Probes",
-                "subgroups": {},
-                "items": {
-                  "Stasis Webification Probe Blueprint": {
-                    "item_id": 56749,
-                    "name": "Stasis Webification Probe Blueprint"
-                  },
-                  "Warp Disrupt Probe Blueprint": {
-                    "item_id": 22779,
-                    "name": "Warp Disrupt Probe Blueprint"
-                  }
-                }
-              },
-              "Scan Probes": {
-                "id": 320,
-                "name": "Scan Probes",
-                "subgroups": {},
-                "items": {
-                  "Combat Scanner Probe I Blueprint": {
-                    "item_id": 30029,
-                    "name": "Combat Scanner Probe I Blueprint"
-                  },
-                  "Core Scanner Probe I Blueprint": {
-                    "item_id": 30014,
-                    "name": "Core Scanner Probe I Blueprint"
-                  }
-                }
-              },
-              "Survey Probes": {
-                "id": 1521,
-                "name": "Survey Probes",
-                "subgroups": {},
-                "items": {
-                  "Discovery Survey Probe I Blueprint": {
-                    "item_id": 32854,
-                    "name": "Discovery Survey Probe I Blueprint"
-                  },
-                  "Gaze Survey Probe I Blueprint": {
-                    "item_id": 32855,
-                    "name": "Gaze Survey Probe I Blueprint"
-                  },
-                  "Quest Survey Probe I Blueprint": {
-                    "item_id": 32839,
-                    "name": "Quest Survey Probe I Blueprint"
-                  }
-                }
-              }
-            },
-            "items": {}
           },
           "Projectile Ammo": {
             "id": 299,
@@ -17789,6 +17643,57 @@
             },
             "items": {}
           },
+          "Logistics": {
+            "id": 442,
+            "name": "Logistics",
+            "subgroups": {
+              "Amarr": {
+                "id": 443,
+                "name": "Amarr",
+                "subgroups": {},
+                "items": {
+                  "Guardian Blueprint": {
+                    "item_id": 11988,
+                    "name": "Guardian Blueprint"
+                  }
+                }
+              },
+              "Caldari": {
+                "id": 444,
+                "name": "Caldari",
+                "subgroups": {},
+                "items": {
+                  "Basilisk Blueprint": {
+                    "item_id": 11986,
+                    "name": "Basilisk Blueprint"
+                  }
+                }
+              },
+              "Gallente": {
+                "id": 445,
+                "name": "Gallente",
+                "subgroups": {},
+                "items": {
+                  "Oneiros Blueprint": {
+                    "item_id": 11990,
+                    "name": "Oneiros Blueprint"
+                  }
+                }
+              },
+              "Minmatar": {
+                "id": 446,
+                "name": "Minmatar",
+                "subgroups": {},
+                "items": {
+                  "Scimitar Blueprint": {
+                    "item_id": 11979,
+                    "name": "Scimitar Blueprint"
+                  }
+                }
+              }
+            },
+            "items": {}
+          },
           "Mining Barges": {
             "id": 496,
             "name": "Mining Barges",
@@ -18174,17 +18079,6 @@
             "id": 2162,
             "name": "Electronics and Sensor Upgrades",
             "subgroups": {
-              "CPU Upgrades": {
-                "id": 2173,
-                "name": "CPU Upgrades",
-                "subgroups": {},
-                "items": {
-                  "Standup Co-Processor Array I Blueprint": {
-                    "item_id": 37028,
-                    "name": "Standup Co-Processor Array I Blueprint"
-                  }
-                }
-              },
               "Ship Tractor Beams": {
                 "id": 2187,
                 "name": "Ship Tractor Beams",
@@ -42305,65 +42199,6 @@
                   }
                 }
               },
-              "Medium": {
-                "id": 690,
-                "name": "Medium",
-                "subgroups": {},
-                "items": {
-                  "Ammatar Navy Medium Energy Neutralizer": {
-                    "item_id": 15796,
-                    "name": "Ammatar Navy Medium Energy Neutralizer"
-                  },
-                  "Corpum A-Type Medium Energy Neutralizer": {
-                    "item_id": 37627,
-                    "name": "Corpum A-Type Medium Energy Neutralizer"
-                  },
-                  "Corpum B-Type Medium Energy Neutralizer": {
-                    "item_id": 37626,
-                    "name": "Corpum B-Type Medium Energy Neutralizer"
-                  },
-                  "Corpum C-Type Medium Energy Neutralizer": {
-                    "item_id": 37625,
-                    "name": "Corpum C-Type Medium Energy Neutralizer"
-                  },
-                  "Dark Blood Medium Energy Neutralizer": {
-                    "item_id": 14164,
-                    "name": "Dark Blood Medium Energy Neutralizer"
-                  },
-                  "Imperial Navy Medium Energy Neutralizer": {
-                    "item_id": 15802,
-                    "name": "Imperial Navy Medium Energy Neutralizer"
-                  },
-                  "Medium 'Ditch' Energy Neutralizer": {
-                    "item_id": 23817,
-                    "name": "Medium 'Ditch' Energy Neutralizer"
-                  },
-                  "Medium Energy Neutralizer I": {
-                    "item_id": 12265,
-                    "name": "Medium Energy Neutralizer I"
-                  },
-                  "Medium Energy Neutralizer II": {
-                    "item_id": 12267,
-                    "name": "Medium Energy Neutralizer II"
-                  },
-                  "Medium Gremlin Compact Energy Neutralizer": {
-                    "item_id": 16467,
-                    "name": "Medium Gremlin Compact Energy Neutralizer"
-                  },
-                  "Medium Infectious Scoped Energy Neutralizer": {
-                    "item_id": 16469,
-                    "name": "Medium Infectious Scoped Energy Neutralizer"
-                  },
-                  "Ryhad's Modified Medium Energy Neutralizer": {
-                    "item_id": 84992,
-                    "name": "Ryhad's Modified Medium Energy Neutralizer"
-                  },
-                  "True Sansha Medium Energy Neutralizer": {
-                    "item_id": 14166,
-                    "name": "True Sansha Medium Energy Neutralizer"
-                  }
-                }
-              },
               "Small": {
                 "id": 689,
                 "name": "Small",
@@ -43169,25 +43004,6 @@
               "Industrial Cynosural Field Generator": {
                 "item_id": 52694,
                 "name": "Industrial Cynosural Field Generator"
-              }
-            }
-          },
-          "Jump Portal Generators": {
-            "id": 1640,
-            "name": "Jump Portal Generators",
-            "subgroups": {},
-            "items": {
-              "Covert Jump Portal Generator I": {
-                "item_id": 28652,
-                "name": "Covert Jump Portal Generator I"
-              },
-              "Industrial Jump Portal Generator I": {
-                "item_id": 63140,
-                "name": "Industrial Jump Portal Generator I"
-              },
-              "Jump Portal Generator I": {
-                "item_id": 23953,
-                "name": "Jump Portal Generator I"
               }
             }
           }
@@ -76526,24 +76342,6 @@
         "id": 1381,
         "name": "Capital Ships",
         "subgroups": {
-          "Capital Industrial Ships": {
-            "id": 1047,
-            "name": "Capital Industrial Ships",
-            "subgroups": {
-              "ORE": {
-                "id": 1048,
-                "name": "ORE",
-                "subgroups": {},
-                "items": {
-                  "Rorqual": {
-                    "item_id": 28352,
-                    "name": "Rorqual"
-                  }
-                }
-              }
-            },
-            "items": {}
-          },
           "Carriers": {
             "id": 817,
             "name": "Carriers",
@@ -76626,193 +76424,6 @@
                     "name": "Nidhoggur"
                   }
                 }
-              }
-            },
-            "items": {}
-          },
-          "Dreadnoughts": {
-            "id": 761,
-            "name": "Dreadnoughts",
-            "subgroups": {
-              "Advanced Dreadnoughts": {
-                "id": 3510,
-                "name": "Advanced Dreadnoughts",
-                "subgroups": {
-                  "Lancer Dreadnoughts": {
-                    "id": 3511,
-                    "name": "Lancer Dreadnoughts",
-                    "subgroups": {
-                      "Amarr": {
-                        "id": 3512,
-                        "name": "Amarr",
-                        "subgroups": {},
-                        "items": {
-                          "Bane": {
-                            "item_id": 77283,
-                            "name": "Bane"
-                          }
-                        }
-                      },
-                      "Caldari": {
-                        "id": 3513,
-                        "name": "Caldari",
-                        "subgroups": {},
-                        "items": {
-                          "Karura": {
-                            "item_id": 77284,
-                            "name": "Karura"
-                          }
-                        }
-                      },
-                      "Gallente": {
-                        "id": 3515,
-                        "name": "Gallente",
-                        "subgroups": {},
-                        "items": {
-                          "Hubris": {
-                            "item_id": 77281,
-                            "name": "Hubris"
-                          }
-                        }
-                      },
-                      "Minmatar": {
-                        "id": 3514,
-                        "name": "Minmatar",
-                        "subgroups": {},
-                        "items": {
-                          "Valravn": {
-                            "item_id": 77288,
-                            "name": "Valravn"
-                          }
-                        }
-                      }
-                    },
-                    "items": {}
-                  }
-                },
-                "items": {}
-              },
-              "Faction Dreadnoughts": {
-                "id": 2288,
-                "name": "Faction Dreadnoughts",
-                "subgroups": {
-                  "Navy Faction": {
-                    "id": 3484,
-                    "name": "Navy Faction",
-                    "subgroups": {},
-                    "items": {
-                      "Moros Navy Issue": {
-                        "item_id": 73792,
-                        "name": "Moros Navy Issue"
-                      },
-                      "Naglfar Fleet Issue": {
-                        "item_id": 73787,
-                        "name": "Naglfar Fleet Issue"
-                      },
-                      "Phoenix Navy Issue": {
-                        "item_id": 73793,
-                        "name": "Phoenix Navy Issue"
-                      },
-                      "Revelation Navy Issue": {
-                        "item_id": 73790,
-                        "name": "Revelation Navy Issue"
-                      }
-                    }
-                  },
-                  "Pirate Faction": {
-                    "id": 3483,
-                    "name": "Pirate Faction",
-                    "subgroups": {},
-                    "items": {
-                      "Caiman": {
-                        "item_id": 45647,
-                        "name": "Caiman"
-                      },
-                      "Chemosh": {
-                        "item_id": 42243,
-                        "name": "Chemosh"
-                      },
-                      "Sarathiel": {
-                        "item_id": 87381,
-                        "name": "Sarathiel"
-                      },
-                      "Vehement": {
-                        "item_id": 42124,
-                        "name": "Vehement"
-                      }
-                    }
-                  }
-                },
-                "items": {}
-              },
-              "Precursor Dreadnoughts": {
-                "id": 3508,
-                "name": "Precursor Dreadnoughts",
-                "subgroups": {
-                  "Triglavian": {
-                    "id": 2690,
-                    "name": "Triglavian",
-                    "subgroups": {},
-                    "items": {
-                      "Zirnitra": {
-                        "item_id": 52907,
-                        "name": "Zirnitra"
-                      }
-                    }
-                  }
-                },
-                "items": {}
-              },
-              "Standard Dreadnoughts": {
-                "id": 3509,
-                "name": "Standard Dreadnoughts",
-                "subgroups": {
-                  "Amarr": {
-                    "id": 762,
-                    "name": "Amarr",
-                    "subgroups": {},
-                    "items": {
-                      "Revelation": {
-                        "item_id": 19720,
-                        "name": "Revelation"
-                      }
-                    }
-                  },
-                  "Caldari": {
-                    "id": 763,
-                    "name": "Caldari",
-                    "subgroups": {},
-                    "items": {
-                      "Phoenix": {
-                        "item_id": 19726,
-                        "name": "Phoenix"
-                      }
-                    }
-                  },
-                  "Gallente": {
-                    "id": 764,
-                    "name": "Gallente",
-                    "subgroups": {},
-                    "items": {
-                      "Moros": {
-                        "item_id": 19724,
-                        "name": "Moros"
-                      }
-                    }
-                  },
-                  "Minmatar": {
-                    "id": 765,
-                    "name": "Minmatar",
-                    "subgroups": {},
-                    "items": {
-                      "Naglfar": {
-                        "item_id": 19722,
-                        "name": "Naglfar"
-                      }
-                    }
-                  }
-                },
-                "items": {}
               }
             },
             "items": {}
@@ -77196,6 +76807,21 @@
                       "Eagle": {
                         "item_id": 12011,
                         "name": "Eagle"
+                      }
+                    }
+                  },
+                  "Gallente": {
+                    "id": 451,
+                    "name": "Gallente",
+                    "subgroups": {},
+                    "items": {
+                      "Deimos": {
+                        "item_id": 12023,
+                        "name": "Deimos"
+                      },
+                      "Ishtar": {
+                        "item_id": 12005,
+                        "name": "Ishtar"
                       }
                     }
                   },
@@ -78810,23 +78436,7 @@
           "Industrial Command Ships": {
             "id": 2335,
             "name": "Industrial Command Ships",
-            "subgroups": {
-              "ORE": {
-                "id": 2336,
-                "name": "ORE",
-                "subgroups": {},
-                "items": {
-                  "Orca": {
-                    "item_id": 28606,
-                    "name": "Orca"
-                  },
-                  "Porpoise": {
-                    "item_id": 42244,
-                    "name": "Porpoise"
-                  }
-                }
-              }
-            },
+            "subgroups": {},
             "items": {}
           },
           "Standard Haulers": {
@@ -79337,21 +78947,6 @@
               "Primae": {
                 "item_id": 2863,
                 "name": "Primae"
-              }
-            }
-          },
-          "Special Edition Interceptors": {
-            "id": 1932,
-            "name": "Special Edition Interceptors",
-            "subgroups": {},
-            "items": {
-              "Imp": {
-                "item_id": 35779,
-                "name": "Imp"
-              },
-              "Whiptail": {
-                "item_id": 33673,
-                "name": "Whiptail"
               }
             }
           },
@@ -84770,21 +84365,6 @@
               "Standup XL Energy Neutralizer II": {
                 "item_id": 47330,
                 "name": "Standup XL Energy Neutralizer II"
-              }
-            }
-          },
-          "Point Defense Batteries": {
-            "id": 2221,
-            "name": "Point Defense Batteries",
-            "subgroups": {},
-            "items": {
-              "Standup Point Defense Battery I": {
-                "item_id": 35926,
-                "name": "Standup Point Defense Battery I"
-              },
-              "Standup Point Defense Battery II": {
-                "item_id": 47327,
-                "name": "Standup Point Defense Battery II"
               }
             }
           },
