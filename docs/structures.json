@@ -43612,8 +43612,8 @@
   "1052934039628": "Pulin - Research base",
   "1052940363251": "Reteka - Ironhyde Reprocessing Plant",
   "1052940808447": "Aramachi - VII-7 U TARAVU",
-  "1052941447605": "Shenda - 8-20 Mon",
-  "1052942905212": "Shenda - 8-10 Tue",
+  "1052941447605": "Shenda - 8-20",
+  "1052942905212": "Shenda - 8-10",
   "1052943617266": "Shenda - 8-18 Wed",
   "1052943969773": "Shenda - 6-16 Thu",
   "1052946134261": "Teonusude - Nilfgard Ice Traders",
@@ -43643,7 +43643,7 @@
   "1052992087556": "Hampinen - GEC TRAPHOUSE",
   "1053007315414": "E-WMT7 - Vote Switch4 2",
   "1053010083830": "Maila - Meirin love Canglan (Free Port)",
-  "1053010519140": "J144553 - Test Disk",
+  "1053010519140": "J144553 - Testing",
   "1053010821283": "Tsuruma - Measured Economic Expansion",
   "1053033479988": "Hibi - ROCK OF DEUS",
   "1053039586216": "Onuse - Space Forge",
@@ -43679,5 +43679,10 @@
   "1053126026645": "Kusomonmon - SunBurst",
   "1053126120281": "Faurent - The glOREy Hole",
   "1053129872688": "Rilera - Khanid Checkpoint",
-  "1053130286871": "Ahrosseas - Public Reprocessing Facility"
+  "1053130286871": "Ahrosseas - Public Reprocessing Facility",
+  "1053152589212": "Ihakana - Point Hope II-FREEPORT",
+  "1053152851946": "Ivih - Anvilreach Refining Array",
+  "1053154652093": "Egghelende - Point Hope-FREEPORT",
+  "1053156908313": "Isie - Minedrill Mining Outpost",
+  "1053164233275": "Maurasi - YTC Blackwall Station"
 }
