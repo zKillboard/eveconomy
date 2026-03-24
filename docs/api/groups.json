@@ -465,6 +465,14 @@
                     "item_id": 53302,
                     "name": "Meson Exotic Plasma XL"
                   },
+                  "Mystic XL": {
+                    "item_id": 92952,
+                    "name": "Mystic XL"
+                  },
+                  "Occult XL": {
+                    "item_id": 92954,
+                    "name": "Occult XL"
+                  },
                   "Tetryon Exotic Plasma XL": {
                     "item_id": 53301,
                     "name": "Tetryon Exotic Plasma XL"
@@ -538,6 +546,73 @@
         "id": 101,
         "name": "Frequency Crystals",
         "subgroups": {
+          "Advanced Beam Laser Crystals": {
+            "id": 852,
+            "name": "Advanced Beam Laser Crystals",
+            "subgroups": {
+              "Extra Large": {
+                "id": 2257,
+                "name": "Extra Large",
+                "subgroups": {},
+                "items": {
+                  "Aurora XL": {
+                    "item_id": 41336,
+                    "name": "Aurora XL"
+                  },
+                  "Gleam XL": {
+                    "item_id": 41334,
+                    "name": "Gleam XL"
+                  }
+                }
+              },
+              "Large": {
+                "id": 866,
+                "name": "Large",
+                "subgroups": {},
+                "items": {
+                  "Aurora L": {
+                    "item_id": 12824,
+                    "name": "Aurora L"
+                  },
+                  "Gleam L": {
+                    "item_id": 12828,
+                    "name": "Gleam L"
+                  }
+                }
+              },
+              "Medium": {
+                "id": 867,
+                "name": "Medium",
+                "subgroups": {},
+                "items": {
+                  "Aurora M": {
+                    "item_id": 12822,
+                    "name": "Aurora M"
+                  },
+                  "Gleam M": {
+                    "item_id": 12826,
+                    "name": "Gleam M"
+                  }
+                }
+              },
+              "Small": {
+                "id": 868,
+                "name": "Small",
+                "subgroups": {},
+                "items": {
+                  "Aurora S": {
+                    "item_id": 12559,
+                    "name": "Aurora S"
+                  },
+                  "Gleam S": {
+                    "item_id": 12557,
+                    "name": "Gleam S"
+                  }
+                }
+              }
+            },
+            "items": {}
+          },
           "Advanced Pulse Laser Crystals": {
             "id": 853,
             "name": "Advanced Pulse Laser Crystals",
@@ -3542,6 +3617,29 @@
                   "Scourge Rage Rocket": {
                     "item_id": 24471,
                     "name": "Scourge Rage Rocket"
+                  }
+                }
+              },
+              "Advanced Long Range Rockets": {
+                "id": 928,
+                "name": "Advanced Long Range Rockets",
+                "subgroups": {},
+                "items": {
+                  "Inferno Javelin Rocket": {
+                    "item_id": 24479,
+                    "name": "Inferno Javelin Rocket"
+                  },
+                  "Mjolnir Javelin Rocket": {
+                    "item_id": 13119,
+                    "name": "Mjolnir Javelin Rocket"
+                  },
+                  "Nova Javelin Rocket": {
+                    "item_id": 24478,
+                    "name": "Nova Javelin Rocket"
+                  },
+                  "Scourge Javelin Rocket": {
+                    "item_id": 24477,
+                    "name": "Scourge Javelin Rocket"
                   }
                 }
               },
@@ -6797,6 +6895,10 @@
                 "item_id": 37864,
                 "name": "Men's Scope Network Special Correspondent Suit"
               },
+              "Men's Select Freedom Combat Suit": {
+                "item_id": 92644,
+                "name": "Men's Select Freedom Combat Suit"
+              },
               "Men's Silver Supremacy Jacket": {
                 "item_id": 54380,
                 "name": "Men's Silver Supremacy Jacket"
@@ -7188,6 +7290,25 @@
           }
         },
         "items": {}
+      },
+      "Portrait Backgrounds": {
+        "id": 3846,
+        "name": "Portrait Backgrounds",
+        "subgroups": {},
+        "items": {
+          "Moreau’s Gallente Background": {
+            "item_id": 92554,
+            "name": "Moreau’s Gallente Background"
+          },
+          "Roden’s Gallente Background": {
+            "item_id": 92555,
+            "name": "Roden’s Gallente Background"
+          },
+          "Tenzin’s Gallente Background": {
+            "item_id": 92550,
+            "name": "Tenzin’s Gallente Background"
+          }
+        }
       },
       "Women's Clothing": {
         "id": 1402,
@@ -8446,6 +8567,10 @@
               "Women's Scope Network Special Correspondent Suit": {
                 "item_id": 37863,
                 "name": "Women's Scope Network Special Correspondent Suit"
+              },
+              "Women's Select Freedom Combat Suit": {
+                "item_id": 92631,
+                "name": "Women's Select Freedom Combat Suit"
               },
               "Women's Silver Supremacy Jacket": {
                 "item_id": 54362,
@@ -9929,6 +10054,62 @@
                 "name": "Nanite Repair Paste Blueprint"
               }
             }
+          },
+          "Probes": {
+            "id": 1520,
+            "name": "Probes",
+            "subgroups": {
+              "Interdiction Probes": {
+                "id": 1529,
+                "name": "Interdiction Probes",
+                "subgroups": {},
+                "items": {
+                  "Stasis Webification Probe Blueprint": {
+                    "item_id": 56749,
+                    "name": "Stasis Webification Probe Blueprint"
+                  },
+                  "Warp Disrupt Probe Blueprint": {
+                    "item_id": 22779,
+                    "name": "Warp Disrupt Probe Blueprint"
+                  }
+                }
+              },
+              "Scan Probes": {
+                "id": 320,
+                "name": "Scan Probes",
+                "subgroups": {},
+                "items": {
+                  "Combat Scanner Probe I Blueprint": {
+                    "item_id": 30029,
+                    "name": "Combat Scanner Probe I Blueprint"
+                  },
+                  "Core Scanner Probe I Blueprint": {
+                    "item_id": 30014,
+                    "name": "Core Scanner Probe I Blueprint"
+                  }
+                }
+              },
+              "Survey Probes": {
+                "id": 1521,
+                "name": "Survey Probes",
+                "subgroups": {},
+                "items": {
+                  "Discovery Survey Probe I Blueprint": {
+                    "item_id": 32854,
+                    "name": "Discovery Survey Probe I Blueprint"
+                  },
+                  "Gaze Survey Probe I Blueprint": {
+                    "item_id": 32855,
+                    "name": "Gaze Survey Probe I Blueprint"
+                  },
+                  "Quest Survey Probe I Blueprint": {
+                    "item_id": 32839,
+                    "name": "Quest Survey Probe I Blueprint"
+                  }
+                }
+              }
+            },
+            "items": {}
           },
           "Projectile Ammo": {
             "id": 299,
@@ -18079,6 +18260,17 @@
             "id": 2162,
             "name": "Electronics and Sensor Upgrades",
             "subgroups": {
+              "CPU Upgrades": {
+                "id": 2173,
+                "name": "CPU Upgrades",
+                "subgroups": {},
+                "items": {
+                  "Standup Co-Processor Array I Blueprint": {
+                    "item_id": 37028,
+                    "name": "Standup Co-Processor Array I Blueprint"
+                  }
+                }
+              },
               "Ship Tractor Beams": {
                 "id": 2187,
                 "name": "Ship Tractor Beams",
@@ -18771,6 +18963,10 @@
                   "CONCORD Rogue Analysis Beacon Blueprint": {
                     "item_id": 60514,
                     "name": "CONCORD Rogue Analysis Beacon Blueprint"
+                  },
+                  "CONCORD-Carrier Rogue Analysis Beacon Blueprint": {
+                    "item_id": 92182,
+                    "name": "CONCORD-Carrier Rogue Analysis Beacon Blueprint"
                   }
                 }
               },
@@ -19722,6 +19918,14 @@
                 "item_id": 28306,
                 "name": "'Integrated' Wasp"
               },
+              "Arabellata SW-900-I": {
+                "item_id": 92035,
+                "name": "Arabellata SW-900-I"
+              },
+              "Atlas SD-900": {
+                "item_id": 92466,
+                "name": "Atlas SD-900"
+              },
               "Berserker I": {
                 "item_id": 2476,
                 "name": "Berserker I"
@@ -19742,9 +19946,17 @@
                 "item_id": 33681,
                 "name": "Gecko"
               },
+              "Humboldt EC-900-I": {
+                "item_id": 92041,
+                "name": "Humboldt EC-900-I"
+              },
               "Imperial Navy Praetor": {
                 "item_id": 31870,
                 "name": "Imperial Navy Praetor"
+              },
+              "Meganeura TP-900-I": {
+                "item_id": 92463,
+                "name": "Meganeura TP-900-I"
               },
               "Ogre I": {
                 "item_id": 2444,
@@ -19765,6 +19977,14 @@
               "Republic Fleet Berserker": {
                 "item_id": 31892,
                 "name": "Republic Fleet Berserker"
+              },
+              "Tabanida EV-900-I": {
+                "item_id": 92038,
+                "name": "Tabanida EV-900-I"
+              },
+              "Torafugu TD-900": {
+                "item_id": 92469,
+                "name": "Torafugu TD-900"
               },
               "Wasp I": {
                 "item_id": 1201,
@@ -19849,9 +20069,33 @@
                 "item_id": 31864,
                 "name": "Imperial Navy Acolyte"
               },
+              "Inshore EC-300-I": {
+                "item_id": 92039,
+                "name": "Inshore EC-300-I"
+              },
+              "Orbweaver SW-300-I": {
+                "item_id": 92033,
+                "name": "Orbweaver SW-300-I"
+              },
               "Republic Fleet Warrior": {
                 "item_id": 31888,
                 "name": "Republic Fleet Warrior"
+              },
+              "Skimmer TP-300-I": {
+                "item_id": 92461,
+                "name": "Skimmer TP-300-I"
+              },
+              "Stellate TD-300": {
+                "item_id": 92467,
+                "name": "Stellate TD-300"
+              },
+              "Stigmella SD-300": {
+                "item_id": 92464,
+                "name": "Stigmella SD-300"
+              },
+              "Tick EV-300-I": {
+                "item_id": 92036,
+                "name": "Tick EV-300-I"
               },
               "Warrior I": {
                 "item_id": 2486,
@@ -19912,6 +20156,10 @@
                 "item_id": 31874,
                 "name": "Caldari Navy Vespa"
               },
+              "Darter TP-600-I": {
+                "item_id": 92462,
+                "name": "Darter TP-600-I"
+              },
               "Federation Navy Hammerhead": {
                 "item_id": 31882,
                 "name": "Federation Navy Hammerhead"
@@ -19924,6 +20172,14 @@
                 "item_id": 2185,
                 "name": "Hammerhead II"
               },
+              "Huntsman SW-600-I": {
+                "item_id": 92034,
+                "name": "Huntsman SW-600-I"
+              },
+              "Immaculate TD-600": {
+                "item_id": 92468,
+                "name": "Immaculate TD-600"
+              },
               "Imperial Navy Infiltrator": {
                 "item_id": 31866,
                 "name": "Imperial Navy Infiltrator"
@@ -19935,6 +20191,18 @@
               "Infiltrator II": {
                 "item_id": 2175,
                 "name": "Infiltrator II"
+              },
+              "Luna SD-600": {
+                "item_id": 92465,
+                "name": "Luna SD-600"
+              },
+              "Mosquito EV-600-I": {
+                "item_id": 92037,
+                "name": "Mosquito EV-600-I"
+              },
+              "Nertic EC-600-I": {
+                "item_id": 92040,
+                "name": "Nertic EC-600-I"
               },
               "Republic Fleet Valkyrie": {
                 "item_id": 31890,
@@ -21109,6 +21377,22 @@
                 "item_id": 63652,
                 "name": "Expired Hunt Pursuit Booster IV"
               },
+              "Federation Electronics Booster I": {
+                "item_id": 92002,
+                "name": "Federation Electronics Booster I"
+              },
+              "Federation Electronics Booster II": {
+                "item_id": 92003,
+                "name": "Federation Electronics Booster II"
+              },
+              "Federation Electronics Booster III": {
+                "item_id": 92004,
+                "name": "Federation Electronics Booster III"
+              },
+              "Federation Electronics Booster IV": {
+                "item_id": 92005,
+                "name": "Federation Electronics Booster IV"
+              },
               "Strong Veilguard Booster": {
                 "item_id": 59633,
                 "name": "Strong Veilguard Booster"
@@ -21151,6 +21435,38 @@
               "Expired Hunt Resistance Booster IV": {
                 "item_id": 63660,
                 "name": "Expired Hunt Resistance Booster IV"
+              },
+              "Federation Defense Booster I": {
+                "item_id": 92006,
+                "name": "Federation Defense Booster I"
+              },
+              "Federation Defense Booster II": {
+                "item_id": 92017,
+                "name": "Federation Defense Booster II"
+              },
+              "Federation Defense Booster III": {
+                "item_id": 92018,
+                "name": "Federation Defense Booster III"
+              },
+              "Federation Defense Booster IV": {
+                "item_id": 92019,
+                "name": "Federation Defense Booster IV"
+              },
+              "Federation Projection Booster I": {
+                "item_id": 92025,
+                "name": "Federation Projection Booster I"
+              },
+              "Federation Projection Booster II": {
+                "item_id": 92026,
+                "name": "Federation Projection Booster II"
+              },
+              "Federation Projection Booster III": {
+                "item_id": 92027,
+                "name": "Federation Projection Booster III"
+              },
+              "Federation Projection Booster IV": {
+                "item_id": 92028,
+                "name": "Federation Projection Booster IV"
               }
             }
           },
@@ -21190,6 +21506,22 @@
               "Expired Hunt Missile Velocity Booster IV": {
                 "item_id": 63668,
                 "name": "Expired Hunt Missile Velocity Booster IV"
+              },
+              "Federation Mobility Booster I": {
+                "item_id": 91998,
+                "name": "Federation Mobility Booster I"
+              },
+              "Federation Mobility Booster II": {
+                "item_id": 91999,
+                "name": "Federation Mobility Booster II"
+              },
+              "Federation Mobility Booster III": {
+                "item_id": 92000,
+                "name": "Federation Mobility Booster III"
+              },
+              "Federation Mobility Booster IV": {
+                "item_id": 92001,
+                "name": "Federation Mobility Booster IV"
               },
               "Nocturne Anti-Drain Booster II ( copy )": {
                 "item_id": 87886,
@@ -21253,6 +21585,38 @@
               "Expired Vis Vitalis Volatile Booster": {
                 "item_id": 88351,
                 "name": "Expired Vis Vitalis Volatile Booster"
+              },
+              "Federation Application Booster I": {
+                "item_id": 92021,
+                "name": "Federation Application Booster I"
+              },
+              "Federation Application Booster II": {
+                "item_id": 92022,
+                "name": "Federation Application Booster II"
+              },
+              "Federation Application Booster III": {
+                "item_id": 92023,
+                "name": "Federation Application Booster III"
+              },
+              "Federation Application Booster IV": {
+                "item_id": 92024,
+                "name": "Federation Application Booster IV"
+              },
+              "Federation Damage Booster I": {
+                "item_id": 92029,
+                "name": "Federation Damage Booster I"
+              },
+              "Federation Damage Booster II": {
+                "item_id": 92030,
+                "name": "Federation Damage Booster II"
+              },
+              "Federation Damage Booster III": {
+                "item_id": 92031,
+                "name": "Federation Damage Booster III"
+              },
+              "Federation Damage Booster IV": {
+                "item_id": 92032,
+                "name": "Federation Damage Booster IV"
               }
             }
           },
@@ -21279,6 +21643,10 @@
             "item_id": 55803,
             "name": "Amarr spaceship skill accelerator"
           },
+          "Basic 'Demos' Cerebral Accelerator": {
+            "item_id": 92158,
+            "name": "Basic 'Demos' Cerebral Accelerator"
+          },
           "Caldari spaceship skill accelerator": {
             "item_id": 55804,
             "name": "Caldari spaceship skill accelerator"
@@ -21299,6 +21667,10 @@
             "item_id": 63634,
             "name": "Expired Potent 'Guri Kikhivaa' Cerebral Accelerator"
           },
+          "Extended 'Demos' Cerebral Accelerator": {
+            "item_id": 92160,
+            "name": "Extended 'Demos' Cerebral Accelerator"
+          },
           "Gallente spaceship skill accelerator": {
             "item_id": 55805,
             "name": "Gallente spaceship skill accelerator"
@@ -21310,6 +21682,10 @@
           "Minmatar spaceship skill accelerator": {
             "item_id": 55806,
             "name": "Minmatar spaceship skill accelerator"
+          },
+          "Potent 'Demos' Cerebral Accelerator": {
+            "item_id": 92159,
+            "name": "Potent 'Demos' Cerebral Accelerator"
           },
           "Serenity Basic 'Bonding' Cerebral Accelerator": {
             "item_id": 57433,
@@ -32848,13 +33224,13 @@
                 "item_id": 84095,
                 "name": "Intaki Emerald Metallic - Limited"
               },
+              "Intaki Obsidian Metallic - Limited": {
+                "item_id": 92591,
+                "name": "Intaki Obsidian Metallic - Limited"
+              },
               "Intaki Obsidian Metallic - Unlimited": {
                 "item_id": 92592,
                 "name": "Intaki Obsidian Metallic - Unlimited"
-              },
-              "Intaki Obsidian Metallic- Limited": {
-                "item_id": 92591,
-                "name": "Intaki Obsidian Metallic- Limited"
               },
               "Ionized Verdigris Metallic - Limited": {
                 "item_id": 88581,
@@ -32996,6 +33372,10 @@
                 "item_id": 92583,
                 "name": "Senatorial Swamp Metallic - Limited"
               },
+              "Senatorial Swamp Metallic - Unlimited": {
+                "item_id": 92584,
+                "name": "Senatorial Swamp Metallic - Unlimited"
+              },
               "Silver Honor Metallic - Limited": {
                 "item_id": 84170,
                 "name": "Silver Honor Metallic - Limited"
@@ -33052,13 +33432,13 @@
                 "item_id": 89264,
                 "name": "Sunken Plating Metallic - Limited"
               },
+              "Tei-Su Meadow Metallic - Limited": {
+                "item_id": 92587,
+                "name": "Tei-Su Meadow Metallic - Limited"
+              },
               "Tei-Su Meadow Metallic - Unlimited": {
                 "item_id": 92588,
                 "name": "Tei-Su Meadow Metallic - Unlimited"
-              },
-              "Tei-Su Meadow Metallic- Limited": {
-                "item_id": 92587,
-                "name": "Tei-Su Meadow Metallic- Limited"
               },
               "Tekton Verdigris Metallic - Limited": {
                 "item_id": 87797,
@@ -33147,14 +33527,6 @@
             "name": "Patterns",
             "subgroups": {},
             "items": {
-              " Orbital Cavalier - Limited": {
-                "item_id": 89687,
-                "name": " Orbital Cavalier - Limited"
-              },
-              " Orbital Cavalier - Unlimited": {
-                "item_id": 89688,
-                "name": " Orbital Cavalier - Unlimited"
-              },
               "Abyssal Corruption - Limited": {
                 "item_id": 82392,
                 "name": "Abyssal Corruption - Limited"
@@ -33862,6 +34234,14 @@
               "Oncoming Storm - Limited": {
                 "item_id": 87800,
                 "name": "Oncoming Storm - Limited"
+              },
+              "Orbital Cavalier - Limited": {
+                "item_id": 89687,
+                "name": "Orbital Cavalier - Limited"
+              },
+              "Orbital Cavalier - Unlimited": {
+                "item_id": 89688,
+                "name": "Orbital Cavalier - Unlimited"
               },
               "Oxidative Stress - Limited": {
                 "item_id": 90648,
@@ -41065,6 +41445,10 @@
                 "item_id": 37544,
                 "name": "Highstroke Scoped Guidance Disruptor"
               },
+              "Tenzin’s Modified Guidance Disruptor": {
+                "item_id": 92451,
+                "name": "Tenzin’s Modified Guidance Disruptor"
+              },
               "Tracking Disruptor I": {
                 "item_id": 2108,
                 "name": "Tracking Disruptor I"
@@ -42199,6 +42583,65 @@
                   }
                 }
               },
+              "Medium": {
+                "id": 690,
+                "name": "Medium",
+                "subgroups": {},
+                "items": {
+                  "Ammatar Navy Medium Energy Neutralizer": {
+                    "item_id": 15796,
+                    "name": "Ammatar Navy Medium Energy Neutralizer"
+                  },
+                  "Corpum A-Type Medium Energy Neutralizer": {
+                    "item_id": 37627,
+                    "name": "Corpum A-Type Medium Energy Neutralizer"
+                  },
+                  "Corpum B-Type Medium Energy Neutralizer": {
+                    "item_id": 37626,
+                    "name": "Corpum B-Type Medium Energy Neutralizer"
+                  },
+                  "Corpum C-Type Medium Energy Neutralizer": {
+                    "item_id": 37625,
+                    "name": "Corpum C-Type Medium Energy Neutralizer"
+                  },
+                  "Dark Blood Medium Energy Neutralizer": {
+                    "item_id": 14164,
+                    "name": "Dark Blood Medium Energy Neutralizer"
+                  },
+                  "Imperial Navy Medium Energy Neutralizer": {
+                    "item_id": 15802,
+                    "name": "Imperial Navy Medium Energy Neutralizer"
+                  },
+                  "Medium 'Ditch' Energy Neutralizer": {
+                    "item_id": 23817,
+                    "name": "Medium 'Ditch' Energy Neutralizer"
+                  },
+                  "Medium Energy Neutralizer I": {
+                    "item_id": 12265,
+                    "name": "Medium Energy Neutralizer I"
+                  },
+                  "Medium Energy Neutralizer II": {
+                    "item_id": 12267,
+                    "name": "Medium Energy Neutralizer II"
+                  },
+                  "Medium Gremlin Compact Energy Neutralizer": {
+                    "item_id": 16467,
+                    "name": "Medium Gremlin Compact Energy Neutralizer"
+                  },
+                  "Medium Infectious Scoped Energy Neutralizer": {
+                    "item_id": 16469,
+                    "name": "Medium Infectious Scoped Energy Neutralizer"
+                  },
+                  "Ryhad's Modified Medium Energy Neutralizer": {
+                    "item_id": 84992,
+                    "name": "Ryhad's Modified Medium Energy Neutralizer"
+                  },
+                  "True Sansha Medium Energy Neutralizer": {
+                    "item_id": 14166,
+                    "name": "True Sansha Medium Energy Neutralizer"
+                  }
+                }
+              },
               "Small": {
                 "id": 689,
                 "name": "Small",
@@ -42960,6 +43403,18 @@
                 "item_id": 43551,
                 "name": "Mining Foreman Burst II"
               },
+              "Presidential Information Command Burst": {
+                "item_id": 92455,
+                "name": "Presidential Information Command Burst"
+              },
+              "Presidential Mining Foreman Burst": {
+                "item_id": 92456,
+                "name": "Presidential Mining Foreman Burst"
+              },
+              "Presidential Skirmish Command Burst": {
+                "item_id": 92458,
+                "name": "Presidential Skirmish Command Burst"
+              },
               "Shield Command Burst I": {
                 "item_id": 42529,
                 "name": "Shield Command Burst I"
@@ -43004,6 +43459,25 @@
               "Industrial Cynosural Field Generator": {
                 "item_id": 52694,
                 "name": "Industrial Cynosural Field Generator"
+              }
+            }
+          },
+          "Jump Portal Generators": {
+            "id": 1640,
+            "name": "Jump Portal Generators",
+            "subgroups": {},
+            "items": {
+              "Covert Jump Portal Generator I": {
+                "item_id": 28652,
+                "name": "Covert Jump Portal Generator I"
+              },
+              "Industrial Jump Portal Generator I": {
+                "item_id": 63140,
+                "name": "Industrial Jump Portal Generator I"
+              },
+              "Jump Portal Generator I": {
+                "item_id": 23953,
+                "name": "Jump Portal Generator I"
               }
             }
           }
@@ -46424,6 +46898,10 @@
                     "item_id": 15813,
                     "name": "Republic Fleet Nanofiber Structure"
                   },
+                  "Roden’s Modified Nanofiber Internal Structure": {
+                    "item_id": 92454,
+                    "name": "Roden’s Modified Nanofiber Internal Structure"
+                  },
                   "Synthetic Hull Conversion Nanofiber Structure": {
                     "item_id": 21500,
                     "name": "Synthetic Hull Conversion Nanofiber Structure"
@@ -47796,6 +48274,10 @@
               "Expanded Probe Launcher II": {
                 "item_id": 4260,
                 "name": "Expanded Probe Launcher II"
+              },
+              "Moreau’s Modified Expanded Scan Probe Launcher": {
+                "item_id": 92453,
+                "name": "Moreau’s Modified Expanded Scan Probe Launcher"
               },
               "Sisters Core Probe Launcher": {
                 "item_id": 28758,
@@ -52904,6 +53386,10 @@
                       "Ultratidal Entropic Disintegrator I": {
                         "item_id": 52915,
                         "name": "Ultratidal Entropic Disintegrator I"
+                      },
+                      "Ultratidal Entropic Disintegrator II": {
+                        "item_id": 92514,
+                        "name": "Ultratidal Entropic Disintegrator II"
                       }
                     }
                   },
@@ -55092,6 +55578,10 @@
                     "item_id": 77874,
                     "name": "Brutix Navy Issue Luminaire Rising SKIN"
                   },
+                  "Brutix Navy Issue Luminaire Zenith SKIN": {
+                    "item_id": 57592,
+                    "name": "Brutix Navy Issue Luminaire Zenith SKIN"
+                  },
                   "Brutix Navy Issue Sapphire Sungrazer SKIN": {
                     "item_id": 45025,
                     "name": "Brutix Navy Issue Sapphire Sungrazer SKIN"
@@ -55356,6 +55846,10 @@
                     "item_id": 84117,
                     "name": "Myrmidon Navy Issue Media Miasma SKIN"
                   },
+                  "Myrmidon Navy Issue Pride of the Federation SKIN": {
+                    "item_id": 93075,
+                    "name": "Myrmidon Navy Issue Pride of the Federation SKIN"
+                  },
                   "Myrmidon Navy Issue Versus Redforce SKIN": {
                     "item_id": 73878,
                     "name": "Myrmidon Navy Issue Versus Redforce SKIN"
@@ -55406,6 +55900,10 @@
                   "Alligator Capsuleer Day XXI SKIN": {
                     "item_id": 82070,
                     "name": "Alligator Capsuleer Day XXI SKIN"
+                  },
+                  "Alligator Cryptic Ecdysis SKIN": {
+                    "item_id": 92966,
+                    "name": "Alligator Cryptic Ecdysis SKIN"
                   },
                   "Alligator Empyrean Outlaws SKIN": {
                     "item_id": 79756,
@@ -56262,6 +56760,10 @@
                   "Brutix Luminaire Rising SKIN": {
                     "item_id": 64570,
                     "name": "Brutix Luminaire Rising SKIN"
+                  },
+                  "Brutix Luminaire Zenith SKIN": {
+                    "item_id": 57414,
+                    "name": "Brutix Luminaire Zenith SKIN"
                   },
                   "Brutix Malagrin Marshlight SKIN": {
                     "item_id": 53013,
@@ -57395,6 +57897,10 @@
                         "item_id": 76286,
                         "name": "Kronos Heartsurge SKIN"
                       },
+                      "Kronos Inner Zone Shipping SKIN": {
+                        "item_id": 34816,
+                        "name": "Kronos Inner Zone Shipping SKIN"
+                      },
                       "Kronos Inner Zone Vanguard SKIN": {
                         "item_id": 52750,
                         "name": "Kronos Inner Zone Vanguard SKIN"
@@ -57804,6 +58310,10 @@
                   "Megathron Navy Issue Luminaire Rising SKIN": {
                     "item_id": 77872,
                     "name": "Megathron Navy Issue Luminaire Rising SKIN"
+                  },
+                  "Megathron Navy Issue Pride of the Federation SKIN": {
+                    "item_id": 93076,
+                    "name": "Megathron Navy Issue Pride of the Federation SKIN"
                   },
                   "Megathron Navy Issue Sapphire Sungrazer SKIN": {
                     "item_id": 45027,
@@ -58295,6 +58805,10 @@
                   "Rattlesnake Aurora Universalis SKIN": {
                     "item_id": 91243,
                     "name": "Rattlesnake Aurora Universalis SKIN"
+                  },
+                  "Rattlesnake Cryptic Ecdysis SKIN": {
+                    "item_id": 92967,
+                    "name": "Rattlesnake Cryptic Ecdysis SKIN"
                   },
                   "Rattlesnake Empyrean Outlaws SKIN": {
                     "item_id": 79755,
@@ -59882,6 +60396,10 @@
                         "item_id": 79616,
                         "name": "Dagon Sanguinary Savant SKIN"
                       },
+                      "Loggerhead Cryptic Ecdysis SKIN": {
+                        "item_id": 92969,
+                        "name": "Loggerhead Cryptic Ecdysis SKIN"
+                      },
                       "Loggerhead Glacial Drift SKIN": {
                         "item_id": 46877,
                         "name": "Loggerhead Glacial Drift SKIN"
@@ -60410,6 +60928,10 @@
                         "item_id": 56598,
                         "name": "Thanatos Malagrin Marshlight SKIN"
                       },
+                      "Thanatos Pride of the Federation SKIN": {
+                        "item_id": 93071,
+                        "name": "Thanatos Pride of the Federation SKIN"
+                      },
                       "Thanatos Quafe SKIN": {
                         "item_id": 34653,
                         "name": "Thanatos Quafe SKIN"
@@ -60806,6 +61328,10 @@
                       "Caiman Arkombine Arisen SKIN": {
                         "item_id": 79872,
                         "name": "Caiman Arkombine Arisen SKIN"
+                      },
+                      "Caiman Cryptic Ecdysis SKIN": {
+                        "item_id": 92968,
+                        "name": "Caiman Cryptic Ecdysis SKIN"
                       },
                       "Caiman Glacial Drift SKIN": {
                         "item_id": 46876,
@@ -61748,6 +62274,10 @@
                     "item_id": 84080,
                     "name": "Bowhead Equinox Era SKIN"
                   },
+                  "Bowhead Gallente Industrial Livery Serenity Only SKIN": {
+                    "item_id": 49333,
+                    "name": "Bowhead Gallente Industrial Livery Serenity Only SKIN"
+                  },
                   "Bowhead Gallente Industrial Livery SKIN": {
                     "item_id": 43785,
                     "name": "Bowhead Gallente Industrial Livery SKIN"
@@ -62063,6 +62593,10 @@
                       "Azariel Empyrean Outlaws SKIN": {
                         "item_id": 79838,
                         "name": "Azariel Empyrean Outlaws SKIN"
+                      },
+                      "Komodo Cryptic Ecdysis SKIN": {
+                        "item_id": 92970,
+                        "name": "Komodo Cryptic Ecdysis SKIN"
                       },
                       "Komodo Glacial Drift SKIN": {
                         "item_id": 46878,
@@ -63805,6 +64339,10 @@
                         "item_id": 46411,
                         "name": "Oneiros Kopis Edge SKIN"
                       },
+                      "Oneiros Pride of the Federation SKIN": {
+                        "item_id": 93074,
+                        "name": "Oneiros Pride of the Federation SKIN"
+                      },
                       "Oneiros Serpentis SKIN": {
                         "item_id": 42173,
                         "name": "Oneiros Serpentis SKIN"
@@ -64207,6 +64745,10 @@
                       "Lachesis Kopis Edge SKIN": {
                         "item_id": 46413,
                         "name": "Lachesis Kopis Edge SKIN"
+                      },
+                      "Lachesis Pride of the Federation SKIN": {
+                        "item_id": 93070,
+                        "name": "Lachesis Pride of the Federation SKIN"
                       },
                       "Lachesis Serpentis SKIN": {
                         "item_id": 42175,
@@ -65037,6 +65579,10 @@
                     "item_id": 47531,
                     "name": "Vexor Navy Issue Glittering Dream SKIN"
                   },
+                  "Vexor Navy Issue Hunter's Quiver SKIN": {
+                    "item_id": 63638,
+                    "name": "Vexor Navy Issue Hunter's Quiver SKIN"
+                  },
                   "Vexor Navy Issue IGC SKIN": {
                     "item_id": 48556,
                     "name": "Vexor Navy Issue IGC SKIN"
@@ -65056,6 +65602,10 @@
                   "Vexor Navy Issue Luminaire Rising SKIN": {
                     "item_id": 48215,
                     "name": "Vexor Navy Issue Luminaire Rising SKIN"
+                  },
+                  "Vexor Navy Issue Luminaire Zenith SKIN": {
+                    "item_id": 57593,
+                    "name": "Vexor Navy Issue Luminaire Zenith SKIN"
                   },
                   "Vexor Navy Issue Media Miasma SKIN": {
                     "item_id": 84116,
@@ -65219,6 +65769,10 @@
                   "Gila Aurora Universalis SKIN": {
                     "item_id": 60913,
                     "name": "Gila Aurora Universalis SKIN"
+                  },
+                  "Gila Cryptic Ecdysis SKIN": {
+                    "item_id": 92965,
+                    "name": "Gila Cryptic Ecdysis SKIN"
                   },
                   "Gila Deathglow Hunters SKIN": {
                     "item_id": 49433,
@@ -66554,6 +67108,10 @@
                     "item_id": 46718,
                     "name": "Vexor Headhunter SKIN"
                   },
+                  "Vexor Hunter's Quiver SKIN": {
+                    "item_id": 63175,
+                    "name": "Vexor Hunter's Quiver SKIN"
+                  },
                   "Vexor IGC SKIN": {
                     "item_id": 48555,
                     "name": "Vexor IGC SKIN"
@@ -66577,6 +67135,14 @@
                   "Vexor Luminaire Rising SKIN": {
                     "item_id": 64568,
                     "name": "Vexor Luminaire Rising SKIN"
+                  },
+                  "Vexor Luminaire Zenith SKIN": {
+                    "item_id": 57416,
+                    "name": "Vexor Luminaire Zenith SKIN"
+                  },
+                  "Vexor Quafe Green Apple SKIN": {
+                    "item_id": 60578,
+                    "name": "Vexor Quafe Green Apple SKIN"
                   },
                   "Vexor Quafe SKIN": {
                     "item_id": 34696,
@@ -67132,6 +67698,10 @@
                         "item_id": 47527,
                         "name": "Magus Glittering Dream SKIN"
                       },
+                      "Magus Hunter's Quiver SKIN": {
+                        "item_id": 63174,
+                        "name": "Magus Hunter's Quiver SKIN"
+                      },
                       "Magus Inner Zone Vanguard SKIN": {
                         "item_id": 52724,
                         "name": "Magus Inner Zone Vanguard SKIN"
@@ -67401,6 +67971,10 @@
                       "Eris Luminaire Rising SKIN": {
                         "item_id": 89119,
                         "name": "Eris Luminaire Rising SKIN"
+                      },
+                      "Eris Pride of the Federation SKIN": {
+                        "item_id": 93078,
+                        "name": "Eris Pride of the Federation SKIN"
                       },
                       "Eris Serpentis SKIN": {
                         "item_id": 42164,
@@ -67887,6 +68461,10 @@
                   "Mamba Capsuleer Day XXI SKIN": {
                     "item_id": 82067,
                     "name": "Mamba Capsuleer Day XXI SKIN"
+                  },
+                  "Mamba Cryptic Ecdysis SKIN": {
+                    "item_id": 92964,
+                    "name": "Mamba Cryptic Ecdysis SKIN"
                   },
                   "Mamba Empyrean Outlaws SKIN": {
                     "item_id": 79758,
@@ -68683,6 +69261,10 @@
                   "Catalyst Zakura Shumyu SKIN": {
                     "item_id": 57061,
                     "name": "Catalyst Zakura Shumyu SKIN"
+                  },
+                  "Dominix Quafe Green Apple SKIN": {
+                    "item_id": 60579,
+                    "name": "Dominix Quafe Green Apple SKIN"
                   }
                 }
               },
@@ -69168,6 +69750,10 @@
                       "Enyo Kopis Edge SKIN": {
                         "item_id": 46389,
                         "name": "Enyo Kopis Edge SKIN"
+                      },
+                      "Enyo Pride of the Federation SKIN": {
+                        "item_id": 93069,
+                        "name": "Enyo Pride of the Federation SKIN"
                       },
                       "Enyo Serpentis SKIN": {
                         "item_id": 42153,
@@ -71701,6 +72287,10 @@
                     "item_id": 74144,
                     "name": "Worm Aurora Universalis SKIN"
                   },
+                  "Worm Cryptic Ecdysis SKIN": {
+                    "item_id": 92963,
+                    "name": "Worm Cryptic Ecdysis SKIN"
+                  },
                   "Worm Empyrean Outlaws SKIN": {
                     "item_id": 79759,
                     "name": "Worm Empyrean Outlaws SKIN"
@@ -73029,6 +73619,14 @@
                     "item_id": 64398,
                     "name": "Tristan Luminaire Zenith SKIN"
                   },
+                  "Tristan Pride of the Federation SKIN": {
+                    "item_id": 93077,
+                    "name": "Tristan Pride of the Federation SKIN"
+                  },
+                  "Tristan Quafe Green Apple SKIN": {
+                    "item_id": 60577,
+                    "name": "Tristan Quafe Green Apple SKIN"
+                  },
                   "Tristan Quafe SKIN": {
                     "item_id": 34746,
                     "name": "Tristan Quafe SKIN"
@@ -73910,6 +74508,10 @@
                         "item_id": 46751,
                         "name": "Viator Lodestrike SKIN"
                       },
+                      "Viator Pride of the Federation SKIN": {
+                        "item_id": 93072,
+                        "name": "Viator Pride of the Federation SKIN"
+                      },
                       "Viator Ruby Sungrazer SKIN": {
                         "item_id": 45579,
                         "name": "Viator Ruby Sungrazer SKIN"
@@ -74522,6 +75124,10 @@
                   "Epithal Planetary Extraction": {
                     "item_id": 48656,
                     "name": "Epithal Planetary Extraction"
+                  },
+                  "Epithal Pride of the Federation SKIN": {
+                    "item_id": 93073,
+                    "name": "Epithal Pride of the Federation SKIN"
                   },
                   "Epithal Ruby Sungrazer SKIN": {
                     "item_id": 45575,
@@ -76342,6 +76948,24 @@
         "id": 1381,
         "name": "Capital Ships",
         "subgroups": {
+          "Capital Industrial Ships": {
+            "id": 1047,
+            "name": "Capital Industrial Ships",
+            "subgroups": {
+              "ORE": {
+                "id": 1048,
+                "name": "ORE",
+                "subgroups": {},
+                "items": {
+                  "Rorqual": {
+                    "item_id": 28352,
+                    "name": "Rorqual"
+                  }
+                }
+              }
+            },
+            "items": {}
+          },
           "Carriers": {
             "id": 817,
             "name": "Carriers",
@@ -76424,6 +77048,193 @@
                     "name": "Nidhoggur"
                   }
                 }
+              }
+            },
+            "items": {}
+          },
+          "Dreadnoughts": {
+            "id": 761,
+            "name": "Dreadnoughts",
+            "subgroups": {
+              "Advanced Dreadnoughts": {
+                "id": 3510,
+                "name": "Advanced Dreadnoughts",
+                "subgroups": {
+                  "Lancer Dreadnoughts": {
+                    "id": 3511,
+                    "name": "Lancer Dreadnoughts",
+                    "subgroups": {
+                      "Amarr": {
+                        "id": 3512,
+                        "name": "Amarr",
+                        "subgroups": {},
+                        "items": {
+                          "Bane": {
+                            "item_id": 77283,
+                            "name": "Bane"
+                          }
+                        }
+                      },
+                      "Caldari": {
+                        "id": 3513,
+                        "name": "Caldari",
+                        "subgroups": {},
+                        "items": {
+                          "Karura": {
+                            "item_id": 77284,
+                            "name": "Karura"
+                          }
+                        }
+                      },
+                      "Gallente": {
+                        "id": 3515,
+                        "name": "Gallente",
+                        "subgroups": {},
+                        "items": {
+                          "Hubris": {
+                            "item_id": 77281,
+                            "name": "Hubris"
+                          }
+                        }
+                      },
+                      "Minmatar": {
+                        "id": 3514,
+                        "name": "Minmatar",
+                        "subgroups": {},
+                        "items": {
+                          "Valravn": {
+                            "item_id": 77288,
+                            "name": "Valravn"
+                          }
+                        }
+                      }
+                    },
+                    "items": {}
+                  }
+                },
+                "items": {}
+              },
+              "Faction Dreadnoughts": {
+                "id": 2288,
+                "name": "Faction Dreadnoughts",
+                "subgroups": {
+                  "Navy Faction": {
+                    "id": 3484,
+                    "name": "Navy Faction",
+                    "subgroups": {},
+                    "items": {
+                      "Moros Navy Issue": {
+                        "item_id": 73792,
+                        "name": "Moros Navy Issue"
+                      },
+                      "Naglfar Fleet Issue": {
+                        "item_id": 73787,
+                        "name": "Naglfar Fleet Issue"
+                      },
+                      "Phoenix Navy Issue": {
+                        "item_id": 73793,
+                        "name": "Phoenix Navy Issue"
+                      },
+                      "Revelation Navy Issue": {
+                        "item_id": 73790,
+                        "name": "Revelation Navy Issue"
+                      }
+                    }
+                  },
+                  "Pirate Faction": {
+                    "id": 3483,
+                    "name": "Pirate Faction",
+                    "subgroups": {},
+                    "items": {
+                      "Caiman": {
+                        "item_id": 45647,
+                        "name": "Caiman"
+                      },
+                      "Chemosh": {
+                        "item_id": 42243,
+                        "name": "Chemosh"
+                      },
+                      "Sarathiel": {
+                        "item_id": 87381,
+                        "name": "Sarathiel"
+                      },
+                      "Vehement": {
+                        "item_id": 42124,
+                        "name": "Vehement"
+                      }
+                    }
+                  }
+                },
+                "items": {}
+              },
+              "Precursor Dreadnoughts": {
+                "id": 3508,
+                "name": "Precursor Dreadnoughts",
+                "subgroups": {
+                  "Triglavian": {
+                    "id": 2690,
+                    "name": "Triglavian",
+                    "subgroups": {},
+                    "items": {
+                      "Zirnitra": {
+                        "item_id": 52907,
+                        "name": "Zirnitra"
+                      }
+                    }
+                  }
+                },
+                "items": {}
+              },
+              "Standard Dreadnoughts": {
+                "id": 3509,
+                "name": "Standard Dreadnoughts",
+                "subgroups": {
+                  "Amarr": {
+                    "id": 762,
+                    "name": "Amarr",
+                    "subgroups": {},
+                    "items": {
+                      "Revelation": {
+                        "item_id": 19720,
+                        "name": "Revelation"
+                      }
+                    }
+                  },
+                  "Caldari": {
+                    "id": 763,
+                    "name": "Caldari",
+                    "subgroups": {},
+                    "items": {
+                      "Phoenix": {
+                        "item_id": 19726,
+                        "name": "Phoenix"
+                      }
+                    }
+                  },
+                  "Gallente": {
+                    "id": 764,
+                    "name": "Gallente",
+                    "subgroups": {},
+                    "items": {
+                      "Moros": {
+                        "item_id": 19724,
+                        "name": "Moros"
+                      }
+                    }
+                  },
+                  "Minmatar": {
+                    "id": 765,
+                    "name": "Minmatar",
+                    "subgroups": {},
+                    "items": {
+                      "Naglfar": {
+                        "item_id": 19722,
+                        "name": "Naglfar"
+                      }
+                    }
+                  }
+                },
+                "items": {}
               }
             },
             "items": {}
@@ -78436,7 +79247,23 @@
           "Industrial Command Ships": {
             "id": 2335,
             "name": "Industrial Command Ships",
-            "subgroups": {},
+            "subgroups": {
+              "ORE": {
+                "id": 2336,
+                "name": "ORE",
+                "subgroups": {},
+                "items": {
+                  "Orca": {
+                    "item_id": 28606,
+                    "name": "Orca"
+                  },
+                  "Porpoise": {
+                    "item_id": 42244,
+                    "name": "Porpoise"
+                  }
+                }
+              }
+            },
             "items": {}
           },
           "Standard Haulers": {
@@ -78818,9 +79645,21 @@
                 "item_id": 11011,
                 "name": "Guardian-Vexor"
               },
+              "Moreau YC128 Campaign Bus": {
+                "item_id": 92283,
+                "name": "Moreau YC128 Campaign Bus"
+              },
               "Opux Luxury Yacht": {
                 "item_id": 635,
                 "name": "Opux Luxury Yacht"
+              },
+              "Roden YC128 Campaign Bus": {
+                "item_id": 92284,
+                "name": "Roden YC128 Campaign Bus"
+              },
+              "Tenzin YC128 Campaign Bus": {
+                "item_id": 92282,
+                "name": "Tenzin YC128 Campaign Bus"
               },
               "Victorieux Luxury Yacht": {
                 "item_id": 34590,
@@ -78947,6 +79786,21 @@
               "Primae": {
                 "item_id": 2863,
                 "name": "Primae"
+              }
+            }
+          },
+          "Special Edition Interceptors": {
+            "id": 1932,
+            "name": "Special Edition Interceptors",
+            "subgroups": {},
+            "items": {
+              "Imp": {
+                "item_id": 35779,
+                "name": "Imp"
+              },
+              "Whiptail": {
+                "item_id": 33673,
+                "name": "Whiptail"
               }
             }
           },
@@ -79136,9 +79990,17 @@
             "item_id": 12484,
             "name": "Amarr Drone Specialization"
           },
+          "Amarr Fighter Specialization": {
+            "item_id": 92397,
+            "name": "Amarr Fighter Specialization"
+          },
           "Caldari Drone Specialization": {
             "item_id": 12487,
             "name": "Caldari Drone Specialization"
+          },
+          "Caldari Fighter Specialization": {
+            "item_id": 92400,
+            "name": "Caldari Fighter Specialization"
           },
           "Drone Avionics": {
             "item_id": 3437,
@@ -79175,6 +80037,10 @@
           "Gallente Drone Specialization": {
             "item_id": 12486,
             "name": "Gallente Drone Specialization"
+          },
+          "Gallente Fighter Specialization": {
+            "item_id": 92398,
+            "name": "Gallente Fighter Specialization"
           },
           "Heavy Drone Operation": {
             "item_id": 3441,
@@ -79215,6 +80081,10 @@
           "Minmatar Drone Specialization": {
             "item_id": 12485,
             "name": "Minmatar Drone Specialization"
+          },
+          "Minmatar Fighter Specialization": {
+            "item_id": 92399,
+            "name": "Minmatar Fighter Specialization"
           },
           "Mutated Drone Specialization": {
             "item_id": 60515,
@@ -79483,6 +80353,10 @@
           "Capital Blaster Specialization": {
             "item_id": 41405,
             "name": "Capital Blaster Specialization"
+          },
+          "Capital Disintegrator Specialization": {
+            "item_id": 92541,
+            "name": "Capital Disintegrator Specialization"
           },
           "Capital Energy Turret": {
             "item_id": 20327,
@@ -81656,6 +82530,41 @@
                   }
                 }
               },
+              "Gallente Election Assets": {
+                "id": 3845,
+                "name": "Gallente Election Assets",
+                "subgroups": {},
+                "items": {
+                  "Federal Defender Apparel Crate": {
+                    "item_id": 92180,
+                    "name": "Federal Defender Apparel Crate"
+                  },
+                  "Gallente Election Booster Crate": {
+                    "item_id": 92181,
+                    "name": "Gallente Election Booster Crate"
+                  },
+                  "Gallente Election Cerebral Accelerator Crate": {
+                    "item_id": 92161,
+                    "name": "Gallente Election Cerebral Accelerator Crate"
+                  },
+                  "Gallente Election SKINr Crate": {
+                    "item_id": 92375,
+                    "name": "Gallente Election SKINr Crate"
+                  },
+                  "Gallente Election Y128 SKINs Crate": {
+                    "item_id": 92092,
+                    "name": "Gallente Election Y128 SKINs Crate"
+                  },
+                  "Political Favor": {
+                    "item_id": 92391,
+                    "name": "Political Favor"
+                  },
+                  "Presidential Candidate Favor": {
+                    "item_id": 92392,
+                    "name": "Presidential Candidate Favor"
+                  }
+                }
+              },
               "Guardian's Gala Assets": {
                 "id": 3839,
                 "name": "Guardian's Gala Assets",
@@ -82262,10 +83171,6 @@
             "name": "Trinkets and misc.",
             "subgroups": {},
             "items": {
-              " Alliance Tournament XXI Script": {
-                "item_id": 91387,
-                "name": " Alliance Tournament XXI Script"
-              },
               "[CNS] Kiirasha Final Broadcast Fragment": {
                 "item_id": 44209,
                 "name": "[CNS] Kiirasha Final Broadcast Fragment"
@@ -82337,6 +83242,10 @@
               "Alliance Tournament XV Meta": {
                 "item_id": 47057,
                 "name": "Alliance Tournament XV Meta"
+              },
+              "Alliance Tournament XXI Script": {
+                "item_id": 91387,
+                "name": "Alliance Tournament XXI Script"
               },
               "Amarr Inception Package": {
                 "item_id": 43930,
@@ -84368,6 +85277,21 @@
               }
             }
           },
+          "Point Defense Batteries": {
+            "id": 2221,
+            "name": "Point Defense Batteries",
+            "subgroups": {},
+            "items": {
+              "Standup Point Defense Battery I": {
+                "item_id": 35926,
+                "name": "Standup Point Defense Battery I"
+              },
+              "Standup Point Defense Battery II": {
+                "item_id": 47327,
+                "name": "Standup Point Defense Battery II"
+              }
+            }
+          },
           "Reactor Control Units": {
             "id": 2222,
             "name": "Reactor Control Units",
@@ -85547,6 +86471,10 @@
               "CONCORD Rogue Analysis Beacon": {
                 "item_id": 60244,
                 "name": "CONCORD Rogue Analysis Beacon"
+              },
+              "CONCORD-Carrier Rogue Analysis Beacon": {
+                "item_id": 92183,
+                "name": "CONCORD-Carrier Rogue Analysis Beacon"
               }
             }
           },
@@ -89495,6 +90423,10 @@
             "item_id": 90072,
             "name": "Cybernetic Neural Lattice"
           },
+          "Drone Iteration Data": {
+            "item_id": 92149,
+            "name": "Drone Iteration Data"
+          },
           "Nation Stormhive Shard": {
             "item_id": 91105,
             "name": "Nation Stormhive Shard"
@@ -89801,6 +90733,10 @@
         "name": "Rogue Drone Data",
         "subgroups": {},
         "items": {
+          "Rampancy Data Dump": {
+            "item_id": 91773,
+            "name": "Rampancy Data Dump"
+          },
           "Rogue Drone Infestation Data": {
             "item_id": 60459,
             "name": "Rogue Drone Infestation Data"
@@ -90068,6 +91004,10 @@
         "name": "Triglavian Data",
         "subgroups": {},
         "items": {
+          "Hyper-Vigilance Core": {
+            "item_id": 92179,
+            "name": "Hyper-Vigilance Core"
+          },
           "Stability Telemetry": {
             "item_id": 89219,
             "name": "Stability Telemetry"
