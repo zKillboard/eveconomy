@@ -400,6 +400,21 @@
             "id": 2464,
             "name": "Advanced Exotic Plasma Charges",
             "subgroups": {
+              "Extra Large": {
+                "id": 3851,
+                "name": "Extra Large",
+                "subgroups": {},
+                "items": {
+                  "Mystic XL": {
+                    "item_id": 92952,
+                    "name": "Mystic XL"
+                  },
+                  "Occult XL": {
+                    "item_id": 92954,
+                    "name": "Occult XL"
+                  }
+                }
+              },
               "Large": {
                 "id": 2470,
                 "name": "Large",
@@ -464,14 +479,6 @@
                   "Meson Exotic Plasma XL": {
                     "item_id": 53302,
                     "name": "Meson Exotic Plasma XL"
-                  },
-                  "Mystic XL": {
-                    "item_id": 92952,
-                    "name": "Mystic XL"
-                  },
-                  "Occult XL": {
-                    "item_id": 92954,
-                    "name": "Occult XL"
                   },
                   "Tetryon Exotic Plasma XL": {
                     "item_id": 53301,
@@ -19922,9 +19929,9 @@
                 "item_id": 92035,
                 "name": "Arabellata SW-900-I"
               },
-              "Atlas SD-900": {
+              "Atlas SD-900-I": {
                 "item_id": 92466,
-                "name": "Atlas SD-900"
+                "name": "Atlas SD-900-I"
               },
               "Berserker I": {
                 "item_id": 2476,
@@ -19982,9 +19989,9 @@
                 "item_id": 92038,
                 "name": "Tabanida EV-900-I"
               },
-              "Torafugu TD-900": {
+              "Torafugu TD-900-I": {
                 "item_id": 92469,
-                "name": "Torafugu TD-900"
+                "name": "Torafugu TD-900-I"
               },
               "Wasp I": {
                 "item_id": 1201,
@@ -20085,13 +20092,13 @@
                 "item_id": 92461,
                 "name": "Skimmer TP-300-I"
               },
-              "Stellate TD-300": {
+              "Stellate TD-300-I": {
                 "item_id": 92467,
-                "name": "Stellate TD-300"
+                "name": "Stellate TD-300-I"
               },
-              "Stigmella SD-300": {
+              "Stigmella SD-300-I": {
                 "item_id": 92464,
-                "name": "Stigmella SD-300"
+                "name": "Stigmella SD-300-I"
               },
               "Tick EV-300-I": {
                 "item_id": 92036,
@@ -20176,9 +20183,9 @@
                 "item_id": 92034,
                 "name": "Huntsman SW-600-I"
               },
-              "Immaculate TD-600": {
+              "Immaculate TD-600-I": {
                 "item_id": 92468,
-                "name": "Immaculate TD-600"
+                "name": "Immaculate TD-600-I"
               },
               "Imperial Navy Infiltrator": {
                 "item_id": 31866,
@@ -20192,9 +20199,9 @@
                 "item_id": 2175,
                 "name": "Infiltrator II"
               },
-              "Luna SD-600": {
+              "Luna SD-600-I": {
                 "item_id": 92465,
-                "name": "Luna SD-600"
+                "name": "Luna SD-600-I"
               },
               "Mosquito EV-600-I": {
                 "item_id": 92037,
@@ -29831,6 +29838,10 @@
                         "item_id": 62520,
                         "name": "Compressed Scordite"
                       },
+                      "Compressed Scordite 0-Grade": {
+                        "item_id": 92374,
+                        "name": "Compressed Scordite 0-Grade"
+                      },
                       "Compressed Scordite II-Grade": {
                         "item_id": 62521,
                         "name": "Compressed Scordite II-Grade"
@@ -29846,6 +29857,10 @@
                       "Scordite": {
                         "item_id": 1228,
                         "name": "Scordite"
+                      },
+                      "Scordite 0-Grade ": {
+                        "item_id": 92373,
+                        "name": "Scordite 0-Grade "
                       },
                       "Scordite II-Grade": {
                         "item_id": 17463,
@@ -30022,6 +30037,10 @@
                         "item_id": 62516,
                         "name": "Compressed Veldspar"
                       },
+                      "Compressed Veldspar 0-Grade": {
+                        "item_id": 92372,
+                        "name": "Compressed Veldspar 0-Grade"
+                      },
                       "Compressed Veldspar II-Grade": {
                         "item_id": 62517,
                         "name": "Compressed Veldspar II-Grade"
@@ -30045,6 +30064,10 @@
                       "Veldspar": {
                         "item_id": 1230,
                         "name": "Veldspar"
+                      },
+                      "Veldspar 0-Grade": {
+                        "item_id": 92371,
+                        "name": "Veldspar 0-Grade"
                       },
                       "Veldspar II-Grade": {
                         "item_id": 17470,
@@ -34302,6 +34325,10 @@
               "Quantum Curls - Unlimited": {
                 "item_id": 88659,
                 "name": "Quantum Curls - Unlimited"
+              },
+              "Rage of the 7 - Limited": {
+                "item_id": 93256,
+                "name": "Rage of the 7 - Limited"
               },
               "Rank and File - Limited": {
                 "item_id": 82348,
@@ -63209,6 +63236,10 @@
                     "name": "CONCORD",
                     "subgroups": {},
                     "items": {
+                      "Monitor Discovery Bound SKIN": {
+                        "item_id": 92669,
+                        "name": "Monitor Discovery Bound SKIN"
+                      },
                       "Monitor Empyrean Outlaws SKIN": {
                         "item_id": 85737,
                         "name": "Monitor Empyrean Outlaws SKIN"
@@ -82960,6 +82991,10 @@
               "Galaxy Pack - Spectral": {
                 "item_id": 47154,
                 "name": "Galaxy Pack - Spectral"
+              },
+              "Historic Carrier SKINs Crate": {
+                "item_id": 93270,
+                "name": "Historic Carrier SKINs Crate"
               },
               "Historic Gallente SKINs Crate": {
                 "item_id": 91938,
