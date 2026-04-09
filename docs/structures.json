@@ -42650,7 +42650,7 @@
   "1050452636698": "Danyana - Industry Site",
   "1050453065954": "Caslemon - Flippy",
   "1050463133139": "Thiarer - Thiarer Industrial Exchange",
-  "1050463763824": "Rancer - DO NOT USE",
+  "1050463763824": "Rancer - EVAC DO NOT USE",
   "1050464944913": "Raneilles - Port Creo",
   "1050466192846": "Simela - Mercury's Avarice",
   "1050474526233": "Stegette - Union Shop",
@@ -43620,8 +43620,8 @@
   "1052940363251": "Reteka - Ironhyde Reprocessing Plant",
   "1052940808447": "Aramachi - VII-7 U TARAVU",
   "1052941447605": "Shenda - 8-20",
-  "1052942905212": "Shenda - 8-10",
-  "1052943617266": "Shenda - 8-18",
+  "1052942905212": "Shenda - 8- 10",
+  "1052943617266": "Shenda - 8 -18",
   "1052943969773": "Shenda - 6-16",
   "1052946134261": "Teonusude - Nilfgard Ice Traders",
   "1052948313174": "Adacyne - Structure Equipment",
@@ -43699,6 +43699,7 @@
   "1053154652093": "Egghelende - Point Hope-FREEPORT",
   "1053156883111": "Bahromab - house of ice and ore",
   "1053156908313": "Isie - Minedrill Mining Outpost",
+  "1053160304703": "Goinard - Freeport Goinard CompRea",
   "1053164233275": "Maurasi - Y.T.C Blackwall",
   "1053175214046": "J172354 - Freeport - Sirens",
   "1053179639136": "Aldrat - IVGTemp",
@@ -43762,5 +43763,8 @@
   "1053414742063": "Siyi - Public-Mining-Refining",
   "1053420564900": "Irnin - factory",
   "1053420724531": "Zinkon - Gaia Reprocessing Freeport",
-  "1053424935945": "Hadji - The Party"
+  "1053424935945": "Hadji - The Party",
+  "1053427998260": "Intaki - Public Refinery 1% Tax",
+  "1053431204524": "Saheri - Industrie Discount",
+  "1053443623823": "Gamis - Basic Indy"
 }
