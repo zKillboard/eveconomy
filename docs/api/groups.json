@@ -33566,6 +33566,14 @@
                 "item_id": 82476,
                 "name": "Abyssal Corruption - Unlimited"
               },
+              "Advancing Lines - Limited": {
+                "item_id": 93359,
+                "name": "Advancing Lines - Limited"
+              },
+              "Advancing Lines - Unlimited": {
+                "item_id": 93360,
+                "name": "Advancing Lines - Unlimited"
+              },
               "Angular Deployment - Limited": {
                 "item_id": 82364,
                 "name": "Angular Deployment - Limited"
@@ -33670,6 +33678,14 @@
                 "item_id": 82447,
                 "name": "Center Grade - Unlimited"
               },
+              "Chaotic Skies - Limited": {
+                "item_id": 93355,
+                "name": "Chaotic Skies - Limited"
+              },
+              "Chaotic Skies - Unlimited": {
+                "item_id": 93356,
+                "name": "Chaotic Skies - Unlimited"
+              },
               "Checkerboard - Limited": {
                 "item_id": 82350,
                 "name": "Checkerboard - Limited"
@@ -33697,6 +33713,14 @@
               "Clustered Horde - Limited": {
                 "item_id": 87840,
                 "name": "Clustered Horde - Limited"
+              },
+              "Combined Forces - Limited": {
+                "item_id": 93363,
+                "name": "Combined Forces - Limited"
+              },
+              "Combined Forces - Unlimited": {
+                "item_id": 93364,
+                "name": "Combined Forces - Unlimited"
               },
               "Complex Hex - Limited": {
                 "item_id": 82360,
@@ -33870,6 +33894,14 @@
                 "item_id": 87803,
                 "name": "Drifter Sweeps - Limited"
               },
+              "Echoes of Action - Limited": {
+                "item_id": 93357,
+                "name": "Echoes of Action - Limited"
+              },
+              "Echoes of Action - Unlimited": {
+                "item_id": 93358,
+                "name": "Echoes of Action - Unlimited"
+              },
               "Embossed Turns - Limited": {
                 "item_id": 88636,
                 "name": "Embossed Turns - Limited"
@@ -33958,6 +33990,14 @@
                 "item_id": 92574,
                 "name": "Federation Ascent - Unlimited"
               },
+              "Federation Charge - Limited": {
+                "item_id": 93345,
+                "name": "Federation Charge - Limited"
+              },
+              "Federation Charge - Unlimited": {
+                "item_id": 93346,
+                "name": "Federation Charge - Unlimited"
+              },
               "Federation Field - Limited": {
                 "item_id": 92575,
                 "name": "Federation Field - Limited"
@@ -33973,6 +34013,14 @@
               "Folded Path - Unlimited": {
                 "item_id": 82446,
                 "name": "Folded Path - Unlimited"
+              },
+              "Fortified State - Limited": {
+                "item_id": 93347,
+                "name": "Fortified State - Limited"
+              },
+              "Fortified State - Unlimited": {
+                "item_id": 93348,
+                "name": "Fortified State - Unlimited"
               },
               "Four from One - Limited": {
                 "item_id": 82385,
@@ -34017,6 +34065,14 @@
               "Gliding Mix - Unlimited": {
                 "item_id": 88651,
                 "name": "Gliding Mix - Unlimited"
+              },
+              "Guerilla Republic - Limited": {
+                "item_id": 93349,
+                "name": "Guerilla Republic - Limited"
+              },
+              "Guerilla Republic - Unlimited": {
+                "item_id": 93350,
+                "name": "Guerilla Republic - Unlimited"
               },
               "Hacked Virtuality - Unlimited": {
                 "item_id": 86680,
@@ -34117,6 +34173,14 @@
               "Illusionary Tiger - Unlimited": {
                 "item_id": 82489,
                 "name": "Illusionary Tiger - Unlimited"
+              },
+              "Imperial Supremacy - Limited": {
+                "item_id": 93343,
+                "name": "Imperial Supremacy - Limited"
+              },
+              "Imperial Supremacy - Unlimited": {
+                "item_id": 93344,
+                "name": "Imperial Supremacy - Unlimited"
               },
               "Impressionist Camo - Limited": {
                 "item_id": 82377,
@@ -34562,6 +34626,22 @@
                 "item_id": 84016,
                 "name": "United Front - Limited"
               },
+              "Unknown 1 - Limited": {
+                "item_id": 93351,
+                "name": "Unknown 1 - Limited"
+              },
+              "Unknown 1 - Unlimited": {
+                "item_id": 93352,
+                "name": "Unknown 1 - Unlimited"
+              },
+              "Unknown 2 - Limited": {
+                "item_id": 93353,
+                "name": "Unknown 2 - Limited"
+              },
+              "Unknown 2 - Unlimited": {
+                "item_id": 93354,
+                "name": "Unknown 2 - Unlimited"
+              },
               "Vector Shift - Limited": {
                 "item_id": 82370,
                 "name": "Vector Shift - Limited"
@@ -34597,6 +34677,14 @@
               "Volatile Vector - Unlimited": {
                 "item_id": 91131,
                 "name": "Volatile Vector - Unlimited"
+              },
+              "War Fatigue - Limited": {
+                "item_id": 93361,
+                "name": "War Fatigue - Limited"
+              },
+              "War Fatigue - Unlimited": {
+                "item_id": 93362,
+                "name": "War Fatigue - Unlimited"
               },
               "Wheel of the Awoken - Limited": {
                 "item_id": 87789,
