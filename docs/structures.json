@@ -41616,7 +41616,7 @@
   "1048251775146": "J131034 - Freeport-R",
   "1048251852521": "J131034 - Freeport-M&R",
   "1048251953328": "Fuskunen - Mista Rogers",
-  "1048255383676": "Annaro - Nanoforge - Manuf, Res, Reproc",
+  "1048255383676": "Annaro - Nanoforge - Manuf, Res, invent",
   "1048259317513": "Kiskoken - Omega Alpha",
   "1048263136314": "Litiura - Arkadia (T2 Refinery boost ON)",
   "1048264055053": "Rohamaa - Burn the Ships Freeport",
@@ -42499,7 +42499,7 @@
   "1049915762094": "Bille - Trinity One",
   "1049919041082": "J160929 - Freeport Hephaestus",
   "1049920951739": "J215935 - Deep Space Narcos",
-  "1049921818358": "Dantbeinn - Refin 2%",
+  "1049921818358": "Dantbeinn - Refine 2% AND RIG BONUSES",
   "1049925735408": "J153222 - Robust",
   "1049925887201": "J153222 - Metalo-Bazar na lune",
   "1049925914973": "J153222 - Zavod WHproMAX",
@@ -43970,5 +43970,7 @@
   "1053882253210": "Ignoitton - 9000",
   "1053895841662": "Malma - Robotic Bore Dome",
   "1053905538430": "Autaris - Nomnom",
-  "1053911951368": "Piekura - 2 - M3HC - Small Ship T1"
+  "1053911951368": "Piekura - 2 - M3HC - Small Ship T1",
+  "1053919676584": "Aclan - Induswing",
+  "1053939400218": "Joamma - Hay Bakery"
 }
