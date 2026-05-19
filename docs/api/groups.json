@@ -59615,6 +59615,10 @@
                     "item_id": 34623,
                     "name": "Abaddon Kador SKIN"
                   },
+                  "Abaddon Mandate of Faith SKIN": {
+                    "item_id": 94152,
+                    "name": "Abaddon Mandate of Faith SKIN"
+                  },
                   "Abaddon Oasis of Faith SKIN": {
                     "item_id": 53635,
                     "name": "Abaddon Oasis of Faith SKIN"
@@ -60041,6 +60045,10 @@
                   "Rokh Raata Sunset SKIN": {
                     "item_id": 36665,
                     "name": "Rokh Raata Sunset SKIN"
+                  },
+                  "Rokh State Regulator SKIN": {
+                    "item_id": 94156,
+                    "name": "Rokh State Regulator SKIN"
                   },
                   "Rokh Steel Cardinal SKIN": {
                     "item_id": 46130,
@@ -63854,6 +63862,10 @@
                         "item_id": 48850,
                         "name": "Zealot Imperial Jubilee SKIN"
                       },
+                      "Zealot Mandate of Faith SKIN": {
+                        "item_id": 94153,
+                        "name": "Zealot Mandate of Faith SKIN"
+                      },
                       "Zealot Oasis of Faith SKIN": {
                         "item_id": 53621,
                         "name": "Zealot Oasis of Faith SKIN"
@@ -63940,6 +63952,10 @@
                       "Cerberus Raata Sunset SKIN": {
                         "item_id": 36653,
                         "name": "Cerberus Raata Sunset SKIN"
+                      },
+                      "Cerberus State Regulator SKIN": {
+                        "item_id": 94155,
+                        "name": "Cerberus State Regulator SKIN"
                       },
                       "Cerberus Steel Cardinal SKIN": {
                         "item_id": 46114,
@@ -68237,6 +68253,10 @@
                         "item_id": 46401,
                         "name": "Magus Kopis Edge SKIN"
                       },
+                      "Magus Presidential Agent SKIN": {
+                        "item_id": 94160,
+                        "name": "Magus Presidential Agent SKIN"
+                      },
                       "Magus Serpentis SKIN": {
                         "item_id": 42163,
                         "name": "Magus Serpentis SKIN"
@@ -68295,6 +68315,10 @@
                       "Bifrost Snowline Bladeracer SKIN": {
                         "item_id": 52862,
                         "name": "Bifrost Snowline Bladeracer SKIN"
+                      },
+                      "Bifrost Stark Strategist SKIN": {
+                        "item_id": 94157,
+                        "name": "Bifrost Stark Strategist SKIN"
                       },
                       "Bifrost Tronhadar Ink SKIN": {
                         "item_id": 40517,
@@ -68652,6 +68676,10 @@
                         "item_id": 56590,
                         "name": "Confessor Malagrin Marshlight SKIN"
                       },
+                      "Confessor Mandate of Faith SKIN": {
+                        "item_id": 94154,
+                        "name": "Confessor Mandate of Faith SKIN"
+                      },
                       "Confessor Oasis of Faith SKIN": {
                         "item_id": 53615,
                         "name": "Confessor Oasis of Faith SKIN"
@@ -68718,6 +68746,10 @@
                       "Jackdaw Quantum Potential SKIN": {
                         "item_id": 48566,
                         "name": "Jackdaw Quantum Potential SKIN"
+                      },
+                      "Jackdaw State Regulator SKIN": {
+                        "item_id": 94159,
+                        "name": "Jackdaw State Regulator SKIN"
                       },
                       "Jackdaw Steel Cardinal SKIN": {
                         "item_id": 46109,
@@ -68880,6 +68912,10 @@
                       "Svipul Snowline Bladeracer SKIN": {
                         "item_id": 52864,
                         "name": "Svipul Snowline Bladeracer SKIN"
+                      },
+                      "Svipul Stark Strategist SKIN": {
+                        "item_id": 94158,
+                        "name": "Svipul Stark Strategist SKIN"
                       }
                     }
                   }
