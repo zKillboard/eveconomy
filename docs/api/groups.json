@@ -34530,6 +34530,14 @@
                 "item_id": 82439,
                 "name": "Jagged Static - Unlimited"
               },
+              "Jita Ascendent - Limited": {
+                "item_id": 93351,
+                "name": "Jita Ascendent - Limited"
+              },
+              "Jita Ascendent - Unlimited": {
+                "item_id": 93352,
+                "name": "Jita Ascendent - Unlimited"
+              },
               "Jovian Euphoria - Limited": {
                 "item_id": 87802,
                 "name": "Jovian Euphoria - Limited"
@@ -34569,6 +34577,14 @@
               "Luminous Flow - Limited": {
                 "item_id": 90141,
                 "name": "Luminous Flow - Limited"
+              },
+              "Mark of the 4-4 - Limited": {
+                "item_id": 93353,
+                "name": "Mark of the 4-4 - Limited"
+              },
+              "Mark of the 4-4 - Unlimited": {
+                "item_id": 93354,
+                "name": "Mark of the 4-4 - Unlimited"
               },
               "Martial Camo - Limited": {
                 "item_id": 82344,
@@ -34941,22 +34957,6 @@
               "United Front - Limited": {
                 "item_id": 84016,
                 "name": "United Front - Limited"
-              },
-              "Unknown 1 - Limited": {
-                "item_id": 93351,
-                "name": "Unknown 1 - Limited"
-              },
-              "Unknown 1 - Unlimited": {
-                "item_id": 93352,
-                "name": "Unknown 1 - Unlimited"
-              },
-              "Unknown 2 - Limited": {
-                "item_id": 93353,
-                "name": "Unknown 2 - Limited"
-              },
-              "Unknown 2 - Unlimited": {
-                "item_id": 93354,
-                "name": "Unknown 2 - Unlimited"
               },
               "Vector Shift - Limited": {
                 "item_id": 82370,
