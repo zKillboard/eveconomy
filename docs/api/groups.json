@@ -7311,6 +7311,10 @@
         "name": "Portrait Backgrounds",
         "subgroups": {},
         "items": {
+          "Manifest Homecoming Background": {
+            "item_id": 95228,
+            "name": "Manifest Homecoming Background"
+          },
           "Moreau’s Gallente Background": {
             "item_id": 92554,
             "name": "Moreau’s Gallente Background"
@@ -7318,6 +7322,10 @@
           "Roden’s Gallente Background": {
             "item_id": 92555,
             "name": "Roden’s Gallente Background"
+          },
+          "Star Cradle Background": {
+            "item_id": 95275,
+            "name": "Star Cradle Background"
           },
           "Tenzin’s Gallente Background": {
             "item_id": 92550,
@@ -78912,6 +78920,10 @@
                       "Coercer Navy Issue": {
                         "item_id": 73789,
                         "name": "Coercer Navy Issue"
+                      },
+                      "Dragoon Navy Issue": {
+                        "item_id": 91775,
+                        "name": "Dragoon Navy Issue"
                       }
                     }
                   },
@@ -78920,6 +78932,10 @@
                     "name": "Caldari",
                     "subgroups": {},
                     "items": {
+                      "Corax Navy Issue": {
+                        "item_id": 91857,
+                        "name": "Corax Navy Issue"
+                      },
                       "Cormorant Navy Issue": {
                         "item_id": 73795,
                         "name": "Cormorant Navy Issue"
@@ -78931,6 +78947,10 @@
                     "name": "Gallente",
                     "subgroups": {},
                     "items": {
+                      "Algos Navy Issue": {
+                        "item_id": 91849,
+                        "name": "Algos Navy Issue"
+                      },
                       "Catalyst Navy Issue": {
                         "item_id": 73796,
                         "name": "Catalyst Navy Issue"
@@ -78942,6 +78962,10 @@
                     "name": "Minmatar",
                     "subgroups": {},
                     "items": {
+                      "Talwar Fleet Issue": {
+                        "item_id": 91858,
+                        "name": "Talwar Fleet Issue"
+                      },
                       "Thrasher Fleet Issue": {
                         "item_id": 73794,
                         "name": "Thrasher Fleet Issue"
@@ -82921,6 +82945,10 @@
                 "name": "Capsuleer Day Assets",
                 "subgroups": {},
                 "items": {
+                  "Algos Navy Issue Blueprint Crate": {
+                    "item_id": 94315,
+                    "name": "Algos Navy Issue Blueprint Crate"
+                  },
                   "Basic 'Ardour' Cerebral Accelerator Blueprint Crate": {
                     "item_id": 50029,
                     "name": "Basic 'Ardour' Cerebral Accelerator Blueprint Crate"
@@ -83009,6 +83037,14 @@
                     "item_id": 93835,
                     "name": "Capsuleer Day XXIII Minmatar Booster Crate"
                   },
+                  "Corax Navy Issue Blueprint Crate": {
+                    "item_id": 94314,
+                    "name": "Corax Navy Issue Blueprint Crate"
+                  },
+                  "Dragoon Navy Issue Blueprint Crate": {
+                    "item_id": 94312,
+                    "name": "Dragoon Navy Issue Blueprint Crate"
+                  },
                   "Drake & Oracle Argyros SKIN Crate": {
                     "item_id": 52297,
                     "name": "Drake & Oracle Argyros SKIN Crate"
@@ -83060,6 +83096,10 @@
                   "Standard 'Ardour' Cerebral Accelerator Blueprint Crate": {
                     "item_id": 50030,
                     "name": "Standard 'Ardour' Cerebral Accelerator Blueprint Crate"
+                  },
+                  "Talwar Fleet Issue Blueprint Crate": {
+                    "item_id": 94316,
+                    "name": "Talwar Fleet Issue Blueprint Crate"
                   },
                   "Vorton Projector Booster Gift Box": {
                     "item_id": 55029,
