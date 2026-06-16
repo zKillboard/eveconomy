@@ -21433,36 +21433,28 @@
                 "name": "Expired Hunt Pursuit Booster IV"
               },
               "Federation Electronics Booster I": {
-                "item_id": 92876,
+                "item_id": 91921,
                 "name": "Federation Electronics Booster I"
               },
               "Federation Electronics Booster II": {
-                "item_id": 92983,
+                "item_id": 91925,
                 "name": "Federation Electronics Booster II"
               },
               "Federation Electronics Booster III": {
                 "item_id": 91926,
                 "name": "Federation Electronics Booster III"
               },
-              "Federation Electronics Booster IV": {
-                "item_id": 92953,
-                "name": "Federation Electronics Booster IV"
-              },
               "Imperial Electronics Booster I": {
-                "item_id": 93117,
+                "item_id": 91916,
                 "name": "Imperial Electronics Booster I"
               },
               "Imperial Electronics Booster II": {
-                "item_id": 93118,
+                "item_id": 91929,
                 "name": "Imperial Electronics Booster II"
               },
               "Imperial Electronics Booster III": {
-                "item_id": 93119,
+                "item_id": 91930,
                 "name": "Imperial Electronics Booster III"
-              },
-              "Imperial Electronics Booster IV": {
-                "item_id": 93120,
-                "name": "Imperial Electronics Booster IV"
               },
               "Republic Electronics Booster I": {
                 "item_id": 91922,
@@ -21476,25 +21468,17 @@
                 "item_id": 91924,
                 "name": "Republic Electronics Booster III"
               },
-              "Republic Electronics Booster IV": {
-                "item_id": 93063,
-                "name": "Republic Electronics Booster IV"
-              },
               "State Electronics Booster I": {
-                "item_id": 93109,
+                "item_id": 91920,
                 "name": "State Electronics Booster I"
               },
               "State Electronics Booster II": {
-                "item_id": 93110,
+                "item_id": 91927,
                 "name": "State Electronics Booster II"
               },
               "State Electronics Booster III": {
-                "item_id": 93111,
+                "item_id": 91928,
                 "name": "State Electronics Booster III"
-              },
-              "State Electronics Booster IV": {
-                "item_id": 93112,
-                "name": "State Electronics Booster IV"
               },
               "Strong Veilguard Booster": {
                 "item_id": 59633,
@@ -21540,132 +21524,52 @@
                 "name": "Expired Hunt Resistance Booster IV"
               },
               "Federation Defense Booster I": {
-                "item_id": 92981,
+                "item_id": 91935,
                 "name": "Federation Defense Booster I"
               },
               "Federation Defense Booster II": {
-                "item_id": 93017,
+                "item_id": 91944,
                 "name": "Federation Defense Booster II"
               },
               "Federation Defense Booster III": {
-                "item_id": 93018,
+                "item_id": 91943,
                 "name": "Federation Defense Booster III"
               },
-              "Federation Defense Booster IV": {
-                "item_id": 92948,
-                "name": "Federation Defense Booster IV"
-              },
-              "Federation Projection Booster I": {
-                "item_id": 92978,
-                "name": "Federation Projection Booster I"
-              },
-              "Federation Projection Booster II": {
-                "item_id": 92989,
-                "name": "Federation Projection Booster II"
-              },
-              "Federation Projection Booster III": {
-                "item_id": 92992,
-                "name": "Federation Projection Booster III"
-              },
-              "Federation Projection Booster IV": {
-                "item_id": 92994,
-                "name": "Federation Projection Booster IV"
-              },
               "Imperial Defense Booster I": {
-                "item_id": 93133,
+                "item_id": 91932,
                 "name": "Imperial Defense Booster I"
               },
               "Imperial Defense Booster II": {
-                "item_id": 93134,
+                "item_id": 91939,
                 "name": "Imperial Defense Booster II"
               },
               "Imperial Defense Booster III": {
-                "item_id": 93135,
+                "item_id": 91940,
                 "name": "Imperial Defense Booster III"
               },
-              "Imperial Defense Booster IV": {
-                "item_id": 93136,
-                "name": "Imperial Defense Booster IV"
-              },
-              "Imperial Projection Booster I": {
-                "item_id": 93125,
-                "name": "Imperial Projection Booster I"
-              },
-              "Imperial Projection Booster II": {
-                "item_id": 93126,
-                "name": "Imperial Projection Booster II"
-              },
-              "Imperial Projection Booster III": {
-                "item_id": 93127,
-                "name": "Imperial Projection Booster III"
-              },
-              "Imperial Projection Booster IV": {
-                "item_id": 93128,
-                "name": "Imperial Projection Booster IV"
-              },
               "Republic Defense Booster I": {
-                "item_id": 93054,
+                "item_id": 91936,
                 "name": "Republic Defense Booster I"
               },
               "Republic Defense Booster II": {
-                "item_id": 93055,
+                "item_id": 91945,
                 "name": "Republic Defense Booster II"
               },
               "Republic Defense Booster III": {
                 "item_id": 91946,
                 "name": "Republic Defense Booster III"
               },
-              "Republic Defense Booster IV": {
-                "item_id": 93059,
-                "name": "Republic Defense Booster IV"
-              },
-              "Republic Projection Booster I": {
-                "item_id": 93026,
-                "name": "Republic Projection Booster I"
-              },
-              "Republic Projection Booster II": {
-                "item_id": 93027,
-                "name": "Republic Projection Booster II"
-              },
-              "Republic Projection Booster III": {
-                "item_id": 93028,
-                "name": "Republic Projection Booster III"
-              },
-              "Republic Projection Booster IV": {
-                "item_id": 93029,
-                "name": "Republic Projection Booster IV"
-              },
               "State Defense Booster I": {
-                "item_id": 93096,
+                "item_id": 91934,
                 "name": "State Defense Booster I"
               },
               "State Defense Booster II": {
-                "item_id": 93106,
+                "item_id": 91941,
                 "name": "State Defense Booster II"
               },
               "State Defense Booster III": {
-                "item_id": 93107,
+                "item_id": 91942,
                 "name": "State Defense Booster III"
-              },
-              "State Defense Booster IV": {
-                "item_id": 93108,
-                "name": "State Defense Booster IV"
-              },
-              "State Projection Booster I": {
-                "item_id": 93114,
-                "name": "State Projection Booster I"
-              },
-              "State Projection Booster II": {
-                "item_id": 93087,
-                "name": "State Projection Booster II"
-              },
-              "State Projection Booster III": {
-                "item_id": 93088,
-                "name": "State Projection Booster III"
-              },
-              "State Projection Booster IV": {
-                "item_id": 93115,
-                "name": "State Projection Booster IV"
               }
             }
           },
@@ -21711,32 +21615,24 @@
                 "name": "Federation Mobility Booster I"
               },
               "Federation Mobility Booster II": {
-                "item_id": 93019,
+                "item_id": 91958,
                 "name": "Federation Mobility Booster II"
               },
               "Federation Mobility Booster III": {
                 "item_id": 91959,
                 "name": "Federation Mobility Booster III"
               },
-              "Federation Mobility Booster IV": {
-                "item_id": 92973,
-                "name": "Federation Mobility Booster IV"
-              },
               "Imperial Mobility Booster I": {
-                "item_id": 93137,
+                "item_id": 91947,
                 "name": "Imperial Mobility Booster I"
               },
               "Imperial Mobility Booster II": {
-                "item_id": 93138,
+                "item_id": 91952,
                 "name": "Imperial Mobility Booster II"
               },
               "Imperial Mobility Booster III": {
-                "item_id": 93139,
+                "item_id": 91951,
                 "name": "Imperial Mobility Booster III"
-              },
-              "Imperial Mobility Booster IV": {
-                "item_id": 93140,
-                "name": "Imperial Mobility Booster IV"
               },
               "Nocturne Anti-Drain Booster II ( copy )": {
                 "item_id": 87886,
@@ -21747,32 +21643,24 @@
                 "name": "Republic Mobility Booster I"
               },
               "Republic Mobility Booster II": {
-                "item_id": 93065,
+                "item_id": 91960,
                 "name": "Republic Mobility Booster II"
               },
               "Republic Mobility Booster III": {
-                "item_id": 93020,
+                "item_id": 91961,
                 "name": "Republic Mobility Booster III"
               },
-              "Republic Mobility Booster IV": {
-                "item_id": 93021,
-                "name": "Republic Mobility Booster IV"
-              },
               "State Mobility Booster I": {
-                "item_id": 93113,
+                "item_id": 91948,
                 "name": "State Mobility Booster I"
               },
               "State Mobility Booster II": {
-                "item_id": 93098,
+                "item_id": 91953,
                 "name": "State Mobility Booster II"
               },
               "State Mobility Booster III": {
                 "item_id": 91954,
                 "name": "State Mobility Booster III"
-              },
-              "State Mobility Booster IV": {
-                "item_id": 93102,
-                "name": "State Mobility Booster IV"
               }
             }
           },
@@ -21813,38 +21701,6 @@
                 "item_id": 63676,
                 "name": "Expired Hunt Missile Damage Booster IV"
               },
-              "Federation Application Booster I": {
-                "item_id": 92979,
-                "name": "Federation Application Booster I"
-              },
-              "Federation Application Booster II": {
-                "item_id": 92996,
-                "name": "Federation Application Booster II"
-              },
-              "Federation Application Booster III": {
-                "item_id": 92998,
-                "name": "Federation Application Booster III"
-              },
-              "Federation Application Booster IV": {
-                "item_id": 92999,
-                "name": "Federation Application Booster IV"
-              },
-              "Federation Damage Booster I": {
-                "item_id": 92974,
-                "name": "Federation Damage Booster I"
-              },
-              "Federation Damage Booster II": {
-                "item_id": 92975,
-                "name": "Federation Damage Booster II"
-              },
-              "Federation Damage Booster III": {
-                "item_id": 92976,
-                "name": "Federation Damage Booster III"
-              },
-              "Federation Damage Booster IV": {
-                "item_id": 92987,
-                "name": "Federation Damage Booster IV"
-              },
               "Federation Hardpoint Booster I": {
                 "item_id": 91964,
                 "name": "Federation Hardpoint Booster I"
@@ -21856,38 +21712,6 @@
               "Federation Hardpoint Booster III": {
                 "item_id": 91975,
                 "name": "Federation Hardpoint Booster III"
-              },
-              "Imperial Application Booster I": {
-                "item_id": 93129,
-                "name": "Imperial Application Booster I"
-              },
-              "Imperial Application Booster II": {
-                "item_id": 93130,
-                "name": "Imperial Application Booster II"
-              },
-              "Imperial Application Booster III": {
-                "item_id": 93131,
-                "name": "Imperial Application Booster III"
-              },
-              "Imperial Application Booster IV": {
-                "item_id": 93132,
-                "name": "Imperial Application Booster IV"
-              },
-              "Imperial Damage Booster I": {
-                "item_id": 93121,
-                "name": "Imperial Damage Booster I"
-              },
-              "Imperial Damage Booster II": {
-                "item_id": 93122,
-                "name": "Imperial Damage Booster II"
-              },
-              "Imperial Damage Booster III": {
-                "item_id": 93123,
-                "name": "Imperial Damage Booster III"
-              },
-              "Imperial Damage Booster IV": {
-                "item_id": 93124,
-                "name": "Imperial Damage Booster IV"
               },
               "Imperial Hardpoint Booster I": {
                 "item_id": 91962,
@@ -21901,38 +21725,6 @@
                 "item_id": 91971,
                 "name": "Imperial Hardpoint Booster III"
               },
-              "Republic Application Booster I": {
-                "item_id": 93050,
-                "name": "Republic Application Booster I"
-              },
-              "Republic Application Booster II": {
-                "item_id": 93051,
-                "name": "Republic Application Booster II"
-              },
-              "Republic Application Booster III": {
-                "item_id": 93052,
-                "name": "Republic Application Booster III"
-              },
-              "Republic Application Booster IV": {
-                "item_id": 93053,
-                "name": "Republic Application Booster IV"
-              },
-              "Republic Damage Booster I": {
-                "item_id": 93022,
-                "name": "Republic Damage Booster I"
-              },
-              "Republic Damage Booster II": {
-                "item_id": 93023,
-                "name": "Republic Damage Booster II"
-              },
-              "Republic Damage Booster III": {
-                "item_id": 93024,
-                "name": "Republic Damage Booster III"
-              },
-              "Republic Damage Booster IV": {
-                "item_id": 93025,
-                "name": "Republic Damage Booster IV"
-              },
               "Republic Hardpoint Booster I": {
                 "item_id": 91965,
                 "name": "Republic Hardpoint Booster I"
@@ -21944,38 +21736,6 @@
               "Republic Hardpoint Booster III": {
                 "item_id": 91977,
                 "name": "Republic Hardpoint Booster III"
-              },
-              "State Application Booster I": {
-                "item_id": 93116,
-                "name": "State Application Booster I"
-              },
-              "State Application Booster II ": {
-                "item_id": 93103,
-                "name": "State Application Booster II "
-              },
-              "State Application Booster III": {
-                "item_id": 93093,
-                "name": "State Application Booster III"
-              },
-              "State Application Booster IV": {
-                "item_id": 93095,
-                "name": "State Application Booster IV"
-              },
-              "State Damage Booster I ": {
-                "item_id": 93066,
-                "name": "State Damage Booster I "
-              },
-              "State Damage Booster II": {
-                "item_id": 93067,
-                "name": "State Damage Booster II"
-              },
-              "State Damage Booster III": {
-                "item_id": 93068,
-                "name": "State Damage Booster III"
-              },
-              "State Damage Booster IV": {
-                "item_id": 93085,
-                "name": "State Damage Booster IV"
               },
               "State Hardpoint Booster I": {
                 "item_id": 91963,
@@ -22014,10 +21774,6 @@
             "item_id": 55803,
             "name": "Amarr spaceship skill accelerator"
           },
-          "Basic Capsuleer Day XXIII Cerebral Accelerator": {
-            "item_id": 93775,
-            "name": "Basic Capsuleer Day XXIII Cerebral Accelerator"
-          },
           "Caldari spaceship skill accelerator": {
             "item_id": 55804,
             "name": "Caldari spaceship skill accelerator"
@@ -22038,14 +21794,6 @@
             "item_id": 63634,
             "name": "Expired Potent 'Guri Kikhivaa' Cerebral Accelerator"
           },
-          "Extended Capsuleer Day XXIII Cerebral Accelerator": {
-            "item_id": 93776,
-            "name": "Extended Capsuleer Day XXIII Cerebral Accelerator"
-          },
-          "Extended Capsuleer Day XXIII Glamourex Booster": {
-            "item_id": 93779,
-            "name": "Extended Capsuleer Day XXIII Glamourex Booster"
-          },
           "Gallente spaceship skill accelerator": {
             "item_id": 55805,
             "name": "Gallente spaceship skill accelerator"
@@ -22057,10 +21805,6 @@
           "Minmatar spaceship skill accelerator": {
             "item_id": 55806,
             "name": "Minmatar spaceship skill accelerator"
-          },
-          "Potent Capsuleer Day XXIII Cerebral Accelerator": {
-            "item_id": 93777,
-            "name": "Potent Capsuleer Day XXIII Cerebral Accelerator"
           },
           "Serenity Basic 'Bonding' Cerebral Accelerator": {
             "item_id": 57433,
@@ -30170,6 +29914,10 @@
                       "Pyroxeres": {
                         "item_id": 1224,
                         "name": "Pyroxeres"
+                      },
+                      "Pyroxeres  0-Grade": {
+                        "item_id": 95395,
+                        "name": "Pyroxeres  0-Grade"
                       },
                       "Pyroxeres II-Grade": {
                         "item_id": 17459,
@@ -83923,10 +83671,6 @@
                     "item_id": 50029,
                     "name": "Basic 'Ardour' Cerebral Accelerator Blueprint Crate"
                   },
-                  "Basic Capsuleer Day XXIII Glamourex Booster": {
-                    "item_id": 93778,
-                    "name": "Basic Capsuleer Day XXIII Glamourex Booster"
-                  },
                   "Caldari Navy Bastion Module Blueprint Crate": {
                     "item_id": 94012,
                     "name": "Caldari Navy Bastion Module Blueprint Crate"
@@ -83979,33 +83723,9 @@
                     "item_id": 52290,
                     "name": "Capsuleer Day XVI T-Shirt Crate"
                   },
-                  "Capsuleer Day XXIII Accelerator Crate": {
-                    "item_id": 93783,
-                    "name": "Capsuleer Day XXIII Accelerator Crate"
-                  },
-                  "Capsuleer Day XXIII Amarr Booster Crate": {
-                    "item_id": 93831,
-                    "name": "Capsuleer Day XXIII Amarr Booster Crate"
-                  },
-                  "Capsuleer Day XXIII Caldari Booster Crate": {
-                    "item_id": 93833,
-                    "name": "Capsuleer Day XXIII Caldari Booster Crate"
-                  },
                   "Capsuleer Day XXIII Fireworks Package": {
                     "item_id": 93645,
                     "name": "Capsuleer Day XXIII Fireworks Package"
-                  },
-                  "Capsuleer Day XXIII Gallente Booster Crate": {
-                    "item_id": 93834,
-                    "name": "Capsuleer Day XXIII Gallente Booster Crate"
-                  },
-                  "Capsuleer Day XXIII Glamourex Crate": {
-                    "item_id": 93781,
-                    "name": "Capsuleer Day XXIII Glamourex Crate"
-                  },
-                  "Capsuleer Day XXIII Minmatar Booster Crate": {
-                    "item_id": 93835,
-                    "name": "Capsuleer Day XXIII Minmatar Booster Crate"
                   },
                   "Corax Navy Issue Blueprint Crate": {
                     "item_id": 94314,
@@ -84054,10 +83774,6 @@
                   "Officer Mining Laser Upgrade Blueprint Crate": {
                     "item_id": 93993,
                     "name": "Officer Mining Laser Upgrade Blueprint Crate"
-                  },
-                  "Potent Capsuleer Day XXIII Glamourex Booster": {
-                    "item_id": 93780,
-                    "name": "Potent Capsuleer Day XXIII Glamourex Booster"
                   },
                   "Republic Fleet Bastion Module Blueprint Crate": {
                     "item_id": 94014,
