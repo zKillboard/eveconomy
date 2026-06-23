@@ -7323,6 +7323,10 @@
             "item_id": 92555,
             "name": "Roden’s Gallente Background"
           },
+          "Soaring Federation Background": {
+            "item_id": 95501,
+            "name": "Soaring Federation Background"
+          },
           "Star Cradle Background": {
             "item_id": 95275,
             "name": "Star Cradle Background"
@@ -31574,6 +31578,14 @@
                     "item_id": 83386,
                     "name": "Asaya Midnight Gloss - Unlimited"
                   },
+                  "Ascendant Zenith Gloss - Limited": {
+                    "item_id": 95410,
+                    "name": "Ascendant Zenith Gloss - Limited"
+                  },
+                  "Ascendant Zenith Gloss - Unlimited": {
+                    "item_id": 95411,
+                    "name": "Ascendant Zenith Gloss - Unlimited"
+                  },
                   "Atomic Excess Gloss - Limited": {
                     "item_id": 88476,
                     "name": "Atomic Excess Gloss - Limited"
@@ -31913,6 +31925,14 @@
                   "Polar Glaze Gloss - Unlimited": {
                     "item_id": 83385,
                     "name": "Polar Glaze Gloss - Unlimited"
+                  },
+                  "Resolve Stratos Gloss - Limited": {
+                    "item_id": 95402,
+                    "name": "Resolve Stratos Gloss - Limited"
+                  },
+                  "Resolve Stratos Gloss - Unlimited": {
+                    "item_id": 95403,
+                    "name": "Resolve Stratos Gloss - Unlimited"
                   },
                   "Risen Flesh Gloss - Limited": {
                     "item_id": 87773,
@@ -32277,6 +32297,14 @@
                     "item_id": 83302,
                     "name": "Deep Void Matte - Unlimited"
                   },
+                  "Defiant Ochre Matte - Limited": {
+                    "item_id": 95400,
+                    "name": "Defiant Ochre Matte - Limited"
+                  },
+                  "Defiant Ochre Matte - Unlimited": {
+                    "item_id": 95401,
+                    "name": "Defiant Ochre Matte - Unlimited"
+                  },
                   "Deprecated - Do not publish": {
                     "item_id": 84807,
                     "name": "Deprecated - Do not publish"
@@ -32532,6 +32560,14 @@
                   "Redoubt Bolt Matte - Unlimited": {
                     "item_id": 87775,
                     "name": "Redoubt Bolt Matte - Unlimited"
+                  },
+                  "Resolve Stratos Matte - Limited": {
+                    "item_id": 95406,
+                    "name": "Resolve Stratos Matte - Limited"
+                  },
+                  "Resolve Stratos Matte - Unlimited": {
+                    "item_id": 95407,
+                    "name": "Resolve Stratos Matte - Unlimited"
                   },
                   "Ruddy Vein Matte - Limited": {
                     "item_id": 90603,
@@ -33044,6 +33080,18 @@
                     "item_id": 85141,
                     "name": "Purified Cerise Satin - Limited"
                   },
+                  "Radiant Aureate Metallic - Unlimited": {
+                    "item_id": 95399,
+                    "name": "Radiant Aureate Metallic - Unlimited"
+                  },
+                  "Reclaimed Dawn Satin - Limited": {
+                    "item_id": 95408,
+                    "name": "Reclaimed Dawn Satin - Limited"
+                  },
+                  "Reclaimed Dawn Satin - Unlimited": {
+                    "item_id": 95409,
+                    "name": "Reclaimed Dawn Satin - Unlimited"
+                  },
                   "Risen Flesh Satin - Limited": {
                     "item_id": 87771,
                     "name": "Risen Flesh Satin - Limited"
@@ -33390,6 +33438,14 @@
                 "item_id": 88573,
                 "name": "Deep Space Iron Metallic - Unlimited"
               },
+              "Defiant Ochre Metallic - Limited": {
+                "item_id": 95396,
+                "name": "Defiant Ochre Metallic - Limited"
+              },
+              "Defiant Ochre Metallic - Unlimited": {
+                "item_id": 95397,
+                "name": "Defiant Ochre Metallic - Unlimited"
+              },
               "Deprecated - Do not publish": {
                 "item_id": 84808,
                 "name": "Deprecated - Do not publish"
@@ -33670,6 +33726,10 @@
                 "item_id": 88594,
                 "name": "Pyrrhic Plate Metallic - Unlimited"
               },
+              "Radiant Aureate Metallic - Limited": {
+                "item_id": 95398,
+                "name": "Radiant Aureate Metallic - Limited"
+              },
               "Rose-tinted Trit Metallic - Limited": {
                 "item_id": 87838,
                 "name": "Rose-tinted Trit Metallic - Limited"
@@ -33825,6 +33885,14 @@
               "Veteran Gunmetal Metallic - Unlimited": {
                 "item_id": 89696,
                 "name": "Veteran Gunmetal Metallic - Unlimited"
+              },
+              "Violent Surge Metallic - Limited": {
+                "item_id": 95404,
+                "name": "Violent Surge Metallic - Limited"
+              },
+              "Violent Surge Metallic - Unlimited": {
+                "item_id": 95405,
+                "name": "Violent Surge Metallic - Unlimited"
               },
               "Violet Covenant Metallic - Limited": {
                 "item_id": 89934,
@@ -34264,6 +34332,14 @@
               "Emergent Stripes - Unlimited": {
                 "item_id": 82478,
                 "name": "Emergent Stripes - Unlimited"
+              },
+              "Enduring Core - Limited": {
+                "item_id": 95412,
+                "name": "Enduring Core - Limited"
+              },
+              "Enduring Core - Unlimited": {
+                "item_id": 95413,
+                "name": "Enduring Core - Unlimited"
               },
               "Escape Curve - Limited": {
                 "item_id": 82353,
@@ -34885,6 +34961,22 @@
                 "item_id": 82440,
                 "name": "Rank and File - Unlimited"
               },
+              "Rebel Crest - Limited": {
+                "item_id": 95415,
+                "name": "Rebel Crest - Limited"
+              },
+              "Rebel Crest - Unlimited": {
+                "item_id": 95416,
+                "name": "Rebel Crest - Unlimited"
+              },
+              "Remnant Dominion - Limited": {
+                "item_id": 95417,
+                "name": "Remnant Dominion - Limited"
+              },
+              "Remnant Dominion - Unlimited": {
+                "item_id": 95418,
+                "name": "Remnant Dominion - Unlimited"
+              },
               "Republic Iconic - Limited": {
                 "item_id": 93016,
                 "name": "Republic Iconic - Limited"
@@ -35268,6 +35360,10 @@
           "Faction Warfare": {
             "item_id": 81118,
             "name": "Faction Warfare"
+          },
+          "Gallente Pilot": {
+            "item_id": 95452,
+            "name": "Gallente Pilot"
           },
           "Gas Harvesting": {
             "item_id": 81614,
@@ -57731,6 +57827,10 @@
                     "item_id": 95293,
                     "name": "Talos Presidential Agent SKIN"
                   },
+                  "Talos Pride of the Federation SKIN": {
+                    "item_id": 95473,
+                    "name": "Talos Pride of the Federation SKIN"
+                  },
                   "Talos Serpentis SKIN": {
                     "item_id": 42179,
                     "name": "Talos Serpentis SKIN"
@@ -58734,6 +58834,10 @@
                       "Kronos Media Miasma SKIN": {
                         "item_id": 91640,
                         "name": "Kronos Media Miasma SKIN"
+                      },
+                      "Kronos Pride of the Federation SKIN": {
+                        "item_id": 95479,
+                        "name": "Kronos Pride of the Federation SKIN"
                       },
                       "Kronos Ruby Sungrazer SKIN": {
                         "item_id": 45571,
@@ -60752,6 +60856,10 @@
                     "item_id": 94053,
                     "name": "Hyperion Presidential Agent SKIN"
                   },
+                  "Hyperion Pride of the Federation SKIN": {
+                    "item_id": 95474,
+                    "name": "Hyperion Pride of the Federation SKIN"
+                  },
                   "Hyperion Quafe SKIN": {
                     "item_id": 37056,
                     "name": "Hyperion Quafe SKIN"
@@ -62565,6 +62673,10 @@
                         "item_id": 46430,
                         "name": "Moros Kopis Edge SKIN"
                       },
+                      "Moros Pride of the Federation SKIN": {
+                        "item_id": 95475,
+                        "name": "Moros Pride of the Federation SKIN"
+                      },
                       "Moros Roden SKIN": {
                         "item_id": 34664,
                         "name": "Moros Roden SKIN"
@@ -62858,6 +62970,10 @@
                   "Ninazu Kopis Edge SKIN": {
                     "item_id": 46443,
                     "name": "Ninazu Kopis Edge SKIN"
+                  },
+                  "Ninazu Pride of the Federation SKIN": {
+                    "item_id": 95476,
+                    "name": "Ninazu Pride of the Federation SKIN"
                   },
                   "Ninazu Valimor Legacy SKIN": {
                     "item_id": 41684,
@@ -65667,6 +65783,10 @@
                       "Arazu Kopis Edge SKIN": {
                         "item_id": 46412,
                         "name": "Arazu Kopis Edge SKIN"
+                      },
+                      "Arazu Pride of the Federation SKIN": {
+                        "item_id": 95478,
+                        "name": "Arazu Pride of the Federation SKIN"
                       },
                       "Arazu Serpentis SKIN": {
                         "item_id": 42174,
@@ -69349,6 +69469,10 @@
                         "item_id": 95292,
                         "name": "Hecate Presidential Agent SKIN"
                       },
+                      "Hecate Pride of the Federation SKIN": {
+                        "item_id": 95480,
+                        "name": "Hecate Pride of the Federation SKIN"
+                      },
                       "Hecate Ruby Sungrazer SKIN": {
                         "item_id": 45564,
                         "name": "Hecate Ruby Sungrazer SKIN"
@@ -71818,6 +71942,10 @@
                         "item_id": 46393,
                         "name": "Keres Kopis Edge SKIN"
                       },
+                      "Keres Pride of the Federation SKIN": {
+                        "item_id": 95477,
+                        "name": "Keres Pride of the Federation SKIN"
+                      },
                       "Keres Serpentis SKIN": {
                         "item_id": 42157,
                         "name": "Keres Serpentis SKIN"
@@ -72953,6 +73081,10 @@
                   "Imicus Navy Issue Penumbral Shadows SKIN": {
                     "item_id": 93696,
                     "name": "Imicus Navy Issue Penumbral Shadows SKIN"
+                  },
+                  "Imicus Navy Issue Pride of the Federation SKIN": {
+                    "item_id": 95481,
+                    "name": "Imicus Navy Issue Pride of the Federation SKIN"
                   },
                   "Imicus Navy Issue Semiotique Superluminal SKIN": {
                     "item_id": 73840,
@@ -74760,6 +74892,10 @@
                   "Maulus Penumbral Shadows SKIN": {
                     "item_id": 93718,
                     "name": "Maulus Penumbral Shadows SKIN"
+                  },
+                  "Maulus Pride of the Federation SKIN": {
+                    "item_id": 95482,
+                    "name": "Maulus Pride of the Federation SKIN"
                   },
                   "Maulus Serpentis SKIN": {
                     "item_id": 42150,
