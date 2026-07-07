@@ -7311,6 +7311,14 @@
         "name": "Portrait Backgrounds",
         "subgroups": {},
         "items": {
+          "Foundation Wisdom Background": {
+            "item_id": 95673,
+            "name": "Foundation Wisdom Background"
+          },
+          "Liberated Matar Background": {
+            "item_id": 95672,
+            "name": "Liberated Matar Background"
+          },
           "Manifest Homecoming Background": {
             "item_id": 95228,
             "name": "Manifest Homecoming Background"
@@ -7318,6 +7326,10 @@
           "Moreau’s Gallente Background": {
             "item_id": 92554,
             "name": "Moreau’s Gallente Background"
+          },
+          "Operation Avalon Background": {
+            "item_id": 95458,
+            "name": "Operation Avalon Background"
           },
           "Roden’s Gallente Background": {
             "item_id": 92555,
@@ -7334,6 +7346,10 @@
           "Tenzin’s Gallente Background": {
             "item_id": 92550,
             "name": "Tenzin’s Gallente Background"
+          },
+          "Union Contemplation Background": {
+            "item_id": 95674,
+            "name": "Union Contemplation Background"
           }
         }
       },
@@ -21404,6 +21420,10 @@
             "name": "Booster Slot 14",
             "subgroups": {},
             "items": {
+              "Astrograph Clash Booster": {
+                "item_id": 95533,
+                "name": "Astrograph Clash Booster"
+              },
               "Expired Hunt Probing Booster I": {
                 "item_id": 63645,
                 "name": "Expired Hunt Probing Booster I"
@@ -21539,6 +21559,10 @@
                 "item_id": 91943,
                 "name": "Federation Defense Booster III"
               },
+              "Hallowed Volatile Booster": {
+                "item_id": 95542,
+                "name": "Hallowed Volatile Booster"
+              },
               "Imperial Defense Booster I": {
                 "item_id": 91932,
                 "name": "Imperial Defense Booster I"
@@ -21563,6 +21587,10 @@
                 "item_id": 91946,
                 "name": "Republic Defense Booster III"
               },
+              "SITREP Clash Booster": {
+                "item_id": 95534,
+                "name": "SITREP Clash Booster"
+              },
               "State Defense Booster I": {
                 "item_id": 91934,
                 "name": "State Defense Booster I"
@@ -21574,6 +21602,10 @@
               "State Defense Booster III": {
                 "item_id": 91942,
                 "name": "State Defense Booster III"
+              },
+              "Tenacious Volatile Booster": {
+                "item_id": 95543,
+                "name": "Tenacious Volatile Booster"
               }
             }
           },
@@ -21582,6 +21614,14 @@
             "name": "Booster Slot 16",
             "subgroups": {},
             "items": {
+              "Cavalry Clash Booster": {
+                "item_id": 95532,
+                "name": "Cavalry Clash Booster"
+              },
+              "Coherence Volatile Booster": {
+                "item_id": 95537,
+                "name": "Coherence Volatile Booster"
+              },
               "Expired Hunt Drone Precision Booster I": {
                 "item_id": 63661,
                 "name": "Expired Hunt Drone Precision Booster I"
@@ -21665,6 +21705,10 @@
               "State Mobility Booster III": {
                 "item_id": 91954,
                 "name": "State Mobility Booster III"
+              },
+              "Upcycle Volatile Booster": {
+                "item_id": 95538,
+                "name": "Upcycle Volatile Booster"
               }
             }
           },
@@ -21741,6 +21785,14 @@
                 "item_id": 91977,
                 "name": "Republic Hardpoint Booster III"
               },
+              "Requisition Volatile Booster": {
+                "item_id": 95539,
+                "name": "Requisition Volatile Booster"
+              },
+              "Soaring Volatile Booster": {
+                "item_id": 95541,
+                "name": "Soaring Volatile Booster"
+              },
               "State Hardpoint Booster I": {
                 "item_id": 91963,
                 "name": "State Hardpoint Booster I"
@@ -21752,6 +21804,10 @@
               "State Hardpoint Booster III": {
                 "item_id": 91973,
                 "name": "State Hardpoint Booster III"
+              },
+              "Zero-In Volatile Booster": {
+                "item_id": 95540,
+                "name": "Zero-In Volatile Booster"
               }
             }
           },
@@ -25408,6 +25464,10 @@
                       "Poteque 'Prospector' Salvaging SV-905": {
                         "item_id": 27198,
                         "name": "Poteque 'Prospector' Salvaging SV-905"
+                      },
+                      "Poteque 'Prospector' Salvaging SV-906": {
+                        "item_id": 95529,
+                        "name": "Poteque 'Prospector' Salvaging SV-906"
                       }
                     }
                   },
@@ -29026,12 +29086,16 @@
                         "item_id": 28391,
                         "name": "Batch Compressed Crokite"
                       },
+                      "Batch Compressed Crokite II-Grade": {
+                        "item_id": 28393,
+                        "name": "Batch Compressed Crokite II-Grade"
+                      },
                       "Batch Compressed Crokite III-Grade": {
                         "item_id": 28392,
                         "name": "Batch Compressed Crokite III-Grade"
                       },
                       "Batch Compressed Crokite IV-Grade": {
-                        "item_id": 28393,
+                        "item_id": 46693,
                         "name": "Batch Compressed Crokite IV-Grade"
                       },
                       "Compressed Crokite": {
@@ -29919,9 +29983,9 @@
                         "item_id": 1224,
                         "name": "Pyroxeres"
                       },
-                      "Pyroxeres  0-Grade": {
+                      "Pyroxeres 0-Grade": {
                         "item_id": 95395,
-                        "name": "Pyroxeres  0-Grade"
+                        "name": "Pyroxeres 0-Grade"
                       },
                       "Pyroxeres II-Grade": {
                         "item_id": 17459,
@@ -31578,14 +31642,6 @@
                     "item_id": 83386,
                     "name": "Asaya Midnight Gloss - Unlimited"
                   },
-                  "Ascendant Zenith Gloss - Limited": {
-                    "item_id": 95410,
-                    "name": "Ascendant Zenith Gloss - Limited"
-                  },
-                  "Ascendant Zenith Gloss - Unlimited": {
-                    "item_id": 95411,
-                    "name": "Ascendant Zenith Gloss - Unlimited"
-                  },
                   "Atomic Excess Gloss - Limited": {
                     "item_id": 88476,
                     "name": "Atomic Excess Gloss - Limited"
@@ -31601,6 +31657,14 @@
                   "Atomic Sheen Gloss - Unlimited": {
                     "item_id": 88473,
                     "name": "Atomic Sheen Gloss - Unlimited"
+                  },
+                  "Avalon Aqua Gloss - Limited": {
+                    "item_id": 95402,
+                    "name": "Avalon Aqua Gloss - Limited"
+                  },
+                  "Avalon Aqua Gloss - Unlimited": {
+                    "item_id": 95403,
+                    "name": "Avalon Aqua Gloss - Unlimited"
                   },
                   "Azure Istina Gloss - Limited": {
                     "item_id": 85754,
@@ -31661,6 +31725,10 @@
                   "Citric Substitute Gloss - Unlimited": {
                     "item_id": 83387,
                     "name": "Citric Substitute Gloss - Unlimited"
+                  },
+                  "Conflux Mist Gloss - Limited": {
+                    "item_id": 87784,
+                    "name": "Conflux Mist Gloss - Limited"
                   },
                   "Critical Kyanite Gloss - Limited": {
                     "item_id": 90607,
@@ -31926,13 +31994,13 @@
                     "item_id": 83385,
                     "name": "Polar Glaze Gloss - Unlimited"
                   },
-                  "Resolve Stratos Gloss - Limited": {
-                    "item_id": 95402,
-                    "name": "Resolve Stratos Gloss - Limited"
+                  "Resonant Turf Gloss - Limited": {
+                    "item_id": 95410,
+                    "name": "Resonant Turf Gloss - Limited"
                   },
-                  "Resolve Stratos Gloss - Unlimited": {
-                    "item_id": 95403,
-                    "name": "Resolve Stratos Gloss - Unlimited"
+                  "Resonant Turf Gloss - Unlimited": {
+                    "item_id": 95411,
+                    "name": "Resonant Turf Gloss - Unlimited"
                   },
                   "Risen Flesh Gloss - Limited": {
                     "item_id": 87773,
@@ -32169,6 +32237,14 @@
                     "item_id": 83324,
                     "name": "Asaya Midnight Matte - Unlimited"
                   },
+                  "Avalon Aqua Matte - Limited": {
+                    "item_id": 95406,
+                    "name": "Avalon Aqua Matte - Limited"
+                  },
+                  "Avalon Aqua Matte - Unlimited": {
+                    "item_id": 95407,
+                    "name": "Avalon Aqua Matte - Unlimited"
+                  },
                   "Azure Skies Matte - Limited": {
                     "item_id": 83202,
                     "name": "Azure Skies Matte - Limited"
@@ -32297,13 +32373,13 @@
                     "item_id": 83302,
                     "name": "Deep Void Matte - Unlimited"
                   },
-                  "Defiant Ochre Matte - Limited": {
+                  "Defiant Latten Matte - Limited": {
                     "item_id": 95400,
-                    "name": "Defiant Ochre Matte - Limited"
+                    "name": "Defiant Latten Matte - Limited"
                   },
-                  "Defiant Ochre Matte - Unlimited": {
+                  "Defiant Latten Matte - Unlimited": {
                     "item_id": 95401,
-                    "name": "Defiant Ochre Matte - Unlimited"
+                    "name": "Defiant Latten Matte - Unlimited"
                   },
                   "Deprecated - Do not publish": {
                     "item_id": 84807,
@@ -32561,14 +32637,6 @@
                     "item_id": 87775,
                     "name": "Redoubt Bolt Matte - Unlimited"
                   },
-                  "Resolve Stratos Matte - Limited": {
-                    "item_id": 95406,
-                    "name": "Resolve Stratos Matte - Limited"
-                  },
-                  "Resolve Stratos Matte - Unlimited": {
-                    "item_id": 95407,
-                    "name": "Resolve Stratos Matte - Unlimited"
-                  },
                   "Ruddy Vein Matte - Limited": {
                     "item_id": 90603,
                     "name": "Ruddy Vein Matte - Limited"
@@ -32736,6 +32804,14 @@
                     "item_id": 83343,
                     "name": "Argon Heat Satin - Unlimited"
                   },
+                  "Arkombine Dawn Satin - Limited": {
+                    "item_id": 95408,
+                    "name": "Arkombine Dawn Satin - Limited"
+                  },
+                  "Arkombine Dawn Satin - Unlimited": {
+                    "item_id": 95409,
+                    "name": "Arkombine Dawn Satin - Unlimited"
+                  },
                   "Asaya Midnight Satin - Limited": {
                     "item_id": 83260,
                     "name": "Asaya Midnight Satin - Limited"
@@ -32827,10 +32903,6 @@
                   "Clear Gelidus Satin - Limited": {
                     "item_id": 85844,
                     "name": "Clear Gelidus Satin - Limited"
-                  },
-                  "Conflux Mist Gloss - Limited": {
-                    "item_id": 87784,
-                    "name": "Conflux Mist Gloss - Limited"
                   },
                   "Crystal Glaze Satin - Limited": {
                     "item_id": 85775,
@@ -33079,18 +33151,6 @@
                   "Purified Cerise Satin - Limited": {
                     "item_id": 85141,
                     "name": "Purified Cerise Satin - Limited"
-                  },
-                  "Radiant Aureate Metallic - Unlimited": {
-                    "item_id": 95399,
-                    "name": "Radiant Aureate Metallic - Unlimited"
-                  },
-                  "Reclaimed Dawn Satin - Limited": {
-                    "item_id": 95408,
-                    "name": "Reclaimed Dawn Satin - Limited"
-                  },
-                  "Reclaimed Dawn Satin - Unlimited": {
-                    "item_id": 95409,
-                    "name": "Reclaimed Dawn Satin - Unlimited"
                   },
                   "Risen Flesh Satin - Limited": {
                     "item_id": 87771,
@@ -33438,13 +33498,13 @@
                 "item_id": 88573,
                 "name": "Deep Space Iron Metallic - Unlimited"
               },
-              "Defiant Ochre Metallic - Limited": {
+              "Defiant Latten Metallic - Limited": {
                 "item_id": 95396,
-                "name": "Defiant Ochre Metallic - Limited"
+                "name": "Defiant Latten Metallic - Limited"
               },
-              "Defiant Ochre Metallic - Unlimited": {
+              "Defiant Latten Metallic - Unlimited": {
                 "item_id": 95397,
-                "name": "Defiant Ochre Metallic - Unlimited"
+                "name": "Defiant Latten Metallic - Unlimited"
               },
               "Deprecated - Do not publish": {
                 "item_id": 84808,
@@ -33577,6 +33637,14 @@
               "Haema Iron Metallic - Unlimited": {
                 "item_id": 85150,
                 "name": "Haema Iron Metallic - Unlimited"
+              },
+              "Harmonic Alloy Metallic - Limited": {
+                "item_id": 95404,
+                "name": "Harmonic Alloy Metallic - Limited"
+              },
+              "Harmonic Alloy Metallic - Unlimited": {
+                "item_id": 95405,
+                "name": "Harmonic Alloy Metallic - Unlimited"
               },
               "Helian Tin Metallic - Limited": {
                 "item_id": 88614,
@@ -33729,6 +33797,10 @@
               "Radiant Aureate Metallic - Limited": {
                 "item_id": 95398,
                 "name": "Radiant Aureate Metallic - Limited"
+              },
+              "Radiant Aureate Metallic - Unlimited": {
+                "item_id": 95399,
+                "name": "Radiant Aureate Metallic - Unlimited"
               },
               "Rose-tinted Trit Metallic - Limited": {
                 "item_id": 87838,
@@ -33885,14 +33957,6 @@
               "Veteran Gunmetal Metallic - Unlimited": {
                 "item_id": 89696,
                 "name": "Veteran Gunmetal Metallic - Unlimited"
-              },
-              "Violent Surge Metallic - Limited": {
-                "item_id": 95404,
-                "name": "Violent Surge Metallic - Limited"
-              },
-              "Violent Surge Metallic - Unlimited": {
-                "item_id": 95405,
-                "name": "Violent Surge Metallic - Unlimited"
               },
               "Violet Covenant Metallic - Limited": {
                 "item_id": 89934,
@@ -34333,14 +34397,6 @@
                 "item_id": 82478,
                 "name": "Emergent Stripes - Unlimited"
               },
-              "Enduring Core - Limited": {
-                "item_id": 95412,
-                "name": "Enduring Core - Limited"
-              },
-              "Enduring Core - Unlimited": {
-                "item_id": 95413,
-                "name": "Enduring Core - Unlimited"
-              },
               "Escape Curve - Limited": {
                 "item_id": 82353,
                 "name": "Escape Curve - Limited"
@@ -34532,6 +34588,14 @@
               "Hard Turn - Unlimited": {
                 "item_id": 82443,
                 "name": "Hard Turn - Unlimited"
+              },
+              "Harmonius Bridge - Limited": {
+                "item_id": 95412,
+                "name": "Harmonius Bridge - Limited"
+              },
+              "Harmonius Bridge - Unlimited": {
+                "item_id": 95413,
+                "name": "Harmonius Bridge - Unlimited"
               },
               "Hex Blast Off - Limited": {
                 "item_id": 82383,
@@ -34961,21 +35025,21 @@
                 "item_id": 82440,
                 "name": "Rank and File - Unlimited"
               },
-              "Rebel Crest - Limited": {
+              "Rebel Cross - Limited": {
                 "item_id": 95415,
-                "name": "Rebel Crest - Limited"
+                "name": "Rebel Cross - Limited"
               },
-              "Rebel Crest - Unlimited": {
+              "Rebel Cross - Unlimited": {
                 "item_id": 95416,
-                "name": "Rebel Crest - Unlimited"
+                "name": "Rebel Cross - Unlimited"
               },
-              "Remnant Dominion - Limited": {
+              "Remnant Honor - Limited": {
                 "item_id": 95417,
-                "name": "Remnant Dominion - Limited"
+                "name": "Remnant Honor - Limited"
               },
-              "Remnant Dominion - Unlimited": {
+              "Remnant Honor - Unlimited": {
                 "item_id": 95418,
-                "name": "Remnant Dominion - Unlimited"
+                "name": "Remnant Honor - Unlimited"
               },
               "Republic Iconic - Limited": {
                 "item_id": 93016,
@@ -46625,6 +46689,10 @@
                 "item_id": 47257,
                 "name": "Assault Damage Control II"
               },
+              "Breach Control": {
+                "item_id": 95414,
+                "name": "Breach Control"
+              },
               "Brynn's Modified Damage Control": {
                 "item_id": 41203,
                 "name": "Brynn's Modified Damage Control"
@@ -48720,6 +48788,10 @@
                   "Inertial Stabilizers II": {
                     "item_id": 1405,
                     "name": "Inertial Stabilizers II"
+                  },
+                  "Lorharyth’s Modified Inertial Stabilizer": {
+                    "item_id": 95556,
+                    "name": "Lorharyth’s Modified Inertial Stabilizer"
                   },
                   "Shadow Serpentis Inertial Stabilizers": {
                     "item_id": 34483,
@@ -61492,6 +61564,10 @@
                     "name": "Amarr",
                     "subgroups": {},
                     "items": {
+                      "Aeon Arkombine Arisen SKIN": {
+                        "item_id": 95654,
+                        "name": "Aeon Arkombine Arisen SKIN"
+                      },
                       "Aeon Aurora Universalis SKIN": {
                         "item_id": 86108,
                         "name": "Aeon Aurora Universalis SKIN"
@@ -69577,6 +69653,10 @@
                 "name": "Navy Faction",
                 "subgroups": {},
                 "items": {
+                  "Algos Navy Issue Forever Creative SKIN": {
+                    "item_id": 95528,
+                    "name": "Algos Navy Issue Forever Creative SKIN"
+                  },
                   "Algos Navy Issue Penumbral Shadows SKIN": {
                     "item_id": 95269,
                     "name": "Algos Navy Issue Penumbral Shadows SKIN"
@@ -69625,6 +69705,10 @@
                     "item_id": 79610,
                     "name": "Coercer Navy Issue Sanguinary Savant SKIN"
                   },
+                  "Corax Navy Issue Forever Creative SKIN": {
+                    "item_id": 95526,
+                    "name": "Corax Navy Issue Forever Creative SKIN"
+                  },
                   "Corax Navy Issue Penumbral Shadows SKIN": {
                     "item_id": 95268,
                     "name": "Corax Navy Issue Penumbral Shadows SKIN"
@@ -69645,6 +69729,10 @@
                     "item_id": 82175,
                     "name": "Cormorant Navy Issue State Police SKIN"
                   },
+                  "Dragoon Navy Issue Forever Creative SKIN": {
+                    "item_id": 95525,
+                    "name": "Dragoon Navy Issue Forever Creative SKIN"
+                  },
                   "Dragoon Navy Issue Mandate of Faith SKIN": {
                     "item_id": 95295,
                     "name": "Dragoon Navy Issue Mandate of Faith SKIN"
@@ -69660,6 +69748,10 @@
                   "Pioneer Consortium Issue Refined Resourcer SKIN": {
                     "item_id": 91098,
                     "name": "Pioneer Consortium Issue Refined Resourcer SKIN"
+                  },
+                  "Talwar Fleet Issue Forever Creative SKIN": {
+                    "item_id": 95527,
+                    "name": "Talwar Fleet Issue Forever Creative SKIN"
                   },
                   "Talwar Fleet Issue Penumbral Shadows SKIN": {
                     "item_id": 95266,
@@ -84181,6 +84273,25 @@
                   "Interstellar Convergence Booster Crate": {
                     "item_id": 62028,
                     "name": "Interstellar Convergence Booster Crate"
+                  }
+                }
+              },
+              "Operation Avalon Assets": {
+                "id": 3864,
+                "name": "Operation Avalon Assets",
+                "subgroups": {},
+                "items": {
+                  "Operation Avalon Booster Crate": {
+                    "item_id": 95647,
+                    "name": "Operation Avalon Booster Crate"
+                  },
+                  "Ranking Vanguard Resonant Cypher": {
+                    "item_id": 95716,
+                    "name": "Ranking Vanguard Resonant Cypher"
+                  },
+                  "Vanguard Resonant Cypher": {
+                    "item_id": 95640,
+                    "name": "Vanguard Resonant Cypher"
                   }
                 }
               },
