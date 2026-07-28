@@ -34441,6 +34441,10 @@
                 "item_id": 88653,
                 "name": "Exo-Spinal - Unlimited"
               },
+              "Fabricated 100 - Limited": {
+                "item_id": 95813,
+                "name": "Fabricated 100 - Limited"
+              },
               "Fade In - Limited": {
                 "item_id": 82356,
                 "name": "Fade In - Limited"
@@ -70638,7 +70642,7 @@
                     "name": "Catalyst Semiotique Superluminal SKIN"
                   },
                   "Catalyst Serpentis SKIN": {
-                    "item_id": 42162,
+                    "item_id": 39585,
                     "name": "Catalyst Serpentis SKIN"
                   },
                   "Catalyst Serpentis SKIN (30 Days)": {
