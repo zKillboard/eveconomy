@@ -21420,10 +21420,6 @@
             "name": "Booster Slot 14",
             "subgroups": {},
             "items": {
-              "Astrograph Clash Booster": {
-                "item_id": 95533,
-                "name": "Astrograph Clash Booster"
-              },
               "Expired Hunt Probing Booster I": {
                 "item_id": 63645,
                 "name": "Expired Hunt Probing Booster I"
@@ -21559,10 +21555,6 @@
                 "item_id": 91943,
                 "name": "Federation Defense Booster III"
               },
-              "Hallowed Volatile Booster": {
-                "item_id": 95542,
-                "name": "Hallowed Volatile Booster"
-              },
               "Imperial Defense Booster I": {
                 "item_id": 91932,
                 "name": "Imperial Defense Booster I"
@@ -21587,10 +21579,6 @@
                 "item_id": 91946,
                 "name": "Republic Defense Booster III"
               },
-              "SITREP Clash Booster": {
-                "item_id": 95534,
-                "name": "SITREP Clash Booster"
-              },
               "State Defense Booster I": {
                 "item_id": 91934,
                 "name": "State Defense Booster I"
@@ -21602,10 +21590,6 @@
               "State Defense Booster III": {
                 "item_id": 91942,
                 "name": "State Defense Booster III"
-              },
-              "Tenacious Volatile Booster": {
-                "item_id": 95543,
-                "name": "Tenacious Volatile Booster"
               }
             }
           },
@@ -21614,14 +21598,6 @@
             "name": "Booster Slot 16",
             "subgroups": {},
             "items": {
-              "Cavalry Clash Booster": {
-                "item_id": 95532,
-                "name": "Cavalry Clash Booster"
-              },
-              "Coherence Volatile Booster": {
-                "item_id": 95537,
-                "name": "Coherence Volatile Booster"
-              },
               "Expired Hunt Drone Precision Booster I": {
                 "item_id": 63661,
                 "name": "Expired Hunt Drone Precision Booster I"
@@ -21705,10 +21681,6 @@
               "State Mobility Booster III": {
                 "item_id": 91954,
                 "name": "State Mobility Booster III"
-              },
-              "Upcycle Volatile Booster": {
-                "item_id": 95538,
-                "name": "Upcycle Volatile Booster"
               }
             }
           },
@@ -21785,14 +21757,6 @@
                 "item_id": 91977,
                 "name": "Republic Hardpoint Booster III"
               },
-              "Requisition Volatile Booster": {
-                "item_id": 95539,
-                "name": "Requisition Volatile Booster"
-              },
-              "Soaring Volatile Booster": {
-                "item_id": 95541,
-                "name": "Soaring Volatile Booster"
-              },
               "State Hardpoint Booster I": {
                 "item_id": 91963,
                 "name": "State Hardpoint Booster I"
@@ -21804,10 +21768,6 @@
               "State Hardpoint Booster III": {
                 "item_id": 91973,
                 "name": "State Hardpoint Booster III"
-              },
-              "Zero-In Volatile Booster": {
-                "item_id": 95540,
-                "name": "Zero-In Volatile Booster"
               }
             }
           },
