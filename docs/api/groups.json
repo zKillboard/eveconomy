@@ -33450,6 +33450,38 @@
                 "item_id": 86106,
                 "name": "Coronal Horizon Bronze Metallic - Limited"
               },
+              "Creamy Alloy Metallic - Limited": {
+                "item_id": 96800,
+                "name": "Creamy Alloy Metallic - Limited"
+              },
+              "Creamy Alloy Metallic - Unlimited": {
+                "item_id": 96799,
+                "name": "Creamy Alloy Metallic - Unlimited"
+              },
+              "Creamy Ferrous Metallic - Limited": {
+                "item_id": 96798,
+                "name": "Creamy Ferrous Metallic - Limited"
+              },
+              "Creamy Ferrous Metallic - Unlimited": {
+                "item_id": 96797,
+                "name": "Creamy Ferrous Metallic - Unlimited"
+              },
+              "Creamy Nebula Metallic - Limited": {
+                "item_id": 96796,
+                "name": "Creamy Nebula Metallic - Limited"
+              },
+              "Creamy Nebula Metallic - Unlimited": {
+                "item_id": 96795,
+                "name": "Creamy Nebula Metallic - Unlimited"
+              },
+              "Creamy Plate Metallic - Limited": {
+                "item_id": 96802,
+                "name": "Creamy Plate Metallic - Limited"
+              },
+              "Creamy Plate Metallic - Unlimited": {
+                "item_id": 96801,
+                "name": "Creamy Plate Metallic - Unlimited"
+              },
               "Crisp Mint Metallic - Limited": {
                 "item_id": 91140,
                 "name": "Crisp Mint Metallic - Limited"
@@ -33630,6 +33662,38 @@
                 "item_id": 89948,
                 "name": "Hemolytic Steel Metallic - Limited"
               },
+              "Highlit Alloy Metallic - Limited": {
+                "item_id": 96792,
+                "name": "Highlit Alloy Metallic - Limited"
+              },
+              "Highlit Alloy Metallic - Unlimited": {
+                "item_id": 96791,
+                "name": "Highlit Alloy Metallic - Unlimited"
+              },
+              "Highlit Canary Metallic - Limited": {
+                "item_id": 96770,
+                "name": "Highlit Canary Metallic - Limited"
+              },
+              "Highlit Canary Metallic - Unlimited": {
+                "item_id": 96769,
+                "name": "Highlit Canary Metallic - Unlimited"
+              },
+              "Highlit Ferrous Metallic - Limited": {
+                "item_id": 96772,
+                "name": "Highlit Ferrous Metallic - Limited"
+              },
+              "Highlit Ferrous Metallic - Unlimited": {
+                "item_id": 96771,
+                "name": "Highlit Ferrous Metallic - Unlimited"
+              },
+              "Highlit Plate Metallic - Limited": {
+                "item_id": 96794,
+                "name": "Highlit Plate Metallic - Limited"
+              },
+              "Highlit Plate Metallic - Unlimited": {
+                "item_id": 96793,
+                "name": "Highlit Plate Metallic - Unlimited"
+              },
               "Imperial Gold Metallic - Limited": {
                 "item_id": 84173,
                 "name": "Imperial Gold Metallic - Limited"
@@ -33669,6 +33733,38 @@
               "Luminated Copper Metallic - Unlimited": {
                 "item_id": 88580,
                 "name": "Luminated Copper Metallic - Unlimited"
+              },
+              "Marine Alloy Metallic - Limited": {
+                "item_id": 96811,
+                "name": "Marine Alloy Metallic - Limited"
+              },
+              "Marine Alloy Metallic - Unlimited": {
+                "item_id": 96809,
+                "name": "Marine Alloy Metallic - Unlimited"
+              },
+              "Marine Ferrous Metallic - Limited": {
+                "item_id": 96808,
+                "name": "Marine Ferrous Metallic - Limited"
+              },
+              "Marine Ferrous Metallic - Unlimited": {
+                "item_id": 96807,
+                "name": "Marine Ferrous Metallic - Unlimited"
+              },
+              "Marine Plate Metallic - Limited": {
+                "item_id": 96814,
+                "name": "Marine Plate Metallic - Limited"
+              },
+              "Marine Plate Metallic - Unlimited": {
+                "item_id": 96813,
+                "name": "Marine Plate Metallic - Unlimited"
+              },
+              "Marine Shallows Metallic - Limited": {
+                "item_id": 96806,
+                "name": "Marine Shallows Metallic - Limited"
+              },
+              "Marine Shallows Metallic - Unlimited": {
+                "item_id": 96804,
+                "name": "Marine Shallows Metallic - Unlimited"
               },
               "Muted Chrome Metallic - Limited": {
                 "item_id": 88597,
@@ -33993,6 +34089,14 @@
                 "item_id": 85149,
                 "name": "Annointed Dead Pattern - Unlimited"
               },
+              "Arch - Limited": {
+                "item_id": 96635,
+                "name": "Arch - Limited"
+              },
+              "Arch - Unlimited": {
+                "item_id": 96634,
+                "name": "Arch - Unlimited"
+              },
               "Architect of Dreams - Limited": {
                 "item_id": 87790,
                 "name": "Architect of Dreams - Limited"
@@ -34021,6 +34125,14 @@
                 "item_id": 90722,
                 "name": "AT XXI Mega-Victory - Limited"
               },
+              "Big Dots - Limited": {
+                "item_id": 96639,
+                "name": "Big Dots - Limited"
+              },
+              "Big Dots - Unlimited": {
+                "item_id": 96638,
+                "name": "Big Dots - Unlimited"
+              },
               "Bionic Complex - Limited": {
                 "item_id": 88642,
                 "name": "Bionic Complex - Limited"
@@ -34045,9 +34157,25 @@
                 "item_id": 82477,
                 "name": "Blooming Void - Unlimited"
               },
+              "Bridged Squares - Limited": {
+                "item_id": 96681,
+                "name": "Bridged Squares - Limited"
+              },
+              "Bridged Squares - Unlimited": {
+                "item_id": 96680,
+                "name": "Bridged Squares - Unlimited"
+              },
               "Brutal Splatter Pattern - Limited": {
                 "item_id": 85147,
                 "name": "Brutal Splatter Pattern - Limited"
+              },
+              "Button Square - Limited": {
+                "item_id": 96631,
+                "name": "Button Square - Limited"
+              },
+              "Button Square - Unlimited": {
+                "item_id": 96630,
+                "name": "Button Square - Unlimited"
               },
               "Camo-Vyraj - Limited": {
                 "item_id": 82358,
@@ -34113,6 +34241,46 @@
                 "item_id": 82441,
                 "name": "Checkmate - Unlimited"
               },
+              "Circle - Limited": {
+                "item_id": 96608,
+                "name": "Circle - Limited"
+              },
+              "Circle - Unlimited": {
+                "item_id": 96607,
+                "name": "Circle - Unlimited"
+              },
+              "Circle Hole - Unlimited": {
+                "item_id": 96611,
+                "name": "Circle Hole - Unlimited"
+              },
+              "Circle Hole Contrast - Limited": {
+                "item_id": 96659,
+                "name": "Circle Hole Contrast - Limited"
+              },
+              "Circle Hole Contrast - Unlimited": {
+                "item_id": 96658,
+                "name": "Circle Hole Contrast - Unlimited"
+              },
+              "Circle Outline - Unlimited": {
+                "item_id": 96609,
+                "name": "Circle Outline - Unlimited"
+              },
+              "Circle Outline Thin - Limited": {
+                "item_id": 96616,
+                "name": "Circle Outline Thin - Limited"
+              },
+              "Circle Outline Thin - Unlimited": {
+                "item_id": 96615,
+                "name": "Circle Outline Thin - Unlimited"
+              },
+              "Circuit Connections - Limited": {
+                "item_id": 96687,
+                "name": "Circuit Connections - Limited"
+              },
+              "Circuit Connections - Unlimited": {
+                "item_id": 96686,
+                "name": "Circuit Connections - Unlimited"
+              },
               "Clustered Horde - Limited": {
                 "item_id": 87840,
                 "name": "Clustered Horde - Limited"
@@ -34132,6 +34300,30 @@
               "Complex Hex - Unlimited": {
                 "item_id": 82452,
                 "name": "Complex Hex - Unlimited"
+              },
+              "Concentric Circles - Limited": {
+                "item_id": 96643,
+                "name": "Concentric Circles - Limited"
+              },
+              "Concentric Circles - Unlimited": {
+                "item_id": 96642,
+                "name": "Concentric Circles - Unlimited"
+              },
+              "Concentric Diamonds - Limited": {
+                "item_id": 96683,
+                "name": "Concentric Diamonds - Limited"
+              },
+              "Concentric Diamonds - Unlimited": {
+                "item_id": 96682,
+                "name": "Concentric Diamonds - Unlimited"
+              },
+              "Concentric Squares - Limited": {
+                "item_id": 96685,
+                "name": "Concentric Squares - Limited"
+              },
+              "Concentric Squares - Unlimited": {
+                "item_id": 96684,
+                "name": "Concentric Squares - Unlimited"
               },
               "Consensus Drift - Limited": {
                 "item_id": 85405,
@@ -34209,6 +34401,14 @@
                 "item_id": 85786,
                 "name": "Cross Drift - Limited"
               },
+              "Crossed-corners - Limited": {
+                "item_id": 96651,
+                "name": "Crossed-corners - Limited"
+              },
+              "Crossed-corners - Unlimited": {
+                "item_id": 96650,
+                "name": "Crossed-corners - Unlimited"
+              },
               "Crossroad - Limited": {
                 "item_id": 82352,
                 "name": "Crossroad - Limited"
@@ -34253,6 +34453,14 @@
                 "item_id": 82449,
                 "name": "Crystalized Gradient - Unlimited"
               },
+              "Cube - Limited": {
+                "item_id": 96629,
+                "name": "Cube - Limited"
+              },
+              "Cube - Unlimited": {
+                "item_id": 96628,
+                "name": "Cube - Unlimited"
+              },
               "Cyber Quill - Limited": {
                 "item_id": 88648,
                 "name": "Cyber Quill - Limited"
@@ -34268,6 +34476,14 @@
               "Cyclic Sunrise - Unlimited": {
                 "item_id": 82458,
                 "name": "Cyclic Sunrise - Unlimited"
+              },
+              "Cylinder - Limited": {
+                "item_id": 96647,
+                "name": "Cylinder - Limited"
+              },
+              "Cylinder - Unlimited": {
+                "item_id": 96646,
+                "name": "Cylinder - Unlimited"
               },
               "Data Fragmentation - Limited": {
                 "item_id": 82378,
@@ -34421,6 +34637,14 @@
                 "item_id": 88633,
                 "name": "Faded Turn - Unlimited"
               },
+              "Fading Decline - Limited": {
+                "item_id": 96693,
+                "name": "Fading Decline - Limited"
+              },
+              "Fading Decline - Unlimited": {
+                "item_id": 96692,
+                "name": "Fading Decline - Unlimited"
+              },
               "Fading Hive - Limited": {
                 "item_id": 82369,
                 "name": "Fading Hive - Limited"
@@ -34428,6 +34652,22 @@
               "Fading Hive - Unlimited": {
                 "item_id": 82455,
                 "name": "Fading Hive - Unlimited"
+              },
+              "Fading Hole - Limited": {
+                "item_id": 96691,
+                "name": "Fading Hole - Limited"
+              },
+              "Fading Hole - Unlimited": {
+                "item_id": 96690,
+                "name": "Fading Hole - Unlimited"
+              },
+              "Fading Intrusion - Limited": {
+                "item_id": 96695,
+                "name": "Fading Intrusion - Limited"
+              },
+              "Fading Intrusion - Unlimited": {
+                "item_id": 96694,
+                "name": "Fading Intrusion - Unlimited"
               },
               "Failing Fifth - Limited": {
                 "item_id": 82386,
@@ -34493,6 +34733,14 @@
                 "item_id": 93348,
                 "name": "Fortified State - Unlimited"
               },
+              "Four Corners - Limited": {
+                "item_id": 96645,
+                "name": "Four Corners - Limited"
+              },
+              "Four Corners - Unlimited": {
+                "item_id": 96644,
+                "name": "Four Corners - Unlimited"
+              },
               "Four from One - Limited": {
                 "item_id": 82385,
                 "name": "Four from One - Limited"
@@ -34548,6 +34796,10 @@
               "Hacked Virtuality - Unlimited": {
                 "item_id": 86680,
                 "name": "Hacked Virtuality - Unlimited"
+              },
+              "Half Arch - Unlimited": {
+                "item_id": 96672,
+                "name": "Half Arch - Unlimited"
               },
               "Half Measure - Limited": {
                 "item_id": 82363,
@@ -34753,6 +35005,14 @@
                 "item_id": 88664,
                 "name": "Liquid Groove - Unlimited"
               },
+              "Loud Warning Circle - Limited": {
+                "item_id": 96657,
+                "name": "Loud Warning Circle - Limited"
+              },
+              "Loud Warning Circle - Unlimited": {
+                "item_id": 96656,
+                "name": "Loud Warning Circle - Unlimited"
+              },
               "Luminous Flow - Limited": {
                 "item_id": 90141,
                 "name": "Luminous Flow - Limited"
@@ -34917,9 +35177,41 @@
                 "item_id": 88661,
                 "name": "Oceanic Vortex - Unlimited"
               },
+              "Octagon - Limited": {
+                "item_id": 96661,
+                "name": "Octagon - Limited"
+              },
+              "Octagon - Unlimited": {
+                "item_id": 96660,
+                "name": "Octagon - Unlimited"
+              },
+              "Octagon Hole - Limited": {
+                "item_id": 96663,
+                "name": "Octagon Hole - Limited"
+              },
+              "Octagon Hole - Unlimited": {
+                "item_id": 96662,
+                "name": "Octagon Hole - Unlimited"
+              },
+              "Octagon Outline - Limited": {
+                "item_id": 96665,
+                "name": "Octagon Outline - Limited"
+              },
+              "Octagon Outline - Unlimited": {
+                "item_id": 96664,
+                "name": "Octagon Outline - Unlimited"
+              },
               "Oncoming Storm - Limited": {
                 "item_id": 87800,
                 "name": "Oncoming Storm - Limited"
+              },
+              "Opposing Triangles - Limited": {
+                "item_id": 96768,
+                "name": "Opposing Triangles - Limited"
+              },
+              "Opposing Triangles - Unlimited": {
+                "item_id": 96767,
+                "name": "Opposing Triangles - Unlimited"
               },
               "Orbital Cavalier - Limited": {
                 "item_id": 89687,
@@ -34936,6 +35228,14 @@
               "Oxidative Stress - Unlimited": {
                 "item_id": 90647,
                 "name": "Oxidative Stress - Unlimited"
+              },
+              "Pentagon - Limited": {
+                "item_id": 96667,
+                "name": "Pentagon - Limited"
+              },
+              "Pentagon - Unlimited": {
+                "item_id": 96666,
+                "name": "Pentagon - Unlimited"
               },
               "Permafrost Interrupted - Limited": {
                 "item_id": 91135,
@@ -35049,6 +35349,14 @@
                 "item_id": 90634,
                 "name": "Rough Element - Unlimited"
               },
+              "Rounded Diamond - Limited": {
+                "item_id": 96689,
+                "name": "Rounded Diamond - Limited"
+              },
+              "Rounded Diamond - Unlimited": {
+                "item_id": 96688,
+                "name": "Rounded Diamond - Unlimited"
+              },
               "Scars of Sarikusa - Limited": {
                 "item_id": 85305,
                 "name": "Scars of Sarikusa - Limited"
@@ -35125,6 +35433,14 @@
                 "item_id": 85785,
                 "name": "Solstice Nexus - Limited"
               },
+              "Sphere - Limited": {
+                "item_id": 96633,
+                "name": "Sphere - Limited"
+              },
+              "Sphere - Unlimited": {
+                "item_id": 96632,
+                "name": "Sphere - Unlimited"
+              },
               "Splatter Strike - Limited": {
                 "item_id": 88679,
                 "name": "Splatter Strike - Limited"
@@ -35140,6 +35456,38 @@
               "Splatter Swipe - Unlimited": {
                 "item_id": 88682,
                 "name": "Splatter Swipe - Unlimited"
+              },
+              "Split Circles - Limited": {
+                "item_id": 96653,
+                "name": "Split Circles - Limited"
+              },
+              "Split Circles - Unlimited": {
+                "item_id": 96652,
+                "name": "Split Circles - Unlimited"
+              },
+              "Square - Limited": {
+                "item_id": 96614,
+                "name": "Square - Limited"
+              },
+              "Square - Unlimited": {
+                "item_id": 96613,
+                "name": "Square - Unlimited"
+              },
+              "Square Outline - Limited": {
+                "item_id": 96618,
+                "name": "Square Outline - Limited"
+              },
+              "Square Outline - Unlimited": {
+                "item_id": 96617,
+                "name": "Square Outline - Unlimited"
+              },
+              "Square Valley - Limited": {
+                "item_id": 96669,
+                "name": "Square Valley - Limited"
+              },
+              "Square Valley - Unlimited": {
+                "item_id": 96668,
+                "name": "Square Valley - Unlimited"
               },
               "Squared Away - Limited": {
                 "item_id": 88673,
@@ -35237,6 +35585,14 @@
                 "item_id": 82484,
                 "name": "Terminus Plate - Unlimited"
               },
+              "Tetrahedron - Limited": {
+                "item_id": 96671,
+                "name": "Tetrahedron - Limited"
+              },
+              "Tetrahedron - Unlimited": {
+                "item_id": 96670,
+                "name": "Tetrahedron - Unlimited"
+              },
               "Treaded Plating - Limited": {
                 "item_id": 90643,
                 "name": "Treaded Plating - Limited"
@@ -35244,6 +35600,34 @@
               "Treaded Plating - Unlimited": {
                 "item_id": 90642,
                 "name": "Treaded Plating - Unlimited"
+              },
+              "Triangle - Unlimited": {
+                "item_id": 96619,
+                "name": "Triangle - Unlimited"
+              },
+              "Triangle Hole - Limited": {
+                "item_id": 96622,
+                "name": "Triangle Hole - Limited"
+              },
+              "Triangle Hole - Unlimited": {
+                "item_id": 96621,
+                "name": "Triangle Hole - Unlimited"
+              },
+              "Triangle Outline - Limited": {
+                "item_id": 96624,
+                "name": "Triangle Outline - Limited"
+              },
+              "Triangle Outline - Unlimited": {
+                "item_id": 96623,
+                "name": "Triangle Outline - Unlimited"
+              },
+              "Triangle Outline Thin - Limited": {
+                "item_id": 96627,
+                "name": "Triangle Outline Thin - Limited"
+              },
+              "Triangle Outline Thin - Unlimited": {
+                "item_id": 96626,
+                "name": "Triangle Outline Thin - Unlimited"
               },
               "Triform Virtuoso - Limited": {
                 "item_id": 89691,
@@ -35260,6 +35644,22 @@
               "Triple-star Sync - Unlimited": {
                 "item_id": 89693,
                 "name": "Triple-star Sync - Unlimited"
+              },
+              "Two by Two Circles - Limited": {
+                "item_id": 96637,
+                "name": "Two by Two Circles - Limited"
+              },
+              "Two by Two Circles - Unlimited": {
+                "item_id": 96636,
+                "name": "Two by Two Circles - Unlimited"
+              },
+              "Two by Two Diagonal - Limited": {
+                "item_id": 96649,
+                "name": "Two by Two Diagonal - Limited"
+              },
+              "Two by Two Diagonal - Unlimited": {
+                "item_id": 96648,
+                "name": "Two by Two Diagonal - Unlimited"
               },
               "Unhinged - Limited": {
                 "item_id": 82372,
@@ -35316,6 +35716,14 @@
               "War Fatigue - Unlimited": {
                 "item_id": 93362,
                 "name": "War Fatigue - Unlimited"
+              },
+              "Warning Circle - Limited": {
+                "item_id": 96655,
+                "name": "Warning Circle - Limited"
+              },
+              "Warning Circle - Unlimited": {
+                "item_id": 96654,
+                "name": "Warning Circle - Unlimited"
               },
               "Wheel of the Awoken - Limited": {
                 "item_id": 87789,
@@ -55986,6 +56394,10 @@
                         "item_id": 37513,
                         "name": "Absolution Raata Sunset SKIN"
                       },
+                      "Absolution Sanguinary Savant SKIN": {
+                        "item_id": 96318,
+                        "name": "Absolution Sanguinary Savant SKIN"
+                      },
                       "Absolution Star Captain SKIN": {
                         "item_id": 48243,
                         "name": "Absolution Star Captain SKIN"
@@ -56847,6 +57259,10 @@
                     "item_id": 85972,
                     "name": "Cenotaph Luminae Polaris SKIN"
                   },
+                  "Cenotaph Shattered Paradigm SKIN": {
+                    "item_id": 96161,
+                    "name": "Cenotaph Shattered Paradigm SKIN"
+                  },
                   "Khizriel Arkombine Arisen SKIN": {
                     "item_id": 79873,
                     "name": "Khizriel Arkombine Arisen SKIN"
@@ -57479,6 +57895,10 @@
                   "Ferox Capsuleer Day XVII SKIN": {
                     "item_id": 54766,
                     "name": "Ferox Capsuleer Day XVII SKIN"
+                  },
+                  "Ferox Cold Wind's Call SKIN": {
+                    "item_id": 96332,
+                    "name": "Ferox Cold Wind's Call SKIN"
                   },
                   "Ferox Cordite Blossom SKIN": {
                     "item_id": 48834,
@@ -58286,6 +58706,10 @@
                       "Redeemer Raata Sunset SKIN": {
                         "item_id": 37518,
                         "name": "Redeemer Raata Sunset SKIN"
+                      },
+                      "Redeemer Sanguinary Savant SKIN": {
+                        "item_id": 96319,
+                        "name": "Redeemer Sanguinary Savant SKIN"
                       },
                       "Redeemer Star Captain SKIN": {
                         "item_id": 52585,
@@ -59377,6 +59801,10 @@
                     "item_id": 76242,
                     "name": "Raven Navy Issue Penumbral Shadows SKIN"
                   },
+                  "Raven Navy Issue Shattered Paradigm SKIN": {
+                    "item_id": 96143,
+                    "name": "Raven Navy Issue Shattered Paradigm SKIN"
+                  },
                   "Raven Navy Issue Steel Cardinal SKIN": {
                     "item_id": 46134,
                     "name": "Raven Navy Issue Steel Cardinal SKIN"
@@ -60410,6 +60838,10 @@
                     "item_id": 37517,
                     "name": "Armageddon Raata Sunset SKIN"
                   },
+                  "Armageddon Shattered Paradigm SKIN": {
+                    "item_id": 96140,
+                    "name": "Armageddon Shattered Paradigm SKIN"
+                  },
                   "Armageddon Spirit SKIN": {
                     "item_id": 47307,
                     "name": "Armageddon Spirit SKIN"
@@ -60460,6 +60892,10 @@
                   "Raven Caldari Union Day SKIN": {
                     "item_id": 48732,
                     "name": "Raven Caldari Union Day SKIN"
+                  },
+                  "Raven Cold Wind's Call SKIN": {
+                    "item_id": 96333,
+                    "name": "Raven Cold Wind's Call SKIN"
                   },
                   "Raven Cryptic Mimesis SKIN": {
                     "item_id": 48894,
@@ -61452,6 +61888,10 @@
                     "item_id": 42625,
                     "name": "Rorqual Morphite Shine SKIN"
                   },
+                  "Rorqual Nautgripur Industrial Input SKIN": {
+                    "item_id": 97198,
+                    "name": "Rorqual Nautgripur Industrial Input SKIN"
+                  },
                   "Rorqual Nocx Rush SKIN": {
                     "item_id": 34646,
                     "name": "Rorqual Nocx Rush SKIN"
@@ -61501,6 +61941,32 @@
                     "id": 3871,
                     "name": "Command Carriers",
                     "subgroups": {
+                      "Amarr": {
+                        "id": 3878,
+                        "name": "Amarr",
+                        "subgroups": {},
+                        "items": {
+                          "Salvation": {
+                            "item_id": 92822,
+                            "name": "Salvation"
+                          },
+                          "Salvation Sanguinary Savant SKIN": {
+                            "item_id": 96321,
+                            "name": "Salvation Sanguinary Savant SKIN"
+                          }
+                        }
+                      },
+                      "Caldari": {
+                        "id": 3879,
+                        "name": "Caldari",
+                        "subgroups": {},
+                        "items": {
+                          "Simurgh Cold Wind's Call SKIN": {
+                            "item_id": 96335,
+                            "name": "Simurgh Cold Wind's Call SKIN"
+                          }
+                        }
+                      },
                       "Minmatar": {
                         "id": 3873,
                         "name": "Minmatar",
@@ -62981,6 +63447,10 @@
                     "item_id": 77164,
                     "name": "Minokawa Capsuleer Elite XX SKIN"
                   },
+                  "Minokawa Cold Wind's Call SKIN": {
+                    "item_id": 96334,
+                    "name": "Minokawa Cold Wind's Call SKIN"
+                  },
                   "Minokawa Exoplanets Hunter SKIN": {
                     "item_id": 46147,
                     "name": "Minokawa Exoplanets Hunter SKIN"
@@ -63456,6 +63926,10 @@
                   "Bowhead Morphite Shine SKIN": {
                     "item_id": 42623,
                     "name": "Bowhead Morphite Shine SKIN"
+                  },
+                  "Bowhead Nautgripur Industrial Input SKIN": {
+                    "item_id": 97200,
+                    "name": "Bowhead Nautgripur Industrial Input SKIN"
                   },
                   "Bowhead Paydirt Prospector SKIN": {
                     "item_id": 42680,
@@ -66000,6 +66474,10 @@
                         "item_id": 36430,
                         "name": "Huginn Justice SKIN"
                       },
+                      "Huginn Shattered Paradigm SKIN": {
+                        "item_id": 96160,
+                        "name": "Huginn Shattered Paradigm SKIN"
+                      },
                       "Huginn Snowline Bladeracer SKIN": {
                         "item_id": 52873,
                         "name": "Huginn Snowline Bladeracer SKIN"
@@ -66597,6 +67075,10 @@
                   "Omen Navy Issue Purity of the Throne SKIN": {
                     "item_id": 42577,
                     "name": "Omen Navy Issue Purity of the Throne SKIN"
+                  },
+                  "Omen Navy Issue Sanguinary Savant SKIN": {
+                    "item_id": 96317,
+                    "name": "Omen Navy Issue Sanguinary Savant SKIN"
                   },
                   "Omen Navy Issue Sarum SKIN": {
                     "item_id": 56795,
@@ -68048,6 +68530,10 @@
                     "item_id": 36724,
                     "name": "Osprey Blue Tiger SKIN"
                   },
+                  "Osprey Cold Wind's Call SKIN": {
+                    "item_id": 96331,
+                    "name": "Osprey Cold Wind's Call SKIN"
+                  },
                   "Osprey Combat Medic Section SKIN": {
                     "item_id": 48720,
                     "name": "Osprey Combat Medic Section SKIN"
@@ -68430,6 +68916,10 @@
                   "Vexor Serpentis SKIN": {
                     "item_id": 42169,
                     "name": "Vexor Serpentis SKIN"
+                  },
+                  "Vexor Shattered Paradigm SKIN": {
+                    "item_id": 96158,
+                    "name": "Vexor Shattered Paradigm SKIN"
                   },
                   "Vexor Spirit SKIN": {
                     "item_id": 44913,
@@ -69495,6 +69985,10 @@
                         "item_id": 48566,
                         "name": "Jackdaw Quantum Potential SKIN"
                       },
+                      "Jackdaw Shattered Paradigm SKIN": {
+                        "item_id": 96142,
+                        "name": "Jackdaw Shattered Paradigm SKIN"
+                      },
                       "Jackdaw State Regulator SKIN": {
                         "item_id": 94159,
                         "name": "Jackdaw State Regulator SKIN"
@@ -69742,6 +70236,10 @@
                     "item_id": 79610,
                     "name": "Coercer Navy Issue Sanguinary Savant SKIN"
                   },
+                  "Corax Navy Issue Cold Wind's Call SKIN": {
+                    "item_id": 96329,
+                    "name": "Corax Navy Issue Cold Wind's Call SKIN"
+                  },
                   "Corax Navy Issue Forever Creative SKIN": {
                     "item_id": 95526,
                     "name": "Corax Navy Issue Forever Creative SKIN"
@@ -69781,6 +70279,10 @@
                   "Dragoon Navy Issue Penumbral Shadows SKIN": {
                     "item_id": 95267,
                     "name": "Dragoon Navy Issue Penumbral Shadows SKIN"
+                  },
+                  "Dragoon Navy Issue Sanguinary Savant SKIN": {
+                    "item_id": 96315,
+                    "name": "Dragoon Navy Issue Sanguinary Savant SKIN"
                   },
                   "Pioneer Consortium Issue Aurora Universalis SKIN": {
                     "item_id": 91251,
@@ -70146,6 +70648,10 @@
                   "Coercer Raata Sunset SKIN": {
                     "item_id": 37497,
                     "name": "Coercer Raata Sunset SKIN"
+                  },
+                  "Coercer Sanguinary Savant SKIN": {
+                    "item_id": 96320,
+                    "name": "Coercer Sanguinary Savant SKIN"
                   },
                   "Coercer Sarum SKIN": {
                     "item_id": 34702,
@@ -73199,6 +73705,10 @@
                     "item_id": 78915,
                     "name": "Heron Navy Issue Awakening YC125 SKIN"
                   },
+                  "Heron Navy Issue Cold Wind's Call SKIN": {
+                    "item_id": 96328,
+                    "name": "Heron Navy Issue Cold Wind's Call SKIN"
+                  },
                   "Heron Navy Issue Media Miasma SKIN": {
                     "item_id": 84118,
                     "name": "Heron Navy Issue Media Miasma SKIN"
@@ -74000,6 +74510,10 @@
                     "item_id": 37484,
                     "name": "Crucifier Raata Sunset SKIN"
                   },
+                  "Crucifier Sanguinary Savant SKIN": {
+                    "item_id": 96316,
+                    "name": "Crucifier Sanguinary Savant SKIN"
+                  },
                   "Crucifier Sarum SKIN": {
                     "item_id": 34720,
                     "name": "Crucifier Sarum SKIN"
@@ -74127,6 +74641,10 @@
                   "Inquisitor Sanguinary Savant SKIN": {
                     "item_id": 90320,
                     "name": "Inquisitor Sanguinary Savant SKIN"
+                  },
+                  "Inquisitor Shattered Paradigm SKIN": {
+                    "item_id": 96141,
+                    "name": "Inquisitor Shattered Paradigm SKIN"
                   },
                   "Inquisitor Tash-Murkon SKIN": {
                     "item_id": 34724,
@@ -75605,6 +76123,10 @@
                     "item_id": 93723,
                     "name": "Vigil Penumbral Shadows SKIN"
                   },
+                  "Vigil Shattered Paradigm SKIN": {
+                    "item_id": 96159,
+                    "name": "Vigil Shattered Paradigm SKIN"
+                  },
                   "Vigil Snowline Bladeracer SKIN": {
                     "item_id": 52849,
                     "name": "Vigil Snowline Bladeracer SKIN"
@@ -76294,6 +76816,10 @@
                     "item_id": 42624,
                     "name": "Orca Morphite Shine SKIN"
                   },
+                  "Orca Nautgripur Industrial Input SKIN": {
+                    "item_id": 97199,
+                    "name": "Orca Nautgripur Industrial Input SKIN"
+                  },
                   "Orca Nocx Rush SKIN": {
                     "item_id": 34645,
                     "name": "Orca Nocx Rush SKIN"
@@ -76584,6 +77110,10 @@
                   "Tayra Blue Tiger SKIN": {
                     "item_id": 36746,
                     "name": "Tayra Blue Tiger SKIN"
+                  },
+                  "Tayra Cold Wind's Call SKIN": {
+                    "item_id": 96330,
+                    "name": "Tayra Cold Wind's Call SKIN"
                   },
                   "Tayra Exoplanets Hunter SKIN": {
                     "item_id": 45864,
@@ -77672,6 +78202,10 @@
                 "item_id": 55534,
                 "name": "Caldari Shuttle Biosecurity Responders SKIN"
               },
+              "Caldari Shuttle Cold Wind's Call SKIN": {
+                "item_id": 96327,
+                "name": "Caldari Shuttle Cold Wind's Call SKIN"
+              },
               "Caldari Shuttle Exoplanets Hunter SKIN": {
                 "item_id": 45810,
                 "name": "Caldari Shuttle Exoplanets Hunter SKIN"
@@ -78615,12 +79149,7 @@
                 "id": 3856,
                 "name": "Amarr",
                 "subgroups": {},
-                "items": {
-                  "Salvation": {
-                    "item_id": 92822,
-                    "name": "Salvation"
-                  }
-                }
+                "items": {}
               },
               "Caldari": {
                 "id": 3859,
