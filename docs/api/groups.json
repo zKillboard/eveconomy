@@ -12358,12 +12358,6 @@
             "name": "Simple Biochemical Reactions",
             "subgroups": {},
             "items": {}
-          },
-          "Simple Reactions": {
-            "id": 1850,
-            "name": "Simple Reactions",
-            "subgroups": {},
-            "items": {}
           }
         },
         "items": {}
@@ -50826,93 +50820,6 @@
                   "Vepas' Modified Kinetic Shield Hardener": {
                     "item_id": 14750,
                     "name": "Vepas' Modified Kinetic Shield Hardener"
-                  }
-                }
-              },
-              "Multispectrum Shield Hardeners": {
-                "id": 1696,
-                "name": "Multispectrum Shield Hardeners",
-                "subgroups": {},
-                "items": {
-                  "'Posse' Multispectrum Shield Hardener": {
-                    "item_id": 20637,
-                    "name": "'Posse' Multispectrum Shield Hardener"
-                  },
-                  "Caldari Navy Multispectrum Shield Hardener": {
-                    "item_id": 17498,
-                    "name": "Caldari Navy Multispectrum Shield Hardener"
-                  },
-                  "Compact Multispectrum Shield Hardener": {
-                    "item_id": 9632,
-                    "name": "Compact Multispectrum Shield Hardener"
-                  },
-                  "Domination Multispectrum Shield Hardener": {
-                    "item_id": 13998,
-                    "name": "Domination Multispectrum Shield Hardener"
-                  },
-                  "Dread Guristas Multispectrum Shield Hardener": {
-                    "item_id": 13969,
-                    "name": "Dread Guristas Multispectrum Shield Hardener"
-                  },
-                  "Enduring Multispectrum Shield Hardener": {
-                    "item_id": 54291,
-                    "name": "Enduring Multispectrum Shield Hardener"
-                  },
-                  "Estamel's Modified Multispectrum Shield Hardener": {
-                    "item_id": 14767,
-                    "name": "Estamel's Modified Multispectrum Shield Hardener"
-                  },
-                  "Gistum A-Type Multispectrum Shield Hardener": {
-                    "item_id": 4346,
-                    "name": "Gistum A-Type Multispectrum Shield Hardener"
-                  },
-                  "Gistum B-Type Multispectrum Shield Hardener": {
-                    "item_id": 4345,
-                    "name": "Gistum B-Type Multispectrum Shield Hardener"
-                  },
-                  "Gistum C-Type Multispectrum Shield Hardener": {
-                    "item_id": 2050,
-                    "name": "Gistum C-Type Multispectrum Shield Hardener"
-                  },
-                  "Kaikka's Modified Multispectrum Shield Hardener": {
-                    "item_id": 14764,
-                    "name": "Kaikka's Modified Multispectrum Shield Hardener"
-                  },
-                  "Multispectrum Shield Hardener I": {
-                    "item_id": 578,
-                    "name": "Multispectrum Shield Hardener I"
-                  },
-                  "Multispectrum Shield Hardener II": {
-                    "item_id": 2281,
-                    "name": "Multispectrum Shield Hardener II"
-                  },
-                  "Pithum A-Type Multispectrum Shield Hardener": {
-                    "item_id": 4347,
-                    "name": "Pithum A-Type Multispectrum Shield Hardener"
-                  },
-                  "Pithum B-Type Multispectrum Shield Hardener": {
-                    "item_id": 4348,
-                    "name": "Pithum B-Type Multispectrum Shield Hardener"
-                  },
-                  "Pithum C-Type Multispectrum Shield Hardener": {
-                    "item_id": 4349,
-                    "name": "Pithum C-Type Multispectrum Shield Hardener"
-                  },
-                  "Strategos' Modified Multispectrum Shield Hardener": {
-                    "item_id": 88262,
-                    "name": "Strategos' Modified Multispectrum Shield Hardener"
-                  },
-                  "testShieldMod_PLACEHOLDER": {
-                    "item_id": 46010,
-                    "name": "testShieldMod_PLACEHOLDER"
-                  },
-                  "Thon's Modified Multispectrum Shield Hardener": {
-                    "item_id": 14765,
-                    "name": "Thon's Modified Multispectrum Shield Hardener"
-                  },
-                  "Vepas' Modified Multispectrum Shield Hardener": {
-                    "item_id": 14766,
-                    "name": "Vepas' Modified Multispectrum Shield Hardener"
                   }
                 }
               },
