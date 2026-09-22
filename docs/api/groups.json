@@ -12358,6 +12358,12 @@
             "name": "Simple Biochemical Reactions",
             "subgroups": {},
             "items": {}
+          },
+          "Simple Reactions": {
+            "id": 1850,
+            "name": "Simple Reactions",
+            "subgroups": {},
+            "items": {}
           }
         },
         "items": {}
@@ -19979,14 +19985,6 @@
                 "item_id": 28306,
                 "name": "'Integrated' Wasp"
               },
-              "Arabellata SW-900-I": {
-                "item_id": 92035,
-                "name": "Arabellata SW-900-I"
-              },
-              "Atlas SD-900-I": {
-                "item_id": 92466,
-                "name": "Atlas SD-900-I"
-              },
               "Berserker I": {
                 "item_id": 2476,
                 "name": "Berserker I"
@@ -20007,17 +20005,9 @@
                 "item_id": 33681,
                 "name": "Gecko"
               },
-              "Humboldt EC-900-I": {
-                "item_id": 92041,
-                "name": "Humboldt EC-900-I"
-              },
               "Imperial Navy Praetor": {
                 "item_id": 31870,
                 "name": "Imperial Navy Praetor"
-              },
-              "Meganeura TP-900-I": {
-                "item_id": 92463,
-                "name": "Meganeura TP-900-I"
               },
               "Ogre I": {
                 "item_id": 2444,
@@ -20038,14 +20028,6 @@
               "Republic Fleet Berserker": {
                 "item_id": 31892,
                 "name": "Republic Fleet Berserker"
-              },
-              "Tabanida EV-900-I": {
-                "item_id": 92038,
-                "name": "Tabanida EV-900-I"
-              },
-              "Torafugu TD-900-I": {
-                "item_id": 92469,
-                "name": "Torafugu TD-900-I"
               },
               "Wasp I": {
                 "item_id": 1201,
@@ -20130,33 +20112,9 @@
                 "item_id": 31864,
                 "name": "Imperial Navy Acolyte"
               },
-              "Inshore EC-300-I": {
-                "item_id": 92039,
-                "name": "Inshore EC-300-I"
-              },
-              "Orbweaver SW-300-I": {
-                "item_id": 92033,
-                "name": "Orbweaver SW-300-I"
-              },
               "Republic Fleet Warrior": {
                 "item_id": 31888,
                 "name": "Republic Fleet Warrior"
-              },
-              "Skimmer TP-300-I": {
-                "item_id": 92461,
-                "name": "Skimmer TP-300-I"
-              },
-              "Stellate TD-300-I": {
-                "item_id": 92467,
-                "name": "Stellate TD-300-I"
-              },
-              "Stigmella SD-300-I": {
-                "item_id": 92464,
-                "name": "Stigmella SD-300-I"
-              },
-              "Tick EV-300-I": {
-                "item_id": 92036,
-                "name": "Tick EV-300-I"
               },
               "Warrior I": {
                 "item_id": 2486,
@@ -20217,10 +20175,6 @@
                 "item_id": 31874,
                 "name": "Caldari Navy Vespa"
               },
-              "Darter TP-600-I": {
-                "item_id": 92462,
-                "name": "Darter TP-600-I"
-              },
               "Federation Navy Hammerhead": {
                 "item_id": 31882,
                 "name": "Federation Navy Hammerhead"
@@ -20233,14 +20187,6 @@
                 "item_id": 2185,
                 "name": "Hammerhead II"
               },
-              "Huntsman SW-600-I": {
-                "item_id": 92034,
-                "name": "Huntsman SW-600-I"
-              },
-              "Immaculate TD-600-I": {
-                "item_id": 92468,
-                "name": "Immaculate TD-600-I"
-              },
               "Imperial Navy Infiltrator": {
                 "item_id": 31866,
                 "name": "Imperial Navy Infiltrator"
@@ -20252,18 +20198,6 @@
               "Infiltrator II": {
                 "item_id": 2175,
                 "name": "Infiltrator II"
-              },
-              "Luna SD-600-I": {
-                "item_id": 92465,
-                "name": "Luna SD-600-I"
-              },
-              "Mosquito EV-600-I": {
-                "item_id": 92037,
-                "name": "Mosquito EV-600-I"
-              },
-              "Nertic EC-600-I": {
-                "item_id": 92040,
-                "name": "Nertic EC-600-I"
               },
               "Republic Fleet Valkyrie": {
                 "item_id": 31890,
@@ -20886,6 +20820,106 @@
               }
             },
             "items": {}
+          }
+        },
+        "items": {}
+      },
+      "Hybrid Drones": {
+        "id": 3880,
+        "name": "Hybrid Drones",
+        "subgroups": {
+          "Heavy Hybrid Drones": {
+            "id": 3883,
+            "name": "Heavy Hybrid Drones",
+            "subgroups": {},
+            "items": {
+              "Arabellata SW-900-I": {
+                "item_id": 92035,
+                "name": "Arabellata SW-900-I"
+              },
+              "Atlas SD-900-I": {
+                "item_id": 92466,
+                "name": "Atlas SD-900-I"
+              },
+              "Humboldt EC-900-I": {
+                "item_id": 92041,
+                "name": "Humboldt EC-900-I"
+              },
+              "Meganeura TP-900-I": {
+                "item_id": 92463,
+                "name": "Meganeura TP-900-I"
+              },
+              "Tabanida EV-900-I": {
+                "item_id": 92038,
+                "name": "Tabanida EV-900-I"
+              },
+              "Torafugu TD-900-I": {
+                "item_id": 92469,
+                "name": "Torafugu TD-900-I"
+              }
+            }
+          },
+          "Light Hybrid Drones": {
+            "id": 3881,
+            "name": "Light Hybrid Drones",
+            "subgroups": {},
+            "items": {
+              "Inshore EC-300-I": {
+                "item_id": 92039,
+                "name": "Inshore EC-300-I"
+              },
+              "Orbweaver SW-300-I": {
+                "item_id": 92033,
+                "name": "Orbweaver SW-300-I"
+              },
+              "Skimmer TP-300-I": {
+                "item_id": 92461,
+                "name": "Skimmer TP-300-I"
+              },
+              "Stellate TD-300-I": {
+                "item_id": 92467,
+                "name": "Stellate TD-300-I"
+              },
+              "Stigmella SD-300-I": {
+                "item_id": 92464,
+                "name": "Stigmella SD-300-I"
+              },
+              "Tick EV-300-I": {
+                "item_id": 92036,
+                "name": "Tick EV-300-I"
+              }
+            }
+          },
+          "Medium Hybrid Drones": {
+            "id": 3882,
+            "name": "Medium Hybrid Drones",
+            "subgroups": {},
+            "items": {
+              "Darter TP-600-I": {
+                "item_id": 92462,
+                "name": "Darter TP-600-I"
+              },
+              "Huntsman SW-600-I": {
+                "item_id": 92034,
+                "name": "Huntsman SW-600-I"
+              },
+              "Immaculate TD-600-I": {
+                "item_id": 92468,
+                "name": "Immaculate TD-600-I"
+              },
+              "Luna SD-600-I": {
+                "item_id": 92465,
+                "name": "Luna SD-600-I"
+              },
+              "Mosquito EV-600-I": {
+                "item_id": 92037,
+                "name": "Mosquito EV-600-I"
+              },
+              "Nertic EC-600-I": {
+                "item_id": 92040,
+                "name": "Nertic EC-600-I"
+              }
+            }
           }
         },
         "items": {}
@@ -34243,6 +34277,10 @@
                 "item_id": 96607,
                 "name": "Circle - Unlimited"
               },
+              "Circle Hole - Limited": {
+                "item_id": 96612,
+                "name": "Circle Hole - Limited"
+              },
               "Circle Hole - Unlimited": {
                 "item_id": 96611,
                 "name": "Circle Hole - Unlimited"
@@ -34254,6 +34292,10 @@
               "Circle Hole Contrast - Unlimited": {
                 "item_id": 96658,
                 "name": "Circle Hole Contrast - Unlimited"
+              },
+              "Circle Outline - Limited": {
+                "item_id": 96610,
+                "name": "Circle Outline - Limited"
               },
               "Circle Outline - Unlimited": {
                 "item_id": 96609,
@@ -34790,6 +34832,10 @@
               "Hacked Virtuality - Unlimited": {
                 "item_id": 86680,
                 "name": "Hacked Virtuality - Unlimited"
+              },
+              "Half Arch - Limited": {
+                "item_id": 96675,
+                "name": "Half Arch - Limited"
               },
               "Half Arch - Unlimited": {
                 "item_id": 96672,
@@ -35594,6 +35640,10 @@
               "Treaded Plating - Unlimited": {
                 "item_id": 90642,
                 "name": "Treaded Plating - Unlimited"
+              },
+              "Triangle - Limited": {
+                "item_id": 96620,
+                "name": "Triangle - Limited"
               },
               "Triangle - Unlimited": {
                 "item_id": 96619,
@@ -36509,9 +36559,25 @@
                     "item_id": 60476,
                     "name": "Radical Drone Damage Amplifier Mutaplasmid"
                   },
+                  "Radical Drone Link Augmentor Mutaplasmid": {
+                    "item_id": 97247,
+                    "name": "Radical Drone Link Augmentor Mutaplasmid"
+                  },
+                  "Radical Drone Navigation Computer Mutaplasmid": {
+                    "item_id": 97249,
+                    "name": "Radical Drone Navigation Computer Mutaplasmid"
+                  },
                   "Radical Fighter Support Unit Mutaplasmid": {
                     "item_id": 60477,
                     "name": "Radical Fighter Support Unit Mutaplasmid"
+                  },
+                  "Radical Omnidirectional Tracking Enhancer Mutaplasmid": {
+                    "item_id": 97246,
+                    "name": "Radical Omnidirectional Tracking Enhancer Mutaplasmid"
+                  },
+                  "Radical Omnidirectional Tracking Link Mutaplasmid": {
+                    "item_id": 97248,
+                    "name": "Radical Omnidirectional Tracking Link Mutaplasmid"
                   }
                 }
               },
@@ -50823,6 +50889,93 @@
                   }
                 }
               },
+              "Multispectrum Shield Hardeners": {
+                "id": 1696,
+                "name": "Multispectrum Shield Hardeners",
+                "subgroups": {},
+                "items": {
+                  "'Posse' Multispectrum Shield Hardener": {
+                    "item_id": 20637,
+                    "name": "'Posse' Multispectrum Shield Hardener"
+                  },
+                  "Caldari Navy Multispectrum Shield Hardener": {
+                    "item_id": 17498,
+                    "name": "Caldari Navy Multispectrum Shield Hardener"
+                  },
+                  "Compact Multispectrum Shield Hardener": {
+                    "item_id": 9632,
+                    "name": "Compact Multispectrum Shield Hardener"
+                  },
+                  "Domination Multispectrum Shield Hardener": {
+                    "item_id": 13998,
+                    "name": "Domination Multispectrum Shield Hardener"
+                  },
+                  "Dread Guristas Multispectrum Shield Hardener": {
+                    "item_id": 13969,
+                    "name": "Dread Guristas Multispectrum Shield Hardener"
+                  },
+                  "Enduring Multispectrum Shield Hardener": {
+                    "item_id": 54291,
+                    "name": "Enduring Multispectrum Shield Hardener"
+                  },
+                  "Estamel's Modified Multispectrum Shield Hardener": {
+                    "item_id": 14767,
+                    "name": "Estamel's Modified Multispectrum Shield Hardener"
+                  },
+                  "Gistum A-Type Multispectrum Shield Hardener": {
+                    "item_id": 4346,
+                    "name": "Gistum A-Type Multispectrum Shield Hardener"
+                  },
+                  "Gistum B-Type Multispectrum Shield Hardener": {
+                    "item_id": 4345,
+                    "name": "Gistum B-Type Multispectrum Shield Hardener"
+                  },
+                  "Gistum C-Type Multispectrum Shield Hardener": {
+                    "item_id": 2050,
+                    "name": "Gistum C-Type Multispectrum Shield Hardener"
+                  },
+                  "Kaikka's Modified Multispectrum Shield Hardener": {
+                    "item_id": 14764,
+                    "name": "Kaikka's Modified Multispectrum Shield Hardener"
+                  },
+                  "Multispectrum Shield Hardener I": {
+                    "item_id": 578,
+                    "name": "Multispectrum Shield Hardener I"
+                  },
+                  "Multispectrum Shield Hardener II": {
+                    "item_id": 2281,
+                    "name": "Multispectrum Shield Hardener II"
+                  },
+                  "Pithum A-Type Multispectrum Shield Hardener": {
+                    "item_id": 4347,
+                    "name": "Pithum A-Type Multispectrum Shield Hardener"
+                  },
+                  "Pithum B-Type Multispectrum Shield Hardener": {
+                    "item_id": 4348,
+                    "name": "Pithum B-Type Multispectrum Shield Hardener"
+                  },
+                  "Pithum C-Type Multispectrum Shield Hardener": {
+                    "item_id": 4349,
+                    "name": "Pithum C-Type Multispectrum Shield Hardener"
+                  },
+                  "Strategos' Modified Multispectrum Shield Hardener": {
+                    "item_id": 88262,
+                    "name": "Strategos' Modified Multispectrum Shield Hardener"
+                  },
+                  "testShieldMod_PLACEHOLDER": {
+                    "item_id": 46010,
+                    "name": "testShieldMod_PLACEHOLDER"
+                  },
+                  "Thon's Modified Multispectrum Shield Hardener": {
+                    "item_id": 14765,
+                    "name": "Thon's Modified Multispectrum Shield Hardener"
+                  },
+                  "Vepas' Modified Multispectrum Shield Hardener": {
+                    "item_id": 14766,
+                    "name": "Vepas' Modified Multispectrum Shield Hardener"
+                  }
+                }
+              },
               "Scriptable Shield Hardeners": {
                 "id": 2246,
                 "name": "Scriptable Shield Hardeners",
@@ -61853,10 +62006,6 @@
                         "name": "Amarr",
                         "subgroups": {},
                         "items": {
-                          "Salvation": {
-                            "item_id": 92822,
-                            "name": "Salvation"
-                          },
                           "Salvation Sanguinary Savant SKIN": {
                             "item_id": 96321,
                             "name": "Salvation Sanguinary Savant SKIN"
@@ -78966,35 +79115,63 @@
             "id": 817,
             "name": "Carriers",
             "subgroups": {
-              "Amarr": {
-                "id": 818,
-                "name": "Amarr",
-                "subgroups": {},
-                "items": {
-                  "Aeon": {
-                    "item_id": 23919,
-                    "name": "Aeon"
-                  },
-                  "Archon": {
-                    "item_id": 23757,
-                    "name": "Archon"
+              "Advanced Carriers": {
+                "id": 3884,
+                "name": "Advanced Carriers",
+                "subgroups": {
+                  "Command Carriers": {
+                    "id": 3853,
+                    "name": "Command Carriers",
+                    "subgroups": {
+                      "Amarr": {
+                        "id": 3856,
+                        "name": "Amarr",
+                        "subgroups": {},
+                        "items": {
+                          "Salvation": {
+                            "item_id": 92822,
+                            "name": "Salvation"
+                          }
+                        }
+                      },
+                      "Caldari": {
+                        "id": 3859,
+                        "name": "Caldari",
+                        "subgroups": {},
+                        "items": {
+                          "Simurgh": {
+                            "item_id": 92823,
+                            "name": "Simurgh"
+                          }
+                        }
+                      },
+                      "Gallente": {
+                        "id": 3861,
+                        "name": "Gallente",
+                        "subgroups": {},
+                        "items": {
+                          "Gaia": {
+                            "item_id": 92824,
+                            "name": "Gaia"
+                          }
+                        }
+                      },
+                      "Minmatar": {
+                        "id": 3863,
+                        "name": "Minmatar",
+                        "subgroups": {},
+                        "items": {
+                          "Ymir": {
+                            "item_id": 92825,
+                            "name": "Ymir"
+                          }
+                        }
+                      }
+                    },
+                    "items": {}
                   }
-                }
-              },
-              "Caldari": {
-                "id": 819,
-                "name": "Caldari",
-                "subgroups": {},
-                "items": {
-                  "Chimera": {
-                    "item_id": 23915,
-                    "name": "Chimera"
-                  },
-                  "Wyvern": {
-                    "item_id": 23917,
-                    "name": "Wyvern"
-                  }
-                }
+                },
+                "items": {}
               },
               "Faction Carrier": {
                 "id": 1392,
@@ -79005,91 +79182,82 @@
                     "item_id": 3514,
                     "name": "Revenant"
                   },
+                  "Vanguard": {
+                    "item_id": 42132,
+                    "name": "Vanguard"
+                  },
                   "Vendetta": {
                     "item_id": 42125,
                     "name": "Vendetta"
                   }
                 }
               },
-              "Gallente": {
-                "id": 820,
-                "name": "Gallente",
-                "subgroups": {},
-                "items": {
-                  "Nyx": {
-                    "item_id": 23913,
-                    "name": "Nyx"
+              "Standard Carriers": {
+                "id": 3885,
+                "name": "Standard Carriers",
+                "subgroups": {
+                  "Amarr": {
+                    "id": 818,
+                    "name": "Amarr",
+                    "subgroups": {},
+                    "items": {
+                      "Aeon": {
+                        "item_id": 23919,
+                        "name": "Aeon"
+                      },
+                      "Archon": {
+                        "item_id": 23757,
+                        "name": "Archon"
+                      }
+                    }
                   },
-                  "Thanatos": {
-                    "item_id": 23911,
-                    "name": "Thanatos"
+                  "Caldari": {
+                    "id": 819,
+                    "name": "Caldari",
+                    "subgroups": {},
+                    "items": {
+                      "Chimera": {
+                        "item_id": 23915,
+                        "name": "Chimera"
+                      },
+                      "Wyvern": {
+                        "item_id": 23917,
+                        "name": "Wyvern"
+                      }
+                    }
                   },
-                  "Vanguard": {
-                    "item_id": 42132,
-                    "name": "Vanguard"
+                  "Gallente": {
+                    "id": 820,
+                    "name": "Gallente",
+                    "subgroups": {},
+                    "items": {
+                      "Nyx": {
+                        "item_id": 23913,
+                        "name": "Nyx"
+                      },
+                      "Thanatos": {
+                        "item_id": 23911,
+                        "name": "Thanatos"
+                      }
+                    }
+                  },
+                  "Minmatar": {
+                    "id": 821,
+                    "name": "Minmatar",
+                    "subgroups": {},
+                    "items": {
+                      "Hel": {
+                        "item_id": 22852,
+                        "name": "Hel"
+                      },
+                      "Nidhoggur": {
+                        "item_id": 24483,
+                        "name": "Nidhoggur"
+                      }
+                    }
                   }
-                }
-              },
-              "Minmatar": {
-                "id": 821,
-                "name": "Minmatar",
-                "subgroups": {},
-                "items": {
-                  "Hel": {
-                    "item_id": 22852,
-                    "name": "Hel"
-                  },
-                  "Nidhoggur": {
-                    "item_id": 24483,
-                    "name": "Nidhoggur"
-                  }
-                }
-              }
-            },
-            "items": {}
-          },
-          "Command Carriers": {
-            "id": 3853,
-            "name": "Command Carriers",
-            "subgroups": {
-              "Amarr": {
-                "id": 3856,
-                "name": "Amarr",
-                "subgroups": {},
+                },
                 "items": {}
-              },
-              "Caldari": {
-                "id": 3859,
-                "name": "Caldari",
-                "subgroups": {},
-                "items": {
-                  "Simurgh": {
-                    "item_id": 92823,
-                    "name": "Simurgh"
-                  }
-                }
-              },
-              "Gallente": {
-                "id": 3861,
-                "name": "Gallente",
-                "subgroups": {},
-                "items": {
-                  "Gaia": {
-                    "item_id": 92824,
-                    "name": "Gaia"
-                  }
-                }
-              },
-              "Minmatar": {
-                "id": 3863,
-                "name": "Minmatar",
-                "subgroups": {},
-                "items": {
-                  "Ymir": {
-                    "item_id": 92825,
-                    "name": "Ymir"
-                  }
-                }
               }
             },
             "items": {}
@@ -82107,6 +82275,10 @@
           "Heavy Fighters": {
             "item_id": 32339,
             "name": "Heavy Fighters"
+          },
+          "Hybrid Drone Specialization": {
+            "item_id": 97263,
+            "name": "Hybrid Drone Specialization"
           },
           "Ice Harvesting Drone Operation": {
             "item_id": 43702,
@@ -85185,6 +85357,10 @@
               "Women's Empire Exploration Suit crate": {
                 "item_id": 90893,
                 "name": "Women's Empire Exploration Suit crate"
+              },
+              "YC128 Shifting-Spacetime Crate": {
+                "item_id": 97314,
+                "name": "YC128 Shifting-Spacetime Crate"
               }
             }
           },
@@ -85444,9 +85620,9 @@
                 "item_id": 47054,
                 "name": "Badly Corrupted Holoreel"
               },
-              "Bag of Gelatinized Confectionary": {
+              "Bag of Gelatinized Confectionery": {
                 "item_id": 62048,
-                "name": "Bag of Gelatinized Confectionary"
+                "name": "Bag of Gelatinized Confectionery"
               },
               "Band of Brothers Director Access Key": {
                 "item_id": 33214,
