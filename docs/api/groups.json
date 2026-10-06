@@ -7311,6 +7311,10 @@
         "name": "Portrait Backgrounds",
         "subgroups": {},
         "items": {
+          "Blood Raider Background": {
+            "item_id": 97897,
+            "name": "Blood Raider Background"
+          },
           "Foundation Wisdom Background": {
             "item_id": 95673,
             "name": "Foundation Wisdom Background"
@@ -7343,9 +7347,17 @@
             "item_id": 95275,
             "name": "Star Cradle Background"
           },
+          "Star of Pochven Background": {
+            "item_id": 96845,
+            "name": "Star of Pochven Background"
+          },
           "Tenzin’s Gallente Background": {
             "item_id": 92550,
             "name": "Tenzin’s Gallente Background"
+          },
+          "Triglavian Background": {
+            "item_id": 97898,
+            "name": "Triglavian Background"
           },
           "Union Contemplation Background": {
             "item_id": 95674,
@@ -21448,6 +21460,18 @@
             "name": "Booster Slot 14",
             "subgroups": {},
             "items": {
+              "Chemal Tech Mining Booster I": {
+                "item_id": 96584,
+                "name": "Chemal Tech Mining Booster I"
+              },
+              "Chemal Tech Mining Booster II": {
+                "item_id": 96585,
+                "name": "Chemal Tech Mining Booster II"
+              },
+              "Chemal Tech Mining Booster III": {
+                "item_id": 96586,
+                "name": "Chemal Tech Mining Booster III"
+              },
               "Expired Hunt Probing Booster I": {
                 "item_id": 63645,
                 "name": "Expired Hunt Probing Booster I"
@@ -21492,6 +21516,22 @@
                 "item_id": 91926,
                 "name": "Federation Electronics Booster III"
               },
+              "Harvest Anti-Disruptor Booster I": {
+                "item_id": 96546,
+                "name": "Harvest Anti-Disruptor Booster I"
+              },
+              "Harvest Anti-Disruptor Booster II": {
+                "item_id": 96547,
+                "name": "Harvest Anti-Disruptor Booster II"
+              },
+              "Harvest Anti-Disruptor Booster III": {
+                "item_id": 96548,
+                "name": "Harvest Anti-Disruptor Booster III"
+              },
+              "Harvest Anti-Disruptor Booster IV": {
+                "item_id": 96545,
+                "name": "Harvest Anti-Disruptor Booster IV"
+              },
               "Imperial Electronics Booster I": {
                 "item_id": 91916,
                 "name": "Imperial Electronics Booster I"
@@ -21531,6 +21571,22 @@
               "Strong Veilguard Booster": {
                 "item_id": 59633,
                 "name": "Strong Veilguard Booster"
+              },
+              "Tetrimon Anti-Drain Booster I": {
+                "item_id": 96562,
+                "name": "Tetrimon Anti-Drain Booster I"
+              },
+              "Tetrimon Anti-Drain Booster II": {
+                "item_id": 96563,
+                "name": "Tetrimon Anti-Drain Booster II"
+              },
+              "Tetrimon Anti-Drain Booster III": {
+                "item_id": 96565,
+                "name": "Tetrimon Anti-Drain Booster III"
+              },
+              "Tetrimon Anti-Drain Booster IV": {
+                "item_id": 96566,
+                "name": "Tetrimon Anti-Drain Booster IV"
               }
             }
           },
@@ -21539,6 +21595,18 @@
             "name": "Booster Slot 15",
             "subgroups": {},
             "items": {
+              "Chemal Tech Exploration Booster I": {
+                "item_id": 96588,
+                "name": "Chemal Tech Exploration Booster I"
+              },
+              "Chemal Tech Exploration Booster II": {
+                "item_id": 96589,
+                "name": "Chemal Tech Exploration Booster II"
+              },
+              "Chemal Tech Exploration Booster III": {
+                "item_id": 96590,
+                "name": "Chemal Tech Exploration Booster III"
+              },
               "Expired Hunt Rapid Repair Booster I": {
                 "item_id": 63653,
                 "name": "Expired Hunt Rapid Repair Booster I"
@@ -21583,6 +21651,22 @@
                 "item_id": 91943,
                 "name": "Federation Defense Booster III"
               },
+              "Harvest Nosferatu Booster I": {
+                "item_id": 96549,
+                "name": "Harvest Nosferatu Booster I"
+              },
+              "Harvest Nosferatu Booster II": {
+                "item_id": 96550,
+                "name": "Harvest Nosferatu Booster II"
+              },
+              "Harvest Nosferatu Booster III": {
+                "item_id": 96551,
+                "name": "Harvest Nosferatu Booster III"
+              },
+              "Harvest Nosferatu Booster IV": {
+                "item_id": 96552,
+                "name": "Harvest Nosferatu Booster IV"
+              },
               "Imperial Defense Booster I": {
                 "item_id": 91932,
                 "name": "Imperial Defense Booster I"
@@ -21618,6 +21702,22 @@
               "State Defense Booster III": {
                 "item_id": 91942,
                 "name": "State Defense Booster III"
+              },
+              "Tetrimon Capacitor Booster I": {
+                "item_id": 96567,
+                "name": "Tetrimon Capacitor Booster I"
+              },
+              "Tetrimon Capacitor Booster II": {
+                "item_id": 96568,
+                "name": "Tetrimon Capacitor Booster II"
+              },
+              "Tetrimon Capacitor Booster III": {
+                "item_id": 96569,
+                "name": "Tetrimon Capacitor Booster III"
+              },
+              "Tetrimon Capacitor Booster IV": {
+                "item_id": 96570,
+                "name": "Tetrimon Capacitor Booster IV"
               }
             }
           },
@@ -21626,6 +21726,18 @@
             "name": "Booster Slot 16",
             "subgroups": {},
             "items": {
+              "Chemal Tech Repair Booster I": {
+                "item_id": 96591,
+                "name": "Chemal Tech Repair Booster I"
+              },
+              "Chemal Tech Repair Booster II": {
+                "item_id": 96592,
+                "name": "Chemal Tech Repair Booster II"
+              },
+              "Chemal Tech Repair Booster III": {
+                "item_id": 96593,
+                "name": "Chemal Tech Repair Booster III"
+              },
               "Expired Hunt Drone Precision Booster I": {
                 "item_id": 63661,
                 "name": "Expired Hunt Drone Precision Booster I"
@@ -21670,6 +21782,22 @@
                 "item_id": 91959,
                 "name": "Federation Mobility Booster III"
               },
+              "Harvest Webifier Booster I": {
+                "item_id": 96553,
+                "name": "Harvest Webifier Booster I"
+              },
+              "Harvest Webifier Booster II": {
+                "item_id": 96554,
+                "name": "Harvest Webifier Booster II"
+              },
+              "Harvest Webifier Booster III": {
+                "item_id": 96555,
+                "name": "Harvest Webifier Booster III"
+              },
+              "Harvest Webifier Booster IV": {
+                "item_id": 96556,
+                "name": "Harvest Webifier Booster IV"
+              },
               "Imperial Mobility Booster I": {
                 "item_id": 91947,
                 "name": "Imperial Mobility Booster I"
@@ -21709,6 +21837,22 @@
               "State Mobility Booster III": {
                 "item_id": 91954,
                 "name": "State Mobility Booster III"
+              },
+              "Tetrimon Resistance Booster I": {
+                "item_id": 96571,
+                "name": "Tetrimon Resistance Booster I"
+              },
+              "Tetrimon Resistance Booster II": {
+                "item_id": 96572,
+                "name": "Tetrimon Resistance Booster II"
+              },
+              "Tetrimon Resistance Booster III": {
+                "item_id": 96573,
+                "name": "Tetrimon Resistance Booster III"
+              },
+              "Tetrimon Resistance Booster IV": {
+                "item_id": 96574,
+                "name": "Tetrimon Resistance Booster IV"
               }
             }
           },
@@ -21717,6 +21861,18 @@
             "name": "Booster Slot 17",
             "subgroups": {},
             "items": {
+              "Chemal Tech Turret Booster I": {
+                "item_id": 96581,
+                "name": "Chemal Tech Turret Booster I"
+              },
+              "Chemal Tech Turret Booster II": {
+                "item_id": 96582,
+                "name": "Chemal Tech Turret Booster II"
+              },
+              "Chemal Tech Turret Booster III": {
+                "item_id": 96583,
+                "name": "Chemal Tech Turret Booster III"
+              },
               "Expired Hunt Drone Damage Booster I": {
                 "item_id": 63669,
                 "name": "Expired Hunt Drone Damage Booster I"
@@ -21761,6 +21917,22 @@
                 "item_id": 91975,
                 "name": "Federation Hardpoint Booster III"
               },
+              "Harvest Damage Booster I": {
+                "item_id": 96557,
+                "name": "Harvest Damage Booster I"
+              },
+              "Harvest Damage Booster II": {
+                "item_id": 96558,
+                "name": "Harvest Damage Booster II"
+              },
+              "Harvest Damage Booster III": {
+                "item_id": 96560,
+                "name": "Harvest Damage Booster III"
+              },
+              "Harvest Damage Booster IV": {
+                "item_id": 96561,
+                "name": "Harvest Damage Booster IV"
+              },
               "Imperial Hardpoint Booster I": {
                 "item_id": 91962,
                 "name": "Imperial Hardpoint Booster I"
@@ -21796,6 +21968,22 @@
               "State Hardpoint Booster III": {
                 "item_id": 91973,
                 "name": "State Hardpoint Booster III"
+              },
+              "Tetrimon Precision Booster I": {
+                "item_id": 96575,
+                "name": "Tetrimon Precision Booster I"
+              },
+              "Tetrimon Precision Booster II": {
+                "item_id": 96576,
+                "name": "Tetrimon Precision Booster II"
+              },
+              "Tetrimon Precision Booster III": {
+                "item_id": 96577,
+                "name": "Tetrimon Precision Booster III"
+              },
+              "Tetrimon Precision Booster IV": {
+                "item_id": 96578,
+                "name": "Tetrimon Precision Booster IV"
               }
             }
           },
@@ -21822,6 +22010,10 @@
             "item_id": 55803,
             "name": "Amarr spaceship skill accelerator"
           },
+          "Basic 'Radiance' Cerebral Accelerator": {
+            "item_id": 96542,
+            "name": "Basic 'Radiance' Cerebral Accelerator"
+          },
           "Caldari spaceship skill accelerator": {
             "item_id": 55804,
             "name": "Caldari spaceship skill accelerator"
@@ -21842,6 +22034,10 @@
             "item_id": 63634,
             "name": "Expired Potent 'Guri Kikhivaa' Cerebral Accelerator"
           },
+          "Extended 'Radiance' Cerebral Accelerator": {
+            "item_id": 96544,
+            "name": "Extended 'Radiance' Cerebral Accelerator"
+          },
           "Gallente spaceship skill accelerator": {
             "item_id": 55805,
             "name": "Gallente spaceship skill accelerator"
@@ -21853,6 +22049,10 @@
           "Minmatar spaceship skill accelerator": {
             "item_id": 55806,
             "name": "Minmatar spaceship skill accelerator"
+          },
+          "Potent 'Radiance' Cerebral Accelerator": {
+            "item_id": 96543,
+            "name": "Potent 'Radiance' Cerebral Accelerator"
           },
           "Serenity Basic 'Bonding' Cerebral Accelerator": {
             "item_id": 57433,
@@ -31898,6 +32098,14 @@
                     "item_id": 83388,
                     "name": "Lilac Star Dust Gloss - Unlimited"
                   },
+                  "Liminal Sanguine Gloss - Limited": {
+                    "item_id": 96828,
+                    "name": "Liminal Sanguine Gloss - Limited"
+                  },
+                  "Liminal Sanguine Gloss - Unlimited": {
+                    "item_id": 96829,
+                    "name": "Liminal Sanguine Gloss - Unlimited"
+                  },
                   "Lucent Carmine Gloss - Limited": {
                     "item_id": 89935,
                     "name": "Lucent Carmine Gloss - Limited"
@@ -31937,6 +32145,14 @@
                   "Orbital Tan Gloss - Unlimited": {
                     "item_id": 88481,
                     "name": "Orbital Tan Gloss - Unlimited"
+                  },
+                  "Ossified Beige Gloss - Limited": {
+                    "item_id": 96836,
+                    "name": "Ossified Beige Gloss - Limited"
+                  },
+                  "Ossified Beige Gloss - Unlimited": {
+                    "item_id": 96838,
+                    "name": "Ossified Beige Gloss - Unlimited"
                   },
                   "Pastel Dreams Gloss - Limited": {
                     "item_id": 87837,
@@ -32577,6 +32793,14 @@
                     "item_id": 84012,
                     "name": "Old Man's Sunset Matte - Limited"
                   },
+                  "Ossified Beige Matte - Limited": {
+                    "item_id": 96834,
+                    "name": "Ossified Beige Matte - Limited"
+                  },
+                  "Ossified Beige Matte - Unlimited": {
+                    "item_id": 96835,
+                    "name": "Ossified Beige Matte - Unlimited"
+                  },
                   "Oxidized Drift Matte - Limited": {
                     "item_id": 91139,
                     "name": "Oxidized Drift Matte - Limited"
@@ -32672,6 +32896,14 @@
                   "Scrutinized Cyan Matte - Limited": {
                     "item_id": 87781,
                     "name": "Scrutinized Cyan Matte - Limited"
+                  },
+                  "Shadowy Totality Matte - Limited": {
+                    "item_id": 96830,
+                    "name": "Shadowy Totality Matte - Limited"
+                  },
+                  "Shadowy Totality Matte - Unlimited": {
+                    "item_id": 96831,
+                    "name": "Shadowy Totality Matte - Unlimited"
                   },
                   "Sleeper Sand Matte - Limited": {
                     "item_id": 89263,
@@ -32935,6 +33167,14 @@
                   "Deep Void Satin - Unlimited": {
                     "item_id": 83333,
                     "name": "Deep Void Satin - Unlimited"
+                  },
+                  "Ecru Marrow Satin - Limited": {
+                    "item_id": 96832,
+                    "name": "Ecru Marrow Satin - Limited"
+                  },
+                  "Ecru Marrow Satin - Unlimited": {
+                    "item_id": 96833,
+                    "name": "Ecru Marrow Satin - Unlimited"
                   },
                   "Elder's Bone Satin - Limited": {
                     "item_id": 83249,
@@ -33474,6 +33714,14 @@
                 "item_id": 89947,
                 "name": "Claret Plating Metallic - Limited"
               },
+              "Clotted Bronze Metallic - Limited": {
+                "item_id": 96841,
+                "name": "Clotted Bronze Metallic - Limited"
+              },
+              "Clotted Bronze Metallic - Unlimited": {
+                "item_id": 96842,
+                "name": "Clotted Bronze Metallic - Unlimited"
+              },
               "Coronal Horizon Bronze Metallic - Limited": {
                 "item_id": 86106,
                 "name": "Coronal Horizon Bronze Metallic - Limited"
@@ -33609,6 +33857,14 @@
               "Entropic Alloy Metallic - Unlimited": {
                 "item_id": 83063,
                 "name": "Entropic Alloy Metallic - Unlimited"
+              },
+              "Entropic Rose Metallic - Limited": {
+                "item_id": 96843,
+                "name": "Entropic Rose Metallic - Limited"
+              },
+              "Entropic Rose Metallic - Unlimited": {
+                "item_id": 96844,
+                "name": "Entropic Rose Metallic - Unlimited"
               },
               "Evergreen Malachite Metallic - Limited": {
                 "item_id": 91144,
@@ -33882,6 +34138,14 @@
                 "item_id": 83069,
                 "name": "Precursor Plate Metallic - Unlimited"
               },
+              "Proven Chrome Metallic - Limited": {
+                "item_id": 96839,
+                "name": "Proven Chrome Metallic - Limited"
+              },
+              "Proven Chrome Metallic - Unlimited": {
+                "item_id": 96840,
+                "name": "Proven Chrome Metallic - Unlimited"
+              },
               "Pyrrhic Plate Metallic - Limited": {
                 "item_id": 88593,
                 "name": "Pyrrhic Plate Metallic - Limited"
@@ -34137,6 +34401,14 @@
                 "item_id": 89955,
                 "name": "Arterial Trace - Limited"
               },
+              "Ascendant Clades - Limited": {
+                "item_id": 96820,
+                "name": "Ascendant Clades - Limited"
+              },
+              "Ascendant Clades - Unlimited": {
+                "item_id": 96821,
+                "name": "Ascendant Clades - Unlimited"
+              },
               "Asteroid Crumble - Limited": {
                 "item_id": 82362,
                 "name": "Asteroid Crumble - Limited"
@@ -34176,6 +34448,14 @@
               "Bionic Core - Unlimited": {
                 "item_id": 88641,
                 "name": "Bionic Core - Unlimited"
+              },
+              "Bleak Stigmata - Limited": {
+                "item_id": 96826,
+                "name": "Bleak Stigmata - Limited"
+              },
+              "Bleak Stigmata - Unlimited": {
+                "item_id": 96827,
+                "name": "Bleak Stigmata - Unlimited"
               },
               "Blooming Void - Limited": {
                 "item_id": 82393,
@@ -34897,6 +35177,14 @@
                 "item_id": 82471,
                 "name": "Hex Recursion - Unlimited"
               },
+              "Hexfold Terror - Limited": {
+                "item_id": 96803,
+                "name": "Hexfold Terror - Limited"
+              },
+              "Hexfold Terror - Unlimited": {
+                "item_id": 96805,
+                "name": "Hexfold Terror - Unlimited"
+              },
               "Hive Collapse - Limited": {
                 "item_id": 82368,
                 "name": "Hive Collapse - Limited"
@@ -35261,6 +35549,14 @@
                 "item_id": 89688,
                 "name": "Orbital Cavalier - Unlimited"
               },
+              "Overflowing Harvest - Limited": {
+                "item_id": 96815,
+                "name": "Overflowing Harvest - Limited"
+              },
+              "Overflowing Harvest - Unlimited": {
+                "item_id": 96816,
+                "name": "Overflowing Harvest - Unlimited"
+              },
               "Oxidative Stress - Limited": {
                 "item_id": 90648,
                 "name": "Oxidative Stress - Limited"
@@ -35396,6 +35692,14 @@
               "Rounded Diamond - Unlimited": {
                 "item_id": 96688,
                 "name": "Rounded Diamond - Unlimited"
+              },
+              "Savant’s Ruin - Limited": {
+                "item_id": 96824,
+                "name": "Savant’s Ruin - Limited"
+              },
+              "Savant’s Ruin - Unlimited": {
+                "item_id": 96825,
+                "name": "Savant’s Ruin - Unlimited"
               },
               "Scars of Sarikusa - Limited": {
                 "item_id": 85305,
@@ -35680,6 +35984,30 @@
               "Triform Virtuoso - Unlimited": {
                 "item_id": 89690,
                 "name": "Triform Virtuoso - Unlimited"
+              },
+              "Triglavian Collective - Limited": {
+                "item_id": 96810,
+                "name": "Triglavian Collective - Limited"
+              },
+              "Triglavian Collective - Unlimited": {
+                "item_id": 96812,
+                "name": "Triglavian Collective - Unlimited"
+              },
+              "Trinary Complex - Limited": {
+                "item_id": 96817,
+                "name": "Trinary Complex - Limited"
+              },
+              "Trinary Complex - Unlimited": {
+                "item_id": 96818,
+                "name": "Trinary Complex - Unlimited"
+              },
+              "Trinary Echo - Limited": {
+                "item_id": 96822,
+                "name": "Trinary Echo - Limited"
+              },
+              "Trinary Echo - Unlimited": {
+                "item_id": 96823,
+                "name": "Trinary Echo - Unlimited"
               },
               "Triple-star Sync - Limited": {
                 "item_id": 89692,
@@ -36020,13 +36348,25 @@
                     "item_id": 56281,
                     "name": "Decayed Capital Armor Repairer Mutaplasmid"
                   },
+                  "Decayed Capital Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97638,
+                    "name": "Decayed Capital Remote Armor Repairer Mutaplasmid"
+                  },
                   "Glorified Decayed Capital Armor Repairer Mutaplasmid": {
                     "item_id": 85460,
                     "name": "Glorified Decayed Capital Armor Repairer Mutaplasmid"
                   },
+                  "Glorified Decayed Capital Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97641,
+                    "name": "Glorified Decayed Capital Remote Armor Repairer Mutaplasmid"
+                  },
                   "Glorified Gravid Capital Armor Repairer Mutaplasmid": {
                     "item_id": 85462,
                     "name": "Glorified Gravid Capital Armor Repairer Mutaplasmid"
+                  },
+                  "Glorified Gravid Capital Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97643,
+                    "name": "Glorified Gravid Capital Remote Armor Repairer Mutaplasmid"
                   },
                   "Glorified Unstable Capital Ancillary Armor Repairer Mutaplasmid": {
                     "item_id": 85463,
@@ -36036,9 +36376,17 @@
                     "item_id": 85461,
                     "name": "Glorified Unstable Capital Armor Repairer Mutaplasmid"
                   },
+                  "Glorified Unstable Capital Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97642,
+                    "name": "Glorified Unstable Capital Remote Armor Repairer Mutaplasmid"
+                  },
                   "Gravid Capital Armor Repairer Mutaplasmid": {
                     "item_id": 56283,
                     "name": "Gravid Capital Armor Repairer Mutaplasmid"
+                  },
+                  "Gravid Capital Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97640,
+                    "name": "Gravid Capital Remote Armor Repairer Mutaplasmid"
                   },
                   "Unstable Capital Ancillary Armor Repairer Mutaplasmid": {
                     "item_id": 56284,
@@ -36047,6 +36395,10 @@
                   "Unstable Capital Armor Repairer Mutaplasmid": {
                     "item_id": 56282,
                     "name": "Unstable Capital Armor Repairer Mutaplasmid"
+                  },
+                  "Unstable Capital Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97639,
+                    "name": "Unstable Capital Remote Armor Repairer Mutaplasmid"
                   }
                 }
               },
@@ -36063,6 +36415,10 @@
                     "item_id": 47774,
                     "name": "Decayed Large Armor Repairer Mutaplasmid"
                   },
+                  "Decayed Large Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97650,
+                    "name": "Decayed Large Remote Armor Repairer Mutaplasmid"
+                  },
                   "Glorified Decayed Large Armor Plate Mutaplasmid": {
                     "item_id": 85453,
                     "name": "Glorified Decayed Large Armor Plate Mutaplasmid"
@@ -36071,6 +36427,10 @@
                     "item_id": 85455,
                     "name": "Glorified Decayed Large Armor Repairer Mutaplasmid"
                   },
+                  "Glorified Decayed Large Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97653,
+                    "name": "Glorified Decayed Large Remote Armor Repairer Mutaplasmid"
+                  },
                   "Glorified Gravid Large Armor Plate Mutaplasmid": {
                     "item_id": 85456,
                     "name": "Glorified Gravid Large Armor Plate Mutaplasmid"
@@ -36078,6 +36438,10 @@
                   "Glorified Gravid Large Armor Repairer Mutaplasmid": {
                     "item_id": 85458,
                     "name": "Glorified Gravid Large Armor Repairer Mutaplasmid"
+                  },
+                  "Glorified Gravid Large Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97655,
+                    "name": "Glorified Gravid Large Remote Armor Repairer Mutaplasmid"
                   },
                   "Glorified Unstable Large Ancillary Armor Repairer Mutaplasmid": {
                     "item_id": 85459,
@@ -36091,6 +36455,10 @@
                     "item_id": 85457,
                     "name": "Glorified Unstable Large Armor Repairer Mutaplasmid"
                   },
+                  "Glorified Unstable Large Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97654,
+                    "name": "Glorified Unstable Large Remote Armor Repairer Mutaplasmid"
+                  },
                   "Gravid Large Armor Plate Mutaplasmid": {
                     "item_id": 47819,
                     "name": "Gravid Large Armor Plate Mutaplasmid"
@@ -36098,6 +36466,10 @@
                   "Gravid Large Armor Repairer Mutaplasmid": {
                     "item_id": 47776,
                     "name": "Gravid Large Armor Repairer Mutaplasmid"
+                  },
+                  "Gravid Large Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97652,
+                    "name": "Gravid Large Remote Armor Repairer Mutaplasmid"
                   },
                   "Unstable Large Ancillary Armor Repairer Mutaplasmid": {
                     "item_id": 47845,
@@ -36110,6 +36482,10 @@
                   "Unstable Large Armor Repairer Mutaplasmid": {
                     "item_id": 47775,
                     "name": "Unstable Large Armor Repairer Mutaplasmid"
+                  },
+                  "Unstable Large Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97651,
+                    "name": "Unstable Large Remote Armor Repairer Mutaplasmid"
                   }
                 }
               },
@@ -36126,6 +36502,10 @@
                     "item_id": 47770,
                     "name": "Decayed Medium Armor Repairer Mutaplasmid"
                   },
+                  "Decayed Medium Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97661,
+                    "name": "Decayed Medium Remote Armor Repairer Mutaplasmid"
+                  },
                   "Glorified Decayed Medium Armor Plate Mutaplasmid": {
                     "item_id": 85448,
                     "name": "Glorified Decayed Medium Armor Plate Mutaplasmid"
@@ -36134,6 +36514,10 @@
                     "item_id": 85449,
                     "name": "Glorified Decayed Medium Armor Repairer Mutaplasmid"
                   },
+                  "Glorified Decayed Medium Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97665,
+                    "name": "Glorified Decayed Medium Remote Armor Repairer Mutaplasmid"
+                  },
                   "Glorified Gravid Medium Armor Plate Mutaplasmid": {
                     "item_id": 85447,
                     "name": "Glorified Gravid Medium Armor Plate Mutaplasmid"
@@ -36141,6 +36525,10 @@
                   "Glorified Gravid Medium Armor Repairer Mutaplasmid": {
                     "item_id": 85450,
                     "name": "Glorified Gravid Medium Armor Repairer Mutaplasmid"
+                  },
+                  "Glorified Gravid Medium Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97667,
+                    "name": "Glorified Gravid Medium Remote Armor Repairer Mutaplasmid"
                   },
                   "Glorified Unstable Medium Ancillary Armor Repairer Mutaplasmid": {
                     "item_id": 85451,
@@ -36154,6 +36542,10 @@
                     "item_id": 85452,
                     "name": "Glorified Unstable Medium Armor Repairer Mutaplasmid"
                   },
+                  "Glorified Unstable Medium Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97666,
+                    "name": "Glorified Unstable Medium Remote Armor Repairer Mutaplasmid"
+                  },
                   "Gravid Medium Armor Plate Mutaplasmid": {
                     "item_id": 47815,
                     "name": "Gravid Medium Armor Plate Mutaplasmid"
@@ -36161,6 +36553,10 @@
                   "Gravid Medium Armor Repairer Mutaplasmid": {
                     "item_id": 47772,
                     "name": "Gravid Medium Armor Repairer Mutaplasmid"
+                  },
+                  "Gravid Medium Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97663,
+                    "name": "Gravid Medium Remote Armor Repairer Mutaplasmid"
                   },
                   "Unstable Medium Ancillary Armor Repairer Mutaplasmid": {
                     "item_id": 47843,
@@ -36173,6 +36569,10 @@
                   "Unstable Medium Armor Repairer Mutaplasmid": {
                     "item_id": 47771,
                     "name": "Unstable Medium Armor Repairer Mutaplasmid"
+                  },
+                  "Unstable Medium Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97662,
+                    "name": "Unstable Medium Remote Armor Repairer Mutaplasmid"
                   }
                 }
               },
@@ -36189,6 +36589,10 @@
                     "item_id": 47766,
                     "name": "Decayed Small Armor Repairer Mutaplasmid"
                   },
+                  "Decayed Small Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97669,
+                    "name": "Decayed Small Remote Armor Repairer Mutaplasmid"
+                  },
                   "Glorified Decayed Small Armor Plate Mutaplasmid": {
                     "item_id": 85438,
                     "name": "Glorified Decayed Small Armor Plate Mutaplasmid"
@@ -36197,6 +36601,10 @@
                     "item_id": 85441,
                     "name": "Glorified Decayed Small Armor Repairer Mutaplasmid"
                   },
+                  "Glorified Decayed Small Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97672,
+                    "name": "Glorified Decayed Small Remote Armor Repairer Mutaplasmid"
+                  },
                   "Glorified Gravid Small Armor Plate Mutaplasmid": {
                     "item_id": 85440,
                     "name": "Glorified Gravid Small Armor Plate Mutaplasmid"
@@ -36204,6 +36612,10 @@
                   "Glorified Gravid Small Armor Repairer Mutaplasmid": {
                     "item_id": 85443,
                     "name": "Glorified Gravid Small Armor Repairer Mutaplasmid"
+                  },
+                  "Glorified Gravid Small Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97674,
+                    "name": "Glorified Gravid Small Remote Armor Repairer Mutaplasmid"
                   },
                   "Glorified Unstable Small Ancillary Armor Repairer Mutaplasmid": {
                     "item_id": 85445,
@@ -36217,6 +36629,10 @@
                     "item_id": 85442,
                     "name": "Glorified Unstable Small Armor Repairer Mutaplasmid"
                   },
+                  "Glorified Unstable Small Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97673,
+                    "name": "Glorified Unstable Small Remote Armor Repairer Mutaplasmid"
+                  },
                   "Gravid Small Armor Plate Mutaplasmid": {
                     "item_id": 47811,
                     "name": "Gravid Small Armor Plate Mutaplasmid"
@@ -36224,6 +36640,10 @@
                   "Gravid Small Armor Repairer Mutaplasmid": {
                     "item_id": 47768,
                     "name": "Gravid Small Armor Repairer Mutaplasmid"
+                  },
+                  "Gravid Small Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97671,
+                    "name": "Gravid Small Remote Armor Repairer Mutaplasmid"
                   },
                   "Unstable Small Ancillary Armor Repairer Mutaplasmid": {
                     "item_id": 47841,
@@ -36236,6 +36656,10 @@
                   "Unstable Small Armor Repairer Mutaplasmid": {
                     "item_id": 47767,
                     "name": "Unstable Small Armor Repairer Mutaplasmid"
+                  },
+                  "Unstable Small Remote Armor Repairer Mutaplasmid": {
+                    "item_id": 97670,
+                    "name": "Unstable Small Remote Armor Repairer Mutaplasmid"
                   }
                 }
               }
@@ -43720,6 +44144,10 @@
                     "item_id": 40664,
                     "name": "Dark Blood Capital Energy Neutralizer"
                   },
+                  "Horm’s Capital Energy Neutralizer": {
+                    "item_id": 97711,
+                    "name": "Horm’s Capital Energy Neutralizer"
+                  },
                   "True Sansha Capital Energy Neutralizer": {
                     "item_id": 40663,
                     "name": "True Sansha Capital Energy Neutralizer"
@@ -43966,6 +44394,10 @@
                   "Dark Blood Capital Energy Nosferatu": {
                     "item_id": 40670,
                     "name": "Dark Blood Capital Energy Nosferatu"
+                  },
+                  "Sarikusa’s Capital Energy Nosferatu": {
+                    "item_id": 97710,
+                    "name": "Sarikusa’s Capital Energy Nosferatu"
                   },
                   "True Sansha Capital Energy Nosferatu": {
                     "item_id": 40669,
@@ -54664,6 +55096,10 @@
                       "Ultratidal Entropic Disintegrator II": {
                         "item_id": 92514,
                         "name": "Ultratidal Entropic Disintegrator II"
+                      },
+                      "Zorya’s Ultratidal Entropic Disintegrator": {
+                        "item_id": 97712,
+                        "name": "Zorya’s Ultratidal Entropic Disintegrator"
                       }
                     }
                   },
@@ -56525,6 +56961,10 @@
                     "name": "Caldari",
                     "subgroups": {},
                     "items": {
+                      "Hawk Deathglow Remnant SKIN": {
+                        "item_id": 90015,
+                        "name": "Hawk Deathglow Remnant SKIN"
+                      },
                       "Nighthawk Biosecurity Responders SKIN": {
                         "item_id": 55559,
                         "name": "Nighthawk Biosecurity Responders SKIN"
@@ -57421,6 +57861,10 @@
                     "item_id": 49927,
                     "name": "Drekavac Blackfire Steel SKIN"
                   },
+                  "Drekavac Blood Raiders Crimson Mark SKIN": {
+                    "item_id": 97423,
+                    "name": "Drekavac Blood Raiders Crimson Mark SKIN"
+                  },
                   "Drekavac Copper Lightning SKIN": {
                     "item_id": 60759,
                     "name": "Drekavac Copper Lightning SKIN"
@@ -57448,6 +57892,10 @@
                   "Drekavac Red Forests Thunderbird SKIN": {
                     "item_id": 52444,
                     "name": "Drekavac Red Forests Thunderbird SKIN"
+                  },
+                  "Drekavac Tetrimon Crimson Mark SKIN": {
+                    "item_id": 97435,
+                    "name": "Drekavac Tetrimon Crimson Mark SKIN"
                   }
                 }
               }
@@ -58711,6 +59159,10 @@
                         "item_id": 52779,
                         "name": "Redeemer Crown and Swords SKIN"
                       },
+                      "Redeemer Deathglow Remnant SKIN": {
+                        "item_id": 90011,
+                        "name": "Redeemer Deathglow Remnant SKIN"
+                      },
                       "Redeemer EoM SKIN": {
                         "item_id": 36311,
                         "name": "Redeemer EoM SKIN"
@@ -59220,6 +59672,10 @@
                         "item_id": 48733,
                         "name": "Golem Caldari Union Day SKIN"
                       },
+                      "Golem Deathglow Remnant SKIN": {
+                        "item_id": 90014,
+                        "name": "Golem Deathglow Remnant SKIN"
+                      },
                       "Golem Exoplanets Hunter SKIN": {
                         "item_id": 45856,
                         "name": "Golem Exoplanets Hunter SKIN"
@@ -59438,6 +59894,10 @@
                         "item_id": 48518,
                         "name": "Vargur Dawn of Liberation SKIN"
                       },
+                      "Vargur Deathglow Remnant SKIN": {
+                        "item_id": 90020,
+                        "name": "Vargur Deathglow Remnant SKIN"
+                      },
                       "Vargur Exoplanets Hunter SKIN": {
                         "item_id": 45977,
                         "name": "Vargur Exoplanets Hunter SKIN"
@@ -59516,6 +59976,14 @@
                       "Babaroga Azdaja Extirpated SKIN": {
                         "item_id": 90406,
                         "name": "Babaroga Azdaja Extirpated SKIN"
+                      },
+                      "Babaroga Deathglow Remnant SKIN": {
+                        "item_id": 90022,
+                        "name": "Babaroga Deathglow Remnant SKIN"
+                      },
+                      "Babaroga Tetrimon Crimson Mark SKIN": {
+                        "item_id": 97433,
+                        "name": "Babaroga Tetrimon Crimson Mark SKIN"
                       }
                     }
                   }
@@ -63055,6 +63523,10 @@
                       "Zirnitra Metamateria Exotica SKIN": {
                         "item_id": 54222,
                         "name": "Zirnitra Metamateria Exotica SKIN"
+                      },
+                      "Zirnitra Tetrimon Crimson Mark SKIN": {
+                        "item_id": 97434,
+                        "name": "Zirnitra Tetrimon Crimson Mark SKIN"
                       }
                     }
                   }
@@ -64295,6 +64767,10 @@
                         "item_id": 46878,
                         "name": "Komodo Glacial Drift SKIN"
                       },
+                      "Molok Deathglow Remnant SKIN": {
+                        "item_id": 90008,
+                        "name": "Molok Deathglow Remnant SKIN"
+                      },
                       "Molok Glacial Drift SKIN": {
                         "item_id": 46824,
                         "name": "Molok Glacial Drift SKIN"
@@ -65028,6 +65504,10 @@
                         "item_id": 56192,
                         "name": "Zealot Crown and Swords SKIN"
                       },
+                      "Zealot Deathglow Remnant SKIN": {
+                        "item_id": 90010,
+                        "name": "Zealot Deathglow Remnant SKIN"
+                      },
                       "Zealot EoM SKIN": {
                         "item_id": 36296,
                         "name": "Zealot EoM SKIN"
@@ -65342,6 +65822,10 @@
                         "item_id": 47632,
                         "name": "Ishtar Capsuleer Day XV SKIN"
                       },
+                      "Ishtar Deathglow Remnant SKIN": {
+                        "item_id": 90016,
+                        "name": "Ishtar Deathglow Remnant SKIN"
+                      },
                       "Ishtar Dragon Phoenix SKIN": {
                         "item_id": 54429,
                         "name": "Ishtar Dragon Phoenix SKIN"
@@ -65460,6 +65944,10 @@
                       "Muninn Dawn of Liberation SKIN": {
                         "item_id": 48505,
                         "name": "Muninn Dawn of Liberation SKIN"
+                      },
+                      "Muninn Deathglow Remnant SKIN": {
+                        "item_id": 90019,
+                        "name": "Muninn Deathglow Remnant SKIN"
                       },
                       "Muninn Exoplanets Hunter SKIN": {
                         "item_id": 45958,
@@ -67411,6 +67899,10 @@
                     "item_id": 43534,
                     "name": "Ashimmu Blood Raider Victory SKIN"
                   },
+                  "Ashimmu Deathglow Remnant SKIN": {
+                    "item_id": 90009,
+                    "name": "Ashimmu Deathglow Remnant SKIN"
+                  },
                   "Ashimmu Glacial Drift SKIN": {
                     "item_id": 46820,
                     "name": "Ashimmu Glacial Drift SKIN"
@@ -67849,6 +68341,10 @@
                     "item_id": 52353,
                     "name": "Ikitursa Singularity Storm SKIN"
                   },
+                  "Ikitursa Tetrimon Crimson Mark SKIN": {
+                    "item_id": 97437,
+                    "name": "Ikitursa Tetrimon Crimson Mark SKIN"
+                  },
                   "Rodiva Azdaja Extirpated SKIN": {
                     "item_id": 88894,
                     "name": "Rodiva Azdaja Extirpated SKIN"
@@ -67856,6 +68352,10 @@
                   "Rodiva Blackfire Steel SKIN": {
                     "item_id": 49925,
                     "name": "Rodiva Blackfire Steel SKIN"
+                  },
+                  "Rodiva Blood Raiders Crimson Mark SKIN": {
+                    "item_id": 97429,
+                    "name": "Rodiva Blood Raiders Crimson Mark SKIN"
                   },
                   "Rodiva Deadspace Dreamtime SKIN": {
                     "item_id": 52418,
@@ -67884,6 +68384,10 @@
                   "Vedmak Blackfire Steel SKIN": {
                     "item_id": 49924,
                     "name": "Vedmak Blackfire Steel SKIN"
+                  },
+                  "Vedmak Blood Raiders Crimson Mark SKIN": {
+                    "item_id": 97422,
+                    "name": "Vedmak Blood Raiders Crimson Mark SKIN"
                   },
                   "Vedmak Copper Lightning SKIN": {
                     "item_id": 60758,
@@ -67940,6 +68444,10 @@
                   "Zarmazd Metamateria Exotica SKIN": {
                     "item_id": 50143,
                     "name": "Zarmazd Metamateria Exotica SKIN"
+                  },
+                  "Zarmazd Tetrimon Crimson Mark SKIN": {
+                    "item_id": 97441,
+                    "name": "Zarmazd Tetrimon Crimson Mark SKIN"
                   }
                 }
               }
@@ -70521,6 +71029,10 @@
                     "item_id": 52321,
                     "name": "Kikimora Red Meatgrinder SKIN"
                   },
+                  "Kikimora Tetrimon Crimson Mark SKIN": {
+                    "item_id": 97436,
+                    "name": "Kikimora Tetrimon Crimson Mark SKIN"
+                  },
                   "Kikimora Tyrantbreaker SKIN": {
                     "item_id": 88053,
                     "name": "Kikimora Tyrantbreaker SKIN"
@@ -71446,6 +71958,10 @@
                         "item_id": 42752,
                         "name": "Retribution Cold Iron SKIN"
                       },
+                      "Retribution Deathglow Remnant SKIN": {
+                        "item_id": 90012,
+                        "name": "Retribution Deathglow Remnant SKIN"
+                      },
                       "Retribution EoM SKIN": {
                         "item_id": 36292,
                         "name": "Retribution EoM SKIN"
@@ -71748,6 +72264,10 @@
                         "item_id": 55623,
                         "name": "Ishkur Biosecurity Responders SKIN"
                       },
+                      "Ishkur Deathglow Remnant SKIN": {
+                        "item_id": 90018,
+                        "name": "Ishkur Deathglow Remnant SKIN"
+                      },
                       "Ishkur Exoplanets Hunter SKIN": {
                         "item_id": 45878,
                         "name": "Ishkur Exoplanets Hunter SKIN"
@@ -71818,6 +72338,10 @@
                       "Jaguar Dawn of Liberation SKIN": {
                         "item_id": 48491,
                         "name": "Jaguar Dawn of Liberation SKIN"
+                      },
+                      "Jaguar Deathglow Remnant SKIN": {
+                        "item_id": 90021,
+                        "name": "Jaguar Deathglow Remnant SKIN"
                       },
                       "Jaguar Empyrean Dragons SKIN": {
                         "item_id": 80939,
@@ -74434,6 +74958,10 @@
                     "item_id": 49922,
                     "name": "Damavik Blackfire Steel SKIN"
                   },
+                  "Damavik Blood Raiders Crimson Mark SKIN": {
+                    "item_id": 97421,
+                    "name": "Damavik Blood Raiders Crimson Mark SKIN"
+                  },
                   "Damavik Deadspace Dreamtime SKIN": {
                     "item_id": 52417,
                     "name": "Damavik Deadspace Dreamtime SKIN"
@@ -74485,6 +75013,10 @@
                   "Nergal Singularity Storm SKIN": {
                     "item_id": 52351,
                     "name": "Nergal Singularity Storm SKIN"
+                  },
+                  "Nergal Tetrimon Crimson Mark SKIN": {
+                    "item_id": 97430,
+                    "name": "Nergal Tetrimon Crimson Mark SKIN"
                   }
                 }
               }
@@ -75364,6 +75896,421 @@
                   "Merlin Zento Isideko Combine SKIN": {
                     "item_id": 53154,
                     "name": "Merlin Zento Isideko Combine SKIN"
+                  }
+                }
+              },
+              "Gallente": {
+                "id": 2004,
+                "name": "Gallente",
+                "subgroups": {},
+                "items": {
+                  "Atron Arkombine Arisen SKIN": {
+                    "item_id": 81013,
+                    "name": "Atron Arkombine Arisen SKIN"
+                  },
+                  "Atron Aurora Universalis SKIN": {
+                    "item_id": 53375,
+                    "name": "Atron Aurora Universalis SKIN"
+                  },
+                  "Atron Biosecurity Responders SKIN": {
+                    "item_id": 55596,
+                    "name": "Atron Biosecurity Responders SKIN"
+                  },
+                  "Atron Exoplanets Hunter SKIN": {
+                    "item_id": 45871,
+                    "name": "Atron Exoplanets Hunter SKIN"
+                  },
+                  "Atron Glacial Drift SKIN": {
+                    "item_id": 44174,
+                    "name": "Atron Glacial Drift SKIN"
+                  },
+                  "Atron Hunter's Quiver SKIN": {
+                    "item_id": 47503,
+                    "name": "Atron Hunter's Quiver SKIN"
+                  },
+                  "Atron Inner Zone Vanguard SKIN": {
+                    "item_id": 52706,
+                    "name": "Atron Inner Zone Vanguard SKIN"
+                  },
+                  "Atron Intaki Syndicate SKIN": {
+                    "item_id": 34736,
+                    "name": "Atron Intaki Syndicate SKIN"
+                  },
+                  "Atron InterBus SKIN": {
+                    "item_id": 34737,
+                    "name": "Atron InterBus SKIN"
+                  },
+                  "Atron Kopis Edge SKIN": {
+                    "item_id": 46383,
+                    "name": "Atron Kopis Edge SKIN"
+                  },
+                  "Atron Luminaire Zenith SKIN": {
+                    "item_id": 48226,
+                    "name": "Atron Luminaire Zenith SKIN"
+                  },
+                  "Atron Serpentis SKIN": {
+                    "item_id": 42147,
+                    "name": "Atron Serpentis SKIN"
+                  },
+                  "Atron Spirit SKIN": {
+                    "item_id": 44889,
+                    "name": "Atron Spirit SKIN"
+                  },
+                  "Atron Valimor Legacy SKIN": {
+                    "item_id": 37547,
+                    "name": "Atron Valimor Legacy SKIN"
+                  },
+                  "Atron Versus Blueforce SKIN": {
+                    "item_id": 63144,
+                    "name": "Atron Versus Blueforce SKIN"
+                  },
+                  "Atron Zakura Hansei SKIN": {
+                    "item_id": 57181,
+                    "name": "Atron Zakura Hansei SKIN"
+                  },
+                  "Imicus Aspirant Explorer SKIN": {
+                    "item_id": 60228,
+                    "name": "Imicus Aspirant Explorer SKIN"
+                  },
+                  "Imicus Biosecurity Responders SKIN": {
+                    "item_id": 55595,
+                    "name": "Imicus Biosecurity Responders SKIN"
+                  },
+                  "Imicus Deathglow Remnant SKIN": {
+                    "item_id": 78766,
+                    "name": "Imicus Deathglow Remnant SKIN"
+                  },
+                  "Imicus Exoplanets Hunter SKIN": {
+                    "item_id": 45872,
+                    "name": "Imicus Exoplanets Hunter SKIN"
+                  },
+                  "Imicus Glacial Drift SKIN": {
+                    "item_id": 44175,
+                    "name": "Imicus Glacial Drift SKIN"
+                  },
+                  "Imicus Inner Zone Shipping SKIN": {
+                    "item_id": 34738,
+                    "name": "Imicus Inner Zone Shipping SKIN"
+                  },
+                  "Imicus Inner Zone Vanguard SKIN": {
+                    "item_id": 52707,
+                    "name": "Imicus Inner Zone Vanguard SKIN"
+                  },
+                  "Imicus Intaki Syndicate SKIN": {
+                    "item_id": 34739,
+                    "name": "Imicus Intaki Syndicate SKIN"
+                  },
+                  "Imicus Kopis Edge SKIN": {
+                    "item_id": 46384,
+                    "name": "Imicus Kopis Edge SKIN"
+                  },
+                  "Imicus Semiotique Superluminal SKIN": {
+                    "item_id": 63030,
+                    "name": "Imicus Semiotique Superluminal SKIN"
+                  },
+                  "Imicus Serpentis SKIN": {
+                    "item_id": 42148,
+                    "name": "Imicus Serpentis SKIN"
+                  },
+                  "Imicus Spirit SKIN": {
+                    "item_id": 44890,
+                    "name": "Imicus Spirit SKIN"
+                  },
+                  "Imicus Valimor Legacy SKIN": {
+                    "item_id": 37548,
+                    "name": "Imicus Valimor Legacy SKIN"
+                  },
+                  "Imicus Versus Blueforce SKIN": {
+                    "item_id": 62016,
+                    "name": "Imicus Versus Blueforce SKIN"
+                  },
+                  "Imicus Warp Convergence SKIN": {
+                    "item_id": 61870,
+                    "name": "Imicus Warp Convergence SKIN"
+                  },
+                  "Incursus AIR Laboratories SKIN": {
+                    "item_id": 60159,
+                    "name": "Incursus AIR Laboratories SKIN"
+                  },
+                  "Incursus Aliastra SKIN": {
+                    "item_id": 34740,
+                    "name": "Incursus Aliastra SKIN"
+                  },
+                  "Incursus Arkombine Arisen SKIN": {
+                    "item_id": 89653,
+                    "name": "Incursus Arkombine Arisen SKIN"
+                  },
+                  "Incursus Aurora Universalis SKIN": {
+                    "item_id": 79724,
+                    "name": "Incursus Aurora Universalis SKIN"
+                  },
+                  "Incursus Biosecurity Responders SKIN": {
+                    "item_id": 55598,
+                    "name": "Incursus Biosecurity Responders SKIN"
+                  },
+                  "Incursus Capsuleer Day XV SKIN": {
+                    "item_id": 47631,
+                    "name": "Incursus Capsuleer Day XV SKIN"
+                  },
+                  "Incursus Deathglow Remnant SKIN": {
+                    "item_id": 60657,
+                    "name": "Incursus Deathglow Remnant SKIN"
+                  },
+                  "Incursus Exoplanets Hunter SKIN": {
+                    "item_id": 45873,
+                    "name": "Incursus Exoplanets Hunter SKIN"
+                  },
+                  "Incursus Federation Navy SKIN": {
+                    "item_id": 58884,
+                    "name": "Incursus Federation Navy SKIN"
+                  },
+                  "Incursus Glacial Drift SKIN": {
+                    "item_id": 44176,
+                    "name": "Incursus Glacial Drift SKIN"
+                  },
+                  "Incursus Glittering Dream SKIN": {
+                    "item_id": 47522,
+                    "name": "Incursus Glittering Dream SKIN"
+                  },
+                  "Incursus Harmonious Ascension SKIN": {
+                    "item_id": 53209,
+                    "name": "Incursus Harmonious Ascension SKIN"
+                  },
+                  "Incursus Inner Zone Shipping SKIN": {
+                    "item_id": 34741,
+                    "name": "Incursus Inner Zone Shipping SKIN"
+                  },
+                  "Incursus Inner Zone Vanguard SKIN": {
+                    "item_id": 52708,
+                    "name": "Incursus Inner Zone Vanguard SKIN"
+                  },
+                  "Incursus Intaki Syndicate SKIN": {
+                    "item_id": 36368,
+                    "name": "Incursus Intaki Syndicate SKIN"
+                  },
+                  "Incursus Kopis Edge SKIN": {
+                    "item_id": 46385,
+                    "name": "Incursus Kopis Edge SKIN"
+                  },
+                  "Incursus Quafe SKIN": {
+                    "item_id": 37055,
+                    "name": "Incursus Quafe SKIN"
+                  },
+                  "Incursus Semiotique Superluminal SKIN": {
+                    "item_id": 60219,
+                    "name": "Incursus Semiotique Superluminal SKIN"
+                  },
+                  "Incursus Serpentis SKIN": {
+                    "item_id": 42149,
+                    "name": "Incursus Serpentis SKIN"
+                  },
+                  "Incursus Spirit SKIN": {
+                    "item_id": 44891,
+                    "name": "Incursus Spirit SKIN"
+                  },
+                  "Incursus Strategic Materiel Defender SKIN": {
+                    "item_id": 59237,
+                    "name": "Incursus Strategic Materiel Defender SKIN"
+                  },
+                  "Incursus Valimor Legacy SKIN": {
+                    "item_id": 37549,
+                    "name": "Incursus Valimor Legacy SKIN"
+                  },
+                  "Incursus Zakura Shumyu SKIN": {
+                    "item_id": 57060,
+                    "name": "Incursus Zakura Shumyu SKIN"
+                  },
+                  "Maulus Biosecurity Responders SKIN": {
+                    "item_id": 55597,
+                    "name": "Maulus Biosecurity Responders SKIN"
+                  },
+                  "Maulus Exoplanets Hunter SKIN": {
+                    "item_id": 45874,
+                    "name": "Maulus Exoplanets Hunter SKIN"
+                  },
+                  "Maulus Glacial Drift SKIN": {
+                    "item_id": 44177,
+                    "name": "Maulus Glacial Drift SKIN"
+                  },
+                  "Maulus Inner Zone Shipping SKIN": {
+                    "item_id": 34742,
+                    "name": "Maulus Inner Zone Shipping SKIN"
+                  },
+                  "Maulus Inner Zone Vanguard SKIN": {
+                    "item_id": 52709,
+                    "name": "Maulus Inner Zone Vanguard SKIN"
+                  },
+                  "Maulus Intaki Syndicate SKIN": {
+                    "item_id": 34743,
+                    "name": "Maulus Intaki Syndicate SKIN"
+                  },
+                  "Maulus Kopis Edge SKIN": {
+                    "item_id": 46386,
+                    "name": "Maulus Kopis Edge SKIN"
+                  },
+                  "Maulus Luminaire Rising SKIN": {
+                    "item_id": 77869,
+                    "name": "Maulus Luminaire Rising SKIN"
+                  },
+                  "Maulus Medical Enforcement Taskforce SKIN": {
+                    "item_id": 97619,
+                    "name": "Maulus Medical Enforcement Taskforce SKIN"
+                  },
+                  "Maulus Penumbral Shadows SKIN": {
+                    "item_id": 93718,
+                    "name": "Maulus Penumbral Shadows SKIN"
+                  },
+                  "Maulus Pride of the Federation SKIN": {
+                    "item_id": 95482,
+                    "name": "Maulus Pride of the Federation SKIN"
+                  },
+                  "Maulus Serpentis SKIN": {
+                    "item_id": 42150,
+                    "name": "Maulus Serpentis SKIN"
+                  },
+                  "Maulus Spirit SKIN": {
+                    "item_id": 44892,
+                    "name": "Maulus Spirit SKIN"
+                  },
+                  "Maulus Strategic Materiel Defender SKIN": {
+                    "item_id": 59424,
+                    "name": "Maulus Strategic Materiel Defender SKIN"
+                  },
+                  "Maulus Valimor Legacy SKIN": {
+                    "item_id": 37550,
+                    "name": "Maulus Valimor Legacy SKIN"
+                  },
+                  "Navitas Biosecurity Responders SKIN": {
+                    "item_id": 55585,
+                    "name": "Navitas Biosecurity Responders SKIN"
+                  },
+                  "Navitas Combat Medic Section SKIN": {
+                    "item_id": 60199,
+                    "name": "Navitas Combat Medic Section SKIN"
+                  },
+                  "Navitas Exoplanets Hunter SKIN": {
+                    "item_id": 45875,
+                    "name": "Navitas Exoplanets Hunter SKIN"
+                  },
+                  "Navitas Glacial Drift SKIN": {
+                    "item_id": 44178,
+                    "name": "Navitas Glacial Drift SKIN"
+                  },
+                  "Navitas Inner Zone Vanguard SKIN": {
+                    "item_id": 52710,
+                    "name": "Navitas Inner Zone Vanguard SKIN"
+                  },
+                  "Navitas Intaki Syndicate SKIN": {
+                    "item_id": 34744,
+                    "name": "Navitas Intaki Syndicate SKIN"
+                  },
+                  "Navitas Kopis Edge SKIN": {
+                    "item_id": 46387,
+                    "name": "Navitas Kopis Edge SKIN"
+                  },
+                  "Navitas Serpentis SKIN": {
+                    "item_id": 42151,
+                    "name": "Navitas Serpentis SKIN"
+                  },
+                  "Navitas Spirit SKIN": {
+                    "item_id": 44893,
+                    "name": "Navitas Spirit SKIN"
+                  },
+                  "Navitas Valimor Legacy SKIN": {
+                    "item_id": 37551,
+                    "name": "Navitas Valimor Legacy SKIN"
+                  },
+                  "Tristan Aurora Universalis SKIN": {
+                    "item_id": 60915,
+                    "name": "Tristan Aurora Universalis SKIN"
+                  },
+                  "Tristan Biosecurity Responders SKIN": {
+                    "item_id": 55586,
+                    "name": "Tristan Biosecurity Responders SKIN"
+                  },
+                  "Tristan Chromodynamic Candy SKIN": {
+                    "item_id": 49799,
+                    "name": "Tristan Chromodynamic Candy SKIN"
+                  },
+                  "Tristan Exoplanets Hunter SKIN": {
+                    "item_id": 45876,
+                    "name": "Tristan Exoplanets Hunter SKIN"
+                  },
+                  "Tristan Federation Navy SKIN": {
+                    "item_id": 58885,
+                    "name": "Tristan Federation Navy SKIN"
+                  },
+                  "Tristan Glacial Drift SKIN": {
+                    "item_id": 44179,
+                    "name": "Tristan Glacial Drift SKIN"
+                  },
+                  "Tristan Headhunter SKIN": {
+                    "item_id": 46717,
+                    "name": "Tristan Headhunter SKIN"
+                  },
+                  "Tristan Inner Zone Shipping SKIN": {
+                    "item_id": 34745,
+                    "name": "Tristan Inner Zone Shipping SKIN"
+                  },
+                  "Tristan Inner Zone Vanguard SKIN": {
+                    "item_id": 52711,
+                    "name": "Tristan Inner Zone Vanguard SKIN"
+                  },
+                  "Tristan Intaki Syndicate SKIN": {
+                    "item_id": 36367,
+                    "name": "Tristan Intaki Syndicate SKIN"
+                  },
+                  "Tristan Kopis Edge SKIN": {
+                    "item_id": 46388,
+                    "name": "Tristan Kopis Edge SKIN"
+                  },
+                  "Tristan Luminaire Rising SKIN": {
+                    "item_id": 89116,
+                    "name": "Tristan Luminaire Rising SKIN"
+                  },
+                  "Tristan Luminaire Zenith SKIN": {
+                    "item_id": 64398,
+                    "name": "Tristan Luminaire Zenith SKIN"
+                  },
+                  "Tristan Pride of the Federation SKIN": {
+                    "item_id": 93077,
+                    "name": "Tristan Pride of the Federation SKIN"
+                  },
+                  "Tristan Quafe Green Apple SKIN": {
+                    "item_id": 60577,
+                    "name": "Tristan Quafe Green Apple SKIN"
+                  },
+                  "Tristan Quafe SKIN": {
+                    "item_id": 34746,
+                    "name": "Tristan Quafe SKIN"
+                  },
+                  "Tristan Ruby Sungrazer SKIN": {
+                    "item_id": 45560,
+                    "name": "Tristan Ruby Sungrazer SKIN"
+                  },
+                  "Tristan Sapphire Sungrazer SKIN": {
+                    "item_id": 46563,
+                    "name": "Tristan Sapphire Sungrazer SKIN"
+                  },
+                  "Tristan Serpentis SKIN": {
+                    "item_id": 42152,
+                    "name": "Tristan Serpentis SKIN"
+                  },
+                  "Tristan Spirit SKIN": {
+                    "item_id": 44894,
+                    "name": "Tristan Spirit SKIN"
+                  },
+                  "Tristan Valimor Legacy SKIN": {
+                    "item_id": 37552,
+                    "name": "Tristan Valimor Legacy SKIN"
+                  },
+                  "Tristan Versus Blueforce SKIN": {
+                    "item_id": 76169,
+                    "name": "Tristan Versus Blueforce SKIN"
+                  },
+                  "Tristan Zakura Hansei SKIN": {
+                    "item_id": 57107,
+                    "name": "Tristan Zakura Hansei SKIN"
                   }
                 }
               },
@@ -78253,6 +79200,10 @@
                 "name": "Pirate Faction",
                 "subgroups": {},
                 "items": {
+                  "Akoman": {
+                    "item_id": 95741,
+                    "name": "Akoman"
+                  },
                   "Alligator": {
                     "item_id": 78366,
                     "name": "Alligator"
@@ -84320,6 +85271,10 @@
                 "name": "Crimson Harvest Assets",
                 "subgroups": {},
                 "items": {
+                  "Akoman Blueprint Crate": {
+                    "item_id": 97516,
+                    "name": "Akoman Blueprint Crate"
+                  },
                   "Ashimmu Blueprint Crate": {
                     "item_id": 90660,
                     "name": "Ashimmu Blueprint Crate"
@@ -84332,8 +85287,28 @@
                     "item_id": 90396,
                     "name": "Blood Raider Crate"
                   },
+                  "Captured Bioadaptive Cache": {
+                    "item_id": 96326,
+                    "name": "Captured Bioadaptive Cache"
+                  },
+                  "Consortium Capital Tractor Beam Blueprint Crate": {
+                    "item_id": 97725,
+                    "name": "Consortium Capital Tractor Beam Blueprint Crate"
+                  },
+                  "Consortium Small Tractor Beam Blueprint Crate": {
+                    "item_id": 97724,
+                    "name": "Consortium Small Tractor Beam Blueprint Crate"
+                  },
+                  "Consortium Vorton Tuning System Blueprint Crate": {
+                    "item_id": 97727,
+                    "name": "Consortium Vorton Tuning System Blueprint Crate"
+                  },
+                  "Crimson Gauntlet Shortcut Keypass": {
+                    "item_id": 97207,
+                    "name": "Crimson Gauntlet Shortcut Keypass"
+                  },
                   "Crimson Harvest Cerebral Accelerator Crate": {
-                    "item_id": 90136,
+                    "item_id": 97206,
                     "name": "Crimson Harvest Cerebral Accelerator Crate"
                   },
                   "Crimson Harvest SKINR Crate": {
@@ -84343,6 +85318,14 @@
                   "Dagon Blueprint Crate": {
                     "item_id": 90663,
                     "name": "Dagon Blueprint Crate"
+                  },
+                  "Dark Blood Large Armor Repairer Blueprint Crate": {
+                    "item_id": 97731,
+                    "name": "Dark Blood Large Armor Repairer Blueprint Crate"
+                  },
+                  "Dark Blood Stasis Webifier Blueprint Crate": {
+                    "item_id": 97730,
+                    "name": "Dark Blood Stasis Webifier Blueprint Crate"
                   },
                   "Halloween Horrors Astero SKIN": {
                     "item_id": 53055,
@@ -84384,13 +85367,65 @@
                     "item_id": 90137,
                     "name": "Historic Crimson Harvest Trinket Crate"
                   },
+                  "Horm’s Capital Energy Neutralizer Blueprint Crate": {
+                    "item_id": 97720,
+                    "name": "Horm’s Capital Energy Neutralizer Blueprint Crate"
+                  },
+                  "Imperial Navy Heat Sink Blueprint Crate": {
+                    "item_id": 97732,
+                    "name": "Imperial Navy Heat Sink Blueprint Crate"
+                  },
+                  "Imperial Navy Multispectrum Energized Membrane Blueprint Crate": {
+                    "item_id": 97733,
+                    "name": "Imperial Navy Multispectrum Energized Membrane Blueprint Crate"
+                  },
+                  "Large Consortium Vorton Projector Blueprint Crate": {
+                    "item_id": 97728,
+                    "name": "Large Consortium Vorton Projector Blueprint Crate"
+                  },
+                  "Medium Consortium Vorton Projector Blueprint Crate": {
+                    "item_id": 97726,
+                    "name": "Medium Consortium Vorton Projector Blueprint Crate"
+                  },
                   "Mobile Sanguine Harvester": {
                     "item_id": 56701,
                     "name": "Mobile Sanguine Harvester"
                   },
+                  "Mobile Sanguine Harvester Blueprint Crate": {
+                    "item_id": 97722,
+                    "name": "Mobile Sanguine Harvester Blueprint Crate"
+                  },
                   "Molok Blueprint Crate": {
                     "item_id": 90664,
                     "name": "Molok Blueprint Crate"
+                  },
+                  "Mutated Blood Sample": {
+                    "item_id": 96789,
+                    "name": "Mutated Blood Sample"
+                  },
+                  "Sarikusa’s Capital Energy Nosferatu Blueprint Crate": {
+                    "item_id": 97719,
+                    "name": "Sarikusa’s Capital Energy Nosferatu Blueprint Crate"
+                  },
+                  "Small Consortium Vorton Projector Blueprint Crate": {
+                    "item_id": 97729,
+                    "name": "Small Consortium Vorton Projector Blueprint Crate"
+                  },
+                  "Sobornost Blood Sample": {
+                    "item_id": 96790,
+                    "name": "Sobornost Blood Sample"
+                  },
+                  "Strategos' Modified Siege Module Blueprint Crate": {
+                    "item_id": 97723,
+                    "name": "Strategos' Modified Siege Module Blueprint Crate"
+                  },
+                  "Tetrimon Base Shortcut Keypass": {
+                    "item_id": 97208,
+                    "name": "Tetrimon Base Shortcut Keypass"
+                  },
+                  "Zorya’s Ultratidal Entropic Disintegrator Blueprint Crate": {
+                    "item_id": 97721,
+                    "name": "Zorya’s Ultratidal Entropic Disintegrator Blueprint Crate"
                   }
                 }
               },
@@ -90207,6 +91242,10 @@
         "name": "Acceleration Gate Keys",
         "subgroups": {},
         "items": {
+          "Criterion Cipher": {
+            "item_id": 97265,
+            "name": "Criterion Cipher"
+          },
           "Obsolete Observatory Resonance Key": {
             "item_id": 87179,
             "name": "Obsolete Observatory Resonance Key"
